@@ -1,3 +1,5 @@
+import type { MCPServerPackageConfig } from "../package/package-types";
+
 /**
  * Registry data source type
  */
@@ -13,7 +15,7 @@ export interface IRegistryProvider {
    * @param packageName - Package name
    * @returns Package configuration, null if not found
    */
-  getPackageConfig(packageName: string): Promise<unknown | null>;
+  getPackageConfig(packageName: string): Promise<MCPServerPackageConfig | null>;
 
   /**
    * Check if package exists

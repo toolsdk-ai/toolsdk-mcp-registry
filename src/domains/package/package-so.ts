@@ -37,7 +37,7 @@ export class PackageSO {
     repository: PackageRepository,
     executor: ToolExecutor,
   ): Promise<PackageSO> {
-    // Use FederatedRegistryProvider to support both local and official packages
+    // Use FederatedRegistryProvider, which checks for local packages first and falls back to the official registry if not found locally.
     const provider: IRegistryProvider = getRegistryProvider("FEDERATED");
     const config = await provider.getPackageConfig(packageName);
 
@@ -45,11 +45,11 @@ export class PackageSO {
       throw new Error(`Package '${packageName}' not found`);
     }
 
-    // Get package metadata from local repository
+    // Get package metadata (category, validated) from local repository index if available.
     const allPackages = repository.getAllPackages();
     const packageInfo = allPackages[packageName] || {};
 
-    return new PackageSO(packageName, config as MCPServerPackageConfig, packageInfo, executor);
+    return new PackageSO(packageName, config, packageInfo, executor);
   }
 
   async getTools(): Promise<Tool[]> {

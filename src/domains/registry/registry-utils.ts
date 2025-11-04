@@ -30,16 +30,15 @@ export function transformServer(server: OfficialServer): MCPServerPackageConfig 
       description: server.description,
       url: server.repository?.url,
       // Transform environment variables
-      env: pkg.environmentVariables?.reduce(
-        (acc, env) => {
-          acc[env.name] = {
-            description: env.description || "",
-            required: env.isRequired || false,
-          };
-          return acc;
-        },
-        {} as Record<string, { description: string; required: boolean }>,
-      ),
+      env: pkg.environmentVariables?.reduce<
+        Record<string, { description: string; required: boolean }>
+      >((acc, env) => {
+        acc[env.name] = {
+          description: env.description || "",
+          required: env.isRequired || false,
+        };
+        return acc;
+      }, {}),
     };
 
     return config;
