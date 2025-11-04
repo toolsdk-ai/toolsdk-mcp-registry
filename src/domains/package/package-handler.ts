@@ -2,7 +2,6 @@ import path from "node:path";
 import { getDirname } from "../../shared/utils/file-util";
 import { createErrorResponse, createResponse } from "../../shared/utils/response-util";
 import { ExecutorFactory } from "../executor/executor-factory";
-import { initRegistryFactory } from "../registry/registry-factory";
 import type { MCPSandboxProvider } from "../sandbox/sandbox-types";
 import { PackageRepository } from "./package-repository";
 import { PackageSO } from "./package-so";
@@ -10,10 +9,7 @@ import { PackageSO } from "./package-so";
 const __dirname = getDirname(import.meta.url);
 
 const packagesDir = path.join(__dirname, "../../../packages");
-const repository = new PackageRepository(packagesDir);
-
-// Initialize Registry Factory with the local repository
-initRegistryFactory(repository);
+export const repository = new PackageRepository(packagesDir);
 
 export const packageHandler = {
   getPackageDetail: async (packageName: string, sandboxProvider?: MCPSandboxProvider) => {
