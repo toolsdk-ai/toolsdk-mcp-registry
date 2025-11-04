@@ -51,7 +51,7 @@ However, mcp.so lacks an open API interface and functions primarily as a unified
 
 In contrast, Smithery.ai has modified certain official MCP servers to create a more convenient hosting solution tailored to its needs.
 
-Projects like awesome-mcp-servers are also noteworthy, as it showcase many MCP servers in a README format.
+Projects like toolsdk-mcp-servers are also noteworthy, as it showcase many MCP servers in a README format.
 
 However, the information is presented in an unstructured manner, making it impossible to index via an API; users must download the entries individually.
 
