@@ -1,6 +1,6 @@
-# 🤝 Contributing to the Awesome MCP Registry
+# 🤝 Contributing to the ToolSDK MCP Registry
 
-Thanks for your interest in contributing to Awesome MCP Registry! 🎉 Your help makes this registry of Model Context Protocol servers even more awesome.
+Thanks for your interest in contributing to ToolSDK MCP Registry! 🎉 Your help makes this registry of Model Context Protocol servers even more toolsdk.
 
 ## 🚀 Submit New MCP Servers
 
@@ -71,7 +71,7 @@ Our team will review, provide feedback, and help polish it before merging. 🙌
 
 > 💡 Tip: Even small changes matter — every pull request counts!
 
-## 🎉 Thanks for Making MCP Awesome!
+## 🎉 Thanks for Making MCP ToolSDK!
 
 Your contributions help build a better ecosystem for everyone working with Model Context Protocol servers. Every addition matters! ❤️
 

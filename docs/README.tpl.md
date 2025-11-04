@@ -1,13 +1,13 @@
 <div align="center">
 
-# Awesome MCP Registry
+# ToolSDK MCP Registry
 
 **Your private, secure, and customizable MCP Registry — take full control of your tools.**
 
 [![Product Hunt](https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=997428&theme=light&period=daily)](https://www.producthunt.com/products/toolsdk-ai)
 
-![How many MCP Servers in Awesome MCP Registry](https://img.shields.io/badge/MCP_Servers-<%= COUNT %>-blue)
-![awesome-mcp-registry License](https://img.shields.io/badge/LICENSE-MIT-ff69b4)
+![How many MCP Servers in ToolSDK MCP Registry](https://img.shields.io/badge/MCP_Servers-<%= COUNT %>-blue)
+![toolsdk-mcp-registry License](https://img.shields.io/badge/LICENSE-MIT-ff69b4)
 
 🚀 **Open-source**, **production-ready**, and **developer-friendly** registry for <%= COUNT %>+ Model Context Protocol (MCP) servers, plugins, and AI agent tools.
 
@@ -17,9 +17,9 @@ Perfect for **AI automation**, **chatbot development**, **LLM integrations**, an
 
 </div>
 
-## 🌟 Why Awesome MCP Registry?
+## 🌟 Why ToolSDK MCP Registry?
 
-**Awesome MCP Registry** is the most comprehensive, self-hosted registry for Model Context Protocol (MCP) servers and AI agent tools. Built for developers, teams, and enterprises who need full control over their AI infrastructure.
+**ToolSDK MCP Registry** is the most comprehensive, self-hosted registry for Model Context Protocol (MCP) servers and AI agent tools. Built for developers, teams, and enterprises who need full control over their AI infrastructure.
 
 ### 🎯 Key Features
 
@@ -55,7 +55,7 @@ This open-source registry provides:
 
 - 📄 `README.md` - Human-readable documentation
 - 📦 [npm package](https://www.npmjs.com/package/@toolsdk.ai/registry) - TypeScript/JavaScript SDK
-- 🔗 [packages-list.json](https://toolsdk-ai.github.io/awesome-mcp-registry/indexes/packages-list.json) - Raw data API  
+- 🔗 [packages-list.json](https://toolsdk-ai.github.io/toolsdk-mcp-registry/indexes/packages-list.json) - Raw data API  
 
 ---
 
@@ -68,7 +68,7 @@ This open-source registry provides:
   - [📄 Submit New MCP Servers](#submit-new-mcp-servers)
 - [📖 Development Guide](./docs/DEVELOPMENT.md)
 - [🤝 Contributing Guide](./docs/guide.md)
-- [⭐ Awesome MCP Servers](#mcp-servers)
+- [⭐ ToolSDK MCP Servers](#mcp-servers)
 
 <%= TOC %>
 
@@ -118,7 +118,7 @@ curl -X POST http://localhost:3003/api/v1/packages/run \
     "packageName": "@modelcontextprotocol/server-everything",
     "toolKey": "echo",
     "inputData": {
-      "message": "Hello from Awesome MCP Registry!"
+      "message": "Hello from ToolSDK MCP Registry!"
     },
     "envs": {}
   }'
@@ -155,13 +155,13 @@ import mcpServerLists from '@toolsdk.ai/registry/indexes/packages-lists.json';
 Fetch the complete MCP server registry programmatically - ideal for AI applications, integrations, and automation:
 
 ```bash
-curl https://toolsdk-ai.github.io/awesome-mcp-registry/indexes/packages-list.json
+curl https://toolsdk-ai.github.io/toolsdk-mcp-registry/indexes/packages-list.json
 ```
 
 ```ts
 // JavaScript/TypeScript - Fetch API
 const mcpServers = await (
-  await fetch('https://toolsdk-ai.github.io/awesome-mcp-registry/indexes/packages-list.json')
+  await fetch('https://toolsdk-ai.github.io/toolsdk-mcp-registry/indexes/packages-list.json')
 ).json();
 
 // Use for AI agent tool discovery, LLM integrations, etc.
@@ -173,7 +173,7 @@ console.log(mcpServers);
 import requests
 
 mcp_servers = requests.get(
-    'https://toolsdk-ai.github.io/awesome-mcp-registry/indexes/packages-list.json'
+    'https://toolsdk-ai.github.io/toolsdk-mcp-registry/indexes/packages-list.json'
 ).json()
 
 # Perfect for LangChain, CrewAI, AutoGen integrations
@@ -209,7 +209,7 @@ Help grow the world's largest open-source MCP registry! Share your AI tools, plu
 
 **2. Submit via Pull Request**
 
-- [Fork this repository](https://github.com/toolsdk-ai/awesome-mcp-registry/fork)
+- [Fork this repository](https://github.com/toolsdk-ai/toolsdk-mcp-registry/fork)
 - Create `your-mcp-server.json` in [packages/uncategorized](./packages/uncategorized)
 - Submit a PR and join <%= COUNT %>+ MCP servers!
 

@@ -5,7 +5,7 @@ import { getDirname } from "../src/shared/scripts-helpers";
 const __dirname = getDirname(import.meta.url);
 
 const LANGUAGE_PREFIXES = ["node", "python", "java", "go"];
-// const BASE_DIR = '/home/username/mcp/awesome-mcp-registry/packages';
+// const BASE_DIR = '/home/username/mcp/toolsdk-mcp-registry/packages';
 
 /**
  * 重命名指定目录下的 JSON 文件，文件名前加上 runtime 字段的值

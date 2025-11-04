@@ -1,8 +1,8 @@
-# Awesome MCP Registry Developer Guide
+# ToolSDK MCP Registry Developer Guide
 
-This document provides developers with detailed information on how to set up, run, and develop the Awesome MCP Registry project.
+This document provides developers with detailed information on how to set up, run, and develop the ToolSDK MCP Registry project.
 
-- [Awesome MCP Registry Developer Guide](#awesome-mcp-registry-developer-guide)
+- [ToolSDK MCP Registry Developer Guide](#toolsdk-mcp-registry-developer-guide)
   - [1. 🧰 Prerequisites](#1--prerequisites)
   - [2. 🧰 Tech Stack](#2--tech-stack)
   - [3. 🎯 Project Purpose](#3--project-purpose)
@@ -77,8 +77,8 @@ Docker Compose allows you to quickly deploy the complete MCP Registry with searc
 **Step 1: Clone the Repository**
 
 ```bash
-git clone https://github.com/toolsdk-ai/awesome-mcp-registry.git
-cd awesome-mcp-registry
+git clone https://github.com/toolsdk-ai/toolsdk-mcp-registry.git
+cd toolsdk-mcp-registry
 ```
 
 **Step 2: Get Sandock API Key**
@@ -431,7 +431,7 @@ Error reading MCP Client for package: claude-prompts... ENOENT: no such file or 
 **This is normal!** The reason for these errors is:
 
 - This project includes thousands of MCP packages
-- The build process attempts to test all packages through the [test-mcp-clients.ts](file:///root/vika/awesome-mcp-registry/scripts/test-mcp-clients.ts) script
+- The build process attempts to test all packages through the [test-mcp-clients.ts](file:///root/vika/toolsdk-mcp-registry/scripts/test-mcp-clients.ts) script
 - Due to the large number, the testing process may take several hours
 - Not all packages need to be installed and tested, as most packages are not essential for running the registry
 
@@ -534,4 +534,4 @@ All environment variables are managed centrally through `src/shared/config/envir
 
 **Happy coding! 🚀**
 
-For questions or issues, please [open an issue](https://github.com/toolsdk-ai/awesome-mcp-registry/issues) or join our community discussions.
+For questions or issues, please [open an issue](https://github.com/toolsdk-ai/toolsdk-mcp-registry/issues) or join our community discussions.
