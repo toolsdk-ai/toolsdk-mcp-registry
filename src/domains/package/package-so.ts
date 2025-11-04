@@ -1,5 +1,7 @@
 import type { Tool } from "@modelcontextprotocol/sdk/types.js";
 import type { ToolExecutor } from "../executor/executor-types";
+import { getRegistryProvider } from "../registry/registry-factory";
+import type { IRegistryProvider } from "../registry/registry-types";
 import type { PackageRepository } from "./package-repository";
 import type { MCPServerPackageConfig, MCPServerPackageConfigWithTools } from "./package-types";
 
@@ -8,7 +10,6 @@ export class PackageSO {
     private readonly _packageName: string,
     private readonly _config: MCPServerPackageConfig,
     private readonly _packageInfo: { category?: string; validated?: boolean },
-    _repository: PackageRepository,
     private readonly _executor: ToolExecutor,
   ) {}
 
@@ -36,10 +37,19 @@ export class PackageSO {
     repository: PackageRepository,
     executor: ToolExecutor,
   ): Promise<PackageSO> {
-    const config = repository.getPackageConfig(packageName);
+    // Use FederatedRegistryProvider to support both local and official packages
+    const provider: IRegistryProvider = getRegistryProvider("FEDERATED");
+    const config = await provider.getPackageConfig(packageName);
+
+    if (!config) {
+      throw new Error(`Package '${packageName}' not found`);
+    }
+
+    // Get package metadata from local repository
     const allPackages = repository.getAllPackages();
     const packageInfo = allPackages[packageName] || {};
-    return new PackageSO(packageName, config, packageInfo, repository, executor);
+
+    return new PackageSO(packageName, config as MCPServerPackageConfig, packageInfo, executor);
   }
 
   async getTools(): Promise<Tool[]> {
