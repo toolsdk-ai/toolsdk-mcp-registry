@@ -1,8 +1,8 @@
 import { z } from "zod";
 
 /**
- * 官方 Registry API 数据结构 Schema
- * 基于 https://registry.modelcontextprotocol.io/v0.1
+ * Official Registry API data structure schema
+ * Based on https://registry.modelcontextprotocol.io/v0.1
  */
 
 export const OfficialRepositorySchema = z.object({

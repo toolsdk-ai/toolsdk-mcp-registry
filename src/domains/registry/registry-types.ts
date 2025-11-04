@@ -1,24 +1,24 @@
 /**
- * Registry 数据源类型
+ * Registry data source type
  */
 export type RegistrySource = "LOCAL" | "OFFICIAL";
 
 /**
- * Registry Provider 抽象接口
- * 定义统一的 Registry 查询接口
+ * Registry Provider abstract interface
+ * Define unified Registry query interface
  */
 export interface IRegistryProvider {
   /**
-   * 获取包配置
-   * @param packageName - 包名
-   * @returns 包配置,如果不存在返回 null
+   * Get package configuration
+   * @param packageName - Package name
+   * @returns Package configuration, null if not found
    */
   getPackageConfig(packageName: string): Promise<unknown | null>;
 
   /**
-   * 检查包是否存在
-   * @param packageName - 包名
-   * @returns 是否存在
+   * Check if package exists
+   * @param packageName - Package name
+   * @returns Whether the package exists
    */
   exists(packageName: string): Promise<boolean>;
 }

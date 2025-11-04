@@ -49,7 +49,6 @@ describe("PackageSO", () => {
       };
 
       vi.spyOn(mockRepository, "exists").mockReturnValue(true);
-      vi.spyOn(mockRepository, "exists").mockReturnValue(true);
       vi.spyOn(mockRepository, "getPackageConfig").mockReturnValue(mockConfig);
       vi.spyOn(mockRepository, "getAllPackages").mockReturnValue({
         [packageName]: mockPackageInfo,

@@ -2,34 +2,34 @@ import type { MCPServerPackageConfig } from "../package/package-types";
 import type { OfficialServer } from "./registry-schema";
 
 /**
- * 转换单个服务器配置
- * @param server - 官方服务器配置
- * @returns 本地格式配置,如果不符合条件返回 null
+ * Transform a single server configuration
+ * @param server - Official server configuration
+ * @returns Local format configuration, null if not meeting conditions
  */
 export function transformServer(server: OfficialServer): MCPServerPackageConfig | null {
   try {
-    // 1. 过滤出 npm + stdio 包
+    // 1. Filter npm + stdio packages
     const npmStdioPackages = server.packages.filter(
       (pkg) => pkg.registryType === "npm" && pkg.transport.type === "stdio",
     );
 
     if (npmStdioPackages.length === 0) {
-      return null; // 不符合条件，跳过
+      return null; // Does not meet conditions, skip
     }
 
-    // 2. 取第一个符合条件的包
+    // 2. Take the first matching package
     const pkg = npmStdioPackages[0];
 
-    // 3. 转换为本地格式
+    // 3. Convert to local format
     const config: MCPServerPackageConfig = {
       type: "mcp-server",
-      runtime: "node", // npm 包默认为 node
-      packageName: pkg.identifier, // 使用 npm 包名作为 packageName
+      runtime: "node", // npm packages default to node
+      packageName: pkg.identifier, // Use npm package name as packageName
       packageVersion: pkg.version,
       name: server.title || server.name,
       description: server.description,
       url: server.repository?.url,
-      // 转换环境变量
+      // Transform environment variables
       env: pkg.environmentVariables?.reduce(
         (acc, env) => {
           acc[env.name] = {
@@ -50,9 +50,9 @@ export function transformServer(server: OfficialServer): MCPServerPackageConfig 
 }
 
 /**
- * 批量转换并过滤服务器配置
- * @param servers - 官方服务器配置数组
- * @returns 本地格式配置数组
+ * Batch transform and filter server configurations
+ * @param servers - Array of official server configurations
+ * @returns Array of local format configurations
  */
 export function transformAndFilterServers(servers: OfficialServer[]): MCPServerPackageConfig[] {
   return servers

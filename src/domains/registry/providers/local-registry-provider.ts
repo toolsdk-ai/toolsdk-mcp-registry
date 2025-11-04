@@ -3,16 +3,16 @@ import type { MCPServerPackageConfig } from "../../package/package-types";
 import type { IRegistryProvider } from "../registry-types";
 
 /**
- * 本地 Registry Provider 适配器
- * 将 PackageRepository 包装为异步接口
+ * Local Registry Provider adapter
+ * Wraps PackageRepository as an async interface
  */
 export class LocalRegistryProvider implements IRegistryProvider {
   constructor(private readonly packageRepository: PackageRepository) {}
 
   /**
-   * 获取包配置
-   * @param packageName - 包名
-   * @returns 包配置,如果不存在返回 null
+   * Get package configuration
+   * @param packageName - Package name
+   * @returns Package configuration, null if not found
    */
   async getPackageConfig(packageName: string): Promise<MCPServerPackageConfig | null> {
     if (!this.packageRepository.exists(packageName)) {
@@ -29,9 +29,9 @@ export class LocalRegistryProvider implements IRegistryProvider {
   }
 
   /**
-   * 检查包是否存在
-   * @param packageName - 包名
-   * @returns 是否存在
+   * Check if package exists
+   * @param packageName - Package name
+   * @returns Whether the package exists
    */
   async exists(packageName: string): Promise<boolean> {
     return this.packageRepository.exists(packageName);

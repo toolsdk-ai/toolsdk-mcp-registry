@@ -4,8 +4,8 @@ import type { LocalRegistryProvider } from "./local-registry-provider";
 import type { OfficialRegistryProvider } from "./official-registry-provider";
 
 /**
- * 联邦 Registry Provider
- * 实现本地优先的联邦查询策略
+ * Federated Registry Provider
+ * Implements local-first federated query strategy
  */
 export class FederatedRegistryProvider implements IRegistryProvider {
   constructor(
@@ -14,39 +14,39 @@ export class FederatedRegistryProvider implements IRegistryProvider {
   ) {}
 
   /**
-   * 获取包配置(本地优先)
-   * @param packageName - 包名
-   * @returns 包配置,如果不存在返回 null
+   * Get package configuration (local first)
+   * @param packageName - Package name
+   * @returns Package configuration, null if not found
    */
   async getPackageConfig(packageName: string): Promise<MCPServerPackageConfig | null> {
-    // 1. 优先查询本地
+    // 1. Query local first
     const localConfig = await this.localProvider.getPackageConfig(packageName);
     if (localConfig) {
       return localConfig;
     }
 
-    // 2. 本地不存在,查询官方
+    // 2. If not found locally, query official
     try {
       const officialConfig = await this.officialProvider.getPackageConfig(packageName);
       return officialConfig;
     } catch (error) {
       console.warn(`[FederatedRegistry] Failed to fetch from official: ${error}`);
-      return null; // 官方 API 失败,返回 null
+      return null; // Official API failed, return null
     }
   }
 
   /**
-   * 检查包是否存在
-   * @param packageName - 包名
-   * @returns 是否存在
+   * Check if package exists
+   * @param packageName - Package name
+   * @returns Whether the package exists
    */
   async exists(packageName: string): Promise<boolean> {
-    // 1. 先查本地
+    // 1. Check local first
     if (await this.localProvider.exists(packageName)) {
       return true;
     }
 
-    // 2. 再查官方
+    // 2. Then check official
     try {
       return await this.officialProvider.exists(packageName);
     } catch {

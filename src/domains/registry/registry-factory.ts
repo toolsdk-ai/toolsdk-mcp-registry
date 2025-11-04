@@ -5,12 +5,12 @@ import { OfficialRegistryProvider } from "./providers/official-registry-provider
 import type { IRegistryProvider } from "./registry-types";
 
 /**
- * Registry Provider 类型
+ * Registry Provider type
  */
 export type RegistryProviderType = "LOCAL" | "OFFICIAL" | "FEDERATED";
 
 /**
- * Registry Provider 实例容器
+ * Registry Provider instance container
  */
 let localProvider: LocalRegistryProvider | null = null;
 let officialProvider: OfficialRegistryProvider | null = null;
@@ -18,8 +18,8 @@ let federatedProvider: FederatedRegistryProvider | null = null;
 let initialized = false;
 
 /**
- * 初始化 Registry Factory
- * @param packageRepository - 本地包仓库
+ * Initialize Registry Factory
+ * @param packageRepository - Local package repository
  */
 export function initRegistryFactory(packageRepository: PackageRepository): void {
   if (initialized) {
@@ -33,9 +33,9 @@ export function initRegistryFactory(packageRepository: PackageRepository): void 
 }
 
 /**
- * 获取 Registry Provider
- * @param type - Provider 类型,默认为 FEDERATED
- * @returns Registry Provider 实例
+ * Get Registry Provider
+ * @param type - Provider type, defaults to FEDERATED
+ * @returns Registry Provider instance
  */
 export function getRegistryProvider(type: RegistryProviderType = "FEDERATED"): IRegistryProvider {
   if (!initialized || !localProvider || !officialProvider || !federatedProvider) {
@@ -55,7 +55,7 @@ export function getRegistryProvider(type: RegistryProviderType = "FEDERATED"): I
 }
 
 /**
- * 重置工厂(主要用于测试)
+ * Reset factory (mainly used for testing)
  */
 export function resetRegistryFactory(): void {
   localProvider = null;
