@@ -6,10 +6,10 @@
 
 [![Product Hunt](https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=997428&theme=light&period=daily)](https://www.producthunt.com/products/toolsdk-ai)
 
-![How many MCP Servers in ToolSDK MCP Registry](https://img.shields.io/badge/MCP_Servers-4108-blue)
+![How many MCP Servers in ToolSDK MCP Registry](https://img.shields.io/badge/MCP_Servers-4109-blue)
 ![toolsdk-mcp-registry License](https://img.shields.io/badge/LICENSE-MIT-ff69b4)
 
-🚀 **Open-source**, **production-ready**, and **developer-friendly** registry for 4108+ Model Context Protocol (MCP) servers, plugins, and AI agent tools.
+🚀 **Open-source**, **production-ready**, and **developer-friendly** registry for 4109+ Model Context Protocol (MCP) servers, plugins, and AI agent tools.
 
 Perfect for **AI automation**, **chatbot development**, **LLM integrations**, and **enterprise AI deployments**.
 
@@ -24,7 +24,7 @@ Perfect for **AI automation**, **chatbot development**, **LLM integrations**, an
 ### 🎯 Key Features
 
 - 🔐 **Private & Self-Hosted** - Deploy your own secure MCP registry with Docker in minutes
-- 🤖 **4108+ AI Tools** - Largest curated collection of MCP servers for Claude, LLMs, and AI agents
+- 🤖 **4109+ AI Tools** - Largest curated collection of MCP servers for Claude, LLMs, and AI agents
 - ⚡ **Remote Execution** - Run MCP tools in isolated sandbox environments via REST API
 - 🔍 **Powerful Search** - Fast, full-text search powered by Meilisearch
 - 📦 **NPM Integration** - Use as a TypeScript/Node.js SDK in your projects
@@ -46,7 +46,7 @@ Perfect for **AI automation**, **chatbot development**, **LLM integrations**, an
 
 This open-source registry provides:
 
-- 📚 **Structured Database** - 4108+ validated MCP servers with metadata
+- 📚 **Structured Database** - 4109+ validated MCP servers with metadata
 - 🔗 **Multiple Formats** - JSON, npm package, and generated documentation
 - 🌐 **REST API** - Query and execute tools remotely
 - 📖 **Auto-Generated Docs** - Always up-to-date README and API documentation
@@ -134,7 +134,7 @@ That's it! Your self-hosted MCP registry is now running with:
 
 - 🌐 **Web Interface**: http://localhost:3003
 - 📚 **Swagger API Docs**: http://localhost:3003/swagger  
-- 🔍 **Search & Execute** 4108+ MCP tools remotely
+- 🔍 **Search & Execute** 4109+ MCP tools remotely
 - 🤖 **Integrate** with your AI agents, chatbots, and LLM applications
 
 #### 💻 Remote Tool Execution Example
@@ -241,7 +241,7 @@ Help grow the world's largest open-source MCP registry! Share your AI tools, plu
 
 - [Fork this repository](https://github.com/toolsdk-ai/toolsdk-mcp-registry/fork)
 - Create `your-mcp-server.json` in [packages/uncategorized](./packages/uncategorized)
-- Submit a PR and join 4108+ MCP servers!
+- Submit a PR and join 4109+ MCP servers!
 
 **3. Get Discovered**
 
@@ -259,9 +259,9 @@ Your MCP server will be:
 
 ## 📋 MCP Servers Directory
 
-**4108+ AI Agent Tools, LLM Integrations & Automation Servers**
+**4109+ AI Agent Tools, LLM Integrations & Automation Servers**
 
-- ✅ **Validated & Tested** (709) - Production-ready MCP servers
+- ✅ **Validated & Tested** (710) - Production-ready MCP servers
 - ⚙️ **Community Contributed** (3399) - Requires configuration
 
 Browse by category: Developer Tools, AI Agents, Databases, Cloud Platforms, APIs, and more!
@@ -970,6 +970,7 @@ Run code securely, perfect for coding agents and AI-driven programming tasks.
 - [✅ node-code-sandbox-mcp](https://github.com/ssdeanx/node-code-sandbox-mcp): Provides a secure Docker-based environment for executing Node.js code with npm dependencies, shell commands, and file operations while maintaining proper isolation for testing and web development prototyping.  (7 tools) (node) 
 - [✅ nrepl-mcp-server](https://github.com/johancodinha/nrepl-mcp-server): Integrates with Clojure nREPL instances to enable code evaluation, namespace listing, and public var inspection for AI-assisted Clojure development.  (3 tools) (node) 
 - [✅ python-local](https://github.com/alec2435/python_mcp): Provides an interactive Python REPL environment for executing code within conversations, maintaining separate state for each session and supporting both expressions and statements.  (1 tools) (python) 
+- [✅ sandock-mcp](https://github.com/sandock-ai/sandock): A Model Context Protocol server for running code in a secure sandbox by Sandock.  (1 tools) (node) 
 - [❌ @pydantic/mcp-run-python](https://github.com/pydantic/pydantic-ai/tree/HEAD/mcp-run-python): Provides a browser-compatible Python execution environment with package management capabilities for running code snippets safely without requiring a backend Python installation.  (node) 
 - [❌ @yepcode/mcp-server](https://github.com/yepcode/mcp-server-js): Enables secure execution of LLM-generated scripts and processes in isolated environments with environment variable management for teams needing to run code directly from AI assistants.  (node) 
 - [❌ ai-meta-tool-creator](https://github.com/alxspiker/ai-meta-mcp-server): Enables AI to dynamically create, execute, and manage custom tools in a secure sandbox environment for JavaScript, Python, or shell code with persistent storage capabilities.  (node) 
@@ -3844,8 +3845,8 @@ Get travel schedules, routes, and real-time transportation data.
 - [✅ @mfukushim/map-traveler-mcp](https://github.com/mfukushim/map-traveler-mcp): Integrates with Google Maps to create virtual travel experiences where users can navigate real-world routes with customizable avatars, discover nearby facilities, and share journeys on Bluesky.  (8 tools) (node) 
 - [✅ @openbnb/mcp-server-airbnb](https://github.com/openbnb-org/mcp-server-airbnb): Integrates with Airbnb to enable vacation rental search and detailed property information retrieval without requiring API keys  (2 tools) (node) 
 - [✅ @variflight-ai/variflight-mcp](https://github.com/variflight/variflight-mcp): Integrates with Variflight API to provide real-time flight information, schedules, aircraft tracking, airport weather forecasts, and comfort metrics for travel planning and aviation monitoring applications.  (8 tools) (node) 
-- [✅ 12306-mcp](https://github.com/freestylefly/12306-mcp): Integrates with China's 12306 railway system to search train tickets, check schedules, and retrieve route information across the Chinese railway network with real-time availability and pricing data.  (8 tools) (node) 
-- [✅ 12306-mcp](https://github.com/freestylefly/12306-mcp): Integrates with China's 12306 railway system to search train tickets, check schedules, and retrieve route information across the Chinese railway network with real-time availability and pricing data.  (8 tools) (node) 
+- [✅ 12306-mcp](https://github.com/Joooook/12306-mcp): A 12306 ticket search server based on the Model Context Protocol (MCP). The server provides a simple API interface that allows users to search for 12306 tickets.  (8 tools) (node) 
+- [✅ 12306-mcp](https://github.com/Joooook/12306-mcp): A 12306 ticket search server based on the Model Context Protocol (MCP). The server provides a simple API interface that allows users to search for 12306 tickets.  (8 tools) (node) 
 - [✅ caltrain-mcp](https://github.com/davidyen1124/caltrain-mcp): Provides real-time Caltrain commuter rail information including schedules, station details, and trip planning for the San Francisco Bay Area  (2 tools) (python) 
 - [✅ lumbretravel-mcp](https://github.com/lumile/lumbretravel-mcp): Integrates with the Argentinian LumbreTravel API to manage travel programs, activities, and bookings for efficient itinerary planning and service coordination.  (68 tools) (node) 
 - [✅ train_12306](https://github.com/ecmadao/Train-12306): A command line tool to show 12306 tickets  (4 tools) (python) 

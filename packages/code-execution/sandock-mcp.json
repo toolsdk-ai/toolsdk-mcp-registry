@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "packageName": "sandock-mcp",
+  "description": "A Model Context Protocol server for running code in a secure sandbox by Sandock.",
+  "url": "https://github.com/sandock-ai/sandock",
+  "runtime": "node",
+  "license": "mit",
+  "env": {
+    "SANDOCK_API_KEY": {
+      "description": "API key for authenticating with the Sandock service.",
+      "required": true
+    }
+  },
+  "name": "Sandock MCP"
+}
