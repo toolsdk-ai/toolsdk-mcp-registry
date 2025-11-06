@@ -9,7 +9,7 @@ import { PackageSO } from "./package-so";
 const __dirname = getDirname(import.meta.url);
 
 const packagesDir = path.join(__dirname, "../../../packages");
-const repository = new PackageRepository(packagesDir);
+export const repository = new PackageRepository(packagesDir);
 
 export const packageHandler = {
   getPackageDetail: async (packageName: string, sandboxProvider?: MCPSandboxProvider) => {

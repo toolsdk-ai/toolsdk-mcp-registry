@@ -5,11 +5,16 @@ import { swaggerUI } from "@hono/swagger-ui";
 import { OpenAPIHono } from "@hono/zod-openapi";
 import type { Context } from "hono";
 import { configRoutes } from "../domains/config/config-route";
+import { repository } from "../domains/package/package-handler";
 import { packageRoutes } from "../domains/package/package-route";
+import { initRegistryFactory } from "../domains/registry/registry-factory";
 import { searchRoutes } from "../domains/search/search-route";
 import { SearchSO } from "../domains/search/search-so";
 import { getServerPort, isSearchEnabled } from "../shared/config/environment";
 import { getDirname } from "../shared/utils";
+
+// Initialize Registry Factory with the local repository
+initRegistryFactory(repository);
 
 const initializeSearchService = async () => {
   try {

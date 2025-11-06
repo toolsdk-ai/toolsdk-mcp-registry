@@ -717,6 +717,7 @@
       "dafny-verifier",
       "livecode.ch",
       "docker-executor",
+      "sandock-mcp",
       "@e2b/mcp-server",
       "@riza-io/riza-mcp",
       "ai-meta-tool-creator",

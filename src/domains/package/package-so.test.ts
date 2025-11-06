@@ -1,6 +1,7 @@
 import type { Tool } from "@modelcontextprotocol/sdk/types.js";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import type { ToolExecutor } from "../executor/executor-types";
+import { initRegistryFactory, resetRegistryFactory } from "../registry/registry-factory";
 import type { PackageRepository } from "./package-repository";
 import { PackageSO } from "./package-so";
 import type { MCPServerPackageConfig } from "./package-types";
@@ -10,12 +11,18 @@ describe("PackageSO", () => {
   let mockExecutor: ToolExecutor;
 
   beforeEach(() => {
+    // Reset factory before each test
+    resetRegistryFactory();
+
     // Mock PackageRepository
     mockRepository = {
       getPackageConfig: vi.fn(),
       getAllPackages: vi.fn(),
       exists: vi.fn(),
     } as unknown as PackageRepository;
+
+    // Initialize Registry Factory with mock repository
+    initRegistryFactory(mockRepository);
 
     // Mock ToolExecutor
     mockExecutor = {
@@ -41,6 +48,7 @@ describe("PackageSO", () => {
         validated: true,
       };
 
+      vi.spyOn(mockRepository, "exists").mockReturnValue(true);
       vi.spyOn(mockRepository, "getPackageConfig").mockReturnValue(mockConfig);
       vi.spyOn(mockRepository, "getAllPackages").mockReturnValue({
         [packageName]: mockPackageInfo,
@@ -55,6 +63,7 @@ describe("PackageSO", () => {
       expect(packageSO.description).toBe("A server for filesystem operations");
       expect(packageSO.category).toBe("filesystem");
       expect(packageSO.validated).toBe(true);
+      expect(mockRepository.exists).toHaveBeenCalledWith(packageName);
       expect(mockRepository.getPackageConfig).toHaveBeenCalledWith(packageName);
       expect(mockRepository.getAllPackages).toHaveBeenCalled();
     });
@@ -70,6 +79,7 @@ describe("PackageSO", () => {
         description: "A new package",
       };
 
+      vi.spyOn(mockRepository, "exists").mockReturnValue(true);
       vi.spyOn(mockRepository, "getPackageConfig").mockReturnValue(mockConfig);
       vi.spyOn(mockRepository, "getAllPackages").mockReturnValue({});
 
@@ -94,6 +104,7 @@ describe("PackageSO", () => {
         description: null,
       } as unknown as MCPServerPackageConfig;
 
+      vi.spyOn(mockRepository, "exists").mockReturnValue(true);
       vi.spyOn(mockRepository, "getPackageConfig").mockReturnValue(mockConfig);
       vi.spyOn(mockRepository, "getAllPackages").mockReturnValue({});
 
@@ -140,6 +151,7 @@ describe("PackageSO", () => {
         },
       ];
 
+      vi.spyOn(mockRepository, "exists").mockReturnValue(true);
       vi.spyOn(mockRepository, "getPackageConfig").mockReturnValue(mockConfig);
       vi.spyOn(mockRepository, "getAllPackages").mockReturnValue({});
       vi.spyOn(mockExecutor, "listTools").mockResolvedValue(mockTools);
@@ -168,6 +180,7 @@ describe("PackageSO", () => {
       };
       const errorMessage = "Failed to list tools";
 
+      vi.spyOn(mockRepository, "exists").mockReturnValue(true);
       vi.spyOn(mockRepository, "getPackageConfig").mockReturnValue(mockConfig);
       vi.spyOn(mockRepository, "getAllPackages").mockReturnValue({});
       vi.spyOn(mockExecutor, "listTools").mockRejectedValue(new Error(errorMessage));
@@ -196,6 +209,7 @@ describe("PackageSO", () => {
         description: "Test description",
       };
 
+      vi.spyOn(mockRepository, "exists").mockReturnValue(true);
       vi.spyOn(mockRepository, "getPackageConfig").mockReturnValue(mockConfig);
       vi.spyOn(mockRepository, "getAllPackages").mockReturnValue({});
       vi.spyOn(mockExecutor, "executeTool").mockResolvedValue(mockResult);
@@ -231,6 +245,7 @@ describe("PackageSO", () => {
         description: "Test description",
       };
 
+      vi.spyOn(mockRepository, "exists").mockReturnValue(true);
       vi.spyOn(mockRepository, "getPackageConfig").mockReturnValue(mockConfig);
       vi.spyOn(mockRepository, "getAllPackages").mockReturnValue({});
       vi.spyOn(mockExecutor, "executeTool").mockResolvedValue(mockResult);
@@ -265,6 +280,7 @@ describe("PackageSO", () => {
         description: "Test description",
       };
 
+      vi.spyOn(mockRepository, "exists").mockReturnValue(true);
       vi.spyOn(mockRepository, "getPackageConfig").mockReturnValue(mockConfig);
       vi.spyOn(mockRepository, "getAllPackages").mockReturnValue({});
       vi.spyOn(mockExecutor, "executeTool").mockRejectedValue(new Error(errorMessage));
@@ -303,6 +319,7 @@ describe("PackageSO", () => {
         },
       ];
 
+      vi.spyOn(mockRepository, "exists").mockReturnValue(true);
       vi.spyOn(mockRepository, "getPackageConfig").mockReturnValue(mockConfig);
       vi.spyOn(mockRepository, "getAllPackages").mockReturnValue({
         [packageName]: mockPackageInfo,
@@ -316,11 +333,11 @@ describe("PackageSO", () => {
 
       // Assert
       expect(detail).toEqual({
+        type: "mcp-server",
+        runtime: "node",
         name: "Test Package",
         packageName: "@test/package",
         description: "A test package for demonstration",
-        category: "testing",
-        validated: true,
         tools: mockTools,
       });
     });
@@ -336,6 +353,7 @@ describe("PackageSO", () => {
         description: "Test description",
       };
 
+      vi.spyOn(mockRepository, "exists").mockReturnValue(true);
       vi.spyOn(mockRepository, "getPackageConfig").mockReturnValue(mockConfig);
       vi.spyOn(mockRepository, "getAllPackages").mockReturnValue({});
       vi.spyOn(mockExecutor, "listTools").mockRejectedValue(new Error("Failed to get tools"));
@@ -371,6 +389,7 @@ describe("PackageSO", () => {
       };
       const mockTools: Tool[] = [];
 
+      vi.spyOn(mockRepository, "exists").mockReturnValue(true);
       vi.spyOn(mockRepository, "getPackageConfig").mockReturnValue(mockConfig);
       vi.spyOn(mockRepository, "getAllPackages").mockReturnValue({});
       vi.spyOn(mockExecutor, "listTools").mockResolvedValue(mockTools);
@@ -382,12 +401,12 @@ describe("PackageSO", () => {
 
       // Assert
       expect(detail).toEqual({
+        type: "mcp-server",
+        runtime: "node",
         name: "Minimal Package",
         packageName: "@test/minimal-package",
         description: "A minimal package",
-        category: undefined,
-        validated: undefined,
-        tools: mockTools,
+        tools: [],
       });
     });
   });
@@ -409,6 +428,7 @@ describe("PackageSO", () => {
         validated: false,
       };
 
+      vi.spyOn(mockRepository, "exists").mockReturnValue(true);
       vi.spyOn(mockRepository, "getPackageConfig").mockReturnValue(mockConfig);
       vi.spyOn(mockRepository, "getAllPackages").mockReturnValue({
         [packageName]: mockPackageInfo,
@@ -437,6 +457,7 @@ describe("PackageSO", () => {
         description: "Test description",
       };
 
+      vi.spyOn(mockRepository, "exists").mockReturnValue(true);
       vi.spyOn(mockRepository, "getPackageConfig").mockReturnValue(mockConfig);
       vi.spyOn(mockRepository, "getAllPackages").mockReturnValue({});
 

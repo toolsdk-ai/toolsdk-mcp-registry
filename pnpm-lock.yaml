@@ -7016,10 +7016,6 @@ packages:
     resolution: {integrity: sha512-JvKyB6YwS3quM+88JPR0axeRgvdDu3Pv6mdZUy+w4qVkCzGgumb9bXG/TmtDRQv+671yaofVfXSQmFLlWU5qPQ==}
     engines: {node: '>=18'}
 
-  '@modelcontextprotocol/sdk@1.20.2':
-    resolution: {integrity: sha512-6rqTdFt67AAAzln3NOKsXRmv5ZzPkgbfaebKBqUbts7vK1GZudqnrun5a8d3M/h955cam9RHZ6Jb4Y1XhnmFPg==}
-    engines: {node: '>=18'}
-
   '@modelcontextprotocol/sdk@1.21.0':
     resolution: {integrity: sha512-YFBsXJMFCyI1zP98u7gezMFKX4lgu/XpoZJk7ufI6UlFKXLj2hAMUuRlQX/nrmIPOmhRrG6tw2OQ2ZA/ZlXYpQ==}
     engines: {node: '>=18'}
@@ -16318,6 +16314,10 @@ packages:
     resolution: {integrity: sha512-sRFwRK6+j3KT7Jj4PTUJXzbHoGsE2KrZqheTy9zK/cfPvkP1J1Vhne9WVrpNAVUAe+iiXjvlP9gabqEhKisOYg==}
     hasBin: true
 
+  fastmcp@3.22.0:
+    resolution: {integrity: sha512-sRFwRK6+j3KT7Jj4PTUJXzbHoGsE2KrZqheTy9zK/cfPvkP1J1Vhne9WVrpNAVUAe+iiXjvlP9gabqEhKisOYg==}
+    hasBin: true
+
   fastq@1.19.1:
     resolution: {integrity: sha512-GwLTyxkCXjXbxqIhTsMI2Nui8huMPtnxg7krajPJAjnEG/iiOS7i+zCtWGZR9G0NBKbXKh6X9m9UIsYX/N6vvQ==}
 
@@ -20098,6 +20098,10 @@ packages:
 
   mcp-proxy@3.3.0:
     resolution: {integrity: sha512-xyFKQEZ64HC7lxScBHjb5fxiPoyJjjkPhwH5hWUT0oL/ttCpMGZDJrYZRGFKVJiLLkrZPAkHnMGkI+WMlyD/cg==}
+    hasBin: true
+
+  mcp-proxy@5.10.0:
+    resolution: {integrity: sha512-mbNKRWlh89gg8c659phTqCx6CyRseESzzvxRynFXkdRKoTLRWSn7PQKYfgGyw6j4gR2SxBod5IDGYjNSrF0UPw==}
     hasBin: true
 
   mcp-proxy@5.10.0:
@@ -27486,6 +27490,29 @@ packages:
       zod-to-json-schema:
         optional: true
 
+  xsschema@0.4.0-beta.5:
+    resolution: {integrity: sha512-73pYwf1hMy++7SnOkghJdgdPaGi+Y5I0SaO6rIlxb1ouV6tEyDbEcXP82kyr32KQVTlUbFj6qewi9eUVEiXm+g==}
+    peerDependencies:
+      '@valibot/to-json-schema': ^1.0.0
+      arktype: ^2.1.20
+      effect: ^3.16.0
+      sury: ^10.0.0
+      zod: ^3.25.0 || ^4.0.0
+      zod-to-json-schema: ^3.24.5
+    peerDependenciesMeta:
+      '@valibot/to-json-schema':
+        optional: true
+      arktype:
+        optional: true
+      effect:
+        optional: true
+      sury:
+        optional: true
+      zod:
+        optional: true
+      zod-to-json-schema:
+        optional: true
+
   xstream@11.14.0:
     resolution: {integrity: sha512-1bLb+kKKtKPbgTK6i/BaoAn03g47PpFstlbe1BA+y3pNS/LfvcaghS5BFf9+EE1J+KwSQsEpfJvFN5GqFtiNmw==}
 
@@ -27684,6 +27711,9 @@ packages:
 
   zod@4.0.17:
     resolution: {integrity: sha512-1PHjlYRevNxxdy2JZ8JcNAw7rX8V9P1AKkP+x/xZfxB0K5FYfuV+Ug6P/6NVSR2jHQ+FzDDoDHS04nYUsOIyLQ==}
+
+  zod@4.1.12:
+    resolution: {integrity: sha512-JInaHOamG8pt5+Ey8kGmdcAcg3OL9reK8ltczgHTAwNhMys/6ThXHityHxVV2p3fkw/c+MAvBHFVYHFZDmjMCQ==}
 
   zod@4.1.12:
     resolution: {integrity: sha512-JInaHOamG8pt5+Ey8kGmdcAcg3OL9reK8ltczgHTAwNhMys/6ThXHityHxVV2p3fkw/c+MAvBHFVYHFZDmjMCQ==}
@@ -31779,6 +31809,7 @@ snapshots:
       twitter-api-v2: 1.23.2
       zod: 3.25.76
     transitivePeerDependencies:
+      - '@cfworker/json-schema'
       - encoding
       - react
       - supports-color
@@ -32416,6 +32447,7 @@ snapshots:
       playwright: 1.53.1
       uuid: 11.1.0
     transitivePeerDependencies:
+      - '@cfworker/json-schema'
       - encoding
       - react
       - supports-color
@@ -35518,6 +35550,7 @@ snapshots:
       twitter-api-v2: 1.23.2
       zod: 3.25.76
     transitivePeerDependencies:
+      - '@cfworker/json-schema'
       - encoding
       - react
       - supports-color
@@ -36394,23 +36427,6 @@ snapshots:
       - supports-color
 
   '@modelcontextprotocol/sdk@1.18.0':
-    dependencies:
-      ajv: 6.12.6
-      content-type: 1.0.5
-      cors: 2.8.5
-      cross-spawn: 7.0.6
-      eventsource: 3.0.7
-      eventsource-parser: 3.0.3
-      express: 5.1.0
-      express-rate-limit: 7.5.1(express@5.1.0)
-      pkce-challenge: 5.0.0
-      raw-body: 3.0.0
-      zod: 3.25.76
-      zod-to-json-schema: 3.24.6(zod@3.25.76)
-    transitivePeerDependencies:
-      - supports-color
-
-  '@modelcontextprotocol/sdk@1.20.2':
     dependencies:
       ajv: 6.12.6
       content-type: 1.0.5
@@ -49600,6 +49616,29 @@ snapshots:
       - supports-color
       - sury
 
+  fastmcp@3.22.0(@cfworker/json-schema@4.1.1)(effect@3.16.10):
+    dependencies:
+      '@modelcontextprotocol/sdk': 1.21.0(@cfworker/json-schema@4.1.1)
+      '@standard-schema/spec': 1.0.0
+      execa: 9.6.0
+      file-type: 21.0.0
+      fuse.js: 7.1.0
+      mcp-proxy: 5.10.0
+      strict-event-emitter-types: 2.0.0
+      undici: 7.15.0
+      uri-templates: 0.2.0
+      xsschema: 0.4.0-beta.5(effect@3.16.10)(zod-to-json-schema@3.24.6(zod@3.25.76))(zod@3.25.76)
+      yargs: 18.0.0
+      zod: 3.25.76
+      zod-to-json-schema: 3.24.6(zod@3.25.76)
+    transitivePeerDependencies:
+      - '@cfworker/json-schema'
+      - '@valibot/to-json-schema'
+      - arktype
+      - effect
+      - supports-color
+      - sury
+
   fastq@1.19.1:
     dependencies:
       reusify: 1.1.0
@@ -54388,7 +54427,7 @@ snapshots:
       '@actions/core': 1.11.1
       '@ai-sdk/openai': 1.3.22(zod@3.25.76)
       '@anthropic-ai/sdk': 0.8.1(encoding@0.1.13)
-      '@modelcontextprotocol/sdk': 1.20.2
+      '@modelcontextprotocol/sdk': 1.21.0(@cfworker/json-schema@4.1.1)
       ai: 4.3.16(react@18.3.1)(zod@3.25.76)
       chalk: 4.1.2
       dotenv: 16.6.1
@@ -54396,6 +54435,7 @@ snapshots:
       react: 18.3.1
       tsx: 4.20.3
     transitivePeerDependencies:
+      - '@cfworker/json-schema'
       - encoding
       - supports-color
       - ws
@@ -54723,6 +54763,8 @@ snapshots:
     transitivePeerDependencies:
       - '@cfworker/json-schema'
       - supports-color
+
+  mcp-proxy@5.10.0: {}
 
   mcp-proxy@5.10.0: {}
 
@@ -64475,6 +64517,12 @@ snapshots:
       zod: 3.25.76
       zod-to-json-schema: 3.24.6(zod@3.25.76)
 
+  xsschema@0.4.0-beta.5(effect@3.16.10)(zod-to-json-schema@3.24.6(zod@3.25.76))(zod@3.25.76):
+    optionalDependencies:
+      effect: 3.16.10
+      zod: 3.25.76
+      zod-to-json-schema: 3.24.6(zod@3.25.76)
+
   xstream@11.14.0:
     dependencies:
       globalthis: 1.0.4
@@ -64682,6 +64730,8 @@ snapshots:
   zod@3.25.76: {}
 
   zod@4.0.17: {}
+
+  zod@4.1.12: {}
 
   zod@4.1.12: {}
 
