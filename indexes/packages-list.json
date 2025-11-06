@@ -47448,12 +47448,12 @@
     "tools": {}
   },
   "sandock-mcp": {
-    "path": "code-execution/sandock-mcp.json",
     "category": "code-execution",
+    "path": "code-execution/sandock-mcp.json",
     "tools": {
       "sandock_run_code": {
         "name": "sandock_run_code",
-        "description": "Execute code (JavaScript, TypeScript, or Python) in an isolated sandbox environment"
+        "description": "Execute code (JavaScript, TypeScript, or Python) in an isolated sandbox environment. Output results using console.log() for JS/TS or print() for Python."
       }
     },
     "validated": true

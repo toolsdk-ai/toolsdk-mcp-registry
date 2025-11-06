@@ -1629,8 +1629,8 @@ importers:
         specifier: ^0.2.2
         version: 0.2.2
       sandock-mcp:
-        specifier: 0.1.0
-        version: 0.1.0(@cfworker/json-schema@4.1.1)(effect@3.16.10)
+        specifier: 0.1.2
+        version: 0.1.2(@cfworker/json-schema@4.1.1)(effect@3.16.10)
       scrapeless-mcp-server:
         specifier: 0.3.0
         version: 0.3.0(@cfworker/json-schema@4.1.1)
@@ -24217,8 +24217,8 @@ packages:
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  sandock-mcp@0.1.0:
-    resolution: {integrity: sha512-XzokK3Ar+1YFR5nNc77Otr7UFPRdgPJCxkd5Mk13DQtRFM+EA3JCTyIB9j+6WTbhlQJCG1618B3Nnu6w4hBbNw==}
+  sandock-mcp@0.1.2:
+    resolution: {integrity: sha512-vbNJ0qYF1FaClHUnMIkkugYs8QhKiCQMBWliURz5FSM+NaB8Y5i7w1L5ATYZLuGFiCXuMTbzPAxaGWX+8QMGvg==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -60527,7 +60527,7 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  sandock-mcp@0.1.0(@cfworker/json-schema@4.1.1)(effect@3.16.10):
+  sandock-mcp@0.1.2(@cfworker/json-schema@4.1.1)(effect@3.16.10):
     dependencies:
       fastmcp: 3.22.0(@cfworker/json-schema@4.1.1)(effect@3.16.10)
       sandock: 0.2.2
