@@ -199,10 +199,10 @@ importers:
         version: 0.2.0
       '@enescinar/twitter-mcp':
         specifier: 0.2.0
-        version: 0.2.0(encoding@0.1.13)(react@18.3.1)(ws@7.5.10(bufferutil@4.0.9)(utf-8-validate@5.0.10))
+        version: 0.2.0(@cfworker/json-schema@4.1.1)(encoding@0.1.13)(react@18.3.1)(ws@7.5.10(bufferutil@4.0.9)(utf-8-validate@5.0.10))
       '@executeautomation/playwright-mcp-server':
         specifier: 1.0.6
-        version: 1.0.6(encoding@0.1.13)(react@18.3.1)(ws@7.5.10(bufferutil@4.0.9)(utf-8-validate@5.0.10))(zod@3.25.76)
+        version: 1.0.6(@cfworker/json-schema@4.1.1)(encoding@0.1.13)(react@18.3.1)(ws@7.5.10(bufferutil@4.0.9)(utf-8-validate@5.0.10))(zod@3.25.76)
       '@exoticknight/mcp-file-merger':
         specifier: 1.0.1
         version: 1.0.1(@cfworker/json-schema@4.1.1)
@@ -442,7 +442,7 @@ importers:
         version: 0.2.18
       '@mbelinky/x-mcp-server':
         specifier: 1.1.0
-        version: 1.1.0(encoding@0.1.13)(react@18.3.1)(ws@7.5.10(bufferutil@4.0.9)(utf-8-validate@5.0.10))
+        version: 1.1.0(@cfworker/json-schema@4.1.1)(encoding@0.1.13)(react@18.3.1)(ws@7.5.10(bufferutil@4.0.9)(utf-8-validate@5.0.10))
       '@mcp-devtools/jira':
         specifier: 0.2.6
         version: 0.2.6
@@ -16314,10 +16314,6 @@ packages:
     resolution: {integrity: sha512-sRFwRK6+j3KT7Jj4PTUJXzbHoGsE2KrZqheTy9zK/cfPvkP1J1Vhne9WVrpNAVUAe+iiXjvlP9gabqEhKisOYg==}
     hasBin: true
 
-  fastmcp@3.22.0:
-    resolution: {integrity: sha512-sRFwRK6+j3KT7Jj4PTUJXzbHoGsE2KrZqheTy9zK/cfPvkP1J1Vhne9WVrpNAVUAe+iiXjvlP9gabqEhKisOYg==}
-    hasBin: true
-
   fastq@1.19.1:
     resolution: {integrity: sha512-GwLTyxkCXjXbxqIhTsMI2Nui8huMPtnxg7krajPJAjnEG/iiOS7i+zCtWGZR9G0NBKbXKh6X9m9UIsYX/N6vvQ==}
 
@@ -20098,10 +20094,6 @@ packages:
 
   mcp-proxy@3.3.0:
     resolution: {integrity: sha512-xyFKQEZ64HC7lxScBHjb5fxiPoyJjjkPhwH5hWUT0oL/ttCpMGZDJrYZRGFKVJiLLkrZPAkHnMGkI+WMlyD/cg==}
-    hasBin: true
-
-  mcp-proxy@5.10.0:
-    resolution: {integrity: sha512-mbNKRWlh89gg8c659phTqCx6CyRseESzzvxRynFXkdRKoTLRWSn7PQKYfgGyw6j4gR2SxBod5IDGYjNSrF0UPw==}
     hasBin: true
 
   mcp-proxy@5.10.0:
@@ -27490,29 +27482,6 @@ packages:
       zod-to-json-schema:
         optional: true
 
-  xsschema@0.4.0-beta.5:
-    resolution: {integrity: sha512-73pYwf1hMy++7SnOkghJdgdPaGi+Y5I0SaO6rIlxb1ouV6tEyDbEcXP82kyr32KQVTlUbFj6qewi9eUVEiXm+g==}
-    peerDependencies:
-      '@valibot/to-json-schema': ^1.0.0
-      arktype: ^2.1.20
-      effect: ^3.16.0
-      sury: ^10.0.0
-      zod: ^3.25.0 || ^4.0.0
-      zod-to-json-schema: ^3.24.5
-    peerDependenciesMeta:
-      '@valibot/to-json-schema':
-        optional: true
-      arktype:
-        optional: true
-      effect:
-        optional: true
-      sury:
-        optional: true
-      zod:
-        optional: true
-      zod-to-json-schema:
-        optional: true
-
   xstream@11.14.0:
     resolution: {integrity: sha512-1bLb+kKKtKPbgTK6i/BaoAn03g47PpFstlbe1BA+y3pNS/LfvcaghS5BFf9+EE1J+KwSQsEpfJvFN5GqFtiNmw==}
 
@@ -27711,9 +27680,6 @@ packages:
 
   zod@4.0.17:
     resolution: {integrity: sha512-1PHjlYRevNxxdy2JZ8JcNAw7rX8V9P1AKkP+x/xZfxB0K5FYfuV+Ug6P/6NVSR2jHQ+FzDDoDHS04nYUsOIyLQ==}
-
-  zod@4.1.12:
-    resolution: {integrity: sha512-JInaHOamG8pt5+Ey8kGmdcAcg3OL9reK8ltczgHTAwNhMys/6ThXHityHxVV2p3fkw/c+MAvBHFVYHFZDmjMCQ==}
 
   zod@4.1.12:
     resolution: {integrity: sha512-JInaHOamG8pt5+Ey8kGmdcAcg3OL9reK8ltczgHTAwNhMys/6ThXHityHxVV2p3fkw/c+MAvBHFVYHFZDmjMCQ==}
@@ -31801,11 +31767,11 @@ snapshots:
       tslib: 2.8.1
     optional: true
 
-  '@enescinar/twitter-mcp@0.2.0(encoding@0.1.13)(react@18.3.1)(ws@7.5.10(bufferutil@4.0.9)(utf-8-validate@5.0.10))':
+  '@enescinar/twitter-mcp@0.2.0(@cfworker/json-schema@4.1.1)(encoding@0.1.13)(react@18.3.1)(ws@7.5.10(bufferutil@4.0.9)(utf-8-validate@5.0.10))':
     dependencies:
       '@modelcontextprotocol/sdk': 0.6.0
       dotenv: 16.6.1
-      mcp-evals: 1.0.18(encoding@0.1.13)(react@18.3.1)(ws@7.5.10(bufferutil@4.0.9)(utf-8-validate@5.0.10))(zod@3.25.76)
+      mcp-evals: 1.0.18(@cfworker/json-schema@4.1.1)(encoding@0.1.13)(react@18.3.1)(ws@7.5.10(bufferutil@4.0.9)(utf-8-validate@5.0.10))(zod@3.25.76)
       twitter-api-v2: 1.23.2
       zod: 3.25.76
     transitivePeerDependencies:
@@ -32436,14 +32402,14 @@ snapshots:
       '@ethersproject/properties': 5.8.0
       '@ethersproject/strings': 5.8.0
 
-  '@executeautomation/playwright-mcp-server@1.0.6(encoding@0.1.13)(react@18.3.1)(ws@7.5.10(bufferutil@4.0.9)(utf-8-validate@5.0.10))(zod@3.25.76)':
+  '@executeautomation/playwright-mcp-server@1.0.6(@cfworker/json-schema@4.1.1)(encoding@0.1.13)(react@18.3.1)(ws@7.5.10(bufferutil@4.0.9)(utf-8-validate@5.0.10))(zod@3.25.76)':
     dependencies:
       '@modelcontextprotocol/sdk': 1.11.1
       '@playwright/browser-chromium': 1.53.1
       '@playwright/browser-firefox': 1.53.1
       '@playwright/browser-webkit': 1.53.1
       '@playwright/test': 1.53.2
-      mcp-evals: 1.0.18(encoding@0.1.13)(react@18.3.1)(ws@7.5.10(bufferutil@4.0.9)(utf-8-validate@5.0.10))(zod@3.25.76)
+      mcp-evals: 1.0.18(@cfworker/json-schema@4.1.1)(encoding@0.1.13)(react@18.3.1)(ws@7.5.10(bufferutil@4.0.9)(utf-8-validate@5.0.10))(zod@3.25.76)
       playwright: 1.53.1
       uuid: 11.1.0
     transitivePeerDependencies:
@@ -35542,11 +35508,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@mbelinky/x-mcp-server@1.1.0(encoding@0.1.13)(react@18.3.1)(ws@7.5.10(bufferutil@4.0.9)(utf-8-validate@5.0.10))':
+  '@mbelinky/x-mcp-server@1.1.0(@cfworker/json-schema@4.1.1)(encoding@0.1.13)(react@18.3.1)(ws@7.5.10(bufferutil@4.0.9)(utf-8-validate@5.0.10))':
     dependencies:
       '@modelcontextprotocol/sdk': 0.6.0
       dotenv: 16.6.1
-      mcp-evals: 1.0.18(encoding@0.1.13)(react@18.3.1)(ws@7.5.10(bufferutil@4.0.9)(utf-8-validate@5.0.10))(zod@3.25.76)
+      mcp-evals: 1.0.18(@cfworker/json-schema@4.1.1)(encoding@0.1.13)(react@18.3.1)(ws@7.5.10(bufferutil@4.0.9)(utf-8-validate@5.0.10))(zod@3.25.76)
       twitter-api-v2: 1.23.2
       zod: 3.25.76
     transitivePeerDependencies:
@@ -49616,29 +49582,6 @@ snapshots:
       - supports-color
       - sury
 
-  fastmcp@3.22.0(@cfworker/json-schema@4.1.1)(effect@3.16.10):
-    dependencies:
-      '@modelcontextprotocol/sdk': 1.21.0(@cfworker/json-schema@4.1.1)
-      '@standard-schema/spec': 1.0.0
-      execa: 9.6.0
-      file-type: 21.0.0
-      fuse.js: 7.1.0
-      mcp-proxy: 5.10.0
-      strict-event-emitter-types: 2.0.0
-      undici: 7.15.0
-      uri-templates: 0.2.0
-      xsschema: 0.4.0-beta.5(effect@3.16.10)(zod-to-json-schema@3.24.6(zod@3.25.76))(zod@3.25.76)
-      yargs: 18.0.0
-      zod: 3.25.76
-      zod-to-json-schema: 3.24.6(zod@3.25.76)
-    transitivePeerDependencies:
-      - '@cfworker/json-schema'
-      - '@valibot/to-json-schema'
-      - arktype
-      - effect
-      - supports-color
-      - sury
-
   fastq@1.19.1:
     dependencies:
       reusify: 1.1.0
@@ -54422,7 +54365,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  mcp-evals@1.0.18(encoding@0.1.13)(react@18.3.1)(ws@7.5.10(bufferutil@4.0.9)(utf-8-validate@5.0.10))(zod@3.25.76):
+  mcp-evals@1.0.18(@cfworker/json-schema@4.1.1)(encoding@0.1.13)(react@18.3.1)(ws@7.5.10(bufferutil@4.0.9)(utf-8-validate@5.0.10))(zod@3.25.76):
     dependencies:
       '@actions/core': 1.11.1
       '@ai-sdk/openai': 1.3.22(zod@3.25.76)
@@ -54763,8 +54706,6 @@ snapshots:
     transitivePeerDependencies:
       - '@cfworker/json-schema'
       - supports-color
-
-  mcp-proxy@5.10.0: {}
 
   mcp-proxy@5.10.0: {}
 
@@ -64517,12 +64458,6 @@ snapshots:
       zod: 3.25.76
       zod-to-json-schema: 3.24.6(zod@3.25.76)
 
-  xsschema@0.4.0-beta.5(effect@3.16.10)(zod-to-json-schema@3.24.6(zod@3.25.76))(zod@3.25.76):
-    optionalDependencies:
-      effect: 3.16.10
-      zod: 3.25.76
-      zod-to-json-schema: 3.24.6(zod@3.25.76)
-
   xstream@11.14.0:
     dependencies:
       globalthis: 1.0.4
@@ -64730,8 +64665,6 @@ snapshots:
   zod@3.25.76: {}
 
   zod@4.0.17: {}
-
-  zod@4.1.12: {}
 
   zod@4.1.12: {}
 
