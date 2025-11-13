@@ -42191,7 +42191,7 @@
   },
   "12306-mcp": {
     "category": "travel-transportation",
-    "path": "travel-transportation/12306-mcp.json",
+    "path": "travel-transportation/jok-12306-mcp.json",
     "validated": true,
     "tools": {
       "get-current-date": {
@@ -47450,12 +47450,32 @@
   "sandock-mcp": {
     "category": "code-execution",
     "path": "code-execution/sandock-mcp.json",
-    "validated": true,
     "tools": {
       "sandock_run_code": {
         "name": "sandock_run_code",
         "description": "Execute code (JavaScript, TypeScript, or Python) in an isolated sandbox environment. Output results using console.log() for JS/TS or print() for Python."
+      },
+      "sandock_create_sandbox": {
+        "name": "sandock_create_sandbox",
+        "description": "Create a new isolated sandbox environment for running code and commands. Returns a sandboxId that must be used in subsequent operations. Remember to delete the sandbox when done to prevent resource leaks."
+      },
+      "sandock_shell_exec": {
+        "name": "sandock_shell_exec",
+        "description": "Execute shell commands in the sandbox. Use for file operations (unzip, tar, grep, cat, ls), system commands, or running installed tools. The sandbox has common Linux utilities pre-installed."
+      },
+      "sandock_write_file": {
+        "name": "sandock_write_file",
+        "description": "Write text content to a file in the sandbox. Use for creating scripts, configuration files, or text data. For binary files (ZIP, images), use sandock_download_file instead."
+      },
+      "sandock_download_file": {
+        "name": "sandock_download_file",
+        "description": "Download a file from a URL into the sandbox. Use for importing user-uploaded files (ZIP, CSV, images, etc.). The file content never passes through the agent, avoiding token consumption. Supports large files."
+      },
+      "sandock_delete_sandbox": {
+        "name": "sandock_delete_sandbox",
+        "description": "Delete a sandbox and free resources. Always call this when you're done with a sandbox to prevent resource leaks and avoid unnecessary charges."
       }
-    }
+    },
+    "validated": true
   }
 }
