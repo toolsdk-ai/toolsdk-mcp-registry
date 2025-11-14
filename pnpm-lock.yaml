@@ -7016,15 +7016,6 @@ packages:
     resolution: {integrity: sha512-JvKyB6YwS3quM+88JPR0axeRgvdDu3Pv6mdZUy+w4qVkCzGgumb9bXG/TmtDRQv+671yaofVfXSQmFLlWU5qPQ==}
     engines: {node: '>=18'}
 
-  '@modelcontextprotocol/sdk@1.21.0':
-    resolution: {integrity: sha512-YFBsXJMFCyI1zP98u7gezMFKX4lgu/XpoZJk7ufI6UlFKXLj2hAMUuRlQX/nrmIPOmhRrG6tw2OQ2ZA/ZlXYpQ==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      '@cfworker/json-schema': ^4.1.1
-    peerDependenciesMeta:
-      '@cfworker/json-schema':
-        optional: true
-
   '@modelcontextprotocol/sdk@1.21.1':
     resolution: {integrity: sha512-UyLFcJLDvUuZbGnaQqXFT32CpPpGj7VS19roLut6gkQVhb439xUzYWbsUvdI3ZPL+2hnFosuugtYWE0Mcs1rmQ==}
     engines: {node: '>=18'}
@@ -30957,7 +30948,7 @@ snapshots:
 
   '@chatmcp/sdk@1.0.6(@cfworker/json-schema@4.1.1)':
     dependencies:
-      '@modelcontextprotocol/sdk': 1.21.0(@cfworker/json-schema@4.1.1)
+      '@modelcontextprotocol/sdk': 1.21.1(@cfworker/json-schema@4.1.1)
       content-type: 1.0.5
       express: 5.1.0
       raw-body: 3.0.0
@@ -36060,7 +36051,7 @@ snapshots:
       '@modelcontextprotocol/inspector-cli': 0.10.2(@cfworker/json-schema@4.1.1)
       '@modelcontextprotocol/inspector-client': 0.10.2(@cfworker/json-schema@4.1.1)(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.4.14(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3)))
       '@modelcontextprotocol/inspector-server': 0.10.2(@cfworker/json-schema@4.1.1)(bufferutil@4.0.9)(utf-8-validate@5.0.10)
-      '@modelcontextprotocol/sdk': 1.21.0(@cfworker/json-schema@4.1.1)
+      '@modelcontextprotocol/sdk': 1.21.1(@cfworker/json-schema@4.1.1)
       concurrently: 9.2.0
       shell-quote: 1.8.3
       spawn-rx: 5.1.2
@@ -36415,26 +36406,6 @@ snapshots:
       raw-body: 3.0.0
       zod: 3.25.76
       zod-to-json-schema: 3.24.6(zod@3.25.76)
-    transitivePeerDependencies:
-      - supports-color
-
-  '@modelcontextprotocol/sdk@1.21.0(@cfworker/json-schema@4.1.1)':
-    dependencies:
-      ajv: 8.17.1
-      ajv-formats: 3.0.1(ajv@8.17.1)
-      content-type: 1.0.5
-      cors: 2.8.5
-      cross-spawn: 7.0.6
-      eventsource: 3.0.7
-      eventsource-parser: 3.0.3
-      express: 5.1.0
-      express-rate-limit: 7.5.1(express@5.1.0)
-      pkce-challenge: 5.0.0
-      raw-body: 3.0.0
-      zod: 3.25.76
-      zod-to-json-schema: 3.24.6(zod@3.25.76)
-    optionalDependencies:
-      '@cfworker/json-schema': 4.1.1
     transitivePeerDependencies:
       - supports-color
 
@@ -40764,7 +40735,7 @@ snapshots:
   '@smithery/sdk@1.4.3(@cfworker/json-schema@4.1.1)(encoding@0.1.13)(react@18.3.1)(ws@7.5.10(bufferutil@4.0.9)(utf-8-validate@5.0.10))':
     dependencies:
       '@anthropic-ai/sdk': 0.32.1(encoding@0.1.13)
-      '@modelcontextprotocol/sdk': 1.21.0(@cfworker/json-schema@4.1.1)
+      '@modelcontextprotocol/sdk': 1.21.1(@cfworker/json-schema@4.1.1)
       ai: 4.3.19(react@18.3.1)(zod@3.25.76)
       express: 5.1.0
       json-schema: 0.4.0
@@ -40784,7 +40755,7 @@ snapshots:
   '@smithery/sdk@1.5.6(@cfworker/json-schema@4.1.1)(encoding@0.1.13)(react@18.3.1)(ws@7.5.10(bufferutil@4.0.9)(utf-8-validate@5.0.10))':
     dependencies:
       '@anthropic-ai/sdk': 0.32.1(encoding@0.1.13)
-      '@modelcontextprotocol/sdk': 1.21.0(@cfworker/json-schema@4.1.1)
+      '@modelcontextprotocol/sdk': 1.21.1(@cfworker/json-schema@4.1.1)
       ai: 4.3.19(react@18.3.1)(zod@3.25.76)
       express: 5.1.0
       json-schema: 0.4.0
@@ -44088,7 +44059,7 @@ snapshots:
 
   agents@0.0.109(@cfworker/json-schema@4.1.1)(@cloudflare/workers-types@4.20250627.0)(react@18.3.1):
     dependencies:
-      '@modelcontextprotocol/sdk': 1.21.0(@cfworker/json-schema@4.1.1)
+      '@modelcontextprotocol/sdk': 1.21.1(@cfworker/json-schema@4.1.1)
       ai: 4.3.16(react@18.3.1)(zod@3.25.76)
       cron-schedule: 5.0.4
       mimetext: 3.0.27
@@ -44104,7 +44075,7 @@ snapshots:
 
   agents@0.0.59(@cfworker/json-schema@4.1.1)(@cloudflare/workers-types@4.20250627.0):
     dependencies:
-      '@modelcontextprotocol/sdk': 1.21.0(@cfworker/json-schema@4.1.1)
+      '@modelcontextprotocol/sdk': 1.21.1(@cfworker/json-schema@4.1.1)
       cron-schedule: 5.0.4
       nanoid: 5.1.5
       partyserver: 0.0.66(@cloudflare/workers-types@4.20250627.0)
@@ -45453,7 +45424,7 @@ snapshots:
   base-network-mcp-server@0.1.0(@aws-sdk/credential-providers@3.835.0)(@azure/identity@4.10.1)(@azure/storage-blob@12.26.0)(@cfworker/json-schema@4.1.1)(@types/react@19.1.8)(aws4fetch@1.0.20)(bufferutil@4.0.9)(encoding@0.1.13)(gcp-metadata@5.3.0(encoding@0.1.13))(immer@10.1.1)(ioredis@5.5.0)(kerberos@2.2.2)(mongodb-client-encryption@6.5.0)(react@18.3.1)(socks@2.8.5)(typescript@5.8.3)(uploadthing@7.7.3(express@5.1.0)(h3@1.15.3)(next@15.5.2(@babel/core@7.21.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.4.14(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))(utf-8-validate@5.0.10)(zod@3.25.76):
     dependencies:
       '@modelcontextprotocol/sdk': 1.21.1(@cfworker/json-schema@4.1.1)
-      '@wagmi/core': 1.4.13(@azure/identity@4.10.1)(@azure/storage-blob@12.26.0)(@types/react@19.1.8)(aws4fetch@1.0.20)(bufferutil@4.0.9)(encoding@0.1.13)(immer@10.1.1)(ioredis@5.5.0)(react@18.3.1)(typescript@5.8.3)(uploadthing@7.7.3(express@5.1.0)(h3@1.15.3)(next@15.5.2(@babel/core@7.21.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.4.14(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))(utf-8-validate@5.0.10)(viem@1.21.4(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10)(zod@3.25.76))(zod@3.25.76)
+      '@wagmi/core': 1.4.13(@azure/identity@4.10.1)(@azure/storage-blob@12.26.0)(@types/react@19.1.8)(aws4fetch@1.0.20)(bufferutil@4.0.9)(encoding@0.1.13)(immer@10.1.1)(ioredis@5.5.0)(react@18.3.1)(typescript@5.8.3)(uploadthing@7.7.3(express@5.1.0)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.4.14(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))(utf-8-validate@5.0.10)(viem@1.21.4(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10)(zod@3.25.76))(zod@3.25.76)
       dotenv: 16.6.1
       ethers: 6.14.4(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       natural: 6.12.0(@aws-sdk/credential-providers@3.835.0)(gcp-metadata@5.3.0(encoding@0.1.13))(kerberos@2.2.2)(mongodb-client-encryption@6.5.0)(socks@2.8.5)
@@ -49522,7 +49493,7 @@ snapshots:
 
   fastmcp@1.27.7(@cfworker/json-schema@4.1.1)(effect@3.16.10):
     dependencies:
-      '@modelcontextprotocol/sdk': 1.21.0(@cfworker/json-schema@4.1.1)
+      '@modelcontextprotocol/sdk': 1.21.1(@cfworker/json-schema@4.1.1)
       '@standard-schema/spec': 1.0.0
       execa: 9.6.0
       file-type: 20.5.0
@@ -49544,7 +49515,7 @@ snapshots:
 
   fastmcp@2.2.4(@cfworker/json-schema@4.1.1)(effect@3.16.10):
     dependencies:
-      '@modelcontextprotocol/sdk': 1.21.0(@cfworker/json-schema@4.1.1)
+      '@modelcontextprotocol/sdk': 1.21.1(@cfworker/json-schema@4.1.1)
       '@standard-schema/spec': 1.0.0
       execa: 9.6.0
       file-type: 21.0.0
@@ -49567,7 +49538,7 @@ snapshots:
 
   fastmcp@3.15.2(@cfworker/json-schema@4.1.1)(effect@3.16.10):
     dependencies:
-      '@modelcontextprotocol/sdk': 1.21.0(@cfworker/json-schema@4.1.1)
+      '@modelcontextprotocol/sdk': 1.21.1(@cfworker/json-schema@4.1.1)
       '@standard-schema/spec': 1.0.0
       execa: 9.6.0
       file-type: 21.0.0
@@ -54347,7 +54318,7 @@ snapshots:
   mcp-deepwiki@0.0.9(@cfworker/json-schema@4.1.1)(canvas@3.1.2)(jiti@2.4.2)(typescript@5.8.3)(vitest@3.2.4):
     dependencies:
       '@chatmcp/sdk': 1.0.6(@cfworker/json-schema@4.1.1)
-      '@modelcontextprotocol/sdk': 1.21.0(@cfworker/json-schema@4.1.1)
+      '@modelcontextprotocol/sdk': 1.21.1(@cfworker/json-schema@4.1.1)
       '@vitest/eslint-plugin': 1.3.4(eslint@9.29.0(jiti@2.4.2))(typescript@5.8.3)(vitest@3.2.4)
       citty: 0.1.6
       eslint: 9.29.0(jiti@2.4.2)
@@ -54399,7 +54370,7 @@ snapshots:
       '@actions/core': 1.11.1
       '@ai-sdk/openai': 1.3.22(zod@3.25.76)
       '@anthropic-ai/sdk': 0.8.1(encoding@0.1.13)
-      '@modelcontextprotocol/sdk': 1.21.0(@cfworker/json-schema@4.1.1)
+      '@modelcontextprotocol/sdk': 1.21.1(@cfworker/json-schema@4.1.1)
       ai: 4.3.16(react@18.3.1)(zod@3.25.76)
       chalk: 4.1.2
       dotenv: 16.6.1
