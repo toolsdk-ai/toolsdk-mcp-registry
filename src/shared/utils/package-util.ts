@@ -15,7 +15,7 @@ export function updatePackageJsonDependencies({
   const newDeps = {
     "@daytonaio/sdk": "0.109.0",
     "@e2b/code-interpreter": "^2.0.0",
-    "@modelcontextprotocol/sdk": "^1.12.0",
+    "@modelcontextprotocol/sdk": "1.21.1",
     "@hono/node-server": "1.15.0",
     "@hono/swagger-ui": "^0.5.2",
     "@hono/zod-openapi": "^0.16.4",
