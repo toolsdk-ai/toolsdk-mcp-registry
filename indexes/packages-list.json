@@ -47453,27 +47453,27 @@
     "tools": {
       "sandock_run_code": {
         "name": "sandock_run_code",
-        "description": "Execute code (JavaScript, TypeScript, or Python) in an isolated sandbox environment. Output results using console.log() for JS/TS or print() for Python."
+        "description": "Execute Python code in a fresh, temporary sandbox. Each call creates a NEW sandbox - no context preserved between calls. Best for simple, self-contained tasks. Use print() for output. Auto-cleanup after execution. Environment: Python 3.11 on Debian Linux. Pre-installed packages (no pip install needed): numpy, pandas, requests, httpx, beautifulsoup4, lxml, openpyxl, python-docx, PyPDF2, pypdf, pillow, aiohttp, aiofiles, pyyaml, python-dotenv, chardet, jsonschema, pytz, python-dateutil."
       },
       "sandock_create_sandbox": {
         "name": "sandock_create_sandbox",
-        "description": "Create a new isolated sandbox environment for running code and commands. Returns a sandboxId that must be used in subsequent operations. Remember to delete the sandbox when done to prevent resource leaks."
+        "description": "Create a persistent sandbox that preserves context across multiple commands. Use when you need to: download files and process them, install packages and use them, or run multi-step workflows. Returns sandboxId. Must call sandock_delete_sandbox when done. Environment: Python 3.11 on Debian Linux. Pre-installed packages (no pip install needed): numpy, pandas, requests, httpx, beautifulsoup4, lxml, openpyxl, python-docx, PyPDF2, pypdf, pillow, aiohttp, aiofiles, pyyaml, python-dotenv, chardet, jsonschema, pytz, python-dateutil."
       },
       "sandock_shell_exec": {
         "name": "sandock_shell_exec",
-        "description": "Execute shell commands in the sandbox. Use for file operations (unzip, tar, grep, cat, ls), system commands, or running installed tools. The sandbox has common Linux utilities pre-installed."
+        "description": "Execute shell commands in a persistent sandbox. Context is preserved - files, installed packages, and changes persist. Requires sandboxId from sandock_create_sandbox. Environment: Python 3.11 on Debian Linux (standard Linux commands available). Pre-installed Python packages (no pip install needed): numpy, pandas, requests, httpx, beautifulsoup4, lxml, openpyxl, python-docx, PyPDF2, pypdf, pillow, aiohttp, aiofiles, pyyaml, python-dotenv, chardet, jsonschema, pytz, python-dateutil."
       },
       "sandock_write_file": {
         "name": "sandock_write_file",
-        "description": "Write text content to a file in the sandbox. Use for creating scripts, configuration files, or text data. For binary files (ZIP, images), use sandock_download_file instead."
+        "description": "Write text content to a file in a persistent sandbox. File persists for later use. Requires sandboxId from sandock_create_sandbox. Use for scripts, config files, text data. For binary files, use sandock_download_file."
       },
       "sandock_download_file": {
         "name": "sandock_download_file",
-        "description": "Download a file from a URL into the sandbox. Use for importing user-uploaded files (ZIP, CSV, images, etc.). The file content never passes through the agent, avoiding token consumption. Supports large files."
+        "description": "Download a file from URL into a persistent sandbox for later processing. File persists and can be processed in subsequent commands. Requires sandboxId from sandock_create_sandbox. Efficient for large files (content doesn't pass through agent)."
       },
       "sandock_delete_sandbox": {
         "name": "sandock_delete_sandbox",
-        "description": "Delete a sandbox and free resources. Always call this when you're done with a sandbox to prevent resource leaks and avoid unnecessary charges."
+        "description": "Delete a persistent sandbox and free resources. Call when finished with sandboxes created via sandock_create_sandbox. (sandock_run_code auto-cleans, no need to call this)."
       }
     },
     "validated": true
