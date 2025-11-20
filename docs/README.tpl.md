@@ -65,6 +65,7 @@ Perfect for **AI developers**, **LLM teams**, and **enterprises** building with 
 
 - Edit `.env` (optional): `SANDOCK_API_KEY=your-api-key-here`
 - *Note: You can skip this if you only need the Registry and Search features.*
+- *Note: If you do not want to use the sandbox, set `MCP_SANDBOX_PROVIDER=LOCAL` in `.env`.*
 
 **Step 2: Launch with Docker Compose**
 
