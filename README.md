@@ -52,13 +52,13 @@
 ### 🎯 Key Features
 
 - 🔐 **Private & Self-Hosted** - Deploy your own secure MCP registry with Docker in minutes
-- 🤖 **4109+ MCP Servers** - Largest curated collection of MCP servers for Claude, LLMs, and AI agents
+- 🤖 **4109+ MCP Servers** - Largest curated collection of MCP servers
 - ⚡ **Remote Execution** - Run MCP tools in isolated sandbox environments via REST API
 - 🔍 **Powerful Search** - Fast, full-text search powered by Meilisearch
 - 📦 **NPM Integration** - Use as a TypeScript/Node.js SDK in your projects
 - 🛠️ **Developer-Friendly** - OpenAPI/Swagger documentation, structured JSON configs
 - 🐳 **Docker Ready** - Production-grade deployment with Docker Compose
-- 🔌 **Plugin System** - Extensible architecture for custom integrations
+- 🔌 **Extensible Architecture** - Easily add new MCP servers via JSON config
 
 ### 💡 Use Cases
 
@@ -74,7 +74,7 @@
 
 This open-source registry provides:
 
-- 📚 **Structured Database** - 4109+ validated MCP servers with metadata
+- 📚 **Structured Registry** - 4109+ validated MCP servers with metadata
 - 🔗 **Multiple Formats** - JSON, npm package, and generated documentation
 - 🌐 **REST API** - Query and execute tools remotely
 - 📖 **Auto-Generated Docs** - Always up-to-date README and API documentation
@@ -166,11 +166,11 @@ That's it! Your self-hosted MCP registry is now running with:
 - 🌐 **REST API** with OpenAPI documentation
 - 🛡️ **Sandbox execution** for AI agent tools
 
-#### 🎉 Access Your Private AI Tool Registry
+#### 🎉 Access Your Private MCP Registry
 
-- 🌐 **Web Interface**: http://localhost:3003
+- 🌐 **Local Web Interface**: http://localhost:3003
 - 📚 **Swagger API Docs**: http://localhost:3003/swagger  
-- 🔍 **Search & Execute** 4109+ MCP tools remotely
+- 🔍 **Search & Execute** 4109+ MCP Servers remotely
 - 🤖 **Integrate** with your AI agents, chatbots, and LLM applications
 
 #### 💻 Remote Tool Execution Example
@@ -213,7 +213,7 @@ npm install @toolsdk.ai/registry
 Perfect for AI agent development, chatbot builders, and LLM tool integrations:
 
 ```ts
-import mcpServerLists from '@toolsdk.ai/registry/indexes/packages-lists.json';
+import mcpServerLists from '@toolsdk.ai/registry/indexes/packages-list.json';
 ```
 
 #### 🌐 Access via Public API (No Installation Required)
@@ -285,7 +285,7 @@ Your MCP server will be:
 - ✅ Listed in the registry
 - 🔍 Searchable via REST API
 - 📦 Available in npm package
-- 🌐 Featured on our website
+- 🌐 Featured on [ToolSDK.ai](https://toolsdk.ai)
 
 📖 **Detailed Guide**: [Contributing Documentation](./docs/guide.md)
 
