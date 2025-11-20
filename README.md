@@ -1,17 +1,45 @@
 <div align="center">
 
+<img src="docs/logo.png" width="120" alt="ToolSDK MCP Registry" />
+
 # ToolSDK MCP Registry
 
 **Your private, secure, and customizable MCP Registry — take full control of your tools.**
 
-[![Product Hunt](https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=997428&theme=light&period=daily)](https://www.producthunt.com/products/toolsdk-ai)
+<p align="center">
+  <a href="https://www.producthunt.com/products/toolsdk-ai">
+    <img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=997428&theme=light&period=daily" alt="Product Hunt" height="40" />
+  </a>
+</p>
 
-![How many MCP Servers in ToolSDK MCP Registry](https://img.shields.io/badge/MCP_Servers-4109-blue)
-![toolsdk-mcp-registry License](https://img.shields.io/badge/LICENSE-MIT-ff69b4)
+<p align="center">
+  <a href="https://www.npmjs.com/package/@toolsdk.ai/registry">
+    <img src="https://img.shields.io/npm/v/@toolsdk.ai/registry.svg?style=flat-square" alt="npm version" />
+  </a>
+  <a href="https://github.com/toolsdk-ai/toolsdk-mcp-registry/actions/workflows/test.yaml">
+    <img src="https://github.com/toolsdk-ai/toolsdk-mcp-registry/actions/workflows/test.yaml/badge.svg" alt="Build Status" />
+  </a>
+  <img src="https://img.shields.io/badge/MCP_Servers-4109-blue?style=flat-square" alt="MCP Servers Count" />
+  <img src="https://img.shields.io/badge/LICENSE-MIT-ff69b4?style=flat-square" alt="License" />
+</p>
 
-🚀 **Open-source**, **production-ready**, and **developer-friendly** registry for 4109+ Model Context Protocol (MCP) servers, plugins, and AI agent tools.
+<p align="center">
+  🚀 <b>Open-source</b>, <b>production-ready</b>, and <b>developer-friendly</b> registry for 4109+ Model Context Protocol (MCP) servers.
+  <br />
+  <i>Perfect for <b>AI automation</b>, <b>chatbot development</b>, <b>LLM integrations</b>, and <b>enterprise AI deployments</b>.</i>
+</p>
 
-Perfect for **AI automation**, **chatbot development**, **LLM integrations**, and **enterprise AI deployments**.
+<p align="center">
+  <strong>The Universal MCP Hub: A comprehensive directory for discovery AND a private engine for enterprise.</strong>
+</p>
+
+<p align="center">
+  <a href="#mcp-servers">🔍 <b>Browse 4109+ Tools</b></a>
+  &nbsp;&nbsp;•&nbsp;&nbsp;
+  <a href="#quick-start">🐳 <b>Deploy Private Registry</b></a>
+  &nbsp;&nbsp;•&nbsp;&nbsp;
+  <a href="#install-via-package-manager">📦 <b>Use as SDK</b></a>
+</p>
 
 ---
 
@@ -24,7 +52,7 @@ Perfect for **AI automation**, **chatbot development**, **LLM integrations**, an
 ### 🎯 Key Features
 
 - 🔐 **Private & Self-Hosted** - Deploy your own secure MCP registry with Docker in minutes
-- 🤖 **4109+ AI Tools** - Largest curated collection of MCP servers for Claude, LLMs, and AI agents
+- 🤖 **4109+ MCP Servers** - Largest curated collection of MCP servers for Claude, LLMs, and AI agents
 - ⚡ **Remote Execution** - Run MCP tools in isolated sandbox environments via REST API
 - 🔍 **Powerful Search** - Fast, full-text search powered by Meilisearch
 - 📦 **NPM Integration** - Use as a TypeScript/Node.js SDK in your projects
@@ -34,11 +62,11 @@ Perfect for **AI automation**, **chatbot development**, **LLM integrations**, an
 
 ### 💡 Use Cases
 
-- 🏢 **Enterprise AI Teams** - Deploy private MCP registry for your organization
-- 🤖 **AI Agent Development** - Build and test AI agents with verified MCP tools
-- 💬 **Chatbot Builders** - Integrate LLM-powered chatbots with MCP servers
-- 🔧 **Developer Tools** - Access automation tools, APIs, and integrations
-- 🚀 **CI/CD Automation** - Execute MCP tools in your deployment pipelines
+- 🏢 **Enterprise AI Teams** - "Allow LLMs to query your private PostgreSQL database securely."
+- 🤖 **AI Agent Development** - "Ask Claude to verify PRs via GitHub MCP and deploy to Kubernetes."
+- 💬 **Chatbot Builders** - Integrate LLM-powered chatbots with 4000+ ready-to-use MCP servers.
+- 🔧 **DevOps Automation** - Execute MCP tools in your CI/CD pipelines for automated testing and deployment.
+- 🚀 **Data Analysis** - Connect AI agents to internal data sources (Snowflake, Databricks) without building custom integrations.
 
 ---
 
@@ -114,16 +142,24 @@ Perfect for **AI developers**, **LLM teams**, and **enterprises** building with 
 
 #### ⚡ Quick Deploy (2 Steps)
 
-**Step 1: Configure Sandbox Environment**
+**Prerequisites:**
+- Docker & Docker Compose
+- (Optional) Sandock API Key - *Required only if you need secure remote execution features.*
 
-- Get your Sandock API Key from https://sandock.ai (for secure remote code execution)
-- Edit `.env` and set: `SANDOCK_API_KEY=your-api-key-here`
+**Step 1: Configure Environment**
+
+- Edit `.env` (optional): `SANDOCK_API_KEY=your-api-key-here`
+- *Note: You can skip this if you only need the Registry and Search features.*
 
 **Step 2: Launch with Docker Compose**
 
 ```bash
 docker compose up -d
 ```
+
+> 💡 **Tip for Private Deployment**:
+> This registry contains 4109+ public MCP servers. If you only need a specific subset for your private environment, you can prune the `packages/` directory.
+> 📖 See [Package Management Guide](./docs/DEVELOPMENT.md#5--package-management-for-private-deployment) for details.
 
 That's it! Your self-hosted MCP registry is now running with:
 - 🔍 **Full-text search** (Meilisearch)
