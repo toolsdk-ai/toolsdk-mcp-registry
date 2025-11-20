@@ -42191,7 +42191,7 @@
   },
   "12306-mcp": {
     "category": "travel-transportation",
-    "path": "travel-transportation/jok-12306-mcp.json",
+    "path": "travel-transportation/12306-mcp.json",
     "validated": true,
     "tools": {
       "get-current-date": {
@@ -47450,6 +47450,7 @@
   "sandock-mcp": {
     "category": "code-execution",
     "path": "code-execution/sandock-mcp.json",
+    "validated": true,
     "tools": {
       "sandock_run_code": {
         "name": "sandock_run_code",
@@ -47475,7 +47476,6 @@
         "name": "sandock_delete_sandbox",
         "description": "Delete a persistent sandbox and free resources. Call when finished with sandboxes created via sandock_create_sandbox. (sandock_run_code auto-cleans, no need to call this)."
       }
-    },
-    "validated": true
+    }
   }
 }

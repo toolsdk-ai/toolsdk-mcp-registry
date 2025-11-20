@@ -2,6 +2,8 @@
 
 <img src="docs/logo.png" width="120" alt="ToolSDK MCP Registry" />
 
+<img src="docs/logo.png" width="120" alt="ToolSDK MCP Registry" />
+
 # ToolSDK MCP Registry
 
 **Your private, secure, and customizable MCP Registry — take full control of your tools.**
@@ -79,9 +81,12 @@ That's it! Your self-hosted MCP registry is now running with:
 - 🛡️ **Sandbox execution** for AI agent tools
 
 #### 🎉 Access Your Private MCP Registry
+#### 🎉 Access Your Private MCP Registry
 
 - 🌐 **Local Web Interface**: http://localhost:3003
+- 🌐 **Local Web Interface**: http://localhost:3003
 - 📚 **Swagger API Docs**: http://localhost:3003/swagger  
+- 🔍 **Search & Execute** 4109+ MCP Servers remotely
 - 🔍 **Search & Execute** 4109+ MCP Servers remotely
 - 🤖 **Integrate** with your AI agents, chatbots, and LLM applications
 
@@ -126,6 +131,7 @@ Perfect for AI agent development, chatbot builders, and LLM tool integrations:
 
 ```ts
 import mcpServerLists from '@toolsdk.ai/registry/indexes/packages-list.json';
+import mcpServerLists from '@toolsdk.ai/registry/indexes/packages-list.json';
 ```
 
 #### 🌐 Access via Public API (No Installation Required)
@@ -156,6 +162,121 @@ mcp_servers = requests.get(
 
 # Perfect for LangChain, CrewAI, AutoGen integrations
 ```
+
+---
+
+## 🌟 Why ToolSDK MCP Registry?
+
+**ToolSDK MCP Registry** is the most comprehensive, self-hosted registry for Model Context Protocol (MCP) servers and AI agent tools. Built for developers, teams, and enterprises who need full control over their AI infrastructure.
+
+### 🎯 Key Features
+
+- 🔐 **Private & Self-Hosted** - Deploy your own secure MCP registry with Docker in minutes
+- 🤖 **4109+ MCP Servers** - Largest curated collection of MCP servers
+- ⚡ **Remote Execution** - Run MCP tools in isolated sandbox environments via REST API
+- 🔍 **Powerful Search** - Fast, full-text search powered by Meilisearch
+- 📦 **NPM Integration** - Use as a TypeScript/Node.js SDK in your projects
+- 🛠️ **Developer-Friendly** - OpenAPI/Swagger documentation, structured JSON configs
+- 🐳 **Docker Ready** - Production-grade deployment with Docker Compose
+- 🔌 **Extensible Architecture** - Easily add new MCP servers via JSON config
+
+### 💡 Use Cases
+
+- 🏢 **Enterprise AI Teams** - "Allow LLMs to query your private PostgreSQL database securely."
+- 🤖 **AI Agent Development** - "Ask Claude to verify PRs via GitHub MCP and deploy to Kubernetes."
+- 💬 **Chatbot Builders** - Integrate LLM-powered chatbots with 4000+ ready-to-use MCP servers.
+- 🔧 **DevOps Automation** - Execute MCP tools in your CI/CD pipelines for automated testing and deployment.
+- 🚀 **Data Analysis** - Connect AI agents to internal data sources (Snowflake, Databricks) without building custom integrations.
+
+### 🏗️ Architecture
+
+```mermaid
+graph TD
+    subgraph "Client Side"
+        User["👤 User / Developer"]
+        LLM["🤖 AI Agent / LLM"]
+    end
+
+    subgraph "ToolSDK MCP Registry (Docker)"
+        API["🌐 Registry API (Hono.js)"]
+        Search["🔍 Meilisearch Engine"]
+        DB["📚 JSON Registry Data"]
+    end
+
+    subgraph "Execution Environment"
+        Sandbox["🛡️ Secure Sandbox (Sandock/Daytona/E2B/Local)"]
+        MCPServer["⚙️ MCP Server"]
+    end
+
+    User -->|Search Tools| API
+    LLM -->|Execute Tool via REST| API
+    API <-->|Query Index| Search
+    API -->|Read Metadata| DB
+    API -->|Run Tool| Sandbox
+    Sandbox -->|Execute| MCPServer
+```
+
+---
+
+## 📦 What You Get
+
+This open-source registry provides:
+
+- 📚 **Structured Registry** - 4109+ validated MCP servers with metadata
+- 🔗 **Multiple Formats** - JSON, npm package, and generated documentation
+- 🌐 **REST API** - Query and execute tools remotely
+- 📖 **Auto-Generated Docs** - Always up-to-date README and API documentation
+
+**Available as:**
+
+- 📄 `README.md` - Human-readable documentation
+- 📦 [npm package](https://www.npmjs.com/package/@toolsdk.ai/registry) - TypeScript/JavaScript SDK
+- 🔗 [packages-list.json](https://toolsdk-ai.github.io/toolsdk-mcp-registry/indexes/packages-list.json) - Raw data API  
+
+---
+
+## 📚 Table of Contents
+
+- [🎥 Video: How to add a new MCP server](https://www.youtube.com/watch?v=J_oaDtCoVVo)
+- [🚀 Quick Start](#quick-start)
+  - [🐳 Docker Self-Hosting](#-docker-self-hosting)
+  - [📦 Install via Package Manager](#install-via-package-manager)
+  - [📄 Submit New MCP Servers](#submit-new-mcp-servers)
+- [📖 Development Guide](./docs/DEVELOPMENT.md)
+- [🤝 Contributing Guide](./docs/guide.md)
+- [⭐ ToolSDK MCP Servers](#mcp-servers)
+
+  - [Uncategorized](#uncategorized)
+  - [Aggregators](#aggregators)
+  - [Art & Culture](#art-and-culture)
+  - [Browser Automation](#browser-automation)
+  - [Cloud Platforms](#cloud-platforms)
+  - [Code Execution](#code-execution)
+  - [Coding Agents](#coding-agents)
+  - [Command Line](#command-line)
+  - [Communication](#communication)
+  - [Customer Data Platforms](#customer-data-platforms)
+  - [Databases](#databases)
+  - [Data Platforms](#data-platforms)
+  - [Developer Tools](#developer-tools)
+  - [Data Science Tools](#data-science-tools)
+  - [Embedded System](#embedded-system)
+  - [File Systems](#file-systems)
+  - [Finance & Fintech](#finance-fintech)
+  - [Gaming](#gaming)
+  - [Knowledge & Memory](#knowledge-memory)
+  - [Location Services](#location-services)
+  - [Marketing](#marketing)
+  - [Monitoring](#monitoring)
+  - [Search & Data Extraction](#search-data-extraction)
+  - [Security](#security)
+  - [Sports](#sports)
+  - [Support & Service Management](#support-service-management)
+  - [Translation Services](#translation-services)
+  - [Travel & Transportation](#travel-transportation)
+  - [Version Control](#version-control)
+  - [Other Tools and Integrations](#other-tools-and-integrations)
+
 
 ---
 
@@ -312,6 +433,7 @@ Your MCP server will be:
 - ✅ Listed in the registry
 - 🔍 Searchable via REST API
 - 📦 Available in npm package
+- 🌐 Featured on [ToolSDK.ai](https://toolsdk.ai)
 - 🌐 Featured on [ToolSDK.ai](https://toolsdk.ai)
 
 📖 **Detailed Guide**: [Contributing Documentation](./docs/guide.md)
@@ -3908,8 +4030,8 @@ Get travel schedules, routes, and real-time transportation data.
 - [✅ @mfukushim/map-traveler-mcp](https://github.com/mfukushim/map-traveler-mcp): Integrates with Google Maps to create virtual travel experiences where users can navigate real-world routes with customizable avatars, discover nearby facilities, and share journeys on Bluesky.  (8 tools) (node) 
 - [✅ @openbnb/mcp-server-airbnb](https://github.com/openbnb-org/mcp-server-airbnb): Integrates with Airbnb to enable vacation rental search and detailed property information retrieval without requiring API keys  (2 tools) (node) 
 - [✅ @variflight-ai/variflight-mcp](https://github.com/variflight/variflight-mcp): Integrates with Variflight API to provide real-time flight information, schedules, aircraft tracking, airport weather forecasts, and comfort metrics for travel planning and aviation monitoring applications.  (8 tools) (node) 
-- [✅ 12306-mcp](https://github.com/Joooook/12306-mcp): A 12306 ticket search server based on the Model Context Protocol (MCP). The server provides a simple API interface that allows users to search for 12306 tickets.  (8 tools) (node) 
-- [✅ 12306-mcp](https://github.com/Joooook/12306-mcp): A 12306 ticket search server based on the Model Context Protocol (MCP). The server provides a simple API interface that allows users to search for 12306 tickets.  (8 tools) (node) 
+- [✅ 12306-mcp](https://github.com/freestylefly/12306-mcp): Integrates with China's 12306 railway system to search train tickets, check schedules, and retrieve route information across the Chinese railway network with real-time availability and pricing data.  (8 tools) (node) 
+- [✅ 12306-mcp](https://github.com/freestylefly/12306-mcp): Integrates with China's 12306 railway system to search train tickets, check schedules, and retrieve route information across the Chinese railway network with real-time availability and pricing data.  (8 tools) (node) 
 - [✅ caltrain-mcp](https://github.com/davidyen1124/caltrain-mcp): Provides real-time Caltrain commuter rail information including schedules, station details, and trip planning for the San Francisco Bay Area  (2 tools) (python) 
 - [✅ lumbretravel-mcp](https://github.com/lumile/lumbretravel-mcp): Integrates with the Argentinian LumbreTravel API to manage travel programs, activities, and bookings for efficient itinerary planning and service coordination.  (68 tools) (node) 
 - [✅ train_12306](https://github.com/ecmadao/Train-12306): A command line tool to show 12306 tickets  (4 tools) (python) 
