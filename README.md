@@ -45,91 +45,6 @@
 
 </div>
 
-## 🌟 Why ToolSDK MCP Registry?
-
-**ToolSDK MCP Registry** is the most comprehensive, self-hosted registry for Model Context Protocol (MCP) servers and AI agent tools. Built for developers, teams, and enterprises who need full control over their AI infrastructure.
-
-### 🎯 Key Features
-
-- 🔐 **Private & Self-Hosted** - Deploy your own secure MCP registry with Docker in minutes
-- 🤖 **4109+ MCP Servers** - Largest curated collection of MCP servers
-- ⚡ **Remote Execution** - Run MCP tools in isolated sandbox environments via REST API
-- 🔍 **Powerful Search** - Fast, full-text search powered by Meilisearch
-- 📦 **NPM Integration** - Use as a TypeScript/Node.js SDK in your projects
-- 🛠️ **Developer-Friendly** - OpenAPI/Swagger documentation, structured JSON configs
-- 🐳 **Docker Ready** - Production-grade deployment with Docker Compose
-- 🔌 **Extensible Architecture** - Easily add new MCP servers via JSON config
-
-### 💡 Use Cases
-
-- 🏢 **Enterprise AI Teams** - "Allow LLMs to query your private PostgreSQL database securely."
-- 🤖 **AI Agent Development** - "Ask Claude to verify PRs via GitHub MCP and deploy to Kubernetes."
-- 💬 **Chatbot Builders** - Integrate LLM-powered chatbots with 4000+ ready-to-use MCP servers.
-- 🔧 **DevOps Automation** - Execute MCP tools in your CI/CD pipelines for automated testing and deployment.
-- 🚀 **Data Analysis** - Connect AI agents to internal data sources (Snowflake, Databricks) without building custom integrations.
-
----
-
-## 📦 What You Get
-
-This open-source registry provides:
-
-- 📚 **Structured Registry** - 4109+ validated MCP servers with metadata
-- 🔗 **Multiple Formats** - JSON, npm package, and generated documentation
-- 🌐 **REST API** - Query and execute tools remotely
-- 📖 **Auto-Generated Docs** - Always up-to-date README and API documentation
-
-**Available as:**
-
-- 📄 `README.md` - Human-readable documentation
-- 📦 [npm package](https://www.npmjs.com/package/@toolsdk.ai/registry) - TypeScript/JavaScript SDK
-- 🔗 [packages-list.json](https://toolsdk-ai.github.io/toolsdk-mcp-registry/indexes/packages-list.json) - Raw data API  
-
----
-
-## 📚 Table of Contents
-
-- [🎥 Video: How to submit a MCP server in JSON file?](https://www.youtube.com/watch?v=J_oaDtCoVVo)
-- [🚀 Quick Start](#quick-start)
-  - [🐳 Docker Self-Hosting](#-docker-self-hosting)
-  - [📦 Install via Package Manager](#install-via-package-manager)
-  - [📄 Submit New MCP Servers](#submit-new-mcp-servers)
-- [📖 Development Guide](./docs/DEVELOPMENT.md)
-- [🤝 Contributing Guide](./docs/guide.md)
-- [⭐ ToolSDK MCP Servers](#mcp-servers)
-
-  - [Uncategorized](#uncategorized)
-  - [Aggregators](#aggregators)
-  - [Art & Culture](#art-and-culture)
-  - [Browser Automation](#browser-automation)
-  - [Cloud Platforms](#cloud-platforms)
-  - [Code Execution](#code-execution)
-  - [Coding Agents](#coding-agents)
-  - [Command Line](#command-line)
-  - [Communication](#communication)
-  - [Customer Data Platforms](#customer-data-platforms)
-  - [Databases](#databases)
-  - [Data Platforms](#data-platforms)
-  - [Developer Tools](#developer-tools)
-  - [Data Science Tools](#data-science-tools)
-  - [Embedded System](#embedded-system)
-  - [File Systems](#file-systems)
-  - [Finance & Fintech](#finance-fintech)
-  - [Gaming](#gaming)
-  - [Knowledge & Memory](#knowledge-memory)
-  - [Location Services](#location-services)
-  - [Marketing](#marketing)
-  - [Monitoring](#monitoring)
-  - [Search & Data Extraction](#search-data-extraction)
-  - [Security](#security)
-  - [Sports](#sports)
-  - [Support & Service Management](#support-service-management)
-  - [Translation Services](#translation-services)
-  - [Travel & Transportation](#travel-transportation)
-  - [Version Control](#version-control)
-  - [Other Tools and Integrations](#other-tools-and-integrations)
-
-
 <a id="quick-start"></a>
 
 ## 🚀 Quick Start
@@ -244,6 +159,93 @@ mcp_servers = requests.get(
 
 # Perfect for LangChain, CrewAI, AutoGen integrations
 ```
+
+---
+
+## 🌟 Why ToolSDK MCP Registry?
+
+**ToolSDK MCP Registry** is the most comprehensive, self-hosted registry for Model Context Protocol (MCP) servers and AI agent tools. Built for developers, teams, and enterprises who need full control over their AI infrastructure.
+
+### 🎯 Key Features
+
+- 🔐 **Private & Self-Hosted** - Deploy your own secure MCP registry with Docker in minutes
+- 🤖 **4109+ MCP Servers** - Largest curated collection of MCP servers
+- ⚡ **Remote Execution** - Run MCP tools in isolated sandbox environments via REST API
+- 🔍 **Powerful Search** - Fast, full-text search powered by Meilisearch
+- 📦 **NPM Integration** - Use as a TypeScript/Node.js SDK in your projects
+- 🛠️ **Developer-Friendly** - OpenAPI/Swagger documentation, structured JSON configs
+- 🐳 **Docker Ready** - Production-grade deployment with Docker Compose
+- 🔌 **Extensible Architecture** - Easily add new MCP servers via JSON config
+
+### 💡 Use Cases
+
+- 🏢 **Enterprise AI Teams** - "Allow LLMs to query your private PostgreSQL database securely."
+- 🤖 **AI Agent Development** - "Ask Claude to verify PRs via GitHub MCP and deploy to Kubernetes."
+- 💬 **Chatbot Builders** - Integrate LLM-powered chatbots with 4000+ ready-to-use MCP servers.
+- 🔧 **DevOps Automation** - Execute MCP tools in your CI/CD pipelines for automated testing and deployment.
+- 🚀 **Data Analysis** - Connect AI agents to internal data sources (Snowflake, Databricks) without building custom integrations.
+
+---
+
+## 📦 What You Get
+
+This open-source registry provides:
+
+- 📚 **Structured Registry** - 4109+ validated MCP servers with metadata
+- 🔗 **Multiple Formats** - JSON, npm package, and generated documentation
+- 🌐 **REST API** - Query and execute tools remotely
+- 📖 **Auto-Generated Docs** - Always up-to-date README and API documentation
+
+**Available as:**
+
+- 📄 `README.md` - Human-readable documentation
+- 📦 [npm package](https://www.npmjs.com/package/@toolsdk.ai/registry) - TypeScript/JavaScript SDK
+- 🔗 [packages-list.json](https://toolsdk-ai.github.io/toolsdk-mcp-registry/indexes/packages-list.json) - Raw data API  
+
+---
+
+## 📚 Table of Contents
+
+- [🎥 Video: How to add a new MCP server](https://www.youtube.com/watch?v=J_oaDtCoVVo)
+- [🚀 Quick Start](#quick-start)
+  - [🐳 Docker Self-Hosting](#-docker-self-hosting)
+  - [📦 Install via Package Manager](#install-via-package-manager)
+  - [📄 Submit New MCP Servers](#submit-new-mcp-servers)
+- [📖 Development Guide](./docs/DEVELOPMENT.md)
+- [🤝 Contributing Guide](./docs/guide.md)
+- [⭐ ToolSDK MCP Servers](#mcp-servers)
+
+  - [Uncategorized](#uncategorized)
+  - [Aggregators](#aggregators)
+  - [Art & Culture](#art-and-culture)
+  - [Browser Automation](#browser-automation)
+  - [Cloud Platforms](#cloud-platforms)
+  - [Code Execution](#code-execution)
+  - [Coding Agents](#coding-agents)
+  - [Command Line](#command-line)
+  - [Communication](#communication)
+  - [Customer Data Platforms](#customer-data-platforms)
+  - [Databases](#databases)
+  - [Data Platforms](#data-platforms)
+  - [Developer Tools](#developer-tools)
+  - [Data Science Tools](#data-science-tools)
+  - [Embedded System](#embedded-system)
+  - [File Systems](#file-systems)
+  - [Finance & Fintech](#finance-fintech)
+  - [Gaming](#gaming)
+  - [Knowledge & Memory](#knowledge-memory)
+  - [Location Services](#location-services)
+  - [Marketing](#marketing)
+  - [Monitoring](#monitoring)
+  - [Search & Data Extraction](#search-data-extraction)
+  - [Security](#security)
+  - [Sports](#sports)
+  - [Support & Service Management](#support-service-management)
+  - [Translation Services](#translation-services)
+  - [Travel & Transportation](#travel-transportation)
+  - [Version Control](#version-control)
+  - [Other Tools and Integrations](#other-tools-and-integrations)
+
 
 <a id="submit-new-mcp-servers"></a>
 
