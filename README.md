@@ -185,6 +185,34 @@ mcp_servers = requests.get(
 - 🔧 **DevOps Automation** - Execute MCP tools in your CI/CD pipelines for automated testing and deployment.
 - 🚀 **Data Analysis** - Connect AI agents to internal data sources (Snowflake, Databricks) without building custom integrations.
 
+### 🏗️ Architecture
+
+```mermaid
+graph TD
+    subgraph "Client Side"
+        User["👤 User / Developer"]
+        LLM["🤖 AI Agent / LLM"]
+    end
+
+    subgraph "ToolSDK MCP Registry (Docker)"
+        API["🌐 Registry API (Hono.js)"]
+        Search["🔍 Meilisearch Engine"]
+        DB["📚 JSON Registry Data"]
+    end
+
+    subgraph "Execution Environment"
+        Sandbox["🛡️ Secure Sandbox (Sandock/Daytona/E2B/Local)"]
+        MCPServer["⚙️ MCP Server"]
+    end
+
+    User -->|Search Tools| API
+    LLM -->|Execute Tool via REST| API
+    API <-->|Query Index| Search
+    API -->|Read Metadata| DB
+    API -->|Run Tool| Sandbox
+    Sandbox -->|Execute| MCPServer
+```
+
 ---
 
 ## 📦 What You Get
