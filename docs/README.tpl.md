@@ -7,12 +7,6 @@
 **Your private, secure, and customizable MCP Registry — take full control of your tools.**
 
 <p align="center">
-  <a href="https://www.producthunt.com/products/toolsdk-ai">
-    <img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=997428&theme=light&period=daily" alt="Product Hunt" height="40" />
-  </a>
-</p>
-
-<p align="center">
   <a href="https://www.npmjs.com/package/@toolsdk.ai/registry">
     <img src="https://img.shields.io/npm/v/@toolsdk.ai/registry.svg?style=flat-square" alt="npm version" />
   </a>
@@ -21,6 +15,12 @@
   </a>
   <img src="https://img.shields.io/badge/MCP_Servers-<%= COUNT %>-blue?style=flat-square" alt="MCP Servers Count" />
   <img src="https://img.shields.io/badge/LICENSE-MIT-ff69b4?style=flat-square" alt="License" />
+</p>
+
+<p align="center">
+  <a href="https://www.producthunt.com/products/toolsdk-ai">
+    <img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=997428&theme=light&period=daily" alt="Product Hunt" height="40" />
+  </a>
 </p>
 
 <p align="center">
