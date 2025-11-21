@@ -51,6 +51,8 @@
 
 ## 🚀 Quick Start
 
+<a id="docker-self-hosting"></a>
+
 ### 🐳 Self-Hosted MCP Registry with Docker
 
 Deploy your own **private MCP registry** in 5 minutes! Get a production-ready AI agent tool registry with full-text search, REST API, and secure sandbox execution.
@@ -66,7 +68,8 @@ docker compose up -d
 ```
 
 **Optional Configuration:**
-- Create a `.env` file if you need secure remote execution (Sandock) or want to disable the sandbox (`MCP_SANDBOX_PROVIDER=LOCAL`).
+- Set `MCP_SANDBOX_PROVIDER=LOCAL` in `.env` file if you want to disable the sandbox.
+- Set `SANDOCK_API_KEY` if you want to use the sandbox for full deployment.
 - *See [Configuration Guide](./docs/DEVELOPMENT.md) for full details.*
 
 > 💡 **Tip for Private Deployment**:
@@ -186,27 +189,33 @@ mcp_servers = requests.get(
 
 ```mermaid
 graph TD
-    subgraph "Client Side"
-        User["👤 User / Developer"]
+    subgraph ClientSide ["Client Side"]
         LLM["🤖 AI Agent / LLM"]
+        User["👤 User / Developer"]
     end
 
-    subgraph "ToolSDK MCP Registry (Docker)"
-        API["🌐 Registry API (Hono.js)"]
-        Search["🔍 Meilisearch Engine"]
-        DB["📚 JSON Registry Data"]
-    end
+    subgraph DockerEnv ["🐳 Self-Hosted Infrastructure"]
+        
+        subgraph RegistryCore ["Registry Core"]
+            API["🌐 Registry API"]
+            Search["🔍 Meilisearch"]
+            DB["📚 Registry Data"]
+        end
 
-    subgraph "Execution Environment"
-        Sandbox["🛡️ Secure Sandbox (Sandock/Daytona/E2B/Local)"]
-        MCPServer["⚙️ MCP Server"]
+        subgraph RuntimeEnv ["Runtime Environment"]
+            Local["💻 Local Exec"]
+            Sandbox["🛡️ Secure Sandbox"]
+            MCPServer["⚙️ MCP Server"]
+        end
     end
 
     User -->|Search Tools| API
-    LLM -->|Execute Tool via REST| API
+    LLM -->|Execute Tool| API
     API <-->|Query Index| Search
     API -->|Read Metadata| DB
+    API -->|Run Tool| Local
     API -->|Run Tool| Sandbox
+    Local -->|Execute| MCPServer
     Sandbox -->|Execute| MCPServer
 ```
 
@@ -233,7 +242,7 @@ This open-source registry provides:
 
 - [🎥 Video: How to add a new MCP server](https://www.youtube.com/watch?v=J_oaDtCoVVo)
 - [🚀 Quick Start](#quick-start)
-  - [🐳 Docker Self-Hosting](#-docker-self-hosting)
+  - [🐳 Docker Self-Hosting](#docker-self-hosting)
   - [📦 Install via Package Manager](#install-via-package-manager)
   - [📄 Submit New MCP Servers](#submit-new-mcp-servers)
 - [📖 Development Guide](./docs/DEVELOPMENT.md)
