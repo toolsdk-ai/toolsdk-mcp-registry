@@ -42191,7 +42191,7 @@
   },
   "12306-mcp": {
     "category": "travel-transportation",
-    "path": "travel-transportation/12306-mcp.json",
+    "path": "travel-transportation/jok-12306-mcp.json",
     "validated": true,
     "tools": {
       "get-current-date": {
@@ -47477,5 +47477,20 @@
         "description": "Delete a persistent sandbox and free resources. Call when finished with sandboxes created via sandock_create_sandbox. (sandock_run_code auto-cleans, no need to call this)."
       }
     }
+  },
+  "github-mcp": {
+    "path": "developer-tools/github-mcp.json",
+    "category": "developer-tools",
+    "tools": {
+      "add": {
+        "name": "add",
+        "description": "Add two numbers"
+      },
+      "list_issues": {
+        "name": "list_issues",
+        "description": "List issues in a GitHub repository"
+      }
+    },
+    "validated": true
   }
 }

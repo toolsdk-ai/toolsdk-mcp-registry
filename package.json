@@ -436,6 +436,7 @@
     "gistpad-mcp": "0.4.7",
     "git-commands-mcp": "0.1.4",
     "gitee-mcp-server": "0.1.1",
+    "github-mcp": "0.0.5",
     "github-repo-mcp": "1.0.3",
     "gologin-mcp": "0.0.9",
     "google-cloud-mcp": "0.1.3",

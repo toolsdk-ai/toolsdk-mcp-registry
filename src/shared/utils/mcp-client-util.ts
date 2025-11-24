@@ -3,6 +3,8 @@ import fs from "node:fs";
 import path from "node:path";
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { StdioClientTransport } from "@modelcontextprotocol/sdk/client/stdio.js";
+import { StreamableHTTPClientTransport } from "@modelcontextprotocol/sdk/client/streamableHttp.js";
+import type { Transport } from "@modelcontextprotocol/sdk/shared/transport.js";
 import type { MCPServerPackageConfig } from "../../domains/package/package-types";
 import { getDirname } from "./file-util";
 
@@ -27,10 +29,7 @@ export function getPackageJSON(packageName: string) {
   return packageJSON;
 }
 
-async function createMcpClient(
-  mcpServerConfig: MCPServerPackageConfig,
-  transport: StdioClientTransport,
-) {
+async function createMcpClient(mcpServerConfig: MCPServerPackageConfig, transport: Transport) {
   const { packageName, name } = mcpServerConfig;
 
   const client = new Client(
@@ -117,10 +116,23 @@ async function getPyMcpClient(
   return createMcpClient(mcpServerConfig, transport);
 }
 
+async function getRemoteMcpClient(url: string, mcpServerConfig: MCPServerPackageConfig) {
+  const transport = new StreamableHTTPClientTransport(new URL(url));
+  return createMcpClient(mcpServerConfig, transport);
+}
+
 export async function getMcpClient(
   mcpServerConfig: MCPServerPackageConfig,
   env?: Record<string, string>,
 ) {
+  // Check for remotes first
+  if (mcpServerConfig.remotes && mcpServerConfig.remotes.length > 0) {
+    const remote = mcpServerConfig.remotes.find((r) => r.type === "streamable-http");
+    if (remote) {
+      return getRemoteMcpClient(remote.url, mcpServerConfig);
+    }
+  }
+
   const { runtime } = mcpServerConfig;
   if (runtime === "python") {
     return getPyMcpClient(mcpServerConfig, env);

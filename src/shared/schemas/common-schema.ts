@@ -58,6 +58,15 @@ export const MCPServerPackageConfigSchema = z
         "Binary Arguments to pass to the command, if not provided then it will use an empty array",
       ),
 
+    remotes: z
+      .array(
+        z.object({
+          type: z.literal("streamable-http"),
+          url: z.string().url(),
+        }),
+      )
+      .optional(),
+
     // if no custom key then would use name
     key: z.string().optional().describe("Unique key for url and slug"),
     name: z

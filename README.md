@@ -13,7 +13,7 @@
   <a href="https://github.com/toolsdk-ai/toolsdk-mcp-registry/actions/workflows/test.yaml">
     <img src="https://github.com/toolsdk-ai/toolsdk-mcp-registry/actions/workflows/test.yaml/badge.svg" alt="Build Status" />
   </a>
-  <img src="https://img.shields.io/badge/MCP_Servers-4109-blue?style=flat-square" alt="MCP Servers Count" />
+  <img src="https://img.shields.io/badge/MCP_Servers-4110-blue?style=flat-square" alt="MCP Servers Count" />
   <img src="https://img.shields.io/badge/LICENSE-MIT-ff69b4?style=flat-square" alt="License" />
 </p>
 
@@ -24,7 +24,7 @@
 </p>
 
 <p align="center">
-  🚀 <b>Open-source</b>, <b>production-ready</b>, and <b>developer-friendly</b> registry for 4109+ Model Context Protocol (MCP) servers.
+  🚀 <b>Open-source</b>, <b>production-ready</b>, and <b>developer-friendly</b> registry for 4110+ Model Context Protocol (MCP) servers.
   <br />
   <i>Perfect for <b>AI automation</b>, <b>chatbot development</b>, <b>LLM integrations</b>, and <b>enterprise AI deployments</b>.</i>
 </p>
@@ -34,7 +34,7 @@
 </p>
 
 <p align="center">
-  <a href="#mcp-servers">🔍 <b>Browse 4109+ Tools</b></a>
+  <a href="#mcp-servers">🔍 <b>Browse 4110+ Tools</b></a>
   &nbsp;&nbsp;•&nbsp;&nbsp;
   <a href="#quick-start">🐳 <b>Deploy Private Registry</b></a>
   &nbsp;&nbsp;•&nbsp;&nbsp;
@@ -73,7 +73,7 @@ docker compose up -d
 - *See [Configuration Guide](./docs/DEVELOPMENT.md) for full details.*
 
 > 💡 **Tip for Private Deployment**:
-> This registry contains 4109+ public MCP servers. If you only need a specific subset for your private environment, you can prune the `packages/` directory.
+> This registry contains 4110+ public MCP servers. If you only need a specific subset for your private environment, you can prune the `packages/` directory.
 > 📖 See [Package Management Guide](./docs/DEVELOPMENT.md#5--package-management-for-private-deployment) for details.
 
 That's it! Your self-hosted MCP registry is now running with:
@@ -85,7 +85,7 @@ That's it! Your self-hosted MCP registry is now running with:
 
 - 🌐 **Local Web Interface**: http://localhost:3003
 - 📚 **Swagger API Docs**: http://localhost:3003/swagger  
-- 🔍 **Search & Execute** 4109+ MCP Servers remotely
+- 🔍 **Search & Execute** 4110+ MCP Servers remotely
 - 🤖 **Integrate** with your AI agents, chatbots, and LLM applications
 
 #### 💻 Remote Tool Execution Example
@@ -169,7 +169,7 @@ mcp_servers = requests.get(
 ### 🎯 Key Features
 
 - 🔐 **Private & Self-Hosted** - Deploy your own secure MCP registry with Docker in minutes
-- 🤖 **4109+ MCP Servers** - Largest curated collection of MCP servers
+- 🤖 **4110+ MCP Servers** - Largest curated collection of MCP servers
 - ⚡ **Remote Execution** - Run MCP tools in isolated sandbox environments via REST API
 - 🔍 **Powerful Search** - Fast, full-text search powered by Meilisearch
 - 📦 **NPM Integration** - Use as a TypeScript/Node.js SDK in your projects
@@ -225,7 +225,7 @@ graph TD
 
 This open-source registry provides:
 
-- 📚 **Structured Registry** - 4109+ validated MCP servers with metadata
+- 📚 **Structured Registry** - 4110+ validated MCP servers with metadata
 - 🔗 **Multiple Formats** - JSON, npm package, and generated documentation
 - 🌐 **REST API** - Query and execute tools remotely
 - 📖 **Auto-Generated Docs** - Always up-to-date README and API documentation
@@ -313,7 +313,7 @@ Help grow the world's largest open-source MCP registry! Share your AI tools, plu
 
 - [Fork this repository](https://github.com/toolsdk-ai/toolsdk-mcp-registry/fork)
 - Create `your-mcp-server.json` in [packages/uncategorized](./packages/uncategorized)
-- Submit a PR and join 4109+ MCP servers!
+- Submit a PR and join 4110+ MCP servers!
 
 **3. Get Discovered**
 
@@ -331,9 +331,9 @@ Your MCP server will be:
 
 ## 📋 MCP Servers Directory
 
-**4109+ AI Agent Tools, LLM Integrations & Automation Servers**
+**4110+ AI Agent Tools, LLM Integrations & Automation Servers**
 
-- ✅ **Validated & Tested** (710) - Production-ready MCP servers
+- ✅ **Validated & Tested** (711) - Production-ready MCP servers
 - ⚙️ **Community Contributed** (3399) - Requires configuration
 
 Browse by category: Developer Tools, AI Agents, Databases, Cloud Platforms, APIs, and more!
@@ -1908,6 +1908,7 @@ Enhance your development workflow with tools for coding and environment manageme
 - [✅ deepsource-mcp-server](https://github.com/sapientpants/deepsource-mcp-server): Integrates with DeepSource's code quality platform to provide access to project metrics, issues, and analysis results for monitoring and troubleshooting code quality directly in conversations.  (10 tools) (node) 
 - [✅ freecad-mcp](https://github.com/neka-nat/freecad-mcp): Enables AI-driven CAD modeling by providing a remote procedure call (RPC) server that allows programmatic control of FreeCAD, supporting operations like creating documents, inserting parts, editing objects, and executing Python code for generative design workflows.  (10 tools) (python) 
 - [✅ gistpad-mcp](https://github.com/lostintangent/gistpad-mcp): Transforms GitHub Gists into a personal knowledge management system with specialized handling for daily notes, reusable prompts with frontmatter support, and comprehensive gist operations including creation, updating, archiving, and commenting for version-controlled knowledge storage.  (28 tools) (node) 
+- [✅ github-mcp](https://github.com/Seey215/github-mcp): A powerful GitHub automation tool that seamlessly connects AI assistants to your GitHub repositories  (2 tools) (node) 
 - [✅ ios-simulator-mcp](https://github.com/joshuayoes/ios-simulator-mcp): Enables Claude to control iOS simulators for testing and debugging applications by providing tools for UI interaction, element inspection, and device information retrieval through Facebook's IDB tool.  (10 tools) (node) 
 - [✅ it-tools-mcp](https://github.com/wrenchpilot/it-tools-mcp): Provides 50+ developer utilities including cryptographic operations, text processing, data format conversion, network calculations, and encoding functions through a containerized TypeScript server with security features and rate limiting.  (119 tools) (node) 
 - [✅ jnews-mcp-server](https://github.com/juhemcp/jnews-mcp-server): Lightweight Python FastAPI server implementation for streamlined server-side interactions, using modern tooling like uv for dependency management and GitHub Actions for automated testing and deployment.  (2 tools) (python) 
@@ -3917,8 +3918,8 @@ Get travel schedules, routes, and real-time transportation data.
 - [✅ @mfukushim/map-traveler-mcp](https://github.com/mfukushim/map-traveler-mcp): Integrates with Google Maps to create virtual travel experiences where users can navigate real-world routes with customizable avatars, discover nearby facilities, and share journeys on Bluesky.  (8 tools) (node) 
 - [✅ @openbnb/mcp-server-airbnb](https://github.com/openbnb-org/mcp-server-airbnb): Integrates with Airbnb to enable vacation rental search and detailed property information retrieval without requiring API keys  (2 tools) (node) 
 - [✅ @variflight-ai/variflight-mcp](https://github.com/variflight/variflight-mcp): Integrates with Variflight API to provide real-time flight information, schedules, aircraft tracking, airport weather forecasts, and comfort metrics for travel planning and aviation monitoring applications.  (8 tools) (node) 
-- [✅ 12306-mcp](https://github.com/freestylefly/12306-mcp): Integrates with China's 12306 railway system to search train tickets, check schedules, and retrieve route information across the Chinese railway network with real-time availability and pricing data.  (8 tools) (node) 
-- [✅ 12306-mcp](https://github.com/freestylefly/12306-mcp): Integrates with China's 12306 railway system to search train tickets, check schedules, and retrieve route information across the Chinese railway network with real-time availability and pricing data.  (8 tools) (node) 
+- [✅ 12306-mcp](https://github.com/Joooook/12306-mcp): A 12306 ticket search server based on the Model Context Protocol (MCP). The server provides a simple API interface that allows users to search for 12306 tickets.  (8 tools) (node) 
+- [✅ 12306-mcp](https://github.com/Joooook/12306-mcp): A 12306 ticket search server based on the Model Context Protocol (MCP). The server provides a simple API interface that allows users to search for 12306 tickets.  (8 tools) (node) 
 - [✅ caltrain-mcp](https://github.com/davidyen1124/caltrain-mcp): Provides real-time Caltrain commuter rail information including schedules, station details, and trip planning for the San Francisco Bay Area  (2 tools) (python) 
 - [✅ lumbretravel-mcp](https://github.com/lumile/lumbretravel-mcp): Integrates with the Argentinian LumbreTravel API to manage travel programs, activities, and bookings for efficient itinerary planning and service coordination.  (68 tools) (node) 
 - [✅ train_12306](https://github.com/ecmadao/Train-12306): A command line tool to show 12306 tickets  (4 tools) (python) 
