@@ -7,6 +7,8 @@ export interface ToolExecuteRequest {
   inputData: Record<string, unknown>;
   envs?: Record<string, string>;
   sandboxProvider?: MCPSandboxProvider;
+  /** OAuth access token for MCP servers that require OAuth authentication */
+  accessToken?: string;
 }
 
 /**
@@ -15,5 +17,5 @@ export interface ToolExecuteRequest {
  */
 export interface ToolExecutor {
   executeTool(request: ToolExecuteRequest): Promise<unknown>;
-  listTools(packageName: string, sandboxProvider?: MCPSandboxProvider): Promise<Tool[]>;
+  listTools(packageName: string, accessToken?: string): Promise<Tool[]>;
 }

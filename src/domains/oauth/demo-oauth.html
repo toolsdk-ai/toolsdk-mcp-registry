@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCP OAuth Demo - Registry</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        .section {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="url"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e1e5e9;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover:not(:disabled) {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn-secondary {
+            background: #10B981;
+            color: white;
+            margin-left: 10px;
+        }
+
+        .btn-secondary:hover:not(:disabled) {
+            background: #059669;
+        }
+
+        .btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .status-box {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            display: none;
+        }
+
+        .status-box.show {
+            display: block;
+        }
+
+        .status-box.info {
+            background: #e7f3ff;
+            border: 1px solid #0366d6;
+            color: #0366d6;
+        }
+
+        .status-box.success {
+            background: #d4edda;
+            border: 1px solid #28a745;
+            color: #28a745;
+        }
+
+        .status-box.error {
+            background: #f8d7da;
+            border: 1px solid #dc3545;
+            color: #dc3545;
+        }
+
+        .code-block {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Monaco', 'Menlo', monospace;
+            font-size: 0.9em;
+            overflow-x: auto;
+            margin-top: 15px;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+
+        .token-display {
+            margin-top: 20px;
+            display: none;
+        }
+
+        .token-display.show {
+            display: block;
+        }
+
+        .token-card {
+            background: white;
+            border: 2px solid #e1e5e9;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 15px;
+        }
+
+        .token-field {
+            margin-bottom: 15px;
+        }
+
+        .token-label {
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .token-value {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            font-size: 0.9em;
+            word-break: break-all;
+        }
+
+        .info-box {
+            background: #e7f3ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #0366d6;
+        }
+
+        .info-box h3 {
+            color: #0366d6;
+            margin-bottom: 10px;
+        }
+
+        .info-box ul {
+            margin-left: 20px;
+        }
+
+        .info-box li {
+            margin: 5px 0;
+        }
+
+        .spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .step-indicator {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        .step {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+        }
+
+        .step::after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            right: -50%;
+            width: 100%;
+            height: 3px;
+            background: #e1e5e9;
+            z-index: 0;
+        }
+
+        .step:last-child::after {
+            display: none;
+        }
+
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background: #e1e5e9;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #666;
+            position: relative;
+            z-index: 1;
+            transition: all 0.3s;
+        }
+
+        .step.active .step-number {
+            background: #667eea;
+            color: white;
+        }
+
+        .step.completed .step-number {
+            background: #10B981;
+            color: white;
+        }
+
+        .step-label {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>🔐 MCP OAuth Demo</h1>
+            <p class="subtitle">测试 Registry 的 OAuth 客户端能力</p>
+        </header>
+
+        <div class="info-box">
+            <h3>📋 演示说明</h3>
+            <p>这个 Demo 演示了 Registry 如何作为 OAuth 客户端，帮助第三方应用连接支持 OAuth 的 MCP Server：</p>
+            <ul>
+                <li>✅ 自动发现 MCP Server 的 OAuth 配置 (RFC 9728)</li>
+                <li>✅ 动态客户端注册 (RFC 7591)</li>
+                <li>✅ PKCE 安全保护 (OAuth 2.1 要求)</li>
+                <li>✅ Token 交换和回调</li>
+            </ul>
+        </div>
+
+        <!-- Step Indicator -->
+        <div class="step-indicator">
+            <div class="step active" id="step1">
+                <div class="step-number">1</div>
+                <div class="step-label">配置</div>
+            </div>
+            <div class="step" id="step2">
+                <div class="step-number">2</div>
+                <div class="step-label">授权</div>
+            </div>
+            <div class="step" id="step3">
+                <div class="step-number">3</div>
+                <div class="step-label">完成</div>
+            </div>
+        </div>
+
+        <!-- Step 1: Configuration -->
+        <div class="section" id="configSection">
+            <h2>步骤 1: 配置 MCP Server</h2>
+            <div class="form-group">
+                <label for="packageName">Package Name</label>
+                <input type="text" id="packageName" placeholder="例如: github-mcp" value="github-mcp">
+                <p style="margin-top: 5px; color: #666; font-size: 0.9em;">
+                    用于标识此次 OAuth 流程的名称（如果提供了 MCP Server URL，可以是任意字符串）
+                </p>
+            </div>
+            <div class="form-group">
+                <label for="mcpServerUrl">MCP Server URL <span style="color: #667eea;">(推荐填写)</span></label>
+                <input type="url" id="mcpServerUrl" placeholder="例如: http://localhost:3001/mcp"
+                    value="http://localhost:3001/mcp">
+                <p style="margin-top: 5px; color: #666; font-size: 0.9em;">
+                    直接指定 MCP Server 的 URL，用于发现 OAuth 配置
+                </p>
+            </div>
+            <button class="btn btn-primary" id="connectBtn" onclick="startOAuth()">
+                🚀 开始连接
+            </button>
+        </div>
+
+        <!-- Status Box -->
+        <div class="status-box" id="statusBox"></div>
+
+        <!-- Token Display -->
+        <div class="token-display" id="tokenDisplay">
+            <div class="section">
+                <h2>步骤 3: 授权结果</h2>
+                <div class="token-card">
+                    <div class="token-field">
+                        <span class="token-label">Access Token</span>
+                        <div class="token-value" id="accessToken">-</div>
+                    </div>
+                    <div class="token-field">
+                        <span class="token-label">Token Type</span>
+                        <div class="token-value" id="tokenType">-</div>
+                    </div>
+                    <div class="token-field">
+                        <span class="token-label">Expires In</span>
+                        <div class="token-value" id="expiresIn">-</div>
+                    </div>
+                    <div class="token-field">
+                        <span class="token-label">Refresh Token</span>
+                        <div class="token-value" id="refreshToken">-</div>
+                    </div>
+                    <div class="token-field">
+                        <span class="token-label">Scope</span>
+                        <div class="token-value" id="scope">-</div>
+                    </div>
+                    <div class="token-field">
+                        <span class="token-label">Client ID</span>
+                        <div class="token-value" id="clientId">-</div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 20px;">
+                    <button class="btn btn-secondary" onclick="testRefresh()">
+                        🔄 测试 Refresh Token
+                    </button>
+                    <button class="btn btn-primary" onclick="listTools()" style="margin-left: 10px;">
+                        🔧 获取工具列表
+                    </button>
+                    <button class="btn btn-primary" onclick="resetDemo()" style="margin-left: 10px;">
+                        🔄 重新开始
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tools List -->
+        <div class="section" id="toolsSection" style="display: none;">
+            <h2>🔧 可用工具列表</h2>
+            <div id="toolsList" style="margin-top: 15px;"></div>
+        </div>
+
+        <!-- Tool Execution -->
+        <div class="section" id="executeSection" style="display: none;">
+            <h2>▶️ 执行工具</h2>
+            <div class="form-group">
+                <label for="selectedTool">选择工具</label>
+                <select id="selectedTool" style="width: 100%; padding: 12px; border: 2px solid #e1e5e9; border-radius: 8px; font-size: 1em;" onchange="onToolSelect()">
+                    <option value="">-- 请选择工具 --</option>
+                </select>
+            </div>
+            <div id="toolDescription" style="margin-bottom: 15px; color: #666; font-style: italic;"></div>
+            <div class="form-group">
+                <label for="toolInput">输入参数 (JSON)</label>
+                <textarea id="toolInput" rows="6" style="width: 100%; padding: 12px; border: 2px solid #e1e5e9; border-radius: 8px; font-size: 1em; font-family: monospace;" placeholder='例如: {"owner": "Seey215", "repo": "SeeyGo"}'></textarea>
+            </div>
+            <button class="btn btn-primary" id="executeBtn" onclick="executeTool()">
+                ▶️ 执行工具
+            </button>
+        </div>
+
+        <!-- Execution Result -->
+        <div class="section" id="resultSection" style="display: none;">
+            <h2>📤 执行结果</h2>
+            <div class="code-block" id="executionResult" style="max-height: 400px; overflow-y: auto;"></div>
+        </div>
+
+        <!-- API Response -->
+        <div class="section" id="apiResponse" style="display: none;">
+            <h2>📡 API 响应</h2>
+            <div class="code-block" id="responseCode"></div>
+        </div>
+    </div>
+
+    <script>
+        // State
+        let currentSessionId = null;
+        let currentTokens = null;
+        let currentClientInfo = null;
+        let currentMcpServerUrl = null;
+        let authWindow = null;
+
+        // Get base URL
+        const BASE_URL = window.location.origin;
+
+        // Show status message
+        function showStatus(message, type = 'info') {
+            const box = document.getElementById('statusBox');
+            box.className = `status-box show ${type}`;
+            box.innerHTML = message;
+        }
+
+        // Hide status
+        function hideStatus() {
+            document.getElementById('statusBox').className = 'status-box';
+        }
+
+        // Update step indicator
+        function setStep(stepNum) {
+            for (let i = 1; i <= 3; i++) {
+                const step = document.getElementById(`step${i}`);
+                step.classList.remove('active', 'completed');
+                if (i < stepNum) {
+                    step.classList.add('completed');
+                } else if (i === stepNum) {
+                    step.classList.add('active');
+                }
+            }
+        }
+
+        // Show API response
+        function showApiResponse(data) {
+            document.getElementById('apiResponse').style.display = 'block';
+            document.getElementById('responseCode').textContent = JSON.stringify(data, null, 2);
+        }
+
+        // Start OAuth flow
+        async function startOAuth() {
+            const packageName = document.getElementById('packageName').value.trim();
+            const mcpServerUrl = document.getElementById('mcpServerUrl').value.trim();
+
+            if (!packageName) {
+                showStatus('请输入 Package Name', 'error');
+                return;
+            }
+
+            const connectBtn = document.getElementById('connectBtn');
+            connectBtn.disabled = true;
+            connectBtn.innerHTML = '<span class="spinner"></span>准备中...';
+
+            try {
+                showStatus('<span class="spinner"></span>正在准备 OAuth 流程...', 'info');
+                setStep(2);
+
+                // Call prepare endpoint
+                const callbackBaseUrl = `${BASE_URL}/demo/oauth/callback`;
+
+                // Build request body
+                const requestBody = {
+                    packageName,
+                    callbackBaseUrl,
+                };
+
+                // Add mcpServerUrl if provided
+                if (mcpServerUrl) {
+                    requestBody.mcpServerUrl = mcpServerUrl;
+                }
+
+                const response = await fetch(`${BASE_URL}/api/v1/oauth/prepare`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(requestBody)
+                });
+
+                const result = await response.json();
+                showApiResponse(result);
+
+                if (!result.success) {
+                    showStatus(`❌ 错误: ${result.message}`, 'error');
+                    connectBtn.disabled = false;
+                    connectBtn.innerHTML = '🚀 开始连接';
+                    setStep(1);
+                    return;
+                }
+
+                currentSessionId = result.data.sessionId;
+                currentMcpServerUrl = result.data.mcpServerUrl;
+
+                showStatus('🔓 正在打开授权窗口...', 'info');
+
+                // Open auth window
+                const width = 600;
+                const height = 700;
+                const left = (window.screen.width - width) / 2;
+                const top = (window.screen.height - height) / 2;
+
+                authWindow = window.open(
+                    result.data.authUrl,
+                    'oauth',
+                    `width=${width},height=${height},left=${left},top=${top}`
+                );
+
+                if (!authWindow) {
+                    showStatus('❌ 无法打开授权窗口，请检查浏览器弹窗设置', 'error');
+                    connectBtn.disabled = false;
+                    connectBtn.innerHTML = '🚀 开始连接';
+                    return;
+                }
+
+                // Listen for callback message
+                window.addEventListener('message', handleOAuthCallback);
+
+                // Poll for callback data (fallback)
+                pollForCallback();
+
+            } catch (error) {
+                console.error('OAuth error:', error);
+                showStatus(`❌ 错误: ${error.message}`, 'error');
+                connectBtn.disabled = false;
+                connectBtn.innerHTML = '🚀 开始连接';
+                setStep(1);
+            }
+        }
+
+        // Handle OAuth callback via postMessage
+        function handleOAuthCallback(event) {
+            if (event.data && event.data.type === 'oauth-callback') {
+                window.removeEventListener('message', handleOAuthCallback);
+
+                if (event.data.success) {
+                    // Fetch the callback data
+                    fetchCallbackData();
+                } else {
+                    showStatus(`❌ 授权失败: ${event.data.error}`, 'error');
+                    resetButtons();
+                    setStep(1);
+                }
+            }
+        }
+
+        // Poll for callback data
+        async function pollForCallback() {
+            if (!currentSessionId) return;
+
+            const maxAttempts = 60; // 2 minutes
+            let attempts = 0;
+
+            const poll = async () => {
+                if (attempts >= maxAttempts) {
+                    showStatus('❌ 授权超时', 'error');
+                    resetButtons();
+                    setStep(1);
+                    return;
+                }
+
+                try {
+                    const response = await fetch(`${BASE_URL}/demo/oauth/callback/${currentSessionId}`);
+                    const result = await response.json();
+
+                    if (result.success && result.data) {
+                        displayTokens(result.data);
+                        return;
+                    }
+                } catch (e) {
+                    // Continue polling
+                }
+
+                attempts++;
+                setTimeout(poll, 2000);
+            };
+
+            poll();
+        }
+
+        // Fetch callback data
+        async function fetchCallbackData() {
+            try {
+                const response = await fetch(`${BASE_URL}/demo/oauth/callback/${currentSessionId}`);
+                const result = await response.json();
+
+                if (result.success && result.data) {
+                    displayTokens(result.data);
+                } else {
+                    showStatus('❌ 无法获取授权数据', 'error');
+                    resetButtons();
+                }
+            } catch (error) {
+                showStatus(`❌ 错误: ${error.message}`, 'error');
+                resetButtons();
+            }
+        }
+
+        // Display tokens
+        function displayTokens(data) {
+            currentTokens = data.tokens;
+            currentClientInfo = data.clientInfo;
+            currentMcpServerUrl = data.mcpServerUrl;
+
+            setStep(3);
+            hideStatus();
+
+            document.getElementById('tokenDisplay').classList.add('show');
+            document.getElementById('accessToken').textContent = data.tokens.access_token || '-';
+            document.getElementById('tokenType').textContent = data.tokens.token_type || '-';
+            document.getElementById('expiresIn').textContent = data.tokens.expires_in ? `${data.tokens.expires_in} 秒` : '-';
+            document.getElementById('refreshToken').textContent = data.tokens.refresh_token || '(此服务器不支持)';
+            document.getElementById('scope').textContent = data.tokens.scope || '-';
+            document.getElementById('clientId').textContent = data.clientInfo.client_id || '-';
+
+            showApiResponse(data);
+
+            showStatus('✅ 授权成功！正在获取工具列表...', 'success');
+            resetButtons();
+
+            // Automatically list tools after successful authorization
+            setTimeout(() => {
+                listTools();
+            }, 500);
+        }
+
+        // Test refresh token
+        async function testRefresh() {
+            if (!currentTokens?.refresh_token) {
+                showStatus('❌ 此 OAuth 服务器未提供 Refresh Token（GitHub OAuth 默认不支持刷新令牌）', 'error');
+                return;
+            }
+            
+            if (!currentMcpServerUrl || !currentClientInfo) {
+                showStatus('❌ 缺少必要数据进行刷新', 'error');
+                return;
+            }
+
+            showStatus('<span class="spinner"></span>正在刷新 Token...', 'info');
+
+            try {
+                const response = await fetch(`${BASE_URL}/api/v1/oauth/refresh`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        mcpServerUrl: currentMcpServerUrl,
+                        refreshToken: currentTokens.refresh_token,
+                        clientId: currentClientInfo.client_id,
+                        clientSecret: currentClientInfo.client_secret
+                    })
+                });
+
+                const result = await response.json();
+                showApiResponse(result);
+
+                if (result.success) {
+                    currentTokens = { ...currentTokens, ...result.data };
+                    document.getElementById('accessToken').textContent = result.data.access_token || '-';
+                    if (result.data.refresh_token) {
+                        document.getElementById('refreshToken').textContent = result.data.refresh_token;
+                    }
+                    showStatus('✅ Token 刷新成功！', 'success');
+                } else {
+                    showStatus(`❌ 刷新失败: ${result.message}`, 'error');
+                }
+            } catch (error) {
+                showStatus(`❌ 错误: ${error.message}`, 'error');
+            }
+        }
+
+        // Reset buttons
+        function resetButtons() {
+            const connectBtn = document.getElementById('connectBtn');
+            connectBtn.disabled = false;
+            connectBtn.innerHTML = '🚀 开始连接';
+        }
+
+        // Reset demo
+        function resetDemo() {
+            currentSessionId = null;
+            currentTokens = null;
+            currentClientInfo = null;
+            currentMcpServerUrl = null;
+
+            setStep(1);
+            hideStatus();
+            document.getElementById('tokenDisplay').classList.remove('show');
+            document.getElementById('apiResponse').style.display = 'none';
+            document.getElementById('toolsSection').style.display = 'none';
+            document.getElementById('executeSection').style.display = 'none';
+            document.getElementById('resultSection').style.display = 'none';
+            resetButtons();
+        }
+
+        // Available tools storage
+        let availableTools = [];
+
+        // List tools
+        async function listTools() {
+            const packageName = document.getElementById('packageName').value.trim();
+            
+            if (!packageName) {
+                showStatus('❌ 请输入 Package Name', 'error');
+                return;
+            }
+
+            showStatus('<span class="spinner"></span>正在获取工具列表...', 'info');
+
+            try {
+                // Build URL with accessToken if available
+                let url = `${BASE_URL}/api/v1/packages/tools?packageName=${encodeURIComponent(packageName)}`;
+                if (currentTokens && currentTokens.access_token) {
+                    url += `&accessToken=${encodeURIComponent(currentTokens.access_token)}`;
+                }
+                
+                const response = await fetch(url);
+                const result = await response.json();
+                showApiResponse(result);
+
+                if (result.success && result.data) {
+                    // data is directly an array of tools
+                    const tools = Array.isArray(result.data) ? result.data : (result.data.tools || []);
+                    availableTools = tools;
+                    displayTools(tools);
+                    showStatus(`✅ 成功获取 ${tools.length} 个工具`, 'success');
+                } else {
+                    showStatus(`❌ 获取工具列表失败: ${result.message || '未知错误'}`, 'error');
+                }
+            } catch (error) {
+                showStatus(`❌ 错误: ${error.message}`, 'error');
+            }
+        }
+
+        // Display tools list
+        function displayTools(tools) {
+            const toolsSection = document.getElementById('toolsSection');
+            const toolsList = document.getElementById('toolsList');
+            const executeSection = document.getElementById('executeSection');
+            const selectedTool = document.getElementById('selectedTool');
+
+            toolsSection.style.display = 'block';
+            executeSection.style.display = 'block';
+
+            // Build tools list HTML
+            let html = '<div style="display: grid; gap: 10px;">';
+            tools.forEach((tool, index) => {
+                html += `
+                    <div class="token-card" style="cursor: pointer;" onclick="selectTool('${tool.name}')">
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <span style="font-size: 1.5em;">🔧</span>
+                            <div>
+                                <strong style="color: #667eea;">${tool.name}</strong>
+                                <p style="margin: 5px 0 0 0; color: #666; font-size: 0.9em;">${tool.description || '无描述'}</p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+            html += '</div>';
+            toolsList.innerHTML = html;
+
+            // Populate select dropdown
+            selectedTool.innerHTML = '<option value="">-- 请选择工具 --</option>';
+            tools.forEach(tool => {
+                const option = document.createElement('option');
+                option.value = tool.name;
+                option.textContent = tool.name;
+                selectedTool.appendChild(option);
+            });
+        }
+
+        // Select a tool
+        function selectTool(toolName) {
+            document.getElementById('selectedTool').value = toolName;
+            onToolSelect();
+            
+            // Scroll to execute section
+            document.getElementById('executeSection').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // On tool select change
+        function onToolSelect() {
+            const toolName = document.getElementById('selectedTool').value;
+            const descDiv = document.getElementById('toolDescription');
+            const inputArea = document.getElementById('toolInput');
+            
+            if (!toolName) {
+                descDiv.textContent = '';
+                inputArea.value = '';
+                return;
+            }
+
+            const tool = availableTools.find(t => t.name === toolName);
+            if (tool) {
+                descDiv.textContent = tool.description || '无描述';
+                
+                // Generate sample input based on tool schema
+                if (tool.inputSchema && tool.inputSchema.properties) {
+                    const sampleInput = {};
+                    for (const [key, prop] of Object.entries(tool.inputSchema.properties)) {
+                        if (prop.type === 'string') {
+                            sampleInput[key] = prop.description ? `<${prop.description}>` : '';
+                        } else if (prop.type === 'number' || prop.type === 'integer') {
+                            sampleInput[key] = 0;
+                        } else if (prop.type === 'boolean') {
+                            sampleInput[key] = false;
+                        } else if (prop.type === 'array') {
+                            sampleInput[key] = [];
+                        } else if (prop.type === 'object') {
+                            sampleInput[key] = {};
+                        }
+                    }
+                    inputArea.value = JSON.stringify(sampleInput, null, 2);
+                } else {
+                    inputArea.value = '{}';
+                }
+            }
+        }
+
+        // Execute tool
+        async function executeTool() {
+            const packageName = document.getElementById('packageName').value.trim();
+            const toolName = document.getElementById('selectedTool').value;
+            const inputText = document.getElementById('toolInput').value.trim();
+
+            if (!toolName) {
+                showStatus('❌ 请选择一个工具', 'error');
+                return;
+            }
+
+            let inputData = {};
+            try {
+                if (inputText) {
+                    inputData = JSON.parse(inputText);
+                }
+            } catch (e) {
+                showStatus('❌ 输入参数不是有效的 JSON', 'error');
+                return;
+            }
+
+            const executeBtn = document.getElementById('executeBtn');
+            executeBtn.disabled = true;
+            executeBtn.innerHTML = '<span class="spinner"></span>执行中...';
+
+            showStatus('<span class="spinner"></span>正在执行工具...', 'info');
+
+            try {
+                const requestBody = {
+                    packageName,
+                    toolKey: toolName,
+                    inputData
+                };
+
+                // Add access token if available
+                if (currentTokens && currentTokens.access_token) {
+                    requestBody.accessToken = currentTokens.access_token;
+                }
+
+                const response = await fetch(`${BASE_URL}/api/v1/packages/run`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(requestBody)
+                });
+
+                const result = await response.json();
+                showApiResponse(result);
+
+                // Display result
+                const resultSection = document.getElementById('resultSection');
+                const executionResult = document.getElementById('executionResult');
+                resultSection.style.display = 'block';
+
+                if (result.success) {
+                    executionResult.textContent = JSON.stringify(result.data, null, 2);
+                    showStatus('✅ 工具执行成功！', 'success');
+                } else {
+                    executionResult.textContent = JSON.stringify(result, null, 2);
+                    showStatus(`❌ 执行失败: ${result.message || '未知错误'}`, 'error');
+                }
+
+                // Scroll to result
+                resultSection.scrollIntoView({ behavior: 'smooth' });
+
+            } catch (error) {
+                showStatus(`❌ 错误: ${error.message}`, 'error');
+            } finally {
+                executeBtn.disabled = false;
+                executeBtn.innerHTML = '▶️ 执行工具';
+            }
+        }
+    </script>
+</body>
+
+</html>

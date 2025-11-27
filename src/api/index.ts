@@ -5,6 +5,7 @@ import { swaggerUI } from "@hono/swagger-ui";
 import { OpenAPIHono } from "@hono/zod-openapi";
 import type { Context } from "hono";
 import { configRoutes } from "../domains/config/config-route";
+import { oauthDemoRoutes, oauthRoutes } from "../domains/oauth/oauth-route";
 import { repository } from "../domains/package/package-handler";
 import { packageRoutes } from "../domains/package/package-route";
 import { initRegistryFactory } from "../domains/registry/registry-factory";
@@ -36,6 +37,10 @@ const app = new OpenAPIHono();
 // Domain routes
 app.route("/api/v1", packageRoutes);
 app.route("/api/v1/config", configRoutes);
+app.route("/api/v1/oauth", oauthRoutes);
+
+// Demo routes (serves demo-oauth.html and handles callbacks)
+app.route("/demo", oauthDemoRoutes);
 
 if (isSearchEnabled()) {
   initializeSearchService().catch(console.error);

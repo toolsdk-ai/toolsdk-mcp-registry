@@ -116,20 +116,36 @@ async function getPyMcpClient(
   return createMcpClient(mcpServerConfig, transport);
 }
 
-async function getRemoteMcpClient(url: string, mcpServerConfig: MCPServerPackageConfig) {
-  const transport = new StreamableHTTPClientTransport(new URL(url));
+async function getRemoteMcpClient(
+  url: string,
+  mcpServerConfig: MCPServerPackageConfig,
+  accessToken?: string,
+) {
+  const opts: { requestInit?: RequestInit } = {};
+
+  // Add OAuth access token to Authorization header if provided
+  if (accessToken) {
+    opts.requestInit = {
+      headers: {
+        Authorization: `Bearer ${accessToken}`,
+      },
+    };
+  }
+
+  const transport = new StreamableHTTPClientTransport(new URL(url), opts);
   return createMcpClient(mcpServerConfig, transport);
 }
 
 export async function getMcpClient(
   mcpServerConfig: MCPServerPackageConfig,
   env?: Record<string, string>,
+  accessToken?: string,
 ) {
   // Check for remotes first
   if (mcpServerConfig.remotes && mcpServerConfig.remotes.length > 0) {
     const remote = mcpServerConfig.remotes.find((r) => r.type === "streamable-http");
     if (remote) {
-      return getRemoteMcpClient(remote.url, mcpServerConfig);
+      return getRemoteMcpClient(remote.url, mcpServerConfig, accessToken);
     }
   }
 

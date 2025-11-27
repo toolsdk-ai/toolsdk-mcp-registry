@@ -32,11 +32,12 @@ export const packageHandler = {
     inputData: Record<string, unknown>,
     envs?: Record<string, string>,
     sandboxProvider?: MCPSandboxProvider,
+    accessToken?: string,
   ) => {
     try {
       const executor = ExecutorFactory.create(sandboxProvider);
       const packageSO = await PackageSO.init(packageName, repository, executor);
-      const result = await packageSO.executeTool(toolKey, inputData, envs);
+      const result = await packageSO.executeTool(toolKey, inputData, envs, accessToken);
       return createResponse(result);
     } catch (error) {
       if (error instanceof Error) {
@@ -55,11 +56,15 @@ export const packageHandler = {
     }
   },
 
-  listTools: async (packageName: string, sandboxProvider?: MCPSandboxProvider) => {
+  listTools: async (
+    packageName: string,
+    sandboxProvider?: MCPSandboxProvider,
+    accessToken?: string,
+  ) => {
     try {
       const executor = ExecutorFactory.create(sandboxProvider);
       const packageSO = await PackageSO.init(packageName, repository, executor);
-      const tools = await packageSO.getTools();
+      const tools = await packageSO.getTools(accessToken);
       return createResponse(tools);
     } catch (error) {
       if (error instanceof Error && error.message.includes("not found")) {

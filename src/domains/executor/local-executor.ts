@@ -20,7 +20,11 @@ export class LocalExecutor implements ToolExecutor {
 
   async executeTool(request: ToolExecuteRequest): Promise<unknown> {
     const mcpServerConfig = this.packageRepository.getPackageConfig(request.packageName);
-    const { client, closeConnection } = await getMcpClient(mcpServerConfig, request.envs || {});
+    const { client, closeConnection } = await getMcpClient(
+      mcpServerConfig,
+      request.envs || {},
+      request.accessToken,
+    );
 
     try {
       const result = await client.callTool({
@@ -35,7 +39,7 @@ export class LocalExecutor implements ToolExecutor {
     }
   }
 
-  async listTools(packageName: string): Promise<Tool[]> {
+  async listTools(packageName: string, accessToken?: string): Promise<Tool[]> {
     const mcpServerConfig = this.packageRepository.getPackageConfig(packageName);
 
     const mockEnvs: Record<string, string> = {};
@@ -45,7 +49,7 @@ export class LocalExecutor implements ToolExecutor {
       });
     }
 
-    const { client, closeConnection } = await getMcpClient(mcpServerConfig, mockEnvs);
+    const { client, closeConnection } = await getMcpClient(mcpServerConfig, mockEnvs, accessToken);
 
     try {
       const { tools } = await client.listTools();

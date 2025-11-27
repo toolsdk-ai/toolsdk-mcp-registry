@@ -23,6 +23,18 @@ export const packageNameQuerySchema = z.object({
     }),
 });
 
+export const toolsQuerySchema = packageNameQuerySchema.extend({
+  accessToken: z
+    .string()
+    .optional()
+    .openapi({
+      param: { name: "accessToken", in: "query" },
+      description:
+        "OAuth access token for MCP servers that require OAuth authentication. " +
+        "This token will be included in the Authorization header when calling the MCP server.",
+    }),
+});
+
 export const ToolExecuteSchema = z
   .object({
     packageName: z.string().openapi({ example: "@modelcontextprotocol/server-filesystem" }),
@@ -33,6 +45,14 @@ export const ToolExecuteSchema = z
       example: "LOCAL",
       description: "Optional sandbox provider to override default (LOCAL, DAYTONA, SANDOCK, E2B)",
     }),
+    accessToken: z
+      .string()
+      .optional()
+      .openapi({
+        description:
+          "OAuth access token for MCP servers that require OAuth authentication. " +
+          "This token will be included in the Authorization header when calling the MCP server.",
+      }),
   })
   .openapi("ToolExecute");
 

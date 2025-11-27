@@ -10,6 +10,7 @@ import {
   packageNameQuerySchema,
   ToolExecuteSchema,
   ToolsResponseSchema,
+  toolsQuerySchema,
 } from "./package-schema";
 import type { PackagesList } from "./package-types";
 
@@ -36,17 +37,18 @@ packageRoutes.openapi(packageDetailRoute, async (c) => {
 const toolsRoute = createRoute({
   method: "get",
   path: "/packages/tools",
-  request: { query: packageNameQuerySchema },
+  request: { query: toolsQuerySchema },
   responses: createRouteResponses(ToolsResponseSchema, {
     includeErrorResponses: true,
   }),
 });
 
 packageRoutes.openapi(toolsRoute, async (c) => {
-  const { packageName, sandboxProvider } = c.req.valid("query");
+  const { packageName, sandboxProvider, accessToken } = c.req.valid("query");
   const result = await packageHandler.listTools(
     packageName,
     sandboxProvider as MCPSandboxProvider | undefined,
+    accessToken,
   );
   return c.json(result, 200);
 });
@@ -77,6 +79,7 @@ packageRoutes.openapi(executeToolRoute, async (c) => {
     body.inputData,
     body.envs,
     body.sandboxProvider as MCPSandboxProvider | undefined,
+    body.accessToken,
   );
   return c.json(result, 200);
 });

@@ -52,20 +52,22 @@ export class PackageSO {
     return new PackageSO(packageName, config, packageInfo, executor);
   }
 
-  async getTools(): Promise<Tool[]> {
-    return await this._executor.listTools(this.packageName);
+  async getTools(accessToken?: string): Promise<Tool[]> {
+    return await this._executor.listTools(this.packageName, accessToken);
   }
 
   async executeTool(
     toolKey: string,
     inputData: Record<string, unknown>,
     envs?: Record<string, string>,
+    accessToken?: string,
   ): Promise<unknown> {
     return await this._executor.executeTool({
       packageName: this.packageName,
       toolKey,
       inputData,
       envs,
+      accessToken,
     });
   }
 
