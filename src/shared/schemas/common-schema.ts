@@ -63,6 +63,13 @@ export const MCPServerPackageConfigSchema = z
         z.object({
           type: z.literal("streamable-http"),
           url: z.string().url(),
+          auth: z
+            .object({
+              type: z.enum(["oauth2"]),
+              scopes: z.array(z.string()).optional(),
+            })
+            .optional()
+            .describe("OAuth 2.1 authentication configuration for MCP Server"),
         }),
       )
       .optional(),

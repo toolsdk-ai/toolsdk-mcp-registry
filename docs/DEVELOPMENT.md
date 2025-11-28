@@ -6,6 +6,7 @@ This document provides developers with detailed information on how to set up, ru
   - [1. 🧰 Prerequisites](#1--prerequisites)
   - [2. 🧰 Tech Stack](#2--tech-stack)
   - [3. 🎯 Project Purpose](#3--project-purpose)
+    - [Key Features:](#key-features)
   - [4. 🚀 Quick Start with Docker](#4--quick-start-with-docker)
     - [4.1 Quick Start (5 Minutes)](#41-quick-start-5-minutes)
     - [4.2 API Usage Examples](#42-api-usage-examples)
@@ -24,7 +25,19 @@ This document provides developers with detailed information on how to set up, ru
   - [7. 🛠 Common Issues and Troubleshooting](#7--common-issues-and-troubleshooting)
     - [7.1 MCP Client Test Errors During Build Process](#71-mcp-client-test-errors-during-build-process)
   - [8. 🗃️ Project Structure](#8-️-project-structure)
+    - [Architecture Highlights:](#architecture-highlights)
   - [9. ⚙️ Environment Variables](#9-️-environment-variables)
+    - [Quick Configuration (Only 1 Variable Required)](#quick-configuration-only-1-variable-required)
+    - [Optional Configuration](#optional-configuration)
+    - [Advanced Configuration](#advanced-configuration)
+      - [Sandbox Provider Options](#sandbox-provider-options)
+    - [Configuration Files](#configuration-files)
+  - [10. 🔐 OAuth Integration](#10--oauth-integration)
+    - [10.1 Overview](#101-overview)
+    - [10.2 Step 1: Initiate Authorization (Prepare)](#102-step-1-initiate-authorization-prepare)
+    - [10.3 Step 2: Receive Credentials (Callback)](#103-step-2-receive-credentials-callback)
+    - [10.4 Step 3: Execute Tools (Run)](#104-step-3-execute-tools-run)
+    - [10.5 Step 4: Refresh Token](#105-step-4-refresh-token)
 
 ## 1. 🧰 Prerequisites
 
@@ -529,6 +542,114 @@ If you need to customize, you can configure the following variables:
 - `.env.local` - Local override configuration (not committed to Git)
 
 All environment variables are managed centrally through `src/shared/config/environment.ts`.
+
+## 10. 🔐 OAuth Integration
+
+This section explains how to integrate OAuth authentication for MCP servers that require user authorization (e.g., GitHub, Slack, etc.).
+
+### 10.1 Overview
+
+The Registry encapsulates OAuth protocol complexity (Discovery/DCR/PKCE). Third-party platforms only need to implement the following standard flow to replace the demo implementation:
+
+**Flow Summary:**
+1. **Prepare** - Initiate authorization and get auth URL
+2. **Callback** - Receive tokens after user authorization
+3. **Run** - Execute tools with access token
+4. **Refresh** - Refresh expired tokens
+
+### 10.2 Step 1: Initiate Authorization (Prepare)
+
+**Endpoint:** `POST {REGISTRY_URL}/api/v1/oauth/prepare`
+
+**Request:**
+```json
+{
+  "packageName": "github-mcp",
+  "callbackBaseUrl": "https://api.your-platform.com/internal/mcp-oauth/complete"
+}
+```
+
+**Response:**
+```json
+{
+  "authUrl": "https://github.com/login/oauth/authorize?...",
+  "sessionId": "session-uuid-here"
+}
+```
+
+**Implementation:**
+- Retrieve `authUrl` and `sessionId` from the response
+- Frontend redirects user via `window.open(authUrl)` to initiate third-party login
+
+### 10.3 Step 2: Receive Credentials (Callback)
+
+**Mechanism:** After user authorization, Registry will automatically **POST** data to the `callbackBaseUrl` provided in Step 1.
+
+**Received Data:**
+```json
+{
+  "sessionId": "session-uuid-here",
+  "tokens": {
+    "access_token": "gho_xxxx",
+    "refresh_token": "ghr_xxxx",
+    "expires_in": 28800
+  },
+  "clientInfo": {
+    "client_id": "Iv1.xxxx"
+  }
+}
+```
+
+**Implementation:**
+- Your backend must implement this callback endpoint
+- Receive and persist the tokens, associating them with the current user
+- **Important:** Registry does NOT store tokens - your platform is responsible for token storage
+
+### 10.4 Step 3: Execute Tools (Run)
+
+**Endpoint:** `POST {REGISTRY_URL}/api/v1/packages/run`
+
+**Request:**
+```json
+{
+  "packageName": "github-mcp",
+  "toolKey": "list_repositories",
+  "inputData": {
+    "owner": "toolsdk-ai"
+  },
+  "accessToken": "gho_xxxx"
+}
+```
+
+**Implementation:**
+- Add `accessToken` field to the existing request body
+- Registry automatically injects the token into MCP Server request headers
+
+### 10.5 Step 4: Refresh Token
+
+**Endpoint:** `POST {REGISTRY_URL}/api/v1/oauth/refresh`
+
+**Request:**
+```json
+{
+  "packageName": "github-mcp",
+  "refreshToken": "ghr_xxxx",
+  "clientId": "Iv1.xxxx"
+}
+```
+
+**Response:**
+```json
+{
+  "access_token": "gho_new_xxxx",
+  "refresh_token": "ghr_new_xxxx",
+  "expires_in": 28800
+}
+```
+
+**Implementation:**
+- When tokens expire, use stored `refreshToken` and `clientId` to obtain new tokens
+- Update stored tokens with the new values
 
 ---
 
