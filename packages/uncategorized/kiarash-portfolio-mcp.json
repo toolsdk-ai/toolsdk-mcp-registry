@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "kiarash-portfolio-mcp",
+  "description": "WebMCP-enabled portfolio with Ed25519 signed discovery. AI agents can query projects, skills, and execute terminal commands via HTTP API.",
+  "url": "https://kiarash-adl.pages.dev/.well-known/mcp.llmfeed.json",
+  "runtime": "remote",
+  "license": "MIT",
+  "author": "Kiarash Adl",
+  "tags": ["portfolio", "webmcp", "cloudflare", "ed25519"],
+  "tools": [
+    {
+      "name": "get_project_details",
+      "description": "Get detailed info about portfolio projects"
+    },
+    {
+      "name": "run_terminal_command",
+      "description": "Execute terminal commands: about, skills, projects, contact"
+    }
+  ]
+}
