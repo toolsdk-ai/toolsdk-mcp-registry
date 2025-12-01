@@ -1,4 +1,4 @@
-import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import { OAuthSessionStore } from "../oauth-session";
 import type { OAuthSession } from "../oauth-types";
 
