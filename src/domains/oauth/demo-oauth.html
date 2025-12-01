@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -312,17 +312,17 @@
     <div class="container">
         <header>
             <h1>🔐 MCP OAuth Demo</h1>
-            <p class="subtitle">测试 Registry 的 OAuth 客户端能力</p>
+            <p class="subtitle">Test Registry's OAuth Client Capabilities</p>
         </header>
 
         <div class="info-box">
-            <h3>📋 演示说明</h3>
-            <p>这个 Demo 演示了 Registry 如何作为 OAuth 客户端，帮助第三方应用连接支持 OAuth 的 MCP Server：</p>
+            <h3>📋 Demo Description</h3>
+            <p>This demo shows how the Registry acts as an OAuth client to help third-party applications connect to OAuth-enabled MCP Servers:</p>
             <ul>
-                <li>✅ 自动发现 MCP Server 的 OAuth 配置 (RFC 9728)</li>
-                <li>✅ 动态客户端注册 (RFC 7591)</li>
-                <li>✅ PKCE 安全保护 (OAuth 2.1 要求)</li>
-                <li>✅ Token 交换和回调</li>
+                <li>✅ Auto-discover MCP Server OAuth configuration (RFC 9728)</li>
+                <li>✅ Dynamic client registration (RFC 7591)</li>
+                <li>✅ PKCE security protection (OAuth 2.1 requirement)</li>
+                <li>✅ Token exchange and callback</li>
             </ul>
         </div>
 
@@ -330,38 +330,38 @@
         <div class="step-indicator">
             <div class="step active" id="step1">
                 <div class="step-number">1</div>
-                <div class="step-label">配置</div>
+                <div class="step-label">Configure</div>
             </div>
             <div class="step" id="step2">
                 <div class="step-number">2</div>
-                <div class="step-label">授权</div>
+                <div class="step-label">Authorize</div>
             </div>
             <div class="step" id="step3">
                 <div class="step-number">3</div>
-                <div class="step-label">完成</div>
+                <div class="step-label">Complete</div>
             </div>
         </div>
 
         <!-- Step 1: Configuration -->
         <div class="section" id="configSection">
-            <h2>步骤 1: 配置 MCP Server</h2>
+            <h2>Step 1: Configure MCP Server</h2>
             <div class="form-group">
                 <label for="packageName">Package Name</label>
-                <input type="text" id="packageName" placeholder="例如: github-mcp" value="github-mcp">
+                <input type="text" id="packageName" placeholder="e.g. github-mcp" value="github-mcp">
                 <p style="margin-top: 5px; color: #666; font-size: 0.9em;">
-                    用于标识此次 OAuth 流程的名称（如果提供了 MCP Server URL，可以是任意字符串）
+                    Name to identify this OAuth flow (can be any string if MCP Server URL is provided)
                 </p>
             </div>
             <div class="form-group">
-                <label for="mcpServerUrl">MCP Server URL <span style="color: #667eea;">(推荐填写)</span></label>
-                <input type="url" id="mcpServerUrl" placeholder="例如: http://localhost:3001/mcp"
+                <label for="mcpServerUrl">MCP Server URL <span style="color: #667eea;">(Recommended)</span></label>
+                <input type="url" id="mcpServerUrl" placeholder="e.g. http://localhost:3001/mcp"
                     value="http://localhost:3001/mcp">
                 <p style="margin-top: 5px; color: #666; font-size: 0.9em;">
-                    直接指定 MCP Server 的 URL，用于发现 OAuth 配置
+                    Directly specify the MCP Server URL for OAuth configuration discovery
                 </p>
             </div>
             <button class="btn btn-primary" id="connectBtn" onclick="startOAuth()">
-                🚀 开始连接
+                🚀 Start Connection
             </button>
         </div>
 
@@ -371,7 +371,7 @@
         <!-- Token Display -->
         <div class="token-display" id="tokenDisplay">
             <div class="section">
-                <h2>步骤 3: 授权结果</h2>
+                <h2>Step 3: Authorization Result</h2>
                 <div class="token-card">
                     <div class="token-field">
                         <span class="token-label">Access Token</span>
@@ -401,13 +401,13 @@
 
                 <div style="margin-top: 20px;">
                     <button class="btn btn-secondary" onclick="testRefresh()">
-                        🔄 测试 Refresh Token
+                        🔄 Test Refresh Token
                     </button>
                     <button class="btn btn-primary" onclick="listTools()" style="margin-left: 10px;">
-                        🔧 获取工具列表
+                        🔧 Get Tools List
                     </button>
                     <button class="btn btn-primary" onclick="resetDemo()" style="margin-left: 10px;">
-                        🔄 重新开始
+                        🔄 Restart
                     </button>
                 </div>
             </div>
@@ -415,38 +415,38 @@
 
         <!-- Tools List -->
         <div class="section" id="toolsSection" style="display: none;">
-            <h2>🔧 可用工具列表</h2>
+            <h2>🔧 Available Tools</h2>
             <div id="toolsList" style="margin-top: 15px;"></div>
         </div>
 
         <!-- Tool Execution -->
         <div class="section" id="executeSection" style="display: none;">
-            <h2>▶️ 执行工具</h2>
+            <h2>▶️ Execute Tool</h2>
             <div class="form-group">
-                <label for="selectedTool">选择工具</label>
+                <label for="selectedTool">Select Tool</label>
                 <select id="selectedTool" style="width: 100%; padding: 12px; border: 2px solid #e1e5e9; border-radius: 8px; font-size: 1em;" onchange="onToolSelect()">
-                    <option value="">-- 请选择工具 --</option>
+                    <option value="">-- Please select a tool --</option>
                 </select>
             </div>
             <div id="toolDescription" style="margin-bottom: 15px; color: #666; font-style: italic;"></div>
             <div class="form-group">
-                <label for="toolInput">输入参数 (JSON)</label>
-                <textarea id="toolInput" rows="6" style="width: 100%; padding: 12px; border: 2px solid #e1e5e9; border-radius: 8px; font-size: 1em; font-family: monospace;" placeholder='例如: {"owner": "Seey215", "repo": "SeeyGo"}'></textarea>
+                <label for="toolInput">Input Parameters (JSON)</label>
+                <textarea id="toolInput" rows="6" style="width: 100%; padding: 12px; border: 2px solid #e1e5e9; border-radius: 8px; font-size: 1em; font-family: monospace;" placeholder='e.g. {"owner": "Seey215", "repo": "SeeyGo"}'></textarea>
             </div>
             <button class="btn btn-primary" id="executeBtn" onclick="executeTool()">
-                ▶️ 执行工具
+                ▶️ Execute Tool
             </button>
         </div>
 
         <!-- Execution Result -->
         <div class="section" id="resultSection" style="display: none;">
-            <h2>📤 执行结果</h2>
+            <h2>📤 Execution Result</h2>
             <div class="code-block" id="executionResult" style="max-height: 400px; overflow-y: auto;"></div>
         </div>
 
         <!-- API Response -->
         <div class="section" id="apiResponse" style="display: none;">
-            <h2>📡 API 响应</h2>
+            <h2>📡 API Response</h2>
             <div class="code-block" id="responseCode"></div>
         </div>
     </div>
@@ -499,16 +499,16 @@
             const mcpServerUrl = document.getElementById('mcpServerUrl').value.trim();
 
             if (!packageName) {
-                showStatus('请输入 Package Name', 'error');
+                showStatus('Please enter Package Name', 'error');
                 return;
             }
 
             const connectBtn = document.getElementById('connectBtn');
             connectBtn.disabled = true;
-            connectBtn.innerHTML = '<span class="spinner"></span>准备中...';
+            connectBtn.innerHTML = '<span class="spinner"></span>Preparing...';
 
             try {
-                showStatus('<span class="spinner"></span>正在准备 OAuth 流程...', 'info');
+                showStatus('<span class="spinner"></span>Preparing OAuth flow...', 'info');
                 setStep(2);
 
                 // Call prepare endpoint
@@ -535,9 +535,9 @@
                 showApiResponse(result);
 
                 if (!result.success) {
-                    showStatus(`❌ 错误: ${result.message}`, 'error');
+                    showStatus(`❌ Error: ${result.message}`, 'error');
                     connectBtn.disabled = false;
-                    connectBtn.innerHTML = '🚀 开始连接';
+                    connectBtn.innerHTML = '🚀 Start Connection';
                     setStep(1);
                     return;
                 }
@@ -545,7 +545,7 @@
                 currentSessionId = result.data.sessionId;
                 currentMcpServerUrl = result.data.mcpServerUrl;
 
-                showStatus('🔓 正在打开授权窗口...', 'info');
+                showStatus('🔓 Opening authorization window...', 'info');
 
                 // Open auth window
                 const width = 600;
@@ -560,9 +560,9 @@
                 );
 
                 if (!authWindow) {
-                    showStatus('❌ 无法打开授权窗口，请检查浏览器弹窗设置', 'error');
+                    showStatus('❌ Unable to open authorization window, please check browser popup settings', 'error');
                     connectBtn.disabled = false;
-                    connectBtn.innerHTML = '🚀 开始连接';
+                    connectBtn.innerHTML = '🚀 Start Connection';
                     return;
                 }
 
@@ -574,9 +574,9 @@
 
             } catch (error) {
                 console.error('OAuth error:', error);
-                showStatus(`❌ 错误: ${error.message}`, 'error');
+                showStatus(`❌ Error: ${error.message}`, 'error');
                 connectBtn.disabled = false;
-                connectBtn.innerHTML = '🚀 开始连接';
+                connectBtn.innerHTML = '🚀 Start Connection';
                 setStep(1);
             }
         }
@@ -590,7 +590,7 @@
                     // Fetch the callback data
                     fetchCallbackData();
                 } else {
-                    showStatus(`❌ 授权失败: ${event.data.error}`, 'error');
+                    showStatus(`❌ Authorization failed: ${event.data.error}`, 'error');
                     resetButtons();
                     setStep(1);
                 }
@@ -606,7 +606,7 @@
 
             const poll = async () => {
                 if (attempts >= maxAttempts) {
-                    showStatus('❌ 授权超时', 'error');
+                    showStatus('❌ Authorization timeout', 'error');
                     resetButtons();
                     setStep(1);
                     return;
@@ -640,11 +640,11 @@
                 if (result.success && result.data) {
                     displayTokens(result.data);
                 } else {
-                    showStatus('❌ 无法获取授权数据', 'error');
+                    showStatus('❌ Unable to get authorization data', 'error');
                     resetButtons();
                 }
             } catch (error) {
-                showStatus(`❌ 错误: ${error.message}`, 'error');
+                showStatus(`❌ Error: ${error.message}`, 'error');
                 resetButtons();
             }
         }
@@ -661,14 +661,14 @@
             document.getElementById('tokenDisplay').classList.add('show');
             document.getElementById('accessToken').textContent = data.tokens.access_token || '-';
             document.getElementById('tokenType').textContent = data.tokens.token_type || '-';
-            document.getElementById('expiresIn').textContent = data.tokens.expires_in ? `${data.tokens.expires_in} 秒` : '-';
-            document.getElementById('refreshToken').textContent = data.tokens.refresh_token || '(此服务器不支持)';
+            document.getElementById('expiresIn').textContent = data.tokens.expires_in ? `${data.tokens.expires_in} seconds` : '-';
+            document.getElementById('refreshToken').textContent = data.tokens.refresh_token || '(Not supported by this server)';
             document.getElementById('scope').textContent = data.tokens.scope || '-';
             document.getElementById('clientId').textContent = data.clientInfo.client_id || '-';
 
             showApiResponse(data);
 
-            showStatus('✅ 授权成功！正在获取工具列表...', 'success');
+            showStatus('✅ Authorization successful! Getting tools list...', 'success');
             resetButtons();
 
             // Automatically list tools after successful authorization
@@ -680,16 +680,16 @@
         // Test refresh token
         async function testRefresh() {
             if (!currentTokens?.refresh_token) {
-                showStatus('❌ 此 OAuth 服务器未提供 Refresh Token（GitHub OAuth 默认不支持刷新令牌）', 'error');
+                showStatus('❌ This OAuth server did not provide a Refresh Token (GitHub OAuth does not support refresh tokens by default)', 'error');
                 return;
             }
             
             if (!currentMcpServerUrl || !currentClientInfo) {
-                showStatus('❌ 缺少必要数据进行刷新', 'error');
+                showStatus('❌ Missing required data for refresh', 'error');
                 return;
             }
 
-            showStatus('<span class="spinner"></span>正在刷新 Token...', 'info');
+            showStatus('<span class="spinner"></span>Refreshing Token...', 'info');
 
             try {
                 const response = await fetch(`${BASE_URL}/api/v1/oauth/refresh`, {
@@ -712,12 +712,12 @@
                     if (result.data.refresh_token) {
                         document.getElementById('refreshToken').textContent = result.data.refresh_token;
                     }
-                    showStatus('✅ Token 刷新成功！', 'success');
+                    showStatus('✅ Token refresh successful!', 'success');
                 } else {
-                    showStatus(`❌ 刷新失败: ${result.message}`, 'error');
+                    showStatus(`❌ Refresh failed: ${result.message}`, 'error');
                 }
             } catch (error) {
-                showStatus(`❌ 错误: ${error.message}`, 'error');
+                showStatus(`❌ Error: ${error.message}`, 'error');
             }
         }
 
@@ -725,7 +725,7 @@
         function resetButtons() {
             const connectBtn = document.getElementById('connectBtn');
             connectBtn.disabled = false;
-            connectBtn.innerHTML = '🚀 开始连接';
+            connectBtn.innerHTML = '🚀 Start Connection';
         }
 
         // Reset demo
@@ -753,11 +753,11 @@
             const packageName = document.getElementById('packageName').value.trim();
             
             if (!packageName) {
-                showStatus('❌ 请输入 Package Name', 'error');
+                showStatus('❌ Please enter Package Name', 'error');
                 return;
             }
 
-            showStatus('<span class="spinner"></span>正在获取工具列表...', 'info');
+            showStatus('<span class="spinner"></span>Getting tools list...', 'info');
 
             try {
                 // Build URL with accessToken if available
@@ -775,12 +775,12 @@
                     const tools = Array.isArray(result.data) ? result.data : (result.data.tools || []);
                     availableTools = tools;
                     displayTools(tools);
-                    showStatus(`✅ 成功获取 ${tools.length} 个工具`, 'success');
+                    showStatus(`✅ Successfully retrieved ${tools.length} tools`, 'success');
                 } else {
-                    showStatus(`❌ 获取工具列表失败: ${result.message || '未知错误'}`, 'error');
+                    showStatus(`❌ Failed to get tools list: ${result.message || 'Unknown error'}`, 'error');
                 }
             } catch (error) {
-                showStatus(`❌ 错误: ${error.message}`, 'error');
+                showStatus(`❌ Error: ${error.message}`, 'error');
             }
         }
 
@@ -803,7 +803,7 @@
                             <span style="font-size: 1.5em;">🔧</span>
                             <div>
                                 <strong style="color: #667eea;">${tool.name}</strong>
-                                <p style="margin: 5px 0 0 0; color: #666; font-size: 0.9em;">${tool.description || '无描述'}</p>
+                                <p style="margin: 5px 0 0 0; color: #666; font-size: 0.9em;">${tool.description || 'No description'}</p>
                             </div>
                         </div>
                     </div>
@@ -813,7 +813,7 @@
             toolsList.innerHTML = html;
 
             // Populate select dropdown
-            selectedTool.innerHTML = '<option value="">-- 请选择工具 --</option>';
+            selectedTool.innerHTML = '<option value="">-- Please select a tool --</option>';
             tools.forEach(tool => {
                 const option = document.createElement('option');
                 option.value = tool.name;
@@ -845,7 +845,7 @@
 
             const tool = availableTools.find(t => t.name === toolName);
             if (tool) {
-                descDiv.textContent = tool.description || '无描述';
+                descDiv.textContent = tool.description || 'No description';
                 
                 // Generate sample input based on tool schema
                 if (tool.inputSchema && tool.inputSchema.properties) {
@@ -877,7 +877,7 @@
             const inputText = document.getElementById('toolInput').value.trim();
 
             if (!toolName) {
-                showStatus('❌ 请选择一个工具', 'error');
+                showStatus('❌ Please select a tool', 'error');
                 return;
             }
 
@@ -887,15 +887,15 @@
                     inputData = JSON.parse(inputText);
                 }
             } catch (e) {
-                showStatus('❌ 输入参数不是有效的 JSON', 'error');
+                showStatus('❌ Input parameters are not valid JSON', 'error');
                 return;
             }
 
             const executeBtn = document.getElementById('executeBtn');
             executeBtn.disabled = true;
-            executeBtn.innerHTML = '<span class="spinner"></span>执行中...';
+            executeBtn.innerHTML = '<span class="spinner"></span>Executing...';
 
-            showStatus('<span class="spinner"></span>正在执行工具...', 'info');
+            showStatus('<span class="spinner"></span>Executing tool...', 'info');
 
             try {
                 const requestBody = {
@@ -925,20 +925,20 @@
 
                 if (result.success) {
                     executionResult.textContent = JSON.stringify(result.data, null, 2);
-                    showStatus('✅ 工具执行成功！', 'success');
+                    showStatus('✅ Tool executed successfully!', 'success');
                 } else {
                     executionResult.textContent = JSON.stringify(result, null, 2);
-                    showStatus(`❌ 执行失败: ${result.message || '未知错误'}`, 'error');
+                    showStatus(`❌ Execution failed: ${result.message || 'Unknown error'}`, 'error');
                 }
 
                 // Scroll to result
                 resultSection.scrollIntoView({ behavior: 'smooth' });
 
             } catch (error) {
-                showStatus(`❌ 错误: ${error.message}`, 'error');
+                showStatus(`❌ Error: ${error.message}`, 'error');
             } finally {
                 executeBtn.disabled = false;
-                executeBtn.innerHTML = '▶️ 执行工具';
+                executeBtn.innerHTML = '▶️ Execute Tool';
             }
         }
     </script>
