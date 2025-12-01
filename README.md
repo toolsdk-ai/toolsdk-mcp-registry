@@ -4860,3 +4860,5 @@ Miscellaneous tools and integrations that don’t fit into other categories.
 - [❌ zotero](https://github.com/54yyyu/zotero-mcp): Enables direct interaction with Zotero reference management libraries for searching literature, retrieving metadata and full-text content, managing collections, and organizing research materials.  (python) 
 - [❌ zotero-mcp](https://github.com/kujenga/zotero-mcp): Integrates with Zotero to enable searching libraries, retrieving metadata, and accessing full-text content for scholarly research workflows.  (python) 
 
+
+- [AgentsKB](https://agentskb.com) - Give your AI agent expert-level knowledge. Pre-researched answers your agent can trust. Free tier included.
