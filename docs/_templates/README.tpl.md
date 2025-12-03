@@ -41,6 +41,8 @@
   <a href="#install-via-package-manager">📦 <b>Use as SDK</b></a>
   &nbsp;&nbsp;•&nbsp;&nbsp;
   <a href="#submit-new-mcp-servers">➕ <b>Add Server</b></a>
+  &nbsp;&nbsp;•&nbsp;&nbsp;
+  <a href="https://www.youtube.com/watch?v=J_oaDtCoVVo">🎥 <b>Video Tutorial</b></a>
 </p>
 
 <a href="https://toolsdk.ai">
@@ -110,12 +112,6 @@ curl -X POST http://localhost:3003/api/v1/packages/run \
     "envs": {}
   }'
 ```
-
-**Use Cases:**
-- 🤖 Build AI agents with remote tool execution
-- 💬 Power chatbots with MCP server integrations
-- 🚀 Create serverless AI workflows
-- 🔧 Automate tasks with LLM-powered tools
 
 > 📖 For advanced deployment options and configuration, see the [DEVELOPMENT documentation](./docs/DEVELOPMENT.md#4--quick-start-with-docker).
 
@@ -243,17 +239,6 @@ This open-source registry provides:
 - 🔗 [packages-list.json](https://toolsdk-ai.github.io/toolsdk-mcp-registry/indexes/packages-list.json) - Raw data API  
 
 ---
-
-## 📚 Table of Contents
-
-- [🎥 Video: How to add a new MCP server](https://www.youtube.com/watch?v=J_oaDtCoVVo)
-- [🚀 Quick Start](#quick-start)
-  - [🐳 Docker Self-Hosting](#docker-self-hosting)
-  - [📦 Install via Package Manager](#install-via-package-manager)
-  - [📄 Submit New MCP Servers](#submit-new-mcp-servers)
-- [📖 Development Guide](./docs/DEVELOPMENT.md)
-- [🤝 Contributing Guide](./docs/guide.md)
-- [⭐ MCP Servers Directory](#mcp-servers)
 
 <a id="submit-new-mcp-servers"></a>
 
