@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="docs/logo.png" width="120" alt="ToolSDK MCP Registry" />
+<img src="assets/logo.png" width="120" alt="ToolSDK MCP Registry" />
 
 # ToolSDK MCP Registry
 
@@ -42,6 +42,10 @@
   &nbsp;&nbsp;•&nbsp;&nbsp;
   <a href="#submit-new-mcp-servers">➕ <b>Add Server</b></a>
 </p>
+
+<a href="https://toolsdk.ai">
+  <img src="assets/hero.png" alt="ToolSDK.ai - MCP Servers Hosting" />
+</a>
 
 ---
 
