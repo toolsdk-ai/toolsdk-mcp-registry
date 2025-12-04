@@ -153,7 +153,7 @@ mcp_servers = requests.get(
 - **Federated Registry** - Unified search across local private servers and the official `@modelcontextprotocol/registry`.
 - **Unified Interface** - Access local STDIO tools and remote StreamableHTTP servers via a single, standardized HTTP API.
 - **Secure Sandbox** - Execute untrusted tools in isolated environments (supports E2B, Daytona, Sandock).
-- **OAuth 2.1 Proxy** - Built-in OAuth 2.1 implementation to handle complex authentication flows for your agents.
+- **OAuth 2.1 Proxy** - Built-in OAuth 2.1 implementation to handle complex authentication flows for your agents. [Integration Guide](./docs/DEVELOPMENT.md#10--oauth-integration)
 - **Private & Self-Hosted** - Full control over your data and infrastructure with Docker deployment.
 - **Developer-Friendly** - OpenAPI/Swagger documentation and structured JSON configs.
 
