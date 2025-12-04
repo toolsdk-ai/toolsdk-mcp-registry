@@ -4,7 +4,7 @@
 
 # ToolSDK MCP Registry
 
-**Stop building MCP servers from scratch. Discover, Deploy, and Manage 4110+ AI Tools in seconds.**
+**The Enterprise MCP Registry & Gateway.** A unified infrastructure to discover, secure, and execute Model Context Protocol (MCP) tools. Exposes local processes (STDIO) and remote servers (StreamableHTTP) via a unified HTTP API with built-in Sandbox and OAuth 2.1 support.
 
 <a href="https://www.npmjs.com/package/@toolsdk.ai/registry">
   <img src="https://img.shields.io/npm/v/@toolsdk.ai/registry.svg?style=flat-square" alt="npm version" />
@@ -29,23 +29,7 @@
 &nbsp;&nbsp;•&nbsp;&nbsp;
 <a href="https://www.youtube.com/watch?v=J_oaDtCoVVo" target="_blank">🎥 <b>Video Tutorial</b></a>
 
-<p align="center">
-  <strong>The Universal MCP Hub: A comprehensive directory for discovery AND a private engine for enterprise.</strong>
-</p>
-
-<p align="center">
-  <a href="#mcp-servers">🔍 <b>Browse 4110+ Tools</b></a>
-  &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="#quick-start">🐳 <b>Deploy Private Registry</b></a>
-  &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="#install-via-package-manager">📦 <b>Use as SDK</b></a>
-  &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="#submit-new-mcp-servers">➕ <b>Add Server</b></a>
-  &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="https://www.youtube.com/watch?v=J_oaDtCoVVo">🎥 <b>Video Tutorial</b></a>
-</p>
-
-<a href="https://toolsdk.ai">
+<a href="https://toolsdk.ai" target="_blank">
   <img src="assets/hero.png" alt="ToolSDK.ai - MCP Servers Hosting" />
 </a>
 
@@ -71,9 +55,8 @@ docker compose up -d
 
 > 💡 **Did this save you time?** Give us a [**Star on GitHub**](https://github.com/toolsdk-ai/toolsdk-mcp-registry) — it helps others discover this registry!
 
-**Optional Configuration:**
-- Set `MCP_SANDBOX_PROVIDER=LOCAL` in `.env` file if you want to disable the sandbox.
-- Set `SANDOCK_API_KEY` if you want to use the sandbox for full deployment.
+**Configuration:**
+- Set `MCP_SANDBOX_PROVIDER=LOCAL` in `.env` file if you want to disable the sandbox (not recommended for production).
 - *See [Configuration Guide](./docs/DEVELOPMENT.md) for full details.*
 
 > 💡 **Tip for Private Deployment**:
@@ -109,7 +92,10 @@ curl -X POST http://localhost:3003/api/v1/packages/run \
   }'
 ```
 
-> 📖 For advanced deployment options and configuration, see the [DEVELOPMENT documentation](./docs/DEVELOPMENT.md#4--quick-start-with-docker).
+<details>
+<summary><strong>Alternative: Use as Registry SDK (Data Only)</strong></summary>
+
+<a id="use-as-sdk"></a>
 
 ### Alternative: Use as Registry SDK (Data Only)
 
@@ -231,6 +217,8 @@ This open-source project provides:
 - **Raw Data** - JSON endpoints for direct integration
 
 ---
+
+<a id="getting-started"></a>
 
 <a id="submit-new-mcp-servers"></a>
 

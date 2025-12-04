@@ -4,48 +4,32 @@
 
 # ToolSDK MCP Registry
 
-**Stop building MCP servers from scratch. Discover, Deploy, and Manage <%= COUNT %>+ AI Tools in seconds.**
+**The Enterprise MCP Registry & Gateway.** A unified infrastructure to discover, secure, and execute Model Context Protocol (MCP) tools. Exposes local processes (STDIO) and remote servers (StreamableHTTP) via a unified HTTP API with built-in Sandbox and OAuth 2.1 support.
 
-<p align="center">
-  <a href="https://www.npmjs.com/package/@toolsdk.ai/registry">
-    <img src="https://img.shields.io/npm/v/@toolsdk.ai/registry.svg?style=flat-square" alt="npm version" />
-  </a>
-  <a href="https://github.com/toolsdk-ai/toolsdk-mcp-registry/actions/workflows/test.yaml">
-    <img src="https://github.com/toolsdk-ai/toolsdk-mcp-registry/actions/workflows/test.yaml/badge.svg" alt="Build Status" />
-  </a>
-  <img src="https://img.shields.io/badge/MCP_Servers-<%= COUNT %>-blue?style=flat-square" alt="MCP Servers Count" />
-  <img src="https://img.shields.io/badge/LICENSE-MIT-ff69b4?style=flat-square" alt="License" />
-</p>
+<a href="https://www.npmjs.com/package/@toolsdk.ai/registry">
+  <img src="https://img.shields.io/npm/v/@toolsdk.ai/registry.svg?style=flat-square" alt="npm version" />
+</a>
+<a href="https://github.com/toolsdk-ai/toolsdk-mcp-registry/actions/workflows/test.yaml">
+  <img src="https://github.com/toolsdk-ai/toolsdk-mcp-registry/actions/workflows/test.yaml/badge.svg" alt="Build Status" />
+</a>
+<img src="https://img.shields.io/badge/MCP_Servers-<%= COUNT %>-blue?style=flat-square" alt="MCP Servers Count" />
+<img src="https://img.shields.io/badge/LICENSE-MIT-ff69b4?style=flat-square" alt="License" />
 
-<p align="center">
-  <a href="https://www.producthunt.com/products/toolsdk-ai">
-    <img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=997428&theme=light&period=daily" alt="Product Hunt" height="40" />
-  </a>
-</p>
+<a href="https://www.producthunt.com/products/toolsdk-ai">
+  <img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=997428&theme=light&period=daily" alt="Product Hunt" height="40" />
+</a>
 
-<p align="center">
-  🚀 <b>Open-source</b>, <b>production-ready</b>, and <b>developer-friendly</b> registry for <%= COUNT %>+ Model Context Protocol (MCP) servers.
-  <br />
-  <i>Perfect for <b>AI automation</b>, <b>chatbot development</b>, <b>LLM integrations</b>, and <b>enterprise AI deployments</b>.</i>
-</p>
+<a href="#mcp-servers">🔍 <b>Browse <%= COUNT %>+ Tools</b></a>
+&nbsp;&nbsp;•&nbsp;&nbsp;
+<a href="#quick-start">🐳 <b>Self-hosted</b></a>
+&nbsp;&nbsp;•&nbsp;&nbsp;
+<a href="#install-via-package-manager">📦 <b>Use as SDK</b></a>
+&nbsp;&nbsp;•&nbsp;&nbsp;
+<a href="#submit-new-mcp-servers">➕ <b>Add Server</b></a>
+&nbsp;&nbsp;•&nbsp;&nbsp;
+<a href="https://www.youtube.com/watch?v=J_oaDtCoVVo" target="_blank">🎥 <b>Video Tutorial</b></a>
 
-<p align="center">
-  <strong>The Universal MCP Hub: A comprehensive directory for discovery AND a private engine for enterprise.</strong>
-</p>
-
-<p align="center">
-  <a href="#mcp-servers">🔍 <b>Browse <%= COUNT %>+ Tools</b></a>
-  &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="#quick-start">🐳 <b>Deploy Private Registry</b></a>
-  &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="#install-via-package-manager">📦 <b>Use as SDK</b></a>
-  &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="#submit-new-mcp-servers">➕ <b>Add Server</b></a>
-  &nbsp;&nbsp;•&nbsp;&nbsp;
-  <a href="https://www.youtube.com/watch?v=J_oaDtCoVVo">🎥 <b>Video Tutorial</b></a>
-</p>
-
-<a href="https://toolsdk.ai">
+<a href="https://toolsdk.ai" target="_blank">
   <img src="assets/hero.png" alt="ToolSDK.ai - MCP Servers Hosting" />
 </a>
 
@@ -53,17 +37,13 @@
 
 </div>
 
-<a id="quick-start"></a>
-
-## 🚀 Quick Start
+## Getting Started
 
 <a id="docker-self-hosting"></a>
 
-### 🐳 Self-Hosted MCP Registry with Docker
+### Deploy Enterprise Gateway (Recommended)
 
-Deploy your own **private MCP registry** in 5 minutes! Get a production-ready AI agent tool registry with full-text search, REST API, and secure sandbox execution.
-
-Perfect for **AI developers**, **LLM teams**, and **enterprises** building with Claude, Anthropic, and other AI platforms.
+Deploy your own **private MCP Gateway & Registry** in minutes. This provides the full feature set: Federated Search, Remote Execution, Sandbox, and OAuth.
 
 #### ⚡ Quick Deploy (One-Liner)
 
@@ -75,9 +55,8 @@ docker compose up -d
 
 > 💡 **Did this save you time?** Give us a [**Star on GitHub**](https://github.com/toolsdk-ai/toolsdk-mcp-registry) — it helps others discover this registry!
 
-**Optional Configuration:**
-- Set `MCP_SANDBOX_PROVIDER=LOCAL` in `.env` file if you want to disable the sandbox.
-- Set `SANDOCK_API_KEY` if you want to use the sandbox for full deployment.
+**Configuration:**
+- Set `MCP_SANDBOX_PROVIDER=LOCAL` in `.env` file if you want to disable the sandbox (not recommended for production).
 - *See [Configuration Guide](./docs/DEVELOPMENT.md) for full details.*
 
 > 💡 **Tip for Private Deployment**:
@@ -85,9 +64,9 @@ docker compose up -d
 > 📖 See [Package Management Guide](./docs/DEVELOPMENT.md#5--package-management-for-private-deployment) for details.
 
 That's it! Your self-hosted MCP registry is now running with:
+- 🌐 **HTTP API** with OpenAPI documentation
+- 🛡️ **Secure Sandbox execution** for AI agent tools
 - 🔍 **Full-text search** (Meilisearch)
-- 🌐 **REST API** with OpenAPI documentation
-- 🛡️ **Sandbox execution** for AI agent tools
 
 #### 🎉 Access Your Private MCP Registry
 
@@ -96,9 +75,9 @@ That's it! Your self-hosted MCP registry is now running with:
 - 🔍 **Search & Execute** <%= COUNT %>+ MCP Servers remotely
 - 🤖 **Integrate** with your AI agents, chatbots, and LLM applications
 
-#### 💻 Remote Tool Execution Example
+#### 🌐 Remote Tool Execution Example
 
-Execute any MCP tool via REST API - perfect for AI automation, chatbot integrations, and serverless deployments:
+Execute any MCP tool via HTTP API - perfect for AI automation, chatbot integrations, and serverless deployments:
 
 ```bash
 curl -X POST http://localhost:3003/api/v1/packages/run \
@@ -113,29 +92,30 @@ curl -X POST http://localhost:3003/api/v1/packages/run \
   }'
 ```
 
-> 📖 For advanced deployment options and configuration, see the [DEVELOPMENT documentation](./docs/DEVELOPMENT.md#4--quick-start-with-docker).
+<details>
+<summary><strong>Alternative: Use as Registry SDK (Data Only)</strong></summary>
 
-<a id="install-via-package-manager"></a>
+<a id="use-as-sdk"></a>
 
-### 📦 Install as NPM Package (TypeScript/Node.js SDK)
+### Alternative: Use as Registry SDK (Data Only)
 
-Use the MCP Registry as a TypeScript/JavaScript SDK in your AI agent, chatbot, or LLM integration projects:
+If you only need to access the **list of MCP servers** programmatically (without execution or gateway features), you can use the NPM package.
 
 ```bash
 npm install @toolsdk.ai/registry
 ```
 
-#### Use in TypeScript/JavaScript Projects
+#### Usage
 
-Perfect for AI agent development, chatbot builders, and LLM tool integrations:
+Perfect for building your own directory or analysis tools:
 
 ```ts
 import mcpServerLists from '@toolsdk.ai/registry/indexes/packages-list.json';
 ```
 
-#### 🌐 Access via Public API (No Installation Required)
+#### Access via Public API (No Installation Required)
 
-Fetch the complete MCP server registry programmatically - ideal for AI applications, integrations, and automation:
+Fetch the complete MCP server registry programmatically:
 
 ```bash
 curl https://toolsdk-ai.github.io/toolsdk-mcp-registry/indexes/packages-list.json
@@ -162,32 +142,29 @@ mcp_servers = requests.get(
 # Perfect for LangChain, CrewAI, AutoGen integrations
 ```
 
----
+</details>
 
-## 🌟 Why ToolSDK MCP Registry?
+## Why ToolSDK MCP Registry?
 
-**ToolSDK MCP Registry** is the most comprehensive, self-hosted registry for Model Context Protocol (MCP) servers and AI agent tools. Built for developers, teams, and enterprises who need full control over their AI infrastructure.
+**ToolSDK MCP Registry** is an enterprise-grade gateway for Model Context Protocol (MCP) servers. It solves the challenge of securely discovering and executing AI tools in production environments.
 
-### 🎯 Key Features
+### Key Features
 
-- 🔐 **Private & Self-Hosted** - Deploy your own secure MCP registry with Docker in minutes
-- 🤖 **<%= COUNT %>+ MCP Servers** - Largest curated collection of MCP servers
-- ⚡ **Remote Execution** - Run MCP tools in isolated sandbox environments via REST API
-- 🔍 **Powerful Search** - Fast, full-text search powered by Meilisearch
-- 📦 **NPM Integration** - Use as a TypeScript/Node.js SDK in your projects
-- 🛠️ **Developer-Friendly** - OpenAPI/Swagger documentation, structured JSON configs
-- 🐳 **Docker Ready** - Production-grade deployment with Docker Compose
-- 🔌 **Extensible Architecture** - Easily add new MCP servers via JSON config
+- **Federated Registry** - Unified search across local private servers and the official `@modelcontextprotocol/registry`.
+- **Unified Interface** - Access local STDIO tools and remote StreamableHTTP servers via a single, standardized HTTP API.
+- **Secure Sandbox** - Execute untrusted tools in isolated environments (supports E2B, Daytona, Sandock).
+- **OAuth 2.1 Proxy** - Built-in OAuth 2.1 implementation to handle complex authentication flows for your agents.
+- **Private & Self-Hosted** - Full control over your data and infrastructure with Docker deployment.
+- **Developer-Friendly** - OpenAPI/Swagger documentation and structured JSON configs.
 
-### 💡 Use Cases
+### Use Cases
 
-- 🏢 **Enterprise AI Teams** - "Allow LLMs to query your private PostgreSQL database securely."
-- 🤖 **AI Agent Development** - "Ask Claude to verify PRs via GitHub MCP and deploy to Kubernetes."
-- 💬 **Chatbot Builders** - Integrate LLM-powered chatbots with 4000+ ready-to-use MCP servers.
-- 🔧 **DevOps Automation** - Execute MCP tools in your CI/CD pipelines for automated testing and deployment.
-- 🚀 **Data Analysis** - Connect AI agents to internal data sources (Snowflake, Databricks) without building custom integrations.
+- **Enterprise AI Gateway** - Centralize tool access for all your internal LLM applications.
+- **Secure Tool Execution** - Run community MCP servers without risking your local environment.
+- **Protocol Adaptation** - Connect remote agents (via HTTP API) to local CLI tools (via STDIO).
+- **Unified Discovery** - One API to search and manage thousands of tools.
 
-### 🏗️ Architecture
+### Architecture
 
 ```mermaid
 graph TD
@@ -202,6 +179,7 @@ graph TD
             API["🌐 Registry API"]
             Search["🔍 Meilisearch"]
             DB["📚 Registry Data"]
+            OAuth["🔐 OAuth Proxy"]
         end
 
         subgraph RuntimeEnv ["Runtime Environment"]
@@ -213,6 +191,7 @@ graph TD
 
     User -->|Search Tools| API
     LLM -->|Execute Tool| API
+    LLM -->|Auth Flow| OAuth
     API <-->|Query Index| Search
     API -->|Read Metadata| DB
     API -->|Run Tool| Local
@@ -223,28 +202,29 @@ graph TD
 
 ---
 
-## 📦 What You Get
+## What You Get
 
-This open-source registry provides:
+This open-source project provides:
 
-- 📚 **Structured Registry** - <%= COUNT %>+ validated MCP servers with metadata
-- 🔗 **Multiple Formats** - JSON, npm package, and generated documentation
-- 🌐 **REST API** - Query and execute tools remotely
-- 📖 **Auto-Generated Docs** - Always up-to-date README and API documentation
+- **Structured Registry** - <%= COUNT %>+ MCP servers with metadata
+- **Unified Gateway** - HTTP API to query and execute tools remotely
+- **Auto-Generated Docs** - Always up-to-date README and API documentation
 
 **Available as:**
 
-- 📄 `README.md` - Human-readable documentation
-- 📦 [npm package](https://www.npmjs.com/package/@toolsdk.ai/registry) - TypeScript/JavaScript SDK
-- 🔗 [packages-list.json](https://toolsdk-ai.github.io/toolsdk-mcp-registry/indexes/packages-list.json) - Raw data API  
+- **Docker Image** - Full-featured Gateway & Registry
+- **NPM Package** - TypeScript/JavaScript SDK for data access
+- **Raw Data** - JSON endpoints for direct integration
 
 ---
 
+<a id="getting-started"></a>
+
 <a id="submit-new-mcp-servers"></a>
 
-## 🤝 Contribute Your MCP Server
+## Contribute Your MCP Server
 
-Help grow the world's largest open-source MCP registry! Share your AI tools, plugins, and integrations with the community.
+Help grow the ecosystem! Share your AI tools, plugins, and integrations with the community.
 
 ### How to Submit
 
@@ -272,7 +252,7 @@ Help grow the world's largest open-source MCP registry! Share your AI tools, plu
 
 - [Fork this repository](https://github.com/toolsdk-ai/toolsdk-mcp-registry/fork)
 - Create `your-mcp-server.json` in [packages/uncategorized](./packages/uncategorized)
-- Submit a PR and join <%= COUNT %>+ MCP servers!
+- Submit a PR
 
 **3. Get Discovered**
 
@@ -288,7 +268,7 @@ Your MCP server will be:
 
 <a id="mcp-servers"></a>
 
-## 📋 MCP Servers Directory
+## MCP Servers Directory
 
 **<%= COUNT %>+ AI Agent Tools, LLM Integrations & Automation Servers**
 
