@@ -46,6 +46,7 @@ Before you begin, ensure your development environment meets the following requir
 - **Docker** (recommended) - For quick start deployment
 - **Node.js** >= 18.x (latest LTS version recommended) - Required for local development only
 - **pnpm** >= 8.x (package manager) - Required for local development only
+- **Bun** >= 1.x - Required for running build scripts
 
 ## 2. 🧰 Tech Stack
 
@@ -246,7 +247,7 @@ To remove individual packages within a category, simply delete their JSON config
 
 1. Navigate to the category folder (e.g., `packages/version-control/`)
 2. Delete the `.json` files for packages you don't need
-3. Run the rebuild process (see Section 5.3)
+3. Run the rebuild process using `make build` (see Section 5.3)
 
 Example: Keep only GitHub-related packages in version-control by removing other `.json` files like `gitlab.json`, `bitbucket.json`, etc.
 
@@ -271,7 +272,7 @@ To remove entire categories (e.g., gaming, sports), edit the `config/categories.
 }
 ```
 
-3. Run the rebuild process - the build script will automatically remove the corresponding directories and their packages
+3. Run the rebuild process using `make build` - the build script will automatically remove the corresponding directories and their packages
 
 **Option 3: Keep Only What You Need (Minimal Setup)**
 
@@ -279,7 +280,7 @@ For a minimal deployment with only essential categories:
 
 1. Open `config/categories.mjs`
 2. Remove all category entries except the ones you need (e.g., `developer-tools`, `databases`, `cloud-platforms`, `version-control`, `communication`, `file-systems`)
-3. Run the rebuild process
+3. Run the rebuild process using `make build`
 
 This approach is recommended as it ensures consistency between your configuration and the actual packages.
 
@@ -341,7 +342,7 @@ Edit `config/categories.mjs` and keep only these essential categories:
 - `communication` - Slack, Discord, etc.
 - `file-systems` - File management tools
 
-To do this, open `config/categories.mjs` and remove all other category entries (like gaming, sports, marketing, travel, etc.). After rebuilding, this will give you a practical set of ~200-300 packages instead of 6000+.
+To do this, open `config/categories.mjs` and remove all other category entries (like gaming, sports, marketing, travel, etc.). After rebuilding using `make build`, this will give you a practical set of ~200-300 packages instead of 6000+.
 
 ## 6. 💻 Local Development Setup
 
