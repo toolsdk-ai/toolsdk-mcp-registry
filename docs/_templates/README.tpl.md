@@ -228,6 +228,8 @@ Help grow the ecosystem! Share your AI tools, plugins, and integrations with the
 
 ### How to Submit
 
+[![Watch the video](https://img.youtube.com/vi/J_oaDtCoVVo/hqdefault.jpg)](https://www.youtube.com/watch?v=J_oaDtCoVVo)
+
 **1. Create JSON Config** - Simple, structured format:
 
 ```json
