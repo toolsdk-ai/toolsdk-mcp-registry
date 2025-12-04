@@ -14,7 +14,7 @@
 </a>
 <img src="https://img.shields.io/badge/MCP_Servers-4110-blue?style=flat-square" alt="MCP Servers Count" />
 <img src="https://img.shields.io/badge/LICENSE-MIT-ff69b4?style=flat-square" alt="License" />
-
+<br />
 <a href="https://www.producthunt.com/products/toolsdk-ai">
   <img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=997428&theme=light&period=daily" alt="Product Hunt" height="40" />
 </a>
