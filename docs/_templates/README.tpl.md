@@ -30,10 +30,6 @@
 </p>
 
 <p align="center">
-  <strong>The Universal MCP Hub: A comprehensive directory for discovery AND a private engine for enterprise.</strong>
-</p>
-
-<p align="center">
   <a href="#mcp-servers">🔍 <b>Browse <%= COUNT %>+ Tools</b></a>
   &nbsp;&nbsp;•&nbsp;&nbsp;
   <a href="#quick-start">🐳 <b>Deploy Private Registry</b></a>
@@ -62,8 +58,6 @@
 ### 🐳 Self-Hosted MCP Registry with Docker
 
 Deploy your own **private MCP registry** in 5 minutes! Get a production-ready AI agent tool registry with full-text search, REST API, and secure sandbox execution.
-
-Perfect for **AI developers**, **LLM teams**, and **enterprises** building with Claude, Anthropic, and other AI platforms.
 
 #### ⚡ Quick Deploy (One-Liner)
 
@@ -272,7 +266,7 @@ Help grow the world's largest open-source MCP registry! Share your AI tools, plu
 
 - [Fork this repository](https://github.com/toolsdk-ai/toolsdk-mcp-registry/fork)
 - Create `your-mcp-server.json` in [packages/uncategorized](./packages/uncategorized)
-- Submit a PR and join <%= COUNT %>+ MCP servers!
+- Submit a PR
 
 **3. Get Discovered**
 
