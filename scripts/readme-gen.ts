@@ -79,12 +79,12 @@ for (const [_key, categoryList] of Object.entries(categoriesList)) {
     }
   }
 
-  // Full catalog: all servers with collapsed details and count
+  // Full catalog: all servers expanded for better searchability (Ctrl+F)
   FULL_CATALOG += `\n\n<a id="${categoryList.config.key}"></a>\n`;
-  FULL_CATALOG += `<details>\n<summary><strong>${categoryList.config.name}</strong> (${totalInCategory} servers)</summary>\n\n`;
-  FULL_CATALOG += `${categoryList.config.description}\n\n`;
+  FULL_CATALOG += `### ${categoryList.config.name} <small>(${totalInCategory} servers)</small>\n\n`;
+  FULL_CATALOG += `> ${categoryList.config.description}\n\n`;
   FULL_CATALOG += categoryFullContent;
-  FULL_CATALOG += `\n</details>\n`;
+  FULL_CATALOG += `\n---\n`;
 
   // README: only show categories with validated servers, collapsed (no count shown)
   if (validatedInCategory > 0) {

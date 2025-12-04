@@ -55,10 +55,9 @@
 
 
 <a id="uncategorized"></a>
-<details>
-<summary><strong>Uncategorized</strong> (124 servers)</summary>
+### Uncategorized <small>(124 servers)</small>
 
-Tools that haven’t been sorted into a category yet. AI will categorize it later.
+> Tools that haven’t been sorted into a category yet. AI will categorize it later.
 
 - [✅ @bankless/onchain-mcp](https://github.com/bankless/onchain-mcp): Integrates with blockchain networks to enable smart contract interaction, transaction history access, and on-chain data exploration through specialized tools for reading contract state, retrieving ABIs, and filtering event logs.  (10 tools) (node) 
 - [✅ @bnb-chain/mcp](https://github.com/bnb-chain/bnbchain-mcp): Enables direct interaction with BNB Chain and other EVM-compatible networks for blockchain operations including block exploration, smart contract interaction, token management, wallet operations, and Greenfield storage functionality.  (40 tools) (node) 
@@ -185,14 +184,13 @@ Tools that haven’t been sorted into a category yet. AI will categorize it late
 - [❌ zillow](https://github.com/rohitsingh-iitd/zillow-mcp-server): Integrates with Zillow's real estate API to provide property searches, detailed information, Zestimates, market trends analysis, and mortgage calculations for home buying decisions.  (python) 
 - [❌ zplanner-(project-management)](https://github.com/jotjunior/mcp-server-zplanner): Enables creation and management of hierarchical project plans with task tracking, progress calculation, and visual reporting through a file-based storage system.  (node) 
 
-</details>
+---
 
 
 <a id="aggregators"></a>
-<details>
-<summary><strong>Aggregators</strong> (83 servers)</summary>
+### Aggregators <small>(83 servers)</small>
 
-Servers that let you access multiple apps and tools through one MCP server.
+> Servers that let you access multiple apps and tools through one MCP server.
 
 - [✅ @illuminaresolutions/n8n-mcp-server](https://github.com/illuminaresolutions/n8n-mcp-server): Bridges Claude with n8n automation workflows, enabling direct creation, execution, and management of workflows, credentials, and enterprise features without switching contexts.  (33 tools) (node) 
 - [✅ @modelcontextprotocol/server-everything](https://github.com/modelcontextprotocol/servers/tree/HEAD/src/everything): Test protocol features and tools for client compatibility.  (8 tools) (node) 
@@ -278,14 +276,13 @@ Servers that let you access multiple apps and tools through one MCP server.
 - [❌ unichat-ts-mcp-server](https://github.com/amidabuddha/unichat-ts-mcp-server): Integrates multiple language models via the unified Unichat tool, enabling seamless interaction across OpenAI, MistralAI, Anthropic, xAI, and Google AI platforms.  (node) 
 - [❌ union](https://github.com/unionai-oss/union-mcp): Connects AI assistants to Union's tasks, workflows, and apps, enabling access to distributed computing capabilities through customizable tools and resources.  (python) 
 
-</details>
+---
 
 
 <a id="art-and-culture"></a>
-<details>
-<summary><strong>Art & Culture</strong> (134 servers)</summary>
+### Art & Culture <small>(134 servers)</small>
 
-Explore art collections, museums, and cultural heritage with AI-friendly tools.
+> Explore art collections, museums, and cultural heritage with AI-friendly tools.
 
 - [✅ @cloudwerxlab/gpt-image-1-mcp](https://github.com/cloudwerx-dev/gpt-image-1-mcp): Enables direct image generation and editing through OpenAI's gpt-image-1 model with support for text prompts, file paths, and base64 encoded inputs for creative workflows and visual content creation.  (2 tools) (node) 
 - [✅ @jayarrowz/mcp-figma](https://github.com/thirdstrandstudio/mcp-figma): Integrates with Figma's API to enable viewing, manipulating, and collaborating on design files through comprehensive access to file operations, comments, components, and team resources.  (31 tools) (node) 
@@ -422,14 +419,13 @@ Explore art collections, museums, and cultural heritage with AI-friendly tools.
 - [❌ wikipedia](https://github.com/spektraldevelopment/mcp-wiki): Fetches and converts Wikipedia articles to clean Markdown format for direct reference in conversations without manual copying or formatting.  (python) 
 - [❌ zotero](https://github.com/54yyyu/zotero-mcp): Enables direct interaction with Zotero reference management libraries for searching literature, retrieving metadata and full-text content, managing collections, and organizing research materials.  (python) 
 
-</details>
+---
 
 
 <a id="browser-automation"></a>
-<details>
-<summary><strong>Browser Automation</strong> (170 servers)</summary>
+### Browser Automation <small>(170 servers)</small>
 
-Tools for browsing, scraping, and automating web content in AI-compatible formats.
+> Tools for browsing, scraping, and automating web content in AI-compatible formats.
 
 - [✅ @agentdeskai/browser-tools-mcp](https://github.com/AgentDeskAI/browser-tools-mcp): A Model Context Protocol (MCP) server that provides AI-powered browser tools integration. This server works in conjunction with the Browser Tools Server to provide AI capabilities for browser debugging and analysis.  (14 tools) (node) 
 - [✅ @angiejones/mcp-selenium](https://github.com/angiejones/mcp-selenium): Automates web browser actions with Selenium WebDriver.  (14 tools) (node) 
@@ -602,14 +598,13 @@ Tools for browsing, scraping, and automating web content in AI-compatible format
 - [❌ yingdao-mcp-server](https://github.com/ying-dao/yingdao_mcp_server): Bridges AI with Yingdao RPA platform to automate business processes through local and cloud-based robotic process automation applications.  (node) 
 - [❌ youtube-transcript-extractor](https://github.com/tlofreso/mcp-youtube-transcripts): Extracts YouTube video transcripts from various URL formats using a command-line tool, enabling content analysis and subtitle generation.  (python) 
 
-</details>
+---
 
 
 <a id="cloud-platforms"></a>
-<details>
-<summary><strong>Cloud Platforms</strong> (141 servers)</summary>
+### Cloud Platforms <small>(141 servers)</small>
 
-Integrate with cloud services to manage and interact with cloud infrastructure.
+> Integrate with cloud services to manage and interact with cloud infrastructure.
 
 - [✅ @cloudbase/cloudbase-mcp](https://github.com/tencentcloudbase/cloudbase-ai-toolkit): Enables AI systems to deploy, monitor, and manage full-stack applications on Tencent CloudBase through tools for cloud environments, databases, functions, hosting services, and storage resources.  (39 tools) (node) 
 - [✅ @digitalocean/mcp](https://github.com/digitalocean/digitalocean-mcp): Integrates with DigitalOcean's cloud platform API to enable management of cloud resources, deployment of applications, and monitoring of infrastructure through natural language commands.  (32 tools) (node) 
@@ -753,14 +748,13 @@ Integrate with cloud services to manage and interact with cloud infrastructure.
 - [❌ workers-mcp](https://github.com/cloudflare/workers-mcp): Enables MCP capabilities in Cloudflare Workers for deploying low-latency, scalable AI services at the network edge.  (node) 
 - [❌ yourware-mcp](https://github.com/ai-zerolab/yourware-mcp): Enables direct uploading of web projects to yourware.so hosting platform without leaving your development environment  (python) 
 
-</details>
+---
 
 
 <a id="code-execution"></a>
-<details>
-<summary><strong>Code Execution</strong> (54 servers)</summary>
+### Code Execution <small>(54 servers)</small>
 
-Run code securely, perfect for coding agents and AI-driven programming tasks.
+> Run code securely, perfect for coding agents and AI-driven programming tasks.
 
 - [✅ @e2b/mcp-server](https://github.com/e2b-dev/mcp-server/tree/HEAD/packages/js): A Model Context Protocol server for running code in a secure sandbox by E2B.  (1 tools) (node) 
 - [✅ @riza-io/riza-mcp](https://github.com/riza-io/riza-mcp): Provides a secure bridge between LLMs and Riza's isolated code interpreter API, enabling writing, saving, editing, and executing code safely in a sandboxed environment with persistent tool management across conversations.  (6 tools) (node) 
@@ -817,14 +811,13 @@ Run code securely, perfect for coding agents and AI-driven programming tasks.
 - [❌ tox-testing](https://github.com/that1guy15/tox-testing): Executes tox commands to run tests within a project using the project's tox.ini  (node) 
 - [❌ web-and-python-sandbox](https://github.com/tcpipuk/mcp-server): Provides web content access and Python code execution in a sandboxed environment, enabling information verification and working code demonstrations through containerized tools with appropriate security constraints.  (python) 
 
-</details>
+---
 
 
 <a id="coding-agents"></a>
-<details>
-<summary><strong>Coding Agents</strong> (74 servers)</summary>
+### Coding Agents <small>(74 servers)</small>
 
-AI tools that can autonomously read, write, and execute code to solve programming tasks.
+> AI tools that can autonomously read, write, and execute code to solve programming tasks.
 
 - [✅ @steipete/claude-code-mcp](https://github.com/steipete/claude-code-mcp): Provides a streamlined interface for executing complex coding tasks including file operations, Git commands, and web searches without permission interruptions by automatically bypassing constraints.  (1 tools) (node) 
 - [✅ mcp-coco](https://github.com/disdjj/mcp-coco): MCP-Coco provides a pair programming tool that guides technical discussions by transforming code snippets into structured frameworks for critical inquiry about performance, security, and maintainability.  (1 tools) (node) 
@@ -901,14 +894,13 @@ AI tools that can autonomously read, write, and execute code to solve programmin
 - [❌ vibecodermcp](https://github.com/crazyrabbitltc/mcp-vibecoder): Guides LLMs through structured software development workflows with feature clarification, PRD generation, and phase-based tracking using a hybrid document storage system.  (node) 
 - [❌ vs-code](https://github.com/juehang/vscode-mcp-server): Exposes VS Code's filesystem, editing capabilities, symbol search, diagnostics, and terminal access as tools for AI-assisted coding tasks directly within your existing VS Code environment.  (node) 
 
-</details>
+---
 
 
 <a id="command-line"></a>
-<details>
-<summary><strong>Command Line</strong> (116 servers)</summary>
+### Command Line <small>(116 servers)</small>
 
-Run shell commands and interact with command-line tools easily.
+> Run shell commands and interact with command-line tools easily.
 
 - [✅ @devyhan/xcode-mcp](https://github.com/devyhan/xcode-mcp): Provides Xcode-related command-line tools to enables project inspection, building, testing, archiving, code signing, and Xcode simulator management through natural language commands.  (9 tools) (node) 
 - [✅ @kevinwatt/shell-mcp](https://github.com/kevinwatt/shell-mcp): Provides a shell command execution interface for secure and controlled access to local system operations, enabling automation tasks and system management.  (20 tools) (node) 
@@ -1027,14 +1019,13 @@ Run shell commands and interact with command-line tools easily.
 - [❌ windows-remote-control](https://github.com/claude-did-this/mcpcontrol): Enables remote automation of Windows systems for controlling mouse, keyboard, and screen capture via nut.js.  (node) 
 - [❌ windows-terminal](https://github.com/capecoma/winterm-mcp): Enables interaction with the Windows command line interface, allowing for writing commands, reading terminal output, and sending control characters for automation tasks and integrations.  (node) 
 
-</details>
+---
 
 
 <a id="communication"></a>
-<details>
-<summary><strong>Communication</strong> (210 servers)</summary>
+### Communication <small>(210 servers)</small>
 
-Connect with messaging platforms to manage chats and interact with team tools.
+> Connect with messaging platforms to manage chats and interact with team tools.
 
 - [✅ @abhaybabbar/retellai-mcp-server](https://github.com/abhaybabbar/retellai-mcp-server): Integrates with RetellAI's voice services for creating and managing phone conversations, enabling call initiation, agent configuration, and voice selection for tasks like customer service, appointment scheduling, and information gathering.  (24 tools) (node) 
 - [✅ @cristip73/mcp-server-asana](https://github.com/cristip73/mcp-server-asana): Integrates with Asana's API to enable task management, project organization, and collaboration workflows through 30+ tools for searching, creating, and visualizing projects and tasks.  (41 tools) (node) 
@@ -1247,14 +1238,13 @@ Connect with messaging platforms to manage chats and interact with team tools.
 - [❌ zoom-api](https://github.com/mattcoatsworth/zoom-mcp-server): Integrates with Zoom's API to enable scheduling meetings, managing participants, retrieving recordings, and automating administrative tasks through OAuth 2.0 authentication and structured tools.  (node) 
 - [❌ zulip](https://github.com/monadical-sas/zulip-mcp): Integrates with Zulip workspaces to enable messaging, channel management, and conversation tracking through a flexible server that runs via npx or Docker.  (node) 
 
-</details>
+---
 
 
 <a id="customer-data-platforms"></a>
-<details>
-<summary><strong>Customer Data Platforms</strong> (23 servers)</summary>
+### Customer Data Platforms <small>(23 servers)</small>
 
-Access customer profiles and data from customer data platforms.
+> Access customer profiles and data from customer data platforms.
 
 - [✅ @clayhq/clay-mcp](https://github.com/clay-inc/clay-mcp): Provides a bridge to Clay's personal CRM platform for searching, retrieving, and managing contact information, interactions, and professional relationships through natural language queries.  (11 tools) (node) 
 - [✅ @hubspot/mcp-server](https://github.com/hubspot/mcp-server): Integrates with HubSpot CRM to enable secure access to contact information, company records, deal data, and task management with customizable data access through Private App scopes.  (21 tools) (node) 
@@ -1280,14 +1270,13 @@ Access customer profiles and data from customer data platforms.
 - [❌ salesforce](https://github.com/usama-dtc/salesforce_mcp): Integrates with Salesforce to enable querying records, managing custom objects/fields, executing DML operations, and handling complex SOSL searches using TypeScript and JSForce  (node) 
 - [❌ workos](https://github.com/zueai/workos-mcp): Integrates with WorkOS API to enable enterprise-grade authentication and user management features like Single Sign-On and Multi-Factor Authentication for secure, scalable identity management in AI workflows.  (node) 
 
-</details>
+---
 
 
 <a id="databases"></a>
-<details>
-<summary><strong>Databases</strong> (220 servers)</summary>
+### Databases <small>(220 servers)</small>
 
-Securely access and query databases with options for read-only permissions.
+> Securely access and query databases with options for read-only permissions.
 
 - [✅ @f4ww4z/mcp-mysql-server](https://github.com/f4ww4z/mcp-mysql-server): Interact with MySQL databases to execute queries and manage connections.  (5 tools) (node) 
 - [✅ @identimoji/mcp-server-emojikey](https://github.com/identimoji/mcp-server-emojikey): Integrates with Supabase to persist and retrieve LLM interaction styles using emojikeys, enabling consistent personalized experiences across conversations.  (4 tools) (node) 
@@ -1510,14 +1499,13 @@ Securely access and query databases with options for read-only permissions.
 - [❌ zaj-mysql](https://github.com/zajtools/zaj-mysql-mcp): Integrates with MySQL databases to enable SQL query execution, schema analysis, and automated business insight generation through data reading, writing, and continuous memo updates.  (node) 
 - [❌ zaturn](https://github.com/kdqed/zaturn): Connects to multiple database types to enable SQL querying with visualization capabilities while keeping data in its original location  (python) 
 
-</details>
+---
 
 
 <a id="data-platforms"></a>
-<details>
-<summary><strong>Data Platforms</strong> (96 servers)</summary>
+### Data Platforms <small>(96 servers)</small>
 
-Tools for integrating, transforming, and managing data pipelines.
+> Tools for integrating, transforming, and managing data pipelines.
 
 - [✅ @apitable/aitable-mcp-server](https://github.com/apitable/aitable-mcp-server): AITable.ai Model Context Protocol Server enables AI agents to connect and work with AITable datasheets.  (6 tools) (node) 
 - [✅ @powerdrillai/powerdrill-mcp](https://github.com/powerdrillai/powerdrill-mcp): Provides tools to interact with Powerdrill datasets to perform data work.  (9 tools) (node) 
@@ -1616,14 +1604,13 @@ Tools for integrating, transforming, and managing data pipelines.
 - [❌ verodat](https://github.com/verodat/verodat-mcp-server): Integrates Verodat's data management platform with AI systems, enabling dataset operations, custom schema creation, and AI-powered queries for enhanced data analysis and validation.  (node) 
 - [❌ world-bank-data](https://github.com/anshumax/world_bank_mcp_server): Connects to World Bank open data API for exploring and analyzing global socioeconomic indicators and development trends.  (python) 
 
-</details>
+---
 
 
 <a id="developer-tools"></a>
-<details>
-<summary><strong>Developer Tools</strong> (358 servers)</summary>
+### Developer Tools <small>(358 servers)</small>
 
-Enhance your development workflow with tools for coding and environment management.
+> Enhance your development workflow with tools for coding and environment management.
 
 - [✅ @ahdev/dokploy-mcp](https://github.com/andradehenrique/dokploy-mcp): Integrates with Dokploy platform API for creating, updating, duplicating, and removing deployment projects, enabling teams to automate deployment workflows through AI interactions.  (56 tools) (node) 
 - [✅ @auto-browse/unbundle-openapi-mcp](https://github.com/auto-browse/unbundle_openapi_mcp): Splits and extracts portions of OpenAPI specification files into smaller, more focused files while preserving referenced components for improved documentation and maintainability.  (2 tools) (node) 
@@ -1984,14 +1971,13 @@ Enhance your development workflow with tools for coding and environment manageme
 - [❌ zerops-documentation](https://github.com/nermalcat69/zerops-mcp): Indexes and serves Zerops documentation content for direct access within development environments, enabling developers to search and retrieve relevant information without context switching.  (node) 
 - [❌ zig](https://github.com/opensvm/zig-mcp-server): Integrates with Zig tooling to provide code optimization, analysis, and generation capabilities for efficient Zig development.  (node) 
 
-</details>
+---
 
 
 <a id="data-science-tools"></a>
-<details>
-<summary><strong>Data Science Tools</strong> (98 servers)</summary>
+### Data Science Tools <small>(98 servers)</small>
 
-Simplify data analysis and exploration with tools for data science workflows.
+> Simplify data analysis and exploration with tools for data science workflows.
 
 - [✅ @antv/mcp-server-chart](https://github.com/antvis/mcp-server-chart): A visualization mcp contains 25+ visual charts using @antvis. Using for chart generation and data analysis.  (25 tools) (node) 
 - [✅ @arizeai/phoenix-mcp](https://github.com/arize-ai/phoenix/tree/HEAD/js/packages/phoenix-mcp): Provides a unified interface to Arize Phoenix's capabilities for managing prompts, exploring datasets, and running experiments across different LLM providers  (19 tools) (node) 
@@ -2092,14 +2078,13 @@ Simplify data analysis and exploration with tools for data science workflows.
 - [❌ wolframalpha-llm](https://github.com/garoth/wolframalpha-llm-mcp): Integrates with WolframAlpha's LLM API to enable complex mathematical and scientific queries, offering tools for asking questions and getting simplified answers.  (node) 
 - [❌ zenml](https://github.com/zenml-io/mcp-zenml): Integrates with ZenML to enable querying pipeline metadata, triggering new runs, and analyzing ML workflow history through Python-based tools for machine learning pipeline management  (python) 
 
-</details>
+---
 
 
 <a id="embedded-system"></a>
-<details>
-<summary><strong>Embedded System</strong> (55 servers)</summary>
+### Embedded System <small>(55 servers)</small>
 
-Access resources and shortcuts for working with embedded devices.
+> Access resources and shortcuts for working with embedded devices.
 
 - [✅ @mobilenext/mobile-mcp](https://github.com/mobile-next/mobile-mcp): Enables remote control of Android and iOS devices through commands for screenshots, app management, screen interactions, and UI navigation, ideal for automated testing and demonstrations.  (17 tools) (node) 
 - [✅ @noahlozevski/mcp-idb](https://github.com/noahlozevski/mcp-idb): Integrates with Facebook's iOS Development Bridge (idb) to enable automated iOS device management, test execution, UI interactions, and app installation through a simple npm module.  (1 tools) (node) 
@@ -2157,14 +2142,13 @@ Access resources and shortcuts for working with embedded devices.
 - [❌ unreal-engine-editor](https://github.com/cc8887/ue-editor-mcpserver): Transforms Unreal Engine Editor into an MCP-compatible server using Python's asyncio framework, enabling direct control of editor functionality for automated workflows and content creation.  (python) 
 - [❌ vnc-remote-control-for-macos](https://github.com/baryhuang/mcp-remote-macos-use): Provides secure remote control of macOS machines through VNC protocol, enabling screenshot capture and desktop interaction with mouse and keyboard inputs for remote administration or automated testing.  (python) 
 
-</details>
+---
 
 
 <a id="file-systems"></a>
-<details>
-<summary><strong>File Systems</strong> (108 servers)</summary>
+### File Systems <small>(108 servers)</small>
 
-Manage files and directories with tools for reading, writing, and organizing files.
+> Manage files and directories with tools for reading, writing, and organizing files.
 
 - [✅ @aindreyway/mcp-neurolora](https://github.com/aindreyway/mcp-neurolora): Extract and document code from your local filesystem, enabling automated documentation and codebase analysis.  (4 tools) (node) 
 - [✅ @bunas/fs-mcp](https://github.com/bunasq/fs): Enables file system access to read local files with optional API key authentication, providing a simple interface for analyzing and working with file content without manual uploads.  (1 tools) (node) 
@@ -2275,14 +2259,13 @@ Manage files and directories with tools for reading, writing, and organizing fil
 - [❌ word-document-formatter](https://github.com/cuongpham2107/word-mcp-server): Enables Microsoft Word document manipulation with text formatting and color control capabilities through python-docx and langchain-mcp-adapters.  (python) 
 - [❌ zip-compression](https://github.com/7gugu/zip-mcp): Enables direct file compression and decompression operations using ZIP format through fastMCP and zip.js utilities for efficient file handling within conversations.  (node) 
 
-</details>
+---
 
 
 <a id="finance-fintech"></a>
-<details>
-<summary><strong>Finance & Fintech</strong> (267 servers)</summary>
+### Finance & Fintech <small>(267 servers)</small>
 
-Work with financial data, market info, and trading platforms using AI tools.
+> Work with financial data, market info, and trading platforms using AI tools.
 
 - [✅ @akki91/ankr-mcp](https://github.com/akki91/ankr-mcp): Provides blockchain data access through the Ankr API, enabling wallet balance queries across multiple networks with detailed token metadata and dollar values for portfolio tracking and financial analysis.  (1 tools) (node) 
 - [✅ @bujaayjaay/mcp-coincap-jj](https://github.com/wazzan/mcp-coincap-jj): Integrates with CoinCap's API v3 to provide real-time cryptocurrency price tracking, market analysis, and historical trend data for informed investment decisions.  (3 tools) (node) 
@@ -2552,14 +2535,13 @@ Work with financial data, market info, and trading platforms using AI tools.
 - [❌ zerodha-kite](https://github.com/121yaseen/zerodha-mcp): Enables natural language interaction with Zerodha Kite trading platform for executing stock orders, retrieving portfolio information, and managing market transactions  (node) 
 - [❌ zerodha-trade](https://github.com/shubhamprajapati7748/zerodha-trade-mcp): Integrates with Zerodha's trading platform to enable real-time stock trading operations including profile viewing, portfolio monitoring, and order execution directly through conversation  (node) 
 
-</details>
+---
 
 
 <a id="gaming"></a>
-<details>
-<summary><strong>Gaming</strong> (43 servers)</summary>
+### Gaming <small>(43 servers)</small>
 
-Connect with gaming data, engines, and related services.
+> Connect with gaming data, engines, and related services.
 
 - [✅ @jayarrowz/mcp-osrs](https://github.com/jayarrowz/mcp-osrs): Provides tools for accessing Old School RuneScape game data through wiki searches and structured file queries with pagination support  (19 tools) (node) 
 - [✅ @runreal/unreal-mcp](https://github.com/runreal/unreal-mcp): Integrates with Unreal Engine to assist with game development workflows.  (20 tools) (node) 
@@ -2605,14 +2587,13 @@ Connect with gaming data, engines, and related services.
 - [❌ vrchat-osc](https://github.com/krekun/vrchat-mcp-osc): Provides a bridge between AI assistants and VRChat, enabling direct avatar parameter manipulation, movement control, and interaction through WebSocket and OSC protocols.  (node) 
 - [❌ wongames](https://github.com/saymondamasio/wongames-mcp): Provides a GraphQL interface to retrieve video game data from Strapi CMS, enabling filtered access to game collections, pricing information, and metadata for conversational interfaces.  (node) 
 
-</details>
+---
 
 
 <a id="knowledge-memory"></a>
-<details>
-<summary><strong>Knowledge & Memory</strong> (204 servers)</summary>
+### Knowledge & Memory <small>(204 servers)</small>
 
-Store and query structured information for AI models to use across sessions.
+> Store and query structured information for AI models to use across sessions.
 
 - [✅ @cgize/mcp-think-tool](https://github.com/cgize/claude-mcp-think-tool): Provides Claude with a dedicated workspace for structured reasoning through four specialized tools that enable recording, retrieving, clearing, and analyzing thoughts during complex problem-solving tasks.  (4 tools) (node) 
 - [✅ @gleanwork/mcp-server](https://github.com/gleanwork/mcp-server): Integrates with Glean's enterprise knowledge platform to provide company search, people profile lookup, and AI assistant capabilities directly within your workflow.  (3 tools) (node) 
@@ -2819,14 +2800,13 @@ Store and query structured information for AI models to use across sessions.
 - [❌ zenmemory-(solana)](https://github.com/zenmemoryai/zenmemory-mcp-sol): Provides a bridge between personal memory storage and Solana blockchain for storing, validating, and retrieving memory blocks with emotional context and tags, enabling trusted verification and persistence.  (node) 
 - [❌ zotero-mcp](https://github.com/kujenga/zotero-mcp): Integrates with Zotero to enable searching libraries, retrieving metadata, and accessing full-text content for scholarly research workflows.  (python) 
 
-</details>
+---
 
 
 <a id="location-services"></a>
-<details>
-<summary><strong>Location Services</strong> (58 servers)</summary>
+### Location Services <small>(58 servers)</small>
 
-Work with maps, weather, and location-based data for analytics and insights.
+> Work with maps, weather, and location-based data for analytics and insights.
 
 - [✅ @baidumap/mcp-server-baidu-map](https://github.com/baidu-maps/mcp): Integrates with Baidu Maps API for location-based operations including geocoding, route planning, and location search within the Baidu Maps ecosystem.  (10 tools) (node) 
 - [✅ @cablate/mcp-google-map](https://github.com/cablate/mcp-google-map): Integrates with Google Maps API to enable location-based operations like place searching, geocoding, and geographical information retrieval within conversations.  (7 tools) (node) 
@@ -2887,14 +2867,13 @@ Work with maps, weather, and location-based data for analytics and insights.
 - [❌ world-time](https://github.com/kukapay/whattimeisit-mcp): Provides location-based current time in ISO 8601 format using the World Time API through a lightweight Python FastMCP server.  (python) 
 - [❌ xiaozhi-location](https://github.com/ailearncoder/xiaozhi-location-mcp): Integrates with the xiaozhi-app Android device framework to retrieve real-time location data including GPS coordinates, altitude, and accuracy measurements from mobile devices using multiple location providers for navigation, geofencing, and location-based services.  (python) 
 
-</details>
+---
 
 
 <a id="marketing"></a>
-<details>
-<summary><strong>Marketing</strong> (49 servers)</summary>
+### Marketing <small>(49 servers)</small>
 
-Create and edit marketing content, manage metadata, and refine product positioning.
+> Create and edit marketing content, manage metadata, and refine product positioning.
 
 - [✅ @ashdev/discourse-mcp-server](https://github.com/ashdevfr/discourse-mcp-server): Enables searching and retrieving content from Discourse forums through a single tool that queries posts using the discourse2 npm package.  (1 tools) (node) 
 - [✅ @feedmob/jampp-reporting](https://github.com/feed-mob/fm-mcp-servers/tree/HEAD/src/jampp-reporting): Integrates with Jampp Reporting API to retrieve advertising campaign performance metrics including spend, impressions, clicks, and installs across specified date ranges with automated authentication handling.  (2 tools) (node) 
@@ -2946,14 +2925,13 @@ Create and edit marketing content, manage metadata, and refine product positioni
 - [❌ transistor.fm](https://github.com/gxjansen/transistor-mcp): Integrates with Transistor.fm's API to manage podcasts, episodes, analytics, and subscribers for automating podcast workflows.  (node) 
 - [❌ typefully](https://github.com/pepuscz/typefully-mcp-server): Integrates with Typefully's social media scheduling platform to automate content creation, scheduling, and publishing workflows across multiple social media platforms.  (python) 
 
-</details>
+---
 
 
 <a id="monitoring"></a>
-<details>
-<summary><strong>Monitoring</strong> (61 servers)</summary>
+### Monitoring <small>(61 servers)</small>
 
-Analyze app performance and error reports with monitoring tools.
+> Analyze app performance and error reports with monitoring tools.
 
 - [✅ @hiyorineko/mcp-rollbar-server](https://github.com/hiyorineko/mcp-rollbar-server): Provides a bridge to Rollbar error tracking platform for monitoring and analyzing application errors, retrieving detailed information, managing projects, and tracking deployments.  (13 tools) (node) 
 - [✅ @kajirita2002/honeycomb-mcp-server](https://github.com/kajirita2002/honeycomb-mcp-server): Provides a direct TypeScript-based interface for interacting with Honeycomb's observability API, enabling developers to query, create, and manage datasets, events, and monitoring resources through natural language interaction.  (11 tools) (node) 
@@ -3017,14 +2995,13 @@ Analyze app performance and error reports with monitoring tools.
 - [❌ victorialogs](https://github.com/victoriametrics-community/mcp-victorialogs): Provides a bridge between VictoriaLogs and language models for querying and analyzing log data, enabling DevOps teams to troubleshoot issues and extract insights without writing complex query syntax.  (go) 
 - [❌ victoriametrics](https://github.com/victoriametrics-community/mcp-victoriametrics): Provides direct access to VictoriaMetrics monitoring instances for querying metrics, exploring time series data, analyzing alerting rules, and debugging configurations without requiring online access.  (go) 
 
-</details>
+---
 
 
 <a id="search-data-extraction"></a>
-<details>
-<summary><strong>Search & Data Extraction</strong> (404 servers)</summary>
+### Search & Data Extraction <small>(404 servers)</small>
 
-Find and extract data from various sources quickly and efficiently.
+> Find and extract data from various sources quickly and efficiently.
 
 - [✅ @adenot/mcp-google-search](https://github.com/adenot/mcp-google-search): Integrates Google Custom Search API to enable web searches for fact-checking, research, and content generation tasks.  (1 tools) (node) 
 - [✅ @anaisbetts/mcp-youtube](https://github.com/anaisbetts/mcp-youtube): Extract and analyze video subtitle data for content understanding.  (1 tools) (node) 
@@ -3431,14 +3408,13 @@ Find and extract data from various sources quickly and efficiently.
 - [❌ youtube-transcripts](https://github.com/jkawamoto/mcp-youtube-transcript): Integrates with YouTube's transcript API to retrieve and process captions from video URLs, enabling content analysis and information extraction from spoken video content.  (python) 
 - [❌ zenn](https://github.com/shibuiwilliam/mcp-server-zenn): Integrates with Zenn.dev's developer API to fetch and filter technical articles and books from the popular Japanese publication platform.  (python) 
 
-</details>
+---
 
 
 <a id="security"></a>
-<details>
-<summary><strong>Security</strong> (138 servers)</summary>
+### Security <small>(138 servers)</small>
 
-Enhance security with tools for scanning, threat detection, and secure access.
+> Enhance security with tools for scanning, threat detection, and secure access.
 
 - [✅ @binalyze/air-mcp](https://github.com/binalyze/air-mcp): Bridges to the Binalyze AIR digital forensics platform, enabling security teams to query endpoint data, monitor status, and manage investigations through a secure API connection.  (116 tools) (node) 
 - [✅ @burtthecoder/mcp-dnstwist](https://github.com/burtthecoder/mcp-dnstwist): Integrates with dnstwist to automate DNS fuzzing for detecting typosquatting, phishing, and corporate espionage threats.  (1 tools) (node) 
@@ -3579,14 +3555,13 @@ Enhance security with tools for scanning, threat detection, and secure access.
 - [❌ zkproof](https://github.com/colygon/zkpmcp): Enables privacy-preserving computations with zero-knowledge proofs for verifying claims like age requirements without revealing sensitive personal data  (node) 
 - [❌ zoomeye](https://github.com/zoomeye-ai/mcp_zoomeye): Integrates with ZoomEye API to enable network asset reconnaissance through specialized search tools, supporting dork queries, IP filtering, and field selection with built-in caching and error handling for cybersecurity workflows.  (python) 
 
-</details>
+---
 
 
 <a id="sports"></a>
-<details>
-<summary><strong>Sports</strong> (16 servers)</summary>
+### Sports <small>(16 servers)</small>
 
-Access sports data, results, and stats with ease.
+> Access sports data, results, and stats with ease.
 
 - [✅ fpl-mcp](https://github.com/rishijatia/fantasy-pl-mcp): Integrates with Fantasy Premier League data to provide player statistics, team information, and analytical tools for making informed fantasy football management decisions.  (16 tools) (python) 
 - [❌ api-football](https://github.com/obinopaul/soccer-mcp-server): Provides a bridge to API-Football for accessing soccer data including league standings, team fixtures, player statistics, and live match information through specialized tools that retrieve both historical and real-time data.  (python) 
@@ -3605,14 +3580,13 @@ Access sports data, results, and stats with ease.
 - [❌ surf-(stormglass)](https://github.com/ravinahp/surf-mcp): For people who surf waves and the web. Unlocks wave analysis, forecasting, and custom surf applications.  (python) 
 - [❌ the-odds-api](https://github.com/kitchenchem/degen-mcp): Provides a bridge to The Odds API for accessing sports betting data including available sports, odds comparisons across bookmakers, and quota tracking in both test and live modes.  (python) 
 
-</details>
+---
 
 
 <a id="support-service-management"></a>
-<details>
-<summary><strong>Support & Service Management</strong> (63 servers)</summary>
+### Support & Service Management <small>(63 servers)</small>
 
-Manage customer support and IT services with specialized tools.
+> Manage customer support and IT services with specialized tools.
 
 - [✅ @cristip73/mcp-server-asana](https://github.com/cristip73/mcp-server-asana): Integrates with Asana's API to enable task management, project organization, and collaboration workflows through 30+ tools for searching, creating, and visualizing projects and tasks.  (41 tools) (node) 
 - [✅ @keegancsmith/linear-issues-mcp-server](https://github.com/keegancsmith/linear-issues-mcp-server): Integrates with Linear issue tracking to provide read-only access to issue details and comments without switching contexts.  (2 tools) (node) 
@@ -3678,14 +3652,13 @@ Manage customer support and IT services with specialized tools.
 - [❌ zendesk-support](https://github.com/koundinya/zd-mcp-server): Integrates with Zendesk to enable ticket retrieval, creation, updating, and searching directly from conversation interfaces for streamlined customer support workflows.  (node) 
 - [❌ zerocracy](https://github.com/zerocracy/zerocracy-mcp-server): Provides a bridge between Zerocracy's project management platform and development teams, offering actionable recommendations to improve productivity and focus through AI-assisted insights.  (node) 
 
-</details>
+---
 
 
 <a id="translation-services"></a>
-<details>
-<summary><strong>Translation Services</strong> (13 servers)</summary>
+### Translation Services <small>(13 servers)</small>
 
-Translate content between languages with AI-powered tools.
+> Translate content between languages with AI-powered tools.
 
 - [✅ @translated/lara-mcp](https://github.com/translated/lara-mcp): Bridges to the Lara Translation API for accurate, context-aware text translations between languages with automatic language detection capabilities.  (10 tools) (node) 
 - [✅ @winterjung/mcp-korean-spell](https://github.com/winterjung/mcp-korean-spell): Integrates with Naver's spelling service to automatically correct grammatical errors, typos, and linguistic issues in Korean text.  (1 tools) (node) 
@@ -3701,14 +3674,13 @@ Translate content between languages with AI-powered tools.
 - [❌ translator-ai](https://github.com/datanoisetv/translator-ai): Translates JSON internationalization files using multiple translation providers (Google Gemini, OpenAI, Ollama/DeepSeek) with intelligent caching, deduplication across files, and format preservation to minimize API costs while maintaining exact JSON structure and consistent results across target languages.  (node) 
 - [❌ youtube-translate](https://github.com/brianshin22/youtube-translate-mcp): Enables access to YouTube video transcripts, translations, summaries, and subtitle generation through a simple API interface for research, content analysis, and multilingual video accessibility workflows.  (python) 
 
-</details>
+---
 
 
 <a id="travel-transportation"></a>
-<details>
-<summary><strong>Travel & Transportation</strong> (42 servers)</summary>
+### Travel & Transportation <small>(42 servers)</small>
 
-Get travel schedules, routes, and real-time transportation data.
+> Get travel schedules, routes, and real-time transportation data.
 
 - [✅ @gongrzhe/server-travelplanner-mcp](https://github.com/gongrzhe/travel-planner-mcp-server): Integrates with Google Maps to enable AI-driven travel planning, itinerary optimization, and location-based services for automated trip management.  (5 tools) (node) 
 - [✅ @mfukushim/map-traveler-mcp](https://github.com/mfukushim/map-traveler-mcp): Integrates with Google Maps to create virtual travel experiences where users can navigate real-world routes with customizable avatars, discover nearby facilities, and share journeys on Bluesky.  (8 tools) (node) 
@@ -3753,14 +3725,13 @@ Get travel schedules, routes, and real-time transportation data.
 - [❌ vilnius-transport](https://github.com/sarunasdaujotis/vilnius-transport-mcp-server): Integrates with Vilnius public transport data sources to provide real-time transit information, enabling accurate responses about local transportation.  (python) 
 - [❌ zaragoza-tram](https://github.com/danilat/mcp-dndzgz): Provides real-time tram arrival estimations and station listings for Zaragoza's public transportation system through the DNDzgz API.  (node) 
 
-</details>
+---
 
 
 <a id="version-control"></a>
-<details>
-<summary><strong>Version Control</strong> (77 servers)</summary>
+### Version Control <small>(77 servers)</small>
 
-Manage Git repositories, pull requests, and issues with version control tools.
+> Manage Git repositories, pull requests, and issues with version control tools.
 
 - [✅ @kazuph/mcp-github-pera1](https://github.com/kazuph/mcp-github-pera1): Connects to GitHub repositories, enabling natural language queries about code structure, dependencies, and development history.  (1 tools) (node) 
 - [✅ @missionsquad/mcp-github](https://github.com/missionsquad/mcp-github): Integrates with GitHub's API to enable repository operations, file management, issue tracking, and code search directly within conversations through flexible authentication and over 30 specialized tools.  (45 tools) (node) 
@@ -3840,14 +3811,13 @@ Manage Git repositories, pull requests, and issues with version control tools.
 - [❌ project-hub-(github)](https://github.com/peterparker57/project-hub-mcp-server): Integrates local project management with GitHub repositories, enabling streamlined version control, automated commits, and multi-account support for efficient development workflows.  (node) 
 - [❌ pygithub](https://github.com/astromined/pygithub-mcp-server): Integrates with GitHub's API through PyGithub to enable repository management, issue tracking, and pull request operations with automatic authentication, rate limiting, and error recovery.  (python) 
 
-</details>
+---
 
 
 <a id="other-tools-and-integrations"></a>
-<details>
-<summary><strong>Other Tools and Integrations</strong> (808 servers)</summary>
+### Other Tools and Integrations <small>(808 servers)</small>
 
-Miscellaneous tools and integrations that don’t fit into other categories.
+> Miscellaneous tools and integrations that don’t fit into other categories.
 
 - [✅ @0xbeedao/mcp-taskwarrior](https://github.com/0xbeedao/mcp-taskwarrior): Integrates with Taskwarrior to enable task management through adding, updating, deleting, and listing tasks with project organization and priority level support.  (4 tools) (node) 
 - [✅ @abhiz123/todoist-mcp-server](https://github.com/abhiz123/todoist-mcp-server): Create and manage tasks in Todoist through natural language.  (5 tools) (node) 
@@ -4662,7 +4632,7 @@ Miscellaneous tools and integrations that don’t fit into other categories.
 - [❌ zotero](https://github.com/54yyyu/zotero-mcp): Enables direct interaction with Zotero reference management libraries for searching literature, retrieving metadata and full-text content, managing collections, and organizing research materials.  (python) 
 - [❌ zotero-mcp](https://github.com/kujenga/zotero-mcp): Integrates with Zotero to enable searching libraries, retrieving metadata, and accessing full-text content for scholarly research workflows.  (python) 
 
-</details>
+---
 
 
 ---
