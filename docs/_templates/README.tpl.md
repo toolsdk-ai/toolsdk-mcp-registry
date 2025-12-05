@@ -37,6 +37,15 @@
 
 </div>
 
+## Start Here
+
+- 🔍 I want to **find an MCP Server** → [Browse Directory](#mcp-servers)
+- 🔌 I want to **integrate MCP tools** into my AI app → [Integration Guide](https://toolsdk.ai/docs/tutorials/getting-started#-quick-start)
+- 🚀 I want to **deploy an MCP Gateway** → [Deployment Guide](#deploy-enterprise-gateway-recommended)
+- ➕ I want to **submit my MCP Server** → [Contribution Guide](#contribute-your-mcp-server)
+
+> **💡 Highlights**: Federated search across <%= COUNT %>+ servers & official registry • One-line integration with `Vercel AI SDK` / `LangChain` • Sandbox + OAuth 2.1 built-in • Get featured on [ToolSDK.ai](https://toolsdk.ai)
+
 ## Getting Started
 
 <a id="docker-self-hosting"></a>
