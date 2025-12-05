@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "packageName": "github-mcp-server",
+  "description": "GitHub's official MCP Server",
+  "url": "https://github.com/github/github-mcp-server",
+  "runtime": "node",
+  "license": "mit",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.githubcopilot.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ],
+  "name": "GitHub's official Remote MCP Server"
+}
