@@ -1,6 +1,6 @@
 # 📚 All MCP Servers
 
-> **Complete directory of all 4110+ MCP servers in the ToolSDK Registry**
+> **Complete directory of all 4111+ MCP servers in the ToolSDK Registry**
 >
 > Looking for production-ready servers only? See the [main README](../README.md) for validated servers.
 
@@ -8,9 +8,9 @@
 
 ## 📊 Statistics
 
-- 📦 **Total Servers**: 4110
+- 📦 **Total Servers**: 4111
 - ✅ **Validated & Tested**: 711
-- ⚙️ **Community Contributed**: 3399
+- ⚙️ **Community Contributed**: 3400
 
 ---
 
@@ -1608,7 +1608,7 @@
 
 
 <a id="developer-tools"></a>
-### Developer Tools <small>(358 servers)</small>
+### Developer Tools <small>(359 servers)</small>
 
 > Enhance your development workflow with tools for coding and environment management.
 
@@ -1799,6 +1799,7 @@
 - [❌ gdb-debugger](https://github.com/yywz1999/gdb-mcp-server): Integrates GDB with AI capabilities to provide interactive debugging assistance for C/C++ applications, enabling breakpoint management, memory examination, and execution flow analysis during debugging sessions.  (python) 
 - [❌ gin-mcp](https://github.com/ckanthony/gin-mcp): Automatically exposes existing Gin API endpoints as tools with zero configuration, requiring just a single line of code to bridge your Go application with AI assistants.  (go) 
 - [❌ github-gists](https://github.com/bmorphism/gists-mcp-server): Provides a bridge to GitHub Gists for creating, retrieving, updating, listing, and deleting code snippets directly through conversational interfaces.  (node) 
+- [❌ github-mcp-server](https://github.com/github/github-mcp-server): GitHub's official MCP Server  (node) 
 - [❌ github-todo-scanner](https://github.com/startr/web-mcpo-repo_scanner): Scans GitHub repositories for TODO comments in code files, presenting findings through both a web interface and RESTful API for tracking outstanding tasks and conducting code quality reviews.  (python) 
 - [❌ github-trending-repositories-(findrepo)](https://github.com/gnosis23/findrepo-mcp-server): Provides access to GitHub trending repositories with optional language filtering through the findrepo.work API, enabling developers to stay updated on popular open-source projects without leaving their conversation.  (node) 
 - [❌ github-workflow-debugger](https://github.com/maxteabag/githubworkflowmcp): Integrates with GitHub Actions to diagnose and fix workflow failures by fetching run data, analyzing job errors, and suggesting specific fixes for common CI/CD pipeline issues.  (node) 
@@ -3686,8 +3687,8 @@
 - [✅ @mfukushim/map-traveler-mcp](https://github.com/mfukushim/map-traveler-mcp): Integrates with Google Maps to create virtual travel experiences where users can navigate real-world routes with customizable avatars, discover nearby facilities, and share journeys on Bluesky.  (8 tools) (node) 
 - [✅ @openbnb/mcp-server-airbnb](https://github.com/openbnb-org/mcp-server-airbnb): Integrates with Airbnb to enable vacation rental search and detailed property information retrieval without requiring API keys  (2 tools) (node) 
 - [✅ @variflight-ai/variflight-mcp](https://github.com/variflight/variflight-mcp): Integrates with Variflight API to provide real-time flight information, schedules, aircraft tracking, airport weather forecasts, and comfort metrics for travel planning and aviation monitoring applications.  (8 tools) (node) 
-- [✅ 12306-mcp](https://github.com/freestylefly/12306-mcp): Integrates with China's 12306 railway system to search train tickets, check schedules, and retrieve route information across the Chinese railway network with real-time availability and pricing data.  (8 tools) (node) 
-- [✅ 12306-mcp](https://github.com/freestylefly/12306-mcp): Integrates with China's 12306 railway system to search train tickets, check schedules, and retrieve route information across the Chinese railway network with real-time availability and pricing data.  (8 tools) (node) 
+- [✅ 12306-mcp](https://github.com/Joooook/12306-mcp): A 12306 ticket search server based on the Model Context Protocol (MCP). The server provides a simple API interface that allows users to search for 12306 tickets.  (8 tools) (node) 
+- [✅ 12306-mcp](https://github.com/Joooook/12306-mcp): A 12306 ticket search server based on the Model Context Protocol (MCP). The server provides a simple API interface that allows users to search for 12306 tickets.  (8 tools) (node) 
 - [✅ caltrain-mcp](https://github.com/davidyen1124/caltrain-mcp): Provides real-time Caltrain commuter rail information including schedules, station details, and trip planning for the San Francisco Bay Area  (2 tools) (python) 
 - [✅ lumbretravel-mcp](https://github.com/lumile/lumbretravel-mcp): Integrates with the Argentinian LumbreTravel API to manage travel programs, activities, and bookings for efficient itinerary planning and service coordination.  (68 tools) (node) 
 - [✅ train_12306](https://github.com/ecmadao/Train-12306): A command line tool to show 12306 tickets  (4 tools) (python) 

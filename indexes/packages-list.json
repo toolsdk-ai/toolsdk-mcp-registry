@@ -42191,7 +42191,7 @@
   },
   "12306-mcp": {
     "category": "travel-transportation",
-    "path": "travel-transportation/12306-mcp.json",
+    "path": "travel-transportation/jok-12306-mcp.json",
     "validated": true,
     "tools": {
       "get-current-date": {
@@ -47492,5 +47492,11 @@
         "description": "List issues in a GitHub repository"
       }
     }
+  },
+  "github-mcp-server": {
+    "category": "developer-tools",
+    "path": "developer-tools/github-mcp-server.json",
+    "validated": false,
+    "tools": {}
   }
 }

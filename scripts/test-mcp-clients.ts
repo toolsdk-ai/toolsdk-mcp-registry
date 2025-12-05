@@ -57,14 +57,21 @@ async function main() {
   for (const [packageKey, value] of Object.entries(allPackagesList)) {
     const mcpServerConfig = await getPackageConfigByKey(packageKey);
 
-    if (mcpServerConfig.runtime === "node") {
+    // Check if this package has remote MCP configuration
+    const hasRemotes = mcpServerConfig.remotes && mcpServerConfig.remotes.length > 0;
+
+    // Only process: 1) runtime === "node" packages, OR 2) packages with remotes (any runtime)
+    if (mcpServerConfig.runtime === "node" || hasRemotes) {
       if (value.validated === true) {
         // Skip already validated packages to prevent state override
-        const version = getActualVersion(
-          mcpServerConfig.packageName,
-          mcpServerConfig.packageVersion,
-        );
-        packageDeps[mcpServerConfig.packageName] = version || "latest";
+        // Only add to packageDeps if it's a node package (remote packages don't need npm deps)
+        if (mcpServerConfig.runtime === "node" && !hasRemotes) {
+          const version = getActualVersion(
+            mcpServerConfig.packageName,
+            mcpServerConfig.packageVersion,
+          );
+          packageDeps[mcpServerConfig.packageName] = version || "latest";
+        }
         continue;
       }
 
@@ -78,7 +85,10 @@ async function main() {
       for (const [key, _env] of Object.entries(mcpServerConfig.env || {})) {
         mockEnv[key] = "MOCK";
       }
-      console.log(`Reading MCP Client for package: ${packageKey} ${value.path}`);
+      const runtimeInfo = hasRemotes
+        ? `remote (${mcpServerConfig.runtime})`
+        : mcpServerConfig.runtime;
+      console.log(`Reading MCP Client for package: ${packageKey} ${value.path} [${runtimeInfo}]`);
       try {
         // const parsedContent: MCPServerPackageConfig= MCPServerPackageConfigSchema.parse(JSON.parse(fileContent));
 
@@ -110,11 +120,14 @@ async function main() {
         allPackagesList[packageKey].tools = saveTools;
         allPackagesList[packageKey].validated = true;
 
-        const version = getActualVersion(
-          mcpServerConfig.packageName,
-          mcpServerConfig.packageVersion,
-        );
-        packageDeps[mcpServerConfig.packageName] = version || "latest";
+        // Only add to packageDeps if it's a local node package (not remote)
+        if (mcpServerConfig.runtime === "node" && !hasRemotes) {
+          const version = getActualVersion(
+            mcpServerConfig.packageName,
+            mcpServerConfig.packageVersion,
+          );
+          packageDeps[mcpServerConfig.packageName] = version || "latest";
+        }
       } catch (e) {
         console.error(
           `Error reading MCP Client for package: ${packageKey} ${value.path}`,
