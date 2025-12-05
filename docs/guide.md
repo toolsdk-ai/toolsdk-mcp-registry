@@ -2,11 +2,14 @@
 
 - [Guide for ToolSDK.ai MCP Servers Registry](#guide-for-toolsdkai-mcp-servers-registry)
   - [How to submit new packages?](#how-to-submit-new-packages)
+    - [Remote MCP Server Example](#remote-mcp-server-example)
   - [What differences about ToolSDK.ai MCP Servers](#what-differences-about-toolsdkai-mcp-servers)
   - [Config](#config)
   - [Scripts](#scripts)
 
 ## How to submit new packages?
+
+> 📖 **For detailed submission instructions**, including all available configuration fields, remote MCP server setup, and OAuth 2.1 authentication, please see our [Contributing Guide](../CONTRIBUTING.md).
 
 To submit a new package, navigate to the [packages directory](../packages/) which contains categorized subdirectories for different types of MCP servers.
 
@@ -25,7 +28,8 @@ The format for the configuration is as follows; this is the format of the JSON c
 ```json
 {
   "type": "mcp-server",
-  "name": "@modelcontextprotocol/server-github",
+  "name": "GitHub MCP Server",
+  "packageName": "@modelcontextprotocol/server-github",
   "description": "MCP server for using the GitHub API",
   "url": "https://github.com/modelcontextprotocol/servers/blob/main/src/github",
   "runtime": "node",
@@ -39,9 +43,35 @@ The format for the configuration is as follows; this is the format of the JSON c
 }
 ```
 
+### Remote MCP Server Example
+
+For MCP servers that support remote hosting with OAuth 2.1 authentication:
+
+```json
+{
+  "type": "mcp-server",
+  "name": "Remote GitHub MCP",
+  "packageName": "github-mcp",
+  "description": "GitHub MCP with remote hosting and OAuth support",
+  "url": "https://github.com/example/github-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.example.com/github",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
+```
+
 For example, if you want to submit an MCP server package using an official GitHub MCP server, create a file named `modelcontextprotocol-github.json` in the `packages/code-execution` directory.
 
-Every file that enters this repository will be validated by Zod. You can open [types.ts](../types.ts) to see the definition of the Zod schema.
+Every file that enters this repository will be validated by Zod. You can open [common-schema.ts](../src/shared/schemas/common-schema.ts) to see the definition of the Zod schema.
 
 ## What differences about ToolSDK.ai MCP Servers
 
@@ -66,8 +96,10 @@ It has the following features:
 
 ## Config
 
-- `config/featured.json`
-- `hosting-blacklist.json`
+- `config/categories.mjs` - Category definitions
+- `config/featured.mjs` - Featured packages list
+- `config/hosting-blacklist.mjs` - Packages excluded from hosting
+- `config/verified.mjs` - Verified packages list
 
 ## Scripts
 

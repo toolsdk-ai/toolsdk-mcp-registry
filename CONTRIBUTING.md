@@ -31,26 +31,82 @@ If you know which category your server fits into, feel free to put it in the app
 }
 ```
 
-> Every file that enters this repository will be validated by Zod. You can open [types.ts](./src/types.ts) to see the definition of the Zod schema.
+> Every file that enters this repository will be validated by Zod. You can open [common-schema.ts](./src/shared/schemas/common-schema.ts) to see the definition of the Zod schema.
 
 Here's a list of fields you can use in your MCP server configuration:
 
-| Field         | Type   | Required | Description                                                                                              |
-| ------------- | ------ | -------- | -------------------------------------------------------------------------------------------------------- |
-| `type`        | string | Yes      | Must be `"mcp-server"`                                                                                   |
-| `name`        | string | Yes      | Custom display name. If not provided, package name will be used                                          |
-| `packageName` | string | Yes      | Name of the package (e.g. npm, PyPI, Maven package name)                                                 |
-| `description` | string | No       | Description of the MCP server                                                                            |
-| `url`         | string | No       | GitHub repository URL                                                                                    |
-| `runtime`     | string | Yes      | Runtime environment. e.g. `"node"`, `"python"`, `"java"`, `"go"`                                         |
-| `license`     | string | No       | Open source license (e.g. MIT, AGPL, GPL)                                                                |
-| `env`         | object | Yes      | Environment variables required by the server. If no env is needed, you can fill in an empty object `{}`` |
-| `logo`        | string | No       | URL to custom logo image                                                                                 |
+| Field            | Type   | Required | Description                                                                                               |
+| ---------------- | ------ | -------- | --------------------------------------------------------------------------------------------------------- |
+| `type`           | string | Yes      | Must be `"mcp-server"`                                                                                    |
+| `name`           | string | No       | Custom display name. If not provided, package name will be used                                           |
+| `packageName`    | string | Yes      | Name of the package (e.g. npm, PyPI, Maven package name)                                                  |
+| `packageVersion` | string | No       | Version of the package. If not provided, latest version will be used                                      |
+| `description`    | string | No       | Description of the MCP server                                                                             |
+| `url`            | string | No       | GitHub repository URL                                                                                     |
+| `runtime`        | string | Yes      | Runtime environment: `"node"`, `"python"`, `"java"`, `"go"`                                               |
+| `license`        | string | No       | Open source license (e.g. MIT, AGPL, GPL)                                                                 |
+| `env`            | object | Yes       | Environment variables required by the server. If no env is needed, you can fill in an empty object `{}`    |
+| `logo`           | string | No       | URL to custom logo image                                                                                  |
+| `remotes`        | array  | No       | Remote server endpoints for hosted MCP servers (see [Remote MCP Servers](#-remote-mcp-servers) below)     |
 
 Each environment variable in the env object should have:
 
 - `description`: A brief description of what the variable is used for
 - `required`: Boolean indicating if the variable is required
+
+## 🌐 Remote MCP Servers
+
+If your MCP server supports remote hosting via Streamable HTTP transport, you can add a `remotes` array to enable direct connection without local installation:
+
+```json
+{
+  "type": "mcp-server",
+  "name": "Remote GitHub MCP Server",
+  "packageName": "github-mcp",
+  "description": "A GitHub automation tool with remote hosting support",
+  "runtime": "node",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://your-server.com/mcp"
+    }
+  ]
+}
+```
+
+### Remote with OAuth 2.1 Authentication
+
+For MCP servers that require OAuth 2.1 authentication, add the `auth` configuration:
+
+```json
+{
+  "type": "mcp-server",
+  "name": "OAuth GitHub MCP Server",
+  "packageName": "github-mcp",
+  "description": "GitHub MCP with OAuth authentication",
+  "runtime": "node",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://your-server.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
+```
+
+### Remote Configuration Fields
+
+| Field         | Type   | Required | Description                                              |
+| ------------- | ------ | -------- | -------------------------------------------------------- |
+| `type`        | string | Yes      | Transport type. Currently only `"streamable-http"`       |
+| `url`         | string | Yes      | Remote server endpoint URL                               |
+| `auth`        | object | No       | Authentication configuration                             |
+| `auth.type`   | string | Yes*     | Authentication type. Currently only `"oauth2"`           |
+
+> *Required when `auth` object is provided
 
 For more detail please see [the guide](./docs/guide.md).
 
