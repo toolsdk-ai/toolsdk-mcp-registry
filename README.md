@@ -44,7 +44,8 @@
 - 🚀 I want to **deploy an MCP Gateway** → [Deployment Guide](#deploy-enterprise-gateway-recommended)
 - ➕ I want to **submit my MCP Server** → [Contribution Guide](#contribute-your-mcp-server)
 
-> **💡 Highlights**: Federated search across 4111+ servers & official registry • One-line integration with `Vercel AI SDK` / `LangChain` • Sandbox + OAuth 2.1 built-in • Get featured on [ToolSDK.ai](https://toolsdk.ai)
+> [!IMPORTANT]
+> **Highlights**: Federated search across 4111+ servers & official registry • One-line integration with `Vercel AI SDK` / `LangChain` • Sandbox + OAuth 2.1 built-in • Get featured on [ToolSDK.ai](https://toolsdk.ai)
 
 ## Getting Started
 
@@ -62,14 +63,15 @@ Start the registry immediately with default settings:
 docker compose up -d
 ```
 
-> 💡 **Did this save you time?** Give us a [**Star on GitHub**](https://github.com/toolsdk-ai/toolsdk-mcp-registry) — it helps others discover this registry!
+> [!TIP]
+> **Did this save you time?** Give us a [**Star on GitHub**](https://github.com/toolsdk-ai/toolsdk-mcp-registry) — it helps others discover this registry!
 
 **Configuration:**
 - Set `MCP_SANDBOX_PROVIDER=LOCAL` in `.env` file if you want to disable the sandbox (not recommended for production).
 - *See [Configuration Guide](./docs/DEVELOPMENT.md) for full details.*
 
-> 💡 **Tip for Private Deployment**:
-> This registry contains 4111+ public MCP servers. If you only need a specific subset for your private environment, you can prune the `packages/` directory.
+> [!TIP]
+> **Tip for Private Deployment**: This registry contains 4111+ public MCP servers. If you only need a specific subset for your private environment, you can prune the `packages/` directory.
 > 📖 See [Package Management Guide](./docs/DEVELOPMENT.md#5--package-management-for-private-deployment) for details.
 
 That's it! Your self-hosted MCP registry is now running with:
@@ -283,6 +285,7 @@ Your MCP server will be:
 
 **4111+ AI Agent Tools, LLM Integrations & Automation Servers**
 
+> [!NOTE]
 > ⭐ **Featured below**: Hand-picked, production-ready MCP servers verified by our team.
 >
 > 📚 **Looking for all 4111+ servers?** Check out [**All MCP Servers**](./docs/ALL-MCP-SERVERS.md) for the complete list.
