@@ -1,6 +1,6 @@
 # 📚 All MCP Servers
 
-> **Complete directory of all 4111+ MCP servers in the ToolSDK Registry**
+> **Complete directory of all 4112+ MCP servers in the ToolSDK Registry**
 >
 > Looking for production-ready servers only? See the [main README](../README.md) for validated servers.
 
@@ -8,9 +8,9 @@
 
 ## 📊 Statistics
 
-- 📦 **Total Servers**: 4111
+- 📦 **Total Servers**: 4112
 - ✅ **Validated & Tested**: 711
-- ⚙️ **Community Contributed**: 3400
+- ⚙️ **Community Contributed**: 3401
 
 ---
 
@@ -2872,7 +2872,7 @@
 
 
 <a id="marketing"></a>
-### Marketing <small>(49 servers)</small>
+### Marketing <small>(50 servers)</small>
 
 > Create and edit marketing content, manage metadata, and refine product positioning.
 
@@ -2923,6 +2923,7 @@
 - [❌ smartlead](https://github.com/jean-technologies/smartlead-mcp-server-local): Integrates with Smartlead's email marketing API to manage campaigns, track leads, and optimize email deliverability through a tiered licensing system with multiple operation modes.  (node) 
 - [❌ smartlead-mcp-server](https://github.com/LeadMagic/smartlead-mcp-server): A Model Context Protocol server that provides AI coding assistants (Claude, Cursor, etc.) with access to SmartLead's cold email automation platform through 116+ API endpoints for campaign management, lead tracking, and email delivery.  (node) 
 - [❌ sola](https://github.com/sociallayer-im/sola-mcp): Integrates with the Social Layer (Sola) platform API to retrieve event details, search events by date ranges and keywords, fetch group information, user profiles, and venue data for event discovery and community management.  (node) 
+- [❌ tiktok-ads-mcp-server](https://github.com/AdsMCP/tiktok-ads-mcp-server): TikTok Ads MCP Server – Model Context Protocol Server for TikTok Ads Marketing API Integration  (python) 
 - [❌ transistor.fm](https://github.com/gxjansen/transistor-mcp): Integrates with Transistor.fm's API to manage podcasts, episodes, analytics, and subscribers for automating podcast workflows.  (node) 
 - [❌ typefully](https://github.com/pepuscz/typefully-mcp-server): Integrates with Typefully's social media scheduling platform to automate content creation, scheduling, and publishing workflows across multiple social media platforms.  (python) 
 
@@ -3687,8 +3688,8 @@
 - [✅ @mfukushim/map-traveler-mcp](https://github.com/mfukushim/map-traveler-mcp): Integrates with Google Maps to create virtual travel experiences where users can navigate real-world routes with customizable avatars, discover nearby facilities, and share journeys on Bluesky.  (8 tools) (node) 
 - [✅ @openbnb/mcp-server-airbnb](https://github.com/openbnb-org/mcp-server-airbnb): Integrates with Airbnb to enable vacation rental search and detailed property information retrieval without requiring API keys  (2 tools) (node) 
 - [✅ @variflight-ai/variflight-mcp](https://github.com/variflight/variflight-mcp): Integrates with Variflight API to provide real-time flight information, schedules, aircraft tracking, airport weather forecasts, and comfort metrics for travel planning and aviation monitoring applications.  (8 tools) (node) 
-- [✅ 12306-mcp](https://github.com/freestylefly/12306-mcp): Integrates with China's 12306 railway system to search train tickets, check schedules, and retrieve route information across the Chinese railway network with real-time availability and pricing data.  (8 tools) (node) 
-- [✅ 12306-mcp](https://github.com/freestylefly/12306-mcp): Integrates with China's 12306 railway system to search train tickets, check schedules, and retrieve route information across the Chinese railway network with real-time availability and pricing data.  (8 tools) (node) 
+- [✅ 12306-mcp](https://github.com/Joooook/12306-mcp): A 12306 ticket search server based on the Model Context Protocol (MCP). The server provides a simple API interface that allows users to search for 12306 tickets.  (8 tools) (node) 
+- [✅ 12306-mcp](https://github.com/Joooook/12306-mcp): A 12306 ticket search server based on the Model Context Protocol (MCP). The server provides a simple API interface that allows users to search for 12306 tickets.  (8 tools) (node) 
 - [✅ caltrain-mcp](https://github.com/davidyen1124/caltrain-mcp): Provides real-time Caltrain commuter rail information including schedules, station details, and trip planning for the San Francisco Bay Area  (2 tools) (python) 
 - [✅ lumbretravel-mcp](https://github.com/lumile/lumbretravel-mcp): Integrates with the Argentinian LumbreTravel API to manage travel programs, activities, and bookings for efficient itinerary planning and service coordination.  (68 tools) (node) 
 - [✅ train_12306](https://github.com/ecmadao/Train-12306): A command line tool to show 12306 tickets  (4 tools) (python) 

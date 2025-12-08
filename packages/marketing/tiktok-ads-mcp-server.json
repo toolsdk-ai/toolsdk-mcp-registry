@@ -1,0 +1,28 @@
+{
+  "type": "mcp-server",
+  "name": "Ads MCP",
+  "packageName": "tiktok-ads-mcp-server",
+  "description": "TikTok Ads MCP Server – Model Context Protocol Server for TikTok Ads Marketing API Integration",
+  "url": "https://github.com/AdsMCP/tiktok-ads-mcp-server",
+  "runtime": "python",
+  "license": "mit",
+  "env": {
+    "TIKTOK_APP_ID": {
+      "description": "your_app_id",
+      "required": false
+    },
+    "TIKTOK_APP_SECRET": {
+      "description": "your_app_secret",
+      "required": false
+    }
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://adsmcp.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
