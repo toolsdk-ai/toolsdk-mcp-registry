@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/klavis-strata",
+  "description": "MCP server for progressive tool usage at any scale (see https://klavis.ai)",
+  "url": "https://github.com/Klavis-AI/klavis",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://strata.klavis.ai/mcp/"
+    }
+  ]
+}

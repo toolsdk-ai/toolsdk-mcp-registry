@@ -42191,7 +42191,7 @@
   },
   "12306-mcp": {
     "category": "travel-transportation",
-    "path": "travel-transportation/12306-mcp.json",
+    "path": "travel-transportation/jok-12306-mcp.json",
     "validated": true,
     "tools": {
       "get-current-date": {
@@ -47498,5 +47498,100 @@
     "path": "developer-tools/github-mcp-server.json",
     "validated": false,
     "tools": {}
+  },
+  "tiktok-ads-mcp-server": {
+    "category": "marketing",
+    "path": "marketing/tiktok-ads-mcp-server.json",
+    "validated": true,
+    "tools": {
+      "pricing_status": {
+        "name": "pricing_status",
+        "description": "Check your current pricing plan and usage limits"
+      },
+      "tiktok_ads_login": {
+        "name": "tiktok_ads_login",
+        "description": "Start TikTok Ads OAuth authentication flow"
+      },
+      "tiktok_ads_complete_auth": {
+        "name": "tiktok_ads_complete_auth",
+        "description": "Complete OAuth authentication with authorization code"
+      },
+      "tiktok_ads_auth_status": {
+        "name": "tiktok_ads_auth_status",
+        "description": "Check current authentication status with TikTok Ads API"
+      },
+      "tiktok_ads_switch_ad_account": {
+        "name": "tiktok_ads_switch_ad_account",
+        "description": "Switch to a different advertiser account"
+      },
+      "tiktok_ads_get_campaigns": {
+        "name": "tiktok_ads_get_campaigns",
+        "description": "Retrieve all campaigns for the advertiser account"
+      },
+      "tiktok_ads_get_campaign_details": {
+        "name": "tiktok_ads_get_campaign_details",
+        "description": "Get detailed information about a specific campaign"
+      },
+      "tiktok_ads_get_adgroups": {
+        "name": "tiktok_ads_get_adgroups",
+        "description": "Retrieve ad groups for a campaign"
+      },
+      "tiktok_ads_get_campaign_performance": {
+        "name": "tiktok_ads_get_campaign_performance",
+        "description": "Get performance metrics for campaigns"
+      },
+      "tiktok_ads_get_adgroup_performance": {
+        "name": "tiktok_ads_get_adgroup_performance",
+        "description": "Get performance metrics for ad groups"
+      },
+      "tiktok_ads_get_audience_breakdown": {
+        "name": "tiktok_ads_get_audience_breakdown",
+        "description": "Get audience demographic breakdown with TikTok's dimension grouping rules"
+      }
+    }
+  },
+  "@toolsdk-remote/packmind-mcp-server": {
+    "category": "uncategorized",
+    "path": "uncategorized/toolsdk-remote-packmind-mcp-server.json",
+    "validated": true,
+    "tools": {
+      "protected_tool": {
+        "name": "protected_tool",
+        "description": "This is a tool protected by oauth"
+      }
+    }
+  },
+  "@toolsdk-remote/explorium-mcp": {
+    "category": "uncategorized",
+    "path": "uncategorized/toolsdk-remote-explorium-mcp.json",
+    "validated": true,
+    "tools": {
+      "protected_tool": {
+        "name": "protected_tool",
+        "description": "This is a tool protected by oauth"
+      }
+    }
+  },
+  "@toolsdk-remote/klavis-strata": {
+    "category": "uncategorized",
+    "path": "uncategorized/toolsdk-remote-klavis-strata.json",
+    "validated": true,
+    "tools": {
+      "protected_tool": {
+        "name": "protected_tool",
+        "description": "This is a tool protected by oauth"
+      }
+    }
+  },
+  "@toolsdk-remote/exa": {
+    "category": "uncategorized",
+    "path": "uncategorized/toolsdk-remote-ai-exa-exa.json",
+    "validated": true,
+    "tools": {
+      "protected_tool": {
+        "name": "protected_tool",
+        "description": "This is a tool protected by oauth"
+      }
+    }
   }
 }

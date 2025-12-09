@@ -1,6 +1,6 @@
 # 📚 All MCP Servers
 
-> **Complete directory of all 4111+ MCP servers in the ToolSDK Registry**
+> **Complete directory of all 4116+ MCP servers in the ToolSDK Registry**
 >
 > Looking for production-ready servers only? See the [main README](../README.md) for validated servers.
 
@@ -8,8 +8,8 @@
 
 ## 📊 Statistics
 
-- 📦 **Total Servers**: 4111
-- ✅ **Validated & Tested**: 711
+- 📦 **Total Servers**: 4116
+- ✅ **Validated & Tested**: 716
 - ⚙️ **Community Contributed**: 3400
 
 ---
@@ -55,7 +55,7 @@
 
 
 <a id="uncategorized"></a>
-### Uncategorized <small>(124 servers)</small>
+### Uncategorized <small>(128 servers)</small>
 
 > Tools that haven’t been sorted into a category yet. AI will categorize it later.
 
@@ -68,6 +68,12 @@
 - [✅ @moralisweb3/api-mcp-server](https://github.com/moralisweb3/moralis-mcp-server): Integrates with Moralis Web3 API to enable blockchain data access, token analysis, and smart contract interactions without requiring deep Web3 development knowledge  (93 tools) (node) 
 - [✅ @mzxrai/mcp-openai](https://github.com/mzxrai/mcp-openai): Generate text using OpenAI's language models.  (1 tools) (node) 
 - [✅ @noditlabs/nodit-mcp-server](https://github.com/noditlabs/nodit-mcp-server): Provides blockchain context through Nodit's APIs, enabling real-time interaction with multiple protocols including Ethereum, Polygon, and Aptos for token information and on-chain activity analysis.  (9 tools) (node) 
+- [✅ @toolsdk-remote/exa](https://github.com/exa-labs/exa-mcp-server): Fast, intelligent web search and web crawling.
+
+New mcp tool: Exa-code is a context tool for coding   (1 tools) (node) 
+- [✅ @toolsdk-remote/explorium-mcp](https://github.com/explorium-ai/mcp-explorium): Access live company and contact data from Explorium's AgentSource B2B platform.  (1 tools) (node) 
+- [✅ @toolsdk-remote/klavis-strata](https://github.com/Klavis-AI/klavis): MCP server for progressive tool usage at any scale (see https://klavis.ai)  (1 tools) (node) 
+- [✅ @toolsdk-remote/packmind-mcp-server](https://github.com/PackmindHub/packmind): Packmind captures, scales, and enforces your organization's technical decisions.  (1 tools) (node) 
 - [✅ @toolsdk.ai/mixpanel-mcp-server](https://github.com/moonbirdai/mixpanel-mcp-server): A Model Context Protocol (MCP) server for integrating Mixpanel analytics into AI workflows. This server allows AI assistants like Claude to track events, page views, user signups, and update user profiles in Mixpanel.  (4 tools) (node) 
 - [✅ base-network-mcp-server](https://github.com/fakepixels/base-mcp-server): Provides a bridge to the Base blockchain network for wallet management, balance checking, and transaction execution through natural language commands, eliminating the need to manage technical blockchain details.  (4 tools) (node) 
 - [✅ etherscan-mcp](https://github.com/xiaok/etherscan-mcp): Provides a bridge to the Etherscan API for querying Ethereum blockchain data including account balances, transactions, contracts, tokens, gas metrics, and network statistics.  (6 tools) (node) 
@@ -2872,7 +2878,7 @@
 
 
 <a id="marketing"></a>
-### Marketing <small>(49 servers)</small>
+### Marketing <small>(50 servers)</small>
 
 > Create and edit marketing content, manage metadata, and refine product positioning.
 
@@ -2885,6 +2891,7 @@
 - [✅ instagram-engagement-mcp](https://github.com/bob-lance/instagram-engagement-mcp): Enables detailed Instagram interaction analysis by processing comments, user profiles, and post metrics to extract demographic insights and identify potential marketing leads through a private API integration.  (5 tools) (node) 
 - [✅ linkedin-mcp-runner](https://github.com/ertiqah/linkedin-mcp-runner): Integrates with LinkedIn to have post access, scheduling, and voice-tuned generation using LiGo's API.  (10 tools) (node) 
 - [✅ smartlead-mcp-by-leadmagic](https://github.com/leadmagic/smartlead-mcp-server): Integrates with SmartLead's cold email outreach platform to manage campaigns, leads, email accounts, and analytics with smart tool loading that categorizes 113+ tools into essential, advanced, and administrative tiers for streamlined email automation workflows.  (50 tools) (node) 
+- [✅ tiktok-ads-mcp-server](https://github.com/AdsMCP/tiktok-ads-mcp-server): TikTok Ads MCP Server – Model Context Protocol Server for TikTok Ads Marketing API Integration  (11 tools) (python) 
 - [❌ @Dishant27/linkedin-mcp-server](https://github.com/Dishant27/linkedin-mcp-server/tree/main/src): Revolutionizing LinkedIn API Interactions.  (node) 
 - [❌ @feedmob-ai/kayzen-mcp](https://github.com/springwq/kayzen-mcp): Integrates with Kayzen Analytics API to access and analyze marketing campaign data, providing tools for report listing, data fetching with date filtering, and performance optimization insights.  (node) 
 - [❌ @felores/placid-mcp-server](https://github.com/felores/placid-mcp-server): Integrates with Placid's API to generate dynamic images from templates for tasks like social media posts and marketing materials.  (node) 
@@ -3687,8 +3694,8 @@
 - [✅ @mfukushim/map-traveler-mcp](https://github.com/mfukushim/map-traveler-mcp): Integrates with Google Maps to create virtual travel experiences where users can navigate real-world routes with customizable avatars, discover nearby facilities, and share journeys on Bluesky.  (8 tools) (node) 
 - [✅ @openbnb/mcp-server-airbnb](https://github.com/openbnb-org/mcp-server-airbnb): Integrates with Airbnb to enable vacation rental search and detailed property information retrieval without requiring API keys  (2 tools) (node) 
 - [✅ @variflight-ai/variflight-mcp](https://github.com/variflight/variflight-mcp): Integrates with Variflight API to provide real-time flight information, schedules, aircraft tracking, airport weather forecasts, and comfort metrics for travel planning and aviation monitoring applications.  (8 tools) (node) 
-- [✅ 12306-mcp](https://github.com/freestylefly/12306-mcp): Integrates with China's 12306 railway system to search train tickets, check schedules, and retrieve route information across the Chinese railway network with real-time availability and pricing data.  (8 tools) (node) 
-- [✅ 12306-mcp](https://github.com/freestylefly/12306-mcp): Integrates with China's 12306 railway system to search train tickets, check schedules, and retrieve route information across the Chinese railway network with real-time availability and pricing data.  (8 tools) (node) 
+- [✅ 12306-mcp](https://github.com/Joooook/12306-mcp): A 12306 ticket search server based on the Model Context Protocol (MCP). The server provides a simple API interface that allows users to search for 12306 tickets.  (8 tools) (node) 
+- [✅ 12306-mcp](https://github.com/Joooook/12306-mcp): A 12306 ticket search server based on the Model Context Protocol (MCP). The server provides a simple API interface that allows users to search for 12306 tickets.  (8 tools) (node) 
 - [✅ caltrain-mcp](https://github.com/davidyen1124/caltrain-mcp): Provides real-time Caltrain commuter rail information including schedules, station details, and trip planning for the San Francisco Bay Area  (2 tools) (python) 
 - [✅ lumbretravel-mcp](https://github.com/lumile/lumbretravel-mcp): Integrates with the Argentinian LumbreTravel API to manage travel programs, activities, and bookings for efficient itinerary planning and service coordination.  (68 tools) (node) 
 - [✅ train_12306](https://github.com/ecmadao/Train-12306): A command line tool to show 12306 tickets  (4 tools) (python) 

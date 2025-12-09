@@ -39,7 +39,17 @@ export function updatePackageJsonDependencies({
       }
     }
   } else {
-    Object.assign(newDeps, packageDeps);
+    // Filter out remote MCP placeholders that should not be installed from npm
+    const filteredDeps: Record<string, string> = {};
+    for (const [name, ver] of Object.entries(packageDeps)) {
+      if (name.startsWith("@toolsdk-remote/")) {
+        // skip remote MCP entries that are only registry metadata
+        continue;
+      }
+      filteredDeps[name] = ver;
+    }
+
+    Object.assign(newDeps, filteredDeps);
   }
 
   const packageJSON = JSON.parse(packageJSONStr);
