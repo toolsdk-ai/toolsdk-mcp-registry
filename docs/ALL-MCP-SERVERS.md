@@ -1,6 +1,6 @@
 # 📚 All MCP Servers
 
-> **Complete directory of all 4112+ MCP servers in the ToolSDK Registry**
+> **Complete directory of all 4116+ MCP servers in the ToolSDK Registry**
 >
 > Looking for production-ready servers only? See the [main README](../README.md) for validated servers.
 
@@ -8,9 +8,9 @@
 
 ## 📊 Statistics
 
-- 📦 **Total Servers**: 4112
-- ✅ **Validated & Tested**: 711
-- ⚙️ **Community Contributed**: 3401
+- 📦 **Total Servers**: 4116
+- ✅ **Validated & Tested**: 716
+- ⚙️ **Community Contributed**: 3400
 
 ---
 
@@ -55,7 +55,7 @@
 
 
 <a id="uncategorized"></a>
-### Uncategorized <small>(124 servers)</small>
+### Uncategorized <small>(128 servers)</small>
 
 > Tools that haven’t been sorted into a category yet. AI will categorize it later.
 
@@ -68,6 +68,12 @@
 - [✅ @moralisweb3/api-mcp-server](https://github.com/moralisweb3/moralis-mcp-server): Integrates with Moralis Web3 API to enable blockchain data access, token analysis, and smart contract interactions without requiring deep Web3 development knowledge  (93 tools) (node) 
 - [✅ @mzxrai/mcp-openai](https://github.com/mzxrai/mcp-openai): Generate text using OpenAI's language models.  (1 tools) (node) 
 - [✅ @noditlabs/nodit-mcp-server](https://github.com/noditlabs/nodit-mcp-server): Provides blockchain context through Nodit's APIs, enabling real-time interaction with multiple protocols including Ethereum, Polygon, and Aptos for token information and on-chain activity analysis.  (9 tools) (node) 
+- [✅ @toolsdk-remote/exa](https://github.com/exa-labs/exa-mcp-server): Fast, intelligent web search and web crawling.
+
+New mcp tool: Exa-code is a context tool for coding   (1 tools) (node) 
+- [✅ @toolsdk-remote/explorium-mcp](https://github.com/explorium-ai/mcp-explorium): Access live company and contact data from Explorium's AgentSource B2B platform.  (1 tools) (node) 
+- [✅ @toolsdk-remote/klavis-strata](https://github.com/Klavis-AI/klavis): MCP server for progressive tool usage at any scale (see https://klavis.ai)  (1 tools) (node) 
+- [✅ @toolsdk-remote/packmind-mcp-server](https://github.com/PackmindHub/packmind): Packmind captures, scales, and enforces your organization's technical decisions.  (1 tools) (node) 
 - [✅ @toolsdk.ai/mixpanel-mcp-server](https://github.com/moonbirdai/mixpanel-mcp-server): A Model Context Protocol (MCP) server for integrating Mixpanel analytics into AI workflows. This server allows AI assistants like Claude to track events, page views, user signups, and update user profiles in Mixpanel.  (4 tools) (node) 
 - [✅ base-network-mcp-server](https://github.com/fakepixels/base-mcp-server): Provides a bridge to the Base blockchain network for wallet management, balance checking, and transaction execution through natural language commands, eliminating the need to manage technical blockchain details.  (4 tools) (node) 
 - [✅ etherscan-mcp](https://github.com/xiaok/etherscan-mcp): Provides a bridge to the Etherscan API for querying Ethereum blockchain data including account balances, transactions, contracts, tokens, gas metrics, and network statistics.  (6 tools) (node) 
@@ -2885,6 +2891,7 @@
 - [✅ instagram-engagement-mcp](https://github.com/bob-lance/instagram-engagement-mcp): Enables detailed Instagram interaction analysis by processing comments, user profiles, and post metrics to extract demographic insights and identify potential marketing leads through a private API integration.  (5 tools) (node) 
 - [✅ linkedin-mcp-runner](https://github.com/ertiqah/linkedin-mcp-runner): Integrates with LinkedIn to have post access, scheduling, and voice-tuned generation using LiGo's API.  (10 tools) (node) 
 - [✅ smartlead-mcp-by-leadmagic](https://github.com/leadmagic/smartlead-mcp-server): Integrates with SmartLead's cold email outreach platform to manage campaigns, leads, email accounts, and analytics with smart tool loading that categorizes 113+ tools into essential, advanced, and administrative tiers for streamlined email automation workflows.  (50 tools) (node) 
+- [✅ tiktok-ads-mcp-server](https://github.com/AdsMCP/tiktok-ads-mcp-server): TikTok Ads MCP Server – Model Context Protocol Server for TikTok Ads Marketing API Integration  (11 tools) (python) 
 - [❌ @Dishant27/linkedin-mcp-server](https://github.com/Dishant27/linkedin-mcp-server/tree/main/src): Revolutionizing LinkedIn API Interactions.  (node) 
 - [❌ @feedmob-ai/kayzen-mcp](https://github.com/springwq/kayzen-mcp): Integrates with Kayzen Analytics API to access and analyze marketing campaign data, providing tools for report listing, data fetching with date filtering, and performance optimization insights.  (node) 
 - [❌ @felores/placid-mcp-server](https://github.com/felores/placid-mcp-server): Integrates with Placid's API to generate dynamic images from templates for tasks like social media posts and marketing materials.  (node) 
@@ -2923,7 +2930,6 @@
 - [❌ smartlead](https://github.com/jean-technologies/smartlead-mcp-server-local): Integrates with Smartlead's email marketing API to manage campaigns, track leads, and optimize email deliverability through a tiered licensing system with multiple operation modes.  (node) 
 - [❌ smartlead-mcp-server](https://github.com/LeadMagic/smartlead-mcp-server): A Model Context Protocol server that provides AI coding assistants (Claude, Cursor, etc.) with access to SmartLead's cold email automation platform through 116+ API endpoints for campaign management, lead tracking, and email delivery.  (node) 
 - [❌ sola](https://github.com/sociallayer-im/sola-mcp): Integrates with the Social Layer (Sola) platform API to retrieve event details, search events by date ranges and keywords, fetch group information, user profiles, and venue data for event discovery and community management.  (node) 
-- [❌ tiktok-ads-mcp-server](https://github.com/AdsMCP/tiktok-ads-mcp-server): TikTok Ads MCP Server – Model Context Protocol Server for TikTok Ads Marketing API Integration  (python) 
 - [❌ transistor.fm](https://github.com/gxjansen/transistor-mcp): Integrates with Transistor.fm's API to manage podcasts, episodes, analytics, and subscribers for automating podcast workflows.  (node) 
 - [❌ typefully](https://github.com/pepuscz/typefully-mcp-server): Integrates with Typefully's social media scheduling platform to automate content creation, scheduling, and publishing workflows across multiple social media platforms.  (python) 
 

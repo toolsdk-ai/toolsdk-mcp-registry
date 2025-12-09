@@ -21,6 +21,7 @@
     "maxSize": 5242880,
     "includes": [
       "**",
+      "!**/demo/*",
       "!**/corpus/*.json",
       "!**/scripts/cookbook-pdf/book",
       "!**/.data",

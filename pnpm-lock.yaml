@@ -1026,8 +1026,8 @@ importers:
         specifier: 1.0.4
         version: 1.0.4
       exa-mcp-server:
-        specifier: 2.0.3
-        version: 2.0.3(@cfworker/json-schema@4.1.1)
+        specifier: 3.1.3
+        version: 3.1.3(@cfworker/json-schema@4.1.1)
       excel-to-pdf-mcp:
         specifier: 1.0.1
         version: 1.0.1(@cfworker/json-schema@4.1.1)
@@ -11414,8 +11414,8 @@ packages:
   '@types/node@22.7.5':
     resolution: {integrity: sha512-jML7s2NAzMWc//QSJ1a3prpk78cOPchGvXJsC3C6R6PSMoooztvRVQEz89gmBTBY1SPMaqo5teB4uNHPdetShQ==}
 
-  '@types/node@24.10.1':
-    resolution: {integrity: sha512-GNWcUTRBgIRJD5zj+Tq0fKOJ5XZajIiBroOF0yvj2bSU1WvNdYS/dn9UxwsujGW4JX06dnHyjV2y9rRaybH0iQ==}
+  '@types/node@24.10.2':
+    resolution: {integrity: sha512-WOhQTZ4G8xZ1tjJTvKOpyEVSGgOTvJAfDK3FNFgELyaTpzhdgHVHeqW8V+UJvzF5BT+/B54T/1S2K6gd9c7bbA==}
 
   '@types/node@24.3.0':
     resolution: {integrity: sha512-aPTXCrfwnDLj4VvXrm+UUCQjNEvJgNA8s5F1cvwQU+3KNltTOkBm1j30uNLyqqPNe7gE3KFzImYoZEfLhp4Yow==}
@@ -12255,6 +12255,9 @@ packages:
   aggregate-error@3.1.0:
     resolution: {integrity: sha512-4I7Td01quW/RpocfNayFdFVk1qSuoh0E7JrbRJ16nH01HhKFQ88INq9Sd+nd72zqRySlr9BmDA8xlEJ6vJMrYA==}
     engines: {node: '>=8'}
+
+  agnost@0.1.7:
+    resolution: {integrity: sha512-djIpQxgcbLbpGPbnKaGGBYopXBVT6vmu2V2isl4vgbPqTLSf6t+CKDSZGfAIT4VDe5vuZOlEQ6CD7W8vbpmacA==}
 
   ai-expert-workflow-mcp@2.3.2:
     resolution: {integrity: sha512-fzNPBZX9YLCfV0C1MEdEhQHhTu87IZGkAwA79uNEVtelknnJqlqu/v2V7B1p43D4yrwaTuxE/47scNlU4i87Yg==}
@@ -16108,8 +16111,8 @@ packages:
   exa-js@1.8.19:
     resolution: {integrity: sha512-0H/8JIM37UoQbAuvzOkSdWBJDu6MJL+GGyaQqLSTlTcgnoQIkNblf/MTnbRiJMYJB1kM+soSqhKHWVFAJR6tPg==}
 
-  exa-mcp-server@2.0.3:
-    resolution: {integrity: sha512-Fv/uI+nKU2aH7JbEvv1c6M5sAfRCVlkVUgk1N6vIYzj2mboHZeXs+zuOksSOMbDf1Njh4J7pvc9Udhz7a27TaQ==}
+  exa-mcp-server@3.1.3:
+    resolution: {integrity: sha512-dtwXdzC2/FqijEraKGjsQ8M0yBClax33gA7UA7mlQPorwRM1eG9VpUcgfs4afqPr+5TfISWzaI35DPDmDKarKQ==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -31548,7 +31551,7 @@ snapshots:
     dependencies:
       '@modelcontextprotocol/sdk': 1.24.3(@cfworker/json-schema@4.1.1)(zod@3.25.76)
       '@types/luxon': 3.7.1
-      '@types/node': 24.10.1
+      '@types/node': 24.10.2
       luxon: 3.7.2
       qrcode: 1.5.4
       qrcode-terminal: 0.12.0
@@ -35948,7 +35951,7 @@ snapshots:
     dependencies:
       '@modelcontextprotocol/sdk': 1.24.3(@cfworker/json-schema@4.1.1)(zod@3.25.76)
       '@types/luxon': 3.7.1
-      '@types/node': 24.10.1
+      '@types/node': 24.10.2
       luxon: 3.7.2
       qrcode: 1.5.4
       qrcode-terminal: 0.12.0
@@ -42630,7 +42633,7 @@ snapshots:
     dependencies:
       undici-types: 6.19.8
 
-  '@types/node@24.10.1':
+  '@types/node@24.10.2':
     dependencies:
       undici-types: 7.16.0
 
@@ -44151,6 +44154,18 @@ snapshots:
     dependencies:
       clean-stack: 2.2.0
       indent-string: 4.0.0
+
+  agnost@0.1.7(@cfworker/json-schema@4.1.1):
+    dependencies:
+      '@modelcontextprotocol/sdk': 1.21.1(@cfworker/json-schema@4.1.1)
+      axios: 1.11.0(debug@4.4.1)
+      dotenv: 17.2.3
+      uuid: 9.0.1
+      zod: 3.25.76
+    transitivePeerDependencies:
+      - '@cfworker/json-schema'
+      - debug
+      - supports-color
 
   ai-expert-workflow-mcp@2.3.2(@cfworker/json-schema@4.1.1)(encoding@0.1.13):
     dependencies:
@@ -49291,10 +49306,11 @@ snapshots:
       - encoding
       - ws
 
-  exa-mcp-server@2.0.3(@cfworker/json-schema@4.1.1):
+  exa-mcp-server@3.1.3(@cfworker/json-schema@4.1.1):
     dependencies:
       '@modelcontextprotocol/sdk': 1.21.1(@cfworker/json-schema@4.1.1)
-      axios: 1.10.0
+      agnost: 0.1.7(@cfworker/json-schema@4.1.1)
+      axios: 1.11.0(debug@4.4.1)
       zod: 3.25.76
     transitivePeerDependencies:
       - '@cfworker/json-schema'

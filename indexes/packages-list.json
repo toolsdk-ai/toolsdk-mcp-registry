@@ -47500,8 +47500,8 @@
     "tools": {}
   },
   "tiktok-ads-mcp-server": {
-    "path": "marketing/tiktok-ads-mcp-server.json",
     "category": "marketing",
+    "path": "marketing/tiktok-ads-mcp-server.json",
     "validated": true,
     "tools": {
       "pricing_status": {
@@ -47547,6 +47547,50 @@
       "tiktok_ads_get_audience_breakdown": {
         "name": "tiktok_ads_get_audience_breakdown",
         "description": "Get audience demographic breakdown with TikTok's dimension grouping rules"
+      }
+    }
+  },
+  "@toolsdk-remote/packmind-mcp-server": {
+    "category": "uncategorized",
+    "path": "uncategorized/toolsdk-remote-packmind-mcp-server.json",
+    "validated": true,
+    "tools": {
+      "protected_tool": {
+        "name": "protected_tool",
+        "description": "This is a tool protected by oauth"
+      }
+    }
+  },
+  "@toolsdk-remote/explorium-mcp": {
+    "category": "uncategorized",
+    "path": "uncategorized/toolsdk-remote-explorium-mcp.json",
+    "validated": true,
+    "tools": {
+      "protected_tool": {
+        "name": "protected_tool",
+        "description": "This is a tool protected by oauth"
+      }
+    }
+  },
+  "@toolsdk-remote/klavis-strata": {
+    "category": "uncategorized",
+    "path": "uncategorized/toolsdk-remote-klavis-strata.json",
+    "validated": true,
+    "tools": {
+      "protected_tool": {
+        "name": "protected_tool",
+        "description": "This is a tool protected by oauth"
+      }
+    }
+  },
+  "@toolsdk-remote/exa": {
+    "category": "uncategorized",
+    "path": "uncategorized/toolsdk-remote-ai-exa-exa.json",
+    "validated": true,
+    "tools": {
+      "protected_tool": {
+        "name": "protected_tool",
+        "description": "This is a tool protected by oauth"
       }
     }
   }
