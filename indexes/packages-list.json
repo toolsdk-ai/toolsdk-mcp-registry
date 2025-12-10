@@ -42191,7 +42191,7 @@
   },
   "12306-mcp": {
     "category": "travel-transportation",
-    "path": "travel-transportation/12306-mcp.json",
+    "path": "travel-transportation/jok-12306-mcp.json",
     "validated": true,
     "tools": {
       "get-current-date": {
@@ -47595,8 +47595,8 @@
     }
   },
   "@brave/brave-search-mcp-server": {
-    "path": "search-data-extraction/brave-search-mcp-server.json",
     "category": "search-data-extraction",
+    "path": "search-data-extraction/brave-search-mcp-server.json",
     "validated": true,
     "tools": {
       "brave_web_search": {
