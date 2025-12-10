@@ -1,6 +1,6 @@
 # 📚 All MCP Servers
 
-> **Complete directory of all 4116+ MCP servers in the ToolSDK Registry**
+> **Complete directory of all 4117+ MCP servers in the ToolSDK Registry**
 >
 > Looking for production-ready servers only? See the [main README](../README.md) for validated servers.
 
@@ -8,8 +8,8 @@
 
 ## 📊 Statistics
 
-- 📦 **Total Servers**: 4116
-- ✅ **Validated & Tested**: 716
+- 📦 **Total Servers**: 4117
+- ✅ **Validated & Tested**: 717
 - ⚙️ **Community Contributed**: 3400
 
 ---
@@ -3007,13 +3007,14 @@ New mcp tool: Exa-code is a context tool for coding   (1 tools) (node)
 
 
 <a id="search-data-extraction"></a>
-### Search & Data Extraction <small>(404 servers)</small>
+### Search & Data Extraction <small>(405 servers)</small>
 
 > Find and extract data from various sources quickly and efficiently.
 
 - [✅ @adenot/mcp-google-search](https://github.com/adenot/mcp-google-search): Integrates Google Custom Search API to enable web searches for fact-checking, research, and content generation tasks.  (1 tools) (node) 
 - [✅ @anaisbetts/mcp-youtube](https://github.com/anaisbetts/mcp-youtube): Extract and analyze video subtitle data for content understanding.  (1 tools) (node) 
 - [✅ @ashdev/discourse-mcp-server](https://github.com/ashdevfr/discourse-mcp-server): Enables searching and retrieving content from Discourse forums through a single tool that queries posts using the discourse2 npm package.  (1 tools) (node) 
+- [✅ @brave/brave-search-mcp-server](https://github.com/brave/brave-search-mcp-server): Provides a bridge to the Brave Search API for performing web, image, video, news, and local business searches with configurable parameters and robust error handling.  (6 tools) (node) 
 - [✅ @chanmeng666/google-news-server](https://github.com/ChanMeng666/server-google-news): MCP server for Google News search via SerpAPI  (1 tools) (node) 
 - [✅ @cyanheads/pubmed-mcp-server](https://github.com/cyanheads/pubmed-mcp-server): Enables AI systems to search, retrieve, and analyze biomedical literature from PubMed for evidence-based research, citation generation, and data visualization  (5 tools) (node) 
 - [✅ @deventerprisesoftware/scrapi-mcp](https://github.com/deventerprisesoftware/scrapi-mcp): Enables web scraping from sites with bot detection, captchas, or geolocation restrictions through residential proxies and automated captcha solving for content extraction in HTML or Markdown formats.  (2 tools) (node) 
@@ -3694,8 +3695,8 @@ New mcp tool: Exa-code is a context tool for coding   (1 tools) (node)
 - [✅ @mfukushim/map-traveler-mcp](https://github.com/mfukushim/map-traveler-mcp): Integrates with Google Maps to create virtual travel experiences where users can navigate real-world routes with customizable avatars, discover nearby facilities, and share journeys on Bluesky.  (8 tools) (node) 
 - [✅ @openbnb/mcp-server-airbnb](https://github.com/openbnb-org/mcp-server-airbnb): Integrates with Airbnb to enable vacation rental search and detailed property information retrieval without requiring API keys  (2 tools) (node) 
 - [✅ @variflight-ai/variflight-mcp](https://github.com/variflight/variflight-mcp): Integrates with Variflight API to provide real-time flight information, schedules, aircraft tracking, airport weather forecasts, and comfort metrics for travel planning and aviation monitoring applications.  (8 tools) (node) 
-- [✅ 12306-mcp](https://github.com/freestylefly/12306-mcp): Integrates with China's 12306 railway system to search train tickets, check schedules, and retrieve route information across the Chinese railway network with real-time availability and pricing data.  (8 tools) (node) 
-- [✅ 12306-mcp](https://github.com/freestylefly/12306-mcp): Integrates with China's 12306 railway system to search train tickets, check schedules, and retrieve route information across the Chinese railway network with real-time availability and pricing data.  (8 tools) (node) 
+- [✅ 12306-mcp](https://github.com/Joooook/12306-mcp): A 12306 ticket search server based on the Model Context Protocol (MCP). The server provides a simple API interface that allows users to search for 12306 tickets.  (8 tools) (node) 
+- [✅ 12306-mcp](https://github.com/Joooook/12306-mcp): A 12306 ticket search server based on the Model Context Protocol (MCP). The server provides a simple API interface that allows users to search for 12306 tickets.  (8 tools) (node) 
 - [✅ caltrain-mcp](https://github.com/davidyen1124/caltrain-mcp): Provides real-time Caltrain commuter rail information including schedules, station details, and trip planning for the San Francisco Bay Area  (2 tools) (python) 
 - [✅ lumbretravel-mcp](https://github.com/lumile/lumbretravel-mcp): Integrates with the Argentinian LumbreTravel API to manage travel programs, activities, and bookings for efficient itinerary planning and service coordination.  (68 tools) (node) 
 - [✅ train_12306](https://github.com/ecmadao/Train-12306): A command line tool to show 12306 tickets  (4 tools) (python) 

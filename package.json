@@ -98,6 +98,7 @@
     "@baruchiro/paperless-mcp": "0.0.2",
     "@binalyze/air-mcp": "12.2.0",
     "@bnb-chain/mcp": "1.4.0",
+    "@brave/brave-search-mcp-server": "2.0.62",
     "@browserstack/mcp-server": "1.2.1",
     "@bschauer/strapi-mcp-server": "2.6.0",
     "@bujaayjaay/mcp-coincap-jj": "1.1.0",

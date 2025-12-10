@@ -47593,5 +47593,36 @@
         "description": "This is a tool protected by oauth"
       }
     }
+  },
+  "@brave/brave-search-mcp-server": {
+    "path": "search-data-extraction/brave-search-mcp-server.json",
+    "category": "search-data-extraction",
+    "validated": true,
+    "tools": {
+      "brave_web_search": {
+        "name": "brave_web_search",
+        "description": "\n    Performs web searches using the Brave Search API and returns comprehensive search results with rich metadata.\n\n    When to use:\n        - General web searches for information, facts, or current topics\n        - Location-based queries (restaurants, businesses, points of interest)\n        - News searches for recent events or breaking stories\n        - Finding videos, discussions, or FAQ content\n        - Research requiring diverse result types (web pages, images, reviews, etc.)\n\n    Returns a JSON list of web results with title, description, and URL.\n    \n    When the \"results_filter\" parameter is empty, JSON results may also contain FAQ, Discussions, News, and Video results.\n"
+      },
+      "brave_local_search": {
+        "name": "brave_local_search",
+        "description": "\n    Brave Local Search API provides enrichments for location search results. Access to this API is available only through the Brave Search API Pro plans; confirm the user's plan before using this tool (if the user does not have a Pro plan, use the brave_web_search tool). Searches for local businesses and places using Brave's Local Search API. Best for queries related to physical locations, businesses, restaurants, services, etc.\n    \n    Returns detailed information including:\n        - Business names and addresses\n        - Ratings and review counts\n        - Phone numbers and opening hours\n\n    Use this when the query implies 'near me', 'in my area', or mentions specific locations (e.g., 'in San Francisco'). This tool automatically falls back to brave_web_search if no local results are found.\n"
+      },
+      "brave_video_search": {
+        "name": "brave_video_search",
+        "description": "\n    Searches for videos using Brave's Video Search API and returns structured video results with metadata.\n\n    When to use:\n        - When you need to find videos related to a specific topic, keyword, or query.\n        - Useful for discovering video content, getting video metadata, or finding videos from specific creators/publishers.\n\n    Returns a JSON list of video-related results with title, url, description, duration, and thumbnail_url.\n"
+      },
+      "brave_image_search": {
+        "name": "brave_image_search",
+        "description": "\n    Performs an image search using the Brave Search API. Helpful for when you need pictures of people, places, things, graphic design ideas, art inspiration, and more. When relaying results in a markdown environment, it may be helpful to include images in the results (e.g., ![image.title](image.properties.url)).\n"
+      },
+      "brave_news_search": {
+        "name": "brave_news_search",
+        "description": "\n    This tool searches for news articles using Brave's News Search API based on the user's query. Use it when you need current news information, breaking news updates, or articles about specific topics, events, or entities.\n    \n    When to use:\n        - Finding recent news articles on specific topics\n        - Getting breaking news updates\n        - Researching current events or trending stories\n        - Gathering news sources and headlines for analysis\n\n    Returns a JSON list of news-related results with title, url, and description. Some results may contain snippets of text from the article.\n    \n    When relaying results in markdown-supporting environments, always cite sources with hyperlinks.\n    \n    Examples:\n        - \"According to [Reuters](https://www.reuters.com/technology/china-bans/), China bans uncertified and recalled power banks on planes\".\n        - \"The [New York Times](https://www.nytimes.com/2025/06/27/us/technology/ev-sales.html) reports that Tesla's EV sales have increased by 20%\".\n        - \"According to [BBC News](https://www.bbc.com/news/world-europe-65910000), the UK government has announced a new policy to support renewable energy\".\n"
+      },
+      "brave_summarizer": {
+        "name": "brave_summarizer",
+        "description": "\n    Retrieves AI-generated summaries of web search results using Brave's Summarizer API. This tool processes search results to create concise, coherent summaries of information gathered from multiple sources.\n\n    When to use:\n\n    - When you need a concise overview of complex topics from multiple sources\n    - For quick fact-checking or getting key points without reading full articles\n    - When providing users with summarized information that synthesizes various perspectives\n    - For research tasks requiring distilled information from web searches\n\n    Returns a text summary that consolidates information from the search results. Optional features include inline references to source URLs and additional entity information.\n\n    Requirements: Must first perform a web search using brave_web_search with summary=true parameter. Requires a Pro AI subscription to access the summarizer functionality.\n"
+      }
+    }
   }
 }

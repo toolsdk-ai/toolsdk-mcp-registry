@@ -3066,6 +3066,7 @@
       "dataforseo",
       "url-fetcher",
       "mcp-hn",
+      "@brave/brave-search-mcp-server",
       "hacker-news",
       "twitter-noauth",
       "puremd-mcp",
