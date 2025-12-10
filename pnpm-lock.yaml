@@ -577,7 +577,7 @@ importers:
         version: 1.0.8(@cfworker/json-schema@4.1.1)
       '@notionhq/notion-mcp-server':
         specifier: 1.8.1
-        version: 1.8.1(@cfworker/json-schema@4.1.1)(js-yaml@4.1.0)
+        version: 1.8.1(@cfworker/json-schema@4.1.1)(js-yaml@4.1.1)
       '@noveum-ai/mcp-server':
         specifier: 1.0.4
         version: 1.0.4
@@ -1413,8 +1413,8 @@ importers:
         specifier: 0.2.0
         version: 0.2.0(@cfworker/json-schema@4.1.1)(encoding@0.1.13)
       mcp-server-kubernetes:
-        specifier: 2.4.3
-        version: 2.4.3(bufferutil@4.0.9)(encoding@0.1.13)(utf-8-validate@5.0.10)
+        specifier: 3.0.1
+        version: 3.0.1(bufferutil@4.0.9)(encoding@0.1.13)(utf-8-validate@5.0.10)
       mcp-server-linearapp:
         specifier: 0.1.0
         version: 0.1.0(@cfworker/json-schema@4.1.1)(encoding@0.1.13)
@@ -1537,7 +1537,7 @@ importers:
         version: 1.0.1(@cfworker/json-schema@4.1.1)(encoding@0.1.13)
       notion-readonly-mcp-server:
         specifier: 1.0.9
-        version: 1.0.9(@cfworker/json-schema@4.1.1)(js-yaml@4.1.0)
+        version: 1.0.9(@cfworker/json-schema@4.1.1)(js-yaml@4.1.1)
       npm-search-mcp-server:
         specifier: 0.1.1
         version: 0.1.1
@@ -6997,6 +6997,10 @@ packages:
 
   '@modelcontextprotocol/sdk@1.16.0':
     resolution: {integrity: sha512-8ofX7gkZcLj9H9rSd50mCgm3SSF8C7XoclxJuLoV0Cz3rEQ1tv9MZRYYvJtm9n1BiEQQMzSmE/w2AEkNacLYfg==}
+    engines: {node: '>=18'}
+
+  '@modelcontextprotocol/sdk@1.17.0':
+    resolution: {integrity: sha512-qFfbWFA7r1Sd8D697L7GkTd36yqDuTkvz0KfOGkgXR8EUhQn3/EDNIR/qUdQNMT8IjmasBvHWuXeisxtXTQT2g==}
     engines: {node: '>=18'}
 
   '@modelcontextprotocol/sdk@1.21.1':
@@ -18636,6 +18640,10 @@ packages:
     resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
     hasBin: true
 
+  js-yaml@4.1.1:
+    resolution: {integrity: sha512-qQKT4zQxXl8lLwBtHMWwaTcGfFOZviOJet3Oy/xmGk2gZH677CJM9EvtfdSkgWcATZhj/55JZ0rmy3myCT5lsA==}
+    hasBin: true
+
   jsbn@0.1.1:
     resolution: {integrity: sha512-UVU9dibq2JcFWxQPA6KCqj5O42VOmAY3zQUfEKxU0KpTGXwNoCjkX1e13eHNvw/xPynt6pU0rZ1htjWTNTSXsg==}
 
@@ -20219,8 +20227,8 @@ packages:
     resolution: {integrity: sha512-p9Efof/vBA0JmOqwnL6Z3u+MrR5KQmmf1q33u1pxZXLb5TkE4ElCKV9kfoYVJ0hNcBrQMKKdY/7M4K6I6ia5TA==}
     hasBin: true
 
-  mcp-server-kubernetes@2.4.3:
-    resolution: {integrity: sha512-cLt9FOMYOwK/R9x9m5SNer6MSjhNZr0lAsoJLnhjwy+ZEhzBHNl4RK2885FkYoZKHEv20IY6ojfITzWvsOI1BQ==}
+  mcp-server-kubernetes@3.0.1:
+    resolution: {integrity: sha512-oNWwdcs8/DB03W62W16GmUF0XsD2qdFL6fXU4AldFUuv6nfbtItn5wbDyNVz8X7J8vzOiR6VJ+Zl0PltWjWiuQ==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -28420,13 +28428,13 @@ snapshots:
     dependencies:
       '@jsdevtools/ono': 7.1.3
       '@types/json-schema': 7.0.15
-      js-yaml: 4.1.0
+      js-yaml: 4.1.1
 
   '@apidevtools/json-schema-ref-parser@12.0.2':
     dependencies:
       '@jsdevtools/ono': 7.1.3
       '@types/json-schema': 7.0.15
-      js-yaml: 4.1.0
+      js-yaml: 4.1.1
     optional: true
 
   '@apidevtools/json-schema-ref-parser@9.1.2':
@@ -28434,7 +28442,7 @@ snapshots:
       '@jsdevtools/ono': 7.1.3
       '@types/json-schema': 7.0.15
       call-me-maybe: 1.0.2
-      js-yaml: 4.1.0
+      js-yaml: 4.1.1
 
   '@apidevtools/openapi-schemas@2.1.0': {}
 
@@ -30963,8 +30971,8 @@ snapshots:
       cross-spawn: 7.0.6
       eventsource: 3.0.7
       eventsource-parser: 3.0.3
-      express: 5.1.0
-      express-rate-limit: 7.5.1(express@5.1.0)
+      express: 5.2.1
+      express-rate-limit: 7.5.1(express@5.2.1)
       pkce-challenge: 5.0.0
       raw-body: 3.0.0
       zod: 3.25.76
@@ -32202,7 +32210,7 @@ snapshots:
       globals: 14.0.0
       ignore: 5.3.2
       import-fresh: 3.3.1
-      js-yaml: 4.1.0
+      js-yaml: 4.1.1
       minimatch: 3.1.2
       strip-json-comments: 3.1.1
     transitivePeerDependencies:
@@ -33392,7 +33400,7 @@ snapshots:
       http-proxy-agent: 7.0.2
       https-proxy-agent: 7.0.6
       jose: 5.10.0
-      js-yaml: 4.1.0
+      js-yaml: 4.1.1
       lodash: 4.17.21
       scuid: 1.1.0
       tslib: 2.8.1
@@ -33584,7 +33592,7 @@ snapshots:
     dependencies:
       '@jsdevtools/ono': 7.1.3
       '@types/json-schema': 7.0.15
-      js-yaml: 4.1.0
+      js-yaml: 4.1.1
       lodash: 4.17.21
 
   '@hey-api/openapi-ts@0.77.0(magicast@0.3.5)(typescript@5.8.3)':
@@ -35169,10 +35177,10 @@ snapshots:
       form-data: 4.0.4
       hpagent: 1.2.0
       isomorphic-ws: 5.0.0(ws@8.18.3(bufferutil@4.0.9)(utf-8-validate@5.0.10))
-      js-yaml: 4.1.0
+      js-yaml: 4.1.1
       jsonpath-plus: 10.3.0
       node-fetch: 2.7.0(encoding@0.1.13)
-      openid-client: 6.6.2
+      openid-client: 6.7.1
       rfc4648: 1.5.4
       socks-proxy-agent: 8.0.5
       stream-buffers: 3.0.3
@@ -36284,8 +36292,8 @@ snapshots:
       cors: 2.8.5
       cross-spawn: 7.0.6
       eventsource: 3.0.7
-      express: 5.1.0
-      express-rate-limit: 7.5.1(express@5.1.0)
+      express: 5.2.1
+      express-rate-limit: 7.5.1(express@5.2.1)
       pkce-challenge: 5.0.0
       raw-body: 3.0.0
       zod: 3.25.76
@@ -36314,8 +36322,8 @@ snapshots:
       cors: 2.8.5
       cross-spawn: 7.0.6
       eventsource: 3.0.7
-      express: 5.1.0
-      express-rate-limit: 7.5.1(express@5.1.0)
+      express: 5.2.1
+      express-rate-limit: 7.5.1(express@5.2.1)
       pkce-challenge: 5.0.0
       raw-body: 3.0.0
       zod: 3.25.76
@@ -36332,7 +36340,7 @@ snapshots:
       express: 5.2.1
       express-rate-limit: 7.5.1(express@5.2.1)
       pkce-challenge: 5.0.0
-      raw-body: 3.0.0
+      raw-body: 3.0.2
       zod: 3.25.76
       zod-to-json-schema: 3.25.0(zod@3.25.76)
     transitivePeerDependencies:
@@ -36345,8 +36353,8 @@ snapshots:
       cors: 2.8.5
       cross-spawn: 7.0.6
       eventsource: 3.0.7
-      express: 5.1.0
-      express-rate-limit: 7.5.1(express@5.1.0)
+      express: 5.2.1
+      express-rate-limit: 7.5.1(express@5.2.1)
       pkce-challenge: 5.0.0
       raw-body: 3.0.0
       zod: 3.25.76
@@ -36361,8 +36369,8 @@ snapshots:
       cors: 2.8.5
       cross-spawn: 7.0.6
       eventsource: 3.0.7
-      express: 5.1.0
-      express-rate-limit: 7.5.1(express@5.1.0)
+      express: 5.2.1
+      express-rate-limit: 7.5.1(express@5.2.1)
       pkce-challenge: 5.0.0
       raw-body: 3.0.0
       zod: 3.25.76
@@ -36377,8 +36385,8 @@ snapshots:
       cors: 2.8.5
       cross-spawn: 7.0.6
       eventsource: 3.0.7
-      express: 5.1.0
-      express-rate-limit: 7.5.1(express@5.1.0)
+      express: 5.2.1
+      express-rate-limit: 7.5.1(express@5.2.1)
       pkce-challenge: 5.0.0
       raw-body: 3.0.0
       zod: 3.25.76
@@ -36393,8 +36401,8 @@ snapshots:
       cors: 2.8.5
       cross-spawn: 7.0.6
       eventsource: 3.0.7
-      express: 5.1.0
-      express-rate-limit: 7.5.1(express@5.1.0)
+      express: 5.2.1
+      express-rate-limit: 7.5.1(express@5.2.1)
       pkce-challenge: 5.0.0
       raw-body: 3.0.0
       zod: 3.25.76
@@ -36410,8 +36418,8 @@ snapshots:
       cross-spawn: 7.0.6
       eventsource: 3.0.7
       eventsource-parser: 3.0.3
-      express: 5.1.0
-      express-rate-limit: 7.5.1(express@5.1.0)
+      express: 5.2.1
+      express-rate-limit: 7.5.1(express@5.2.1)
       pkce-challenge: 5.0.0
       raw-body: 3.0.0
       zod: 3.25.76
@@ -36427,10 +36435,27 @@ snapshots:
       cross-spawn: 7.0.6
       eventsource: 3.0.7
       eventsource-parser: 3.0.3
-      express: 5.1.0
-      express-rate-limit: 7.5.1(express@5.1.0)
+      express: 5.2.1
+      express-rate-limit: 7.5.1(express@5.2.1)
       pkce-challenge: 5.0.0
       raw-body: 3.0.0
+      zod: 3.25.76
+      zod-to-json-schema: 3.25.0(zod@3.25.76)
+    transitivePeerDependencies:
+      - supports-color
+
+  '@modelcontextprotocol/sdk@1.17.0':
+    dependencies:
+      ajv: 6.12.6
+      content-type: 1.0.5
+      cors: 2.8.5
+      cross-spawn: 7.0.6
+      eventsource: 3.0.7
+      eventsource-parser: 3.0.3
+      express: 5.2.1
+      express-rate-limit: 7.5.1(express@5.2.1)
+      pkce-challenge: 5.0.0
+      raw-body: 3.0.2
       zod: 3.25.76
       zod-to-json-schema: 3.25.0(zod@3.25.76)
     transitivePeerDependencies:
@@ -36533,8 +36558,8 @@ snapshots:
       content-type: 1.0.5
       cors: 2.8.5
       eventsource: 3.0.7
-      express: 5.1.0
-      express-rate-limit: 7.5.1(express@5.1.0)
+      express: 5.2.1
+      express-rate-limit: 7.5.1(express@5.2.1)
       pkce-challenge: 4.1.0
       raw-body: 3.0.0
       zod: 3.25.76
@@ -36562,8 +36587,8 @@ snapshots:
       cors: 2.8.5
       cross-spawn: 7.0.6
       eventsource: 3.0.7
-      express: 5.1.0
-      express-rate-limit: 7.5.1(express@5.1.0)
+      express: 5.2.1
+      express-rate-limit: 7.5.1(express@5.2.1)
       pkce-challenge: 4.1.0
       raw-body: 3.0.0
       zod: 3.25.76
@@ -36577,8 +36602,8 @@ snapshots:
       cors: 2.8.5
       cross-spawn: 7.0.6
       eventsource: 3.0.7
-      express: 5.1.0
-      express-rate-limit: 7.5.1(express@5.1.0)
+      express: 5.2.1
+      express-rate-limit: 7.5.1(express@5.2.1)
       pkce-challenge: 5.0.0
       raw-body: 3.0.0
       zod: 3.25.76
@@ -37326,14 +37351,14 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@notionhq/notion-mcp-server@1.8.1(@cfworker/json-schema@4.1.1)(js-yaml@4.1.0)':
+  '@notionhq/notion-mcp-server@1.8.1(@cfworker/json-schema@4.1.1)(js-yaml@4.1.1)':
     dependencies:
       '@modelcontextprotocol/sdk': 1.21.1(@cfworker/json-schema@4.1.1)
       axios: 1.10.0
       express: 4.21.2
       form-data: 4.0.3
       mustache: 4.2.0
-      openapi-client-axios: 7.6.0(axios@1.10.0)(js-yaml@4.1.0)
+      openapi-client-axios: 7.6.0(axios@1.10.0)(js-yaml@4.1.1)
       openapi-schema-validator: 12.1.3
       openapi-types: 12.1.3
       which: 5.0.0
@@ -38966,7 +38991,7 @@ snapshots:
       axios: 1.11.0(debug@4.4.1)
       cors: 2.8.5
       express-openapi-validator: 5.5.7(express@4.21.2)
-      js-yaml: 4.1.0
+      js-yaml: 4.1.1
       swagger-ui-express: 5.0.1(express@4.21.2)
     transitivePeerDependencies:
       - '@types/puppeteer'
@@ -40676,7 +40701,7 @@ snapshots:
 
   '@serverless-devs/utils@0.0.18':
     dependencies:
-      js-yaml: 4.1.0
+      js-yaml: 4.1.1
       lodash: 4.17.21
       md5: 2.3.0
       minimist: 1.2.8
@@ -40848,7 +40873,7 @@ snapshots:
       '@anthropic-ai/sdk': 0.32.1(encoding@0.1.13)
       '@modelcontextprotocol/sdk': 1.21.1(@cfworker/json-schema@4.1.1)
       ai: 4.3.19(react@18.3.1)(zod@3.25.76)
-      express: 5.1.0
+      express: 5.2.1
       json-schema: 0.4.0
       lodash: 4.17.21
       okay-error: 1.0.3
@@ -40868,7 +40893,7 @@ snapshots:
       '@anthropic-ai/sdk': 0.32.1(encoding@0.1.13)
       '@modelcontextprotocol/sdk': 1.21.1(@cfworker/json-schema@4.1.1)
       ai: 4.3.19(react@18.3.1)(zod@3.25.76)
-      express: 5.1.0
+      express: 5.2.1
       json-schema: 0.4.0
       lodash: 4.17.21
       okay-error: 1.0.3
@@ -47381,7 +47406,7 @@ snapshots:
   cosmiconfig@8.3.6(typescript@5.8.3):
     dependencies:
       import-fresh: 3.3.1
-      js-yaml: 4.1.0
+      js-yaml: 4.1.1
       parse-json: 5.2.0
       path-type: 4.0.0
     optionalDependencies:
@@ -47391,7 +47416,7 @@ snapshots:
     dependencies:
       env-paths: 2.2.1
       import-fresh: 3.3.1
-      js-yaml: 4.1.0
+      js-yaml: 4.1.1
       parse-json: 5.2.0
     optionalDependencies:
       typescript: 5.8.3
@@ -52937,6 +52962,10 @@ snapshots:
     dependencies:
       argparse: 2.0.1
 
+  js-yaml@4.1.1:
+    dependencies:
+      argparse: 2.0.1
+
   jsbn@0.1.1: {}
 
   jsbn@1.1.0: {}
@@ -53477,7 +53506,7 @@ snapshots:
       '@langchain/openai': 0.6.7(@langchain/core@0.3.69(@opentelemetry/api@1.9.0)(@opentelemetry/exporter-trace-otlp-proto@0.203.0(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@1.30.1(@opentelemetry/api@1.9.0))(openai@5.12.2(ws@7.5.10(bufferutil@4.0.9)(utf-8-validate@5.0.10))(zod@3.25.76)))(ws@7.5.10(bufferutil@4.0.9)(utf-8-validate@5.0.10))
       '@langchain/textsplitters': 0.1.0(@langchain/core@0.3.69(@opentelemetry/api@1.9.0)(@opentelemetry/exporter-trace-otlp-proto@0.203.0(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@1.30.1(@opentelemetry/api@1.9.0))(openai@5.12.2(ws@7.5.10(bufferutil@4.0.9)(utf-8-validate@5.0.10))(zod@3.25.76)))
       js-tiktoken: 1.0.20
-      js-yaml: 4.1.0
+      js-yaml: 4.1.1
       jsonpointer: 5.0.1
       langsmith: 0.3.38(@opentelemetry/api@1.9.0)(@opentelemetry/exporter-trace-otlp-proto@0.203.0(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@1.30.1(@opentelemetry/api@1.9.0))(openai@5.12.2(ws@7.5.10(bufferutil@4.0.9)(utf-8-validate@5.0.10))(zod@3.25.76))
       openapi-types: 12.1.3
@@ -54804,7 +54833,7 @@ snapshots:
     dependencies:
       '@agent-infra/logger': 0.0.1
       '@modelcontextprotocol/sdk': 1.15.1
-      express: 5.1.0
+      express: 5.2.1
     transitivePeerDependencies:
       - supports-color
 
@@ -55234,12 +55263,12 @@ snapshots:
       - encoding
       - supports-color
 
-  mcp-server-kubernetes@2.4.3(bufferutil@4.0.9)(encoding@0.1.13)(utf-8-validate@5.0.10):
+  mcp-server-kubernetes@3.0.1(bufferutil@4.0.9)(encoding@0.1.13)(utf-8-validate@5.0.10):
     dependencies:
       '@kubernetes/client-node': 1.3.0(bufferutil@4.0.9)(encoding@0.1.13)(utf-8-validate@5.0.10)
-      '@modelcontextprotocol/sdk': 1.7.0
+      '@modelcontextprotocol/sdk': 1.17.0
       express: 4.21.2
-      js-yaml: 4.1.0
+      js-yaml: 4.1.1
       yaml: 2.7.0
       zod: 3.23.8
     transitivePeerDependencies:
@@ -56738,7 +56767,7 @@ snapshots:
     optionalDependencies:
       bson: 6.10.4
       cli-table: 0.3.11
-      js-yaml: 4.1.0
+      js-yaml: 4.1.1
       mongodb: 6.19.0(@aws-sdk/credential-providers@3.835.0)(gcp-metadata@5.3.0(encoding@0.1.13))(kerberos@2.2.2)(mongodb-client-encryption@6.5.0)(socks@2.8.5)
       mongodb-ns: 2.4.2
       numeral: 2.0.6
@@ -57484,13 +57513,13 @@ snapshots:
       - encoding
       - supports-color
 
-  notion-readonly-mcp-server@1.0.9(@cfworker/json-schema@4.1.1)(js-yaml@4.1.0):
+  notion-readonly-mcp-server@1.0.9(@cfworker/json-schema@4.1.1)(js-yaml@4.1.1):
     dependencies:
       '@modelcontextprotocol/sdk': 1.21.1(@cfworker/json-schema@4.1.1)
       axios: 1.10.0
       form-data: 4.0.3
       mustache: 4.2.0
-      openapi-client-axios: 7.6.0(axios@1.10.0)(js-yaml@4.1.0)
+      openapi-client-axios: 7.6.0(axios@1.10.0)(js-yaml@4.1.1)
       openapi-schema-validator: 12.1.3
       openapi-types: 12.1.3
       which: 5.0.0
@@ -57926,12 +57955,12 @@ snapshots:
       ws: 7.5.10(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       zod: 3.25.76
 
-  openapi-client-axios@7.6.0(axios@1.10.0)(js-yaml@4.1.0):
+  openapi-client-axios@7.6.0(axios@1.10.0)(js-yaml@4.1.1):
     dependencies:
       axios: 1.10.0
       bath-es5: 3.0.3
       dereference-json-schema: 0.2.1
-      js-yaml: 4.1.0
+      js-yaml: 4.1.1
       openapi-types: 12.1.3
 
   openapi-fetch@0.12.5:
