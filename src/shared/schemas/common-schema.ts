@@ -38,8 +38,8 @@ export const MCPServerPackageConfigSchema = z
   .object({
     type: z.literal("mcp-server"),
 
-    runtime: z.enum(["node", "python", "java", "go"]),
-    packageName: z.string().describe("Name of the node, python, java package"),
+    runtime: z.enum(["node", "python", "java", "go", "docker"]),
+    packageName: z.string().describe("Name of the node, python, java package or docker image"),
     packageVersion: z
       .string()
       .optional()

@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Tavily Search (Docker)",
+  "packageName": "mcp/tavily",
+  "description": "Tavily is a search engine optimized for LLMs and RAG, aimed at efficient, quick and persistent search results. (Docker Runtime)",
+  "url": "https://github.com/tavily-ai/tavily-mcp",
+  "runtime": "docker",
+  "bin": "docker",
+  "binArgs": ["run", "-i", "--rm", "-e", "TAVILY_API_KEY", "mcp/tavily"],
+  "env": {
+    "TAVILY_API_KEY": {
+      "description": "API KEY for Tavily",
+      "required": true
+    }
+  }
+}
