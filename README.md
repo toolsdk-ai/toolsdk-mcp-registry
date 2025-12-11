@@ -1354,3 +1354,5 @@ Miscellaneous tools and integrations that don’t fit into other categories.
 
 </details>
 
+
+- [AgentsKB](https://agentskb.com) - Give your AI agent expert-level knowledge. Pre-researched answers your agent can trust. Free tier included.
