@@ -460,7 +460,7 @@ Integrate with cloud services to manage and interact with cloud infrastructure.
 - [✅ edgeone-pages-mcp](https://github.com/tencentedgeone/edgeone-pages-mcp): Enables rapid deployment of HTML content to Tencent's EdgeOne Pages service with integrated Functions and KV store support for edge hosting  (2 tools) (node) 
 - [✅ google-cloud-mcp](https://github.com/krzko/google-cloud-mcp): Integrates with Google Cloud services to provide direct access to Logging, Spanner, and Monitoring resources within conversations through authenticated connections.  (17 tools) (node) 
 - [✅ mcp-server-esa](https://github.com/aliyun/mcp-server-esa): Provides a bridge to Alibaba Cloud's Edge Security Acceleration service for managing edge routines, deployments, routes, and sites through authenticated API operations.  (23 tools) (node) 
-- [✅ mcp-server-kubernetes](https://github.com/Flux159/mcp-server-kubernetes): MCP server for managing Kubernetes clusters, enabling LLMs to interact with and control Kubernetes resources.  (21 tools) (node) 
+- [✅ mcp-server-kubernetes](https://github.com/Flux159/mcp-server-kubernetes): MCP server for managing Kubernetes clusters, enabling LLMs to interact with and control Kubernetes resources.  (22 tools) (node) 
 - [✅ multicluster-mcp-server](https://github.com/yanmxa/multicluster-mcp-server): Provides a bridge to Kubernetes multi-cluster environments for managing distributed resources through kubectl commands, service account connections, and seamless cross-cluster operations without switching contexts.  (4 tools) (node) 
 
 </details>

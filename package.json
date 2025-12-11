@@ -543,7 +543,7 @@
     "mcp-server-flomo": "0.0.11",
     "mcp-server-giphy": "1.0.3",
     "mcp-server-gsc": "0.2.0",
-    "mcp-server-kubernetes": "2.4.3",
+    "mcp-server-kubernetes": "3.0.1",
     "mcp-server-linearapp": "0.1.0",
     "mcp-server-novacv": "1.0.2",
     "mcp-server-siri-shortcuts": "1.1.0",

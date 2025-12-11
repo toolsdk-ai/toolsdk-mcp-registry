@@ -342,7 +342,9 @@
   },
   "kubernetes-mcp-server": {
     "category": "cloud-platforms",
-    "path": "cloud-platforms/kubernetes-mcp-server.json"
+    "path": "cloud-platforms/kubernetes-mcp-server.json",
+    "tools": {},
+    "validated": false
   },
   "@cloudflare/mcp-server-cloudflare": {
     "category": "cloud-platforms",
@@ -405,15 +407,19 @@
       },
       "install_helm_chart": {
         "name": "install_helm_chart",
-        "description": "Install a Helm chart"
+        "description": "Install a Helm chart with support for both standard and template-based installation"
       },
       "upgrade_helm_chart": {
         "name": "upgrade_helm_chart",
-        "description": "Upgrade a Helm release"
+        "description": "Upgrade an existing Helm chart release"
       },
       "uninstall_helm_chart": {
         "name": "uninstall_helm_chart",
-        "description": "Uninstall a Helm release"
+        "description": "Uninstall a Helm chart release"
+      },
+      "node_management": {
+        "name": "node_management",
+        "description": "Manage Kubernetes nodes with cordon, drain, and uncordon operations"
       },
       "port_forward": {
         "name": "port_forward",
@@ -425,7 +431,7 @@
       },
       "exec_in_pod": {
         "name": "exec_in_pod",
-        "description": "Execute a command in a Kubernetes pod or container and return the output"
+        "description": "Execute a command in a Kubernetes pod or container and return the output. Command must be an array of strings where the first element is the executable and remaining elements are arguments. This executes directly without shell interpretation for security."
       },
       "list_api_resources": {
         "name": "list_api_resources",
