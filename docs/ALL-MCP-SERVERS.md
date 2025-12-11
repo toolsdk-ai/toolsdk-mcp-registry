@@ -1,6 +1,6 @@
 # 📚 All MCP Servers
 
-> **Complete directory of all 4117+ MCP servers in the ToolSDK Registry**
+> **Complete directory of all 4118+ MCP servers in the ToolSDK Registry**
 >
 > Looking for production-ready servers only? See the [main README](../README.md) for validated servers.
 
@@ -8,8 +8,8 @@
 
 ## 📊 Statistics
 
-- 📦 **Total Servers**: 4117
-- ✅ **Validated & Tested**: 717
+- 📦 **Total Servers**: 4118
+- ✅ **Validated & Tested**: 718
 - ⚙️ **Community Contributed**: 3400
 
 ---
@@ -3007,7 +3007,7 @@ New mcp tool: Exa-code is a context tool for coding   (1 tools) (node)
 
 
 <a id="search-data-extraction"></a>
-### Search & Data Extraction <small>(405 servers)</small>
+### Search & Data Extraction <small>(406 servers)</small>
 
 > Find and extract data from various sources quickly and efficiently.
 
@@ -3095,6 +3095,7 @@ New mcp tool: Exa-code is a context tool for coding   (1 tools) (node)
 - [✅ mcp-server-reddit](https://github.com/hawstein/mcp-server-reddit): Integrates with Reddit's API to fetch and retrieve diverse content including posts, comments, and subreddit information for data analysis and content curation.  (8 tools) (python) 
 - [✅ mcp-tavily-search](https://github.com/spences10/mcp-tavily-search): Integrates with Tavily's semantic search API to enable web searches and retrieval of relevant results for fact-checking and research tasks.  (3 tools) (node) 
 - [✅ mcp-trends-hub](https://github.com/baranwang/mcp-trends-hub): Provides real-time access to trending topics and content from major Chinese platforms including Weibo, Zhihu, Douyin, Bilibili, Douban, Toutiao, and 36kr through separate tools with temporary caching for improved performance.  (21 tools) (node) 
+- [✅ mcp/tavily](https://github.com/tavily-ai/tavily-mcp): Tavily is a search engine optimized for LLMs and RAG, aimed at efficient, quick and persistent search results. (Docker Runtime)  (4 tools) (docker) 
 - [✅ news-mcp-server](https://github.com/anurag-dhamala/news-mcp-server): Fetches the latest news and sources based on country and language using newsdata.io.  (3 tools) (node) 
 - [✅ newsnow-mcp-server](https://github.com/ourongxing/newsnow-mcp-server): Provides a bridge to the NewsNow platform for retrieving trending and latest news from various sources with customizable result limits and markdown-formatted output.  (1 tools) (node) 
 - [✅ npm-search-mcp-server](https://github.com/btwiuse/npm-search-mcp-server): Enables npm package searches via CLI, facilitating JavaScript library discovery and dependency management  (1 tools) (node) 

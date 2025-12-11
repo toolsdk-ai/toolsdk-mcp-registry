@@ -12,14 +12,14 @@
 <a href="https://github.com/toolsdk-ai/toolsdk-mcp-registry/actions/workflows/test.yaml">
   <img src="https://github.com/toolsdk-ai/toolsdk-mcp-registry/actions/workflows/test.yaml/badge.svg" alt="Build Status" />
 </a>
-<img src="https://img.shields.io/badge/MCP_Servers-4117-blue?style=flat-square" alt="MCP Servers Count" />
+<img src="https://img.shields.io/badge/MCP_Servers-4118-blue?style=flat-square" alt="MCP Servers Count" />
 <img src="https://img.shields.io/badge/LICENSE-MIT-ff69b4?style=flat-square" alt="License" />
 <br />
 <a href="https://www.producthunt.com/products/toolsdk-ai">
   <img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=997428&theme=light&period=daily" alt="Product Hunt" height="40" />
 </a>
 
-<a href="#mcp-servers">🔍 <b>Browse 4117+ Tools</b></a>
+<a href="#mcp-servers">🔍 <b>Browse 4118+ Tools</b></a>
 &nbsp;&nbsp;•&nbsp;&nbsp;
 <a href="#quick-start">🐳 <b>Self-hosted</b></a>
 &nbsp;&nbsp;•&nbsp;&nbsp;
@@ -45,7 +45,7 @@
 - ➕ I want to **submit my MCP Server** → [Contribution Guide](#contribute-your-mcp-server)
 
 > [!IMPORTANT]
-> **Highlights**: Federated search across 4117+ servers & official registry • One-line integration with `Vercel AI SDK` / `LangChain` • Sandbox + OAuth 2.1 built-in • Get featured on [ToolSDK.ai](https://toolsdk.ai)
+> **Highlights**: Federated search across 4118+ servers & official registry • One-line integration with `Vercel AI SDK` / `LangChain` • Sandbox + OAuth 2.1 built-in • Get featured on [ToolSDK.ai](https://toolsdk.ai)
 
 ## Getting Started
 
@@ -71,7 +71,7 @@ docker compose up -d
 - *See [Configuration Guide](./docs/DEVELOPMENT.md) for full details.*
 
 > [!TIP]
-> **Tip for Private Deployment**: This registry contains 4117+ public MCP servers. If you only need a specific subset for your private environment, you can prune the `packages/` directory.
+> **Tip for Private Deployment**: This registry contains 4118+ public MCP servers. If you only need a specific subset for your private environment, you can prune the `packages/` directory.
 > 📖 See [Package Management Guide](./docs/DEVELOPMENT.md#5--package-management-for-private-deployment) for details.
 
 That's it! Your self-hosted MCP registry is now running with:
@@ -83,7 +83,7 @@ That's it! Your self-hosted MCP registry is now running with:
 
 - 🌐 **Local Web Interface**: http://localhost:3003
 - 📚 **Swagger API Docs**: http://localhost:3003/swagger  
-- 🔍 **Search & Execute** 4117+ MCP Servers remotely
+- 🔍 **Search & Execute** 4118+ MCP Servers remotely
 - 🤖 **Integrate** with your AI agents, chatbots, and LLM applications
 
 #### 🌐 Remote Tool Execution Example
@@ -217,7 +217,7 @@ graph TD
 
 This open-source project provides:
 
-- **Structured Registry** - 4117+ MCP servers with metadata
+- **Structured Registry** - 4118+ MCP servers with metadata
 - **Unified Gateway** - HTTP API to query and execute tools remotely
 - **Auto-Generated Docs** - Always up-to-date README and API documentation
 
@@ -283,12 +283,12 @@ Your MCP server will be:
 
 ## MCP Servers Directory
 
-**4117+ AI Agent Tools, LLM Integrations & Automation Servers**
+**4118+ AI Agent Tools, LLM Integrations & Automation Servers**
 
 > [!NOTE]
 > ⭐ **Featured below**: Hand-picked, production-ready MCP servers verified by our team.
 >
-> 📚 **Looking for all 4117+ servers?** Check out [**All MCP Servers**](./docs/ALL-MCP-SERVERS.md) for the complete list.
+> 📚 **Looking for all 4118+ servers?** Check out [**All MCP Servers**](./docs/ALL-MCP-SERVERS.md) for the complete list.
 
 Browse by category: Developer Tools, AI Agents, Databases, Cloud Platforms, APIs, and more!
 
@@ -1057,6 +1057,7 @@ Find and extract data from various sources quickly and efficiently.
 - [✅ mcp-server-reddit](https://github.com/hawstein/mcp-server-reddit): Integrates with Reddit's API to fetch and retrieve diverse content including posts, comments, and subreddit information for data analysis and content curation.  (8 tools) (python) 
 - [✅ mcp-tavily-search](https://github.com/spences10/mcp-tavily-search): Integrates with Tavily's semantic search API to enable web searches and retrieval of relevant results for fact-checking and research tasks.  (3 tools) (node) 
 - [✅ mcp-trends-hub](https://github.com/baranwang/mcp-trends-hub): Provides real-time access to trending topics and content from major Chinese platforms including Weibo, Zhihu, Douyin, Bilibili, Douban, Toutiao, and 36kr through separate tools with temporary caching for improved performance.  (21 tools) (node) 
+- [✅ mcp/tavily](https://github.com/tavily-ai/tavily-mcp): Tavily is a search engine optimized for LLMs and RAG, aimed at efficient, quick and persistent search results. (Docker Runtime)  (4 tools) (docker) 
 - [✅ news-mcp-server](https://github.com/anurag-dhamala/news-mcp-server): Fetches the latest news and sources based on country and language using newsdata.io.  (3 tools) (node) 
 - [✅ newsnow-mcp-server](https://github.com/ourongxing/newsnow-mcp-server): Provides a bridge to the NewsNow platform for retrieving trending and latest news from various sources with customizable result limits and markdown-formatted output.  (1 tools) (node) 
 - [✅ npm-search-mcp-server](https://github.com/btwiuse/npm-search-mcp-server): Enables npm package searches via CLI, facilitating JavaScript library discovery and dependency management  (1 tools) (node) 

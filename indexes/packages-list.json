@@ -343,8 +343,8 @@
   "kubernetes-mcp-server": {
     "category": "cloud-platforms",
     "path": "cloud-platforms/kubernetes-mcp-server.json",
-    "tools": {},
-    "validated": false
+    "validated": false,
+    "tools": {}
   },
   "@cloudflare/mcp-server-cloudflare": {
     "category": "cloud-platforms",
@@ -47630,5 +47630,28 @@
         "description": "\n    Retrieves AI-generated summaries of web search results using Brave's Summarizer API. This tool processes search results to create concise, coherent summaries of information gathered from multiple sources.\n\n    When to use:\n\n    - When you need a concise overview of complex topics from multiple sources\n    - For quick fact-checking or getting key points without reading full articles\n    - When providing users with summarized information that synthesizes various perspectives\n    - For research tasks requiring distilled information from web searches\n\n    Returns a text summary that consolidates information from the search results. Optional features include inline references to source URLs and additional entity information.\n\n    Requirements: Must first perform a web search using brave_web_search with summary=true parameter. Requires a Pro AI subscription to access the summarizer functionality.\n"
       }
     }
+  },
+  "mcp/tavily": {
+    "category": "search-data-extraction",
+    "path": "search-data-extraction/tavily-docker-mcp-server.json",
+    "tools": {
+      "tavily-search": {
+        "name": "tavily-search",
+        "description": "A powerful web search tool that provides comprehensive, real-time results using Tavily's AI search engine. Returns relevant web content with customizable parameters for result count, content type, and domain filtering. Ideal for gathering current information, news, and detailed web content analysis."
+      },
+      "tavily-extract": {
+        "name": "tavily-extract",
+        "description": "A powerful web content extraction tool that retrieves and processes raw content from specified URLs, ideal for data collection, content analysis, and research tasks."
+      },
+      "tavily-crawl": {
+        "name": "tavily-crawl",
+        "description": "A powerful web crawler that initiates a structured web crawl starting from a specified base URL. The crawler expands from that point like a graph, following internal links across pages. You can control how deep and wide it goes, and guide it to focus on specific sections of the site."
+      },
+      "tavily-map": {
+        "name": "tavily-map",
+        "description": "A powerful web mapping tool that creates a structured map of website URLs, allowing you to discover and analyze site structure, content organization, and navigation paths. Perfect for site audits, content discovery, and understanding website architecture."
+      }
+    },
+    "validated": true
   }
 }

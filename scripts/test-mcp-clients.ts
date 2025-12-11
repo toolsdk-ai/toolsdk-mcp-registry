@@ -60,8 +60,8 @@ async function main() {
     // Check if this package has remote MCP configuration
     const hasRemotes = mcpServerConfig.remotes && mcpServerConfig.remotes.length > 0;
 
-    // Only process: 1) runtime === "node" packages, OR 2) packages with remotes (any runtime)
-    if (mcpServerConfig.runtime === "node" || hasRemotes) {
+    // Only process: 1) runtime === "node" packages, 2) runtime === "docker" packages, OR 3) packages with remotes (any runtime)
+    if (mcpServerConfig.runtime === "node" || mcpServerConfig.runtime === "docker" || hasRemotes) {
       if (value.validated === true) {
         // Skip already validated packages to prevent state override
         // Only add to packageDeps if it's a node package (remote packages don't need npm deps)

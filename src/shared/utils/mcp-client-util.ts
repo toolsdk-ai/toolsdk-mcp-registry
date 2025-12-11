@@ -94,6 +94,27 @@ async function getNodeMcpClient(
   return createMcpClient(mcpServerConfig, transport);
 }
 
+async function getDockerMcpClient(
+  mcpServerConfig: MCPServerPackageConfig,
+  env?: Record<string, string>,
+) {
+  const { binArgs } = mcpServerConfig;
+
+  const args = binArgs || [];
+  const transport = new StdioClientTransport({
+    command: "docker",
+    args,
+    env: {
+      ...(Object.fromEntries(
+        Object.entries(process.env).filter(([_, v]) => v !== undefined),
+      ) as Record<string, string>),
+      ...env,
+    },
+  });
+
+  return createMcpClient(mcpServerConfig, transport);
+}
+
 async function getPyMcpClient(
   mcpServerConfig: MCPServerPackageConfig,
   env?: Record<string, string>,
@@ -152,6 +173,9 @@ export async function getMcpClient(
   const { runtime } = mcpServerConfig;
   if (runtime === "python") {
     return getPyMcpClient(mcpServerConfig, env);
+  }
+  if (runtime === "docker") {
+    return getDockerMcpClient(mcpServerConfig, env);
   }
   return getNodeMcpClient(mcpServerConfig, env);
 }
