@@ -135,7 +135,7 @@ async function main() {
   }
 
   console.log(`Processed ${processedFiles.length} unique servers.`);
-  console.log(`  - Remote (SSE): ${remoteCount}`);
+  console.log(`  - Remote (streamable-http): ${remoteCount}`);
   console.log(`  - Stdio (Local): ${stdioCount}`);
   console.log(`  - Skipped: ${skippedCount}`);
   console.log(`  - Duplicates: ${duplicateCount}`);
