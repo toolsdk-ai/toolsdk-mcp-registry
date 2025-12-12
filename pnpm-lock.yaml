@@ -11438,8 +11438,8 @@ packages:
   '@types/node@24.3.0':
     resolution: {integrity: sha512-aPTXCrfwnDLj4VvXrm+UUCQjNEvJgNA8s5F1cvwQU+3KNltTOkBm1j30uNLyqqPNe7gE3KFzImYoZEfLhp4Yow==}
 
-  '@types/node@25.0.0':
-    resolution: {integrity: sha512-rl78HwuZlaDIUSeUKkmogkhebA+8K1Hy7tddZuJ3D0xV8pZSfsYGTsliGUol1JPzu9EKnTxPC4L1fiWouStRew==}
+  '@types/node@25.0.1':
+    resolution: {integrity: sha512-czWPzKIAXucn9PtsttxmumiQ9N0ok9FrBwgRWrwmVLlp86BrMExzvXRLFYRJ+Ex3g6yqj+KuaxfX1JTgV2lpfg==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -31620,7 +31620,7 @@ snapshots:
     dependencies:
       '@modelcontextprotocol/sdk': 1.24.3(@cfworker/json-schema@4.1.1)(zod@3.25.76)
       '@types/luxon': 3.7.1
-      '@types/node': 25.0.0
+      '@types/node': 25.0.1
       luxon: 3.7.2
       qrcode: 1.5.4
       qrcode-terminal: 0.12.0
@@ -36020,7 +36020,7 @@ snapshots:
     dependencies:
       '@modelcontextprotocol/sdk': 1.24.3(@cfworker/json-schema@4.1.1)(zod@3.25.76)
       '@types/luxon': 3.7.1
-      '@types/node': 25.0.0
+      '@types/node': 25.0.1
       luxon: 3.7.2
       qrcode: 1.5.4
       qrcode-terminal: 0.12.0
@@ -42744,7 +42744,7 @@ snapshots:
     dependencies:
       undici-types: 7.10.0
 
-  '@types/node@25.0.0':
+  '@types/node@25.0.1':
     dependencies:
       undici-types: 7.16.0
 

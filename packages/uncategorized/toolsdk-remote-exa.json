@@ -1,5 +1,6 @@
 {
   "type": "mcp-server",
+  "name": "Remote Exa MCP",
   "packageName": "@toolsdk-remote/exa",
   "description": "Fast, intelligent web search and web crawling.\n\nNew mcp tool: Exa-code is a context tool for coding ",
   "url": "https://github.com/exa-labs/exa-mcp-server",
