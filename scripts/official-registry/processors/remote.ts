@@ -171,8 +171,8 @@ export async function processRemoteServer(
     if (remote.type !== "streamable-http" || !remote.url || remote.url.startsWith("http://")) {
       return false;
     }
-    const url = remote.url.toLowerCase();
-    return url.endsWith("/mcp") || url.endsWith("/mcp/");
+    const urlString = remote.url.toLowerCase();
+    return urlString.endsWith("/mcp") || urlString.endsWith("/mcp/");
   });
 
   if (validRemotes.length === 0) {
