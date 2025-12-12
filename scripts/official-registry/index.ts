@@ -33,9 +33,9 @@ async function saveServerToFile(config: MCPServerPackageConfig): Promise<string>
     await fs.mkdir(runtimeDir, { recursive: true });
   }
 
-  const safeName = config.packageName.replace(/[^a-zA-Z0-9._-]/g, "-").replace(/^-+|-+$/g, "");
+  const sanitizedName = config.packageName.replace(/[^a-zA-Z0-9._-]/g, "-").replace(/^-+|-+$/g, "");
 
-  let fileName = `${safeName}.json`;
+  let fileName = `${sanitizedName}.json`;
   let outPath = path.join(runtimeDir, fileName);
   let idx = 1;
 
@@ -44,7 +44,7 @@ async function saveServerToFile(config: MCPServerPackageConfig): Promise<string>
     try {
       await fs.access(outPath);
       // File exists, try next index
-      fileName = `${safeName}-${idx}.json`;
+      fileName = `${sanitizedName}-${idx}.json`;
       outPath = path.join(runtimeDir, fileName);
       idx++;
     } catch {
