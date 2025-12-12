@@ -14,12 +14,38 @@ export async function fetchOfficialRegistry(
 
   // console.log(`Fetching: ${url.toString()}`);
 
-  const response = await fetch(url.toString());
+  // Add timeout (10 seconds) using AbortController
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 10000);
+  let response: Response;
+  try {
+    response = await fetch(url.toString(), { signal: controller.signal });
+  } catch (err: any) {
+    if (err.name === "AbortError") {
+      throw new Error("Network request timed out after 10 seconds");
+    }
+    throw new Error(`Network error: ${err.message || err}`);
+  } finally {
+    clearTimeout(timeout);
+  }
+
   if (!response.ok) {
     throw new Error(`HTTP error! status: ${response.status}`);
   }
 
-  return (await response.json()) as RegistryResponse;
+  const contentType = response.headers.get("content-type");
+  if (!contentType || !contentType.includes("application/json")) {
+    throw new Error(`Expected JSON response but got content-type: ${contentType}`);
+  }
+
+  let data: RegistryResponse;
+  try {
+    data = (await response.json()) as RegistryResponse;
+  } catch (err) {
+    throw new Error(`Failed to parse JSON response: ${err}`);
+  }
+
+  return data;
 }
 
 export async function fetchOfficialServers(maxServers = 1000): Promise<RegistryServer[]> {

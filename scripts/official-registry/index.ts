@@ -22,6 +22,15 @@ async function ensureOutputDir() {
   }
 }
 
+async function fileExists(filePath: string): Promise<boolean> {
+  try {
+    await fs.access(filePath);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 async function saveServerToFile(config: MCPServerPackageConfig): Promise<string> {
   const runtime = config.runtime || "unknown";
   const runtimeDir = path.join(OUTPUT_DIR, runtime);
@@ -40,17 +49,10 @@ async function saveServerToFile(config: MCPServerPackageConfig): Promise<string>
   let idx = 1;
 
   // Check for collision
-  while (true) {
-    try {
-      await fs.access(outPath);
-      // File exists, try next index
-      fileName = `${sanitizedName}-${idx}.json`;
-      outPath = path.join(runtimeDir, fileName);
-      idx++;
-    } catch {
-      // File does not exist, use this path
-      break;
-    }
+  while (await fileExists(outPath)) {
+    fileName = `${sanitizedName}-${idx}.json`;
+    outPath = path.join(runtimeDir, fileName);
+    idx++;
   }
 
   await fs.writeFile(outPath, JSON.stringify(config, null, 2), "utf-8");

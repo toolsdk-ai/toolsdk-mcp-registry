@@ -1,5 +1,6 @@
 import type { MCPServerPackageConfig } from "../../../src/shared/scripts-helpers";
-import type { OAuthMetadata, RegistryKeyValueInput, RegistryServer } from "../types";
+import type { OAuthMetadata, RegistryServer } from "../types";
+import { collectEnvironmentVariables } from "../utils";
 
 /**
  * Parse WWW-Authenticate header to extract resource metadata URL
@@ -136,30 +137,6 @@ function determinePackageInfo(server: RegistryServer): { runtime: string; packag
   };
 }
 
-function collectEnvironmentVariables(
-  server: RegistryServer,
-): Record<string, { description: string; required: boolean }> {
-  const env: Record<string, { description: string; required: boolean }> = {};
-
-  const addEnv = (envList?: RegistryKeyValueInput[]) => {
-    if (!envList) return;
-    for (const envVar of envList) {
-      if (!envVar || !envVar.name) continue;
-      env[envVar.name] = {
-        description: envVar.description || "",
-        required: !!envVar.isRequired,
-      };
-    }
-  };
-
-  if (server.packages) {
-    for (const pkg of server.packages) {
-      addEnv(pkg.environmentVariables);
-    }
-  }
-  return env;
-}
-
 export async function processRemoteServer(
   server: RegistryServer,
 ): Promise<MCPServerPackageConfig | null> {
@@ -183,26 +160,27 @@ export async function processRemoteServer(
 
   const { runtime, packageName } = determinePackageInfo(server);
   const env = collectEnvironmentVariables(server);
-  const remotes: NonNullable<MCPServerPackageConfig["remotes"]> = [];
 
-  for (const remote of validRemotes) {
-    const remoteConfig: NonNullable<MCPServerPackageConfig["remotes"]>[0] = {
-      type: "streamable-http",
-      url: remote.url,
-    };
+  const remotes = await Promise.all(
+    validRemotes.map(async (remote) => {
+      const remoteConfig: NonNullable<MCPServerPackageConfig["remotes"]>[0] = {
+        type: "streamable-http",
+        url: remote.url,
+      };
 
-    console.log(`  Checking OAuth for ${remote.url}...`);
-    const metadata = await discoverProtectedResourceMetadata(remote.url);
-    if (metadata) {
-      console.log(`  ✓ OAuth configuration found`);
-      remoteConfig.auth = { type: "oauth2" };
-      if (metadata.scopes && metadata.scopes.length > 0) {
-        remoteConfig.auth.scopes = metadata.scopes;
+      console.log(`  Checking OAuth for ${remote.url}...`);
+      const metadata = await discoverProtectedResourceMetadata(remote.url);
+      if (metadata) {
+        console.log(`  ✓ OAuth configuration found`);
+        remoteConfig.auth = { type: "oauth2" };
+        if (metadata.scopes && metadata.scopes.length > 0) {
+          remoteConfig.auth.scopes = metadata.scopes;
+        }
       }
-    }
 
-    remotes.push(remoteConfig);
-  }
+      return remoteConfig;
+    }),
+  );
 
   return {
     type: "mcp-server",

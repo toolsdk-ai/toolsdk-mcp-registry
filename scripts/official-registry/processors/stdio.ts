@@ -1,29 +1,6 @@
 import type { MCPServerPackageConfig } from "../../../src/shared/scripts-helpers";
-import type { RegistryKeyValueInput, RegistryServer } from "../types";
-
-function collectEnvironmentVariables(
-  server: RegistryServer,
-): Record<string, { description: string; required: boolean }> {
-  const env: Record<string, { description: string; required: boolean }> = {};
-
-  const addEnv = (envList?: RegistryKeyValueInput[]) => {
-    if (!envList) return;
-    for (const envVar of envList) {
-      if (!envVar || !envVar.name) continue;
-      env[envVar.name] = {
-        description: envVar.description || "",
-        required: !!envVar.isRequired,
-      };
-    }
-  };
-
-  if (server.packages) {
-    for (const pkg of server.packages) {
-      addEnv(pkg.environmentVariables);
-    }
-  }
-  return env;
-}
+import type { RegistryServer } from "../types";
+import { collectEnvironmentVariables } from "../utils";
 
 export async function processStdioServer(
   server: RegistryServer,
