@@ -92,7 +92,9 @@ async function discoverProtectedResourceMetadata(
 
     return null;
   } catch (error) {
-    console.log(`  OAuth Discovery failed: ${error}`);
+    console.log(
+      `  OAuth Discovery failed for ${mcpServerUrl}: ${error instanceof Error ? error.message : String(error)}`,
+    );
     return null;
   }
 }
