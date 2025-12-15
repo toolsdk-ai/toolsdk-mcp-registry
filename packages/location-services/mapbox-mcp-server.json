@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "packageName": "@mapbox/mcp-server",
+  "description": "Geospatial intelligence with Mapbox APIs like geocoding, POI search, directions, isochrones, etc.",
+  "url": "https://github.com/mapbox/mcp-server",
+  "runtime": "node",
+  "license": "mit",
+  "binArgs": ["--disable-mcp-ui"],
+  "env": {
+    "MAPBOX_ACCESS_TOKEN": {
+      "description": "Your Mapbox access token",
+      "required": true
+    }
+  }
+}

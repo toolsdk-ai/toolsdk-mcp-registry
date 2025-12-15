@@ -1,0 +1,24 @@
+{
+  "type": "mcp-server",
+  "packageName": "postman/postman-mcp-server",
+  "description": "A basic MCP server to operate on the Postman API.",
+  "url": "https://github.com/postmanlabs/postman-mcp-server",
+  "runtime": "node",
+  "license": "apache-2.0",
+  "env": {
+    "POSTMAN_API_KEY": {
+      "description": "A valid Postman API key.",
+      "required": true
+    }
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.postman.com/mcp"
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.eu.postman.com/mcp"
+    }
+  ]
+}

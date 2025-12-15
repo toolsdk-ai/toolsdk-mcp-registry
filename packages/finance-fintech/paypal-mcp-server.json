@@ -1,20 +1,19 @@
 {
   "type": "mcp-server",
-  "logo": "https://pbs.twimg.com/profile_images/1831523218831634432/dtvuvsNM_400x400.jpg",
-  "packageName": "@paypal/agent-toolkit",
-  "description": "The PayPal Model Context Protocol server allows you to integrate with PayPal APIs through function calling.",
-  "url": "https://github.com/paypal/agent-toolkit/tree/main/modelcontextprotocol",
+  "name": "Paypal MCP Server",
+  "packageName": "@paypal/mcp",
+  "description": "A command line tool for setting up PayPal MCP server",
+  "url": "https://github.com/paypal/paypal-mcp-server",
   "runtime": "node",
-  "license": "Apache-2.0",
+  "license": "unknown",
   "env": {
     "PAYPAL_ACCESS_TOKEN": {
-      "description": "YOUR_PAYPAL_ACCESS_TOKEN",
+      "description": "YOUR_PAYPAL_ACCESS_TOKEN ref: https://docs.paypal.ai/developer/how-to/api/get-started ",
       "required": true
     },
     "PAYPAL_ENVIRONMENT": {
-      "description": "SANDBOX",
+      "description": "'SANDBOX' or 'LIVE'",
       "required": true
     }
-  },
-  "name": "PayPal MCP"
+  }
 }

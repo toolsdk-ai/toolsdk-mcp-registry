@@ -32370,12 +32370,6 @@
     "validated": false,
     "tools": {}
   },
-  "@supabase/mcp-server-supabase": {
-    "category": "databases",
-    "path": "databases/supabase-mcp-server-supabase.json",
-    "validated": false,
-    "tools": {}
-  },
   "neon": {
     "category": "databases",
     "path": "databases/neon.json",
@@ -42197,7 +42191,7 @@
   },
   "12306-mcp": {
     "category": "travel-transportation",
-    "path": "travel-transportation/12306-mcp.json",
+    "path": "travel-transportation/jok-12306-mcp.json",
     "validated": true,
     "tools": {
       "get-current-date": {
@@ -46643,7 +46637,7 @@
   },
   "@paypal/agent-toolkit": {
     "category": "finance-fintech",
-    "path": "finance-fintech/paypal-mcp-server.json",
+    "path": "finance-fintech/paypal-toolkit-mcp.json",
     "validated": false,
     "tools": {}
   },
@@ -47653,5 +47647,83 @@
         "description": "A powerful web mapping tool that creates a structured map of website URLs, allowing you to discover and analyze site structure, content organization, and navigation paths. Perfect for site audits, content discovery, and understanding website architecture."
       }
     }
+  },
+  "postman/postman-mcp-server": {
+    "category": "developer-tools",
+    "path": "developer-tools/postman-postman-mcp-server.json",
+    "tools": {},
+    "validated": false
+  },
+  "@sveltejs/mcp": {
+    "category": "developer-tools",
+    "path": "developer-tools/sveltejs-mcp.json",
+    "validated": true,
+    "tools": {
+      "get-documentation": {
+        "name": "get-documentation",
+        "description": "Retrieves full documentation content for Svelte 5 or SvelteKit sections. Supports flexible search by title (e.g., \"$state\", \"routing\") or file path (e.g., \"cli/overview\"). Can accept a single section name or an array of sections. Before running this, make sure to analyze the users query, as well as the output from list-sections (which should be called first). Then ask for ALL relevant sections the user might require. For example, if the user asks to build anything interactive, you will need to fetch all relevant runes, and so on."
+      },
+      "list-sections": {
+        "name": "list-sections",
+        "description": "Lists all available Svelte 5 and SvelteKit documentation sections in a structured format. Each section includes a \"use_cases\" field that describes WHEN this documentation would be useful. You should carefully analyze the use_cases field to determine which sections are relevant for the user's query. The use_cases contain comma-separated keywords describing project types (e.g., \"e-commerce\", \"blog\"), features (e.g., \"authentication\", \"forms\"), components (e.g., \"slider\", \"modal\"), development stages (e.g., \"deployment\", \"testing\"), or \"always\" for fundamental concepts. Match these use_cases against the user's intent - for example, if building an e-commerce site, fetch sections with use_cases containing \"e-commerce\", \"product listings\", \"shopping cart\", etc. If building a slider, look for \"slider\", \"carousel\", \"animation\", etc. Returns sections as \"* title: [section_title], use_cases: [use_cases], path: [file_path]\". Always run list-sections FIRST for any Svelte query, then analyze ALL use_cases to identify relevant sections, and finally use get_documentation to fetch ALL relevant sections at once."
+      },
+      "playground-link": {
+        "name": "playground-link",
+        "description": "Generates a Playground link given a Svelte code snippet. Once you have the final version of the code you want to send to the user, ALWAYS ask the user if it wants a playground link to allow it to quickly check the code in the playground before calling this tool. NEVER use this tool if you have written the component to a file in the user project. The playground accept multiple files so if are importing from other files just include them all at the root level."
+      },
+      "svelte-autofixer": {
+        "name": "svelte-autofixer",
+        "description": "Given a svelte component or module returns a list of suggestions to fix any issues it has. This tool MUST be used whenever the user is asking to write svelte code before sending the code back to the user"
+      }
+    }
+  },
+  "@mapbox/mcp-server": {
+    "category": "location-services",
+    "path": "location-services/mapbox-mcp-server.json",
+    "tools": {
+      "version_tool": {
+        "name": "version_tool",
+        "description": "Get the current version information of the MCP server"
+      },
+      "category_list_tool": {
+        "name": "category_list_tool",
+        "description": "Tool for retrieving the list of supported categories from Mapbox Search API. Use this when another function requires a list of categories. Returns all available category IDs by default. Only use pagination (limit/offset) if token usage optimization is required. If using pagination, make multiple calls to retrieve ALL categories before proceeding with other tasks to ensure complete data."
+      },
+      "category_search_tool": {
+        "name": "category_search_tool",
+        "description": "Return all places that match a category (industry, amenity, or NAICS‑style code). Use when the user asks for a type of place, plural or generic terms like 'museums', 'coffee shops', 'electric‑vehicle chargers', or when the query includes is‑a phrases such as 'any', 'all', 'nearby'. Do not use when a unique name or brand is provided. Supports both JSON and text output formats."
+      },
+      "directions_tool": {
+        "name": "directions_tool",
+        "description": "Fetches directions from Mapbox API based on provided coordinates and direction method."
+      },
+      "isochrone_tool": {
+        "name": "isochrone_tool",
+        "description": "Computes areas that are reachable within a specified amount of time from a location, and returns the reachable regions as contours of Polygons or LineStrings in GeoJSON format that you can display on a map.\n  Common use cases:\n    - Show a user how far they can travel in X minutes from their current location\n    - Determine whether a destination is within a certain travel time threshold\n    - Compare travel ranges for different modes of transportation'"
+      },
+      "matrix_tool": {
+        "name": "matrix_tool",
+        "description": "Calculates travel times and distances between multiple points using Mapbox Matrix API."
+      },
+      "reverse_geocode_tool": {
+        "name": "reverse_geocode_tool",
+        "description": "Find addresses, cities, towns, neighborhoods, postcodes, districts, regions, and countries around a specified geographic coordinate pair. Converts geographic coordinates (longitude, latitude) into human-readable addresses or place names. Use limit=1 for best results. This tool cannot reverse geocode businesses, landmarks, historic sites, and other points of interest that are not of the types mentioned. Supports both JSON and text output formats."
+      },
+      "static_map_image_tool": {
+        "name": "static_map_image_tool",
+        "description": "Generates a static map image from Mapbox Static Images API. Supports center coordinates, zoom level (0-22), image size (up to 1280x1280), various Mapbox styles, and overlays (markers, paths, GeoJSON). Returns PNG for vector styles, JPEG for raster-only styles."
+      },
+      "search_and_geocode_tool": {
+        "name": "search_and_geocode_tool",
+        "description": "Search for POIs, brands, chains, geocode cities, towns, addresses. Do not use for generic place types such as 'museums', 'coffee shops', 'tacos', etc, because category_search_tool is better for that. Setting a proximity point is strongly encouraged for more local results."
+      }
+    },
+    "validated": true
+  },
+  "@supabase/mcp-server-supabase": {
+    "category": "databases",
+    "path": "databases/supabase-mcp-server-supabase.json",
+    "tools": {},
+    "validated": false
   }
 }

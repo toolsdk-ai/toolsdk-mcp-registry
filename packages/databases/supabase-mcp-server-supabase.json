@@ -1,10 +1,24 @@
 {
   "type": "mcp-server",
+  "name": "Supabase MCP",
   "packageName": "@supabase/mcp-server-supabase",
-  "description": "Connects directly to Supabase projects for managing databases, executing SQL queries, applying migrations, and handling configurations through natural language commands.",
+  "description": "MCP server for interacting with the Supabase platform",
   "url": "https://github.com/supabase-community/supabase-mcp",
   "runtime": "node",
   "license": "unknown",
-  "env": {},
-  "name": "Supabase MCP"
+  "env": {
+    "SUPABASE_ACCESS_TOKEN": {
+      "description": "Personal access token for Supabase API",
+      "required": true
+    }
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.supabase.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
 }

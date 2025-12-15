@@ -1,0 +1,158 @@
+{
+  "type": "mcp-server",
+  "name": "MongoDB MCP Server",
+  "packageName": "mongodb-mcp-server",
+  "description": "MongoDB Model Context Protocol Server",
+  "url": "https://github.com/mongodb-js/mongodb-mcp-server",
+  "runtime": "node",
+  "license": "apache-2.0",
+  "env": {
+    "MDB_MCP_ALLOW_REQUEST_OVERRIDES": {
+      "description": "When set to true, allows configuration values to be overridden via request headers and query parameters.",
+      "required": false
+    },
+    "MDB_MCP_API_CLIENT_ID": {
+      "description": "Atlas API client ID for authentication. Required for running Atlas tools.",
+      "required": false
+    },
+    "MDB_MCP_API_CLIENT_SECRET": {
+      "description": "Atlas API client secret for authentication. Required for running Atlas tools.",
+      "required": false
+    },
+    "MDB_MCP_ATLAS_TEMPORARY_DATABASE_USER_LIFETIME_MS": {
+      "description": "Time in milliseconds that temporary database users created when connecting to MongoDB Atlas clusters will remain active before being automatically deleted.",
+      "required": false
+    },
+    "MDB_MCP_CONFIRMATION_REQUIRED_TOOLS": {
+      "description": "Comma separated values of tool names that require user confirmation before execution. Requires the client to support elicitation.",
+      "required": false
+    },
+    "MDB_MCP_CONNECTION_STRING": {
+      "description": "MongoDB connection string for direct database connections. Optional, if not set, you'll need to call the connect tool before interacting with MongoDB data.",
+      "required": false
+    },
+    "MDB_MCP_DISABLED_TOOLS": {
+      "description": "Comma separated values of tool names, operation types, and/or categories of tools that will be disabled.",
+      "required": false
+    },
+    "MDB_MCP_DRY_RUN": {
+      "description": "When true, runs the server in dry mode: dumps configuration and enabled tools, then exits without starting the server.",
+      "required": false
+    },
+    "MDB_MCP_EMBEDDINGS_VALIDATION": {
+      "description": "When set to false, disables validation of embeddings dimensions.",
+      "required": false
+    },
+    "MDB_MCP_EXPORT_CLEANUP_INTERVAL_MS": {
+      "description": "Time in milliseconds between export cleanup cycles that remove expired export files.",
+      "required": false
+    },
+    "MDB_MCP_EXPORT_TIMEOUT_MS": {
+      "description": "Time in milliseconds after which an export is considered expired and eligible for cleanup.",
+      "required": false
+    },
+    "MDB_MCP_EXPORTS_PATH": {
+      "description": "Folder to store exported data files.",
+      "required": false
+    },
+    "MDB_MCP_HTTP_HEADERS": {
+      "description": "Header that the HTTP server will validate when making requests (only used when transport is 'http').",
+      "required": false
+    },
+    "MDB_MCP_HTTP_HOST": {
+      "description": "Host address to bind the HTTP server to (only used when transport is 'http').",
+      "required": false
+    },
+    "MDB_MCP_HTTP_PORT": {
+      "description": "Port number for the HTTP server (only used when transport is 'http'). Use 0 for a random port.",
+      "required": false
+    },
+    "MDB_MCP_IDLE_TIMEOUT_MS": {
+      "description": "Idle timeout for a client to disconnect (only applies to http transport).",
+      "required": false
+    },
+    "MDB_MCP_INDEX_CHECK": {
+      "description": "When set to true, enforces that query operations must use an index, rejecting queries that perform a collection scan.",
+      "required": false
+    },
+    "MDB_MCP_LOG_PATH": {
+      "description": "Folder to store logs.",
+      "required": false
+    },
+    "MDB_MCP_LOGGERS": {
+      "description": "Comma separated values of logger types.",
+      "required": false
+    },
+    "MDB_MCP_MAX_BYTES_PER_QUERY": {
+      "description": "The maximum size in bytes for results from a find or aggregate tool call. This serves as an upper bound for the responseBytesLimit parameter in those tools.",
+      "required": false
+    },
+    "MDB_MCP_MAX_DOCUMENTS_PER_QUERY": {
+      "description": "The maximum number of documents that can be returned by a find or aggregate tool call. For the find tool, the effective limit will be the smaller of this value and the tool's limit parameter.",
+      "required": false
+    },
+    "MDB_MCP_NOTIFICATION_TIMEOUT_MS": {
+      "description": "Notification timeout for a client to be aware of disconnect (only applies to http transport).",
+      "required": false
+    },
+    "MDB_MCP_PREVIEW_FEATURES": {
+      "description": "Comma separated values of preview features that are enabled.",
+      "required": false
+    },
+    "MDB_MCP_READ_ONLY": {
+      "description": "When set to true, only allows read, connect, and metadata operation types, disabling create/update/delete operations.",
+      "required": false
+    },
+    "MDB_MCP_TELEMETRY": {
+      "description": "When set to disabled, disables telemetry collection.",
+      "required": false
+    },
+    "MDB_MCP_TRANSPORT": {
+      "description": "Either 'stdio' or 'http'.",
+      "required": false
+    },
+    "MDB_MCP_VECTOR_SEARCH_DIMENSIONS": {
+      "description": "Default number of dimensions for vector search embeddings.",
+      "required": false
+    },
+    "MDB_MCP_VECTOR_SEARCH_SIMILARITY_FUNCTION": {
+      "description": "Default similarity function for vector search: 'euclidean', 'cosine', or 'dotProduct'.",
+      "required": false
+    },
+    "MDB_MCP_VOYAGE_API_KEY": {
+      "description": "API key for Voyage AI embeddings service (required for vector search operations with text-to-embedding conversion).",
+      "required": false
+    }
+  },
+  "binArgs": [
+    "--allowRequestOverrides",
+    "--apiClientId",
+    "--apiClientSecret",
+    "--atlasTemporaryDatabaseUserLifetimeMs",
+    "--confirmationRequiredTools",
+    "--connectionString",
+    "--disabledTools",
+    "--dryRun",
+    "--embeddingsValidation",
+    "--exportCleanupIntervalMs",
+    "--exportTimeoutMs",
+    "--exportsPath",
+    "--httpHeaders",
+    "--httpHost",
+    "--httpPort",
+    "--idleTimeoutMs",
+    "--indexCheck",
+    "--logPath",
+    "--loggers",
+    "--maxBytesPerQuery",
+    "--maxDocumentsPerQuery",
+    "--notificationTimeoutMs",
+    "--previewFeatures",
+    "--readOnly",
+    "--telemetry",
+    "--transport",
+    "--vectorSearchDimensions",
+    "--vectorSearchSimilarityFunction",
+    "--voyageApiKey"
+  ]
+}
