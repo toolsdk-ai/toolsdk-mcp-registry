@@ -1,0 +1,38 @@
+{
+  "type": "mcp-server",
+  "packageName": "claude-flow",
+  "description": "AI orchestration with hive-mind swarms, neural networks, and 87 MCP tools for enterprise dev.",
+  "url": "https://github.com/ruvnet/claude-flow",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "ANTHROPIC_API_KEY": {
+      "description": "Anthropic API key for Claude AI models",
+      "required": false
+    },
+    "CLAUDE_FLOW_MODE": {
+      "description": "Operation mode: development, production, or test",
+      "required": false
+    },
+    "CLAUDE_FLOW_MEMORY_PATH": {
+      "description": "Path for persistent memory storage",
+      "required": false
+    },
+    "CLAUDE_FLOW_MAX_AGENTS": {
+      "description": "Maximum number of concurrent agents",
+      "required": false
+    },
+    "CLAUDE_FLOW_PORT": {
+      "description": "MCP server port",
+      "required": false
+    },
+    "GITHUB_TOKEN": {
+      "description": "GitHub personal access token for repository operations",
+      "required": false
+    },
+    "FLOW_NEXUS_API_KEY": {
+      "description": "Flow Nexus cloud platform API key",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "packageName": "korea-stock-mcp",
+  "description": "MCP server for korea stock",
+  "url": "https://github.com/jjlabsio/korea-stock-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "DART_API_KEY": {
+      "description": "DART API key for the service",
+      "required": true
+    },
+    "KRX_API_KEY": {
+      "description": "KRX API key for the service",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-kim-soung-won-mcp-smithery-exam",
+  "description": "Craft quick, personalized greetings by name. Generate ready-to-use greeting prompts for a consiste…",
+  "url": "https://github.com/Kim-soung-won/mcp-smithery-exam",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@Kim-soung-won/mcp-smithery-exam/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

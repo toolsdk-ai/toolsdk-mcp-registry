@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "kit-mcp-server",
+  "description": "MCP server for Kit.com (ConvertKit) - manage subscribers, tags, sequences, broadcasts",
+  "url": "https://github.com/aplaceforallmystuff/mcp-kit",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "KIT_API_KEY": {
+      "description": "Your Kit.com API key (v4)",
+      "required": true
+    }
+  }
+}

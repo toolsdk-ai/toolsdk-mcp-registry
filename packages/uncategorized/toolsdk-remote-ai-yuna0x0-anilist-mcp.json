@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-yuna0x0-anilist-mcp",
+  "description": "Access and interact with anime and manga data seamlessly. Retrieve detailed information about your…",
+  "url": "https://github.com/yuna0x0/anilist-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@yuna0x0/anilist-mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

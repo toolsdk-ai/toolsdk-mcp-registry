@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-demomagic-duckchain-mcp",
+  "description": "Explore blockchain data across addresses, tokens, blocks, and transactions. Investigate any transa…",
+  "url": "https://github.com/demomagic/duckchain-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@demomagic/duckchain-mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "ap-mcp-server",
+  "description": "Model Context Protocol (MCP) server for the Associated Press Media API",
+  "url": "https://github.com/rbonestell/ap-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "YOUR_API_KEY": {
+      "description": "Your API key for the service",
+      "required": true
+    }
+  }
+}

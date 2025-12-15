@@ -1,0 +1,26 @@
+{
+  "type": "mcp-server",
+  "packageName": "mnemex",
+  "description": "Temporal memory for AI with decay and reinforcement. Two-layer storage (JSONL + Markdown).",
+  "url": "https://github.com/simplemindedbot/mnemex",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "MNEMEX_STORAGE_PATH": {
+      "description": "Storage path for short-term memory JSONL files",
+      "required": false
+    },
+    "LTM_VAULT_PATH": {
+      "description": "Path to Obsidian vault for long-term memory",
+      "required": false
+    },
+    "MNEMEX_DECAY_MODEL": {
+      "description": "Decay model: power_law (default), exponential, or two_component",
+      "required": false
+    },
+    "MNEMEX_PL_HALFLIFE_DAYS": {
+      "description": "Half-life in days for power-law decay model",
+      "required": false
+    }
+  }
+}

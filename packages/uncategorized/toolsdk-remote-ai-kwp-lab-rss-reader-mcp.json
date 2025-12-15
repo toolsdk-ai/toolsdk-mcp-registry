@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-kwp-lab-rss-reader-mcp",
+  "description": "Track and browse RSS feeds with ease. Fetch the latest entries from any feed URL and extract full…",
+  "url": "https://github.com/kwp-lab/rss-reader-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@kwp-lab/rss-reader-mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

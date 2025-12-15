@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "packageName": "memphora-mcp",
+  "description": "Add persistent memory to AI assistants. Store and recall info across conversations.",
+  "url": "https://github.com/Memphora/memphora-mcp",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "MEMPHORA_API_KEY": {
+      "description": "Your Memphora API key from memphora.ai/dashboard",
+      "required": true
+    },
+    "MEMPHORA_USER_ID": {
+      "description": "Unique identifier for your memories",
+      "required": false
+    }
+  }
+}

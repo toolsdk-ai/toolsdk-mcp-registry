@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-rencosta2025-context7fork",
+  "description": "Get up-to-date, version-specific documentation and code examples from official sources directly in…",
+  "url": "https://github.com/renCosta2025/context7fork",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@renCosta2025/context7fork/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

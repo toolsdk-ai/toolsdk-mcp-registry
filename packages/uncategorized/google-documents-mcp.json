@@ -1,0 +1,26 @@
+{
+  "type": "mcp-server",
+  "packageName": "google-documents-mcp",
+  "description": "Allow AI systems to read and edit Google Docs.",
+  "url": "https://github.com/domdomegg/google-documents-mcp.git",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "GOOGLE_ACCESS_TOKEN": {
+      "description": "Google OAuth access token with Docs scope.",
+      "required": true
+    },
+    "MCP_TRANSPORT": {
+      "description": "Transport type.",
+      "required": true
+    },
+    "GOOGLE_CLIENT_ID": {
+      "description": "Google OAuth client ID.",
+      "required": true
+    },
+    "GOOGLE_CLIENT_SECRET": {
+      "description": "Google OAuth client secret.",
+      "required": true
+    }
+  }
+}

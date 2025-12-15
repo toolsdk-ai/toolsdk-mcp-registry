@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-chir24-unrealmcp",
+  "description": "Control Unreal Engine to browse assets, import content, and manage levels and sequences. Automate…",
+  "url": "https://github.com/ChiR24/Unreal_mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@ChiR24/unreal_mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

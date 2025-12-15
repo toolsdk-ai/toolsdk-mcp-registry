@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/com-sonatype-dependency-management-mcp-server",
+  "description": "Sonatype component intelligence: versions, security analysis, and Trust Score recommendations",
+  "url": "https://github.com/sonatype/dependency-management-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.guide.sonatype.com/mcp"
+    }
+  ]
+}

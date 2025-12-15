@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-dynamicendpoints-powershell-exec-mcp-server",
+  "description": "Execute PowerShell commands securely with controlled timeouts and input validation. Retrieve syste…",
+  "url": "https://github.com/DynamicEndpoints/PowerShell-Exec-MCP-Server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@DynamicEndpoints/powershell-exec-mcp-server/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

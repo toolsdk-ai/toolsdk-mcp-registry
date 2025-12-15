@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-bhushangitfull-file-mcp-smith",
+  "description": "Manage files and folders directly from your workspace. Read and write files, list directories, cre…",
+  "url": "https://github.com/bhushangitfull/file-mcp-smith",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@bhushangitfull/file-mcp-smith/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

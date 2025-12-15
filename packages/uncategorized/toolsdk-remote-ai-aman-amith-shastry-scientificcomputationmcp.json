@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-aman-amith-shastry-scientificcomputationmcp",
+  "description": "This MCP server enables users to perform scientific computations regarding linear algebra and vect…",
+  "url": "https://github.com/Aman-Amith-Shastry/scientific_computation_mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@Aman-Amith-Shastry/scientific_computation_mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

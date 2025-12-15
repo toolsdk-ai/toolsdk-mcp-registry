@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "packageName": "strava-mcp-server",
+  "description": "MCP server for accessing Strava API",
+  "url": "https://github.com/r-huijts/strava-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "STRAVA_CLIENT_ID": {
+      "description": "Your Strava API client ID",
+      "required": true
+    },
+    "STRAVA_CLIENT_SECRET": {
+      "description": "Your Strava API client secret",
+      "required": true
+    },
+    "STRAVA_ACCESS_TOKEN": {
+      "description": "Your Strava API access token",
+      "required": true
+    }
+  }
+}

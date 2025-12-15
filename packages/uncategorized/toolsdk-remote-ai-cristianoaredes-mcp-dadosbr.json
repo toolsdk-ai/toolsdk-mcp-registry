@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-cristianoaredes-mcp-dadosbr",
+  "description": "# MCP DadosBR Servidor MCP focado em dados públicos do Brasil. Oferece duas ferramentas simples e…",
+  "url": "https://github.com/cristianoaredes/mcp-dadosbr",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@cristianoaredes/mcp-dadosbr/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

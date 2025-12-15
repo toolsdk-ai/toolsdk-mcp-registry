@@ -1,0 +1,24 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/io-github-ksaklfszf921-riksdag-regering-mcp",
+  "description": "Svenska Riksdagens och Regeringskansliets öppna data - 27 verktyg för politik, dokument och analys",
+  "url": "https://github.com/KSAklfszf921/Riksdag-Regering-MCP",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "SUPABASE_URL": {
+      "description": "Supabase project URL (optional - defaults to public instance)",
+      "required": false
+    },
+    "SUPABASE_ANON_KEY": {
+      "description": "Supabase anonymous key (optional - defaults to public instance)",
+      "required": false
+    }
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://riksdag-regering-ai.onrender.com/mcp"
+    }
+  ]
+}

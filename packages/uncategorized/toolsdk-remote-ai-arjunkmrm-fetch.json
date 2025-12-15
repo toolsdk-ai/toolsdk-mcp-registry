@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-arjunkmrm-fetch",
+  "description": "Fetch web pages and extract exactly the content you need. Select elements with CSS and retrieve co…",
+  "url": "https://github.com/arjunkmrm/fetch",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@arjunkmrm/fetch/mcp"
+    }
+  ]
+}

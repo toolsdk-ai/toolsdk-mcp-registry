@@ -1,0 +1,30 @@
+{
+  "type": "mcp-server",
+  "packageName": "un-datacommons-mcp",
+  "description": "MCP server to query Data Commons indicators and observations (base or custom).",
+  "url": "https://github.com/therealtimex/un-datacommons-mcp",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "DC_API_KEY": {
+      "description": "Data Commons API key from apikeys.datacommons.org",
+      "required": true
+    },
+    "DC_TYPE": {
+      "description": "Type of Data Commons to use: base|custom (default: base)",
+      "required": false
+    },
+    "CUSTOM_DC_URL": {
+      "description": "Custom DC base URL when DC_TYPE=custom",
+      "required": false
+    },
+    "DC_ROOT_TOPIC_DCIDS": {
+      "description": "Comma-separated root topic DCIDs for custom DCs",
+      "required": false
+    },
+    "DC_SEARCH_SCOPE": {
+      "description": "Search scope for custom DCs: base_only|custom_only|base_and_custom",
+      "required": false
+    }
+  }
+}

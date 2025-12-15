@@ -1,0 +1,63 @@
+{
+  "type": "mcp-server",
+  "packageName": "@rnaga/wp-mcp",
+  "description": "MCP server for WordPress. Manage posts, users, comments, terms, metadata, and settings.",
+  "url": "https://github.com/rnaga/wp-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "LOCAL_USERNAME": {
+      "description": "WordPress username to assume for capability checks",
+      "required": true
+    },
+    "WP_DB_HOST": {
+      "description": "WordPress database host",
+      "required": true
+    },
+    "WP_DB_PORT": {
+      "description": "WordPress database port",
+      "required": false
+    },
+    "WP_DB_NAME": {
+      "description": "WordPress database name",
+      "required": true
+    },
+    "WP_DB_USER": {
+      "description": "WordPress database user",
+      "required": true
+    },
+    "WP_DB_PASSWORD": {
+      "description": "WordPress database password",
+      "required": true
+    },
+    "LOCAL_MULTISITE": {
+      "description": "Enable WordPress multisite mode",
+      "required": false
+    },
+    "LOCAL_DEFAULT_BLOG_ID": {
+      "description": "Default blog ID for multisite",
+      "required": false
+    },
+    "LOCAL_DEFAULT_SITE_ID": {
+      "description": "Default site ID for multisite",
+      "required": false
+    },
+    "LOCAL_SSL_ENABLED": {
+      "description": "Enable SSL for database connection",
+      "required": false
+    },
+    "LOCAL_SSL_CA_FILEPATH": {
+      "description": "Path to SSL CA certificate file",
+      "required": false
+    },
+    "LOCAL_SSL_CERT_FILEPATH": {
+      "description": "Path to SSL certificate file",
+      "required": false
+    },
+    "LOCAL_SSL_KEY_FILEPATH": {
+      "description": "Path to SSL key file",
+      "required": false
+    }
+  },
+  "binArgs": ["local", "start"]
+}

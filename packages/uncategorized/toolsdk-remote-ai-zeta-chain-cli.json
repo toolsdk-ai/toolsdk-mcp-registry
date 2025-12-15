@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-zeta-chain-cli",
+  "description": "Create friendly, customizable greetings for any name or audience. Break the ice in demos, onboardi…",
+  "url": "https://github.com/zeta-chain/cli",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@zeta-chain/cli/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

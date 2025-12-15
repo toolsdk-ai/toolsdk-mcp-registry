@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "packageName": "@atlassian-dc-mcp/bitbucket",
+  "description": "MCP server for Atlassian Bitbucket Data Center - interact with repositories and code",
+  "url": "https://github.com/b1ff/atlassian-dc-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "BITBUCKET_HOST": {
+      "description": "Bitbucket host domain (e.g. your-instance.atlassian.net)",
+      "required": false
+    },
+    "BITBUCKET_API_BASE_PATH": {
+      "description": "Bitbucket API base path (alternative to BITBUCKET_HOST)",
+      "required": false
+    },
+    "BITBUCKET_API_TOKEN": {
+      "description": "Bitbucket Personal Access Token or API token",
+      "required": true
+    }
+  }
+}

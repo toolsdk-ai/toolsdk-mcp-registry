@@ -1,0 +1,46 @@
+{
+  "type": "mcp-server",
+  "packageName": "@cashfreepayments/cashfree-mcp",
+  "description": "Cashfree MCP server for cashfree docs and APIs",
+  "url": "https://github.com/cashfree/cashfree-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "PAYMENTS_APP_ID": {
+      "description": "Payment Gateway App Id",
+      "required": false
+    },
+    "PAYMENTS_APP_SECRET": {
+      "description": "Payment Gateway App Secret",
+      "required": false
+    },
+    "PAYOUTS_APP_ID": {
+      "description": "Payouts App Id",
+      "required": false
+    },
+    "PAYOUTS_APP_SECRET": {
+      "description": "Payouts App Secret",
+      "required": false
+    },
+    "TWO_FA_PUBLIC_KEY_PEM_PATH": {
+      "description": "Path to the PEM file containing the public key for verifying 2FA signatures",
+      "required": false
+    },
+    "SECUREID_APP_ID": {
+      "description": "SecureId App Id",
+      "required": false
+    },
+    "SECUREID_APP_SECRET": {
+      "description": "SecureId App Secret",
+      "required": false
+    },
+    "TOOLS": {
+      "description": "Tools (Comma-separated list of modules to enable. Available options: pg, payouts, secureid)",
+      "required": true
+    },
+    "ENV": {
+      "description": "Environment (production/sandbox default: sandbox)",
+      "required": true
+    }
+  }
+}

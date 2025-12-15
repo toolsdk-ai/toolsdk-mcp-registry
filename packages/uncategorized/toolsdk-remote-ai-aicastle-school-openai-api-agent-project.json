@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-aicastle-school-openai-api-agent-project",
+  "description": "Fetch current stock prices and key data for symbols across global markets. Look up companies like…",
+  "url": "https://github.com/aicastle-school/openai-api-agent-project",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@aicastle-school/openai-api-agent-project/mcp"
+    }
+  ]
+}

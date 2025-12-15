@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@localstack/localstack-mcp-server",
+  "description": "A LocalStack MCP Server providing essential tools for local cloud development & testing",
+  "url": "https://github.com/localstack/localstack-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "LOCALSTACK_AUTH_TOKEN": {
+      "description": "LocalStack Auth Token (optional for Pro features)",
+      "required": false
+    }
+  }
+}

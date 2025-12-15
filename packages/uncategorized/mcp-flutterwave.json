@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "mcp-flutterwave",
+  "description": "MCP Server to interact with Flutterwave APIs.",
+  "url": "https://github.com/bajoski34/mcp-flutterwave",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "FLW_SECRET_KEY": {
+      "description": "Your SECRET API key for the service",
+      "required": true
+    }
+  }
+}

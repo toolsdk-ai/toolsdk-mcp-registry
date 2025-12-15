@@ -1,0 +1,50 @@
+{
+  "type": "mcp-server",
+  "packageName": "@smartbear/mcp",
+  "description": "MCP server for AI access to SmartBear tools, including BugSnag, Reflect, Swagger, PactFlow.",
+  "url": "https://github.com/SmartBear/smartbear-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "BUGSNAG_AUTH_TOKEN": {
+      "description": "BugSnag auth token. Leave empty to disable BugSnag tools. Learn more: https://developer.smartbear.com/smartbear-mcp/docs/bugsnag-integration",
+      "required": false
+    },
+    "BUGSNAG_PROJECT_API_KEY": {
+      "description": "BugSnag project API key (optional; narrows interactions to a single project). Learn more: https://developer.smartbear.com/smartbear-mcp/docs/bugsnag-integration",
+      "required": false
+    },
+    "REFLECT_API_TOKEN": {
+      "description": "Reflect API token. Leave empty to disable Reflect tools. Learn more: https://developer.smartbear.com/smartbear-mcp/docs/test-hub-integration",
+      "required": false
+    },
+    "SWAGGER_API_KEY": {
+      "description": "Swagger API key. Leave empty to disable Swagger tools. Learn more: https://developer.smartbear.com/smartbear-mcp/docs/swagger-portal-integration",
+      "required": false
+    },
+    "PACT_BROKER_BASE_URL": {
+      "description": "PactFlow/Pact Broker base URL. Leave empty to disable Pact tools. Learn more: https://developer.smartbear.com/smartbear-mcp/docs/contract-testing-with-pactflow",
+      "required": false
+    },
+    "PACT_BROKER_TOKEN": {
+      "description": "PactFlow authentication token. Learn more: https://developer.smartbear.com/smartbear-mcp/docs/contract-testing-with-pactflow",
+      "required": false
+    },
+    "PACT_BROKER_USERNAME": {
+      "description": "Pact Broker username (alternative to token). Learn more: https://developer.smartbear.com/smartbear-mcp/docs/contract-testing-with-pactflow",
+      "required": false
+    },
+    "PACT_BROKER_PASSWORD": {
+      "description": "Pact Broker password (alternative to token). Learn more: https://developer.smartbear.com/smartbear-mcp/docs/contract-testing-with-pactflow",
+      "required": false
+    },
+    "ZEPHYR_API_TOKEN": {
+      "description": "The Zephyr Cloud API token for authentication. Learn more: https://support.smartbear.com/zephyr/docs/en/rest-api/api-access-tokens-management.html",
+      "required": false
+    },
+    "ZEPHYR_BASE_URL": {
+      "description": " The Zephyr Cloud API base url. Should be changed depending on the region of your Jira instance. Learn more: https://support.smartbear.com/zephyr-scale-cloud/api-docs/#section/Authentication/Accessing-the-API",
+      "required": false
+    }
+  }
+}

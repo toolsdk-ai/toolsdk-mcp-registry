@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-akilat-spec-leave-manager-mcp",
+  "description": "Track and manage employee time off with quick balance lookups and streamlined applications. Find t…",
+  "url": "https://github.com/akilat-spec/leave-manager-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@akilat-spec/leave-manager-mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

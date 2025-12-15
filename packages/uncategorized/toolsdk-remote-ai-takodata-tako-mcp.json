@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-takodata-tako-mcp",
+  "description": "Provide real-time data querying and visualization by integrating Tako with your agents. Generate o…",
+  "url": "https://github.com/TakoData/tako-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@TakoData/tako-mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

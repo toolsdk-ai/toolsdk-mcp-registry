@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-a-ariff-canvas-instant-mcp",
+  "description": "Manage your Canvas coursework with quick access to courses, assignments, and grades. Track upcomin…",
+  "url": "https://github.com/a-ariff/canvas-instant-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@a-ariff/canvas-instant-mcp/mcp"
+    }
+  ]
+}

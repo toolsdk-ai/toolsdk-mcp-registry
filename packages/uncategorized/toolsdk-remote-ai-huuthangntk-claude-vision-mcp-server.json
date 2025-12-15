@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-huuthangntk-claude-vision-mcp-server",
+  "description": "Analyze images from multiple angles to extract detailed insights or quick summaries. Describe visu…",
+  "url": "https://github.com/huuthangntk/claude-vision-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@huuthangntk/claude-vision-mcp-server/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

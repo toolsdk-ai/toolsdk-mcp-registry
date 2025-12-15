@@ -1,0 +1,42 @@
+{
+  "type": "mcp-server",
+  "packageName": "promptheus",
+  "description": "AI-powered prompt refinement with adaptive questioning and multi-provider support (6+ LLM backends)",
+  "url": "https://github.com/abhichandra21/Promptheus.git",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "GOOGLE_API_KEY": {
+      "description": "Google Gemini API key (optional, at least one provider required)",
+      "required": false
+    },
+    "ANTHROPIC_API_KEY": {
+      "description": "Anthropic Claude API key (optional, at least one provider required)",
+      "required": false
+    },
+    "OPENAI_API_KEY": {
+      "description": "OpenAI API key (optional, at least one provider required)",
+      "required": false
+    },
+    "GROQ_API_KEY": {
+      "description": "Groq API key (optional, at least one provider required)",
+      "required": false
+    },
+    "QWEN_API_KEY": {
+      "description": "Alibaba Qwen API key (optional, at least one provider required)",
+      "required": false
+    },
+    "GLM_API_KEY": {
+      "description": "Zhipu GLM API key (optional, at least one provider required)",
+      "required": false
+    },
+    "PROMPTHEUS_PROVIDER": {
+      "description": "Override provider selection (gemini, anthropic, openai, groq, qwen, glm)",
+      "required": false
+    },
+    "PROMPTHEUS_MODEL": {
+      "description": "Override model selection for the chosen provider",
+      "required": false
+    }
+  }
+}

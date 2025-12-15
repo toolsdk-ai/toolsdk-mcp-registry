@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-ilyagusev-academiamcp",
+  "description": "Search arXiv and ACL Anthology, retrieve citations and references, and browse web sources to accel…",
+  "url": "https://github.com/IlyaGusev/academia_mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@IlyaGusev/academia_mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

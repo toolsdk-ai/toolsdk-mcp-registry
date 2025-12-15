@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-luminati-io-brightdata-mcp",
+  "description": "One MCP for the Web. Easily search, crawl, navigate, and extract websites without getting blocked.…",
+  "url": "https://github.com/brightdata/brightdata-mcp-sse",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@luminati-io/brightdata-mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

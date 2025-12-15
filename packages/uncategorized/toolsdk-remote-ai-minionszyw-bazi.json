@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-minionszyw-bazi",
+  "description": "Generate BaZi charts from birth details. Explore Four Pillars, solar terms, and Luck Pillars for d…",
+  "url": "https://github.com/minionszyw/bazi",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@minionszyw/bazi/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

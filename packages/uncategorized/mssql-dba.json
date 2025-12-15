@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "mssql-dba",
+  "description": "An MCP server that provides [describe what your server does]",
+  "url": "https://github.com/dba-i/mssql-dba",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "YOUR_API_KEY": {
+      "description": "Your API key for the service",
+      "required": true
+    }
+  }
+}

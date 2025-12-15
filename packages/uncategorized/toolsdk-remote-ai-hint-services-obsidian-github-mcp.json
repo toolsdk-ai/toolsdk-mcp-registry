@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-hint-services-obsidian-github-mcp",
+  "description": "Connect AI assistants to your GitHub-hosted Obsidian vault to seamlessly access, search, and analy…",
+  "url": "https://github.com/Hint-Services/obsidian-github-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@Hint-Services/obsidian-github-mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

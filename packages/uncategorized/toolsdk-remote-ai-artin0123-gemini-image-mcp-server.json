@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-artin0123-gemini-image-mcp-server",
+  "description": "Analyze images and videos with Gemini to get fast, reliable visual insights. Handle content from U…",
+  "url": "https://github.com/Artin0123/gemini-vision-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@Artin0123/gemini-image-mcp-server/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

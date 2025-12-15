@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-wgong-sqlite-mcp-server",
+  "description": "Explore, query, and inspect SQLite databases with ease. List tables, preview results, and view det…",
+  "url": "https://github.com/wgong/sqlite-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@wgong/sqlite-mcp-server/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

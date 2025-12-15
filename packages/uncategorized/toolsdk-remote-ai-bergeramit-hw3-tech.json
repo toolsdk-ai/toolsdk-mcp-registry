@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-bergeramit-bergeramit-hw3-tech",
+  "description": "Create friendly greetings and add two numbers instantly. Speed up simple tasks and streamline ligh…",
+  "url": "https://github.com/bergeramit/bergeramit-hw3-tech",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@bergeramit/bergeramit-hw3-tech/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

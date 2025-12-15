@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "packageName": "sauce-api-mcp",
+  "description": "An open-source MCP server that provides LLM access to the Sauce Labs API",
+  "url": "https://github.com/saucelabs/sauce-api-mcp",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "SAUCE_USERNAME": {
+      "description": "",
+      "required": false
+    },
+    "SAUCE_ACCESS_KEY": {
+      "description": "",
+      "required": false
+    }
+  }
+}

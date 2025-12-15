@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@symbioticsec/symbiotic-mcp-server",
+  "description": "Symbiotic CLI MCP Server for security scanning and analysis",
+  "url": "https://github.com/SymbioticSec/mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "SYMBIOTIC_API_TOKEN": {
+      "description": "Your Symbiotic Security personal access token",
+      "required": true
+    }
+  }
+}

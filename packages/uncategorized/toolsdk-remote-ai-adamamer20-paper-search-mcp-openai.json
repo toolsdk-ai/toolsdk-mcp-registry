@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-adamamer20-paper-search-mcp-openai",
+  "description": "Search and download academic papers from arXiv, PubMed, bioRxiv, medRxiv, Google Scholar, Semantic…",
+  "url": "https://github.com/adamamer20/paper-search-mcp-openai",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@adamamer20/paper-search-mcp-openai/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

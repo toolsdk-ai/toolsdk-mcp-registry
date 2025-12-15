@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "packageName": "neemee-mcp",
+  "description": "MCP client library and bridge for Neemee personal knowledge management system",
+  "url": "https://github.com/Paul-Bonneville-Labs/neemee-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "NEEMEE_API_KEY": {
+      "description": "API key for authenticating with Neemee API (required)",
+      "required": true
+    },
+    "NEEMEE_API_BASE_URL": {
+      "description": "Base URL for Neemee MCP server (optional, defaults to https://neemee.app/mcp)",
+      "required": false
+    }
+  }
+}

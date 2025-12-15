@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-pixdataorg-coderide",
+  "description": "CodeRide eliminates the context reset cycle once and for all. Through MCP integration, it seamless…",
+  "url": "https://github.com/PixdataOrg/coderide-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@PixdataOrg/coderide/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

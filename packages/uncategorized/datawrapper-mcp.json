@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "datawrapper-mcp",
+  "description": "A Model Context Protocol (MCP) server for creating Datawrapper charts using AI assistants",
+  "url": "https://github.com/palewire/datawrapper-mcp",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "DATAWRAPPER_ACCESS_TOKEN": {
+      "description": "Datawrapper API Access Token",
+      "required": true
+    }
+  }
+}

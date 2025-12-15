@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-data-mindset-sts-google-forms-mcp",
+  "description": "Create and manage Google Forms to run surveys and collect data. Add text and multiple-choice quest…",
+  "url": "https://github.com/data-mindset/sts-google-forms-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@data-mindset/sts-google-forms-mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

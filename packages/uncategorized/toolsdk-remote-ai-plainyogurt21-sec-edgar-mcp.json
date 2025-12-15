@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-plainyogurt21-sec-edgar-mcp",
+  "description": "Provide AI assistants with real-time access to official SEC EDGAR filings and financial data. Enab…",
+  "url": "https://github.com/plainyogurt21/sec-edgar-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@plainyogurt21/sec-edgar-mcp/mcp"
+    }
+  ]
+}

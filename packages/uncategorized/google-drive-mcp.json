@@ -1,0 +1,26 @@
+{
+  "type": "mcp-server",
+  "packageName": "google-drive-mcp",
+  "description": "Allow AI systems to list, search, upload, download, and manage files and folders in Google Drive.",
+  "url": "https://github.com/domdomegg/google-drive-mcp.git",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "GOOGLE_ACCESS_TOKEN": {
+      "description": "Google OAuth access token with Drive scopes.",
+      "required": true
+    },
+    "MCP_TRANSPORT": {
+      "description": "Transport type.",
+      "required": true
+    },
+    "GOOGLE_CLIENT_ID": {
+      "description": "Google OAuth client ID.",
+      "required": true
+    },
+    "GOOGLE_CLIENT_SECRET": {
+      "description": "Google OAuth client secret.",
+      "required": true
+    }
+  }
+}

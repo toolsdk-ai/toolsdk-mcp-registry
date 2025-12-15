@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-waystation-airtable",
+  "description": "Access and manage your Airtable bases, tables, and records seamlessly",
+  "url": "https://github.com/waystation-ai/mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://waystation.ai/airtable/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

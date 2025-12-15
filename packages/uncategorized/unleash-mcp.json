@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "packageName": "@unleash/mcp",
+  "description": "MCP server for managing Unleash feature flags",
+  "url": "https://github.com/Unleash/unleash-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "UNLEASH_BASE_URL": {
+      "description": "Your Unleash instance URL (local or hosted)",
+      "required": true
+    },
+    "UNLEASH_PAT": {
+      "description": "Your Unleash Personal Access Token (PAT) for authentication",
+      "required": true
+    },
+    "UNLEASH_DEFAULT_PROJECT": {
+      "description": "The default project ID the MCP should use",
+      "required": false
+    }
+  }
+}

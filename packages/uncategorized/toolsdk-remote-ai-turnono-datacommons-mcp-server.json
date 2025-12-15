@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-turnono-datacommons-mcp-server",
+  "description": "Discover statistical indicators and topics in Data Commons. Retrieve observations for specific var…",
+  "url": "https://github.com/turnono/datacommons-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@turnono/datacommons-mcp-server/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

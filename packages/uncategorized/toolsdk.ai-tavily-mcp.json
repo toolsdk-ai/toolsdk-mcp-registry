@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk.ai/tavily-mcp",
+  "description": "MCP server for advanced web search using Tavily API.",
+  "url": "https://github.com/Seey215/tavily-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "TAVILY_API_KEY": {
+      "description": "Your TAVILY_API_KEY",
+      "required": true
+    }
+  }
+}

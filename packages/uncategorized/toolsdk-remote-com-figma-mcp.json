@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/com-figma-mcp-mcp",
+  "description": "The Figma MCP server brings Figma design context directly into your AI workflow.",
+  "url": "https://github.com/figma/mcp-server-guide",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.figma.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/io-scorecard-mcp",
+  "description": "MCP server providing access to the Scorecard API to evaluate and optimize LLM systems.",
+  "url": "https://github.com/scorecard-ai/scorecard-node",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "SCORECARD_API_KEY": {
+      "description": "Scorecard API key for authentication. Get your API key from https://app.scorecard.io/settings",
+      "required": true
+    }
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.scorecard.io/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

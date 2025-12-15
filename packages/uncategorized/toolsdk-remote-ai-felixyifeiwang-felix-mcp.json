@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-felixyifeiwang-felix-mcp-smithery",
+  "description": "Streamline your workflow with Felix. Integrate it into your workspace and tailor its behavior to y…",
+  "url": "https://github.com/FelixYifeiWang/felix-mcp-smithery",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@FelixYifeiWang/felix-mcp-smithery/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

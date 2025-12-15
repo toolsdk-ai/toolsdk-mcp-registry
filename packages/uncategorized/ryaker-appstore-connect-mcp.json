@@ -1,0 +1,50 @@
+{
+  "type": "mcp-server",
+  "packageName": "@ryaker/appstore-connect-mcp",
+  "description": "MCP server for Apple Store Connect API integration with OAuth authentication support",
+  "url": "https://github.com/ryaker/appstore-connect-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "APPLE_KEY_ID": {
+      "description": "Apple App Store Connect API Key ID",
+      "required": true
+    },
+    "APPLE_ISSUER_ID": {
+      "description": "Apple App Store Connect Issuer ID",
+      "required": true
+    },
+    "APPLE_PRIVATE_KEY": {
+      "description": "Apple App Store Connect Private Key (base64 encoded or raw)",
+      "required": true
+    },
+    "APPLE_BUNDLE_ID": {
+      "description": "Optional: Specific Bundle ID to filter apps",
+      "required": false
+    },
+    "APPLE_APP_STORE_ID": {
+      "description": "Optional: Specific App Store ID",
+      "required": false
+    },
+    "OAUTH_ENABLED": {
+      "description": "Enable OAuth authentication (true/false)",
+      "required": false
+    },
+    "OAUTH_ISSUER": {
+      "description": "OAuth issuer URL (e.g., https://your-tenant.auth0.com)",
+      "required": false
+    },
+    "OAUTH_AUDIENCE": {
+      "description": "OAuth audience URL",
+      "required": false
+    },
+    "OAUTH_JWKS_URI": {
+      "description": "OAuth JWKS URI for token validation",
+      "required": false
+    },
+    "SERVER_URL": {
+      "description": "Server URL for OAuth deployment",
+      "required": false
+    }
+  }
+}

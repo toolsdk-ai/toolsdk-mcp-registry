@@ -1,0 +1,30 @@
+{
+  "type": "mcp-server",
+  "packageName": "elasticsearch-mcp-server",
+  "description": "MCP server for interacting with Elasticsearch",
+  "url": "https://github.com/cr7258/elasticsearch-mcp-server",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "ELASTICSEARCH_HOSTS": {
+      "description": "Comma-separated list of Elasticsearch hosts (e.g., https://localhost:9200)",
+      "required": false
+    },
+    "ELASTICSEARCH_API_KEY": {
+      "description": "API key for Elasticsearch or Elastic Cloud authentication (recommended)",
+      "required": false
+    },
+    "ELASTICSEARCH_USERNAME": {
+      "description": "Username for basic authentication (alternative to API key)",
+      "required": false
+    },
+    "ELASTICSEARCH_PASSWORD": {
+      "description": "Password for basic authentication (used with ELASTICSEARCH_USERNAME)",
+      "required": false
+    },
+    "ELASTICSEARCH_VERIFY_CERTS": {
+      "description": "Whether to verify SSL certificates (true/false)",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@withinfocus/tba-mcp-server",
+  "description": "The Blue Alliance MCP Server",
+  "url": "https://github.com/withinfocus/tba-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "TBA_API_KEY": {
+      "description": "The Blue Alliance API key",
+      "required": true
+    }
+  }
+}

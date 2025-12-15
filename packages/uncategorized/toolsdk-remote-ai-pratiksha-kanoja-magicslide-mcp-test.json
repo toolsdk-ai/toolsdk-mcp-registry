@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-pratiksha-kanoja-magicslide-mcp-test",
+  "description": "Create polished slide decks from text or YouTube links in seconds. Fetch video transcripts to tran…",
+  "url": "https://github.com/Pratiksha-Kanoja/magicslide-mcp-test",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@Pratiksha-Kanoja/magicslide-mcp-test/mcp"
+    }
+  ]
+}

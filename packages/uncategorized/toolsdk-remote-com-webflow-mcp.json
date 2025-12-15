@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/com-webflow-mcp",
+  "description": "AI-powered design and management for Webflow Sites",
+  "url": "https://github.com/webflow/mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.webflow.com/mcp"
+    }
+  ]
+}

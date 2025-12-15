@@ -1,0 +1,30 @@
+{
+  "type": "mcp-server",
+  "packageName": "@davidfuchs/mcp-uptime-kuma",
+  "description": "A Model Context Protocol (MCP) server for Uptime Kuma version 2.",
+  "url": "https://github.com/DavidFuchs/mcp-uptime-kuma",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "UPTIME_KUMA_URL": {
+      "description": "The URL of your Uptime Kuma instance",
+      "required": true
+    },
+    "UPTIME_KUMA_USERNAME": {
+      "description": "Your Uptime Kuma username (not required if using JWT token authentication or if authentication is disabled)",
+      "required": false
+    },
+    "UPTIME_KUMA_PASSWORD": {
+      "description": "Your Uptime Kuma password (not required if using JWT token authentication or if authentication is disabled)",
+      "required": false
+    },
+    "UPTIME_KUMA_2FA_TOKEN": {
+      "description": "Your 2FA token (only required if two-factor authentication is enabled on your account)",
+      "required": false
+    },
+    "UPTIME_KUMA_JWT_TOKEN": {
+      "description": "Your JWT token for authentication (takes precedence over username/password if provided)",
+      "required": false
+    }
+  }
+}

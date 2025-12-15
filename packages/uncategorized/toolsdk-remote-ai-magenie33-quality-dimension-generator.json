@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-magenie33-quality-dimension-generator",
+  "description": "Generate tailored quality criteria and scoring guides from your task descriptions. Refine objectiv…",
+  "url": "https://github.com/magenie33/quality-dimension-generator",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@magenie33/quality-dimension-generator/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

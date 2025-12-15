@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-zwldarren-akshare-one-mcp",
+  "description": "Provide access to Chinese stock market data including historical prices, real-time data, news, and…",
+  "url": "https://github.com/zwldarren/akshare-one-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@zwldarren/akshare-one-mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

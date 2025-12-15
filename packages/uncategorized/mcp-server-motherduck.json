@@ -1,0 +1,48 @@
+{
+  "type": "mcp-server",
+  "packageName": "mcp-server-motherduck",
+  "description": "Fast analytics and data processing with DuckDB and MotherDuck",
+  "url": "https://github.com/motherduckdb/mcp-server-motherduck",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "motherduck_token": {
+      "description": "Access token to use for MotherDuck database connections",
+      "required": false
+    },
+    "HOME": {
+      "description": "Home directory for DuckDB (used as default if --home-dir not specified)",
+      "required": false
+    },
+    "AWS_ACCESS_KEY_ID": {
+      "description": "AWS access key for S3 database connections",
+      "required": false
+    },
+    "AWS_SECRET_ACCESS_KEY": {
+      "description": "AWS secret access key for S3 database connections",
+      "required": false
+    },
+    "AWS_SESSION_TOKEN": {
+      "description": "AWS session token for temporary credentials (IAM roles, AWS SSO, EC2 instance profiles)",
+      "required": false
+    },
+    "AWS_DEFAULT_REGION": {
+      "description": "AWS region for S3 database connections",
+      "required": false
+    }
+  },
+  "binArgs": [
+    "--transport",
+    "--port",
+    "--host",
+    "--db-path",
+    "--motherduck-token",
+    "--read-only",
+    "--home-dir",
+    "--saas-mode",
+    "--json-response",
+    "--max-rows",
+    "--max-chars",
+    "--query-timeout"
+  ]
+}

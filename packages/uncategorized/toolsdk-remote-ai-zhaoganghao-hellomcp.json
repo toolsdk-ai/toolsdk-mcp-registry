@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-zhaoganghao-hellomcp",
+  "description": "Greet people by name with friendly, concise messages. Explore the origin of 'Hello, World' for fun…",
+  "url": "https://github.com/zhaoganghao/hellomcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@zhaoganghao/hellomcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

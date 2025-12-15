@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-222wcnm-bilistalkermcp",
+  "description": "Track Bilibili creators and get the latest updates on videos, dynamics, and articles. Fetch user p…",
+  "url": "https://github.com/222wcnm/BiliStalkerMCP",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@222wcnm/bilistalkermcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-jirispilka-actors-mcp-server",
+  "description": "Greet anyone by name with friendly, personalized messages. Explore the origin of Hello, World thro…",
+  "url": "https://github.com/jirispilka/actors-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@jirispilka/actors-mcp-server/mcp"
+    }
+  ]
+}

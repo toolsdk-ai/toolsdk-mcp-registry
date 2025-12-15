@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "packageName": "@antv/mcp-server-chart",
+  "description": "A Model Context Protocol server for generating charts using AntV.",
+  "url": "https://github.com/antvis/mcp-server-chart",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "VIS_REQUEST_SERVER": {
+      "description": "Custom chart generation service URL for private deployment",
+      "required": false
+    },
+    "SERVICE_ID": {
+      "description": "Service identifier for chart generation records",
+      "required": false
+    },
+    "DISABLED_TOOLS": {
+      "description": "Comma-separated list of tool names to disable",
+      "required": false
+    }
+  }
+}

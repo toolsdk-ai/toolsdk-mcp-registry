@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-arjunkmrm-ahoy",
+  "description": "Send friendly, personalized greetings by name. Switch to a playful pirate voice for themed salutat…",
+  "url": "https://github.com/arjunkmrm/ahoy",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@arjunkmrm/ahoy/mcp"
+    }
+  ]
+}

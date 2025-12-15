@@ -1,0 +1,46 @@
+{
+  "type": "mcp-server",
+  "packageName": "btp-sap-odata-to-mcp-server",
+  "description": "Enterprise SAP OData to MCP Server with AI capabilities and Cloud Foundry integration",
+  "url": "https://github.com/Raistlin82/btp-sap-odata-to-mcp-server-optimized",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "SAP_IAS_URL": {
+      "description": "URL of the SAP Identity Authentication Service tenant",
+      "required": true
+    },
+    "SAP_IAS_CLIENT_ID": {
+      "description": "Client ID for the OAuth application in IAS",
+      "required": true
+    },
+    "SAP_IAS_CLIENT_SECRET": {
+      "description": "Client Secret for the OAuth application in IAS",
+      "required": true
+    },
+    "SAP_DESTINATION_NAME": {
+      "description": "Name of the BTP destination used for service discovery",
+      "required": true
+    },
+    "ODATA_DISCOVERY_MODE": {
+      "description": "OData discovery mode: pattern, business, whitelist, or all",
+      "required": false
+    },
+    "ODATA_INCLUDE_PATTERNS": {
+      "description": "Comma-separated patterns to include (pattern mode)",
+      "required": false
+    },
+    "ODATA_EXCLUDE_PATTERNS": {
+      "description": "Comma-separated patterns to exclude (pattern mode)",
+      "required": false
+    },
+    "PORT": {
+      "description": "The port on which the Express server will listen",
+      "required": false
+    },
+    "NODE_ENV": {
+      "description": "The application's operating environment",
+      "required": false
+    }
+  }
+}

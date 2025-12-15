@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-hithereiamaliff-mcp-datagovmy",
+  "description": "This MCP server provides seamless access to Malaysia's government open data, including datasets, w…",
+  "url": "https://github.com/hithereiamaliff/mcp-datagovmy",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@hithereiamaliff/mcp-datagovmy/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

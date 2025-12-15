@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-arjunkmrm-scrapermcpel",
+  "description": "Extract and parse web pages into clean HTML, links, or Markdown. Handle dynamic, complex, or block…",
+  "url": "https://github.com/arjunkmrm/ScraperMcp_el",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@arjunkmrm/scrapermcp_el/mcp"
+    }
+  ]
+}

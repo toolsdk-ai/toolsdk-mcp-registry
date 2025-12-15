@@ -1,0 +1,30 @@
+{
+  "type": "mcp-server",
+  "packageName": "mcp-neo4j-memory",
+  "description": "MCP Neo4j Knowledge Graph Memory Server",
+  "url": "https://github.com/neo4j-contrib/mcp-neo4j",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "NEO4J_URI": {
+      "description": "Neo4j connection URI",
+      "required": true
+    },
+    "NEO4J_USERNAME": {
+      "description": "Neo4j username",
+      "required": true
+    },
+    "NEO4J_PASSWORD": {
+      "description": "Neo4j password",
+      "required": true
+    },
+    "NEO4J_DATABASE": {
+      "description": "Neo4j database name",
+      "required": false
+    },
+    "NEO4J_NAMESPACE": {
+      "description": "Tool namespace prefix",
+      "required": false
+    }
+  }
+}

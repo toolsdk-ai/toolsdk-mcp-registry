@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/io-cycloid-mcp-server",
+  "description": "An MCP server that let you interact with Cycloid.io Internal Development Portal and Platform",
+  "url": "https://github.com/cycloidio/cycloid-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.cycloid.io/mcp"
+    }
+  ]
+}

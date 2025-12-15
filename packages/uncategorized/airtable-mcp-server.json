@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "airtable-mcp-server",
+  "description": "Read and write access to Airtable database schemas, tables, and records.",
+  "url": "https://github.com/domdomegg/airtable-mcp-server.git",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "AIRTABLE_API_KEY": {
+      "description": "Airtable personal access token (e.g., pat123.abc123). Create at https://airtable.com/create/tokens/new with scopes: schema.bases:read, data.records:read, and optionally schema.bases:write and data.records:write.",
+      "required": true
+    }
+  }
+}

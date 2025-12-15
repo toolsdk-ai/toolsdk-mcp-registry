@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "packageName": "@pubnub/mcp",
+  "description": "PubNub MCP for Real-time messaging. API Access and SDK documentation.",
+  "url": "https://github.com/pubnub/pubnub-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "PUBNUB_PUBLISH_KEY": {
+      "description": "Your PubNub publish key for sending messages",
+      "required": false
+    },
+    "PUBNUB_SUBSCRIBE_KEY": {
+      "description": "Your PubNub subscribe key for receiving messages and history",
+      "required": false
+    }
+  }
+}

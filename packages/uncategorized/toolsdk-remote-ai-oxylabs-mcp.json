@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-oxylabs-oxylabs-mcp",
+  "description": "Fetch and process content from specified URLs using the Oxylabs Web Scraper API.",
+  "url": "https://github.com/oxylabs/oxylabs-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@oxylabs/oxylabs-mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

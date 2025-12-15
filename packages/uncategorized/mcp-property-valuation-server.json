@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "mcp-property-valuation-server",
+  "description": "MCP服务器，提供房产小区评级和评估功能",
+  "url": "https://github.com/creis-ai/mcp-property-valuation-server",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "MCP-INDUSTRY-APPID": {
+      "description": "Industry app ID for authentication",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-arjunkmrm-mango-sago",
+  "description": "Create cheerful, personalized greetings in seconds. Switch to playful pirate-speak for extra flair…",
+  "url": "https://github.com/arjunkmrm/mango-sago",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@arjunkmrm/mango-sago/mcp"
+    }
+  ]
+}

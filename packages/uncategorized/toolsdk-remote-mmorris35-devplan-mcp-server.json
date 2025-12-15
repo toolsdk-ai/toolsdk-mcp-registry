@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/io-github-mmorris35-devplan-mcp-server",
+  "description": "Transform project ideas into paint-by-numbers development plans with phases, tasks, and subtasks.",
+  "url": "https://github.com/mmorris35/devplan-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://devplan-mcp-server.mike-c63.workers.dev/mcp"
+    }
+  ]
+}

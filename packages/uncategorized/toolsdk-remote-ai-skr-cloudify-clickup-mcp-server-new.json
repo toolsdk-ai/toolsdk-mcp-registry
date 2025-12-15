@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-skr-cloudify-clickup-mcp-server-new",
+  "description": "Manage your ClickUp workspace by creating, updating, and organizing tasks, lists, folders, and tag…",
+  "url": "https://github.com/skr-cloudify/clickup-mcp-server-new",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@skr-cloudify/clickup-mcp-server-new/mcp"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-metehangzl-pokemcp",
+  "description": "Provide detailed Pokémon data and information through a standardized MCP interface. Enable LLMs an…",
+  "url": "https://github.com/MetehanGZL/PokeMCP",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@MetehanGZL/pokemcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

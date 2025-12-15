@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "packageName": "mcp-image",
+  "description": "AI image generation MCP server using Nano Banana Pro with intelligent prompt enhancement",
+  "url": "https://github.com/shinpr/mcp-image",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "GEMINI_API_KEY": {
+      "description": "Google Gemini API key for image generation (get from https://aistudio.google.com/apikey)",
+      "required": true
+    },
+    "IMAGE_OUTPUT_DIR": {
+      "description": "Absolute path to directory where generated images will be saved (defaults to ./output)",
+      "required": false
+    },
+    "SKIP_PROMPT_ENHANCEMENT": {
+      "description": "Set to 'true' to disable automatic prompt optimization and use direct prompts",
+      "required": false
+    }
+  }
+}

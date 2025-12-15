@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-junojunhyun-festival-finder-mcp",
+  "description": "Discover festivals worldwide by location, date, and genre. Compare options with key details like d…",
+  "url": "https://github.com/JunoJunHyun/Festival-Finder-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@JunoJunHyun/festival-finder-mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

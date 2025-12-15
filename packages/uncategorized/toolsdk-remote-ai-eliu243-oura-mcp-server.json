@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-eliu243-oura-mcp-server",
+  "description": "Connect your Oura Ring account and enable access to your wellness data in apps and automations. In…",
+  "url": "https://github.com/eliu243/oura-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@eliu243/oura-mcp-server/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

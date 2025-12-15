@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-cuongpo-coti-mcp",
+  "description": "Connect to the COTI blockchain to manage accounts, transfer native tokens, and deploy and operate…",
+  "url": "https://github.com/cuongpo/coti-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@cuongpo/coti-mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "type": "mcp-server",
+  "packageName": "cml-mcp",
+  "description": "An MCP server that provides access to common Cisco Modeling Labs (CML) operations.",
+  "url": "https://github.com/xorrkaz/cml-mcp",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "CML_URL": {
+      "description": "URL for the CML Server",
+      "required": true
+    },
+    "CML_USERNAME": {
+      "description": "Username for CML authentication",
+      "required": true
+    },
+    "CML_PASSWORD": {
+      "description": "Password for CML authentication",
+      "required": true
+    },
+    "PYATS_USERNAME": {
+      "description": "Username for authentication to devices running in CML",
+      "required": false
+    },
+    "PYATS_PASSWORD": {
+      "description": "Password for authentication to devices running in CML",
+      "required": false
+    },
+    "PYATS_AUTH_PASS": {
+      "description": "Enable password for authentication to devices running in CML",
+      "required": false
+    }
+  }
+}

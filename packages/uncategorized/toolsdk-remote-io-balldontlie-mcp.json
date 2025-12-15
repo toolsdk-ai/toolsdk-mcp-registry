@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/io-balldontlie-mcp",
+  "description": "Provides access to live sports data and analytics from BALLDONTLIE: The Sports API",
+  "url": "https://github.com/balldontlie-api/mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.balldontlie.io/mcp"
+    }
+  ]
+}

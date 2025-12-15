@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-ctaylor86-mcp-video-download-server",
+  "description": "Connect your video workflows to cloud storage. Organize and access video assets across projects wi…",
+  "url": "https://github.com/ctaylor86/mcp-video-download-server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@ctaylor86/mcp-video-download-server/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

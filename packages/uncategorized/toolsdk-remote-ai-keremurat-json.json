@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-keremurat-json",
+  "description": "Compare two JSON files deeply without worrying about key or array order. Detect missing, extra, an…",
+  "url": "https://github.com/keremurat/mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@keremurat/json/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

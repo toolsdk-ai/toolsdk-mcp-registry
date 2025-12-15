@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/io-prisma-mcp",
+  "description": "MCP server for managing Prisma Postgres.",
+  "url": "https://github.com/prisma/mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.prisma.io/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

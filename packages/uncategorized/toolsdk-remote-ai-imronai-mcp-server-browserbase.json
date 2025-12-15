@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-imronai-mcp-server-browserbase",
+  "description": "Automate cloud browsers to navigate websites, interact with elements, and extract structured data.…",
+  "url": "https://github.com/ImRonAI/mcp-server-browserbase",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@ImRonAI/mcp-server-browserbase/mcp"
+    }
+  ]
+}

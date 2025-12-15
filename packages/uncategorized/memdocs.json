@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "packageName": "memdocs",
+  "description": "Git-native project memory for AI assistants with enterprise-grade audit compliance",
+  "url": "https://github.com/Smart-AI-Memory/memdocs",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "PROJECT_ROOT": {
+      "description": "Root directory of the project to track",
+      "required": false
+    },
+    "ANTHROPIC_API_KEY": {
+      "description": "API key for Claude AI operations (summarization, analysis)",
+      "required": true
+    }
+  }
+}

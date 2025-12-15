@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-dsharipova-mcp-hw",
+  "description": "Create personalized greetings by name in the tone you choose. Get quick suggestions for friendly i…",
+  "url": "https://github.com/dsharipova/mcp-hw",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@dsharipova/mcp-hw/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

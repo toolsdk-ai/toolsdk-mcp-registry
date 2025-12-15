@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/com-streamlinehq-mcp",
+  "description": "The Streamline MCP Server allow users to search, and download assets in PNG or SVG formats.",
+  "url": "https://github.com/webalys-hq/streamline-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://public-api.streamlinehq.com/mcp"
+    }
+  ]
+}

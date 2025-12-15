@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ci-git-mymlh-mcp-server",
+  "description": "OAuth-enabled MyMLH MCP server for accessing MyMLH data.",
+  "url": "https://github.com/wei/mymlh-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mymlh-mcp.git.ci/mcp"
+    }
+  ]
+}

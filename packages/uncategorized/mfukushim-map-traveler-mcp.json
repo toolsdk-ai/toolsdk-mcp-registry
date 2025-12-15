@@ -1,0 +1,154 @@
+{
+  "type": "mcp-server",
+  "packageName": "@mfukushim/map-traveler-mcp",
+  "description": "Virtual traveler library for MCP",
+  "url": "https://github.com/mfukushim/map-traveler-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "MT_GOOGLE_MAP_KEY": {
+      "description": "[Map] Google Map API key",
+      "required": false
+    },
+    "MT_GEMINI_IMAGE_KEY": {
+      "description": "[Image.gemini] Gemini Image Api key",
+      "required": false
+    },
+    "MT_MAX_RETRY_GEMINI": {
+      "description": "[Image.gemini] Number of retries when generating Gemini images Default: 0",
+      "required": false
+    },
+    "MT_AVATAR_IMAGE_URI": {
+      "description": "[Image.gemini] Character reference image uri (file:// or https://) when generating Gemini image. Multiple settings can be made by separating them with the '|'. When multiple settings are made, they will be selected randomly.",
+      "required": false
+    },
+    "MT_MAP_API_URL": {
+      "description": "[Map.etc] Optional: Map API custom endpoint. Example: direction=https://xxxx,places=https://yyyy ",
+      "required": false
+    },
+    "MT_TIME_SCALE": {
+      "description": "[Map] Optional:Scale of travel time on real roads duration. default 4",
+      "required": false
+    },
+    "MT_SQLITE_PATH": {
+      "description": "[db.local] db save path: e.g. %USERPROFILE%/Desktop/traveler.sqlite ,$HOME/traveler.sqlite ",
+      "required": false
+    },
+    "MT_TURSO_URL": {
+      "description": "[db.api] Turso sqlite API URL",
+      "required": false
+    },
+    "MT_TURSO_TOKEN": {
+      "description": "[db.api] Turso sqlite API access token",
+      "required": false
+    },
+    "MT_REMBG_PATH": {
+      "description": "[rembg.local] absolute path of the installed rembg cli",
+      "required": false
+    },
+    "MT_REMBG_URL": {
+      "description": "[rembg.api] withoutbg.com rembg API URL",
+      "required": false
+    },
+    "MT_REMBG_WO_KEY": {
+      "description": "[rembg.api] withoutbg.com rembg API key",
+      "required": false
+    },
+    "MT_PIXAI_KEY": {
+      "description": "[Image.pixAi] pixAi API key",
+      "required": false
+    },
+    "MT_SD_KEY": {
+      "description": "[Image.sd] Stability.ai image generation API key",
+      "required": false
+    },
+    "MT_PIXAI_MODEL_ID": {
+      "description": "[Image.pixAi] Optional: pixAi ModelId, if not set use default model 1648918127446573124 ",
+      "required": false
+    },
+    "MT_COMFY_URL": {
+      "description": "[Image.local.ComfyUi] Option: Generate image using ComfyUI API at specified URL. Example: http://192.168.1.100:8188",
+      "required": false
+    },
+    "MT_COMFY_WORKFLOW_T2I": {
+      "description": "[Image.local.ComfyUi] Optional: Path to API workflow file when using text to image with ComfyUI. If not specified: assets/comfy/t2i_sample.json",
+      "required": false
+    },
+    "MT_COMFY_WORKFLOW_I2I": {
+      "description": "[Image.local.ComfyUi] Optional: Path of API workflow file when image to image in ComfyUI. If not specified: assets/comfy/i2i_sample.json",
+      "required": false
+    },
+    "MT_COMFY_PARAMS": {
+      "description": "[Image.local.ComfyUi] Optional: Variable values to send to the workflow via comfyUI API",
+      "required": false
+    },
+    "MT_FIXED_MODEL_PROMPT": {
+      "description": "[Image] Optional: Fixed avatar generation prompt. You will no longer be able to change your avatar during conversations.",
+      "required": false
+    },
+    "MT_BODY_AREA_RATIO": {
+      "description": "[Image] Optional: Acceptable avatar image area ratio. default 0.042",
+      "required": false
+    },
+    "MT_BODY_HW_RATIO": {
+      "description": "[Image] Optional: Acceptable avatar image aspect ratios. default 1.5~2.3",
+      "required": false
+    },
+    "MT_BODY_WINDOW_RATIO_W": {
+      "description": "[Image] Optional: Avatar composite window horizontal ratio. default 0.5",
+      "required": false
+    },
+    "MT_BODY_WINDOW_RATIO_H": {
+      "description": "[Image] Optional: Avatar composite window aspect ratio. default 0.75",
+      "required": false
+    },
+    "MT_BS_ID": {
+      "description": "[Sns.Bs] Bluesky sns registration address",
+      "required": false
+    },
+    "MT_BS_PASS": {
+      "description": "[Sns.Bs] bluesky sns password",
+      "required": false
+    },
+    "MT_BS_HANDLE": {
+      "description": "[Sns.Bs] bluesky sns handle name: e.g. xxxxxxxx.bsky.social ",
+      "required": false
+    },
+    "MT_FILTER_TOOLS": {
+      "description": "[etc] Optional: Directly filter the tools to be used. All are available if not specified. e.g. tips,set_traveler_location",
+      "required": false
+    },
+    "MT_MOVE_MODE": {
+      "description": "[etc] Option: Specify whether the movement mode is 'realtime' or 'skip'. default realtime",
+      "required": false
+    },
+    "MT_IMAGE_WIDTH": {
+      "description": "[Image] Option: Output image width (pixels) Default is 512",
+      "required": false
+    },
+    "MT_NO_IMAGE": {
+      "description": "[Image] Options: 'true' = do not output image, not specified = output image if possible, default is not specified",
+      "required": false
+    },
+    "MT_NO_AVATAR": {
+      "description": "[Image] Option: 'true' = Output StreetView image as is without avatar superimposition. Not specified = Superimpose avatar image. Default is not specified.",
+      "required": false
+    },
+    "MT_FEED_TAG": {
+      "description": "[Sns] Optional: Specify the feed tag when posting to SNS (#required, 15 characters or more) Default is #geo_less_traveler",
+      "required": false
+    },
+    "MT_MAX_SESSIONS": {
+      "description": "[Streamable-http] Maximum number of sessions when using Streamable-http",
+      "required": false
+    },
+    "MT_SESSION_TTL_MS": {
+      "description": "[Streamable-http] Session TTL when using Streamable-http",
+      "required": false
+    },
+    "MT_SERVICE_TTL_MS": {
+      "description": "[Streamable-http] Service TTL when using Streamable-http",
+      "required": false
+    }
+  }
+}

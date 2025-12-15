@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "packageName": "@browserstack/mcp-server",
+  "description": "BrowserStack's Official MCP Server",
+  "url": "https://github.com/browserstack/mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "BROWSERSTACK_USERNAME": {
+      "description": "BrowserStack Username",
+      "required": true
+    },
+    "BROWSERSTACK_ACCESS_KEY": {
+      "description": "BrowserStack Access Key",
+      "required": true
+    }
+  }
+}

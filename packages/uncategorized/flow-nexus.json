@@ -1,0 +1,26 @@
+{
+  "type": "mcp-server",
+  "packageName": "flow-nexus",
+  "description": "Cloud-powered AI platform with multi-agent swarms, sandboxes, and workflow automation",
+  "url": "https://github.com/ruvnet/flow-nexus",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "FLOW_NEXUS_API_KEY": {
+      "description": "API key for Flow Nexus authentication",
+      "required": false
+    },
+    "FLOW_NEXUS_BASE_URL": {
+      "description": "Base URL for Flow Nexus API",
+      "required": false
+    },
+    "E2B_API_KEY": {
+      "description": "E2B API key for sandbox creation",
+      "required": false
+    },
+    "ANTHROPIC_API_KEY": {
+      "description": "Anthropic API key for Claude integration",
+      "required": false
+    }
+  }
+}

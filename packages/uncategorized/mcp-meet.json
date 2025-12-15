@@ -1,0 +1,34 @@
+{
+  "type": "mcp-server",
+  "packageName": "mcp-meet",
+  "description": "One-click Google Meet scheduling and Apple Calendar mirroring with smart availability detection",
+  "url": "https://github.com/znz-systems/mcp-meet",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "GOOGLE_CLIENT_ID": {
+      "description": "Google OAuth Client ID",
+      "required": true
+    },
+    "GOOGLE_CLIENT_SECRET": {
+      "description": "Google OAuth Client Secret",
+      "required": true
+    },
+    "GOOGLE_REDIRECT_URI": {
+      "description": "Google OAuth Redirect URI",
+      "required": false
+    },
+    "CALENDAR_IDS": {
+      "description": "Comma-separated list of calendar IDs to check for availability",
+      "required": false
+    },
+    "APPLE_CALENDAR_NAME": {
+      "description": "Name of the Apple Calendar to create events in",
+      "required": false
+    },
+    "TZ": {
+      "description": "Timezone for calendar operations",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@upstash/context7-mcp",
+  "description": "Up-to-date code docs for any prompt",
+  "url": "https://github.com/upstash/context7",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "CONTEXT7_API_KEY": {
+      "description": "API key for authentication",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "keboola-mcp-server",
+  "description": "Connect your AI assistants to Keboola and expose your data, transformations, SQL queries, ...",
+  "url": "https://github.com/keboola/mcp-server",
+  "runtime": "python",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.us-east4.gcp.keboola.com/mcp"
+    }
+  ]
+}

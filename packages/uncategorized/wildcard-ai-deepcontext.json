@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "packageName": "@wildcard-ai/deepcontext",
+  "description": "Advanced codebase indexing and semantic search MCP server",
+  "url": "https://github.com/Wildcard-Official/deepcontext",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "JINA_API_KEY": {
+      "description": "Jina AI API key for embeddings generation",
+      "required": false
+    },
+    "TURBOPUFFER_API_KEY": {
+      "description": "Turbopuffer API key for vector storage",
+      "required": false
+    },
+    "WILDCARD_API_KEY": {
+      "description": "Wildcard API key for authentication",
+      "required": false
+    }
+  }
+}

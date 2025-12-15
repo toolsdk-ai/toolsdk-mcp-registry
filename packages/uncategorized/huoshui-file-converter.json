@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "huoshui-file-converter",
+  "description": "An MCP server that provides document format conversion",
+  "url": "https://github.com/huoshuiai42/huoshui-file-converter",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "HUOSHUI_WORKING_DIR": {
+      "description": "Your workding directory",
+      "required": false
+    }
+  }
+}

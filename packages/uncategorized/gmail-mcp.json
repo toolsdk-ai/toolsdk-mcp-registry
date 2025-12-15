@@ -1,0 +1,26 @@
+{
+  "type": "mcp-server",
+  "packageName": "gmail-mcp",
+  "description": "Allow AI systems to read, send, archive, and manage emails via Gmail.",
+  "url": "https://github.com/domdomegg/gmail-mcp.git",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "GOOGLE_ACCESS_TOKEN": {
+      "description": "Google OAuth access token with Gmail scopes.",
+      "required": true
+    },
+    "MCP_TRANSPORT": {
+      "description": "Transport type.",
+      "required": true
+    },
+    "GOOGLE_CLIENT_ID": {
+      "description": "Google OAuth client ID.",
+      "required": true
+    },
+    "GOOGLE_CLIENT_SECRET": {
+      "description": "Google OAuth client secret.",
+      "required": true
+    }
+  }
+}

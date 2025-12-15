@@ -1,0 +1,30 @@
+{
+  "type": "mcp-server",
+  "packageName": "servicenow-mcp-server",
+  "description": "Multi-instance ServiceNow MCP server with 40+ tools and intelligent schema discovery",
+  "url": "https://github.com/Happy-Technologies-LLC/mcp-servicenow-nodejs",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "SERVICENOW_INSTANCE_URL": {
+      "description": "ServiceNow instance URL (e.g., https://dev123456.service-now.com)",
+      "required": true
+    },
+    "SERVICENOW_USERNAME": {
+      "description": "ServiceNow username",
+      "required": true
+    },
+    "SERVICENOW_PASSWORD": {
+      "description": "ServiceNow password",
+      "required": true
+    },
+    "SERVICENOW_AUTH_TYPE": {
+      "description": "Authentication type (default: basic)",
+      "required": false
+    },
+    "SERVICENOW_INSTANCE": {
+      "description": "Specific instance name from config file (optional)",
+      "required": false
+    }
+  }
+}

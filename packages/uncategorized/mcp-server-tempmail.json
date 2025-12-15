@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "packageName": "mcp-server-tempmail",
+  "description": "MCP server for temporary email management using ChatTempMail API",
+  "url": "https://github.com/Selenium39/mcp-server-tempmail",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "TEMPMAIL_API_KEY": {
+      "description": "API key for ChatTempMail service",
+      "required": true
+    },
+    "TEMPMAIL_BASE_URL": {
+      "description": "Base URL for ChatTempMail API (optional, defaults to https://chat-tempmail.com)",
+      "required": false
+    }
+  }
+}

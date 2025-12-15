@@ -1,0 +1,30 @@
+{
+  "type": "mcp-server",
+  "packageName": "codelogic-mcp-server",
+  "description": "An MCP Server to utilize Codelogic's rich software dependency data in your AI programming assistant.",
+  "url": "https://github.com/CodeLogicIncEngineering/codelogic-mcp-server",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "CODELOGIC_SERVER_HOST": {
+      "description": "url to the CodeLogic server e.g. https://myco.app.codelogic.com",
+      "required": false
+    },
+    "CODELOGIC_USERNAME": {
+      "description": "CodeLogic server username",
+      "required": false
+    },
+    "CODELOGIC_PASSWORD": {
+      "description": "CodeLogic server password",
+      "required": false
+    },
+    "CODELOGIC_WORKSPACE_NAME": {
+      "description": "the workspace name that your code is scanned into",
+      "required": false
+    },
+    "CODELOGIC_DEBUG_MODE": {
+      "description": "When enabled, additional debug files such as timing_log.txt and impact_data*.json will be generated. Defaults to false",
+      "required": false
+    }
+  }
+}

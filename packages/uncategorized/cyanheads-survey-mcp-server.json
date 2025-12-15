@@ -1,0 +1,39 @@
+{
+  "type": "mcp-server",
+  "packageName": "@cyanheads/survey-mcp-server",
+  "description": "MCP server for conducting dynamic, conversational surveys with structured data collection.",
+  "url": "https://github.com/cyanheads/survey-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "MCP_LOG_LEVEL": {
+      "description": "Sets the minimum log level for output (e.g., 'debug', 'info', 'warn').",
+      "required": false
+    },
+    "SURVEY_DEFINITIONS_PATH": {
+      "description": "Path to the directory containing survey definition files.",
+      "required": false
+    },
+    "SURVEY_RESPONSES_PATH": {
+      "description": "Path to the directory where survey responses are stored.",
+      "required": false
+    },
+    "MCP_HTTP_HOST": {
+      "description": "The hostname for the HTTP server.",
+      "required": false
+    },
+    "MCP_HTTP_PORT": {
+      "description": "The port to run the HTTP server on.",
+      "required": false
+    },
+    "MCP_HTTP_ENDPOINT_PATH": {
+      "description": "The endpoint path for the MCP server.",
+      "required": false
+    },
+    "MCP_AUTH_MODE": {
+      "description": "Authentication mode to use: 'none', 'jwt', or 'oauth'.",
+      "required": false
+    }
+  },
+  "binArgs": ["run", "start:stdio"]
+}

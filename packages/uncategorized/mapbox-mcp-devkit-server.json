@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@mapbox/mcp-devkit-server",
+  "description": "Provides AI assistants with direct access to Mapbox developer APIs and documentation.",
+  "url": "https://github.com/mapbox/mcp-devkit-server",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "MAPBOX_ACCESS_TOKEN": {
+      "description": "Your Mapbox access token. See docs for required scopes.",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-hithereiamaliff-mcp-nextcloud",
+  "description": "A comprehensive Model Context Protocol (MCP) server that enables AI assistants to interact with yo…",
+  "url": "https://github.com/hithereiamaliff/mcp-nextcloud",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@hithereiamaliff/mcp-nextcloud/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@gonetone/mcp-server-taiwan-weather",
+  "description": "用於取得臺灣中央氣象署 API 資料的 Model Context Protocol (MCP) Server",
+  "url": "https://github.com/GoneTone/mcp-server-taiwan-weather",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "CWA_API_KEY": {
+      "description": "您的中央氣象署 API 授權碼。 請前往 https://opendata.cwa.gov.tw/user/authkey，登入後點擊 \"取得授權碼\" 取得。",
+      "required": true
+    }
+  }
+}

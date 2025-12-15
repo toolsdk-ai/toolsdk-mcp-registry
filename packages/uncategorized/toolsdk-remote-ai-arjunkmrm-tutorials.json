@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-arjunkmrm-tutorials",
+  "description": "Analyze stocks and SEC filings to surface key insights, from price and volume to insider activity…",
+  "url": "https://github.com/arjunkmrm/tutorials",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@arjunkmrm/tutorials/mcp"
+    }
+  ]
+}

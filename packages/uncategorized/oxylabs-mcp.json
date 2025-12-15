@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "packageName": "oxylabs-mcp",
+  "description": "Fetch and process content from specified URLs & sources using the Oxylabs Web Scraper API.",
+  "url": "https://github.com/oxylabs/oxylabs-mcp",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "OXYLABS_USERNAME": {
+      "description": "Your Oxylabs username",
+      "required": false
+    },
+    "OXYLABS_PASSWORD": {
+      "description": "Your Oxylabs password",
+      "required": false
+    },
+    "OXYLABS_AI_STUDIO_API_KEY": {
+      "description": "Your Oxylabs AI Studio api key",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "sec-edgar-mcp",
+  "description": "SEC EDGAR MCP server that provides access to the US public filings through the US SEC EDGAR API",
+  "url": "https://github.com/stefanoamorelli/sec-edgar-mcp",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "SEC_EDGAR_USER_AGENT": {
+      "description": "The user agent to access the SEC EDGAR API",
+      "required": true
+    }
+  }
+}

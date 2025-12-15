@@ -1,0 +1,24 @@
+{
+  "type": "mcp-server",
+  "packageName": "@agent-infra/mcp-server-browser",
+  "description": "MCP server for browser use access",
+  "url": "https://github.com/bytedance/UI-TARS-desktop",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "DISPLAY": {
+      "description": "DISPLAY environment variable for browser rendering",
+      "required": false
+    }
+  },
+  "binArgs": [
+    "browser",
+    "cdp-endpoint",
+    "ws-endpoint",
+    "executable-path",
+    "output-dir",
+    "proxy-bypass",
+    "proxy-server",
+    "vision"
+  ]
+}

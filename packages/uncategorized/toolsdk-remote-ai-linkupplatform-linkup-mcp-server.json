@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-linkupplatform-linkup-mcp-server",
+  "description": "Search the web in real time to get trustworthy, source-backed answers. Find the latest news and co…",
+  "url": "https://github.com/LinkupPlatform/linkup-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@LinkupPlatform/linkup-mcp-server/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

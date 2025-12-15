@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-leghis-smart-thinking",
+  "description": "Find relevant Smart‑Thinking memories fast. Fetch full entries by ID to get complete context. Spee…",
+  "url": "https://github.com/Leghis/Smart-Thinking",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@Leghis/smart-thinking/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

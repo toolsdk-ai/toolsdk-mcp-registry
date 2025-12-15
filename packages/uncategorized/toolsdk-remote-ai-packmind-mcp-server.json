@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-packmind-mcp-server",
+  "description": "Packmind captures, scales, and enforces your organization's technical decisions.",
+  "url": "https://github.com/PackmindHub/packmind",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.packmind.ai/mcp"
+    }
+  ]
+}

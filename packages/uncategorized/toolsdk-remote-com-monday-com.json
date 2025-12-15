@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/com-monday-monday-com",
+  "description": "MCP server for monday.com integration.",
+  "url": "https://github.com/mondaycom/mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.monday.com/mcp"
+    }
+  ]
+}

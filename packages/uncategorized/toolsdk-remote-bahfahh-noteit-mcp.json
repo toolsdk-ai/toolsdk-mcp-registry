@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/io-github-bahfahh-noteit-mcp",
+  "description": "MCP server for AI agent profiles and smart notes. 60+ coding prompt packs with expert personas.",
+  "url": "https://github.com/bahfahh/noteit-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.noteit-mcp.com/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

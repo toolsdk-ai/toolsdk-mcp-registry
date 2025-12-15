@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/dev-storage-mcp",
+  "description": "Tigris MCP Server seamlessly connects AI agents to Tigris bucket and object management.",
+  "url": "https://github.com/tigrisdata/mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.storage.dev/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/com-smartling-smartling-mcp-server",
+  "description": "Smartling MCP Server",
+  "url": "https://github.com/Smartling/smartling-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.smartling.com/mcp"
+    }
+  ]
+}

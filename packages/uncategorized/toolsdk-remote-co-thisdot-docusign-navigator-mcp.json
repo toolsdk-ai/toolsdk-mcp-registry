@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/co-thisdot-docusign-navigator-mcp",
+  "description": "Secure Docusign Navigator integration for AI assistants to access and analyze agreement data.",
+  "url": "https://github.com/thisdot/docusign-navigator-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://docusign-navigator.thisdot.co/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

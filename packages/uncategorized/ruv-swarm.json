@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "packageName": "ruv-swarm",
+  "description": "Neural network swarm orchestration with WebAssembly acceleration and MCP integration",
+  "url": "https://github.com/ruvnet/ruv-FANN",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "RUV_SWARM_LOG_LEVEL": {
+      "description": "Log level for ruv-swarm operations",
+      "required": false
+    },
+    "RUV_SWARM_DB_PATH": {
+      "description": "Database path for persistence storage",
+      "required": false
+    },
+    "RUV_SWARM_ENABLE_SIMD": {
+      "description": "Enable WebAssembly SIMD optimizations",
+      "required": false
+    }
+  }
+}

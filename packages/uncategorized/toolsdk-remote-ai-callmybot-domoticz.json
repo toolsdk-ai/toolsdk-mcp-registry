@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-callmybot-domoticz",
+  "description": "Greet anyone by name with a friendly hello. Explore the origin of 'Hello, World' for context in de…",
+  "url": "https://github.com/callmybot/domoticz",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@callmybot/domoticz/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

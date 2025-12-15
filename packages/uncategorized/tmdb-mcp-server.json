@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "tmdb-mcp-server",
+  "description": "MCP server for The Movie Database (TMDB) API",
+  "url": "https://github.com/tcehjaava/tmdb-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "TMDB_ACCESS_TOKEN": {
+      "description": "TMDB API access token (get free at https://www.themoviedb.org/settings/api)",
+      "required": true
+    }
+  }
+}

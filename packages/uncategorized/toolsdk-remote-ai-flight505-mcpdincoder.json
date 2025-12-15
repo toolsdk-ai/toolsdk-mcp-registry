@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-flight505-mcpdincoder",
+  "description": "Driven Intent Negotiation — Contract-Oriented Deterministic Executable Runtime DinCoder brings the…",
+  "url": "https://github.com/flight505/MCP_DinCoder",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@flight505/mcp_dincoder/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

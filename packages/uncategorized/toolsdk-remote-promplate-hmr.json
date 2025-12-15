@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/io-github-promplate-hmr",
+  "description": "Hot Module Reload (HMR) for Python with reactive programming and MCP tools",
+  "url": "https://github.com/promplate/pyth-on-line",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://promplate.github.io/pyth-on-line/hmr/mcp"
+    }
+  ]
+}

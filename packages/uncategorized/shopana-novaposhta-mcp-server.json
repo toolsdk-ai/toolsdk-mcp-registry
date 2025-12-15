@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "packageName": "@shopana/novaposhta-mcp-server",
+  "description": "MCP Server for Nova Poshta API integration with AI assistants",
+  "url": "https://github.com/shopanaio/carrier-api",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "NOVA_POSHTA_API_KEY": {
+      "description": "Your Nova Poshta API key",
+      "required": true
+    },
+    "NOVA_POSHTA_SYSTEM": {
+      "description": "System identifier (e.g., 'DevCentre' for development/testing)",
+      "required": false
+    },
+    "LOG_LEVEL": {
+      "description": "Logging level (debug, info, warn, error)",
+      "required": false
+    }
+  }
+}

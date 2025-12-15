@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "fred-mcp-server",
+  "description": "Federal Reserve Economic Data (FRED) MCP Server - Access all 800,000+ economic time series",
+  "url": "https://github.com/stefanoamorelli/fred-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "FRED_API_KEY": {
+      "description": "Your FRED API key to access the API",
+      "required": true
+    }
+  }
+}

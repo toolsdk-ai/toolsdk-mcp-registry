@@ -1,0 +1,62 @@
+{
+  "type": "mcp-server",
+  "packageName": "couchbase-mcp-server",
+  "description": "Couchbase Model Context Protocol Server to interact with Couchbase clusters",
+  "url": "https://github.com/Couchbase-Ecosystem/mcp-server-couchbase",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "CB_CONNECTION_STRING": {
+      "description": "Couchbase connection string. Required for connecting to the cluster.",
+      "required": false
+    },
+    "CB_USERNAME": {
+      "description": "Couchbase database username. Required for basic authentication.",
+      "required": false
+    },
+    "CB_PASSWORD": {
+      "description": "Couchbase database password. Required for basic authentication.",
+      "required": false
+    },
+    "CB_CA_CERT_PATH": {
+      "description": "Couchbase CA certificate path. Required for TLS authentication in non Capella clusters.",
+      "required": false
+    },
+    "CB_CLIENT_CERT_PATH": {
+      "description": "Couchbase client certificate path. Required for mTLS authentication.",
+      "required": false
+    },
+    "CB_CLIENT_KEY_PATH": {
+      "description": "Couchbase client key path. Required for mTLS authentication.",
+      "required": false
+    },
+    "CB_MCP_READ_ONLY_QUERY_MODE": {
+      "description": "Couchbase read only query mode. Set to true to allow only read-only queries. Set to false to allow data modification queries.",
+      "required": false
+    },
+    "CB_MCP_TRANSPORT": {
+      "description": "Transport mode for the server (stdio, http or sse). Default is stdio",
+      "required": false
+    },
+    "CB_MCP_HOST": {
+      "description": "Host to run the MCP server on (default: 127.0.0.1). Used only for HTTP and SSE transport modes.",
+      "required": false
+    },
+    "CB_MCP_PORT": {
+      "description": "Port to run the MCP server on (default: 8000). Used only for HTTP and SSE transport modes.",
+      "required": false
+    }
+  },
+  "binArgs": [
+    "--connection-string",
+    "--username",
+    "--password",
+    "--ca-cert-path",
+    "--client-cert-path",
+    "--client-key-path",
+    "--read-only-query-mode",
+    "--transport",
+    "--host",
+    "--port"
+  ]
+}

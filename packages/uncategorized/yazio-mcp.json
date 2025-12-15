@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "packageName": "yazio-mcp",
+  "description": "MCP server for accessing Yazio user & nutrition data (unofficial)",
+  "url": "https://github.com/fliptheweb/yazio-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "YAZIO_USERNAME": {
+      "description": "Yazio Username",
+      "required": true
+    },
+    "YAZIO_PASSWORD": {
+      "description": "Yazio Password",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "hostinger-api-mcp",
+  "description": "MCP server for Hostinger API",
+  "url": "https://github.com/hostinger/api-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "API_TOKEN": {
+      "description": "Hostinger API token",
+      "required": true
+    }
+  }
+}

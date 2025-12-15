@@ -1,0 +1,34 @@
+{
+  "type": "mcp-server",
+  "packageName": "sub-agents-mcp",
+  "description": "MCP server for delegating tasks to specialized AI assistants in Cursor, Claude, and Gemini",
+  "url": "https://github.com/shinpr/sub-agents-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "AGENTS_DIR": {
+      "description": "Absolute path to the directory containing agent definition files (.md or .txt)",
+      "required": true
+    },
+    "AGENT_TYPE": {
+      "description": "Type of AI CLI to use: 'cursor', 'claude', or 'gemini'",
+      "required": true
+    },
+    "EXECUTION_TIMEOUT_MS": {
+      "description": "Maximum execution time for agents in milliseconds (default: 300000, max: 600000)",
+      "required": false
+    },
+    "SESSION_ENABLED": {
+      "description": "Enable session management to maintain execution history across agent calls (default: false)",
+      "required": false
+    },
+    "SESSION_DIR": {
+      "description": "Directory path for storing session files (default: .mcp-sessions in current working directory)",
+      "required": false
+    },
+    "SESSION_RETENTION_DAYS": {
+      "description": "Number of days to retain session history before automatic cleanup (default: 7)",
+      "required": false
+    }
+  }
+}

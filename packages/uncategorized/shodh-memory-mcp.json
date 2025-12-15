@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "packageName": "@shodh/memory-mcp",
+  "description": "Persistent AI memory with semantic search. Store and recall context across sessions.",
+  "url": "https://github.com/varun29ankuS/shodh-memory",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "SHODH_API_URL": {
+      "description": "URL of the shodh-memory backend server",
+      "required": false
+    },
+    "SHODH_API_KEY": {
+      "description": "API key for authentication",
+      "required": false
+    },
+    "SHODH_USER_ID": {
+      "description": "User ID for memory isolation",
+      "required": false
+    }
+  }
+}

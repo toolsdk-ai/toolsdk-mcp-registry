@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-arjunkmrm-clock",
+  "description": "Check the current time instantly and explore world timezones by region. Browse available continent…",
+  "url": "https://github.com/arjunkmrm/clock",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@arjunkmrm/clock/mcp"
+    }
+  ]
+}

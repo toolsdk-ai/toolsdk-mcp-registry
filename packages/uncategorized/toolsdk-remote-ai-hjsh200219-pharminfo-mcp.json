@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-hjsh200219-pharminfo-mcp",
+  "description": "Look up Korean drug ingredient and product data by HIRA component and product codes via Pilldoc. V…",
+  "url": "https://github.com/hjsh200219/pharminfo-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@hjsh200219/pharminfo-mcp/mcp"
+    }
+  ]
+}

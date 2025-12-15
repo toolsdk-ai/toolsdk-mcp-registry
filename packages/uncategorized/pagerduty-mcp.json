@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "packageName": "pagerduty-mcp",
+  "description": "PagerDuty's official MCP server which provides tools to interact with your PagerDuty account.",
+  "url": "https://github.com/PagerDuty/pagerduty-mcp-server",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "PAGERDUTY_USER_API_KEY": {
+      "description": "PagerDuty User API Token - obtain from User Settings > API Access in your PagerDuty account",
+      "required": false
+    },
+    "PAGERDUTY_API_HOST": {
+      "description": "PagerDuty API host URL (default: https://api.pagerduty.com, EU: https://api.eu.pagerduty.com)",
+      "required": false
+    }
+  },
+  "binArgs": ["--enable-write-tools"]
+}

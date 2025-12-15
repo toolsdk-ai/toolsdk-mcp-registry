@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/io-github-selisedigitalplatforms-l0-py-blocks-mcp",
+  "description": "A Model Context Protocol (MCP) server for Selise Blocks Cloud integration",
+  "url": "https://github.com/SELISEdigitalplatforms/l0-py-blocks-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://dev-ai.seliseblocks.com/mcp"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/io-github-github-github-mcp-server",
+  "description": "Connect AI assistants to GitHub - manage repos, issues, PRs, and workflows through natural language.",
+  "url": "https://github.com/github/github-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

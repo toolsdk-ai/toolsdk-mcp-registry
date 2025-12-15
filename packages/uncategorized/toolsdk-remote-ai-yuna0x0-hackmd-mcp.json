@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-yuna0x0-hackmd-mcp",
+  "description": "Interact with your HackMD notes and teams seamlessly. Manage your notes, view reading history, and…",
+  "url": "https://github.com/yuna0x0/hackmd-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@yuna0x0/hackmd-mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

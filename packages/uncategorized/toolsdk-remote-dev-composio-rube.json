@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/dev-composio-rube-rube",
+  "description": "Connect your AI to 500+ apps like Gmail, Slack, GitHub, and Notion with streamable HTTP transport.",
+  "url": "https://github.com/ComposioHQ/Rube",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://rube.composio.dev/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

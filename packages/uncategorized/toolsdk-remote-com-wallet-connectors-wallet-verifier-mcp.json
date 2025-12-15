@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/com-wallet-connectors-wallet-verifier-mcp",
+  "description": "MCP server for verifying EUDI/Talao wallet data via OIDC4VP (pull) for AI agents.",
+  "url": "https://github.com/TalaoDAO/connectors",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://wallet-connectors.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

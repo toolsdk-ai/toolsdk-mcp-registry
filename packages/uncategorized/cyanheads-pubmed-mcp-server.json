@@ -1,0 +1,35 @@
+{
+  "type": "mcp-server",
+  "packageName": "@cyanheads/pubmed-mcp-server",
+  "description": "Comprehensive PubMed MCP Server to search, retrieve, and analyze biomedical literature from NCBI.",
+  "url": "https://github.com/cyanheads/pubmed-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "MCP_LOG_LEVEL": {
+      "description": "Sets the minimum log level (e.g., 'debug', 'info', 'warn').",
+      "required": false
+    },
+    "NCBI_API_KEY": {
+      "description": "Your NCBI API key for higher rate limits.",
+      "required": false
+    },
+    "MCP_HTTP_HOST": {
+      "description": "The host for the HTTP server.",
+      "required": false
+    },
+    "MCP_HTTP_PORT": {
+      "description": "The port for the HTTP server.",
+      "required": false
+    },
+    "MCP_HTTP_ENDPOINT_PATH": {
+      "description": "The endpoint path for MCP requests.",
+      "required": false
+    },
+    "MCP_AUTH_MODE": {
+      "description": "Authentication mode: 'none', 'jwt', or 'oauth'.",
+      "required": false
+    }
+  },
+  "binArgs": ["run", "start:stdio"]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "testdino-mcp",
+  "description": "A MCP server for TestDino",
+  "url": "https://github.com/testdino-inc/testdino-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "YOUR_API_KEY": {
+      "description": "Your API key for the service",
+      "required": true
+    }
+  }
+}

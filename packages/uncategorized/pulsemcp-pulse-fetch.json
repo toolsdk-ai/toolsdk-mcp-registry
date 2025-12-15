@@ -1,0 +1,54 @@
+{
+  "type": "mcp-server",
+  "packageName": "@pulsemcp/pulse-fetch",
+  "description": "MCP server that extracts clean, structured content from web pages with anti-bot bypass capabilities.",
+  "url": "https://github.com/pulsemcp/mcp-servers",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "FIRECRAWL_API_KEY": {
+      "description": "API key for Firecrawl service to bypass anti-bot measures",
+      "required": false
+    },
+    "BRIGHTDATA_API_KEY": {
+      "description": "Bearer token for BrightData Web Unlocker service",
+      "required": false
+    },
+    "STRATEGY_CONFIG_PATH": {
+      "description": "Path to markdown file containing scraping strategy configuration",
+      "required": false
+    },
+    "OPTIMIZE_FOR": {
+      "description": "Optimization strategy for scraping: cost or speed",
+      "required": false
+    },
+    "MCP_RESOURCE_STORAGE": {
+      "description": "Storage backend for saved resources: memory or filesystem",
+      "required": false
+    },
+    "MCP_RESOURCE_FILESYSTEM_ROOT": {
+      "description": "Directory for filesystem storage (only used with filesystem type)",
+      "required": false
+    },
+    "SKIP_HEALTH_CHECKS": {
+      "description": "Skip API authentication health checks at startup",
+      "required": false
+    },
+    "LLM_PROVIDER": {
+      "description": "LLM provider for extract feature: anthropic, openai, openai-compatible",
+      "required": false
+    },
+    "LLM_API_KEY": {
+      "description": "API key for the chosen LLM provider",
+      "required": false
+    },
+    "LLM_API_BASE_URL": {
+      "description": "Base URL for OpenAI-compatible providers",
+      "required": false
+    },
+    "LLM_MODEL": {
+      "description": "Specific model to use for extraction",
+      "required": false
+    }
+  }
+}

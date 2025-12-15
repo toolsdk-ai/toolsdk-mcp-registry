@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@mia-platform/console-mcp-server",
+  "description": "The official MCP Server from Mia-Platform to interact with Mia-Platform Console",
+  "url": "https://github.com/mia-platform/console-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://console.cloud.mia-platform.eu/console-mcp-server/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

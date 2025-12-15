@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-alex-llm-attack-mcp-server",
+  "description": "Query and retrieve information about various adversarial tactics and techniques used in cyber atta…",
+  "url": "https://github.com/alex-llm/attAck-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@alex-llm/attack-mcp-server/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

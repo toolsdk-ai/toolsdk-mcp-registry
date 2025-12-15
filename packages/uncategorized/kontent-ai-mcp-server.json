@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "packageName": "@kontent-ai/mcp-server",
+  "description": "Connect to Kontent.ai to manage content, types, taxonomies, and workflows via natural language",
+  "url": "https://github.com/kontent-ai/mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "KONTENT_API_KEY": {
+      "description": "Kontent.ai Management API key",
+      "required": true
+    },
+    "KONTENT_ENVIRONMENT_ID": {
+      "description": "Kontent.ai environment ID",
+      "required": true
+    },
+    "PORT": {
+      "description": "Server port for HTTP transport (shttp mode only)",
+      "required": false
+    }
+  },
+  "binArgs": ["stdio"]
+}

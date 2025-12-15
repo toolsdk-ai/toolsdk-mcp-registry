@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "mcp-funnel",
+  "description": "MCP proxy that aggregates multiple servers with tool filtering and customization",
+  "url": "https://github.com/chris-schra/mcp-funnel",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "MCP_FUNNEL_CONFIG": {
+      "description": "Alternative way to specify config file path",
+      "required": false
+    }
+  }
+}

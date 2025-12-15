@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-smithery-ai-fetch",
+  "description": "A simple tool that performs a fetch request to a webpage.",
+  "url": "https://github.com/smithery-ai/mcp-servers",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@smithery-ai/fetch/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

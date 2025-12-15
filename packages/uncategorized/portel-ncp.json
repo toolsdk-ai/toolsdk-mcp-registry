@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "packageName": "@portel/ncp",
+  "description": "N-to-1 MCP Orchestration. Unified gateway for multiple MCP servers with intelligent tool discovery.",
+  "url": "https://github.com/portel-dev/ncp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "NCP_DEBUG": {
+      "description": "Enable debug logging for troubleshooting",
+      "required": false
+    },
+    "NCP_MODE": {
+      "description": "Operating mode: 'mcp' for AI assistant integration or 'cli' for command-line",
+      "required": false
+    },
+    "NO_COLOR": {
+      "description": "Disable colored output in logs and CLI",
+      "required": false
+    }
+  }
+}

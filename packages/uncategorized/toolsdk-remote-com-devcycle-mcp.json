@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/com-devcycle-mcp",
+  "description": "DevCycle MCP server for feature flag management",
+  "url": "https://github.com/DevCycleHQ/cli",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.devcycle.com/mcp"
+    }
+  ]
+}

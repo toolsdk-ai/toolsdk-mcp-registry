@@ -1,0 +1,34 @@
+{
+  "type": "mcp-server",
+  "packageName": "tachibot-mcp",
+  "description": "Multi-model AI orchestration with 31 tools, YAML workflows, and 5 token-optimized profiles.",
+  "url": "https://github.com/byPawel/tachibot-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "PERPLEXITY_API_KEY": {
+      "description": "Perplexity API key for web search, research, and reasoning (https://www.perplexity.ai/settings/api)",
+      "required": true
+    },
+    "GROK_API_KEY": {
+      "description": "Grok/xAI API key for code analysis, debugging, and architecture (https://console.x.ai/)",
+      "required": true
+    },
+    "OPENAI_API_KEY": {
+      "description": "OpenAI API key for GPT-5 analysis and comparison (https://platform.openai.com/api-keys)",
+      "required": true
+    },
+    "GOOGLE_API_KEY": {
+      "description": "Google Gemini API key for brainstorming and code/text analysis (https://aistudio.google.com/apikey)",
+      "required": false
+    },
+    "OPENROUTER_API_KEY": {
+      "description": "OpenRouter API key for Qwen3 Coder and other models",
+      "required": false
+    },
+    "TACHIBOT_PROFILE": {
+      "description": "Tool profile selection: minimal, research_power, code_focus, balanced, or full (default: balanced)",
+      "required": false
+    }
+  }
+}

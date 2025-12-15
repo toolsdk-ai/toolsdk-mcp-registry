@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "packageName": "realtimex-browser-use",
+  "description": "AI browser automation - navigate, click, type, extract content, and run autonomous web tasks",
+  "url": "https://github.com/therealtimex/browser-use",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "OPENAI_API_KEY": {
+      "description": "OpenAI API key for LLM operations",
+      "required": true
+    }
+  },
+  "binArgs": ["--mcp"]
+}

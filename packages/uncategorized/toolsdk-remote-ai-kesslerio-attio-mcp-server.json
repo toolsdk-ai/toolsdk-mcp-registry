@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-kesslerio-attio-mcp-server",
+  "description": "Connect AI to your Attio CRM. Manage contacts, companies, deals, and sales pipelines. Create tasks…",
+  "url": "https://github.com/kesslerio/attio-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@kesslerio/attio-mcp-server/mcp"
+    }
+  ]
+}

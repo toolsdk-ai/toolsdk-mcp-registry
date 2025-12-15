@@ -1,0 +1,30 @@
+{
+  "type": "mcp-server",
+  "packageName": "unreal-engine-mcp-server",
+  "description": "MCP server for Unreal Engine 5 with 13 tools for game development automation.",
+  "url": "https://github.com/ChiR24/Unreal_mcp.git",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "UE_HOST": {
+      "description": "Unreal Engine host address (default: 127.0.0.1)",
+      "required": false
+    },
+    "UE_RC_HTTP_PORT": {
+      "description": "Remote Control HTTP port (default: 30010)",
+      "required": false
+    },
+    "UE_RC_WS_PORT": {
+      "description": "Remote Control WebSocket port (default: 30020)",
+      "required": false
+    },
+    "LOG_LEVEL": {
+      "description": "Logging level: debug, info, warn, error (default: info)",
+      "required": false
+    },
+    "UE_PROJECT_PATH": {
+      "description": "Absolute path to your Unreal .uproject file",
+      "required": false
+    }
+  }
+}

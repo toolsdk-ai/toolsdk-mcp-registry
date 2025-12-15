@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-arjunkmrm-perplexity-search",
+  "description": "Enable AI assistants to perform web searches using Perplexity's Sonar Pro.",
+  "url": "https://github.com/arjunkmrm/perplexity-search",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@arjunkmrm/perplexity-search/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

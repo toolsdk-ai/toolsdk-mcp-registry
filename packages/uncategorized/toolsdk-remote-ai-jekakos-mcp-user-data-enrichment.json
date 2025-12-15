@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-jekakos-mcp-user-data-enrichment",
+  "description": "Enrich user data by adding social network links based on provided personal information. Integrate…",
+  "url": "https://github.com/jekakos/mcp-user-data-enrichment",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@jekakos/mcp-user-data-enrichment/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

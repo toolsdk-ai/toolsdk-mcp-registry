@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-jessicayanwang-test",
+  "description": "Fetch latest and historical currency exchange rates from Frankfurter. Convert amounts between curr…",
+  "url": "https://github.com/jessicayanwang/frankfurtermcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@jessicayanwang/test/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

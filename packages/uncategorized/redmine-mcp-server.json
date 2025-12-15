@@ -1,0 +1,58 @@
+{
+  "type": "mcp-server",
+  "packageName": "redmine-mcp-server",
+  "description": "Production-ready MCP server for Redmine with security, pagination, and enterprise features",
+  "url": "https://github.com/jztan/redmine-mcp-server",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "REDMINE_URL": {
+      "description": "URL of your Redmine server (e.g., https://your-redmine-server.com)",
+      "required": true
+    },
+    "REDMINE_USERNAME": {
+      "description": "Redmine username for authentication (alternative to API key)",
+      "required": false
+    },
+    "REDMINE_PASSWORD": {
+      "description": "Redmine password for authentication (alternative to API key)",
+      "required": false
+    },
+    "REDMINE_API_KEY": {
+      "description": "Redmine API key for authentication (alternative to username/password)",
+      "required": false
+    },
+    "SERVER_HOST": {
+      "description": "Host address for the MCP server (default: 0.0.0.0)",
+      "required": false
+    },
+    "SERVER_PORT": {
+      "description": "Port for the MCP server (default: 8000)",
+      "required": false
+    },
+    "PUBLIC_HOST": {
+      "description": "Public hostname for file download URLs (default: localhost)",
+      "required": false
+    },
+    "PUBLIC_PORT": {
+      "description": "Public port for file download URLs (default: 8000)",
+      "required": false
+    },
+    "ATTACHMENTS_DIR": {
+      "description": "Directory for storing downloaded attachments (default: ./attachments)",
+      "required": false
+    },
+    "AUTO_CLEANUP_ENABLED": {
+      "description": "Enable automatic cleanup of expired files (default: true)",
+      "required": false
+    },
+    "CLEANUP_INTERVAL_MINUTES": {
+      "description": "Interval between cleanup runs in minutes (default: 10)",
+      "required": false
+    },
+    "ATTACHMENT_EXPIRES_MINUTES": {
+      "description": "Default expiry time for attachments in minutes (default: 60)",
+      "required": false
+    }
+  }
+}

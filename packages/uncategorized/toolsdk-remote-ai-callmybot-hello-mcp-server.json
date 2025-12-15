@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-callmybot-hello-mcp-server",
+  "description": "Generate quick, friendly greetings by name. Personalize salutations for any context. Explore the o…",
+  "url": "https://github.com/callmybot/hello-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@callmybot/hello-mcp-server/mcp"
+    }
+  ]
+}

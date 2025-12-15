@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "autoplans-mcp",
+  "description": "AI-powered project planning tools for Autoplans.dev with 14+ MCP tools",
+  "url": "https://github.com/mohamedgb00714/autoplans-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "AUTOPLANS_API_KEY": {
+      "description": "API key for Autoplans.dev service. Get yours at https://autoplans.dev",
+      "required": true
+    }
+  }
+}

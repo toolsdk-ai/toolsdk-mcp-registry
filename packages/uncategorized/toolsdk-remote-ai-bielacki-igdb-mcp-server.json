@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-bielacki-igdb-mcp-server",
+  "description": "Explore and discover video games from the Internet Game Database. Search titles, view detailed inf…",
+  "url": "https://github.com/bielacki/igdb-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@bielacki/igdb-mcp-server/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

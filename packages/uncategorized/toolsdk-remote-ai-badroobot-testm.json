@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-badroobot-testm",
+  "description": "Send quick greetings, scrape website content, and generate text or images on demand. Perform web s…",
+  "url": "https://github.com/BadRooBot/test_m",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@BadRooBot/test_m/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

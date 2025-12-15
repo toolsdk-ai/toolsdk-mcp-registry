@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "google-analytics-mcp",
+  "description": "An MCP server that provides [describe what your server does]",
+  "url": "https://github.com/surendranb/google-analytics-mcp",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "YOUR_API_KEY": {
+      "description": "Your API key for the service",
+      "required": true
+    }
+  }
+}

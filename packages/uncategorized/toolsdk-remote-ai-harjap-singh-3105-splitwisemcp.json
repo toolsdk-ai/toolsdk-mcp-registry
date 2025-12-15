@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-harjap-singh-3105-splitwisemcp",
+  "description": "Manage Splitwise balances, expenses, and groups from your workspace. Fetch friends and recent acti…",
+  "url": "https://github.com/HARJAP-SINGH-3105/Splitwise_MCP",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@HARJAP-SINGH-3105/splitwise_mcp/mcp"
+    }
+  ]
+}

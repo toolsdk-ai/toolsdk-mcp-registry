@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "meta-api-mcp-server",
+  "description": "You can connect any API to LLMs. This enables AI to interact directly with APIs",
+  "url": "https://github.com/savhascelik/meta-api-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "YOUR_API_KEY": {
+      "description": "If the api you are connecting to requires api_key, you can use this variable and you can also define different variables",
+      "required": true
+    }
+  }
+}

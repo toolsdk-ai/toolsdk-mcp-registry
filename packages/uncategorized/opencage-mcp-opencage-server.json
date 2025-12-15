@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@opencage/mcp-opencage-server",
+  "description": "MCP server for OpenCage geocoding API",
+  "url": "https://github.com/OpenCageData/opencage-geocoding-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "YOUR_API_KEY": {
+      "description": "Your API key for the service",
+      "required": true
+    }
+  }
+}

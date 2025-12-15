@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "packageName": "opik-mcp",
+  "description": "Interact with Opik prompts, traces, and metrics through the Model Context Protocol.",
+  "url": "https://github.com/comet-ml/opik-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "OPIK_API_KEY": {
+      "description": "API key from your Opik workspace for authenticating SDK calls.",
+      "required": true
+    },
+    "OPIK_API_BASE_URL": {
+      "description": "Override the API base URL when using a self-hosted Opik deployment.",
+      "required": false
+    },
+    "OPIK_WORKSPACE_NAME": {
+      "description": "Default workspace to scope prompt and trace operations.",
+      "required": false
+    }
+  }
+}

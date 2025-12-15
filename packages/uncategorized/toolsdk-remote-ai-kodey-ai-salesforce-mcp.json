@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-kodey-ai-salesforce-mcp",
+  "description": "Run SOQL queries to explore and retrieve Salesforce data. Inspect records, fields, and relationshi…",
+  "url": "https://github.com/kodey-ai/salesforce-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@kodey-ai/salesforce-mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

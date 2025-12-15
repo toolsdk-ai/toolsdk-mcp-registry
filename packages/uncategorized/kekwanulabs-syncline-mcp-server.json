@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@kekwanulabs/syncline-mcp-server",
+  "description": "Syncline MCP Server (TypeScript) - AI-powered meeting scheduling with intelligent auto-scheduling",
+  "url": "https://github.com/KekwanuLabs/syncline",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "SYNCLINE_API_KEY": {
+      "description": "Your Syncline API key from https://syncline.run/developer",
+      "required": true
+    }
+  }
+}

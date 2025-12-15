@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "packageName": "linkly-mcp-server",
+  "description": "Create and manage short links, track clicks, and automate URL management",
+  "url": "https://github.com/Linkly-HQ/linkly-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "LINKLY_API_KEY": {
+      "description": "Your Linkly API key. Get it from Settings → API in your Linkly dashboard.",
+      "required": true
+    },
+    "LINKLY_WORKSPACE_ID": {
+      "description": "Your Linkly Workspace ID. Find it at Settings → API in your Linkly dashboard.",
+      "required": true
+    }
+  }
+}

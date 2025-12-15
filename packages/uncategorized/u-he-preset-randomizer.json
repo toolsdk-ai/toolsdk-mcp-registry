@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "packageName": "u-he-preset-randomizer",
+  "description": "Generate, randomize, explain, and manage u-he synthesizer presets via the Model Context Protocol.",
+  "url": "https://github.com/Fannon/u-he-preset-randomizer",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "UHE_CUSTOM_FOLDER": {
+      "description": "Optional override for preset root discovery when synths are stored outside default locations.",
+      "required": false
+    },
+    "DEBUG": {
+      "description": "Enable verbose logging for troubleshooting.",
+      "required": false
+    }
+  }
+}

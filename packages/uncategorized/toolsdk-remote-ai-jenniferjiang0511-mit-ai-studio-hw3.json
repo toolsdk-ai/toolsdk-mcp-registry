@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-jenniferjiang0511-mit-ai-studio-hw3",
+  "description": "Greet people by name and check local forecasts and weather alerts across the U.S. Switch to a play…",
+  "url": "https://github.com/jenniferjiang0511/MIT-AI-studio-HW3",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@jenniferjiang0511/mit-ai-studio-hw3/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "type": "mcp-server",
+  "packageName": "xcodebuildmcp",
+  "description": "XcodeBuildMCP provides tools for Xcode project management, simulator management, and app utilities.",
+  "url": "https://github.com/cameroncooke/XcodeBuildMCP",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "INCREMENTAL_BUILDS_ENABLED": {
+      "description": "Enable experimental xcodemake incremental builds (true/false or 1/0).",
+      "required": false
+    },
+    "XCODEBUILDMCP_DYNAMIC_TOOLS": {
+      "description": "Enable AI-powered dynamic tool discovery to load only relevant workflows.",
+      "required": false
+    },
+    "XCODEBUILDMCP_ENABLED_WORKFLOWS": {
+      "description": "Comma-separated list of workflows to load in Static Mode (e.g., 'simulator,device,project-discovery').",
+      "required": false
+    },
+    "XCODEBUILDMCP_SENTRY_DISABLED": {
+      "description": "Disable Sentry error reporting (preferred flag).",
+      "required": false
+    },
+    "XCODEBUILDMCP_DEBUG": {
+      "description": "Enable verbose debug logging from the server.",
+      "required": false
+    }
+  }
+}

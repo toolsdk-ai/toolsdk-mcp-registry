@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/com-onkernel-kernel-mcp-server",
+  "description": "Access Kernel's cloud-based browsers and app actions via MCP (remote HTTP + OAuth).",
+  "url": "https://github.com/onkernel/kernel-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.onkernel.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

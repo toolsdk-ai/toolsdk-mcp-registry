@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-xinkuang-china-stock-mcp",
+  "description": "Access real-time and historical market data for China A-shares and Hong Kong stocks, along with ne…",
+  "url": "https://github.com/xinkuang/china-stock-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@xinkuang/china-stock-mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

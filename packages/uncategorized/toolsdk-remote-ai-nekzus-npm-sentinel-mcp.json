@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-nekzus-npm-sentinel-mcp",
+  "description": "Provide AI-powered real-time analysis and intelligence on NPM packages, including security, depend…",
+  "url": "https://github.com/Nekzus/npm-sentinel-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@Nekzus/npm-sentinel-mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

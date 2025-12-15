@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/com-generect-generect-mcp",
+  "description": "B2B lead generation and company search through Generect Live API for sales prospecting.",
+  "url": "https://github.com/generect/generect_mcp.git",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.generect.com/mcp"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-hollaugo-financial-research-mcp-server",
+  "description": "Analyze stocks with summaries, price targets, and analyst recommendations. Track SEC filings, divi…",
+  "url": "https://github.com/hollaugo/tutorials",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@hollaugo/financial-research-mcp-server/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "type": "mcp-server",
+  "packageName": "@duongkhuong/mcp-redmine",
+  "description": "MCP server for Redmine API integration with AI agents.",
+  "url": "https://github.com/vfa-khuongdv/mcp_readmine",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "REDMINE_URL": {
+      "description": "Your Redmine instance URL (e.g., https://redmine.example.com)",
+      "required": true
+    },
+    "REDMINE_API_KEY": {
+      "description": "Your Redmine API key from account settings",
+      "required": true
+    },
+    "REDMINE_USERNAME": {
+      "description": "Your Redmine username for Basic Authentication",
+      "required": true
+    },
+    "REDMINE_PASSWORD": {
+      "description": "Your Redmine password for Basic Authentication",
+      "required": true
+    }
+  }
+}

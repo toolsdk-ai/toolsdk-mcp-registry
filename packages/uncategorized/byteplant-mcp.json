@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "packageName": "byteplant-mcp",
+  "description": "An MCP server that provides Email, Phone and Address Validation Services from Byteplant",
+  "url": "https://github.com/byteplant-dev/byteplant-mcp",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "EV_TOKEN": {
+      "description": "Email Validator API Token",
+      "required": false
+    },
+    "AV_TOKEN": {
+      "description": "Address Validator API Token",
+      "required": false
+    },
+    "PV_TOKEN": {
+      "description": "Phone Validator API Token",
+      "required": false
+    }
+  }
+}

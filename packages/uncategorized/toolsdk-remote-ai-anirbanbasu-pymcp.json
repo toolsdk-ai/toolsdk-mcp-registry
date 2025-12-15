@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-anirbanbasu-pymcp",
+  "description": "Primarily to be used as a template repository for developing MCP servers with FastMCP in Python, P…",
+  "url": "https://github.com/anirbanbasu/pymcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@anirbanbasu/pymcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@dynatrace-oss/dynatrace-mcp-server",
+  "description": "Model Context Protocol server for Dynatrace - access logs, events, metrics from Dynatrace via MCP.",
+  "url": "https://github.com/dynatrace-oss/Dynatrace-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "DT_ENVIRONMENT": {
+      "description": "The URL of your Dynatrace environment (e.g. 'https://abc12345.apps.dynatrace.com')",
+      "required": true
+    }
+  }
+}

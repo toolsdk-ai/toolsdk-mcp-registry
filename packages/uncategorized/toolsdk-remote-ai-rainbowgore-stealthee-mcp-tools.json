@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-rainbowgore-stealthee-mcp-tools",
+  "description": "Spot pre-launch products before they trend. Search the web and tech sites, extract and parse pages…",
+  "url": "https://github.com/rainbowgore/stealthee-MCP-tools",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@rainbowgore/stealthee-mcp-tools/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

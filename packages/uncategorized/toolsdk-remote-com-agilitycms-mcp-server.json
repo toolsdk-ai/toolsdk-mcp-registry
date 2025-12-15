@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/com-agilitycms-mcp-server",
+  "description": "An MCP server that provides access to Agility CMS.  See https://mcp.agilitycms.com for more details.",
+  "url": "https://github.com/agility/agility-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.agilitycms.com/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

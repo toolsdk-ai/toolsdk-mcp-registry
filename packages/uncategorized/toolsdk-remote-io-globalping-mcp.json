@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/io-globalping-mcp",
+  "description": "Interact with a global network measurement platform.Run network commands from any point in the world",
+  "url": "https://github.com/jsdelivr/globalping-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.globalping.io/mcp"
+    }
+  ]
+}

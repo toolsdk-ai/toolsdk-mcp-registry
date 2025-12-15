@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-arjunkmrm-brave-search-mcp-server",
+  "description": "Search the web, images, videos, news, and local businesses with robust filters, freshness controls…",
+  "url": "https://github.com/arjunkmrm/brave-search-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@arjunkmrm/brave-search-mcp-server/mcp"
+    }
+  ]
+}

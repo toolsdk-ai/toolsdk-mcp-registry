@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/io-github-mindscapehq-mcp-server-raygun",
+  "description": "Investigate errors, track deployments, analyze performance, and manage application monitoring",
+  "url": "https://github.com/MindscapeHQ/mcp-server-raygun",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.raygun.com/v3/mcp"
+    }
+  ]
+}

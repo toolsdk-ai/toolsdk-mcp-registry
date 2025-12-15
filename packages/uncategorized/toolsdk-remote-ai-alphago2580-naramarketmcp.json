@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-alphago2580-naramarketmcp",
+  "description": "Access Korea’s G2B procurement and Nara Market data for bid notices, awards, contracts, statistics…",
+  "url": "https://github.com/alphago2580/naramarketmcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@alphago2580/naramarketmcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

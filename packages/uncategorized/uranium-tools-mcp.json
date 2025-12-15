@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "uranium-tools-mcp",
+  "description": "MCP for Uranium NFT tools to mint, list, and manage digital assets on the permaweb.",
+  "url": "https://github.com/xkelxmc/uranium-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "URANIUM_API_KEY": {
+      "description": "You can generate an API key from your Uranium account settings: https://portal.uranium.pro/dashboard/profile/api-keys",
+      "required": true
+    }
+  }
+}

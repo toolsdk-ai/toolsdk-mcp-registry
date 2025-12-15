@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "mcp-console-automation",
+  "description": "MCP server for AI-driven console application automation and monitoring",
+  "url": "https://github.com/ooples/mcp-console-automation",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "LOG_LEVEL": {
+      "description": "Logging level for console output (error, warn, info, debug, trace)",
+      "required": false
+    }
+  }
+}

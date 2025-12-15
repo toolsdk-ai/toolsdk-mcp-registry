@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "packageName": "fattureincloud-mcp",
+  "description": "Italian e-invoicing with Fatture in Cloud. Create, send to SDI, manage clients.",
+  "url": "https://github.com/aringad/fattureincloud-mcp",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "FIC_ACCESS_TOKEN": {
+      "description": "Fatture in Cloud API access token",
+      "required": true
+    },
+    "FIC_COMPANY_ID": {
+      "description": "Fatture in Cloud company ID",
+      "required": true
+    },
+    "FIC_SENDER_EMAIL": {
+      "description": "Email sender for courtesy copies",
+      "required": false
+    }
+  }
+}

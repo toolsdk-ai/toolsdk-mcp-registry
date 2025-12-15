@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@dinesh-nalla-se/playwright-mcp",
+  "description": "Playwright Tools for MCP",
+  "url": "https://github.com/dinesh-nalla-se/playwright-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "YOUR_API_KEY": {
+      "description": "Your API key for the service",
+      "required": true
+    }
+  }
+}

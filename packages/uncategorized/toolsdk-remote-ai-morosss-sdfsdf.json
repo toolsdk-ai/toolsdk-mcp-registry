@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-morosss-sdfsdf",
+  "description": "Find academic papers across major sources like arXiv, PubMed, bioRxiv, and more. Download PDFs whe…",
+  "url": "https://github.com/morosss/sdfsdf",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@morosss/sdfsdf/mcp"
+    }
+  ]
+}

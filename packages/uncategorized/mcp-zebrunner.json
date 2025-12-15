@@ -1,0 +1,70 @@
+{
+  "type": "mcp-server",
+  "packageName": "mcp-zebrunner",
+  "description": "Unified Zebrunner MCP server for TCM test cases, suites, coverage analysis, launchers, etc.",
+  "url": "https://github.com/maksimsarychau/mcp-zebrunner",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "ZEBRUNNER_URL": {
+      "description": "Base URL for your Zebrunner instance (e.g., https://your-instance.zebrunner.com)",
+      "required": true
+    },
+    "ZEBRUNNER_LOGIN": {
+      "description": "Your Zebrunner username/login",
+      "required": true
+    },
+    "ZEBRUNNER_TOKEN": {
+      "description": "Your Zebrunner API authentication token",
+      "required": true
+    },
+    "TIMEOUT": {
+      "description": "API request timeout in milliseconds (default: 30000)",
+      "required": false
+    },
+    "RETRY_ATTEMPTS": {
+      "description": "Number of retry attempts for failed API requests (default: 3)",
+      "required": false
+    },
+    "RETRY_DELAY": {
+      "description": "Delay between retry attempts in milliseconds (default: 1000)",
+      "required": false
+    },
+    "MAX_PAGE_SIZE": {
+      "description": "Maximum page size for paginated API requests (default: 100, max: 1000)",
+      "required": false
+    },
+    "DEFAULT_PAGE_SIZE": {
+      "description": "Default page size for paginated API requests (default: 10)",
+      "required": false
+    },
+    "DEBUG": {
+      "description": "Enable debug logging (default: false)",
+      "required": false
+    },
+    "ENABLE_RULES_ENGINE": {
+      "description": "Enable the rules engine for test case validation (default: auto-detected from mcp-zebrunner-rules.md file)",
+      "required": false
+    },
+    "STRICT_URL_VALIDATION": {
+      "description": "Enable strict URL validation for security (default: true)",
+      "required": false
+    },
+    "SKIP_URL_VALIDATION_ON_ERROR": {
+      "description": "Skip URL validation if it fails (less secure, more permissive) (default: false)",
+      "required": false
+    },
+    "ENABLE_RATE_LIMITING": {
+      "description": "Enable rate limiting for API calls (default: true)",
+      "required": false
+    },
+    "MAX_REQUESTS_PER_SECOND": {
+      "description": "Maximum API requests per second (default: 5, max: 100)",
+      "required": false
+    },
+    "RATE_LIMITING_BURST": {
+      "description": "Allow burst of API requests (default: 10, max: 200)",
+      "required": false
+    }
+  }
+}

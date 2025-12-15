@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "augments-mcp-server",
+  "description": "Augments MCP Server - A comprehensive framework documentation provider for Claude Code",
+  "url": "https://github.com/augmnt/augments-mcp-server",
+  "runtime": "python",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.augments.dev/mcp"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "type": "mcp-server",
+  "packageName": "@brightdata/mcp",
+  "description": "Bright Data's Web MCP server enabling AI agents to search, extract & navigate the web",
+  "url": "https://github.com/brightdata/brightdata-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "API_TOKEN": {
+      "description": "Your API key for Bright Data",
+      "required": true
+    },
+    "WEB_UNLOCKER_ZONE": {
+      "description": "Your unlocker zone name",
+      "required": false
+    },
+    "BROWSER_ZONE": {
+      "description": "Your browser zone name",
+      "required": false
+    },
+    "PRO_MODE": {
+      "description": "To enable PRO_MODE - set to true",
+      "required": false
+    }
+  }
+}

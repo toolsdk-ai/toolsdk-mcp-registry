@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-exa-labs-exa-code-mcp",
+  "description": "Find open-source libraries and fetch contextual code snippets by version to accelerate development…",
+  "url": "https://github.com/exa-labs/exa-code-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@exa-labs/exa-code-mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

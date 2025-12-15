@@ -1,0 +1,50 @@
+{
+  "type": "mcp-server",
+  "packageName": "mcp-arr-server",
+  "description": "MCP server for *arr media suite - Sonarr, Radarr, Lidarr, Readarr, Prowlarr",
+  "url": "https://github.com/aplaceforallmystuff/mcp-arr",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "SONARR_URL": {
+      "description": "Sonarr server URL",
+      "required": false
+    },
+    "SONARR_API_KEY": {
+      "description": "Sonarr API key",
+      "required": false
+    },
+    "RADARR_URL": {
+      "description": "Radarr server URL",
+      "required": false
+    },
+    "RADARR_API_KEY": {
+      "description": "Radarr API key",
+      "required": false
+    },
+    "LIDARR_URL": {
+      "description": "Lidarr server URL",
+      "required": false
+    },
+    "LIDARR_API_KEY": {
+      "description": "Lidarr API key",
+      "required": false
+    },
+    "READARR_URL": {
+      "description": "Readarr server URL",
+      "required": false
+    },
+    "READARR_API_KEY": {
+      "description": "Readarr API key",
+      "required": false
+    },
+    "PROWLARR_URL": {
+      "description": "Prowlarr server URL",
+      "required": false
+    },
+    "PROWLARR_API_KEY": {
+      "description": "Prowlarr API key",
+      "required": false
+    }
+  }
+}

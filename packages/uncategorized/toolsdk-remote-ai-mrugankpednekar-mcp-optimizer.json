@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-mrugankpednekar-mcp-optimizer",
+  "description": "Optimize crew and workforce schedules, resource allocation, and routing with linear and mixed-inte…",
+  "url": "https://github.com/mrugankpednekar/mcp-optimizer",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@mrugankpednekar/mcp-optimizer/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

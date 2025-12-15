@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-arjunkmrm-lta-mcp",
+  "description": "Provide real-time transportation data including bus arrivals, train service alerts, carpark availa…",
+  "url": "https://github.com/arjunkmrm/lta-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@arjunkmrm/lta-mcp/mcp"
+    }
+  ]
+}

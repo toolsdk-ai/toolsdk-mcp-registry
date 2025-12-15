@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "math-mcp-learning-server",
+  "description": "Educational MCP server with 12 math/stats tools, visualizations, and persistent workspace",
+  "url": "https://github.com/clouatre-labs/math-mcp-learning-server",
+  "runtime": "python",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://math-mcp.fastmcp.app/mcp"
+    }
+  ]
+}

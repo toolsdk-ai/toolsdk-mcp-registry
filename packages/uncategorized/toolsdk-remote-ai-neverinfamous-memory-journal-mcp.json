@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-neverinfamous-memory-journal-mcp",
+  "description": "A MCP server built for developers enabling Git based project management with project and personal…",
+  "url": "https://github.com/neverinfamous/memory-journal-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@neverinfamous/memory-journal-mcp/mcp"
+    }
+  ]
+}

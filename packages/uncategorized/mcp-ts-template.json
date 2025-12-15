@@ -1,0 +1,31 @@
+{
+  "type": "mcp-server",
+  "packageName": "mcp-ts-template",
+  "description": "A production-grade TypeScript template for scalable MCP servers with built-in observability.",
+  "url": "https://github.com/cyanheads/mcp-ts-template",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "MCP_LOG_LEVEL": {
+      "description": "Sets the minimum log level for output (e.g., 'debug', 'info', 'warn').",
+      "required": false
+    },
+    "MCP_HTTP_HOST": {
+      "description": "The hostname for the HTTP server.",
+      "required": false
+    },
+    "MCP_HTTP_PORT": {
+      "description": "The port to run the HTTP server on.",
+      "required": false
+    },
+    "MCP_HTTP_ENDPOINT_PATH": {
+      "description": "The endpoint path for the MCP server.",
+      "required": false
+    },
+    "MCP_AUTH_MODE": {
+      "description": "Authentication mode to use: 'none', 'jwt', or 'oauth'.",
+      "required": false
+    }
+  },
+  "binArgs": ["run", "start:stdio"]
+}

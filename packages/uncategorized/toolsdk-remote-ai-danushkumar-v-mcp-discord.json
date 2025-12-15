@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-danushkumar-v-mcp-discord",
+  "description": "An MCP server that integrates with Discord to provide AI-powered features.",
+  "url": "https://github.com/Danushkumar-V/mcp-discord",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@Danushkumar-V/mcp-discord/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

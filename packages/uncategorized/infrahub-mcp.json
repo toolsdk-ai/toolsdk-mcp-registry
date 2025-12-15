@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "packageName": "infrahub-mcp",
+  "description": "An MCP server connects your AI assistants to Infrahub using the open MCP standard.",
+  "url": "https://github.com/opsmill/infrahub-mcp",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "INFRAHUB_ADDRESS": {
+      "description": "The URL/address of your Infrahub instance",
+      "required": true
+    },
+    "INFRAHUB_API_TOKEN": {
+      "description": "Your Infrahub API token for authentication",
+      "required": true
+    }
+  }
+}

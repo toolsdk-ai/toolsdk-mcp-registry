@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "telnyx",
+  "description": "Official TypeScript library for the Telnyx API",
+  "url": "https://github.com/team-telnyx/telnyx-node",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "TELNYX_API_KEY": {
+      "description": "Your Telnyx API key for authentication",
+      "required": true
+    }
+  }
+}

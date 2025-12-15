@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/app-thoughtspot-mcp-server",
+  "description": "MCP Server for ThoughtSpot - provides OAuth authentication and tools for querying data",
+  "url": "https://github.com/thoughtspot/mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://agent.thoughtspot.app/mcp"
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://agent.thoughtspot.app/bearer/mcp"
+    }
+  ]
+}

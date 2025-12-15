@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-smithery-ai-cookbook-python-quickstart",
+  "description": "A simple MCP server built with FastMCP and python",
+  "url": "https://github.com/smithery-ai/smithery-cookbook",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@smithery-ai/cookbook-python-quickstart/mcp"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/com-qualityclouds-mcp-server-qualityclouds",
+  "description": "Secure MCP runtime server for scanning and autofixing code issues",
+  "url": "https://github.com/qualityclouds/qc_mcp_server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.qualityclouds.com/mcp"
+    }
+  ]
+}

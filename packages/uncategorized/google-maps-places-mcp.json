@@ -1,0 +1,26 @@
+{
+  "type": "mcp-server",
+  "packageName": "google-maps-places-mcp",
+  "description": "Allow AI systems to search for places and get business info via Google Maps Places API.",
+  "url": "https://github.com/domdomegg/google-maps-places-mcp.git",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "GOOGLE_ACCESS_TOKEN": {
+      "description": "Google OAuth access token with cloud-platform scope.",
+      "required": true
+    },
+    "MCP_TRANSPORT": {
+      "description": "Transport type.",
+      "required": true
+    },
+    "GOOGLE_CLIENT_ID": {
+      "description": "Google OAuth client ID.",
+      "required": true
+    },
+    "GOOGLE_CLIENT_SECRET": {
+      "description": "Google OAuth client secret.",
+      "required": true
+    }
+  }
+}

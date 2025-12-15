@@ -1,0 +1,42 @@
+{
+  "type": "mcp-server",
+  "packageName": "@connorbritain/mssql-mcp-server",
+  "description": "MCP server for Microsoft SQL Server - schema discovery, profiling, and safe data operations",
+  "url": "https://github.com/ConnorBritain/mssql-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "SERVER_NAME": {
+      "description": "SQL Server hostname or IP address",
+      "required": true
+    },
+    "DATABASE_NAME": {
+      "description": "Target database name",
+      "required": true
+    },
+    "SQL_AUTH_MODE": {
+      "description": "Authentication mode: sql, windows, or aad",
+      "required": false
+    },
+    "SQL_USERNAME": {
+      "description": "Username for SQL or Windows auth",
+      "required": false
+    },
+    "SQL_PASSWORD": {
+      "description": "Password for SQL or Windows auth",
+      "required": false
+    },
+    "SQL_PORT": {
+      "description": "SQL Server port (default: 1433)",
+      "required": false
+    },
+    "TRUST_SERVER_CERTIFICATE": {
+      "description": "Set true for self-signed certs",
+      "required": false
+    },
+    "READONLY": {
+      "description": "Set true to disable write operations",
+      "required": false
+    }
+  }
+}

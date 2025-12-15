@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/io-github-jfrog-jfrog-mcp-server",
+  "description": "MCP Server for JFrog, providing tools for development and artifact management.",
+  "url": "https://github.com/jfrog/jfrog-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://myPlatform.jfrog.github.io/mcp"
+    }
+  ]
+}

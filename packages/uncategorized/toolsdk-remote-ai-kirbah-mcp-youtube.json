@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-kirbah-mcp-youtube",
+  "description": "Provide token-optimized, structured YouTube data to enhance your LLM applications. Access efficien…",
+  "url": "https://github.com/kirbah/mcp-youtube",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@kirbah/mcp-youtube/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

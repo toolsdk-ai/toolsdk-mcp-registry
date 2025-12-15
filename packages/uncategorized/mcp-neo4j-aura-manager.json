@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "packageName": "mcp-neo4j-aura-manager",
+  "description": "MCP server for Neo4j Aura Database Instance Manager.",
+  "url": "https://github.com/neo4j-contrib/mcp-neo4j",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "NEO4J_AURA_CLIENT_ID": {
+      "description": "Neo4j Aura API Client ID",
+      "required": true
+    },
+    "NEO4J_AURA_CLIENT_SECRET": {
+      "description": "Neo4j Aura API Client Secret",
+      "required": true
+    },
+    "NEO4J_NAMESPACE": {
+      "description": "Namespace for tools",
+      "required": false
+    }
+  }
+}

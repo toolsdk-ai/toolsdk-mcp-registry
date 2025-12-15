@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-badroobot-mytestmcp",
+  "description": "Get current weather for any city and create images from your prompts. Streamline planning, reports…",
+  "url": "https://github.com/BadRooBot/python_mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@BadRooBot/my_test_mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

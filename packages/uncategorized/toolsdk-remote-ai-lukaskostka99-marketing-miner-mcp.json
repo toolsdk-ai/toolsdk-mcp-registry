@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-lukaskostka99-marketing-miner-mcp",
+  "description": "Discover high-impact keyword ideas across Central and Eastern European and English markets. Analyz…",
+  "url": "https://github.com/lukaskostka99/marketing-miner-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@lukaskostka99/marketing-miner-mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

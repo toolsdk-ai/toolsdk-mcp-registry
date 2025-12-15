@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/com-civic-nexus",
+  "description": "Zero-setup MCP gateway securely connecting AI to your tools with authentication and workflows",
+  "url": "https://github.com/civicteam/civic-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://nexus.civic.com/hub/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

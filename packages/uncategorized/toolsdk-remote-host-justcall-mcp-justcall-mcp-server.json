@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/host-justcall-mcp-justcall-mcp-server",
+  "description": "JustCall MCP Server enables LLMs and AI agents to make voice calls and send SMS via JustCall APIs.",
+  "url": "https://github.com/saaslabsco/justcall-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.justcall.host/mcp"
+    }
+  ]
+}

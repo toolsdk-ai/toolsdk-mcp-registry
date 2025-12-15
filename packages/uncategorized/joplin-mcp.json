@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "packageName": "joplin-mcp",
+  "description": "FastMCP server exposing Joplin notes, notebooks, tags, and imports.",
+  "url": "https://github.com/alondmnt/joplin-mcp",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "JOPLIN_TOKEN": {
+      "description": "Web Clipper authentication token from a running Joplin instance",
+      "required": true
+    },
+    "JOPLIN_URL": {
+      "description": "Optional override for the Joplin Web Clipper base URL (default http://localhost:41184)",
+      "required": false
+    }
+  }
+}

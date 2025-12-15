@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "syncline-mcp-server",
+  "description": "Syncline MCP Server (Python) - AI-powered meeting scheduling with intelligent auto-scheduling",
+  "url": "https://github.com/KekwanuLabs/syncline",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "SYNCLINE_API_KEY": {
+      "description": "Your Syncline API key from https://syncline.run/developer",
+      "required": true
+    }
+  }
+}

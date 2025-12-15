@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "token-optimizer-mcp",
+  "description": "Intelligent token optimization achieving 95%+ reduction through caching, compression, and 80+ tools",
+  "url": "https://github.com/ooples/token-optimizer-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "TOKEN_OPTIMIZER_CACHE_DIR": {
+      "description": "Directory path for cache storage (optional, defaults to ~/.token-optimizer-cache)",
+      "required": false
+    }
+  }
+}

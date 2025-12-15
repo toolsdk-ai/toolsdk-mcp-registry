@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "packageName": "cerebras-code-mcp",
+  "description": "Model Context Protocol (MCP) server for Cerebras to make coding faster in AI-first IDEs",
+  "url": "https://github.com/kevint-cerebras/cerebras-code-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "CEREBRAS_API_KEY": {
+      "description": "Your Cerebras API key from cloud.cerebras.ai",
+      "required": true
+    },
+    "OPENROUTER_API_KEY": {
+      "description": "Optional OpenRouter API key for fallback when Cerebras rate limits are hit",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "packageName": "mcp-pickaxe",
+  "description": "MCP server for Pickaxe API - manage AI agents, knowledge bases, users, and analytics",
+  "url": "https://github.com/aplaceforallmystuff/mcp-pickaxe",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "PICKAXE_API_KEY": {
+      "description": "Your Pickaxe studio API key",
+      "required": true
+    },
+    "PICKAXE_STUDIO_ID": {
+      "description": "Your Pickaxe studio ID",
+      "required": true
+    }
+  }
+}

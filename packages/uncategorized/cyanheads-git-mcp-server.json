@@ -1,0 +1,35 @@
+{
+  "type": "mcp-server",
+  "packageName": "@cyanheads/git-mcp-server",
+  "description": "Comprehensive Git MCP server enabling native git tools including clone, commit, worktree, & more.",
+  "url": "https://github.com/cyanheads/git-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "MCP_LOG_LEVEL": {
+      "description": "Sets the minimum log level for output (e.g., 'debug', 'info', 'warn').",
+      "required": false
+    },
+    "GIT_BASE_DIR": {
+      "description": "Optional absolute path to restrict all git operations to a specific directory tree. Provides security sandboxing for multi-tenant or shared environments.",
+      "required": false
+    },
+    "MCP_HTTP_HOST": {
+      "description": "The hostname for the HTTP server.",
+      "required": false
+    },
+    "MCP_HTTP_PORT": {
+      "description": "The port to run the HTTP server on.",
+      "required": false
+    },
+    "MCP_HTTP_ENDPOINT_PATH": {
+      "description": "The endpoint path for the MCP server.",
+      "required": false
+    },
+    "MCP_AUTH_MODE": {
+      "description": "Authentication mode to use: 'none', 'jwt', or 'oauth'.",
+      "required": false
+    }
+  },
+  "binArgs": ["run", "start:stdio"]
+}

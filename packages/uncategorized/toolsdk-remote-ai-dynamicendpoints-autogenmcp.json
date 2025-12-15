@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-dynamicendpoints-autogenmcp",
+  "description": "Create and manage AI agents that collaborate and solve problems through natural language interacti…",
+  "url": "https://github.com/DynamicEndpoints/Autogen_MCP",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@DynamicEndpoints/autogen_mcp/mcp"
+    }
+  ]
+}

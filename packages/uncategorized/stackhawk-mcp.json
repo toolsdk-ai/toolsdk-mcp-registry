@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "stackhawk-mcp",
+  "description": "An MCP server that provides interaction with StackHawk's security scanning platform.",
+  "url": "https://github.com/stackhawk/stackhawk-mcp",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "STACKHAWK_API_KEY": {
+      "description": "StackHawk API key",
+      "required": true
+    }
+  }
+}

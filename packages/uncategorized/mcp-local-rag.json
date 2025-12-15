@@ -1,0 +1,38 @@
+{
+  "type": "mcp-server",
+  "packageName": "mcp-local-rag",
+  "description": "Easy-to-setup local RAG server with minimal configuration",
+  "url": "https://github.com/shinpr/mcp-local-rag",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "BASE_DIR": {
+      "description": "Base directory for document storage (defaults to current working directory)",
+      "required": false
+    },
+    "DB_PATH": {
+      "description": "Path to LanceDB database directory (defaults to ./lancedb/)",
+      "required": false
+    },
+    "CACHE_DIR": {
+      "description": "Directory where Transformers.js models are cached (defaults to ./models/)",
+      "required": false
+    },
+    "MODEL_NAME": {
+      "description": "Embedding model name (defaults to Xenova/all-MiniLM-L6-v2)",
+      "required": false
+    },
+    "MAX_FILE_SIZE": {
+      "description": "Maximum file size in bytes (defaults to 104857600 / 100MB)",
+      "required": false
+    },
+    "CHUNK_SIZE": {
+      "description": "Text chunk size for splitting documents (defaults to 512)",
+      "required": false
+    },
+    "CHUNK_OVERLAP": {
+      "description": "Overlap between consecutive chunks (defaults to 100)",
+      "required": false
+    }
+  }
+}

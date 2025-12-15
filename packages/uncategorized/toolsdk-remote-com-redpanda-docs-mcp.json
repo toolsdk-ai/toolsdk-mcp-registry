@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/com-redpanda-docs-mcp",
+  "description": "Get authoritative answers to questions about Redpanda.",
+  "url": "https://github.com/redpanda-data/docs-site",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://docs.redpanda.com/mcp"
+    }
+  ]
+}

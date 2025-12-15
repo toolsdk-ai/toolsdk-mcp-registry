@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "packageName": "starling-bank-mcp",
+  "description": "Allow AI systems to view and control your Starling Bank account via MCP.",
+  "url": "https://github.com/domdomegg/starling-bank-mcp.git",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "STARLING_BANK_ACCESS_TOKEN": {
+      "description": "Starling Bank personal access token. Sign up for the Starling Developer Portal, link your account, and create a Personal Access Token.",
+      "required": true
+    },
+    "STARLING_BANK_PRIVATE_KEY_UID": {
+      "description": "Optional: Key UID of the signing key for sending payments.",
+      "required": false
+    },
+    "STARLING_BANK_PRIVATE_KEY_PEM": {
+      "description": "Optional: PEM-encoded signing key for sending payments.",
+      "required": false
+    }
+  }
+}
