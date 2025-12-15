@@ -1,6 +1,6 @@
 # 📚 All MCP Servers
 
-> **Complete directory of all 4521+ MCP servers in the ToolSDK Registry**
+> **Complete directory of all 4121+ MCP servers in the ToolSDK Registry**
 >
 > Looking for production-ready servers only? See the [main README](../README.md) for validated servers.
 
@@ -8,44 +8,49 @@
 
 ## 📊 Statistics
 
-- 📦 **Total Servers**: 4521
-- ✅ **Validated & Tested**: 810
-- ⚙️ **Community Contributed**: 3711
+- 📦 **Total Servers**: 4121
+- ✅ **Validated & Tested**: 720
+- ⚙️ **Community Contributed**: 3401
 
 ---
 
 ## 📂 Categories
 
-  - [Uncategorized](#uncategorized)
-  - [Aggregators](#aggregators)
-  - [Art & Culture](#art-and-culture)
-  - [Browser Automation](#browser-automation)
-  - [Cloud Platforms](#cloud-platforms)
-  - [Code Execution](#code-execution)
-  - [Coding Agents](#coding-agents)
-  - [Command Line](#command-line)
-  - [Communication](#communication)
-  - [Customer Data Platforms](#customer-data-platforms)
-  - [Databases](#databases)
-  - [Data Platforms](#data-platforms)
-  - [Developer Tools](#developer-tools)
-  - [Data Science Tools](#data-science-tools)
-  - [Embedded System](#embedded-system)
-  - [File Systems](#file-systems)
-  - [Finance & Fintech](#finance-fintech)
-  - [Gaming](#gaming)
-  - [Knowledge & Memory](#knowledge-memory)
-  - [Location Services](#location-services)
-  - [Marketing](#marketing)
-  - [Monitoring](#monitoring)
-  - [Search & Data Extraction](#search-data-extraction)
-  - [Security](#security)
-  - [Sports](#sports)
-  - [Support & Service Management](#support-service-management)
-  - [Translation Services](#translation-services)
-  - [Travel & Transportation](#travel-transportation)
-  - [Version Control](#version-control)
-  - [Other Tools and Integrations](#other-tools-and-integrations)
+- [📚 All MCP Servers](#-all-mcp-servers)
+  - [📊 Statistics](#-statistics)
+  - [📂 Categories](#-categories)
+  - [📋 All MCP Servers](#-all-mcp-servers-1)
+    - [Uncategorized (556 servers)](#uncategorized-556-servers)
+    - [Aggregators (83 servers)](#aggregators-83-servers)
+    - [Art \& Culture (134 servers)](#art--culture-134-servers)
+    - [Browser Automation (170 servers)](#browser-automation-170-servers)
+    - [Cloud Platforms (141 servers)](#cloud-platforms-141-servers)
+    - [Code Execution (54 servers)](#code-execution-54-servers)
+    - [Coding Agents (74 servers)](#coding-agents-74-servers)
+    - [Command Line (116 servers)](#command-line-116-servers)
+    - [Communication (210 servers)](#communication-210-servers)
+    - [Customer Data Platforms (23 servers)](#customer-data-platforms-23-servers)
+    - [Databases (221 servers)](#databases-221-servers)
+    - [Data Platforms (96 servers)](#data-platforms-96-servers)
+    - [Developer Tools (361 servers)](#developer-tools-361-servers)
+    - [Data Science Tools (98 servers)](#data-science-tools-98-servers)
+    - [Embedded System (55 servers)](#embedded-system-55-servers)
+    - [File Systems (108 servers)](#file-systems-108-servers)
+    - [Finance \& Fintech (268 servers)](#finance--fintech-268-servers)
+    - [Gaming (43 servers)](#gaming-43-servers)
+    - [Knowledge \& Memory (204 servers)](#knowledge--memory-204-servers)
+    - [Location Services (59 servers)](#location-services-59-servers)
+    - [Marketing (50 servers)](#marketing-50-servers)
+    - [Monitoring (61 servers)](#monitoring-61-servers)
+    - [Search \& Data Extraction (406 servers)](#search--data-extraction-406-servers)
+    - [Security (138 servers)](#security-138-servers)
+    - [Sports (16 servers)](#sports-16-servers)
+    - [Support \& Service Management (63 servers)](#support--service-management-63-servers)
+    - [Translation Services (13 servers)](#translation-services-13-servers)
+    - [Travel \& Transportation (42 servers)](#travel--transportation-42-servers)
+    - [Version Control (77 servers)](#version-control-77-servers)
+    - [Other Tools and Integrations (808 servers)](#other-tools-and-integrations-808-servers)
+  - [🔗 Quick Links](#-quick-links)
 
 
 ---
@@ -2761,8 +2766,8 @@ New mcp tool: Exa-code is a context tool for coding   (1 tools) (node)
 - [❌ @paddle/paddle-mcp](https://github.com/paddlehq/paddle-mcp-server): Enables developers to manage billing operations using natural language commands, streamlining financial API interactions for SaaS businesses.  (node) 
 - [❌ @paybyrd/ai-agent-toolkit](https://github.com/paybyrd/ai-agent-toolkit-js): Integrates with Paybyrd's payment processing API to enable creating payment links, processing refunds, and retrieving order information through a JavaScript library with configurable permissions and comprehensive error handling.  (node) 
 - [❌ @paypal/agent-toolkit](https://github.com/paypal/agent-toolkit): The PayPal Model Context Protocol server allows you to integrate with PayPal APIs through function calling.  (node) 
-- [❌ @paypal/mcp](https://github.com/paypal/paypal-mcp-server): AI agent integration with PayPal services.  (node) 
-- [❌ @paypal/mcp](https://github.com/paypal/paypal-mcp-server): AI agent integration with PayPal services.  (node) 
+- [❌ @paypal/mcp](https://github.com/paypal/paypal-mcp-server): A command line tool for setting up PayPal MCP server  (node) 
+- [❌ @paypal/mcp](https://github.com/paypal/paypal-mcp-server): A command line tool for setting up PayPal MCP server  (node) 
 - [❌ @stripe/agent-toolkit](https://github.com/stripe/agent-toolkit): Integrates with Stripe's API to enable payment processing, customer management, and financial operations for e-commerce and billing workflows.  (node) 
 - [❌ @stripe/agent-toolkit/tree/main/modelcontextprotocol](https://github.com/stripe/agent-toolkit/tree/main/modelcontextprotocol): The Stripe Model Context Protocol server allows you to integrate with Stripe APIs through function calling.  (node) 
 - [❌ @toolsdk.ai/mcp-mercury](https://github.com/dragonkhoi/mercury-mcp/tree/main/src): Simple MCP server that interfaces with the Mercury API, allowing you to talk to your Mercury banking data from any MCP client like Cursor or Claude Desktop.  (node) 
