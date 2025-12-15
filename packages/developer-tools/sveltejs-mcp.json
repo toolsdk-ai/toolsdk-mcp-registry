@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@sveltejs/mcp",
+  "description": "The official Svelte MCP server providing docs and autofixing tools for Svelte development",
+  "url": "https://github.com/sveltejs/mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.svelte.dev/mcp"
+    }
+  ]
+}

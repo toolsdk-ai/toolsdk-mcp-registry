@@ -217,6 +217,7 @@
     "@makeplane/plane-mcp-server": "0.1.4",
     "@makingchatbots/genesys-cloud-mcp-server": "0.0.13",
     "@malove86/mcp-mysql-server": "0.2.4",
+    "@mapbox/mcp-server": "0.6.1",
     "@masonator/coolify-mcp": "0.2.18",
     "@mbelinky/x-mcp-server": "1.1.0",
     "@mcp-devtools/jira": "0.2.6",
