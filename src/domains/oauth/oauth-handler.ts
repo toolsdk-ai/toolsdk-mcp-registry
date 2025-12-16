@@ -7,7 +7,7 @@
  * 3. Refresh: Refresh access token
  */
 
-import { getServerPort } from "../../shared/config/environment";
+import { getRegistryBaseUrl } from "../../shared/config/environment";
 import { createErrorResponse, createResponse } from "../../shared/utils/response-util";
 import { repository } from "../package/package-handler";
 import { oauthSessionStore } from "./oauth-session";
@@ -38,10 +38,8 @@ import {
  * Get the Registry's OAuth callback URL
  */
 function getRegistryCallbackUrl(): string {
-  const port = getServerPort();
-  const host = process.env.REGISTRY_HOST || `localhost:${port}`;
-  const protocol = process.env.REGISTRY_PROTOCOL || "http";
-  return `${protocol}://${host}/api/v1/oauth/callback`;
+  const baseUrl = getRegistryBaseUrl();
+  return `${baseUrl}/api/v1/oauth/callback`;
 }
 
 /**
