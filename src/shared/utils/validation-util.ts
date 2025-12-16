@@ -79,6 +79,14 @@ async function checkDependencies(dependencies: Record<string, string>): Promise<
 
 export async function isValidNpmPackage(packageName: string): Promise<boolean> {
   try {
+    // Skip npm registry validation for remote MCP servers which use
+    // packageName values like "@toolsdk-remote/xxx" that are not
+    // actual npm packages.
+    if (packageName.startsWith("@toolsdk-remote/")) {
+      console.log(`Skipping npm validation for remote MCP: ${packageName}`);
+      return true;
+    }
+
     console.log("Checking package:", packageName);
     const response = await axios.get(`https://registry.npmjs.org/${packageName}`, {
       timeout: 5000,
