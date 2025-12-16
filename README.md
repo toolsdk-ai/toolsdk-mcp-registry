@@ -221,6 +221,43 @@ This open-source project provides:
 - **Unified Gateway** - HTTP API to query and execute tools remotely
 - **Auto-Generated Docs** - Always up-to-date README and API documentation
 
+### ✅ Validated Packages = One-Line Integration (ToolSDK)
+
+Some packages in this registry are marked as `validated: true`.
+
+> [!NOTE]
+> **What does `validated: true` mean for you?**
+> - You can load the MCP package directly via our ToolSDK NPM client and get ready-to-use tool adapters (e.g. **Vercel AI SDK tools**) without writing your own tool schema mapping.
+> - The registry index includes the discovered `tools` metadata for validated packages, so you can pick a `toolKey` and call it immediately.
+>
+> **Where is this flag stored?**
+> - See `indexes/packages-list.json` entries (e.g. `{"validated": true, "tools": { ... } }`).
+
+#### Example: Use a validated package with Vercel AI SDK
+
+Template: `const tool = await toolSDK.package('<packageName>', { ...env }).getAISDKTool('<toolKey>');`
+
+```ts
+// import { generateText } from 'ai';
+// import { openai } from '@ai-sdk/openai'
+import { ToolSDKApiClient } from 'toolsdk/api';
+
+const toolSDK = new ToolSDKApiClient({ apiKey: process.env.TOOLSDK_AI_API_KEY });
+
+const searchMCP = await toolSDK.package('@toolsdk.ai/tavily-mcp', { TAVILY_API_KEY: process.env.TAVILY_API_KEY });
+
+const searchTool = await searchMCP.getAISDKTool('tavily-search');
+
+// const completion = await generateText({
+//   model: openai('gpt-4.1'),
+//   messages: [{
+//       role: 'user',
+//       content: 'Help me search for the latest AI news',
+//   }],
+//   tools: { searchTool, emailTool },
+// });
+```
+
 **Available as:**
 
 - **Docker Image** - Full-featured Gateway & Registry
@@ -237,11 +274,15 @@ This open-source project provides:
 
 Help grow the ecosystem! Share your AI tools, plugins, and integrations with the community.
 
-### How to Submit
+### Quick Submission
 
 [![Watch the video](https://img.youtube.com/vi/J_oaDtCoVVo/hqdefault.jpg)](https://www.youtube.com/watch?v=J_oaDtCoVVo)
 
-**1. Create JSON Config** - Simple, structured format:
+1. [Fork this repository](https://github.com/toolsdk-ai/toolsdk-mcp-registry/fork)
+2. Create `your-mcp-server.json` in [packages/uncategorized](./packages/uncategorized) (or the best matching category folder)
+3. Submit a PR
+
+Config Example:
 
 ```json
 {
@@ -261,21 +302,15 @@ Help grow the ecosystem! Share your AI tools, plugins, and integrations with the
 }
 ```
 
-**2. Submit via Pull Request**
-
-- [Fork this repository](https://github.com/toolsdk-ai/toolsdk-mcp-registry/fork)
-- Create `your-mcp-server.json` in [packages/uncategorized](./packages/uncategorized)
-- Submit a PR
-
-**3. Get Discovered**
-
 Your MCP server will be:
 - ✅ Listed in the registry
 - 🔍 Searchable via REST API
 - 📦 Available in npm package
 - 🌐 Featured on [ToolSDK.ai](https://toolsdk.ai)
 
-📖 **Detailed Guide**: [Contributing Documentation](./docs/guide.md)
+📖 **Source of truth (schema, fields, remotes, OAuth)**: [CONTRIBUTING.md](./CONTRIBUTING.md)
+
+📚 Additional docs: [docs/guide.md](./docs/guide.md)
 
 ---
 
@@ -289,6 +324,9 @@ Your MCP server will be:
 > ⭐ **Featured below**: Hand-picked, production-ready MCP servers verified by our team.
 >
 > 📚 **Looking for all 4521+ servers?** Check out [**All MCP Servers**](./docs/ALL-MCP-SERVERS.md) for the complete list.
+
+> [!TIP]
+> If a package is marked as `validated: true` in the index, you can usually wire it up in minutes via ToolSDK (e.g. `getAISDKTool(toolKey)`).
 
 Browse by category: Developer Tools, AI Agents, Databases, Cloud Platforms, APIs, and more!
 
