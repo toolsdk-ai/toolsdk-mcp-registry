@@ -15110,7 +15110,7 @@
   },
   "@paypal/mcp": {
     "category": "finance-fintech",
-    "path": "finance-fintech/paypal-mcp.json",
+    "path": "finance-fintech/paypal-mcp-server.json",
     "validated": false,
     "tools": {}
   },
@@ -42191,7 +42191,7 @@
   },
   "12306-mcp": {
     "category": "travel-transportation",
-    "path": "travel-transportation/jok-12306-mcp.json",
+    "path": "travel-transportation/12306-mcp.json",
     "validated": true,
     "tools": {
       "get-current-date": {
@@ -47727,8 +47727,9 @@
     "tools": {}
   },
   "@studious-xiaoyu/oracle-link": {
-    "path": "uncategorized/studious-xiaoyu-oracle-link.json",
     "category": "uncategorized",
+    "path": "uncategorized/studious-xiaoyu-oracle-link.json",
+    "validated": true,
     "tools": {
       "oracle_query": {
         "name": "oracle_query",
@@ -47742,12 +47743,12 @@
         "name": "oracle_describe_table",
         "description": "Return detailed metadata for a table: table comment; columns with data type, length, precision/scale, nullability, default value, and column comment; primary key columns; unique constraints; foreign keys with referenced owner/table/columns; and indexes with uniqueness and columns. With owner provided, queries ALL_* views (may require privileges); otherwise uses USER_* views. Optional url supports per-call connection. table_name and owner are typically uppercase."
       }
-    },
-    "validated": true
+    }
   },
   "ha-mcp-server": {
-    "path": "uncategorized/ha-mcp-server.json",
     "category": "uncategorized",
+    "path": "uncategorized/ha-mcp-server.json",
+    "validated": true,
     "tools": {
       "scene_configure": {
         "name": "scene_configure",
@@ -47793,44 +47794,44 @@
         "name": "scene_fix",
         "description": "Fix problems found by scene_diagnose. Can fix null values, add missing lights to exclusive scenes, restore from backup, or interactively test and fix a specific scene. test_scene action REQUIRES user_confirmed=true because it changes lights."
       }
-    },
-    "validated": true
+    }
   },
   "@agent-infra/mcp-server-browser": {
-    "path": "uncategorized/agent-infra-mcp-server-browser.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/agent-infra-mcp-server-browser.json",
+    "validated": false,
+    "tools": {}
   },
   "infrahub-mcp": {
-    "path": "uncategorized/infrahub-mcp.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/infrahub-mcp.json"
   },
   "telnyx": {
-    "path": "uncategorized/telnyx.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/telnyx.json",
+    "validated": false,
+    "tools": {}
   },
   "claude-flow": {
-    "path": "uncategorized/claude-flow.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/claude-flow.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-arjunkmrm-mango-sago": {
-    "path": "uncategorized/toolsdk-remote-ai-arjunkmrm-mango-sago.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-arjunkmrm-mango-sago.json",
+    "validated": false,
+    "tools": {}
   },
   "code-weaver": {
-    "path": "uncategorized/code-weaver.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/code-weaver.json"
   },
   "@toolsdk-remote/dev-ohmyposh-validator": {
-    "path": "uncategorized/toolsdk-remote-dev-ohmyposh-validator.json",
     "category": "uncategorized",
+    "path": "uncategorized/toolsdk-remote-dev-ohmyposh-validator.json",
+    "validated": true,
     "tools": {
       "validate_config": {
         "name": "validate_config",
@@ -47840,32 +47841,32 @@
         "name": "validate_segment",
         "description": "Validate a segment snippet against the oh-my-posh schema. Useful for validating individual prompt segments before adding them to a configuration."
       }
-    },
-    "validated": true
+    }
   },
   "mcp-bookmark-server": {
-    "path": "uncategorized/mcp-bookmark-server.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/mcp-bookmark-server.json"
   },
   "fast-mcp-telegram": {
-    "path": "uncategorized/fast-mcp-telegram.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/fast-mcp-telegram.json"
   },
   "@toolsdk-remote/com-agilitycms-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-com-agilitycms-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-com-agilitycms-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-ramadasmr-networkcalc-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-ramadasmr-networkcalc-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-ramadasmr-networkcalc-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/io-github-selisedigitalplatforms-l0-py-blocks-mcp": {
-    "path": "uncategorized/toolsdk-remote-selisedigitalplatforms-l0-py-blocks-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/toolsdk-remote-selisedigitalplatforms-l0-py-blocks-mcp.json",
+    "validated": true,
     "tools": {
       "activate_social_login": {
         "name": "activate_social_login",
@@ -48011,79 +48012,79 @@
         "name": "publish_translation",
         "description": "Publish translations for a project, making them live and available for use.\n\nThis function publishes all translation keys and their translations for the specified project,\nmaking them available in the production environment.\n\nArgs:\n    project_key: Project key (tenant ID). Uses global tenant_id if not provided\n\nReturns:\n    JSON string with publish operation result including success/failure status"
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/ai-smithery-neverinfamous-memory-journal-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-neverinfamous-memory-journal-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-neverinfamous-memory-journal-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "mcp-context-server": {
-    "path": "uncategorized/mcp-context-server.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/mcp-context-server.json"
   },
   "@raytien/git-mcp-server": {
-    "path": "uncategorized/raytien-git-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/raytien-git-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-blockscout-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-ai-blockscout-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-blockscout-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-lukaskostka99-marketing-miner-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-lukaskostka99-marketing-miner-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-lukaskostka99-marketing-miner-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-aman-amith-shastry-scientificcomputationmcp": {
-    "path": "uncategorized/toolsdk-remote-ai-aman-amith-shastry-scientificcomputationmcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-aman-amith-shastry-scientificcomputationmcp.json",
+    "validated": false,
+    "tools": {}
   },
   "frappe-dev-mcp-server": {
-    "path": "uncategorized/frappe-dev-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/frappe-dev-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-eliu243-oura-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-ai-eliu243-oura-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-eliu243-oura-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "image-recognition-mcp": {
-    "path": "uncategorized/image-recognition-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/image-recognition-mcp.json",
+    "validated": true,
     "tools": {
       "describe-image": {
         "name": "describe-image",
         "description": "Describe an image by URL"
       }
-    },
-    "validated": true
+    }
   },
   "redmine-mcp-server": {
-    "path": "uncategorized/redmine-mcp-server.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/redmine-mcp-server.json"
   },
   "@toolsdk-remote/ai-smithery-alex-llm-attack-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-ai-alex-llm-attack-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-alex-llm-attack-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@duongkhuong/mcp-redmine": {
-    "path": "uncategorized/duongkhuong-mcp-redmine.json",
     "category": "uncategorized",
+    "path": "uncategorized/duongkhuong-mcp-redmine.json",
+    "validated": true,
     "tools": {
       "get_issues": {
         "name": "get_issues",
@@ -48141,92 +48142,92 @@
         "name": "get_time_entry_activities",
         "description": "Get list of time entry activities (e.g. Design, Development)."
       }
-    },
-    "validated": true
+    }
   },
   "google-drive-mcp": {
-    "path": "uncategorized/google-drive-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/google-drive-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "codelogic-mcp-server": {
-    "path": "uncategorized/codelogic-mcp-server.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/codelogic-mcp-server.json"
   },
   "couchbase-mcp-server": {
-    "path": "uncategorized/couchbase-mcp-server.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/couchbase-mcp-server.json"
   },
   "stackhawk-mcp": {
-    "path": "uncategorized/stackhawk-mcp.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/stackhawk-mcp.json"
   },
   "@toolsdk-remote/ai-smithery-akilat-spec-leave-manager-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-akilat-spec-leave-manager-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-akilat-spec-leave-manager-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@antonytm/mcp-all": {
-    "path": "uncategorized/antonytm-mcp-all.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/antonytm-mcp-all.json",
+    "validated": false,
+    "tools": {}
   },
   "mkdocs-mcp": {
-    "path": "uncategorized/mkdocs-mcp.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/mkdocs-mcp.json"
   },
   "@toolsdk-remote/ai-smithery-bigvik193-reddit-ads-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-bigvik193-reddit-ads-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-bigvik193-reddit-ads-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-arjunkmrm-sg-bus-test": {
-    "path": "uncategorized/toolsdk-remote-ai-arjunkmrm-sg-bus-test.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-arjunkmrm-sg-bus-test.json",
+    "validated": false,
+    "tools": {}
   },
   "@davidfuchs/mcp-uptime-kuma": {
-    "path": "uncategorized/davidfuchs-mcp-uptime-kuma.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/davidfuchs-mcp-uptime-kuma.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/com-qualityclouds-mcp-server-qualityclouds": {
-    "path": "uncategorized/toolsdk-remote-com-qualityclouds-mcp-server-qualityclouds.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-com-qualityclouds-mcp-server-qualityclouds.json",
+    "validated": false,
+    "tools": {}
   },
   "mcp-ts-template": {
-    "path": "uncategorized/mcp-ts-template.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/mcp-ts-template.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-bielacki-igdb-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-ai-bielacki-igdb-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-bielacki-igdb-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "agent-mcp-gateway": {
-    "path": "uncategorized/agent-mcp-gateway.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/agent-mcp-gateway.json"
   },
   "@toolsdk-remote/ai-smithery-exa-labs-exa-code-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-exa-labs-exa-code-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-exa-labs-exa-code-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "tachibot-mcp": {
-    "path": "uncategorized/tachibot-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/tachibot-mcp.json",
+    "validated": true,
     "tools": {
       "think": {
         "name": "think",
@@ -48320,28 +48321,28 @@
         "name": "continue_workflow",
         "description": "Continue workflow"
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/ai-smithery-harjap-singh-3105-splitwisemcp": {
-    "path": "uncategorized/toolsdk-remote-ai-harjap-singh-3105-splitwisemcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-harjap-singh-3105-splitwisemcp.json",
+    "validated": false,
+    "tools": {}
   },
   "protein-mcp-server": {
-    "path": "uncategorized/protein-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/protein-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "pagerduty-mcp": {
-    "path": "uncategorized/pagerduty-mcp.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/pagerduty-mcp.json"
   },
   "welcome-text-generator-mcp": {
-    "path": "uncategorized/welcome-text-generator-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/welcome-text-generator-mcp.json",
+    "validated": true,
     "tools": {
       "extract_from_text": {
         "name": "extract_from_text",
@@ -48355,64 +48356,64 @@
         "name": "generate_modular_welcome_text",
         "description": "Generiert einen strukturierten Willkommenstext nach dem Modul-Template-System"
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/com-smartling-smartling-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-com-smartling-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-com-smartling-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-exa-exa": {
-    "path": "uncategorized/toolsdk-remote-ai-exa.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-exa.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-brave": {
-    "path": "uncategorized/toolsdk-remote-ai-brave.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-brave.json",
+    "validated": false,
+    "tools": {}
   },
   "remarkable-mcp": {
-    "path": "uncategorized/remarkable-mcp.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/remarkable-mcp.json"
   },
   "@toolsdk-remote/ai-kubit-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-ai-kubit-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-kubit-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-szge-lolwiki-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-szge-lolwiki-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-szge-lolwiki-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-pratiksha-kanoja-magicslide-mcp-test": {
-    "path": "uncategorized/toolsdk-remote-ai-pratiksha-kanoja-magicslide-mcp-test.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-pratiksha-kanoja-magicslide-mcp-test.json",
+    "validated": false,
+    "tools": {}
   },
   "@marcelo-ochoa/server-postgres": {
-    "path": "uncategorized/marcelo-ochoa-server-postgres.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/marcelo-ochoa-server-postgres.json",
+    "validated": false,
+    "tools": {}
   },
   "autoplans-mcp": {
-    "path": "uncategorized/autoplans-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/autoplans-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@atlassian-dc-mcp/bitbucket": {
-    "path": "uncategorized/atlassian-dc-mcp-bitbucket.json",
     "category": "uncategorized",
+    "path": "uncategorized/atlassian-dc-mcp-bitbucket.json",
+    "validated": true,
     "tools": {
       "bitbucket_getProjects": {
         "name": "bitbucket_getProjects",
@@ -48450,18 +48451,18 @@
         "name": "bitbucket_getPullRequestDiff",
         "description": "Get text diff for a specific file in a Bitbucket pull request. Returns plain text diff format. Note: Before getting diff, use getPullRequestChanges to understand what files were changed in the PR"
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/dev-composio-rube-rube": {
-    "path": "uncategorized/toolsdk-remote-dev-composio-rube.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-dev-composio-rube.json",
+    "validated": false,
+    "tools": {}
   },
   "mcp-local-rag": {
-    "path": "uncategorized/mcp-local-rag.json",
     "category": "uncategorized",
+    "path": "uncategorized/mcp-local-rag.json",
+    "validated": true,
     "tools": {
       "query_documents": {
         "name": "query_documents",
@@ -48483,18 +48484,18 @@
         "name": "status",
         "description": "Get system status including total documents, total chunks, database size, and configuration information."
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/ai-smithery-blbl147-xhs-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-blbl147-xhs-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-blbl147-xhs-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@withinfocus/tba-mcp-server": {
-    "path": "uncategorized/withinfocus-tba-mcp-server.json",
     "category": "uncategorized",
+    "path": "uncategorized/withinfocus-tba-mcp-server.json",
+    "validated": true,
     "tools": {
       "get_team": {
         "name": "get_team",
@@ -48740,42 +48741,42 @@
         "name": "get_district_teams_keys",
         "description": "Get team keys in a specific district"
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/io-trunk-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-io-trunk-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-io-trunk-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/io-github-mindscapehq-mcp-server-raygun": {
-    "path": "uncategorized/toolsdk-remote-mindscapehq-mcp-server-raygun.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-mindscapehq-mcp-server-raygun.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-miguelgarzons-mcp-cun": {
-    "path": "uncategorized/toolsdk-remote-ai-miguelgarzons-mcp-cun.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-miguelgarzons-mcp-cun.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-callmybot-domoticz": {
-    "path": "uncategorized/toolsdk-remote-ai-callmybot-domoticz.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-callmybot-domoticz.json",
+    "validated": false,
+    "tools": {}
   },
   "web-fetch-mcp": {
-    "path": "uncategorized/web-fetch-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/web-fetch-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/com-mermaidchart-mermaid-mcp": {
-    "path": "uncategorized/toolsdk-remote-com-mermaidchart-mermaid-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/toolsdk-remote-com-mermaidchart-mermaid-mcp.json",
+    "validated": true,
     "tools": {
       "validate_and_render_mermaid_diagram": {
         "name": "validate_and_render_mermaid_diagram",
@@ -48785,40 +48786,40 @@
         "name": "list_tools",
         "description": "Lists all available MCP servers and their tools in the workspace."
       }
-    },
-    "validated": true
+    }
   },
   "memdocs": {
-    "path": "uncategorized/memdocs.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/memdocs.json"
   },
   "@toolsdk-remote/ai-smithery-takodata-tako-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-takodata-tako-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-takodata-tako-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/com-monday-monday-com": {
-    "path": "uncategorized/toolsdk-remote-com-monday-com.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-com-monday-com.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/dev-rostro-rostro": {
-    "path": "uncategorized/toolsdk-remote-dev-rostro.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-dev-rostro.json",
+    "validated": false,
+    "tools": {}
   },
   "navifare-mcp": {
-    "path": "uncategorized/navifare-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/navifare-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@flightradar24/fr24api-mcp": {
-    "path": "uncategorized/flightradar24-fr24api-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/flightradar24-fr24api-mcp.json",
+    "validated": true,
     "tools": {
       "get_live_flights_positions_light": {
         "name": "get_live_flights_positions_light",
@@ -48880,36 +48881,36 @@
         "name": "get_historic_flight_events_light",
         "description": "Returns selected historical flight events (gate_departure, takeoff, cruising, airspace_transition, resuming_flightplan, descent, landed, gate_arrival), sorted by event_timestamp and grouped by flight_id. REQUIRED: flight_ids and event_types must be provided and non-empty."
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/ai-smithery-arjunkmrm-fetch": {
-    "path": "uncategorized/toolsdk-remote-ai-arjunkmrm-fetch.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-arjunkmrm-fetch.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/app-thoughtspot-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-app-thoughtspot-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-app-thoughtspot-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "google-sheets-mcp": {
-    "path": "uncategorized/google-sheets-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/google-sheets-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-cindyloo-dropbox-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-ai-cindyloo-dropbox-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-cindyloo-dropbox-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/com-sonatype-dependency-management-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-com-sonatype-dependency-management-mcp-server.json",
     "category": "uncategorized",
+    "path": "uncategorized/toolsdk-remote-com-sonatype-dependency-management-mcp-server.json",
+    "validated": true,
     "tools": {
       "getComponentVersion": {
         "name": "getComponentVersion",
@@ -48923,12 +48924,12 @@
         "name": "getRecommendedComponentVersions",
         "description": "Returns top dependency version recommendations ranked by Developer Trust Score with\nsecurity, licensing, and quality analysis. Developer Trust Score is a measure of quality,\nsecurity, licensing, and maintainability. Use this when selecting a new component to add\nto a project (without version) or when upgrading an existing component (with version).\nDependencies can be referred to as packages, components or libraries. They can be\ntransitive (brought in by other dependencies) or direct (explicitly added to the\nproject)."
       }
-    },
-    "validated": true
+    }
   },
   "@sumup/mcp": {
-    "path": "uncategorized/sumup-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/sumup-mcp.json",
+    "validated": true,
     "tools": {
       "get_payment_methods": {
         "name": "get_payment_methods",
@@ -49126,18 +49127,18 @@
         "name": "create_reader_terminate",
         "description": "Terminate a Reader Checkout stops the current transaction on the target device.\n\nThis process is asynchronous and the actual termination may take some time to be performed on the device.\n\n\nThere are some caveats when using this endpoint:\n* The target device must be online, otherwise terminate won't be accepted\n* The action will succeed only if the device is waiting for cardholder action: e.g: waiting for card, waiting for PIN, etc.\n* There is no confirmation of the termination.\n\nIf a transaction is successfully terminated and `return_url` was provided on Checkout, the transaction status will be sent as `failed` to the provided URL.\n\n\n**Note**: If the target device is a Solo, it must be in version 3.3.28.0 or higher."
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/ai-smithery-samihalawa-whatsapp-go-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-samihalawa-whatsapp-go-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-samihalawa-whatsapp-go-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "math-mcp-learning-server": {
-    "path": "uncategorized/math-mcp-learning-server.json",
     "category": "uncategorized",
+    "path": "uncategorized/math-mcp-learning-server.json",
+    "validated": true,
     "tools": {
       "calculate": {
         "name": "calculate",
@@ -49207,46 +49208,46 @@
         "name": "matrix_eigenvalues",
         "description": "Calculate the eigenvalues of a square matrix.\n\nArgs:\n    matrix: Square matrix (n x n)\n\nReturns:\n    List of eigenvalues (may be complex numbers)\n\nRaises:\n    ValueError: If matrix is not square\n\nExamples:\n    matrix_eigenvalues([[4, 2], [1, 3]])\n    matrix_eigenvalues([[3, 0, 0], [0, 5, 0], [0, 0, 7]])  # Diagonal matrix"
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/dev-storage-mcp": {
-    "path": "uncategorized/toolsdk-remote-dev-storage-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-dev-storage-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/io-github-onlyoffice-docspace": {
-    "path": "uncategorized/toolsdk-remote-onlyoffice-docspace.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-onlyoffice-docspace.json",
+    "validated": false,
+    "tools": {}
   },
   "syncline-mcp-server": {
-    "path": "uncategorized/syncline-mcp-server.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/syncline-mcp-server.json"
   },
   "@toolsdk-remote/ai-smithery-bowenxu0126-aistudiohw3": {
-    "path": "uncategorized/toolsdk-remote-ai-bowenxu0126-aistudiohw3.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-bowenxu0126-aistudiohw3.json",
+    "validated": false,
+    "tools": {}
   },
   "@tago-io/mcp-server": {
-    "path": "uncategorized/tago-io-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/tago-io-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-smithery-ai-fetch": {
-    "path": "uncategorized/toolsdk-remote-ai-fetch.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-fetch.json",
+    "validated": false,
+    "tools": {}
   },
   "@koki-develop/esa-mcp-server": {
-    "path": "uncategorized/koki-develop-esa-mcp-server.json",
     "category": "uncategorized",
+    "path": "uncategorized/koki-develop-esa-mcp-server.json",
+    "validated": true,
     "tools": {
       "get_posts": {
         "name": "get_posts",
@@ -49288,18 +49289,18 @@
         "name": "delete_comment",
         "description": "Delete an existing comment from the esa team. Requires a comment ID. The comment will be permanently deleted and cannot be recovered."
       }
-    },
-    "validated": true
+    }
   },
   "mcp-console-automation": {
-    "path": "uncategorized/mcp-console-automation.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/mcp-console-automation.json",
+    "validated": false,
+    "tools": {}
   },
   "@kontent-ai/mcp-server": {
-    "path": "uncategorized/kontent-ai-mcp-server.json",
     "category": "uncategorized",
+    "path": "uncategorized/kontent-ai-mcp-server.json",
+    "validated": true,
     "tools": {
       "get-initial-context": {
         "name": "get-initial-context",
@@ -49461,102 +49462,102 @@
         "name": "unpublish-variant-mapi",
         "description": "Unpublish or schedule unpublishing of Kontent.ai variant"
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/ai-smithery-badroobot-testm": {
-    "path": "uncategorized/toolsdk-remote-ai-badroobot-testm.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-badroobot-testm.json",
+    "validated": false,
+    "tools": {}
   },
   "deployhq-mcp-server": {
-    "path": "uncategorized/deployhq-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/deployhq-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-ilyagusev-academiamcp": {
-    "path": "uncategorized/toolsdk-remote-ai-ilyagusev-academiamcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-ilyagusev-academiamcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-rainbowgore-stealthee-mcp-tools": {
-    "path": "uncategorized/toolsdk-remote-ai-rainbowgore-stealthee-mcp-tools.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-rainbowgore-stealthee-mcp-tools.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/io-github-ptyagiegnyte-egnyte-remote": {
-    "path": "uncategorized/toolsdk-remote-ptyagiegnyte-egnyte-remote.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ptyagiegnyte-egnyte-remote.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-adamamer20-paper-search-mcp-openai": {
-    "path": "uncategorized/toolsdk-remote-ai-adamamer20-paper-search-mcp-openai.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-adamamer20-paper-search-mcp-openai.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-smithery-ai-cookbook-python-quickstart": {
-    "path": "uncategorized/toolsdk-remote-ai-cookbook-python-quickstart.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-cookbook-python-quickstart.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-zeta-chain-cli": {
-    "path": "uncategorized/toolsdk-remote-ai-zeta-chain-cli.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-zeta-chain-cli.json",
+    "validated": false,
+    "tools": {}
   },
   "byteplant-mcp": {
-    "path": "uncategorized/byteplant-mcp.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/byteplant-mcp.json"
   },
   "@toolsdk-remote/ai-smithery-kwp-lab-rss-reader-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-kwp-lab-rss-reader-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-kwp-lab-rss-reader-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-badroobot-mytestmcp": {
-    "path": "uncategorized/toolsdk-remote-ai-badroobot-mytestmcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-badroobot-mytestmcp.json",
+    "validated": false,
+    "tools": {}
   },
   "openroute-mcp": {
-    "path": "uncategorized/openroute-mcp.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/openroute-mcp.json"
   },
   "mcp-server-terminal": {
-    "path": "uncategorized/mcp-server-terminal.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/mcp-server-terminal.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-mjucius-cozimcp": {
-    "path": "uncategorized/toolsdk-remote-ai-mjucius-cozimcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-mjucius-cozimcp.json",
+    "validated": false,
+    "tools": {}
   },
   "mcp-neo4j-data-modeling": {
-    "path": "uncategorized/mcp-neo4j-data-modeling.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/mcp-neo4j-data-modeling.json"
   },
   "mcp-funnel": {
-    "path": "uncategorized/mcp-funnel.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/mcp-funnel.json",
+    "validated": false,
+    "tools": {}
   },
   "meta-api-mcp-server": {
-    "path": "uncategorized/meta-api-mcp-server.json",
     "category": "uncategorized",
+    "path": "uncategorized/meta-api-mcp-server.json",
+    "validated": true,
     "tools": {
       "listCharges": {
         "name": "listCharges",
@@ -49834,12 +49835,12 @@
         "name": "deletePost",
         "description": "Deletes a specific post by its ID."
       }
-    },
-    "validated": true
+    }
   },
   "@atlassian-dc-mcp/jira": {
-    "path": "uncategorized/atlassian-dc-mcp-jira.json",
     "category": "uncategorized",
+    "path": "uncategorized/atlassian-dc-mcp-jira.json",
+    "validated": true,
     "tools": {
       "jira_searchIssues": {
         "name": "jira_searchIssues",
@@ -49865,18 +49866,18 @@
         "name": "jira_postIssueComment",
         "description": "Post a comment on a JIRA issue in the JIRA Data Center edition instance"
       }
-    },
-    "validated": true
+    }
   },
   "servicenow-mcp-server": {
-    "path": "uncategorized/servicenow-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/servicenow-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@portel/ncp": {
-    "path": "uncategorized/portel-ncp.json",
     "category": "uncategorized",
+    "path": "uncategorized/portel-ncp.json",
+    "validated": true,
     "tools": {
       "find": {
         "name": "find",
@@ -49886,56 +49887,56 @@
         "name": "code",
         "description": "Execute TypeScript with MCPs as namespaces (e.g., github.get_repo()). Use ncp.find() for discovery. Console captured."
       }
-    },
-    "validated": true
+    }
   },
   "flow-nexus": {
-    "path": "uncategorized/flow-nexus.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/flow-nexus.json",
+    "validated": false,
+    "tools": {}
   },
   "dida365-mcp-server": {
-    "path": "uncategorized/dida365-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/dida365-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-pinkpixel-dev-web-scout-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-pinkpixel-dev-web-scout-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-pinkpixel-dev-web-scout-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-nekzus-npm-sentinel-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-nekzus-npm-sentinel-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-nekzus-npm-sentinel-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/io-globalping-mcp": {
-    "path": "uncategorized/toolsdk-remote-io-globalping-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-io-globalping-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "mcp-toolz": {
-    "path": "uncategorized/mcp-toolz.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/mcp-toolz.json"
   },
   "mcp-neo4j-memory": {
-    "path": "uncategorized/mcp-neo4j-memory.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/mcp-neo4j-memory.json"
   },
   "@toolsdk-remote/ai-smithery-devbrother2024-typescript-mcp-server-boilerplate": {
-    "path": "uncategorized/toolsdk-remote-ai-devbrother2024-typescript-mcp-server-boilerplate.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-devbrother2024-typescript-mcp-server-boilerplate.json",
+    "validated": false,
+    "tools": {}
   },
   "strava-mcp-server": {
-    "path": "uncategorized/strava-mcp-server.json",
     "category": "uncategorized",
+    "path": "uncategorized/strava-mcp-server.json",
+    "validated": true,
     "tools": {
       "get-athlete-profile": {
         "name": "get-athlete-profile",
@@ -50013,60 +50014,60 @@
         "name": "get-all-activities",
         "description": "Fetches complete activity history with optional filtering by date range and activity type. Supports pagination to retrieve all activities."
       }
-    },
-    "validated": true
+    }
   },
   "@fusionauth/mcp-api": {
-    "path": "uncategorized/fusionauth-mcp-api.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/fusionauth-mcp-api.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-rencosta2025-context7fork": {
-    "path": "uncategorized/toolsdk-remote-ai-rencosta2025-context7fork.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-rencosta2025-context7fork.json",
+    "validated": false,
+    "tools": {}
   },
   "google-documents-mcp": {
-    "path": "uncategorized/google-documents-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/google-documents-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-yuna0x0-anilist-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-yuna0x0-anilist-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-yuna0x0-anilist-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-junojunhyun-festival-finder-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-junojunhyun-festival-finder-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-junojunhyun-festival-finder-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-bigvik193-reddit-user-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-bigvik193-reddit-user-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-bigvik193-reddit-user-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/io-prisma-mcp": {
-    "path": "uncategorized/toolsdk-remote-io-prisma-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-io-prisma-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-mrugankpednekar-billsplittermcp": {
-    "path": "uncategorized/toolsdk-remote-ai-mrugankpednekar-billsplittermcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-mrugankpednekar-billsplittermcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/io-cycloid-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-io-cycloid-mcp-server.json",
     "category": "uncategorized",
+    "path": "uncategorized/toolsdk-remote-io-cycloid-mcp-server.json",
+    "validated": true,
     "tools": {
       "CYCLOID_EVENT_LIST": {
         "name": "CYCLOID_EVENT_LIST",
@@ -50092,24 +50093,24 @@
         "name": "CYCLOID_PIPELINE_LIST",
         "description": "List all pipelines from Cycloid."
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/co-axiom-mcp": {
-    "path": "uncategorized/toolsdk-remote-co-axiom-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-co-axiom-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@coolver/home-assistant-mcp": {
-    "path": "uncategorized/coolver-home-assistant-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/coolver-home-assistant-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "kubeview-mcp": {
-    "path": "uncategorized/kubeview-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/kubeview-mcp.json",
+    "validated": true,
     "tools": {
       "search_tools": {
         "name": "search_tools",
@@ -50151,12 +50152,12 @@
         "name": "run_code",
         "description": "Execute TypeScript code to debug Kubernetes, Helm, Argo Workflow, and ArgoCD resources.\nSupports top-level await and has access to the global 'tools' object for all MCP operations.\n\n## API Reference\n- **Language**: TypeScript (transpiled to ES2022)\n- **Global Object**: `tools` (contains all available MCP tools)\n- **Top-level await**: use `return` to return values from your script.\n- **Type Definitions**: Reference `/sys/global.d.ts` for full types.\n\n## Key Functions\n\n### Helper Functions\n- **`tools.list()`** - Enumerate tools (optionally filtered by server)\n- **`tools.search(query, limit?)`** - Search for tools by name or description\n- **`tools.help(toolName)`** - Detailed documentation for a specific tool\n\n### Namespaced Functions\nCall tools via namespaces: `tools.kubernetes.*`, `tools.helm.*`, `tools.argo.*`, `tools.argocd.*`.\n\n## Example Usage\n\n```typescript\n// Search for available tools\nconst matches = tools.search('pods');\n\n// Inspect a specific tool\nconst docs = tools.help('kubeList');\n\n// Call helper MCP tool functions\nconst pods = await tools.kubernetes.list({ namespace: 'default' });\nreturn pods.items?.filter((pod) => pod.status?.phase === 'Running');\n```\n"
       }
-    },
-    "validated": true
+    }
   },
   "selenium-webdriver-mcp": {
-    "path": "uncategorized/selenium-webdriver-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/selenium-webdriver-mcp.json",
+    "validated": true,
     "tools": {
       "browser_open": {
         "name": "browser_open",
@@ -50382,28 +50383,28 @@
         "name": "browser_delete_cookies",
         "description": "Delete cookies from the browser"
       }
-    },
-    "validated": true
+    }
   },
   "runway-mcp-server": {
-    "path": "uncategorized/runway-mcp-server.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/runway-mcp-server.json"
   },
   "mind-map-mcp": {
-    "path": "uncategorized/mind-map-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/mind-map-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "token-optimizer-mcp": {
-    "path": "uncategorized/token-optimizer-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/token-optimizer-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@picahq/mcp": {
-    "path": "uncategorized/picahq-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/picahq-mcp.json",
+    "validated": true,
     "tools": {
       "list_pica_integrations": {
         "name": "list_pica_integrations",
@@ -50421,12 +50422,12 @@
         "name": "execute_pica_action",
         "description": "Execute a Pica action to perform actual operations on third-party platforms. CRITICAL: Only call this when the user's intent is to EXECUTE an action (e.g., 'read my last Gmail email', 'fetch 5 contacts from HubSpot', 'create a task in Asana'). DO NOT call this when the user wants to BUILD or CREATE code/forms/applications - in those cases, stop after get_pica_action_knowledge and provide implementation guidance instead. REQUIRED WORKFLOW: Must call get_pica_action_knowledge first. If uncertain about execution intent or parameters, ask for confirmation before proceeding."
       }
-    },
-    "validated": true
+    }
   },
   "@kekwanulabs/syncline-mcp-server": {
-    "path": "uncategorized/kekwanulabs-syncline-mcp-server.json",
     "category": "uncategorized",
+    "path": "uncategorized/kekwanulabs-syncline-mcp-server.json",
+    "validated": true,
     "tools": {
       "schedule_auto": {
         "name": "schedule_auto",
@@ -50444,72 +50445,72 @@
         "name": "schedule_meeting",
         "description": "Schedule a meeting at a specific time slot. Use this when you already know the desired time (e.g., from find_availability results or user preference). For AI-powered time selection, use schedule_auto instead."
       }
-    },
-    "validated": true
+    }
   },
   "@daghis/teamcity-mcp": {
-    "path": "uncategorized/daghis-teamcity-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/daghis-teamcity-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-klavis-strata": {
-    "path": "uncategorized/toolsdk-remote-ai-klavis-strata.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-klavis-strata.json",
+    "validated": false,
+    "tools": {}
   },
   "@ui5/mcp-server": {
-    "path": "uncategorized/ui5-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/ui5-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-aicastle-school-openai-api-agent-project": {
-    "path": "uncategorized/toolsdk-remote-ai-aicastle-school-openai-api-agent-project.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-aicastle-school-openai-api-agent-project.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-yuna0x0-hackmd-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-yuna0x0-hackmd-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-yuna0x0-hackmd-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-keithah-hostex-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-keithah-hostex-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-keithah-hostex-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-arjunkmrm-lta-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-arjunkmrm-lta-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-arjunkmrm-lta-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-faithk7-gmail-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-faithk7-gmail-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-faithk7-gmail-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-mrugankpednekar-mcp-optimizer": {
-    "path": "uncategorized/toolsdk-remote-ai-mrugankpednekar-mcp-optimizer.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-mrugankpednekar-mcp-optimizer.json",
+    "validated": false,
+    "tools": {}
   },
   "visual-memory-context-server": {
-    "path": "uncategorized/visual-memory-context-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/visual-memory-context-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/io-github-isakskogstad-kolada-mcp": {
-    "path": "uncategorized/toolsdk-remote-isakskogstad-kolada-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/toolsdk-remote-isakskogstad-kolada-mcp.json",
+    "validated": true,
     "tools": {
       "search_kpis": {
         "name": "search_kpis",
@@ -50595,22 +50596,22 @@
         "name": "get_kpis_by_operating_area",
         "description": "Hämta alla KPIs inom ett specifikt verksamhetsområde. T.ex. alla utbildnings-KPIs eller alla vård-KPIs. Enklare än fritextsökning för att hitta relaterade nyckeltal."
       }
-    },
-    "validated": true
+    }
   },
   "mnemex": {
-    "path": "uncategorized/mnemex.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/mnemex.json"
   },
   "@toolsdk-remote/ai-smithery-arjunkmrm-ahoy": {
-    "path": "uncategorized/toolsdk-remote-ai-arjunkmrm-ahoy.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-arjunkmrm-ahoy.json",
+    "validated": false,
+    "tools": {}
   },
   "flowbite-mcp": {
-    "path": "uncategorized/flowbite-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/flowbite-mcp.json",
+    "validated": true,
     "tools": {
       "convert-figma-to-code": {
         "name": "convert-figma-to-code",
@@ -50620,36 +50621,36 @@
         "name": "generate-theme",
         "description": "Generates a custom Flowbite theme CSS file based on a brand color (hex format) and user instructions. The AI will intelligently analyze the instructions and customize ALL theme variables (border radius, spacing, colors, typography, etc.) to match the desired aesthetic. This tool creates color shades and variations, adapting the entire theme system to match your brand identity."
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/io-ignission-mcp": {
-    "path": "uncategorized/toolsdk-remote-io-ignission-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-io-ignission-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/com-civic-nexus": {
-    "path": "uncategorized/toolsdk-remote-com-civic-nexus.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-com-civic-nexus.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/io-github-isakskogstad-oecd-mcp": {
-    "path": "uncategorized/toolsdk-remote-isakskogstad-oecd-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-isakskogstad-oecd-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "mcp-meet": {
-    "path": "uncategorized/mcp-meet.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/mcp-meet.json",
+    "validated": false,
+    "tools": {}
   },
   "attio-mcp": {
-    "path": "uncategorized/attio-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/attio-mcp.json",
+    "validated": true,
     "tools": {
       "aaa-health-check": {
         "name": "aaa-health-check",
@@ -50787,47 +50788,47 @@
         "name": "get-workspace-member",
         "description": "Retrieve profile and access details for one workspace member. | Does not: update member information or change permissions. | Requires workspace_member_id from list/search results; read-only. | If errors occur: Use list-workspace-members to confirm the memberId before retrying."
       }
-    },
-    "validated": true
+    }
   },
   "image-recongnition-mcp": {
-    "path": "uncategorized/image-recongnition-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/image-recongnition-mcp.json",
+    "validated": true,
     "tools": {
       "describe-image": {
         "name": "describe-image",
         "description": "Describe an image by URL"
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/com-streamlinehq-mcp": {
-    "path": "uncategorized/toolsdk-remote-com-streamlinehq-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-com-streamlinehq-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/com-zomato-mcp": {
-    "path": "uncategorized/toolsdk-remote-com-zomato-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-com-zomato-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-fengyinxia-jimeng-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-fengyinxia-jimeng-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-fengyinxia-jimeng-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@opencage/mcp-opencage-server": {
-    "path": "uncategorized/opencage-mcp-opencage-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/opencage-mcp-opencage-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@kirbah/mcp-youtube": {
-    "path": "uncategorized/kirbah-mcp-youtube.json",
     "category": "uncategorized",
+    "path": "uncategorized/kirbah-mcp-youtube.json",
+    "validated": true,
     "tools": {
       "getVideoDetails": {
         "name": "getVideoDetails",
@@ -50865,12 +50866,12 @@
         "name": "findConsistentOutlierChannels",
         "description": "A powerful, high-cost discovery tool. It finds emerging channels that show consistent, high-performance relative to their size within a specific topic and timeframe."
       }
-    },
-    "validated": true
+    }
   },
   "@dinesh-nalla-se/playwright-mcp": {
-    "path": "uncategorized/dinesh-nalla-se-playwright-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/dinesh-nalla-se-playwright-mcp.json",
+    "validated": true,
     "tools": {
       "browser_close": {
         "name": "browser_close",
@@ -50960,58 +50961,58 @@
         "name": "browser_wait_for",
         "description": "Wait for text to appear or disappear or a specified time to pass"
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/ai-smithery-leghis-smart-thinking": {
-    "path": "uncategorized/toolsdk-remote-ai-leghis-smart-thinking.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-leghis-smart-thinking.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-cuongpo-coti-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-cuongpo-coti-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-cuongpo-coti-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-mistersandfr-supabase-mcp-selfhosted": {
-    "path": "uncategorized/toolsdk-remote-ai-mistersandfr-supabase-mcp-selfhosted.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-mistersandfr-supabase-mcp-selfhosted.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-dynamicendpoints-powershell-exec-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-ai-dynamicendpoints-powershell-exec-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-dynamicendpoints-powershell-exec-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "contextual-mcp-server": {
-    "path": "uncategorized/contextual-mcp-server.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/contextual-mcp-server.json"
   },
   "@toolsdk-remote/ai-smithery-keithah-tessie-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-keithah-tessie-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-keithah-tessie-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-pinion05-supabase-mcp-lite": {
-    "path": "uncategorized/toolsdk-remote-ai-pinion05-supabase-mcp-lite.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-pinion05-supabase-mcp-lite.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-ctaylor86-mcp-video-download-server": {
-    "path": "uncategorized/toolsdk-remote-ai-ctaylor86-mcp-video-download-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-ctaylor86-mcp-video-download-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@incodetech/incode-idv-mcp": {
-    "path": "uncategorized/incodetech-incode-idv-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/incodetech-incode-idv-mcp.json",
+    "validated": true,
     "tools": {
       "generate_interview_link": {
         "name": "generate_interview_link",
@@ -51033,56 +51034,56 @@
         "name": "validate_token",
         "description": "Validates a JWT token and returns its claims if valid. Verifies that a JWT token is valid, not expired, and properly signed. Returns the token's claims including user email and interview ID if validation succeeds. Useful for verifying authentication before making API calls."
       }
-    },
-    "validated": true
+    }
   },
   "scout-mcp-local": {
-    "path": "uncategorized/scout-mcp-local.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/scout-mcp-local.json"
   },
   "@toolsdk-remote/ai-smithery-hithereiamaliff-mcp-nextcloud": {
-    "path": "uncategorized/toolsdk-remote-ai-hithereiamaliff-mcp-nextcloud.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-hithereiamaliff-mcp-nextcloud.json",
+    "validated": false,
+    "tools": {}
   },
   "@marcelo-ochoa/server-oracle": {
-    "path": "uncategorized/marcelo-ochoa-server-oracle.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/marcelo-ochoa-server-oracle.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-callmybot-cookbook-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-ai-callmybot-cookbook-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-callmybot-cookbook-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "mcp-aruba": {
-    "path": "uncategorized/mcp-aruba.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/mcp-aruba.json"
   },
   "@toolsdk-remote/io-github-bahfahh-noteit-mcp": {
-    "path": "uncategorized/toolsdk-remote-bahfahh-noteit-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-bahfahh-noteit-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-afgong-sqlite-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-ai-afgong-sqlite-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-afgong-sqlite-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@unleash/mcp": {
-    "path": "uncategorized/unleash-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/unleash-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@index9/mcp": {
-    "path": "uncategorized/index9-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/index9-mcp.json",
+    "validated": true,
     "tools": {
       "find_models": {
         "name": "find_models",
@@ -51096,18 +51097,18 @@
         "name": "test_model",
         "description": "Make live API calls to 1-5 models via OpenRouter. Returns output text, latency (ms), token usage, and cost estimates.\n\nRequires OPENROUTER_API_KEY in MCP client configuration. Costs are billed to your OpenRouter account.\n\nParameters:\n- model_ids: 1-5 model IDs to test (all receive identical prompts)\n- test_type: 'quick' (math), 'code', 'reasoning', 'instruction', 'tool_calling'\n- prompt: Custom prompt (overrides test_type)\n- max_tokens: Response length limit (default 1000)\n\nUse find_models or get_model first to identify model IDs."
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/ci-git-mymlh-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-ci-git-mymlh-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ci-git-mymlh-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@browserbasehq/mcp-server-browserbase": {
-    "path": "uncategorized/browserbasehq-mcp-server-browserbase.json",
     "category": "uncategorized",
+    "path": "uncategorized/browserbasehq-mcp-server-browserbase.json",
+    "validated": true,
     "tools": {
       "browserbase_session_create": {
         "name": "browserbase_session_create",
@@ -51145,12 +51146,12 @@
         "name": "browserbase_stagehand_agent",
         "description": "Execute a task autonomously using Gemini Computer Use agent. The agent will navigate and interact with web pages to complete the given task."
       }
-    },
-    "validated": true
+    }
   },
   "mcp-pickaxe": {
-    "path": "uncategorized/mcp-pickaxe.json",
     "category": "uncategorized",
+    "path": "uncategorized/mcp-pickaxe.json",
+    "validated": true,
     "tools": {
       "studios_list": {
         "name": "studios_list",
@@ -51220,12 +51221,12 @@
         "name": "memory_get_user",
         "description": "Get all collected memories for a specific user."
       }
-    },
-    "validated": true
+    }
   },
   "@letta-ai/memory-mcp": {
-    "path": "uncategorized/letta-ai-memory-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/letta-ai-memory-mcp.json",
+    "validated": true,
     "tools": {
       "add_vector_memory": {
         "name": "add_vector_memory",
@@ -51247,18 +51248,18 @@
         "name": "memory_replace",
         "description": "Replace the memory you have about the user you are currently interacting with."
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/ai-smithery-kirbah-mcp-youtube": {
-    "path": "uncategorized/toolsdk-remote-ai-kirbah-mcp-youtube.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-kirbah-mcp-youtube.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/com-microsoft-microsoft-learn-mcp": {
-    "path": "uncategorized/toolsdk-remote-com-microsoft-learn-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/toolsdk-remote-com-microsoft-learn-mcp.json",
+    "validated": true,
     "tools": {
       "microsoft_docs_search": {
         "name": "microsoft_docs_search",
@@ -51272,48 +51273,48 @@
         "name": "microsoft_docs_fetch",
         "description": "Fetch and convert a Microsoft Learn documentation page to markdown format. This tool retrieves the latest complete content of Microsoft documentation pages including Azure, .NET, Microsoft 365, and other Microsoft technologies.\n\n## When to Use This Tool\n- When search results provide incomplete information or truncated content\n- When you need complete step-by-step procedures or tutorials\n- When you need troubleshooting sections, prerequisites, or detailed explanations\n- When search results reference a specific page that seems highly relevant\n- For comprehensive guides that require full context\n\n## Usage Pattern\nUse this tool AFTER microsoft_docs_search when you identify specific high-value pages that need complete content. The search tool gives you an overview; this tool gives you the complete picture.\n\n## URL Requirements\n- The URL must be a valid link from the microsoft.com domain.\n\n## Output Format\nmarkdown with headings, code blocks, tables, and links preserved."
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/ai-smithery-hjsh200219-pharminfo-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-hjsh200219-pharminfo-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-hjsh200219-pharminfo-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-hollaugo-financial-research-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-ai-hollaugo-financial-research-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-hollaugo-financial-research-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-dynamicendpoints-autogenmcp": {
-    "path": "uncategorized/toolsdk-remote-ai-dynamicendpoints-autogenmcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-dynamicendpoints-autogenmcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-flight505-mcpdincoder": {
-    "path": "uncategorized/toolsdk-remote-ai-flight505-mcpdincoder.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-flight505-mcpdincoder.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/com-onkernel-kernel-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-com-onkernel-kernel-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-com-onkernel-kernel-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-docfork-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-docfork-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-docfork-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "altmetric-mcp": {
-    "path": "uncategorized/altmetric-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/altmetric-mcp.json",
+    "validated": true,
     "tools": {
       "get_citation_counts": {
         "name": "get_citation_counts",
@@ -51351,102 +51352,102 @@
         "name": "explore_journals",
         "description": "Get journal-related data and metrics. Search and filter by publication venue, analyze journal impact, and retrieve journal rankings. Useful for filtering research by publication outlet. Requires Explorer API credentials."
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/ai-smithery-zwldarren-akshare-one-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-zwldarren-akshare-one-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-zwldarren-akshare-one-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-isnow890-data4library-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-isnow890-data4library-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-isnow890-data4library-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-zhaoganghao-hellomcp": {
-    "path": "uncategorized/toolsdk-remote-ai-zhaoganghao-hellomcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-zhaoganghao-hellomcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@simplifierag/simplifier-mcp": {
-    "path": "uncategorized/simplifierag-simplifier-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/simplifierag-simplifier-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "coinrailz-mcp": {
-    "path": "uncategorized/coinrailz-mcp.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/coinrailz-mcp.json"
   },
   "@marcelo-ochoa/server-mysql": {
-    "path": "uncategorized/marcelo-ochoa-server-mysql.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/marcelo-ochoa-server-mysql.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-jessicayanwang-test": {
-    "path": "uncategorized/toolsdk-remote-ai-jessicayanwang-test.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-jessicayanwang-test.json",
+    "validated": false,
+    "tools": {}
   },
   "datawrapper-mcp": {
-    "path": "uncategorized/datawrapper-mcp.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/datawrapper-mcp.json"
   },
   "@cashfreepayments/cashfree-mcp": {
-    "path": "uncategorized/cashfreepayments-cashfree-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/cashfreepayments-cashfree-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/com-generect-generect-mcp": {
-    "path": "uncategorized/toolsdk-remote-com-generect-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-com-generect-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "sauce-api-mcp": {
-    "path": "uncategorized/sauce-api-mcp.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/sauce-api-mcp.json"
   },
   "@toolsdk-remote/ai-smithery-jmoak-chrono-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-jmoak-chrono-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-jmoak-chrono-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-shoumikdc-arxiv-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-shoumikdc-arxiv-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-shoumikdc-arxiv-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-data-mindset-sts-google-forms-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-data-mindset-sts-google-forms-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-data-mindset-sts-google-forms-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@mia-platform/console-mcp-server": {
-    "path": "uncategorized/mia-platform-console-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/mia-platform-console-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-skr-cloudify-clickup-mcp-server-new": {
-    "path": "uncategorized/toolsdk-remote-ai-skr-cloudify-clickup-mcp-server-new.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-skr-cloudify-clickup-mcp-server-new.json",
+    "validated": false,
+    "tools": {}
   },
   "kit-mcp-server": {
-    "path": "uncategorized/kit-mcp-server.json",
     "category": "uncategorized",
+    "path": "uncategorized/kit-mcp-server.json",
+    "validated": true,
     "tools": {
       "kit_get_account": {
         "name": "kit_get_account",
@@ -51564,46 +51565,46 @@
         "name": "kit_delete_webhook",
         "description": "Delete a webhook from Kit.com"
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/ai-smithery-pablolec-keyprobe-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-pablolec-keyprobe-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-pablolec-keyprobe-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "mcp-neo4j-aura-manager": {
-    "path": "uncategorized/mcp-neo4j-aura-manager.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/mcp-neo4j-aura-manager.json"
   },
   "mssql-dba": {
-    "path": "uncategorized/mssql-dba.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/mssql-dba.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-jenniferjiang0511-mit-ai-studio-hw3": {
-    "path": "uncategorized/toolsdk-remote-ai-jenniferjiang0511-mit-ai-studio-hw3.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-jenniferjiang0511-mit-ai-studio-hw3.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-clpi-clp-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-clpi-clp-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-clpi-clp-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@florentine-ai/mcp": {
-    "path": "uncategorized/florentine-ai-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/florentine-ai-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@mehmetsenol/gorev-mcp-server": {
-    "path": "uncategorized/mehmetsenol-gorev-mcp-server.json",
     "category": "uncategorized",
+    "path": "uncategorized/mehmetsenol-gorev-mcp-server.json",
+    "validated": true,
     "tools": {
       "gorev_detay": {
         "name": "gorev_detay",
@@ -51769,22 +51770,22 @@
         "name": "gorev_filter_profile_save",
         "description": "Filtre profilini kaydet - arama ve filtre ayarlarını gelecekte kullanmak üzere sakla"
       }
-    },
-    "validated": true
+    }
   },
   "realtimex-browser-use": {
-    "path": "uncategorized/realtimex-browser-use.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/realtimex-browser-use.json"
   },
   "@toolsdk-remote/ai-smithery-morosss-sdfsdf": {
-    "path": "uncategorized/toolsdk-remote-ai-morosss-sdfsdf.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-morosss-sdfsdf.json",
+    "validated": false,
+    "tools": {}
   },
   "@configcat/mcp-server": {
-    "path": "uncategorized/configcat-mcp-server.json",
     "category": "uncategorized",
+    "path": "uncategorized/configcat-mcp-server.json",
+    "validated": true,
     "tools": {
       "list-organizations": {
         "name": "list-organizations",
@@ -52094,12 +52095,12 @@
         "name": "update-sdk-documentation",
         "description": "If the user asks for coding related to a feature flag (such as integrating the ConfigCat SDK, adding a feature flag, or removing a feature flag), \n    always call the tool \"update-sdk-documentation\" first to download the latest ConfigCat SDK documentation.\n\n    1. Analyze the SDK URLs listed in the following SDK Reference list.\n    2. Then call the tool \"update-sdk-documentation\" with specific URL from the SDK Reference list to fetch relevant documentation page.\n    \n    ### SDK Reference\n\n- [Android (Java) SDK Reference](https://configcat.com/docs/sdk-reference/android.md): ConfigCat Android SDK Reference. This is a step-by-step guide on how to use feature flags in your Android Java application.\n- [ConfigCat package for Laravel](https://configcat.com/docs/sdk-reference/community/laravel.md): ConfigCat package for Laravel. Implement feature flags within your PHP Laravel application using ConfigCat.\n- [ConfigCat SDK for Vue.js](https://configcat.com/docs/sdk-reference/community/vue.md): Unofficial Vue SDK for ConfigCat Feature Flags. Based on ConfigCat's JavaScript SDK.\n- [C++ SDK Reference](https://configcat.com/docs/sdk-reference/cpp.md): ConfigCat C++ SDK Reference. This is a step-by-step guide on how to use feature flags in your C++ application.\n- [Dart (Flutter) SDK Reference](https://configcat.com/docs/sdk-reference/dart.md): ConfigCat Dart (Flutter) SDK Reference. This is a step-by-step guide on how to use feature flags in your Dart (Flutter) apps.\n- [.NET SDK Reference](https://configcat.com/docs/sdk-reference/dotnet.md): ConfigCat .NET SDK Reference. This is a step-by-step guide on how to use feature flags in your .NET application.\n- [Elixir SDK Reference](https://configcat.com/docs/sdk-reference/elixir.md): ConfigCat Elixir SDK Reference. This is a step-by-step guide on how to use feature flags in your Elixir project.\n- [Go SDK Reference](https://configcat.com/docs/sdk-reference/go.md): ConfigCat Go SDK Reference. This is a step-by-step guide on how to use feature flags in your Go applications.\n- [Swift (iOS) SDK Reference](https://configcat.com/docs/sdk-reference/ios.md): ConfigCat Swift (iOS) SDK Reference. This is a step-by-step guide on how to use feature flags in your iOS mobile application.\n- [Java SDK reference](https://configcat.com/docs/sdk-reference/java.md): ConfigCat Java SDK Reference. This is a step-by-step guide on how to use feature flags in your Java application.\n- [Legacy JavaScript (SSR) SDK Reference](https://configcat.com/docs/sdk-reference/js-ssr.md): ConfigCat Legacy JavaScript (SSR) SDK Reference. This is a step-by-step guide on how to use feature flags in your Server-Side-Rendered (SSR) JavaScript application.\n- [Legacy JavaScript SDK Reference](https://configcat.com/docs/sdk-reference/js.md): ConfigCat Legacy JavaScript SDK Reference. This is a step-by-step guide on how to use feature flags in your JavaScript applications.\n- [Browser (JavaScript) SDK](https://configcat.com/docs/sdk-reference/js/browser.md): ConfigCat Browser (JavaScript) SDK Reference. This is a step-by-step guide on how to use feature flags in your frontend applications and Web Workers running in the browser.\n- [Bun SDK](https://configcat.com/docs/sdk-reference/js/bun.md): ConfigCat Bun SDK Reference. This is a step-by-step guide on how to use feature flags in your Bun applications.\n- [Chromium Extension SDK](https://configcat.com/docs/sdk-reference/js/chromium-extension.md): ConfigCat Chromium Extension SDK Reference. This is a step-by-step guide on how to use feature flags in your extensions for Chromium-based browsers (Chrome, Edge, etc.)\n- [Cloudflare Worker SDK](https://configcat.com/docs/sdk-reference/js/cloudflare-worker.md): ConfigCat Cloudflare Worker SDK Reference. This is a step-by-step guide on how to use feature flags in your Cloudflare Workers.\n- [Deno SDK](https://configcat.com/docs/sdk-reference/js/deno.md): ConfigCat Deno SDK Reference. This is a step-by-step guide on how to use feature flags in your Deno applications.\n- [Node.js SDK](https://configcat.com/docs/sdk-reference/js/node.md): ConfigCat Node.js SDK Reference. This is a step-by-step guide on how to use feature flags in your Node.js applications.\n- [ConfigCat SDK for JavaScript](https://configcat.com/docs/sdk-reference/js/overview.md): ConfigCat SDK for JavaScript Reference. This is a step-by-step guide on how to use feature flags in your JavaScript applications.\n- [Kotlin Multiplatform SDK Reference](https://configcat.com/docs/sdk-reference/kotlin.md): ConfigCat Kotlin Multiplatform SDK Reference. This is a step-by-step guide on how to use feature flags in your Kotlin Multiplatform apps.\n- [Legacy Node.js SDK Reference](https://configcat.com/docs/sdk-reference/node.md): ConfigCat Legacy Node.js SDK Reference. This is a step-by-step guide on how to use feature flags in your Node.js applications.\n- [Using ConfigCat's OpenFeature Provider in Angular](https://configcat.com/docs/sdk-reference/openfeature/angular.md): This is a step-by-step guide on how to use ConfigCat with the OpenFeature Angular SDK.\n- [OpenFeature Provider for .NET](https://configcat.com/docs/sdk-reference/openfeature/dotnet.md): ConfigCat OpenFeature Provider for .NET. This is a step-by-step guide on how to use ConfigCat with the OpenFeature .NET SDK.\n- [OpenFeature Provider for Go](https://configcat.com/docs/sdk-reference/openfeature/go.md): ConfigCat OpenFeature Provider for Go. This is a step-by-step guide on how to use ConfigCat with the OpenFeature Go SDK.\n- [OpenFeature Provider for Java](https://configcat.com/docs/sdk-reference/openfeature/java.md): ConfigCat OpenFeature Provider for Java. This is a step-by-step guide on how to use ConfigCat with the OpenFeature Java SDK.\n- [OpenFeature Provider for JavaScript](https://configcat.com/docs/sdk-reference/openfeature/js.md): ConfigCat OpenFeature Provider for JavaScript. This is a step-by-step guide on how to use ConfigCat with the OpenFeature JavaScript SDK.\n- [OpenFeature Provider for Kotlin](https://configcat.com/docs/sdk-reference/openfeature/kotlin.md): ConfigCat OpenFeature Provider for Kotlin. This is a step-by-step guide on how to use ConfigCat with the OpenFeature Kotlin SDK.\n- [Using ConfigCat's OpenFeature Provider in NestJS](https://configcat.com/docs/sdk-reference/openfeature/nestjs.md): This is a step-by-step guide on how to use ConfigCat with the OpenFeature NestJS SDK.\n- [OpenFeature Provider for Node.js](https://configcat.com/docs/sdk-reference/openfeature/node.md): ConfigCat OpenFeature Provider for Node.js. This is a step-by-step guide on how to use ConfigCat with the OpenFeature Node.js SDK.\n- [OpenFeature Providers](https://configcat.com/docs/sdk-reference/openfeature/overview.md): List of all supported OpenFeature Providers.\n- [OpenFeature Provider for PHP](https://configcat.com/docs/sdk-reference/openfeature/php.md): ConfigCat OpenFeature Provider for PHP. This is a step-by-step guide on how to use ConfigCat with the OpenFeature PHP SDK.\n- [OpenFeature Provider for Python](https://configcat.com/docs/sdk-reference/openfeature/python.md): ConfigCat OpenFeature Provider for Python. This is a step-by-step guide on how to use ConfigCat with the OpenFeature Python SDK.\n- [Using ConfigCat's OpenFeature Provider in React](https://configcat.com/docs/sdk-reference/openfeature/react.md): This is a step-by-step guide on how to use ConfigCat with the OpenFeature React SDK.\n- [OpenFeature Provider for Ruby](https://configcat.com/docs/sdk-reference/openfeature/ruby.md): ConfigCat OpenFeature Provider for Ruby. This is a step-by-step guide on how to use ConfigCat with the OpenFeature Ruby SDK.\n- [OpenFeature Provider for Rust](https://configcat.com/docs/sdk-reference/openfeature/rust.md): ConfigCat OpenFeature Provider for Rust. This is a step-by-step guide on how to use ConfigCat with the OpenFeature Rust SDK.\n- [OpenFeature Provider for Swift](https://configcat.com/docs/sdk-reference/openfeature/swift.md): ConfigCat OpenFeature Provider for Swift. This is a step-by-step guide on how to use ConfigCat with the OpenFeature Swift SDK.\n- [ConfigCat SDK Overview](https://configcat.com/docs/sdk-reference/overview.md): List of all supported technologies like .NET, Java, JavaScript, Node.js, Deno, Bun, Cloudflare Worker, PHP, Python, Ruby, Go, Android, Swift, iOS, Elixir, Dart, Flutter, Angular, React, Vue.js, Chromium Extension, Kotlin Multiplatform, Laravel, Server-Side Rendered apps, etc.\n- [PHP SDK Reference](https://configcat.com/docs/sdk-reference/php.md): ConfigCat PHP SDK Reference. This is a step-by-step guide on how to use feature flags in your PHP application.\n- [Python SDK Reference](https://configcat.com/docs/sdk-reference/python.md): ConfigCat Python SDK Reference. This is a step-by-step guide on how to use feature flags in your Python application.\n- [React SDK Reference](https://configcat.com/docs/sdk-reference/react.md): ConfigCat React SDK Reference. This is a step-by-step guide on how to use feature flags in your React applications.\n- [Ruby SDK Reference](https://configcat.com/docs/sdk-reference/ruby.md): ConfigCat Ruby SDK Reference. This is a step-by-step guide on how to use feature flags in your Ruby application.\n- [Rust SDK Reference](https://configcat.com/docs/sdk-reference/rust.md): ConfigCat Rust SDK Reference. This is a step-by-step guide on how to use feature flags in your Rust applications.\n- [Using the ConfigCat SDK in Unity](https://configcat.com/docs/sdk-reference/unity.md): Using the ConfigCat SDK in Unity. This is a step-by-step guide on how to use feature flags in your Unity project.\n- [Unreal Engine SDK Reference](https://configcat.com/docs/sdk-reference/unreal.md): ConfigCat Unreal Engine SDK Reference. This is a step-by-step guide on how to use feature flags in your Unreal Engine project."
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/garden-stanislav-svelte-llm-svelte-llm-mcp": {
-    "path": "uncategorized/toolsdk-remote-garden-stanislav-svelte-llm-svelte-llm-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/toolsdk-remote-garden-stanislav-svelte-llm-svelte-llm-mcp.json",
+    "validated": true,
     "tools": {
       "list_sections": {
         "name": "list_sections",
@@ -52109,12 +52110,12 @@
         "name": "get_documentation",
         "description": "Retrieves full documentation content for Svelte 5 or SvelteKit sections. Supports flexible search by title (e.g., \"$state\", \"routing\") or file path (e.g., \"docs/svelte/state.md\"). Can accept a single section name or an array of sections. Before running this, make sure to analyze the users query, as well as the output from list_sections (which should be called first). Then ask for ALL relevant sections the user might require. For example, if the user asks to build anything interactive, you will need to fetch all relevant runes, and so on."
       }
-    },
-    "validated": true
+    }
   },
   "@connorbritain/mssql-mcp-server": {
-    "path": "uncategorized/connorbritain-mssql-mcp-server.json",
     "category": "uncategorized",
+    "path": "uncategorized/connorbritain-mssql-mcp-server.json",
+    "validated": true,
     "tools": {
       "insert_data": {
         "name": "insert_data",
@@ -52196,135 +52197,135 @@
         "name": "explain_query",
         "description": "Generates an estimated execution plan (SHOWPLAN_XML) for a SQL query without executing it."
       }
-    },
-    "validated": true
+    }
   },
   "slack-mcp-server-v2": {
-    "path": "uncategorized/slack-mcp-server-v2.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/slack-mcp-server-v2.json"
   },
   "@toolsdk-remote/ai-waystation-airtable": {
-    "path": "uncategorized/toolsdk-remote-ai-waystation-airtable.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-waystation-airtable.json",
+    "validated": false,
+    "tools": {}
   },
   "expenselm-mcp-server": {
-    "path": "uncategorized/expenselm-mcp-server.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/expenselm-mcp-server.json"
   },
   "@toolsdk-remote/ai-smithery-imronai-mcp-server-browserbase": {
-    "path": "uncategorized/toolsdk-remote-ai-imronai-mcp-server-browserbase.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-imronai-mcp-server-browserbase.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-jjlabsio-korea-stock-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-jjlabsio-korea-stock-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-jjlabsio-korea-stock-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "snowflake-labs-mcp": {
-    "path": "uncategorized/snowflake-labs-mcp.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/snowflake-labs-mcp.json"
   },
   "btp-sap-odata-to-mcp-server": {
-    "path": "uncategorized/btp-sap-odata-to-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/btp-sap-odata-to-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-huuthangntk-claude-vision-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-ai-huuthangntk-claude-vision-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-huuthangntk-claude-vision-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "mcp-server-spira": {
-    "path": "uncategorized/mcp-server-spira.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/mcp-server-spira.json"
   },
   "mcp-windbg": {
-    "path": "uncategorized/mcp-windbg.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/mcp-windbg.json"
   },
   "ap-mcp-server": {
-    "path": "uncategorized/ap-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/ap-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-kodey-ai-salesforce-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-kodey-ai-salesforce-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-kodey-ai-salesforce-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/host-justcall-mcp-justcall-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-host-justcall-mcp-justcall-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-host-justcall-mcp-justcall-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "mcp-server-evefleet": {
-    "path": "uncategorized/mcp-server-evefleet.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/mcp-server-evefleet.json"
   },
   "@toolsdk-remote/ai-smithery-phionx-mcp-hello-server": {
-    "path": "uncategorized/toolsdk-remote-ai-phionx-mcp-hello-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-phionx-mcp-hello-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-kim-soung-won-mcp-smithery-exam": {
-    "path": "uncategorized/toolsdk-remote-ai-kim-soung-won-mcp-exam.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-kim-soung-won-mcp-exam.json",
+    "validated": false,
+    "tools": {}
   },
   "fattureincloud-mcp": {
-    "path": "uncategorized/fattureincloud-mcp.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/fattureincloud-mcp.json"
   },
   "@toolsdk-remote/ai-smithery-222wcnm-bilistalkermcp": {
-    "path": "uncategorized/toolsdk-remote-ai-222wcnm-bilistalkermcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-222wcnm-bilistalkermcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@tigerdata/tiger-skills-mcp-server": {
-    "path": "uncategorized/tigerdata-tiger-skills-mcp-server.json",
     "category": "uncategorized",
+    "path": "uncategorized/tigerdata-tiger-skills-mcp-server.json",
+    "validated": true,
     "tools": {
       "view": {
         "name": "view",
         "description": "# Tiger Skills\n\nThis tool provides access to domain-specific skills - structured knowledge and procedures for specialized tasks.\n\n## How to Use Skills\n\n1. **Discover**: If you have not been provided the list of skills, fetch them by invoking this tool with `name: \".\"`\n2. **Read**: Access a skill by reading its SKILL.md file: `name: \"skill-name\", path: \"SKILL.md\"`\n3. **Explore**: Navigate within the skill directory to find additional resources, examples, or templates.\n   The SKILL.md file and other documents may contain relative links to guide you.\n   You can list the content of directories by specifying the directory path, relative to the skill root.\n4. **Apply**: Follow the procedures and reference the knowledge in the skill to complete your task\n\n## Skill Structure\n\nEach skill contains:\n- **SKILL.md**: Main documentation (always start here)\n- **REFERENCE.md**: Quick reference card (optional)\n- Additional files: Examples, templates, scripts\n\n## When to Use Skills\n\n- Read relevant skills proactively when you identify a task that matches a skill's domain\n- Skills are meant to augment your knowledge, not replace your reasoning\n- Apply skill guidance while adapting to the specific user request\n- Skills use progressive disclosure - start with high-level guidance and drill down only as needed\n- Skills may also refer to tools or resources external to the skill itself\n- Use other tools to execute any code or scripts provided by the skill"
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/ai-smithery-arjunkmrm-perplexity-search": {
-    "path": "uncategorized/toolsdk-remote-ai-arjunkmrm-perplexity-search.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-arjunkmrm-perplexity-search.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-chir24-unrealmcp": {
-    "path": "uncategorized/toolsdk-remote-ai-chir24-unrealmcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-chir24-unrealmcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-artin0123-gemini-image-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-ai-artin0123-gemini-image-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-artin0123-gemini-image-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@smartbear/mcp": {
-    "path": "uncategorized/smartbear-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/smartbear-mcp.json",
+    "validated": true,
     "tools": {
       "reflect_list_suites": {
         "name": "reflect_list_suites",
@@ -52594,12 +52595,12 @@
         "name": "zephyr_get_test_executions",
         "description": "Get test executions with optional filters\n\n**Parameters:**\n- projectKey (string): Jira project key filter\n- testCycle (string): Test cycle key filter.\n- testCase (string): Test case key filter.\n- actualEndDateAfter (string): Filter for 'Actual End Date' after the given time. Format: yyyy-MM-dd'T'HH:mm:ss'Z'\n- actualEndDateBefore (string): Filter for 'Actual End Date' before the given time. Format: yyyy-MM-dd'T'HH:mm:ss'Z'\n- includeStepLinks (boolean): If true, execution step issue links will be included in the response\n- jiraProjectVersionId (number): Jira Project Version ID. Relates to 'Version' or 'Releases' in Jira projects.\n- onlyLastExecutions (boolean): If true, includes only the last execution of each test cycle item (test case), and all ad-hoc test executions.\n- limit (number): Specifies the maximum number of results to return in a single call. The default value is 10, and the maximum value that can be requested is 1000.\n\nNote that the server may enforce a lower limit than requested, depending on resource availability or other internal constraints. If this happens, the result set may be truncated. Always check the limit value in the response to confirm how many results were actually returned.\n (default: 10)\n- startAtId (number): Zero-indexed starting position for ID-based pagination.\n\n**Examples:**\n1. Get the first 10 test executions\n```json\n{\n  \"limit\": 10,\n  \"startAtId\": 0\n}\n```\nExpected Output: The first 10 test executions with their details\n\n2. Get 5 test executions for the project PROJ\n```json\n{\n  \"projectKey\": \"PROJ\",\n  \"limit\": 5\n}\n```\nExpected Output: Up to 5 test executions for project PROJ\n\n3. Get some test executions that finished after 01/Jan/2024\n```json\n{\n  \"actualEndDateAfter\": \"2024-01-01T00:00:00Z\"\n}\n```\nExpected Output: Test executions that ended after 2024-01-01\n\n4. Get test executions with step links included\n```json\n{\n  \"includeStepLinks\": true\n}\n```\nExpected Output: Test executions with step links included"
       }
-    },
-    "validated": true
+    }
   },
   "qweather-mcp": {
-    "path": "uncategorized/qweather-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/qweather-mcp.json",
+    "validated": true,
     "tools": {
       "get-weather-now": {
         "name": "get-weather-now",
@@ -52637,18 +52638,18 @@
         "name": "get-air-quality-daily",
         "description": "Daily Air Quality Forecast API provides air quality predictions for the next 3 days, including AQI values, pollutant concentrations, and health recommendations. The data includes various air quality standards and specific concentrations of pollutants like PM2.5, PM10, NO2, O3, SO2."
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/ai-smithery-bhushangitfull-file-mcp-smith": {
-    "path": "uncategorized/toolsdk-remote-ai-bhushangitfull-file-mcp-smith.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-bhushangitfull-file-mcp-smith.json",
+    "validated": false,
+    "tools": {}
   },
   "opik-mcp": {
-    "path": "uncategorized/opik-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/opik-mcp.json",
+    "validated": true,
     "tools": {
       "opik-integration-docs": {
         "name": "opik-integration-docs",
@@ -52702,12 +52703,12 @@
         "name": "add-trace-feedback",
         "description": "Add feedback scores to a trace for quality evaluation and monitoring. Useful for rating trace quality, relevance, or custom metrics"
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/com-cloudflare-mcp-mcp": {
-    "path": "uncategorized/toolsdk-remote-com-cloudflare-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/toolsdk-remote-com-cloudflare-mcp.json",
+    "validated": true,
     "tools": {
       "search_cloudflare_documentation": {
         "name": "search_cloudflare_documentation",
@@ -52717,12 +52718,12 @@
         "name": "migrate_pages_to_workers_guide",
         "description": "ALWAYS read this guide before migrating Pages projects to Workers."
       }
-    },
-    "validated": true
+    }
   },
   "octocode-mcp": {
-    "path": "uncategorized/octocode-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/octocode-mcp.json",
+    "validated": true,
     "tools": {
       "githubSearchCode": {
         "name": "githubSearchCode",
@@ -52744,30 +52745,30 @@
         "name": "githubSearchPullRequests",
         "description": "Search or fetch Pull Requests (metadata, diffs, discussions)\n\n**USE**: Implementation history | Review changes | Find rationale.\n**AVOID**: Current code → `githubGetFileContent`.\n\n**Workflow**: Find PR → Review Meta (`type=\"metadata\"`) → Check Diffs (`type=\"fullContent\"` if critical).\n\n**Transitions**:\n- **SELF**: Refine query | Try semantic variants | Check related PRs | Widen date range.\n- `githubSearchRepositories`: Find related repos.\n- `githubGetFileContent`: Read current file version.\n- `githubSearchCode`: Search changed code.\n- `githubViewRepoStructure`: Check modified paths.\n- `packageSearch`: Check dependencies.\n\n**Gotchas**:\n- `merged=true` requires `state=\"closed\"`.\n- `prNumber` ignores all other filters.\n- `type=\"fullContent\"` is token-heavy; start with `type=\"metadata\"`.\n\n**Examples**: `prNumber=123` | `state=\"closed\", merged=true` | `query=\"auth\", limit=3`\n\n**Context**: Check `.octocode/context/context.md` for user focus.`"
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/ai-smithery-linkupplatform-linkup-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-ai-linkupplatform-linkup-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-linkupplatform-linkup-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@youdotcom-oss/mcp": {
-    "path": "uncategorized/youdotcom-oss-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/youdotcom-oss-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-bergeramit-bergeramit-hw3-tech": {
-    "path": "uncategorized/toolsdk-remote-ai-bergeramit-hw3-tech.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-bergeramit-hw3-tech.json",
+    "validated": false,
+    "tools": {}
   },
   "mcp-server-tempmail": {
-    "path": "uncategorized/mcp-server-tempmail.json",
     "category": "uncategorized",
+    "path": "uncategorized/mcp-server-tempmail.json",
+    "validated": true,
     "tools": {
       "get_email_domains": {
         "name": "get_email_domains",
@@ -52805,36 +52806,36 @@
         "name": "set_webhook_config",
         "description": "设置或更新webhook配置"
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/ai-smithery-jirispilka-actors-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-ai-jirispilka-actors-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-jirispilka-actors-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-anirbanbasu-pymcp": {
-    "path": "uncategorized/toolsdk-remote-ai-anirbanbasu-pymcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-anirbanbasu-pymcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-anirbanbasu-frankfurtermcp": {
-    "path": "uncategorized/toolsdk-remote-ai-anirbanbasu-frankfurtermcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-anirbanbasu-frankfurtermcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-ref-tools-ref-tools-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-ref-tools-ref-tools-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-ref-tools-ref-tools-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@dubuqingfeng/gitlab-mcp-server": {
-    "path": "uncategorized/dubuqingfeng-gitlab-mcp-server.json",
     "category": "uncategorized",
+    "path": "uncategorized/dubuqingfeng-gitlab-mcp-server.json",
+    "validated": true,
     "tools": {
       "get_merge_request": {
         "name": "get_merge_request",
@@ -52888,52 +52889,52 @@
         "name": "write_gitlab_commit_note",
         "description": "Write a note to a GitLab commit"
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/ai-smithery-airmang-hwpx-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-airmang-hwpx-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-airmang-hwpx-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "promptheus": {
-    "path": "uncategorized/promptheus.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/promptheus.json"
   },
   "@toolsdk-remote/ai-smithery-hithereiamaliff-mcp-datagovmy": {
-    "path": "uncategorized/toolsdk-remote-ai-hithereiamaliff-mcp-datagovmy.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-hithereiamaliff-mcp-datagovmy.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/co-thisdot-docusign-navigator-mcp": {
-    "path": "uncategorized/toolsdk-remote-co-thisdot-docusign-navigator-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-co-thisdot-docusign-navigator-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "google-maps-places-mcp": {
-    "path": "uncategorized/google-maps-places-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/google-maps-places-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-packmind-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-ai-packmind-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-packmind-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-slhad-aha-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-slhad-aha-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-slhad-aha-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@symbioticsec/symbiotic-mcp-server": {
-    "path": "uncategorized/symbioticsec-symbiotic-mcp-server.json",
     "category": "uncategorized",
+    "path": "uncategorized/symbioticsec-symbiotic-mcp-server.json",
+    "validated": true,
     "tools": {
       "code_scan_files": {
         "name": "code_scan_files",
@@ -52951,36 +52952,36 @@
         "name": "get_supported_languages",
         "description": "Returns comprehensive list of programming languages supported by Symbiotic CLI security scanners for both code and infrastructure analysis"
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/ai-smithery-luminati-io-brightdata-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-luminati-io-brightdata-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-luminati-io-brightdata-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-cryptocultcurt-appfolio-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-ai-cryptocultcurt-appfolio-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-cryptocultcurt-appfolio-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "google-contacts-mcp": {
-    "path": "uncategorized/google-contacts-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/google-contacts-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-oxylabs-oxylabs-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-oxylabs-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-oxylabs-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "korea-stock-mcp": {
-    "path": "uncategorized/korea-stock-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/korea-stock-mcp.json",
+    "validated": true,
     "tools": {
       "get_corp_code": {
         "name": "get_corp_code",
@@ -53014,60 +53015,60 @@
         "name": "get_today_date",
         "description": "오늘 날짜를 KST, UTC 기준 YYYYMMDD 형식으로 제공합니다."
       }
-    },
-    "validated": true
+    }
   },
   "@pv-bhat/vibe-check-mcp": {
-    "path": "uncategorized/pv-bhat-vibe-check-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/pv-bhat-vibe-check-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-kesslerio-attio-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-ai-kesslerio-attio-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-kesslerio-attio-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-arjunkmrm-tutorials": {
-    "path": "uncategorized/toolsdk-remote-ai-arjunkmrm-tutorials.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-arjunkmrm-tutorials.json",
+    "validated": false,
+    "tools": {}
   },
   "@atlassian-dc-mcp/confluence": {
-    "path": "uncategorized/atlassian-dc-mcp-confluence.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/atlassian-dc-mcp-confluence.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-mfukushim-map-traveler-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-mfukushim-map-traveler-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-mfukushim-map-traveler-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/com-bullpenstrategygroup-rotunda-mcp": {
-    "path": "uncategorized/toolsdk-remote-com-bullpenstrategygroup-rotunda-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-com-bullpenstrategygroup-rotunda-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-truss44-mcp-crypto-price": {
-    "path": "uncategorized/toolsdk-remote-ai-truss44-mcp-crypto-price.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-truss44-mcp-crypto-price.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-cristianoaredes-mcp-dadosbr": {
-    "path": "uncategorized/toolsdk-remote-ai-cristianoaredes-mcp-dadosbr.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-cristianoaredes-mcp-dadosbr.json",
+    "validated": false,
+    "tools": {}
   },
   "tmdb-mcp-server": {
-    "path": "uncategorized/tmdb-mcp-server.json",
     "category": "uncategorized",
+    "path": "uncategorized/tmdb-mcp-server.json",
+    "validated": true,
     "tools": {
       "search_movies": {
         "name": "search_movies",
@@ -53121,12 +53122,12 @@
         "name": "get_person_details",
         "description": "Get detailed biographical information about a person (actor, director, crew member). Returns full biography, birth info, death date (if applicable), IMDb ID, homepage, and more."
       }
-    },
-    "validated": true
+    }
   },
   "@shodh/memory-mcp": {
-    "path": "uncategorized/shodh-memory-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/shodh-memory-mcp.json",
+    "validated": true,
     "tools": {
       "remember": {
         "name": "remember",
@@ -53168,35 +53169,35 @@
         "name": "forget_by_date",
         "description": "Delete memories within a date range."
       }
-    },
-    "validated": true
+    }
   },
   "@gonetone/mcp-server-taiwan-weather": {
-    "path": "uncategorized/gonetone-mcp-server-taiwan-weather.json",
     "category": "uncategorized",
+    "path": "uncategorized/gonetone-mcp-server-taiwan-weather.json",
+    "validated": true,
     "tools": {
       "get_taiwan_weather_forecast": {
         "name": "get_taiwan_weather_forecast",
         "description": "取得臺灣各縣市天氣預報資料 - 今明 36 小時天氣預報。 (可用縣市名稱： 宜蘭縣、花蓮縣、臺東縣、澎湖縣、金門縣、連江縣、臺北市、新北市、桃園市、臺中市、臺南市、高雄市、基隆市、新竹縣、新竹市、苗栗縣、彰化縣、南投縣、雲林縣、嘉義縣、嘉義市、屏東縣)"
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/ai-smithery-arjunkmrm-clock": {
-    "path": "uncategorized/toolsdk-remote-ai-arjunkmrm-clock.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-arjunkmrm-clock.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-scrapegraphai-scrapegraph-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-scrapegraphai-scrapegraph-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-scrapegraphai-scrapegraph-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/io-github-payram-payram-helper-mcp": {
-    "path": "uncategorized/toolsdk-remote-payram-helper-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/toolsdk-remote-payram-helper-mcp.json",
+    "validated": true,
     "tools": {
       "test_payram_connection": {
         "name": "test_payram_connection",
@@ -53338,46 +53339,46 @@
         "name": "scaffold_payram_app",
         "description": "Generates a minimal full-stack app skeleton with Payram payments and payouts routes (and a simple UI) for a chosen language and framework."
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/ai-smithery-wgong-sqlite-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-ai-wgong-sqlite-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-wgong-sqlite-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-kkjdaniel-bgg-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-kkjdaniel-bgg-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-kkjdaniel-bgg-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@cyanheads/git-mcp-server": {
-    "path": "uncategorized/cyanheads-git-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/cyanheads-git-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-turnono-datacommons-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-ai-turnono-datacommons-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-turnono-datacommons-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "memphora-mcp": {
-    "path": "uncategorized/memphora-mcp.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/memphora-mcp.json"
   },
   "@toolsdk-remote/ai-smithery-sebastianall1977-gmail-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-sebastianall1977-gmail-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-sebastianall1977-gmail-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@localstack/localstack-mcp-server": {
-    "path": "uncategorized/localstack-mcp-server.json",
     "category": "uncategorized",
+    "path": "uncategorized/localstack-mcp-server.json",
+    "validated": true,
     "tools": {
       "localstack-aws-client": {
         "name": "localstack-aws-client",
@@ -53411,18 +53412,18 @@
         "name": "localstack-management",
         "description": "Manage LocalStack lifecycle: start, stop, restart, or check status"
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/ai-smithery-infranodus-mcp-server-infranodus": {
-    "path": "uncategorized/toolsdk-remote-ai-infranodus-mcp-server-infranodus.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-infranodus-mcp-server-infranodus.json",
+    "validated": false,
+    "tools": {}
   },
   "mcp-threatintel-server": {
-    "path": "uncategorized/mcp-threatintel-server.json",
     "category": "uncategorized",
+    "path": "uncategorized/mcp-threatintel-server.json",
+    "validated": true,
     "tools": {
       "threatintel_status": {
         "name": "threatintel_status",
@@ -53492,36 +53493,36 @@
         "name": "feodo_tracker",
         "description": "Get active botnet C2 servers from Feodo Tracker (Emotet, Dridex, QakBot, etc.)"
       }
-    },
-    "validated": true
+    }
   },
   "@ryaker/appstore-connect-mcp": {
-    "path": "uncategorized/ryaker-appstore-connect-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/ryaker-appstore-connect-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/io-github-equilibrium-team-tweekit": {
-    "path": "uncategorized/toolsdk-remote-equilibrium-team-tweekit.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-equilibrium-team-tweekit.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/io-scorecard-mcp": {
-    "path": "uncategorized/toolsdk-remote-io-scorecard-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-io-scorecard-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-pixdataorg-coderide": {
-    "path": "uncategorized/toolsdk-remote-ai-pixdataorg-coderide.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-pixdataorg-coderide.json",
+    "validated": false,
+    "tools": {}
   },
   "mcp-pihole-server": {
-    "path": "uncategorized/mcp-pihole-server.json",
     "category": "uncategorized",
+    "path": "uncategorized/mcp-pihole-server.json",
+    "validated": true,
     "tools": {
       "pihole_get_stats": {
         "name": "pihole_get_stats",
@@ -53587,12 +53588,12 @@
         "name": "pihole_flush_cache",
         "description": "Flush Pi-hole's DNS cache"
       }
-    },
-    "validated": true
+    }
   },
   "@wildcard-ai/deepcontext": {
-    "path": "uncategorized/wildcard-ai-deepcontext.json",
     "category": "uncategorized",
+    "path": "uncategorized/wildcard-ai-deepcontext.json",
+    "validated": true,
     "tools": {
       "index_codebase": {
         "name": "index_codebase",
@@ -53610,64 +53611,64 @@
         "name": "clear_index",
         "description": "<tool>\n  <purpose>Permanently removes all indexed data for a codebase</purpose>\n\n  <when_to_use>\n    <scenario>Clear stale data before reindexing after major code changes</scenario>\n    <scenario>Remove old indexed codebases no longer needed</scenario>\n    <scenario>Fix corrupted index causing search issues</scenario>\n  </when_to_use>\n\n  <parameters>\n    <parameter name=\"codebase_path\" required=\"false\">\n      <type>string</type>\n      <description>ABSOLUTE path to the codebase to clear</description>\n      <examples>\n        <valid>/Users/name/project</valid>\n        <valid>/home/user/code/repo</valid>\n        <invalid>.</invalid>\n        <invalid>../project</invalid>\n        <invalid>relative/path</invalid>\n      </examples>\n      <validation>Must be absolute path starting with / (Unix) or C:\\ (Windows)</validation>\n      <optional_behavior>Omit to clear ALL indexed codebases (use with caution)</optional_behavior>\n    </parameter>\n  </parameters>\n\n  <warnings>\n    <warning>Destructive operation. All search capabilities lost until reindexing</warning>\n  </warnings>\n</tool>"
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/ai-smithery-minionszyw-bazi": {
-    "path": "uncategorized/toolsdk-remote-ai-minionszyw-bazi.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-minionszyw-bazi.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/io-github-promplate-hmr": {
-    "path": "uncategorized/toolsdk-remote-promplate-hmr.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-promplate-hmr.json",
+    "validated": false,
+    "tools": {}
   },
   "cerebras-code-mcp": {
-    "path": "uncategorized/cerebras-code-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/cerebras-code-mcp.json",
+    "validated": true,
     "tools": {
       "write": {
         "name": "write",
         "description": "🚨 MANDATORY CODE TOOL - USE THIS FOR ALL CODE OPERATIONS! 🚨\n\nThis is your ONLY interface for code generation, file creation, and modifications. Never edit files directly!\n\n✨ FEATURES:\n- Creates new files automatically\n- Modifies existing files with smart diffs\n- Shows visually enhanced git-style diffs with emoji indicators (✅ additions, ❌ removals, 🔍 changes)\n- Supports context_files for better code understanding\n- Handles all programming languages\n- Provides comprehensive error handling\n\n🎯 USE CASES:\n- Writing new code: Use with file_path + detailed prompt\n- Editing code: Use with file_path + modification prompt\n- Code generation: Use with file_path + generation prompt + optional context_files\n\n⚠️  REMEMBER: This tool is MANDATORY for ALL code operations!"
       }
-    },
-    "validated": true
+    }
   },
   "django-telescope": {
-    "path": "uncategorized/django-telescope.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/django-telescope.json"
   },
   "d365fo-client": {
-    "path": "uncategorized/d365fo-client.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/d365fo-client.json"
   },
   "sub-agents-mcp": {
-    "path": "uncategorized/sub-agents-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/sub-agents-mcp.json",
+    "validated": true,
     "tools": {
       "run_agent": {
         "name": "run_agent",
         "description": "Delegate complex, multi-step, or specialized tasks to an autonomous agent for independent execution with dedicated context (e.g., refactoring across multiple files, fixing all test failures, systematic codebase analysis, batch operations). Returns session_id in response metadata - reuse it in subsequent calls to maintain conversation context continuity across multiple agent executions."
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/ai-explorium-mcp-explorium": {
-    "path": "uncategorized/toolsdk-remote-ai-explorium-mcp-explorium.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-explorium-mcp-explorium.json",
+    "validated": false,
+    "tools": {}
   },
   "joplin-mcp": {
-    "path": "uncategorized/joplin-mcp.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/joplin-mcp.json"
   },
   "testdino-mcp": {
-    "path": "uncategorized/testdino-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/testdino-mcp.json",
+    "validated": true,
     "tools": {
       "health": {
         "name": "health",
@@ -53693,44 +53694,44 @@
         "name": "get_testcase_details",
         "description": "Get detailed information about a specific test case. You can identify the test case in two ways: 1) By testcase_id (can be used alone), or 2) By testcase_name combined with testrun_id or counter (required because test cases can have the same name across different test runs). Shows error messages, stack traces, test steps, console logs, and optional artifacts (screenshots, videos, traces). Use this to debug why a test failed or understand how it executed. Example: 'Get test case details for \"Verify user can logout and login\" in testrun #43'."
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/ai-smithery-callmybot-hello-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-ai-callmybot-hello-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-callmybot-hello-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-bigvik193-reddit-ads-mcp-api": {
-    "path": "uncategorized/toolsdk-remote-ai-bigvik193-reddit-ads-mcp-api.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-bigvik193-reddit-ads-mcp-api.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-rfdez-pvpc-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-ai-rfdez-pvpc-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-rfdez-pvpc-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-arjunkmrm-brave-search-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-ai-arjunkmrm-brave-search-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-arjunkmrm-brave-search-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "arcgis-mcp-server": {
-    "path": "uncategorized/arcgis-mcp-server.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/arcgis-mcp-server.json"
   },
   "sec-edgar-mcp": {
-    "path": "uncategorized/sec-edgar-mcp.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/sec-edgar-mcp.json"
   },
   "@mapbox/mcp-devkit-server": {
-    "path": "uncategorized/mapbox-mcp-devkit-server.json",
     "category": "uncategorized",
+    "path": "uncategorized/mapbox-mcp-devkit-server.json",
+    "validated": true,
     "tools": {
       "list_styles_tool": {
         "name": "list_styles_tool",
@@ -53800,18 +53801,18 @@
         "name": "tilequery_tool",
         "description": "Query vector and raster data from Mapbox tilesets at geographic coordinates"
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/ai-smithery-a-ariff-canvas-instant-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-a-ariff-canvas-instant-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-a-ariff-canvas-instant-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/io-github-isakskogstad-scb-mcp": {
-    "path": "uncategorized/toolsdk-remote-isakskogstad-scb-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/toolsdk-remote-isakskogstad-scb-mcp.json",
+    "validated": true,
     "tools": {
       "scb_get_api_status": {
         "name": "scb_get_api_status",
@@ -53853,34 +53854,34 @@
         "name": "scb_preview_data",
         "description": "Get a small preview of data (max ~50 rows) to verify table structure and selection before fetching full data. Safer than scb_get_table_data for initial exploration."
       }
-    },
-    "validated": true
+    }
   },
   "u-he-preset-randomizer": {
-    "path": "uncategorized/u-he-preset-randomizer.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/u-he-preset-randomizer.json",
+    "validated": false,
+    "tools": {}
   },
   "huoshui-file-converter": {
-    "path": "uncategorized/huoshui-file-converter.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/huoshui-file-converter.json"
   },
   "@toolsdk-remote/ai-smithery-xinkuang-china-stock-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-xinkuang-china-stock-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-xinkuang-china-stock-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-arjunkmrm-scrapermcpel": {
-    "path": "uncategorized/toolsdk-remote-ai-arjunkmrm-scrapermcpel.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-arjunkmrm-scrapermcpel.json",
+    "validated": false,
+    "tools": {}
   },
   "mcp-rubber-duck": {
-    "path": "uncategorized/mcp-rubber-duck.json",
     "category": "uncategorized",
+    "path": "uncategorized/mcp-rubber-duck.json",
+    "validated": true,
     "tools": {
       "ask_duck": {
         "name": "ask_duck",
@@ -53938,24 +53939,24 @@
         "name": "mcp_status",
         "description": "Get status of MCP bridge, servers, and pending approvals"
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/ai-smithery-felixyifeiwang-felix-mcp-smithery": {
-    "path": "uncategorized/toolsdk-remote-ai-felixyifeiwang-felix-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-felixyifeiwang-felix-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-serkan-ozal-driflyte-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-ai-serkan-ozal-driflyte-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-serkan-ozal-driflyte-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@decodo/mcp-server": {
-    "path": "uncategorized/decodo-mcp-server.json",
     "category": "uncategorized",
+    "path": "uncategorized/decodo-mcp-server.json",
+    "validated": true,
     "tools": {
       "scrape_as_markdown": {
         "name": "scrape_as_markdown",
@@ -53977,18 +53978,18 @@
         "name": "reddit_subreddit",
         "description": "Scrape Reddit subreddit results with automatic parsing"
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/ai-smithery-demomagic-duckchain-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-demomagic-duckchain-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-demomagic-duckchain-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "airtable-mcp-server": {
-    "path": "uncategorized/airtable-mcp-server.json",
     "category": "uncategorized",
+    "path": "uncategorized/airtable-mcp-server.json",
+    "validated": true,
     "tools": {
       "list_records": {
         "name": "list_records",
@@ -54050,12 +54051,12 @@
         "name": "list_comments",
         "description": "List comments on a record"
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/com-wallet-connectors-wallet-verifier-mcp": {
-    "path": "uncategorized/toolsdk-remote-com-wallet-connectors-wallet-verifier-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/toolsdk-remote-com-wallet-connectors-wallet-verifier-mcp.json",
+    "validated": true,
     "tools": {
       "create_agent_identifier_and_wallet": {
         "name": "create_agent_identifier_and_wallet",
@@ -54065,18 +54066,18 @@
         "name": "help_wallet4agent",
         "description": "Explain to a human developer how to install and use the Wallet4Agent MCP server with their own agent. Describe at a high level:\n- How to install and run the Wallet4Agent MCP server.\n- How to configure and use the manifest.json so the agent can discover the MCP server.\n- How to connect as a guest, and how to obtain a developer personal access token (PAT).\n- How to create a new Agent identifier (DID) and an attached wallet for that Agent, including how the DID document is published and where the wallet endpoint lives.\n- How to configure the agent to use that DID and wallet (including storing the PAT safely).\n- Basic security best practices for protecting keys, PATs, and the wallet endpoint.\n\nUse this tool whenever a developer asks how to get started with Wallet4Agent, how to create a DID or wallet for an Agent, or how to wire the Agent and wallet together."
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/io-github-meloncafe-chromadb-remote-mcp": {
-    "path": "uncategorized/toolsdk-remote-meloncafe-chromadb-remote-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-meloncafe-chromadb-remote-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "yazio-mcp": {
-    "path": "uncategorized/yazio-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/yazio-mcp.json",
+    "validated": true,
     "tools": {
       "get_user": {
         "name": "get_user",
@@ -54134,18 +54135,18 @@
         "name": "remove_user_consumed_item",
         "description": "Remove a food item from user consumption log"
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/io-balldontlie-mcp": {
-    "path": "uncategorized/toolsdk-remote-io-balldontlie-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-io-balldontlie-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@shopana/novaposhta-mcp-server": {
-    "path": "uncategorized/shopana-novaposhta-mcp-server.json",
     "category": "uncategorized",
+    "path": "uncategorized/shopana-novaposhta-mcp-server.json",
+    "validated": true,
     "tools": {
       "track_document": {
         "name": "track_document",
@@ -54347,100 +54348,100 @@
         "name": "contact_person_delete",
         "description": "Delete contact person by reference using ContactPerson/delete (doc 1.27). Nova Poshta allows deletions via API only for legal entities and only until the contact was used on an Internet document."
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/io-github-mmorris35-devplan-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-mmorris35-devplan-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-mmorris35-devplan-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-sunub-obsidian-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-ai-sunub-obsidian-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-sunub-obsidian-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "files-com-mcp": {
-    "path": "uncategorized/files-com-mcp.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/files-com-mcp.json"
   },
   "@umbraco-cms/mcp-dev": {
-    "path": "uncategorized/umbraco-cms-mcp-dev.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/umbraco-cms-mcp-dev.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-leandrogavidia-vechain-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-ai-leandrogavidia-vechain-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-leandrogavidia-vechain-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "scrapegraph-mcp": {
-    "path": "uncategorized/scrapegraph-mcp.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/scrapegraph-mcp.json"
   },
   "@toolsdk-remote/ai-smithery-hint-services-obsidian-github-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-hint-services-obsidian-github-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-hint-services-obsidian-github-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-jekakos-mcp-user-data-enrichment": {
-    "path": "uncategorized/toolsdk-remote-ai-jekakos-mcp-user-data-enrichment.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-jekakos-mcp-user-data-enrichment.json",
+    "validated": false,
+    "tools": {}
   },
   "elasticsearch-mcp-server": {
-    "path": "uncategorized/elasticsearch-mcp-server.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/elasticsearch-mcp-server.json"
   },
   "@toolsdk-remote/ai-smithery-cc25a-openai-api-agent-project123123123": {
-    "path": "uncategorized/toolsdk-remote-ai-cc25a-openai-api-agent-project123123123.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-cc25a-openai-api-agent-project123123123.json",
+    "validated": false,
+    "tools": {}
   },
   "augments-mcp-server": {
-    "path": "uncategorized/augments-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/augments-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/io-github-jfrog-jfrog-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-jfrog-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-jfrog-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "context-foundry": {
-    "path": "uncategorized/context-foundry.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/context-foundry.json"
   },
   "@toolsdk-remote/com-devcycle-mcp": {
-    "path": "uncategorized/toolsdk-remote-com-devcycle-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-com-devcycle-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-danushkumar-v-mcp-discord": {
-    "path": "uncategorized/toolsdk-remote-ai-danushkumar-v-mcp-discord.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-danushkumar-v-mcp-discord.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-mayla-debug-mcp-google-calendar2": {
-    "path": "uncategorized/toolsdk-remote-ai-mayla-debug-mcp-google-calendar2.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-mayla-debug-mcp-google-calendar2.json",
+    "validated": false,
+    "tools": {}
   },
   "@duongkhuong/mcp-backlog": {
-    "path": "uncategorized/duongkhuong-mcp-backlog.json",
     "category": "uncategorized",
+    "path": "uncategorized/duongkhuong-mcp-backlog.json",
+    "validated": true,
     "tools": {
       "create_issue": {
         "name": "create_issue",
@@ -54590,28 +54591,28 @@
         "name": "delete_version",
         "description": "Delete a version"
       }
-    },
-    "validated": true
+    }
   },
   "rdl-mcp": {
-    "path": "uncategorized/rdl-mcp.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/rdl-mcp.json"
   },
   "mcp-flutterwave": {
-    "path": "uncategorized/mcp-flutterwave.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/mcp-flutterwave.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/com-figma-mcp-mcp": {
-    "path": "uncategorized/toolsdk-remote-com-figma-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-com-figma-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "mcp-zebrunner": {
-    "path": "uncategorized/mcp-zebrunner.json",
     "category": "uncategorized",
+    "path": "uncategorized/mcp-zebrunner.json",
+    "validated": true,
     "tools": {
       "list_test_suites": {
         "name": "list_test_suites",
@@ -54637,48 +54638,48 @@
         "name": "search_test_cases",
         "description": "Search test cases by query (requires project_key or project_id, supports pagination: page, size)"
       }
-    },
-    "validated": true
+    }
   },
   "@kekwanulabs/syncline-mcp-server-go": {
-    "path": "uncategorized/kekwanulabs-syncline-mcp-server-go.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/kekwanulabs-syncline-mcp-server-go.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-plainyogurt21-sec-edgar-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-plainyogurt21-sec-edgar-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-plainyogurt21-sec-edgar-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "keboola-mcp-server": {
-    "path": "uncategorized/keboola-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/keboola-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-hustcc-mcp-mermaid": {
-    "path": "uncategorized/toolsdk-remote-ai-hustcc-mcp-mermaid.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-hustcc-mcp-mermaid.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-aryankeluskar-poke-video-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-aryankeluskar-poke-video-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-aryankeluskar-poke-video-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-metehangzl-pokemcp": {
-    "path": "uncategorized/toolsdk-remote-ai-metehangzl-pokemcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-metehangzl-pokemcp.json",
+    "validated": false,
+    "tools": {}
   },
   "unreal-engine-mcp-server": {
-    "path": "uncategorized/unreal-engine-mcp-server.json",
     "category": "uncategorized",
+    "path": "uncategorized/unreal-engine-mcp-server.json",
+    "validated": true,
     "tools": {
       "manage_asset": {
         "name": "manage_asset",
@@ -54732,41 +54733,41 @@
         "name": "inspect",
         "description": "Introspection utility for reading or mutating properties on actors, components, or CDOs.\n\nUse it when you need to:\n- inspect an object by path and retrieve its serialized properties.\n- set a property value with built-in validation.\n\nSupported actions: inspect_object, set_property."
       }
-    },
-    "validated": true
+    }
   },
   "mcp-image": {
-    "path": "uncategorized/mcp-image.json",
     "category": "uncategorized",
+    "path": "uncategorized/mcp-image.json",
+    "validated": true,
     "tools": {
       "generate_image": {
         "name": "generate_image",
         "description": "Generate image with specified prompt and optional parameters"
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/ai-smithery-aamangeldi-dad-jokes-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-aamangeldi-dad-jokes-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-aamangeldi-dad-jokes-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-saidsef-mcp-github-pr-issue-analyser": {
-    "path": "uncategorized/toolsdk-remote-ai-saidsef-mcp-github-pr-issue-analyser.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-saidsef-mcp-github-pr-issue-analyser.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-blacklotusdev8-testm": {
-    "path": "uncategorized/toolsdk-remote-ai-blacklotusdev8-testm.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-blacklotusdev8-testm.json",
+    "validated": false,
+    "tools": {}
   },
   "hostinger-api-mcp": {
-    "path": "uncategorized/hostinger-api-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/hostinger-api-mcp.json",
+    "validated": true,
     "tools": {
       "hosting_importWordpressWebsite": {
         "name": "hosting_importWordpressWebsite",
@@ -55240,18 +55241,18 @@
         "name": "VPS_stopVirtualMachineV1",
         "description": "Stop a specified virtual machine.\n\nIf the virtual machine is already stopped, the request will still be processed without any effect.\n\nUse this endpoint to power off running VPS instances."
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/io-github-kevincogan-demo-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-kevincogan-demo-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-kevincogan-demo-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "linkly-mcp-server": {
-    "path": "uncategorized/linkly-mcp-server.json",
     "category": "uncategorized",
+    "path": "uncategorized/linkly-mcp-server.json",
+    "validated": true,
     "tools": {
       "create_link": {
         "name": "create_link",
@@ -55329,57 +55330,57 @@
         "name": "unsubscribe_link_webhook",
         "description": "Unsubscribe a webhook URL from a specific link's click events."
       }
-    },
-    "validated": true
+    }
   },
   "neemee-mcp": {
-    "path": "uncategorized/neemee-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/neemee-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/com-mintmcp-gcal": {
-    "path": "uncategorized/toolsdk-remote-com-mintmcp-gcal.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-com-mintmcp-gcal.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-lineex-pubmed-mcp-smithery": {
-    "path": "uncategorized/toolsdk-remote-ai-lineex-pubmed-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-lineex-pubmed-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-alphago2580-naramarketmcp": {
-    "path": "uncategorized/toolsdk-remote-ai-alphago2580-naramarketmcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-alphago2580-naramarketmcp.json",
+    "validated": false,
+    "tools": {}
   },
   "nanobanana-mcp-server": {
-    "path": "uncategorized/nanobanana-mcp-server.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/nanobanana-mcp-server.json"
   },
   "@toolsdk-remote/ai-smithery-keremurat-json": {
-    "path": "uncategorized/toolsdk-remote-ai-keremurat-json.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-keremurat-json.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/com-redpanda-docs-mcp": {
-    "path": "uncategorized/toolsdk-remote-com-redpanda-docs-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/toolsdk-remote-com-redpanda-docs-mcp.json",
+    "validated": true,
     "tools": {
       "ask_redpanda_question": {
         "name": "ask_redpanda_question",
         "description": "Search the official Redpanda documentation and return the most relevant sections from it for a user query. Each returned section includes the url and its actual content in markdown. Use this tool for all queries that require Redpanda knowledge. Results are ordered by relevance, with the most relevant result returned first. Returns up to 5 results by default to manage token usage. Use top_k parameter (1-15) to request more or fewer results."
       }
-    },
-    "validated": true
+    }
   },
   "starling-bank-mcp": {
-    "path": "uncategorized/starling-bank-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/starling-bank-mcp.json",
+    "validated": true,
     "tools": {
       "accounts_list": {
         "name": "accounts_list",
@@ -55477,24 +55478,24 @@
         "name": "savings_goal_withdraw",
         "description": "Withdraw money from a savings goal"
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/ai-smithery-arjunkmrm-local001": {
-    "path": "uncategorized/toolsdk-remote-ai-arjunkmrm-local001.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-arjunkmrm-local001.json",
+    "validated": false,
+    "tools": {}
   },
   "@rnaga/wp-mcp": {
-    "path": "uncategorized/rnaga-wp-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/rnaga-wp-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/dev-promplate-hmr": {
-    "path": "uncategorized/toolsdk-remote-dev-promplate-hmr.json",
     "category": "uncategorized",
+    "path": "uncategorized/toolsdk-remote-dev-promplate-hmr.json",
+    "validated": true,
     "tools": {
       "learn-hmr-basics": {
         "name": "learn-hmr-basics",
@@ -55508,28 +55509,28 @@
         "name": "view-hmr-unit-tests",
         "description": "The unit tests (code examples) for HMR.\n\nAlways call `learn-hmr-basics` and `view-hmr-core-sources` to learn the core functionality before calling this tool. These files are the unit tests for the HMR library, which demonstrate the best practices and common coding patterns of using the library. You should use this tool when you need to write some code using the HMR library (maybe for reactive programming or implementing some integration). The response is identical to the MCP resource with the same name. Only use it once and prefer this tool to that resource if you can choose."
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/ai-smithery-magenie33-quality-dimension-generator": {
-    "path": "uncategorized/toolsdk-remote-ai-magenie33-quality-dimension-generator.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-magenie33-quality-dimension-generator.json",
+    "validated": false,
+    "tools": {}
   },
   "app-store-connect-mcp": {
-    "path": "uncategorized/app-store-connect-mcp.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/app-store-connect-mcp.json"
   },
   "@mux/mcp": {
-    "path": "uncategorized/mux-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/mux-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@tigerdata/pg-aiguide": {
-    "path": "uncategorized/tigerdata-pg-aiguide.json",
     "category": "uncategorized",
+    "path": "uncategorized/tigerdata-pg-aiguide.json",
+    "validated": true,
     "tools": {
       "semantic_search_postgres_docs": {
         "name": "semantic_search_postgres_docs",
@@ -55543,12 +55544,12 @@
         "name": "view_skill",
         "description": "Retrieve detailed skills for TimescaleDB operations and best practices.\n\nAvailable Skills:\n\n\n"
       }
-    },
-    "validated": true
+    }
   },
   "mcp-property-valuation-server": {
-    "path": "uncategorized/mcp-property-valuation-server.json",
     "category": "uncategorized",
+    "path": "uncategorized/mcp-property-valuation-server.json",
+    "validated": true,
     "tools": {
       "get_community_rating": {
         "name": "get_community_rating",
@@ -55562,40 +55563,40 @@
         "name": "get_property_valuation",
         "description": "房产评估，根据城市、区县、小区名称、朝向、建筑面积、所在楼层、总楼层返回估值总价与估值单价。"
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/ai-smithery-dsharipova-mcp-hw": {
-    "path": "uncategorized/toolsdk-remote-ai-dsharipova-mcp-hw.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-dsharipova-mcp-hw.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-pythondev-pro-egwwritingsmcpserver": {
-    "path": "uncategorized/toolsdk-remote-ai-pythondev-pro-egwwritingsmcpserver.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-pythondev-pro-egwwritingsmcpserver.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/com-webflow-mcp": {
-    "path": "uncategorized/toolsdk-remote-com-webflow-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-com-webflow-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-browserbasehq-mcp-browserbase": {
-    "path": "uncategorized/toolsdk-remote-ai-browserbasehq-mcp-browserbase.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-browserbasehq-mcp-browserbase.json",
+    "validated": false,
+    "tools": {}
   },
   "un-datacommons-mcp": {
-    "path": "uncategorized/un-datacommons-mcp.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/un-datacommons-mcp.json"
   },
   "mcp-arr-server": {
-    "path": "uncategorized/mcp-arr-server.json",
     "category": "uncategorized",
+    "path": "uncategorized/mcp-arr-server.json",
+    "validated": true,
     "tools": {
       "arr_status": {
         "name": "arr_status",
@@ -55865,24 +55866,24 @@
         "name": "trash_compare_naming",
         "description": "Compare your naming configuration against TRaSH Guides recommendations. Requires the corresponding *arr service to be configured."
       }
-    },
-    "validated": true
+    }
   },
   "ruv-swarm": {
-    "path": "uncategorized/ruv-swarm.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/ruv-swarm.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/io-github-github-github-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "uranium-tools-mcp": {
-    "path": "uncategorized/uranium-tools-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/uranium-tools-mcp.json",
+    "validated": true,
     "tools": {
       "list_collections": {
         "name": "list_collections",
@@ -55900,12 +55901,12 @@
         "name": "create_asset",
         "description": "Create a new NFT asset from a local file or base64 data"
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/io-github-ksaklfszf921-riksdag-regering-mcp": {
-    "path": "uncategorized/toolsdk-remote-ksaklfszf921-riksdag-regering-mcp.json",
     "category": "uncategorized",
+    "path": "uncategorized/toolsdk-remote-ksaklfszf921-riksdag-regering-mcp.json",
+    "validated": true,
     "tools": {
       "search_ledamoter": {
         "name": "search_ledamoter",
@@ -56035,18 +56036,18 @@
         "name": "get_data_dictionary",
         "description": "Visa dataset och fältbeskrivningar"
       }
-    },
-    "validated": true
+    }
   },
   "@toolsdk-remote/ai-smithery-motorboy1-my-mcp-server": {
-    "path": "uncategorized/toolsdk-remote-ai-motorboy1-my-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-motorboy1-my-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@delorenj/mcp-server-trello": {
-    "path": "uncategorized/delorenj-mcp-server-trello.json",
     "category": "uncategorized",
+    "path": "uncategorized/delorenj-mcp-server-trello.json",
+    "validated": true,
     "tools": {
       "get_cards_by_list_id": {
         "name": "get_cards_by_list_id",
@@ -56184,23 +56185,22 @@
         "name": "perform_system_repair",
         "description": "Attempt to automatically repair common system issues"
       }
-    },
-    "validated": true
+    }
   },
   "cml-mcp": {
-    "path": "uncategorized/cml-mcp.json",
-    "category": "uncategorized"
+    "category": "uncategorized",
+    "path": "uncategorized/cml-mcp.json"
   },
   "@cyanheads/survey-mcp-server": {
-    "path": "uncategorized/cyanheads-survey-mcp-server.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/cyanheads-survey-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/ai-smithery-dynamicendpoints-m365-core-mcp": {
-    "path": "uncategorized/toolsdk-remote-ai-dynamicendpoints-m365-core-mcp.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-ai-dynamicendpoints-m365-core-mcp.json",
+    "validated": false,
+    "tools": {}
   }
 }
