@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "packageName": "navifare-mcp",
+  "description": "Flight price comparison MCP server. Search multiple booking sources to find better flight prices.",
+  "url": "https://github.com/navifare/navifare-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "GEMINI_API_KEY": {
+      "description": "Google Gemini API key for image extraction (required)",
+      "required": true
+    },
+    "NAVIFARE_API_BASE_URL": {
+      "description": "Navifare API base URL (optional, defaults to https://api.navifare.com/api/v1/price-discovery/flights)",
+      "required": false
+    }
+  }
+}

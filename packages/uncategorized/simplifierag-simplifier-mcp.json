@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "packageName": "@simplifierag/simplifier-mcp",
+  "description": "MCP Server for Simplifier - manage Connectors, BusinessObjects, Datatypes and logins",
+  "url": "https://github.com/simplifier-ag/simplifier-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "SIMPLIFIER_TOKEN": {
+      "description": "Your current Simplifier token",
+      "required": true
+    },
+    "SIMPLIFIER_BASE_URL": {
+      "description": "The base URL of your Simplifier instance",
+      "required": true
+    }
+  }
+}

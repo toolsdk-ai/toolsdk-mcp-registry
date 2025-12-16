@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-arjunkmrm-local001",
+  "description": "Get the current time in your preferred timezone or any region you specify. Browse concise informat…",
+  "url": "https://github.com/arjunkmrm/time",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@arjunkmrm/local001/mcp"
+    }
+  ]
+}

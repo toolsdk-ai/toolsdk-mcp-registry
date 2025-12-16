@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "packageName": "arcgis-mcp-server",
+  "description": "Intelligent ArcGIS content search. Works with Online/Enterprise. Requires user credentials.",
+  "url": "https://github.com/esrisaudiarabia/esrisaudiarabia-mcp",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "ARCGIS_URL": {
+      "description": "Your ArcGIS Portal URL (e.g., https://portal.company.com/portal)",
+      "required": true
+    },
+    "ARCGIS_USERNAME": {
+      "description": "Your ArcGIS Portal Username",
+      "required": true
+    },
+    "ARCGIS_PASSWORD": {
+      "description": "Your ArcGIS Portal Password",
+      "required": true
+    }
+  }
+}

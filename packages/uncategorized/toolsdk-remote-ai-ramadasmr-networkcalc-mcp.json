@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-ramadasmr-networkcalc-mcp",
+  "description": "Look up DNS information for any domain to troubleshoot issues and gather insights. Get fast, relia…",
+  "url": "https://github.com/ramadasmr/networkcalc-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@ramadasmr/networkcalc-mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

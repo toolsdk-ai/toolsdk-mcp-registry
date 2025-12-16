@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "packageName": "@daghis/teamcity-mcp",
+  "description": "MCP server exposing JetBrains TeamCity CI/CD workflows to AI coding assistants",
+  "url": "https://github.com/Daghis/teamcity-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "TEAMCITY_URL": {
+      "description": "Base URL of your TeamCity server",
+      "required": true
+    },
+    "TEAMCITY_TOKEN": {
+      "description": "TeamCity personal access token with required permissions",
+      "required": true
+    },
+    "MCP_MODE": {
+      "description": "Operational mode: dev (default) or full for elevated administrative tools",
+      "required": false
+    }
+  }
+}

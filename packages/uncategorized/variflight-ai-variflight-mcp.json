@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@variflight-ai/variflight-mcp",
+  "description": "VariFlight's official MCP server provides tools to query flight, weather, comfort, and fare data.",
+  "url": "https://github.com/variflight/variflight-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "VARIFLIGHT_API_KEY": {
+      "description": "Your API key for the service",
+      "required": true
+    }
+  }
+}

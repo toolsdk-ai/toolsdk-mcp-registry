@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-miguelgarzons-mcp-cun",
+  "description": "Greet people by name with friendly, personalized messages. Add a warm touch to onboarding, demos,…",
+  "url": "https://github.com/miguelgarzons/mcp-cun",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@miguelgarzons/mcp-cun/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

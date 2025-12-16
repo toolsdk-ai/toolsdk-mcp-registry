@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "frappe-dev-mcp-server",
+  "description": "MCP server for Frappe/ERPNext development with AI assistance for DocTypes, bench commands, and APIs",
+  "url": "https://github.com/SajmustafaKe/frappe-dev-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "FRAPPE_PATH": {
+      "description": "Path to your Frappe/ERPNext bench directory (defaults to current directory if not specified)",
+      "required": false
+    }
+  }
+}

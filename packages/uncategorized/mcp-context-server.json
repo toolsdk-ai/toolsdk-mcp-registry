@@ -1,0 +1,206 @@
+{
+  "type": "mcp-server",
+  "packageName": "mcp-context-server",
+  "description": "An MCP server that provides persistent multimodal context storage for LLM agents.",
+  "url": "https://github.com/alex-feel/mcp-context-server",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "LOG_LEVEL": {
+      "description": "Log level",
+      "required": false
+    },
+    "STORAGE_BACKEND": {
+      "description": "Storage backend type: sqlite (default) or postgresql",
+      "required": false
+    },
+    "MAX_IMAGE_SIZE_MB": {
+      "description": "Maximum individual image size in megabytes",
+      "required": false
+    },
+    "MAX_TOTAL_SIZE_MB": {
+      "description": "Maximum total request size in megabytes",
+      "required": false
+    },
+    "DB_PATH": {
+      "description": "Custom database file location path",
+      "required": false
+    },
+    "POOL_MAX_READERS": {
+      "description": "Maximum number of concurrent read connections in the pool",
+      "required": false
+    },
+    "POOL_MAX_WRITERS": {
+      "description": "Maximum number of concurrent write connections in the pool",
+      "required": false
+    },
+    "POOL_CONNECTION_TIMEOUT_S": {
+      "description": "Connection timeout in seconds",
+      "required": false
+    },
+    "POOL_IDLE_TIMEOUT_S": {
+      "description": "Idle connection timeout in seconds",
+      "required": false
+    },
+    "POOL_HEALTH_CHECK_INTERVAL_S": {
+      "description": "Connection health check interval in seconds",
+      "required": false
+    },
+    "RETRY_MAX_RETRIES": {
+      "description": "Maximum number of retry attempts for failed operations",
+      "required": false
+    },
+    "RETRY_BASE_DELAY_S": {
+      "description": "Base delay in seconds between retry attempts",
+      "required": false
+    },
+    "RETRY_MAX_DELAY_S": {
+      "description": "Maximum delay in seconds between retry attempts",
+      "required": false
+    },
+    "RETRY_JITTER": {
+      "description": "Enable random jitter in retry delays",
+      "required": false
+    },
+    "RETRY_BACKOFF_FACTOR": {
+      "description": "Exponential backoff multiplication factor for retries",
+      "required": false
+    },
+    "SQLITE_FOREIGN_KEYS": {
+      "description": "Enable SQLite foreign key constraints",
+      "required": false
+    },
+    "SQLITE_JOURNAL_MODE": {
+      "description": "SQLite journal mode (e.g., WAL, DELETE)",
+      "required": false
+    },
+    "SQLITE_SYNCHRONOUS": {
+      "description": "SQLite synchronous mode (e.g., NORMAL, FULL, OFF)",
+      "required": false
+    },
+    "SQLITE_TEMP_STORE": {
+      "description": "SQLite temporary storage location (e.g., MEMORY, FILE)",
+      "required": false
+    },
+    "SQLITE_MMAP_SIZE": {
+      "description": "SQLite memory-mapped I/O size in bytes",
+      "required": false
+    },
+    "SQLITE_CACHE_SIZE": {
+      "description": "SQLite cache size (negative value for KB, positive for pages)",
+      "required": false
+    },
+    "SQLITE_PAGE_SIZE": {
+      "description": "SQLite page size in bytes",
+      "required": false
+    },
+    "SQLITE_WAL_AUTOCHECKPOINT": {
+      "description": "SQLite WAL autocheckpoint threshold in pages",
+      "required": false
+    },
+    "SQLITE_BUSY_TIMEOUT_MS": {
+      "description": "SQLite busy timeout in milliseconds",
+      "required": false
+    },
+    "SQLITE_WAL_CHECKPOINT": {
+      "description": "SQLite WAL checkpoint mode (e.g., PASSIVE, FULL, RESTART)",
+      "required": false
+    },
+    "SHUTDOWN_TIMEOUT_S": {
+      "description": "Server shutdown timeout in seconds",
+      "required": false
+    },
+    "SHUTDOWN_TIMEOUT_TEST_S": {
+      "description": "Test mode shutdown timeout in seconds",
+      "required": false
+    },
+    "QUEUE_TIMEOUT_S": {
+      "description": "Queue operation timeout in seconds",
+      "required": false
+    },
+    "QUEUE_TIMEOUT_TEST_S": {
+      "description": "Test mode queue timeout in seconds",
+      "required": false
+    },
+    "CIRCUIT_BREAKER_FAILURE_THRESHOLD": {
+      "description": "Circuit breaker failure threshold before opening",
+      "required": false
+    },
+    "CIRCUIT_BREAKER_RECOVERY_TIMEOUT_S": {
+      "description": "Circuit breaker recovery timeout in seconds",
+      "required": false
+    },
+    "CIRCUIT_BREAKER_HALF_OPEN_MAX_CALLS": {
+      "description": "Maximum calls allowed in circuit breaker half-open state",
+      "required": false
+    },
+    "POSTGRESQL_CONNECTION_STRING": {
+      "description": "Complete PostgreSQL connection string (overrides individual settings if provided)",
+      "required": false
+    },
+    "POSTGRESQL_HOST": {
+      "description": "PostgreSQL server host address",
+      "required": false
+    },
+    "POSTGRESQL_PORT": {
+      "description": "PostgreSQL server port number",
+      "required": false
+    },
+    "POSTGRESQL_USER": {
+      "description": "PostgreSQL database username",
+      "required": false
+    },
+    "POSTGRESQL_PASSWORD": {
+      "description": "PostgreSQL database password",
+      "required": false
+    },
+    "POSTGRESQL_DATABASE": {
+      "description": "PostgreSQL database name",
+      "required": false
+    },
+    "POSTGRESQL_POOL_MIN": {
+      "description": "PostgreSQL connection pool minimum size",
+      "required": false
+    },
+    "POSTGRESQL_POOL_MAX": {
+      "description": "PostgreSQL connection pool maximum size",
+      "required": false
+    },
+    "POSTGRESQL_POOL_TIMEOUT_S": {
+      "description": "PostgreSQL connection pool timeout in seconds",
+      "required": false
+    },
+    "POSTGRESQL_COMMAND_TIMEOUT_S": {
+      "description": "PostgreSQL command execution timeout in seconds",
+      "required": false
+    },
+    "POSTGRESQL_SSL_MODE": {
+      "description": "PostgreSQL SSL mode (disable, allow, prefer, require, verify-ca, verify-full)",
+      "required": false
+    },
+    "ENABLE_SEMANTIC_SEARCH": {
+      "description": "Enable semantic search functionality",
+      "required": false
+    },
+    "OLLAMA_HOST": {
+      "description": "Ollama API host URL for embedding generation",
+      "required": false
+    },
+    "EMBEDDING_MODEL": {
+      "description": "Embedding model name for semantic search",
+      "required": false
+    },
+    "EMBEDDING_DIM": {
+      "description": "Embedding vector dimensions",
+      "required": false
+    },
+    "ENABLE_FTS": {
+      "description": "Enable full-text search functionality",
+      "required": false
+    },
+    "FTS_LANGUAGE": {
+      "description": "Language for FTS stemming (e.g., english, german, french)",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-bigvik193-reddit-ads-mcp-api",
+  "description": "Manage Reddit advertising end to end across accounts, funding methods, campaigns, ad groups, and a…",
+  "url": "https://github.com/BigVik193/reddit-ads-mcp-api",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@BigVik193/reddit-ads-mcp-api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

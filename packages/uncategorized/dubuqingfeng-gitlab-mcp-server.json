@@ -1,0 +1,34 @@
+{
+  "type": "mcp-server",
+  "packageName": "@dubuqingfeng/gitlab-mcp-server",
+  "description": "GitLab MCP (Model Context Protocol) server for AI agents",
+  "url": "https://github.com/dubuqingfeng/gitlab-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "GITLAB_TOKEN": {
+      "description": "Your API key for the gitlab",
+      "required": true
+    },
+    "GITLAB_URL": {
+      "description": "Gitlab URL",
+      "required": false
+    },
+    "LARK_WEBHOOK_URL": {
+      "description": "Lark 机器人 Webhook URL",
+      "required": false
+    },
+    "LARK_SECRET_KEY": {
+      "description": "可选：签名密钥（如果机器人启用了签名验证）",
+      "required": false
+    },
+    "LARK_ENABLE_NOTIFICATION": {
+      "description": "可选：是否启用通知，默认为 true",
+      "required": false
+    },
+    "GITLAB_NOTE_MODE": {
+      "description": "可选：通知模式 - gitlab_only(仅GitLab)、lark_only(仅Lark)、both(两者都发)，默认为 gitlab_only",
+      "required": false
+    }
+  }
+}

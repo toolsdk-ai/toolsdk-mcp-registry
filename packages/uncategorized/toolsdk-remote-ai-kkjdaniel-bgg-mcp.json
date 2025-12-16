@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-kkjdaniel-bgg-mcp",
+  "description": "BGG MCP provides access to the BoardGameGeek API through the Model Context Protocol, enabling retr…",
+  "url": "https://github.com/kkjdaniel/bgg-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@kkjdaniel/bgg-mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

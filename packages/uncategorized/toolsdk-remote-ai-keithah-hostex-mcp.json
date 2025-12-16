@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-keithah-hostex-mcp",
+  "description": "Manage your Hostex vacation rentals—properties, reservations, availability, listings, and guest me…",
+  "url": "https://github.com/keithah/hostex-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@keithah/hostex-mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

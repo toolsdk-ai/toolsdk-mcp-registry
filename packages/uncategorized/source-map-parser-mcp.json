@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "packageName": "source-map-parser-mcp",
+  "description": "Parse JavaScript error stack traces back to original source code using source maps",
+  "url": "https://github.com/MasonChow/source-map-parser-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "SOURCE_MAP_PARSER_CONTEXT_OFFSET_LINE": {
+      "description": "Context lines around error locations in source code",
+      "required": false
+    },
+    "SOURCE_MAP_PARSER_RESOURCE_CACHE_MAX_SIZE": {
+      "description": "Maximum memory cache size in MB for source maps",
+      "required": false
+    }
+  }
+}

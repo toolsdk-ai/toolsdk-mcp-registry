@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/io-github-isakskogstad-oecd-mcp",
+  "description": "OECD economic and statistical data via SDMX API. Access 5,000+ datasets across 17 categories.",
+  "url": "https://github.com/isakskogstad/OECD-MCP-server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://oecd-mcp-server.onrender.com/mcp"
+    }
+  ]
+}

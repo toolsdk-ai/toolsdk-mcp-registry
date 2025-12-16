@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "mind-map-mcp",
+  "description": "Experimental code intelligence platform for Claude Code with AST parsing and context analysis",
+  "url": "https://github.com/nerfels/mind-map",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "MCP_PROJECT_ROOT": {
+      "description": "Project root directory for MCP to analyze (optional - uses current working directory if not specified)",
+      "required": false
+    }
+  }
+}

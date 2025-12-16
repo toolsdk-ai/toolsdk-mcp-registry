@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-mrugankpednekar-billsplittermcp",
+  "description": "Track and split shared expenses across trips, events, and groups. Create groups, add expenses, and…",
+  "url": "https://github.com/mrugankpednekar/bill_splitter_mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@mrugankpednekar/bill_splitter_mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

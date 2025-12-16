@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-keithah-tessie-mcp",
+  "description": "Unofficial integration! ## ✨ Key Features ### 💰 Financial Intelligence - **Smart Charging Cost An…",
+  "url": "https://github.com/keithah/tessie-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@keithah/tessie-mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

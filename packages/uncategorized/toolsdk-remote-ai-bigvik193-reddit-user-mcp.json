@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-bigvik193-reddit-user-mcp",
+  "description": "Browse and manage Reddit posts, comments, and threads. Fetch user activity, explore hot/new/rising…",
+  "url": "https://github.com/BigVik193/reddit-user-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@BigVik193/reddit-user-mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

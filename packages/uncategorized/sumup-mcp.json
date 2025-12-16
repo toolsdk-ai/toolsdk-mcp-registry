@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@sumup/mcp",
+  "description": "Tools to explore SumUp accounts, payments, customers, and payouts.",
+  "url": "https://github.com/sumup/sumup-agent-toolkit",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "SUMUP_API_KEY": {
+      "description": "SumUp API key with permissions for the requested operations.",
+      "required": true
+    }
+  }
+}

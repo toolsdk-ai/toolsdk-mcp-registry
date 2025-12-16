@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "packageName": "@atlassian-dc-mcp/jira",
+  "description": "MCP server for Atlassian Jira Data Center - search, view, and create issues",
+  "url": "https://github.com/b1ff/atlassian-dc-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "JIRA_HOST": {
+      "description": "Jira host domain (e.g. your-instance.atlassian.net)",
+      "required": false
+    },
+    "JIRA_API_BASE_PATH": {
+      "description": "Jira API base path (alternative to JIRA_HOST)",
+      "required": false
+    },
+    "JIRA_API_TOKEN": {
+      "description": "Jira Personal Access Token or API token",
+      "required": true
+    }
+  }
+}

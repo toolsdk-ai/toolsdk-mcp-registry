@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-pinkpixel-dev-web-scout-mcp",
+  "description": "Search the web and extract clean, readable text from webpages. Process multiple URLs at once to sp…",
+  "url": "https://github.com/pinkpixel-dev/web-scout-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@pinkpixel-dev/web-scout-mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

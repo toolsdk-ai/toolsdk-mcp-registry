@@ -1,0 +1,82 @@
+{
+  "type": "mcp-server",
+  "packageName": "snowflake-labs-mcp",
+  "description": "MCP Server for Snowflake from Snowflake Labs",
+  "url": "https://github.com/Snowflake-Labs/mcp",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "SNOWFLAKE_ACCOUNT": {
+      "description": "Account identifier (e.g. xy12345.us-east-1)",
+      "required": false
+    },
+    "SNOWFLAKE_HOST": {
+      "description": "Snowflake host URL",
+      "required": false
+    },
+    "SNOWFLAKE_USER": {
+      "description": "Username for authentication",
+      "required": false
+    },
+    "SNOWFLAKE_PASSWORD": {
+      "description": "Password or programmatic access token",
+      "required": false
+    },
+    "SNOWFLAKE_ROLE": {
+      "description": "Role to use for connection",
+      "required": false
+    },
+    "SNOWFLAKE_WAREHOUSE": {
+      "description": "Warehouse to use for queries",
+      "required": false
+    },
+    "SNOWFLAKE_PASSCODE": {
+      "description": "MFA passcode for authentication",
+      "required": false
+    },
+    "SNOWFLAKE_PRIVATE_KEY": {
+      "description": "Private key for key pair authentication",
+      "required": false
+    },
+    "SNOWFLAKE_PRIVATE_KEY_FILE": {
+      "description": "Path to private key file",
+      "required": false
+    },
+    "SNOWFLAKE_PRIVATE_KEY_FILE_PWD": {
+      "description": "Password for encrypted private key",
+      "required": false
+    },
+    "SNOWFLAKE_MCP_HOST": {
+      "description": "Host address to bind the server to (default: 0.0.0.0)",
+      "required": false
+    },
+    "SNOWFLAKE_MCP_PORT": {
+      "description": "Port number for the server to listen on (default: 9000)",
+      "required": false
+    },
+    "SNOWFLAKE_MCP_ENDPOINT": {
+      "description": "Endpoint path for the MCP server (default: /mcp)",
+      "required": false
+    }
+  },
+  "binArgs": [
+    "--service-config-file",
+    "--account",
+    "--host",
+    "--user",
+    "--password",
+    "--role",
+    "--warehouse",
+    "--passcode-in-password",
+    "--passcode",
+    "--private-key",
+    "--private-key-file",
+    "--private-key-file-pwd",
+    "--authenticator",
+    "--connection-name",
+    "--transport",
+    "--server-host",
+    "--port",
+    "--endpoint"
+  ]
+}

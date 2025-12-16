@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-bowenxu0126-aistudiohw3",
+  "description": "Send personalized greetings with optional pirate flair. Compose friendly salutations for any name…",
+  "url": "https://github.com/BowenXU0126/aistudio_hw3",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@BowenXU0126/aistudio_hw3/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

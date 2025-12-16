@@ -1,0 +1,35 @@
+{
+  "type": "mcp-server",
+  "packageName": "@florentine-ai/mcp",
+  "description": "MCP server for Florentine.ai - Natural language to MongoDB aggregations",
+  "url": "https://github.com/florentine-ai/mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "FLORENTINE_TOKEN": {
+      "description": "Your Florentine.ai API key, get it from https://florentine.ai/dashboard",
+      "required": true
+    },
+    "LLM_SERVICE": {
+      "description": "The LLM service to use, one of 'openai', 'anthropic', 'google' or 'deepseek' (must only be provided if you did not set it in your Florentine.ai account)",
+      "required": false
+    },
+    "LLM_KEY": {
+      "description": "Your API key for the LLM service (must only be provided if you did not set it in your Florentine.ai account)",
+      "required": false
+    },
+    "SESSION_ID": {
+      "description": "Session ID for maintaining server-side context across requests",
+      "required": false
+    },
+    "RETURN_TYPES": {
+      "description": "Stringified JSON array of return types for the response",
+      "required": false
+    },
+    "REQUIRED_INPUTS": {
+      "description": "Stringified JSON array of values for required inputs keys",
+      "required": false
+    }
+  },
+  "binArgs": ["--mode", "static", "--debug", "--logpath"]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-truss44-mcp-crypto-price",
+  "description": "Provide real-time cryptocurrency price data and market analysis.",
+  "url": "https://github.com/truss44/mcp-crypto-price",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@truss44/mcp-crypto-price/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

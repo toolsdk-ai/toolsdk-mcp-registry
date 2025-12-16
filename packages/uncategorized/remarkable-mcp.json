@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "remarkable-mcp",
+  "description": "Access your reMarkable tablet - read documents, browse files, extract text and OCR",
+  "url": "https://github.com/SamMorrowDrums/remarkable-mcp",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "REMARKABLE_TOKEN": {
+      "description": "Authentication token for reMarkable Cloud API. Get one by registering at https://my.remarkable.com/device/browser/connect",
+      "required": true
+    }
+  }
+}

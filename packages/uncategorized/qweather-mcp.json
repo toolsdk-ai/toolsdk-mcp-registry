@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "packageName": "qweather-mcp",
+  "description": "a qweather mcp server",
+  "url": "https://github.com/overstarry/qweather-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "QWEATHER_API_BASE": {
+      "description": "Your qweather api host",
+      "required": true
+    },
+    "QWEATHER_API_KEY": {
+      "description": "Your qweather api key",
+      "required": true
+    }
+  }
+}

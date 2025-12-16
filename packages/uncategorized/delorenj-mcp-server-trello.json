@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "packageName": "@delorenj/mcp-server-trello",
+  "description": "MCP server for Trello boards with rate limiting, type safety, and comprehensive API integration.",
+  "url": "https://github.com/delorenj/mcp-server-trello",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "TRELLO_API_KEY": {
+      "description": "Your Trello API key",
+      "required": true
+    },
+    "TRELLO_TOKEN": {
+      "description": "Your Trello token",
+      "required": true
+    }
+  }
+}

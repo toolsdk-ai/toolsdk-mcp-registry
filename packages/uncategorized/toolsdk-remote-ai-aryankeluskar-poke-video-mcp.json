@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-aryankeluskar-poke-video-mcp",
+  "description": "Search your Flashback video library with natural language to instantly find relevant moments. Get…",
+  "url": "https://github.com/aryankeluskar/poke-video-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@aryankeluskar/poke-video-mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

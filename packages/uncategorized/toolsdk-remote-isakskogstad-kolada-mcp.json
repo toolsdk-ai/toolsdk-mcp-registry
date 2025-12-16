@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/io-github-isakskogstad-kolada-mcp",
+  "description": "Swedish municipality statistics from Kolada API. 6000+ KPIs for all 290 municipalities.",
+  "url": "https://github.com/isakskogstad/kolada-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://kolada-mcp-pafn.onrender.com/mcp"
+    }
+  ]
+}

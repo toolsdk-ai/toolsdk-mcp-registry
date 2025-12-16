@@ -1,0 +1,248 @@
+{
+  "type": "mcp-server",
+  "packageName": "code-weaver",
+  "description": "Semantic code search built for AI agents. Hybrid, AST-aware, context for 166 languages.",
+  "url": "https://github.com/knitli/codeweaver",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "CODEWEAVER_CONFIG_FILE": {
+      "description": "Specify a custom config file path for CodeWeaver. Only needed if not using the default locations.",
+      "required": false
+    },
+    "CODEWEAVER_DEBUG": {
+      "description": "Enable debug mode for CodeWeaver.",
+      "required": false
+    },
+    "CODEWEAVER_EMBEDDING_API_KEY": {
+      "description": "Specify the API key for the embedding provider, if required. Note: {', '.join([p for p in _providers_for_kind('embedding') if p.])}",
+      "required": false
+    },
+    "CODEWEAVER_EMBEDDING_MODEL": {
+      "description": "Specify the embedding model to use.",
+      "required": false
+    },
+    "CODEWEAVER_EMBEDDING_PROVIDER": {
+      "description": "Specify the embedding provider to use.",
+      "required": false
+    },
+    "CODEWEAVER_HOST": {
+      "description": "Set the server host for CodeWeaver.",
+      "required": false
+    },
+    "CODEWEAVER_LOG_LEVEL": {
+      "description": "Set the log level for CodeWeaver (e.g., DEBUG, INFO, WARNING, ERROR).",
+      "required": false
+    },
+    "CODEWEAVER_MCP_PORT": {
+      "description": "Set the MCP server port for CodeWeaver if using http transport for mcp. Not required if using the default port (9328), or stdio transport.",
+      "required": false
+    },
+    "CODEWEAVER_PORT": {
+      "description": "Set the port for the codeweaver management server (information and management endpoints).",
+      "required": false
+    },
+    "CODEWEAVER_PROFILE": {
+      "description": "Use a premade provider settings profile for CodeWeaver.",
+      "required": false
+    },
+    "CODEWEAVER_PROJECT_NAME": {
+      "description": "Set the project name for CodeWeaver.",
+      "required": false
+    },
+    "CODEWEAVER_PROJECT_PATH": {
+      "description": "Set the project path for CodeWeaver.",
+      "required": false
+    },
+    "CODEWEAVER_RERANKING_API_KEY": {
+      "description": "Specify the API key for the reranking provider, if required.",
+      "required": false
+    },
+    "CODEWEAVER_RERANKING_MODEL": {
+      "description": "Specify the reranking model to use.",
+      "required": false
+    },
+    "CODEWEAVER_RERANKING_PROVIDER": {
+      "description": "Specify the reranking provider to use.",
+      "required": false
+    },
+    "CODEWEAVER_SPARSE_EMBEDDING_MODEL": {
+      "description": "Specify the sparse embedding model to use.",
+      "required": false
+    },
+    "CODEWEAVER_SPARSE_EMBEDDING_PROVIDER": {
+      "description": "Specify the sparse embedding provider to use.",
+      "required": false
+    },
+    "CODEWEAVER_VECTOR_STORE_API_KEY": {
+      "description": "Specify the API key for the vector store, if required.",
+      "required": false
+    },
+    "CODEWEAVER_VECTOR_STORE_PORT": {
+      "description": "Specify the port for the vector store.",
+      "required": false
+    },
+    "CODEWEAVER_VECTOR_STORE_PROVIDER": {
+      "description": "Specify the vector store provider to use.",
+      "required": false
+    },
+    "CODEWEAVER_VECTOR_STORE_URL": {
+      "description": "Specify the URL for the vector store.",
+      "required": false
+    },
+    "CODEWEAVER__TELEMETRY__DISABLE_TELEMETRY": {
+      "description": "Disable telemetry data collection.",
+      "required": false
+    },
+    "CODEWEAVER__TELEMETRY__TOOLS_OVER_PRIVACY": {
+      "description": "Opt-in to potentially identifying collection of query and search result data. This is invaluable for helping us improve CodeWeaver's search capabilities. If privacy is a higher priority, do not enable this setting.",
+      "required": false
+    },
+    "HTTPS_PROXY": {
+      "description": "HTTP proxy for requests",
+      "required": false
+    },
+    "OPENAI_API_KEY": {
+      "description": "API key for OpenAI-compatible services (not necessarily an API key *for* OpenAI). The OpenAI client also requires an API key, even if you don't actually need one for your provider (like local Ollama). So provide a dummy key if needed.",
+      "required": false
+    },
+    "OPENAI_LOG": {
+      "description": "One of: 'debug', 'info', 'warning', 'error'",
+      "required": false
+    },
+    "SSL_CERT_FILE": {
+      "description": "Path to the SSL certificate file for requests",
+      "required": false
+    },
+    "AI_GATEWAY_API_KEY": {
+      "description": "API key for Vercel service",
+      "required": false
+    },
+    "AWS_ACCOUNT_ID": {
+      "description": "AWS Account ID for Bedrock service",
+      "required": false
+    },
+    "AWS_REGION": {
+      "description": "AWS region for Bedrock service",
+      "required": false
+    },
+    "AWS_SECRET_ACCESS_KEY": {
+      "description": "AWS Secret Access Key for Bedrock service",
+      "required": false
+    },
+    "AZURE_COHERE_API_KEY": {
+      "description": "API key for Azure Cohere service (cohere models on Azure)",
+      "required": false
+    },
+    "AZURE_COHERE_ENDPOINT": {
+      "description": "Endpoint for Azure Cohere service (cohere models on Azure)",
+      "required": false
+    },
+    "AZURE_COHERE_REGION": {
+      "description": "Region for Azure Cohere service",
+      "required": false
+    },
+    "AZURE_OPENAI_API_KEY": {
+      "description": "API key for Azure OpenAI service (OpenAI models on Azure)",
+      "required": false
+    },
+    "AZURE_OPENAI_ENDPOINT": {
+      "description": "Endpoint for Azure OpenAI service (OpenAI models on Azure)",
+      "required": false
+    },
+    "AZURE_OPENAI_REGION": {
+      "description": "Region for Azure OpenAI service (OpenAI models on Azure)",
+      "required": false
+    },
+    "COHERE_API_KEY": {
+      "description": "Your Cohere API Key",
+      "required": false
+    },
+    "CO_API_URL": {
+      "description": "Host URL for Cohere service",
+      "required": false
+    },
+    "DEEPSEEK_API_KEY": {
+      "description": "API key for DeepSeek service",
+      "required": false
+    },
+    "GEMINI_API_KEY": {
+      "description": "Your Google Gemini API Key",
+      "required": false
+    },
+    "GOOGLE_API_KEY": {
+      "description": "Your Google API Key",
+      "required": false
+    },
+    "HF_HUB_VERBOSITY": {
+      "description": "Log level for Hugging Face Hub client",
+      "required": false
+    },
+    "HF_TOKEN": {
+      "description": "API key/token for Hugging Face service",
+      "required": false
+    },
+    "INFERENCE_KEY": {
+      "description": "API key for Heroku service",
+      "required": false
+    },
+    "INFERENCE_URL": {
+      "description": "Host URL for Heroku service",
+      "required": false
+    },
+    "MISTRAL_API_KEY": {
+      "description": "Your Mistral API Key",
+      "required": false
+    },
+    "QDRANT__LOG_LEVEL": {
+      "description": "Log level for Qdrant service",
+      "required": false
+    },
+    "QDRANT__SERVICE__API_KEY": {
+      "description": "API key for Qdrant service",
+      "required": false
+    },
+    "QDRANT__SERVICE__ENABLE_TLS": {
+      "description": "Enable TLS for Qdrant service, expects truthy or false value (e.g. 1 for on, 0 for off).",
+      "required": false
+    },
+    "QDRANT__SERVICE__HOST": {
+      "description": "Hostname of the Qdrant service; do not use for URLs with schemes (e.g. 'http://')",
+      "required": false
+    },
+    "QDRANT__SERVICE__HTTP_PORT": {
+      "description": "Port number for the Qdrant service",
+      "required": false
+    },
+    "QDRANT__TLS__CERT": {
+      "description": "Path to the TLS certificate file for Qdrant service. Only needed if using a self-signed certificate. If you're using qdrant-cloud, you don't need this.",
+      "required": false
+    },
+    "TAVILY_API_KEY": {
+      "description": "Your Tavily API Key",
+      "required": false
+    },
+    "TOGETHER_API_KEY": {
+      "description": "API key for Together service",
+      "required": false
+    },
+    "VERCEL_OIDC_TOKEN": {
+      "description": "OIDC token for Vercel service",
+      "required": false
+    },
+    "VOYAGE_API_KEY": {
+      "description": "API key for Voyage service",
+      "required": false
+    }
+  },
+  "binArgs": [
+    "server",
+    "--project",
+    "--config",
+    "--host",
+    "--port",
+    "--transport",
+    "--verbose",
+    "--debug"
+  ]
+}

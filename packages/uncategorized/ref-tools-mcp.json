@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "ref-tools-mcp",
+  "description": "Token efficient search for coding agents over public and private documentation.",
+  "url": "https://github.com/ref-tools/ref-tools-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "REF_API_KEY": {
+      "description": "Your API key for Ref",
+      "required": true
+    }
+  }
+}

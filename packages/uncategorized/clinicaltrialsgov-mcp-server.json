@@ -1,0 +1,35 @@
+{
+  "type": "mcp-server",
+  "packageName": "clinicaltrialsgov-mcp-server",
+  "description": "Provides rich tools to search, retrieve, and analyze data from ClinicalTrials.gov API v2.",
+  "url": "https://github.com/cyanheads/clinicaltrialsgov-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "MCP_LOG_LEVEL": {
+      "description": "Sets the minimum log level for output (e.g., 'debug', 'info', 'warn', 'error').",
+      "required": false
+    },
+    "STORAGE_PROVIDER_TYPE": {
+      "description": "Storage provider type: 'in-memory', 'filesystem', 'supabase', 'cloudflare-r2', or 'cloudflare-kv'.",
+      "required": false
+    },
+    "MCP_HTTP_HOST": {
+      "description": "The hostname for the HTTP server.",
+      "required": false
+    },
+    "MCP_HTTP_PORT": {
+      "description": "The port to run the HTTP server on.",
+      "required": false
+    },
+    "MCP_HTTP_ENDPOINT_PATH": {
+      "description": "The endpoint path for the MCP server.",
+      "required": false
+    },
+    "MCP_AUTH_MODE": {
+      "description": "Authentication mode to use: 'none', 'jwt', or 'oauth'.",
+      "required": false
+    }
+  },
+  "binArgs": ["run", "start:stdio"]
+}

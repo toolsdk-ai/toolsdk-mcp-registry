@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "packageName": "altmetric-mcp",
+  "description": "MCP server for Altmetric APIs - track research attention across news, policy, social media, and more",
+  "url": "https://github.com/altmetric/altmetric-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "ALTMETRIC_DETAILS_API_KEY": {
+      "description": "API key for Altmetric Details Page API. At least one credential set required: either this key OR both Explorer API credentials",
+      "required": false
+    },
+    "ALTMETRIC_EXPLORER_API_KEY": {
+      "description": "API key for Altmetric Explorer API (requires ALTMETRIC_EXPLORER_API_SECRET). At least one credential set required",
+      "required": false
+    },
+    "ALTMETRIC_EXPLORER_API_SECRET": {
+      "description": "API secret for Altmetric Explorer API HMAC authentication (requires ALTMETRIC_EXPLORER_API_KEY)",
+      "required": false
+    }
+  }
+}

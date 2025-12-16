@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@antonytm/mcp-all",
+  "description": "A Model Context Protocol server to run other MCP servers",
+  "url": "https://github.com/Antonytm/mcp-all",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "TRANSPORT": {
+      "description": "",
+      "required": false
+    }
+  }
+}

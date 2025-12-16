@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-pythondev-pro-egwwritingsmcpserver",
+  "description": "Search Ellen G. White’s writings by keyword to surface relevant quotations. Retrieve exact passage…",
+  "url": "https://github.com/pythondev-pro/egw_writings_mcp_server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@pythondev-pro/egw_writings_mcp_server/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

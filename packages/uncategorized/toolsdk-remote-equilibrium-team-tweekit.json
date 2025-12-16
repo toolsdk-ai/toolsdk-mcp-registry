@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/io-github-equilibrium-team-tweekit",
+  "description": "Normalize and convert more than 400 file types via TweekIT's hosted MCP streamable HTTP endpoint.",
+  "url": "https://github.com/equilibrium-team/tweekit-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.tweekit.io/mcp"
+    }
+  ]
+}

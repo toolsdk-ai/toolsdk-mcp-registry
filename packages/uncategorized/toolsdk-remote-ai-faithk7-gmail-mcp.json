@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-faithk7-gmail-mcp",
+  "description": "Manage Gmail messages, threads, labels, drafts, and settings from your workflows. Send and organiz…",
+  "url": "https://github.com/faithk7/gmail-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@faithk7/gmail-mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

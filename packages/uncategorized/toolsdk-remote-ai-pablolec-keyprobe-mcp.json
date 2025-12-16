@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-pablolec-keyprobe-mcp",
+  "description": "Audit certificates and keystores to surface expiry risks, weak algorithms, and misconfigurations.…",
+  "url": "https://github.com/PabloLec/KeyProbe-MCP",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@PabloLec/keyprobe-mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-docfork-mcp",
+  "description": "@latest documentation and code examples to 9000+ libraries for LLMs and AI code editors in a singl…",
+  "url": "https://github.com/docfork/docfork-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@docfork/mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

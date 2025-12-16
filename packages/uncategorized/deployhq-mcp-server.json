@@ -1,0 +1,26 @@
+{
+  "type": "mcp-server",
+  "packageName": "deployhq-mcp-server",
+  "description": "Model Context Protocol (MCP) server for DeployHQ API integration",
+  "url": "https://github.com/deployhq/deployhq-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "DEPLOYHQ_EMAIL": {
+      "description": "Your DeployHQ login email address",
+      "required": true
+    },
+    "DEPLOYHQ_API_KEY": {
+      "description": "Your DeployHQ password or API key",
+      "required": true
+    },
+    "DEPLOYHQ_ACCOUNT": {
+      "description": "Your DeployHQ account name (from URL: https://ACCOUNT.deployhq.com)",
+      "required": true
+    },
+    "LOG_LEVEL": {
+      "description": "Log verbosity level (ERROR, INFO, or DEBUG)",
+      "required": false
+    }
+  }
+}

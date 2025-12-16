@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "openroute-mcp",
+  "description": "Plan routes using OpenRouteService API, for activities such as hiking or mountain biking",
+  "url": "https://github.com/vemonet/openroute-mcp",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "OPENROUTESERVICE_API_KEY": {
+      "description": "Your API key for https://api.openrouteservice.org",
+      "required": true
+    }
+  }
+}

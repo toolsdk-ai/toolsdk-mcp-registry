@@ -1,0 +1,70 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/com-cloudflare-mcp-mcp",
+  "description": "Cloudflare MCP servers",
+  "url": "https://github.com/cloudflare/mcp-server-cloudflare",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://docs.mcp.cloudflare.com/mcp"
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://observability.mcp.cloudflare.com/mcp"
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://bindings.mcp.cloudflare.com/mcp"
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://builds.mcp.cloudflare.com/mcp"
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://radar.mcp.cloudflare.com/mcp"
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://containers.mcp.cloudflare.com/mcp"
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://browser.mcp.cloudflare.com/mcp"
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://logs.mcp.cloudflare.com/mcp"
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://ai-gateway.mcp.cloudflare.com/mcp"
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://autorag.mcp.cloudflare.com/mcp"
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://auditlogs.mcp.cloudflare.com/mcp"
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://dns-analytics.mcp.cloudflare.com/mcp"
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://dex.mcp.cloudflare.com/mcp"
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://casb.mcp.cloudflare.com/mcp"
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://graphql.mcp.cloudflare.com/mcp"
+    }
+  ]
+}

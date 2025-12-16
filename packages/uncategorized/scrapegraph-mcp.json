@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "scrapegraph-mcp",
+  "description": "AI-powered web scraping and data extraction capabilities through ScrapeGraph API",
+  "url": "https://github.com/ScrapeGraphAI/scrapegraph-mcp",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "SGAI_API_KEY": {
+      "description": "Your ScapeGraph API key (optional - can also be set via MCP config)",
+      "required": false
+    }
+  }
+}

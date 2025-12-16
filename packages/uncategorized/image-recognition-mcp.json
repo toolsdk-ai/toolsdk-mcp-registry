@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "image-recognition-mcp",
+  "description": "MCP server for AI-powered image recognition and description using OpenAI vision models.",
+  "url": "https://github.com/mcp-s-ai/image-recognition-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "OPENAI_API_KEY": {
+      "description": "Your OpenAI API key for image recognition and description services",
+      "required": true
+    }
+  }
+}

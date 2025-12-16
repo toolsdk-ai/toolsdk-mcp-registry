@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/com-microsoft-microsoft-learn-mcp",
+  "description": "Official Microsoft Learn MCP Server – real-time, trusted docs & code samples for AI and LLMs.",
+  "url": "https://github.com/MicrosoftDocs/mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://learn.microsoft.com/api/mcp"
+    }
+  ]
+}

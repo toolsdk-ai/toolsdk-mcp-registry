@@ -1,0 +1,26 @@
+{
+  "type": "mcp-server",
+  "packageName": "fast-mcp-telegram",
+  "description": "Telegram MCP server with search and messaging capabilities",
+  "url": "https://github.com/leshchenko1979/fast-mcp-telegram",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "API_ID": {
+      "description": "Telegram API ID (from https://my.telegram.org/apps)",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Telegram API Hash (from https://my.telegram.org/apps)",
+      "required": true
+    },
+    "SERVER_MODE": {
+      "description": "Server mode: stdio (local), http-no-auth (dev), http-auth (prod)",
+      "required": false
+    },
+    "SESSION_DIR": {
+      "description": "Custom session directory (defaults to ~/.config/fast-mcp-telegram/)",
+      "required": false
+    }
+  }
+}

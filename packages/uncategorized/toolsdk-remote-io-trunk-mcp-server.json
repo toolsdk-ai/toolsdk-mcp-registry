@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/io-trunk-mcp-server",
+  "description": "An MCP server that provides tools for Trunk CI Autopilot to apply fixes to failing tests.",
+  "url": "https://github.com/trunk-io/mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.trunk.io/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

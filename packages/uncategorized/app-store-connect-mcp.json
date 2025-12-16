@@ -1,0 +1,38 @@
+{
+  "type": "mcp-server",
+  "packageName": "app-store-connect-mcp",
+  "description": "Interact with Apple's App Store Connect API",
+  "url": "https://github.com/gjeltep/app-store-connect-mcp",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "APP_STORE_KEY_ID": {
+      "description": "App Store Connect API Key ID",
+      "required": true
+    },
+    "APP_STORE_ISSUER_ID": {
+      "description": "App Store Connect Issuer ID",
+      "required": true
+    },
+    "APP_STORE_PRIVATE_KEY_PATH": {
+      "description": "Path to the .p8 private key file for App Store Connect authentication",
+      "required": true
+    },
+    "APP_STORE_APP_ID": {
+      "description": "Default App ID for operations (optional)",
+      "required": false
+    },
+    "APP_STORE_KEY_TYPE": {
+      "description": "Key type: 'team' or 'individual' (defaults to 'team')",
+      "required": false
+    },
+    "APP_STORE_SCOPE": {
+      "description": "Comma-separated list of OAuth scopes (optional)",
+      "required": false
+    },
+    "APP_STORE_SUBJECT": {
+      "description": "Subject for individual keys (optional)",
+      "required": false
+    }
+  }
+}

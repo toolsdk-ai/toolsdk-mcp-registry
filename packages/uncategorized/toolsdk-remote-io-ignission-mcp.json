@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/io-ignission-mcp",
+  "description": "TikTok video data analytics and content strategy tools",
+  "url": "https://github.com/ignission-io/mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.ignission.io/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

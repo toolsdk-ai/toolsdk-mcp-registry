@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/garden-stanislav-svelte-llm-svelte-llm-mcp",
+  "description": "An MCP server that provides access to Svelte 5 and SvelteKit documentation",
+  "url": "https://github.com/khromov/svelte-llm-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://svelte-llm.stanislav.garden/mcp/mcp"
+    }
+  ]
+}

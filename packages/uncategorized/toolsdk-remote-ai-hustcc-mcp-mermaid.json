@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-hustcc-mcp-mermaid",
+  "description": "Generate dynamic Mermaid diagrams and charts with AI assistance. Customize styles and export diagr…",
+  "url": "https://github.com/hustcc/mcp-mermaid",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@hustcc/mcp-mermaid/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

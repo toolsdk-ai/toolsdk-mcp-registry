@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "anilist-mcp",
+  "description": "AniList MCP server for accessing AniList API data",
+  "url": "https://github.com/yuna0x0/anilist-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "ANILIST_TOKEN": {
+      "description": "AniList API token for authenticated requests",
+      "required": false
+    }
+  }
+}

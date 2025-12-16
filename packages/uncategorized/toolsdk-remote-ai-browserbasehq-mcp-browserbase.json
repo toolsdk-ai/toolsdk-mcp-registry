@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-browserbasehq-mcp-browserbase",
+  "description": "Provides cloud browser automation capabilities using Stagehand and Browserbase, enabling LLMs to i…",
+  "url": "https://github.com/browserbase/mcp-server-browserbase",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@browserbasehq/mcp-browserbase/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "type": "mcp-server",
+  "packageName": "mcp-toolz",
+  "description": "Context management, todo persistence, and multi-AI perspectives for Claude Code",
+  "url": "https://github.com/taylorleese/mcp-toolz",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "OPENAI_API_KEY": {
+      "description": "OpenAI API key for ChatGPT second opinions",
+      "required": false
+    },
+    "ANTHROPIC_API_KEY": {
+      "description": "Anthropic API key for Claude second opinions",
+      "required": false
+    },
+    "GOOGLE_API_KEY": {
+      "description": "Google API key for Gemini second opinions",
+      "required": false
+    },
+    "DEEPSEEK_API_KEY": {
+      "description": "DeepSeek API key for DeepSeek second opinions",
+      "required": false
+    }
+  }
+}

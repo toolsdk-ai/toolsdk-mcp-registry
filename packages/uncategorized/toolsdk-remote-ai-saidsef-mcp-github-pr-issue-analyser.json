@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-saidsef-mcp-github-pr-issue-analyser",
+  "description": "A Model Context Protocol (MCP) application for automated GitHub PR analysis and issue management.…",
+  "url": "https://github.com/saidsef/mcp-github-pr-issue-analyser",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@saidsef/mcp-github-pr-issue-analyser/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

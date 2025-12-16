@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/io-github-payram-payram-helper-mcp",
+  "description": "Remote MCP server to integrate and validate self-hosted Payram deployments.",
+  "url": "https://github.com/PayRam/payram-helper-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.payram.com/mcp"
+    }
+  ]
+}

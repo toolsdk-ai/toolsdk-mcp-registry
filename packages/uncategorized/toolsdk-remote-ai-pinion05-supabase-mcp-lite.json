@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-pinion05-supabase-mcp-lite",
+  "description": "Same functionality, consuming only 1/20 of the context window tokens.",
+  "url": "https://github.com/pinion05/supabase-mcp-lite",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@pinion05/supabase-mcp-lite/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-afgong-sqlite-mcp-server",
+  "description": "Explore your Messages SQLite database to browse tables and inspect schemas with ease. Run flexible…",
+  "url": "https://github.com/afgong/sqlite-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@afgong/sqlite-mcp-server/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

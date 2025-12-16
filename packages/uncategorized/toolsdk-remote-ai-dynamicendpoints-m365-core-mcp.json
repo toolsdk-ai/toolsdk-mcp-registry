@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-dynamicendpoints-m365-core-mcp",
+  "description": "*Updated June 17th 2025** Manage your Microsoft 365 services effortlessly. Create and manage distr…",
+  "url": "https://github.com/DynamicEndpoints/m365-core-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@DynamicEndpoints/m365-core-mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

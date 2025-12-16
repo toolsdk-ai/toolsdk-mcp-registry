@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-cc25a-openai-api-agent-project123123123",
+  "description": "Look up the latest stock prices by ticker symbol across global markets. Get current price and esse…",
+  "url": "https://github.com/cc25a/openai-api-agent-project",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@cc25a/openai-api-agent-project123123123/mcp"
+    }
+  ]
+}

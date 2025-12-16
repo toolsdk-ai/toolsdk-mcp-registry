@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-motorboy1-my-mcp-server",
+  "description": "Send friendly greetings by name. Discover the origin story of 'Hello, World' for quick context.",
+  "url": "https://github.com/motorboy1/my-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@motorboy1/my-mcp-server/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

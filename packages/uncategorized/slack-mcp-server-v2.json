@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "packageName": "slack-mcp-server-v2",
+  "description": "Read Slack conversations, threads, user info, and search messages from your MCP client.",
+  "url": "https://github.com/stevenvo/slack-mcp-server",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "SLACK_USER_TOKEN": {
+      "description": "Slack User OAuth Token (starts with xoxp-). Get from https://api.slack.com/apps",
+      "required": false
+    },
+    "SLACK_BOT_TOKEN": {
+      "description": "Slack Bot User OAuth Token (starts with xoxb-). Alternative to user token.",
+      "required": false
+    },
+    "SLACK_WORKSPACE_URL": {
+      "description": "Your Slack workspace URL (e.g., https://your-company.slack.com). Required for generating message links.",
+      "required": true
+    }
+  }
+}

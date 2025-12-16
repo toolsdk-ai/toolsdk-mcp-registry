@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "context-foundry",
+  "description": "Recursive Claude spawning for autonomous project builds with self-healing test loops",
+  "url": "https://github.com/context-foundry/context-foundry",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "ANTHROPIC_API_KEY": {
+      "description": "Your Anthropic API key for Claude API access (required for delegation features)",
+      "required": true
+    }
+  }
+}

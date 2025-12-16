@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/co-axiom-mcp",
+  "description": "List datasets, schemas, run APL queries, and use prompts for exploration, anomalies, and monitoring.",
+  "url": "https://github.com/axiomhq/mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.axiom.co/mcp"
+    }
+  ]
+}

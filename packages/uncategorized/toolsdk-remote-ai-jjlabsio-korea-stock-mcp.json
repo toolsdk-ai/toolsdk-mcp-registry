@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-jjlabsio-korea-stock-mcp",
+  "description": "Search company disclosures and financial statements from the Korean market. Retrieve stock profile…",
+  "url": "https://github.com/jjlabsio/korea-stock-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@jjlabsio/korea-stock-mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

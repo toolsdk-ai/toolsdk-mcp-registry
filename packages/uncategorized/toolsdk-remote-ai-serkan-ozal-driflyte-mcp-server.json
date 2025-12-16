@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-serkan-ozal-driflyte-mcp-server",
+  "description": "Discover available topics and explore up-to-date, topic-tagged web content. Search to surface the…",
+  "url": "https://github.com/serkan-ozal/driflyte-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@serkan-ozal/driflyte-mcp-server/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

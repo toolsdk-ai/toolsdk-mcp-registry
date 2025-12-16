@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-mayla-debug-mcp-google-calendar2",
+  "description": "Schedule and manage Google Calendar events directly from your workspace. Check availability, view…",
+  "url": "https://github.com/mayla-debug/mcp-google-calendar2",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@mayla-debug/mcp-google-calendar2/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

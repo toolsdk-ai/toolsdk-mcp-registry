@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/dev-ohmyposh-validator",
+  "description": "Validate oh-my-posh configurations and segment snippets against the official schema.",
+  "url": "https://github.com/JanDeDobbeleer/oh-my-posh",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://ohmyposh.dev/api/mcp"
+    }
+  ]
+}

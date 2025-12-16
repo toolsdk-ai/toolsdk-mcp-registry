@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/dev-rostro-rostro",
+  "description": "Turn any LLM multimodal; generate images, voices, videos, 3D models, music, and more.",
+  "url": "https://github.com/francis-ros/rostro-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://proto.rostro.dev/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

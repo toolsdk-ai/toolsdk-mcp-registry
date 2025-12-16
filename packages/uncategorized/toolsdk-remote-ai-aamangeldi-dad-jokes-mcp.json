@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-aamangeldi-dad-jokes-mcp",
+  "description": "Get a random dad joke or search by keyword to fit any moment. Retrieve specific jokes by ID for re…",
+  "url": "https://github.com/aamangeldi/dad-jokes-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@aamangeldi/dad-jokes-mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

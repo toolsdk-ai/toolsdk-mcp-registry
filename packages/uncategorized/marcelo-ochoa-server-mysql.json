@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "packageName": "@marcelo-ochoa/server-mysql",
+  "description": "MCP server for interacting with MySQL databases",
+  "url": "https://github.com/marcelo-ochoa/servers",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "MYSQL_USER": {
+      "description": "MySQL user",
+      "required": true
+    },
+    "MYSQL_PASSWORD": {
+      "description": "MySQL password",
+      "required": true
+    }
+  }
+}

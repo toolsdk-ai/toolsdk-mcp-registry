@@ -1,0 +1,227 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/io-github-onlyoffice-docspace",
+  "description": "A room-based collaborative platform",
+  "url": "https://github.com/ONLYOFFICE/docspace-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "DOCSPACE_BASE_URL": {
+      "description": "The base URL of the DocSpace instance for API requests.",
+      "required": false
+    },
+    "DOCSPACE_API_KEY": {
+      "description": "The API key for accessing the API.",
+      "required": false
+    },
+    "DOCSPACE_TRANSPORT": {
+      "description": "The transport protocol to use for communication with the MCP server.",
+      "required": false
+    },
+    "DOCSPACE_DYNAMIC": {
+      "description": "The flag that indicates whether the MCP server should use meta tools.",
+      "required": false
+    },
+    "DOCSPACE_TOOLSETS": {
+      "description": "The list of toolsets to enable for the MCP server.",
+      "required": false
+    },
+    "DOCSPACE_ENABLED_TOOLS": {
+      "description": "The list of tools to enable for the MCP server.",
+      "required": false
+    },
+    "DOCSPACE_DISABLED_TOOLS": {
+      "description": "The list of tools to disable for the MCP server.",
+      "required": false
+    },
+    "DOCSPACE_USER_AGENT": {
+      "description": "The user agent to include in the User-Agent header for API requests.",
+      "required": false
+    },
+    "DOCSPACE_AUTHORIZATION": {
+      "description": "The raw value to include in the Authorization header for API requests.",
+      "required": false
+    },
+    "DOCSPACE_AUTH_TOKEN": {
+      "description": "The Personal Access Token (PAT) for accessing the API.",
+      "required": false
+    },
+    "DOCSPACE_USERNAME": {
+      "description": "The username for accessing the API using basic authentication.",
+      "required": false
+    },
+    "DOCSPACE_PASSWORD": {
+      "description": "The password for accessing the API using basic authentication.",
+      "required": false
+    },
+    "DOCSPACE_SESSION_TTL": {
+      "description": "The time-to-live (TTL) for HTTP sessions in milliseconds.",
+      "required": false
+    },
+    "DOCSPACE_SESSION_INTERVAL": {
+      "description": "The interval for checking HTTP sessions for expiration in milliseconds.",
+      "required": false
+    },
+    "DOCSPACE_OAUTH_BASE_URL": {
+      "description": "The base URL of the DocSpace OAuth service for OAuth requests.",
+      "required": false
+    },
+    "DOCSPACE_OAUTH_CLIENT_ID": {
+      "description": "The client ID of the OAuth application.",
+      "required": false
+    },
+    "DOCSPACE_OAUTH_CLIENT_SECRET": {
+      "description": "The client secret of the OAuth application.",
+      "required": false
+    },
+    "DOCSPACE_OAUTH_AUTH_TOKEN_ALGORITHM": {
+      "description": "The algorithm to use for signing OAuth access tokens.",
+      "required": false
+    },
+    "DOCSPACE_OAUTH_AUTH_TOKEN_TTL": {
+      "description": "The time-to-live (TTL) for OAuth access tokens in milliseconds.",
+      "required": false
+    },
+    "DOCSPACE_OAUTH_AUTH_TOKEN_SECRET_KEY": {
+      "description": "The secret key to use for signing OAuth access tokens.",
+      "required": false
+    },
+    "DOCSPACE_OAUTH_STATE_TOKEN_ALGORITHM": {
+      "description": "The algorithm to use for signing OAuth state tokens.",
+      "required": false
+    },
+    "DOCSPACE_OAUTH_STATE_TOKEN_TTL": {
+      "description": "The time-to-live (TTL) for OAuth state tokens in milliseconds.",
+      "required": false
+    },
+    "DOCSPACE_OAUTH_STATE_TOKEN_SECRET_KEY": {
+      "description": "The secret key to use for signing OAuth state tokens.",
+      "required": false
+    },
+    "DOCSPACE_SERVER_BASE_URL": {
+      "description": "The base URL of the server.",
+      "required": false
+    },
+    "DOCSPACE_HOST": {
+      "description": "The host to bind the server to.",
+      "required": false
+    },
+    "DOCSPACE_PORT": {
+      "description": "The port to bind the server to.",
+      "required": false
+    },
+    "DOCSPACE_SERVER_PROXY_HOPS": {
+      "description": "The number of proxy servers between the server and the client.",
+      "required": false
+    },
+    "DOCSPACE_SERVER_CORS_MCP_ORIGIN": {
+      "description": "The list of allowed origins to include in the Access-Control-Allow-Origin header for CORS requests to MCP endpoints.",
+      "required": false
+    },
+    "DOCSPACE_SERVER_CORS_MCP_MAX_AGE": {
+      "description": "The maximum age in milliseconds to include in the Access-Control-Max-Age header for CORS requests to MCP endpoints.",
+      "required": false
+    },
+    "DOCSPACE_SERVER_CORS_OAUTH_ORIGIN": {
+      "description": "The list of allowed origins to include in the Access-Control-Allow-Origin header for CORS requests to OAuth endpoints.",
+      "required": false
+    },
+    "DOCSPACE_SERVER_CORS_OAUTH_MAX_AGE": {
+      "description": "The maximum age in milliseconds to include in the Access-Control-Max-Age header for CORS requests to OAuth endpoints.",
+      "required": false
+    },
+    "DOCSPACE_SERVER_RATE_LIMITS_MCP_CAPACITY": {
+      "description": "The maximum number of requests allowed per window for the MCP endpoints.",
+      "required": false
+    },
+    "DOCSPACE_SERVER_RATE_LIMITS_MCP_WINDOW": {
+      "description": "The time window in milliseconds for the rate limit for the MCP endpoints.",
+      "required": false
+    },
+    "DOCSPACE_SERVER_RATE_LIMITS_OAUTH_SERVER_METADATA_CAPACITY": {
+      "description": "The maximum number of requests allowed per window for the OAuth server metadata endpoint.",
+      "required": false
+    },
+    "DOCSPACE_SERVER_RATE_LIMITS_OAUTH_SERVER_METADATA_WINDOW": {
+      "description": "The time window in milliseconds for the rate limit for the OAuth server metadata endpoint.",
+      "required": false
+    },
+    "DOCSPACE_SERVER_RATE_LIMITS_OAUTH_RESOURCE_METADATA_CAPACITY": {
+      "description": "The maximum number of requests allowed per window for the OAuth resource metadata endpoint.",
+      "required": false
+    },
+    "DOCSPACE_SERVER_RATE_LIMITS_OAUTH_RESOURCE_METADATA_WINDOW": {
+      "description": "The time window in milliseconds for the rate limit for the OAuth resource metadata endpoint.",
+      "required": false
+    },
+    "DOCSPACE_SERVER_RATE_LIMITS_OAUTH_AUTHORIZE_CAPACITY": {
+      "description": "The maximum number of requests allowed per window for the OAuth authorization endpoint.",
+      "required": false
+    },
+    "DOCSPACE_SERVER_RATE_LIMITS_OAUTH_AUTHORIZE_WINDOW": {
+      "description": "The time window in milliseconds for the rate limit for the OAuth authorization endpoint.",
+      "required": false
+    },
+    "DOCSPACE_SERVER_RATE_LIMITS_OAUTH_CALLBACK_CAPACITY": {
+      "description": "The maximum number of requests allowed per window for the OAuth callback endpoint.",
+      "required": false
+    },
+    "DOCSPACE_SERVER_RATE_LIMITS_OAUTH_CALLBACK_WINDOW": {
+      "description": "The time window in milliseconds for the rate limit for the OAuth callback endpoint.",
+      "required": false
+    },
+    "DOCSPACE_SERVER_RATE_LIMITS_OAUTH_INTROSPECT_CAPACITY": {
+      "description": "The maximum number of requests allowed per window for the OAuth introspection endpoint.",
+      "required": false
+    },
+    "DOCSPACE_SERVER_RATE_LIMITS_OAUTH_INTROSPECT_WINDOW": {
+      "description": "The time window in milliseconds for the rate limit for the OAuth introspection endpoint.",
+      "required": false
+    },
+    "DOCSPACE_SERVER_RATE_LIMITS_OAUTH_REGISTER_CAPACITY": {
+      "description": "The maximum number of requests allowed per window for the OAuth client registration endpoint.",
+      "required": false
+    },
+    "DOCSPACE_SERVER_RATE_LIMITS_OAUTH_REGISTER_WINDOW": {
+      "description": "The time window in milliseconds for the rate limit for the OAuth client registration endpoint.",
+      "required": false
+    },
+    "DOCSPACE_SERVER_RATE_LIMITS_OAUTH_REVOKE_CAPACITY": {
+      "description": "The maximum number of requests allowed per window for the OAuth token revocation endpoint.",
+      "required": false
+    },
+    "DOCSPACE_SERVER_RATE_LIMITS_OAUTH_REVOKE_WINDOW": {
+      "description": "The time window in milliseconds for the rate limit for the OAuth token revocation endpoint.",
+      "required": false
+    },
+    "DOCSPACE_SERVER_RATE_LIMITS_OAUTH_TOKEN_CAPACITY": {
+      "description": "The maximum number of requests allowed per window for the OAuth token endpoint.",
+      "required": false
+    },
+    "DOCSPACE_SERVER_RATE_LIMITS_OAUTH_TOKEN_WINDOW": {
+      "description": "The time window in milliseconds for the rate limit for the OAuth token endpoint.",
+      "required": false
+    },
+    "DOCSPACE_REQUEST_QUERY": {
+      "description": "The flag that indicates whether the server should accept configuration via query parameters in incoming requests.",
+      "required": false
+    },
+    "DOCSPACE_REQUEST_AUTHORIZATION_HEADER": {
+      "description": "The flag that indicates whether the server should check for the Authorization header in incoming requests.",
+      "required": false
+    },
+    "DOCSPACE_REQUEST_HEADER_PREFIX": {
+      "description": "The prefix to use with custom configuration headers.",
+      "required": false
+    }
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.onlyoffice.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

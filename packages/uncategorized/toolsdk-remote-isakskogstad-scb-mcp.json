@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/io-github-isakskogstad-scb-mcp",
+  "description": "MCP server for Statistics Sweden (SCB) - 1200+ tables with population, economy, environment data",
+  "url": "https://github.com/isakskogstad/SCB-MCP",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://scb-mcp.onrender.com/mcp"
+    }
+  ]
+}

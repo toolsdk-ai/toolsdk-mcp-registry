@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "coinrailz-mcp",
+  "description": "37+ crypto micropayment services: trading, DEX analytics, prediction markets via x402",
+  "url": "https://github.com/tdnupe3/mcp-server-coinrailz",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "COINRAILZ_API_KEY": {
+      "description": "Your Coin Railz API key for authenticated access to paid services",
+      "required": false
+    }
+  }
+}

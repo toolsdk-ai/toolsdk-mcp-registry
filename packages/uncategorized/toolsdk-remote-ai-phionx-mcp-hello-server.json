@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-phionx-mcp-hello-server",
+  "description": "Send personalized greetings to anyone. Enable Pirate Mode for swashbuckling salutations. Explore t…",
+  "url": "https://github.com/Phionx/mcp-hello-server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@Phionx/mcp-hello-server/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

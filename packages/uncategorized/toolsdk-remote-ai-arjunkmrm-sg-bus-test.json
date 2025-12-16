@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-arjunkmrm-sg-bus-test",
+  "description": "Get real-time bus arrival times for any Singapore bus stop by code, with optional service filterin…",
+  "url": "https://github.com/arjunkmrm/sg-bus-test",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@arjunkmrm/sg-bus-test/mcp"
+    }
+  ]
+}

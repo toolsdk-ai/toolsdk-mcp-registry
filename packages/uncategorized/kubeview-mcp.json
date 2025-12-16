@@ -1,0 +1,54 @@
+{
+  "type": "mcp-server",
+  "packageName": "kubeview-mcp",
+  "description": "Read-only Model Context Protocol MCP server enabling code-driven AI analysis of Kubernetes clusters.",
+  "url": "https://github.com/mikhae1/kubeview-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "KUBECONFIG": {
+      "description": "Path to kubeconfig file; defaults to ~/.kube/config if unset.",
+      "required": false
+    },
+    "MCP_MODE": {
+      "description": "Server mode: 'all' (default), 'code', or 'tools'. Controls which features are enabled.",
+      "required": false
+    },
+    "MCP_LOG_LEVEL": {
+      "description": "Logging level: 'error', 'warn', 'info' (default), or 'debug'.",
+      "required": false
+    },
+    "MCP_KUBE_CONTEXT": {
+      "description": "Kubernetes context name to use. If unset, uses the current context from kubeconfig.",
+      "required": false
+    },
+    "MCP_K8S_SKIP_TLS_VERIFY": {
+      "description": "Skip TLS certificate verification for Kubernetes API (use 'true' or '1'). Not recommended for production.",
+      "required": false
+    },
+    "MCP_HIDE_SENSITIVE": {
+      "description": "Enable global sensitive data masking. Set to 'true' or '1' to mask sensitive values in responses.",
+      "required": false
+    },
+    "MCP_TIMEOUT": {
+      "description": "Default timeout in milliseconds for operations. If unset, uses plugin-specific defaults.",
+      "required": false
+    },
+    "MCP_DISABLE_KUBERNETES_PLUGIN": {
+      "description": "Disable Kubernetes plugin. Set to 'true' or '1' to disable.",
+      "required": false
+    },
+    "MCP_DISABLE_HELM_PLUGIN": {
+      "description": "Disable Helm plugin. Set to 'true' or '1' to disable.",
+      "required": false
+    },
+    "MCP_DISABLE_ARGO_PLUGIN": {
+      "description": "Disable Argo Workflows plugin. Set to 'true' or '1' to disable.",
+      "required": false
+    },
+    "MCP_DISABLE_ARGOCD_PLUGIN": {
+      "description": "Disable Argo CD plugin. Set to 'true' or '1' to disable.",
+      "required": false
+    }
+  }
+}

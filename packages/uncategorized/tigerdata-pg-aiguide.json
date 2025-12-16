@@ -1,0 +1,38 @@
+{
+  "type": "mcp-server",
+  "packageName": "@tigerdata/pg-aiguide",
+  "description": "Comprehensive PostgreSQL documentation and best practices, including ecosystem tools",
+  "url": "https://github.com/timescale/pg-aiguide",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "OPENAI_API_KEY": {
+      "description": "Your API key for text embeddings via OpenAI",
+      "required": true
+    },
+    "PGHOST": {
+      "description": "PostgreSQL host to connect to",
+      "required": true
+    },
+    "PGPORT": {
+      "description": "PostgreSQL port to connect to",
+      "required": true
+    },
+    "PGUSER": {
+      "description": "PostgreSQL user to connect as",
+      "required": true
+    },
+    "PGPASSWORD": {
+      "description": "PostgreSQL password to connect with",
+      "required": true
+    },
+    "PGDATABASE": {
+      "description": "PostgreSQL database to connect to",
+      "required": true
+    },
+    "DB_SCHEMA": {
+      "description": "PostgreSQL database schema to use",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "type": "mcp-server",
+  "packageName": "protein-mcp-server",
+  "description": "MCP Server for 3D protein structural data retrieval & analysis from RCSB PDB, PDBe, and UniProt.",
+  "url": "https://github.com/cyanheads/protein-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "MCP_LOG_LEVEL": {
+      "description": "Sets the minimum log level for output (e.g., 'debug', 'info', 'warn').",
+      "required": false
+    },
+    "MCP_HTTP_HOST": {
+      "description": "The hostname for the HTTP server.",
+      "required": false
+    },
+    "MCP_HTTP_PORT": {
+      "description": "The port to run the HTTP server on.",
+      "required": false
+    },
+    "MCP_HTTP_ENDPOINT_PATH": {
+      "description": "The endpoint path for the MCP server.",
+      "required": false
+    },
+    "MCP_AUTH_MODE": {
+      "description": "Authentication mode to use: 'none', 'jwt', or 'oauth'.",
+      "required": false
+    }
+  },
+  "binArgs": ["run", "start:stdio"]
+}

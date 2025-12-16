@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-cindyloo-dropbox-mcp-server",
+  "description": "Search, browse, and read your Dropbox files. Find documents by name or content, list folders, and…",
+  "url": "https://github.com/cindyloo/dropbox-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@cindyloo/dropbox-mcp-server/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

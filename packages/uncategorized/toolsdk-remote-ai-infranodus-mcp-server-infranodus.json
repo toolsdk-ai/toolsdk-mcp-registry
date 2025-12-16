@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-infranodus-mcp-server-infranodus",
+  "description": "Map text into knowledge graphs to create a structured representation of conceptual relations and t…",
+  "url": "https://github.com/infranodus/mcp-server-infranodus",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@infranodus/mcp-server-infranodus/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

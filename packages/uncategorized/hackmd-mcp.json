@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "packageName": "hackmd-mcp",
+  "description": "A Model Context Protocol server for integrating HackMD's note-taking platform with AI assistants.",
+  "url": "https://github.com/yuna0x0/hackmd-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "HACKMD_API_TOKEN": {
+      "description": "Your HackMD API token for API authentication",
+      "required": true
+    },
+    "HACKMD_API_URL": {
+      "description": "Optional HackMD API URL, defaults to https://api.hackmd.io/v1",
+      "required": false
+    }
+  }
+}

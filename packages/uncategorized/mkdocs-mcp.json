@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "mkdocs-mcp",
+  "description": "An MCP server that provides serves MkDocs as resources.",
+  "url": "https://github.com/ubaumann/mkdocs-mcp",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "MKDOCS_PROJECT_PATH": {
+      "description": "Path to the MkDocs project",
+      "required": true
+    }
+  }
+}

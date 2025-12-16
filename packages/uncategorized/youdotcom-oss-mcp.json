@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "packageName": "@youdotcom-oss/mcp",
+  "description": "Web search, AI agent, and content extraction via You.com APIs",
+  "url": "https://github.com/youdotcom-oss/dx-toolkit",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "YDC_API_KEY": {
+      "description": "You.com API key",
+      "required": true
+    }
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.you.com/mcp"
+    }
+  ]
+}

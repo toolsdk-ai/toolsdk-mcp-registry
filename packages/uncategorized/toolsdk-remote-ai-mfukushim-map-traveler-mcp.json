@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-mfukushim-map-traveler-mcp",
+  "description": "Create immersive travel experiences by instructing an avatar to navigate Google Maps. Report on th…",
+  "url": "https://github.com/mfukushim/map-traveler-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@mfukushim/map-traveler-mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

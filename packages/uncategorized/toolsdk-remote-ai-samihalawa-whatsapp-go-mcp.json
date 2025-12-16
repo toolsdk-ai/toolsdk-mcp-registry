@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-samihalawa-whatsapp-go-mcp",
+  "description": "Scan QR codes and go! No more troublesome autos or APIs! Send text messages, images, links, locati…",
+  "url": "https://github.com/samihalawa/whatsapp-go-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@samihalawa/whatsapp-go-mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

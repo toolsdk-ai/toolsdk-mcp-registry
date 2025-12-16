@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "packageName": "visual-memory-context-server",
+  "description": "An MCP server that provides visual memory and context storage with knowledge graph capabilities",
+  "url": "https://github.com/testing9384/mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "MEMORY_FILE_PATH": {
+      "description": "Path to the memory.json file for knowledge graph storage",
+      "required": false
+    },
+    "ALLOWED_DIRECTORIES": {
+      "description": "Comma-separated list of directories the server can access, or JSON array format",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "mcp-server",
+  "packageName": "@mux/mcp",
+  "description": "The official MCP Server for the Mux API",
+  "url": "https://github.com/muxinc/mux-node-sdk",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "MUX_TOKEN_ID": {
+      "description": "Your Mux access token ID",
+      "required": true
+    },
+    "MUX_TOKEN_SECRET": {
+      "description": "Your Mux access token secret",
+      "required": true
+    },
+    "MUX_SIGNING_KEY": {
+      "description": "Your JWT signing key ID, for use with signed playback IDs",
+      "required": false
+    },
+    "MUX_PRIVATE_KEY": {
+      "description": "Your JWT private key, for use with signed playback IDs",
+      "required": false
+    }
+  }
+}

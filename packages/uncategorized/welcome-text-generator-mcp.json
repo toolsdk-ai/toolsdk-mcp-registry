@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "welcome-text-generator-mcp",
+  "description": "MCP Server für automatische Generierung professioneller Willkommenstexte für neue Mitarbeiter",
+  "url": "https://github.com/goodfel10w/WelcomeTextGenerator",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "YOUR_API_KEY": {
+      "description": "Your API key for the service",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "mcp-server",
+  "packageName": "d365fo-client",
+  "description": "A community-driven Microsoft Dynamics 365 Finance & Operations MCP server",
+  "url": "https://github.com/mafzaal/d365fo-client",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "D365FO_CLIENT_ID": {
+      "description": "Your D365FO Client ID",
+      "required": true
+    },
+    "D365FO_CLIENT_SECRET": {
+      "description": "Your D365FO Client Secret",
+      "required": true
+    },
+    "D365FO_TENANT_ID": {
+      "description": "Your D365FO Tenant ID",
+      "required": true
+    },
+    "D365FO_BASE_URL": {
+      "description": "Your D365FO Base URL",
+      "required": false
+    }
+  }
+}

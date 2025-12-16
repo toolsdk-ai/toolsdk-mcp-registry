@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-blacklotusdev8-testm",
+  "description": "Greet anyone by name with a friendly hello. Scrape webpages to extract content for quick reference…",
+  "url": "https://github.com/blacklotusdev8/test_m",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@blacklotusdev8/test_m/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

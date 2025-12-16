@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "packageName": "contextual-mcp-server",
+  "description": "RAG-enabled MCP server using Contextual AI. Supports single-agent and multi-agent modes.",
+  "url": "https://github.com/NitishGourishetty/contextual-mcp-server",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "API_KEY": {
+      "description": "Your Contextual AI API key",
+      "required": true
+    },
+    "AGENT_ID": {
+      "description": "Your Contextual AI agent ID (required only for single-agent mode; omit for multi-agent mode)",
+      "required": false
+    }
+  }
+}

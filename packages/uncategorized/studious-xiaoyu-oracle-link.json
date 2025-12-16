@@ -1,0 +1,30 @@
+{
+  "type": "mcp-server",
+  "packageName": "@studious-xiaoyu/oracle-link",
+  "description": "Oracle MCP Query Server (Node.js) - Read-only SELECT via MCP",
+  "url": "https://github.com/StudiousXiaoYu/oracle-link",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "ORACLE_USERNAME": {
+      "description": "Oracle DB username (optional when using tool url)",
+      "required": false
+    },
+    "ORACLE_PASSWORD": {
+      "description": "Oracle DB password (optional when using tool url)",
+      "required": false
+    },
+    "ORACLE_CONNECT_STRING": {
+      "description": "Oracle connect string host:port/service (optional when using tool url)",
+      "required": false
+    },
+    "ORACLE_PRIVILEGE": {
+      "description": "Admin privilege (SYSDBA or SYSOPER), optional",
+      "required": false
+    },
+    "DEFAULT_MAX_ROWS": {
+      "description": "Default max rows for queries",
+      "required": false
+    }
+  }
+}

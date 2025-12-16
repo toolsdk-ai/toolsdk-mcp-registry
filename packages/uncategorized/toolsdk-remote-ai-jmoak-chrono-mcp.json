@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-jmoak-chrono-mcp",
+  "description": "Convert and compare dates and times across any timezone with flexible, locale-aware formatting. Ad…",
+  "url": "https://github.com/JMoak/chrono-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@JMoak/chrono-mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

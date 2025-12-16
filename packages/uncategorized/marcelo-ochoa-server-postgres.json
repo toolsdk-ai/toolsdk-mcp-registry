@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "packageName": "@marcelo-ochoa/server-postgres",
+  "description": "MCP server for interacting with PostgreSQL databases",
+  "url": "https://github.com/marcelo-ochoa/servers",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "POSTGRES_USER": {
+      "description": "PostgreSQL user",
+      "required": true
+    },
+    "POSTGRES_PASSWORD": {
+      "description": "PostgreSQL password",
+      "required": true
+    }
+  }
+}

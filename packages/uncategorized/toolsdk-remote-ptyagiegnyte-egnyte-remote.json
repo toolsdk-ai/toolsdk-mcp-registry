@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/io-github-ptyagiegnyte-egnyte-remote",
+  "description": "Secure integration between AI tools and Egnyte content with search, analysis, and workflow tools.",
+  "url": "https://github.com/sachin-shetty/egnyte-ai-samples",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://ptyagiegnyte.github.io/egnyte-remote/mcp"
+    }
+  ]
+}

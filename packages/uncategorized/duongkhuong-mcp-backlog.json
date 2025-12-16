@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "packageName": "@duongkhuong/mcp-backlog",
+  "description": "MCP server for Backlog API integration with AI agents.",
+  "url": "https://github.com/vfa-khuongdv/mcp-backlog",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "BACKLOG_HOST": {
+      "description": "Your Backlog instance URL (e.g., your-space-id.backlog.com)",
+      "required": true
+    },
+    "BACKLOG_API_KEY": {
+      "description": "Your Backlog API key from account settings",
+      "required": true
+    }
+  }
+}

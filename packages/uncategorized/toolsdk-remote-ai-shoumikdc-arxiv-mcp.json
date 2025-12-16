@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-shoumikdc-arxiv-mcp",
+  "description": "Discover the latest arXiv papers by category and keyword. Control how many results you get to spee…",
+  "url": "https://github.com/shoumikdc/arXiv-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@shoumikdc/arxiv-mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "packageName": "@tigerdata/tiger-skills-mcp-server",
+  "description": "Provider agnostic skills implementation, with skills sourced from local paths or GitHub repositories",
+  "url": "https://github.com/timescale/tiger-skills-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "GITHUB_TOKEN": {
+      "description": "Token to access (private) GitHub repos",
+      "required": false
+    },
+    "SKILLS_FILE": {
+      "description": "Location of configuration file for skills",
+      "required": false
+    }
+  }
+}

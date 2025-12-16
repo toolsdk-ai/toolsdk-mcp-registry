@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "packageName": "@professional-wiki/mediawiki-mcp-server",
+  "description": "MCP server enabling AI clients to interact with any MediaWiki wiki through standard tools",
+  "url": "https://github.com/ProfessionalWiki/MediaWiki-MCP-Server",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "CONFIG": {
+      "description": "Path to your configuration file",
+      "required": false
+    },
+    "MCP_TRANSPORT": {
+      "description": "Type of MCP server transport",
+      "required": false
+    },
+    "PORT": {
+      "description": "Port used for StreamableHTTP transport",
+      "required": false
+    }
+  }
+}

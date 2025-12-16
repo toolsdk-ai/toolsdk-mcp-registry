@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-devbrother2024-typescript-mcp-server-boilerplate",
+  "description": "Kickstart development with a customizable TypeScript template featuring sample tools for greeting,…",
+  "url": "https://github.com/devbrother2024/typescript-mcp-server-boilerplate",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@devbrother2024/typescript-mcp-server-boilerplate/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

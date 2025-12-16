@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-anirbanbasu-frankfurtermcp",
+  "description": "A MCP server for the Frankfurter API for currency exchange rates.",
+  "url": "https://github.com/anirbanbasu/frankfurtermcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@anirbanbasu/frankfurtermcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

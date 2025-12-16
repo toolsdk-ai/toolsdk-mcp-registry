@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "packageName": "@atlassian-dc-mcp/confluence",
+  "description": "MCP server for Atlassian Confluence Data Center - access and manage content",
+  "url": "https://github.com/b1ff/atlassian-dc-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "CONFLUENCE_HOST": {
+      "description": "Confluence host domain (e.g. your-instance.atlassian.net)",
+      "required": false
+    },
+    "CONFLUENCE_API_BASE_PATH": {
+      "description": "Confluence API base path (alternative to CONFLUENCE_HOST)",
+      "required": false
+    },
+    "CONFLUENCE_API_TOKEN": {
+      "description": "Confluence Personal Access Token or API token",
+      "required": true
+    }
+  }
+}

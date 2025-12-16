@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/com-mintmcp-gcal",
+  "description": "A MCP server that works with Google Calendar to manage event listing, reading, and updates.",
+  "url": "https://github.com/mintmcp/servers",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gcal.mintmcp.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

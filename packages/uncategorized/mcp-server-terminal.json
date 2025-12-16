@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "packageName": "mcp-server-terminal",
+  "description": "MCP server for AI agents to interact with terminal applications. Think Playwright for terminals.",
+  "url": "https://github.com/aybelatchane/mcp-server-terminal",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "DISPLAY": {
+      "description": "X11 display for visual mode (Linux/WSL). Example: :0",
+      "required": false
+    },
+    "RUST_LOG": {
+      "description": "Logging level: error, warn, info, debug, trace",
+      "required": false
+    }
+  },
+  "binArgs": ["--headless"]
+}

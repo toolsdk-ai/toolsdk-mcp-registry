@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "packageName": "@marcelo-ochoa/server-oracle",
+  "description": "MCP server for interacting with Oracle databases",
+  "url": "https://github.com/marcelo-ochoa/servers",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "ORACLE_USER": {
+      "description": "Oracle user name",
+      "required": true
+    },
+    "ORACLE_PASSWORD": {
+      "description": "Oracle password",
+      "required": true
+    }
+  }
+}

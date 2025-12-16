@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-sebastianall1977-gmail-mcp",
+  "description": "Manage Gmail end-to-end: search, read, send, draft, label, and organize threads. Automate workflow…",
+  "url": "https://github.com/sebastianall1977/gmail-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@sebastianall1977/gmail-mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

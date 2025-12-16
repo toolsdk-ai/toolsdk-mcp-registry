@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "packageName": "@configcat/mcp-server",
+  "description": "Enables AI agents to interact with ConfigCat, a feature flag service for teams.",
+  "url": "https://github.com/configcat/mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "CONFIGCAT_API_USER": {
+      "description": "ConfigCat Management API basic authentication username.",
+      "required": true
+    },
+    "CONFIGCAT_API_PASS": {
+      "description": "ConfigCat Management API basic authentication password.",
+      "required": true
+    },
+    "CONFIGCAT_BASE_URL": {
+      "description": "Base URL for the ConfigCat API. Defaults to `https://api.configcat.com`.",
+      "required": false
+    }
+  }
+}

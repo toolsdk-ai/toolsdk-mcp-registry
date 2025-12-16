@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-explorium-mcp-explorium",
+  "description": "Access live company and contact data from Explorium's AgentSource B2B platform.",
+  "url": "https://github.com/explorium-ai/mcp-explorium",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp-github-registry.explorium.ai/mcp"
+    }
+  ]
+}

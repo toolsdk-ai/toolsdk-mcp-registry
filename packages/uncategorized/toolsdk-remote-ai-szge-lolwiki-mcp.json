@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-szge-lolwiki-mcp",
+  "description": "Generate friendly greetings for any audience. Toggle Pirate Mode for a playful, swashbuckling styl…",
+  "url": "https://github.com/szge/lolwiki-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@szge/lolwiki-mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

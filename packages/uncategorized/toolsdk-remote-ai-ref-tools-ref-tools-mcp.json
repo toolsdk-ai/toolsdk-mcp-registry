@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-ref-tools-ref-tools-mcp",
+  "description": "Provide your AI coding tools with token-efficient access to up-to-date technical documentation for…",
+  "url": "https://github.com/ref-tools/ref-tools-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@ref-tools/ref-tools-mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

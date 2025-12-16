@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/com-zomato-mcp",
+  "description": "An MCP server that exposes functionalities to use Zomato's services.",
+  "url": "https://github.com/Zomato/mcp-server-manifest",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp-server.zomato.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

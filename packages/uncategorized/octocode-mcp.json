@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "packageName": "octocode-mcp",
+  "description": "AI code research platform. Search, analyze, and extract insights from any GitHub repository.",
+  "url": "https://github.com/bgauryy/octocode-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "GITHUB_TOKEN": {
+      "description": "GitHub Personal Access Token. Optional - authenticate via GitHub CLI (gh auth login) for automatic token management, or set this token manually for CI/CD environments.",
+      "required": false
+    }
+  }
+}

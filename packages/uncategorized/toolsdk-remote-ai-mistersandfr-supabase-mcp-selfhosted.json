@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-mistersandfr-supabase-mcp-selfhosted",
+  "description": "Manage Supabase projects end to end across database, auth, storage, realtime, and migrations. Moni…",
+  "url": "https://github.com/MisterSandFR/Supabase-MCP-SelfHosted",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/@MisterSandFR/supabase-mcp-selfhosted/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

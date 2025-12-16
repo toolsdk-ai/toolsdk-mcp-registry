@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/ai-smithery-brave",
+  "description": "Visit https://brave.com/search/api/ for a free API key. Search the web, local businesses, images,…",
+  "url": "https://github.com/brave/brave-search-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.smithery.ai/brave/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

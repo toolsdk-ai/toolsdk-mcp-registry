@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "packageName": "airflow-mcp-server",
+  "description": "An MCP server for Apache Airflow ",
+  "url": "https://github.com/abhishekbhakat/airflow-mcp-server",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "AIRFLOW_BASE_URL": {
+      "description": "The base URL for the Airflow API (e.g., http://localhost:8080)",
+      "required": true
+    },
+    "AUTH_TOKEN": {
+      "description": "The JWT authentication token for Airflow API access",
+      "required": true
+    }
+  },
+  "binArgs": ["--safe", "--static-tools"]
+}
