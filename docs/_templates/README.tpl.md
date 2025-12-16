@@ -50,7 +50,7 @@
 > ```ts
 > const tool = await toolSDK.package('<packageName>', { ...env }).getAISDKTool('<toolKey>');
 > ```
-> [Submit your server](#contribute-your-mcp-server) to get validated!
+> **Want validation?** Ask AI: *"Analyze the `make build` target in the Makefile and the scripts it invokes, and determine how an MCP server gets marked as `validated: true`."*
 
 ## Getting Started
 
