@@ -15,6 +15,8 @@ docs-config.json
 .clinerules-*
 doc/docs/*
 sqlite_mcp_server.db
+gorev.db
+mcp-all/
 python-mcp/.magg/
 python-mcp/.SourceSageAssets/
 python-mcp/.SourceSageignore
@@ -34,3 +36,5 @@ e2b-template/node/package.json
 e2b-template/node/pnpm-lock.yaml
 e2b-template/python/uv.lock
 e2b-template/python/pyproject.toml
+
+/scripts/official-registry/output/
