@@ -45,7 +45,12 @@
 - ➕ I want to **submit my MCP Server** → [Contribution Guide](#contribute-your-mcp-server)
 
 > [!IMPORTANT]
-> **Highlights**: Federated search across <%= COUNT %>+ servers & official registry • One-line integration with `Vercel AI SDK` / `LangChain` • Sandbox + OAuth 2.1 built-in • Get featured on [ToolSDK.ai](https://toolsdk.ai)
+> **Pro Tip**: If a server is marked as `validated: true`, you can use it instantly with **Vercel AI SDK**:
+>
+> ```ts
+> const tool = await toolSDK.package('<packageName>', { ...env }).getAISDKTool('<toolKey>');
+> ```
+> [Submit your server](#contribute-your-mcp-server) to get validated!
 
 ## Getting Started
 
@@ -63,8 +68,7 @@ Start the registry immediately with default settings:
 docker compose up -d
 ```
 
-> [!TIP]
-> **Did this save you time?** Give us a [**Star on GitHub**](https://github.com/toolsdk-ai/toolsdk-mcp-registry) — it helps others discover this registry!
+*Did this save you time? Give us a [**Star on GitHub**](https://github.com/toolsdk-ai/toolsdk-mcp-registry) — it helps others discover this registry!*
 
 **Configuration:**
 - Set `MCP_SANDBOX_PROVIDER=LOCAL` in `.env` file if you want to disable the sandbox (not recommended for production).
@@ -243,9 +247,7 @@ Template: `const tool = await toolSDK.package('<packageName>', { ...env }).getAI
 import { ToolSDKApiClient } from 'toolsdk/api';
 
 const toolSDK = new ToolSDKApiClient({ apiKey: process.env.TOOLSDK_AI_API_KEY });
-
 const searchMCP = await toolSDK.package('@toolsdk.ai/tavily-mcp', { TAVILY_API_KEY: process.env.TAVILY_API_KEY });
-
 const searchTool = await searchMCP.getAISDKTool('tavily-search');
 
 // const completion = await generateText({
