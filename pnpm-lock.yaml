@@ -40202,7 +40202,7 @@ snapshots:
     dependencies:
       '@anthropic-ai/sdk': 0.58.0
       '@google/genai': 1.13.0(@modelcontextprotocol/sdk@1.21.1(@cfworker/json-schema@4.1.1))(bufferutil@4.0.9)(encoding@0.1.13)
-      openai: 5.12.2(ws@8.18.3(bufferutil@4.0.9))(zod@3.25.76)
+      openai: 5.23.2(ws@8.18.3(bufferutil@4.0.9))(zod@3.25.76)
       ws: 8.18.3(bufferutil@4.0.9)
     optionalDependencies:
       '@rollup/rollup-linux-x64-gnu': 4.46.2
@@ -41472,7 +41472,7 @@ snapshots:
       '@types/debug': 4.1.12
       debug: 4.4.3(supports-color@5.5.0)
       pony-cause: 2.1.11
-      semver: 7.7.2
+      semver: 7.7.3
       uuid: 9.0.1
     transitivePeerDependencies:
       - supports-color
@@ -41486,7 +41486,7 @@ snapshots:
       '@types/debug': 4.1.12
       debug: 4.4.3(supports-color@5.5.0)
       pony-cause: 2.1.11
-      semver: 7.7.2
+      semver: 7.7.3
       uuid: 9.0.1
     transitivePeerDependencies:
       - supports-color
@@ -72127,7 +72127,7 @@ snapshots:
 
   simple-update-notifier@2.0.0:
     dependencies:
-      semver: 7.7.2
+      semver: 7.7.3
 
   simple-wcswidth@1.1.2: {}
 
