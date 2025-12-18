@@ -1,1 +1,1 @@
-export default [];
+export default ["mcp-minecraft-remote"];
