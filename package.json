@@ -564,7 +564,6 @@
     "mcp-local-rag": "0.2.3",
     "mcp-maigret": "1.0.12",
     "mcp-mailtrap": "0.0.2",
-    "mcp-minecraft-remote": "0.1.1",
     "mcp-neovim-server": "0.5.4",
     "mcp-nmap-server": "1.0.1",
     "mcp-node-fetch": "0.2.0",

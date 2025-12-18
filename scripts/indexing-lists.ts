@@ -21,6 +21,8 @@ import {
 
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 const categoryConfigs: CategoryConfig[] = require("../config/categories").default;
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const hostingBlacklist: string[] = require("../config/hosting-blacklist").default;
 
 const packagesDir = "./packages";
 const packagesListFile = "./indexes/packages-list.json";
@@ -79,6 +81,15 @@ async function generatePackagesList() {
           JSON.parse(fileContent),
         );
         const key = parsedContent.key || parsedContent.packageName;
+
+        // Skip blacklisted packages by key or packageName
+        if (
+          Array.isArray(hostingBlacklist) &&
+          (hostingBlacklist.includes(key) || hostingBlacklist.includes(parsedContent.packageName))
+        ) {
+          console.log(`Skipping blacklisted package: ${key}`);
+          continue;
+        }
         const relativePath = path.relative(packagesDir, entryPath);
 
         newPackagesList[key] = {

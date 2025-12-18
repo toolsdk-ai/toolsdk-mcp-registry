@@ -1,6 +1,6 @@
 # 📚 All MCP Servers
 
-> **Complete directory of all 4521+ MCP servers in the ToolSDK Registry**
+> **Complete directory of all 4520+ MCP servers in the ToolSDK Registry**
 >
 > Looking for production-ready servers only? See the [main README](../README.md) for validated servers.
 
@@ -8,8 +8,8 @@
 
 ## 📊 Statistics
 
-- 📦 **Total Servers**: 4521
-- ✅ **Validated & Tested**: 809
+- 📦 **Total Servers**: 4520
+- ✅ **Validated & Tested**: 808
 - ⚙️ **Community Contributed**: 3712
 
 ---
@@ -2761,8 +2761,8 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [❌ @paddle/paddle-mcp](https://github.com/paddlehq/paddle-mcp-server): Enables developers to manage billing operations using natural language commands, streamlining financial API interactions for SaaS businesses.  (node) 
 - [❌ @paybyrd/ai-agent-toolkit](https://github.com/paybyrd/ai-agent-toolkit-js): Integrates with Paybyrd's payment processing API to enable creating payment links, processing refunds, and retrieving order information through a JavaScript library with configurable permissions and comprehensive error handling.  (node) 
 - [❌ @paypal/agent-toolkit](https://github.com/paypal/agent-toolkit): The PayPal Model Context Protocol server allows you to integrate with PayPal APIs through function calling.  (node) 
-- [❌ @paypal/mcp](https://github.com/paypal/paypal-mcp-server): A command line tool for setting up PayPal MCP server  (node) 
-- [❌ @paypal/mcp](https://github.com/paypal/paypal-mcp-server): A command line tool for setting up PayPal MCP server  (node) 
+- [❌ @paypal/mcp](https://github.com/paypal/paypal-mcp-server): AI agent integration with PayPal services.  (node) 
+- [❌ @paypal/mcp](https://github.com/paypal/paypal-mcp-server): AI agent integration with PayPal services.  (node) 
 - [❌ @stripe/agent-toolkit](https://github.com/stripe/agent-toolkit): Integrates with Stripe's API to enable payment processing, customer management, and financial operations for e-commerce and billing workflows.  (node) 
 - [❌ @stripe/agent-toolkit/tree/main/modelcontextprotocol](https://github.com/stripe/agent-toolkit/tree/main/modelcontextprotocol): The Stripe Model Context Protocol server allows you to integrate with Stripe APIs through function calling.  (node) 
 - [❌ @toolsdk.ai/mcp-mercury](https://github.com/dragonkhoi/mercury-mcp/tree/main/src): Simple MCP server that interfaces with the Mercury API, allowing you to talk to your Mercury banking data from any MCP client like Cursor or Claude Desktop.  (node) 
@@ -2980,14 +2980,13 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 
 
 <a id="gaming"></a>
-### Gaming <small>(43 servers)</small>
+### Gaming <small>(42 servers)</small>
 
 > Connect with gaming data, engines, and related services.
 
 - [✅ @jayarrowz/mcp-osrs](https://github.com/jayarrowz/mcp-osrs): Provides tools for accessing Old School RuneScape game data through wiki searches and structured file queries with pagination support  (19 tools) (node) 
 - [✅ @runreal/unreal-mcp](https://github.com/runreal/unreal-mcp): Integrates with Unreal Engine to assist with game development workflows.  (20 tools) (node) 
 - [✅ mcp-chess](https://github.com/jiayao/mcp-chess): Enables playing chess against language models through a visual interface with tools for board visualization, move execution, game initialization, and position analysis from PGN notation.  (6 tools) (python) 
-- [✅ mcp-minecraft-remote](https://github.com/nacal/mcp-minecraft-remote): Enables AI-assisted remote control and manipulation of Minecraft servers through natural language commands, supporting complex navigation, world interaction, and gameplay automation tasks.  (27 tools) (node) 
 - [✅ pokemon-paste-mcp](https://github.com/jpbullalayao/pokemon-paste-mcp): Converts Pokemon team compositions into shareable Pokepaste URLs by accepting detailed Pokemon configurations including stats, moves, abilities, items, and competitive metadata, then automatically uploading the formatted team data to pokepast.es for easy collaboration among competitive players and team builders.  (1 tools) (node) 
 - [✅ pokemon-vgc-calc-mcp](https://github.com/jpbullalayao/pokemon-vgc-calc-mcp): Provides Pokemon VGC damage calculation capabilities using the Smogon calc library, computing battle damage ranges, KO probabilities, and detailed combat scenarios for competitive Pokemon analysis and strategy optimization.  (1 tools) (node) 
 - [✅ server-dice-roll](https://github.com/lpbayliss/server-dice-roll): Provides cryptographically secure dice rolling with standard notation and Fate/Fudge dice support for tabletop RPGs and games requiring reliable random number generation.  (2 tools) (node) 
@@ -4131,8 +4130,8 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [✅ @mfukushim/map-traveler-mcp](https://github.com/mfukushim/map-traveler-mcp): Integrates with Google Maps to create virtual travel experiences where users can navigate real-world routes with customizable avatars, discover nearby facilities, and share journeys on Bluesky.  (8 tools) (node) 
 - [✅ @openbnb/mcp-server-airbnb](https://github.com/openbnb-org/mcp-server-airbnb): Integrates with Airbnb to enable vacation rental search and detailed property information retrieval without requiring API keys  (2 tools) (node) 
 - [✅ @variflight-ai/variflight-mcp](https://github.com/variflight/variflight-mcp): Integrates with Variflight API to provide real-time flight information, schedules, aircraft tracking, airport weather forecasts, and comfort metrics for travel planning and aviation monitoring applications.  (8 tools) (node) 
-- [✅ 12306-mcp](https://github.com/freestylefly/12306-mcp): Integrates with China's 12306 railway system to search train tickets, check schedules, and retrieve route information across the Chinese railway network with real-time availability and pricing data.  (8 tools) (node) 
-- [✅ 12306-mcp](https://github.com/freestylefly/12306-mcp): Integrates with China's 12306 railway system to search train tickets, check schedules, and retrieve route information across the Chinese railway network with real-time availability and pricing data.  (8 tools) (node) 
+- [✅ 12306-mcp](https://github.com/Joooook/12306-mcp): A 12306 ticket search server based on the Model Context Protocol (MCP). The server provides a simple API interface that allows users to search for 12306 tickets.  (8 tools) (node) 
+- [✅ 12306-mcp](https://github.com/Joooook/12306-mcp): A 12306 ticket search server based on the Model Context Protocol (MCP). The server provides a simple API interface that allows users to search for 12306 tickets.  (8 tools) (node) 
 - [✅ caltrain-mcp](https://github.com/davidyen1124/caltrain-mcp): Provides real-time Caltrain commuter rail information including schedules, station details, and trip planning for the San Francisco Bay Area  (2 tools) (python) 
 - [✅ lumbretravel-mcp](https://github.com/lumile/lumbretravel-mcp): Integrates with the Argentinian LumbreTravel API to manage travel programs, activities, and bookings for efficient itinerary planning and service coordination.  (68 tools) (node) 
 - [✅ train_12306](https://github.com/ecmadao/Train-12306): A command line tool to show 12306 tickets  (4 tools) (python) 

@@ -15110,7 +15110,7 @@
   },
   "@paypal/mcp": {
     "category": "finance-fintech",
-    "path": "finance-fintech/paypal-mcp-server.json",
+    "path": "finance-fintech/paypal-mcp.json",
     "validated": false,
     "tools": {}
   },
@@ -37950,121 +37950,6 @@
     "validated": false,
     "tools": {}
   },
-  "mcp-minecraft-remote": {
-    "category": "gaming",
-    "path": "gaming/mcp-minecraft-remote.json",
-    "validated": true,
-    "tools": {
-      "connectToServer": {
-        "name": "connectToServer",
-        "description": "Connect to a Minecraft server with the specified credentials"
-      },
-      "disconnectFromServer": {
-        "name": "disconnectFromServer",
-        "description": "Disconnect from the Minecraft server"
-      },
-      "sendChat": {
-        "name": "sendChat",
-        "description": "Send a chat message to the Minecraft server"
-      },
-      "getPosition": {
-        "name": "getPosition",
-        "description": "Get the current position of the player in the Minecraft world"
-      },
-      "moveTo": {
-        "name": "moveTo",
-        "description": "Move the player to a specific location"
-      },
-      "moveControl": {
-        "name": "moveControl",
-        "description": "Control the player with basic movement commands"
-      },
-      "lookAt": {
-        "name": "lookAt",
-        "description": "Make the player look in a specific direction or at coordinates"
-      },
-      "digBlock": {
-        "name": "digBlock",
-        "description": "Dig a block at the specified coordinates"
-      },
-      "placeBlock": {
-        "name": "placeBlock",
-        "description": "Place a block at the specified location"
-      },
-      "getNearbyPlayers": {
-        "name": "getNearbyPlayers",
-        "description": "Get a list of players nearby"
-      },
-      "getServerInfo": {
-        "name": "getServerInfo",
-        "description": "Get information about the currently connected server"
-      },
-      "checkInventory": {
-        "name": "checkInventory",
-        "description": "Check the items in the player inventory"
-      },
-      "equipItem": {
-        "name": "equipItem",
-        "description": "Equip an item from inventory to hand or armor slot"
-      },
-      "inventoryDetails": {
-        "name": "inventoryDetails",
-        "description": "Get detailed information about inventory items"
-      },
-      "tossItem": {
-        "name": "tossItem",
-        "description": "Throw items from inventory"
-      },
-      "getNearbyEntities": {
-        "name": "getNearbyEntities",
-        "description": "Get a list of all entities nearby"
-      },
-      "attackEntity": {
-        "name": "attackEntity",
-        "description": "Attack a specific entity"
-      },
-      "useOnEntity": {
-        "name": "useOnEntity",
-        "description": "Use held item on a specific entity"
-      },
-      "followEntity": {
-        "name": "followEntity",
-        "description": "Follow a specific entity"
-      },
-      "openContainer": {
-        "name": "openContainer",
-        "description": "Open a container (chest, furnace, etc.) at specific coordinates"
-      },
-      "withdrawItem": {
-        "name": "withdrawItem",
-        "description": "Take items from an open container"
-      },
-      "depositItem": {
-        "name": "depositItem",
-        "description": "Put items into an open container"
-      },
-      "closeContainer": {
-        "name": "closeContainer",
-        "description": "Close the currently open container"
-      },
-      "getRecipes": {
-        "name": "getRecipes",
-        "description": "Get a list of available crafting recipes"
-      },
-      "craftItem": {
-        "name": "craftItem",
-        "description": "Craft an item using available materials"
-      },
-      "listTrades": {
-        "name": "listTrades",
-        "description": "List available trades from a nearby villager"
-      },
-      "tradeWithVillager": {
-        "name": "tradeWithVillager",
-        "description": "Trade with a nearby villager"
-      }
-    }
-  },
   "vrchat-osc": {
     "category": "gaming",
     "path": "gaming/vrchat-osc.json",
@@ -42191,7 +42076,7 @@
   },
   "12306-mcp": {
     "category": "travel-transportation",
-    "path": "travel-transportation/12306-mcp.json",
+    "path": "travel-transportation/jok-12306-mcp.json",
     "validated": true,
     "tools": {
       "get-current-date": {
