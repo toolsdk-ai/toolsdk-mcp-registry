@@ -56,6 +56,15 @@ export function getServerPort(): number {
   return port ? parseInt(port, 10) : 3003;
 }
 
+export function getRegistryBaseUrl(): string {
+  const baseUrl = process.env.REGISTRY_BASE_URL;
+  if (baseUrl) {
+    return baseUrl.replace(/\/$/, "");
+  }
+  const port = getServerPort();
+  return `http://localhost:${port}`;
+}
+
 export function isSearchEnabled(): boolean {
   return process.env.ENABLE_SEARCH === "true";
 }
