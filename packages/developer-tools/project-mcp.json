@@ -2,7 +2,7 @@
   "type": "mcp-server",
   "name": "Project MCP",
   "packageName": "project-mcp",
-  "description": "AI-native project management with intent-based documentation search, Jira-like task IDs (PROJECT-001), backlog workflow (import → promote → archive), and project file management for ROADMAP/TODO/STATUS/DECISIONS. (37 tools, 12 prompts)",
+  "description": "AI-native project management with intent-based documentation search, Jira-like task IDs (PROJECT-001), backlog workflow (import → promote → archive), thought processing (brain dumps → structured tasks with intent analysis), and project file management. (40 tools, 12 prompts)",
   "url": "https://github.com/pouyanafisi/project-mcp",
   "runtime": "node",
   "license": "MIT",
