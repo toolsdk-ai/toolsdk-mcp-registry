@@ -12,14 +12,14 @@
 <a href="https://github.com/toolsdk-ai/toolsdk-mcp-registry/actions/workflows/test.yaml">
   <img src="https://github.com/toolsdk-ai/toolsdk-mcp-registry/actions/workflows/test.yaml/badge.svg" alt="Build Status" />
 </a>
-<img src="https://img.shields.io/badge/MCP_Servers-4520-blue?style=flat-square" alt="MCP Servers Count" />
+<img src="https://img.shields.io/badge/MCP_Servers-4521-blue?style=flat-square" alt="MCP Servers Count" />
 <img src="https://img.shields.io/badge/LICENSE-MIT-ff69b4?style=flat-square" alt="License" />
 <br />
 <a href="https://www.producthunt.com/products/toolsdk-ai">
   <img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=997428&theme=light&period=daily" alt="Product Hunt" height="40" />
 </a>
 
-<a href="#mcp-servers">🔍 <b>Browse 4520+ Tools</b></a>
+<a href="#mcp-servers">🔍 <b>Browse 4521+ Tools</b></a>
 &nbsp;&nbsp;•&nbsp;&nbsp;
 <a href="#quick-start">🐳 <b>Self-hosted</b></a>
 &nbsp;&nbsp;•&nbsp;&nbsp;
@@ -75,7 +75,7 @@ docker compose up -d
 - *See [Configuration Guide](./docs/DEVELOPMENT.md) for full details.*
 
 > [!TIP]
-> **Tip for Private Deployment**: This registry contains 4520+ public MCP servers. If you only need a specific subset for your private environment, you can prune the `packages/` directory.
+> **Tip for Private Deployment**: This registry contains 4521+ public MCP servers. If you only need a specific subset for your private environment, you can prune the `packages/` directory.
 > 📖 See [Package Management Guide](./docs/DEVELOPMENT.md#5--package-management-for-private-deployment) for details.
 
 That's it! Your self-hosted MCP registry is now running with:
@@ -87,7 +87,7 @@ That's it! Your self-hosted MCP registry is now running with:
 
 - 🌐 **Local Web Interface**: http://localhost:3003
 - 📚 **Swagger API Docs**: http://localhost:3003/swagger  
-- 🔍 **Search & Execute** 4520+ MCP Servers remotely
+- 🔍 **Search & Execute** 4521+ MCP Servers remotely
 - 🤖 **Integrate** with your AI agents, chatbots, and LLM applications
 
 #### 🌐 Remote Tool Execution Example
@@ -221,7 +221,7 @@ graph TD
 
 This open-source project provides:
 
-- **Structured Registry** - 4520+ MCP servers with metadata
+- **Structured Registry** - 4521+ MCP servers with metadata
 - **Unified Gateway** - HTTP API to query and execute tools remotely
 - **Auto-Generated Docs** - Always up-to-date README and API documentation
 
@@ -320,12 +320,12 @@ Your MCP server will be:
 
 ## MCP Servers Directory
 
-**4520+ AI Agent Tools, LLM Integrations & Automation Servers**
+**4521+ AI Agent Tools, LLM Integrations & Automation Servers**
 
 > [!NOTE]
 > ⭐ **Featured below**: Hand-picked, production-ready MCP servers verified by our team.
 >
-> 📚 **Looking for all 4520+ servers?** Check out [**All MCP Servers**](./docs/ALL-MCP-SERVERS.md) for the complete list.
+> 📚 **Looking for all 4521+ servers?** Check out [**All MCP Servers**](./docs/ALL-MCP-SERVERS.md) for the complete list.
 
 > [!TIP]
 > If a package is marked as `validated: true` in the index, you can usually wire it up in minutes via ToolSDK (e.g. `getAISDKTool(toolKey)`).
@@ -859,6 +859,7 @@ Enhance your development workflow with tools for coding and environment manageme
 - [✅ mcp-server-tree-sitter](https://github.com/wrale/mcp-server-tree-sitter): Provides code analysis capabilities through tree-sitter parsing, enabling structured understanding and manipulation of source code across multiple programming languages for tasks like code review, refactoring, and documentation generation.  (26 tools) (python) 
 - [✅ mcp-svelte-docs](https://github.com/spences10/mcp-svelte-docs): Integrates with Svelte documentation to enable efficient querying and retrieval of framework-specific content for development assistance.  (12 tools) (node) 
 - [✅ metatag-genie](https://github.com/terryso/meta_tag_genie): Enables AI to write standardized metadata to various image file formats including HEIC and PNG for automated tagging, photo organization, and copyright embedding without switching contexts.  (1 tools) (node) 
+- [✅ project-mcp](https://github.com/pouyanafisi/project-mcp): AI-native project management with intent-based documentation search, Jira-like task IDs (PROJECT-001), backlog workflow (import → promote → archive), thought processing (brain dumps → structured tasks with intent analysis), and project file management. (40 tools, 12 prompts)  (42 tools) (node) 
 - [✅ qasphere-mcp](https://github.com/hypersequent/qasphere-mcp): Integration with QA Sphere test management system, enabling LLMs to discover, summarize, and interact with test cases directly from AI-powered IDEs.  (6 tools) (node) 
 - [✅ sf-mcp](https://github.com/codefriar/sf-mcp): Exposes Salesforce CLI functionality for interacting with Salesforce orgs, enabling developers to query data, deploy code, and manage orgs through dynamically discovered commands.  (5 tools) (node) 
 - [✅ shadow-cljs-mcp](https://github.com/bigsy/shadow-cljs-mcp): Monitors ClojureScript builds in real-time, providing detailed status information including compilation status, warnings, errors, and file-specific details for verifying build success after code changes.  (1 tools) (node) 
@@ -1320,8 +1321,8 @@ Get travel schedules, routes, and real-time transportation data.
 - [✅ @mfukushim/map-traveler-mcp](https://github.com/mfukushim/map-traveler-mcp): Integrates with Google Maps to create virtual travel experiences where users can navigate real-world routes with customizable avatars, discover nearby facilities, and share journeys on Bluesky.  (8 tools) (node) 
 - [✅ @openbnb/mcp-server-airbnb](https://github.com/openbnb-org/mcp-server-airbnb): Integrates with Airbnb to enable vacation rental search and detailed property information retrieval without requiring API keys  (2 tools) (node) 
 - [✅ @variflight-ai/variflight-mcp](https://github.com/variflight/variflight-mcp): Integrates with Variflight API to provide real-time flight information, schedules, aircraft tracking, airport weather forecasts, and comfort metrics for travel planning and aviation monitoring applications.  (8 tools) (node) 
-- [✅ 12306-mcp](https://github.com/freestylefly/12306-mcp): Integrates with China's 12306 railway system to search train tickets, check schedules, and retrieve route information across the Chinese railway network with real-time availability and pricing data.  (8 tools) (node) 
-- [✅ 12306-mcp](https://github.com/freestylefly/12306-mcp): Integrates with China's 12306 railway system to search train tickets, check schedules, and retrieve route information across the Chinese railway network with real-time availability and pricing data.  (8 tools) (node) 
+- [✅ 12306-mcp](https://github.com/Joooook/12306-mcp): A 12306 ticket search server based on the Model Context Protocol (MCP). The server provides a simple API interface that allows users to search for 12306 tickets.  (8 tools) (node) 
+- [✅ 12306-mcp](https://github.com/Joooook/12306-mcp): A 12306 ticket search server based on the Model Context Protocol (MCP). The server provides a simple API interface that allows users to search for 12306 tickets.  (8 tools) (node) 
 - [✅ caltrain-mcp](https://github.com/davidyen1124/caltrain-mcp): Provides real-time Caltrain commuter rail information including schedules, station details, and trip planning for the San Francisco Bay Area  (2 tools) (python) 
 - [✅ lumbretravel-mcp](https://github.com/lumile/lumbretravel-mcp): Integrates with the Argentinian LumbreTravel API to manage travel programs, activities, and bookings for efficient itinerary planning and service coordination.  (68 tools) (node) 
 - [✅ train_12306](https://github.com/ecmadao/Train-12306): A command line tool to show 12306 tickets  (4 tools) (python) 

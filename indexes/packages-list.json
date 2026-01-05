@@ -15110,7 +15110,7 @@
   },
   "@paypal/mcp": {
     "category": "finance-fintech",
-    "path": "finance-fintech/paypal-mcp-server.json",
+    "path": "finance-fintech/paypal-mcp.json",
     "validated": false,
     "tools": {}
   },
@@ -42076,7 +42076,7 @@
   },
   "12306-mcp": {
     "category": "travel-transportation",
-    "path": "travel-transportation/12306-mcp.json",
+    "path": "travel-transportation/jok-12306-mcp.json",
     "validated": true,
     "tools": {
       "get-current-date": {
@@ -56087,5 +56087,180 @@
     "path": "uncategorized/toolsdk-remote-ai-dynamicendpoints-m365-core-mcp.json",
     "validated": false,
     "tools": {}
+  },
+  "project-mcp": {
+    "path": "developer-tools/project-mcp.json",
+    "category": "developer-tools",
+    "tools": {
+      "search_project": {
+        "name": "search_project",
+        "description": "Search across project sources with smart intent detection. IMPORTANT: \"project docs\" means APPLICATION documentation (docs/ + DECISIONS.md), NOT project management. Use intent \"project_docs\" when user says \"project docs/documents/documentation\" to search application documentation. Use intent \"plan\" for project management (status, todos, roadmap, backlog)."
+      },
+      "search_docs": {
+        "name": "search_docs",
+        "description": "Search only the docs/ directory for reference documentation. Use this when the user specifically asks for \"docs\" or \"documentation\". Returns relevant documentation chunks with file paths and content snippets."
+      },
+      "get_doc": {
+        "name": "get_doc",
+        "description": "Get the full content of a specific file. Supports files from .project/, root-level, or docs/. Use the path as returned from search results."
+      },
+      "list_docs": {
+        "name": "list_docs",
+        "description": "List all available documentation files organized by category. Use this to discover what documentation is available or to get an overview of the documentation structure."
+      },
+      "get_doc_structure": {
+        "name": "get_doc_structure",
+        "description": "Get the complete documentation directory structure with file paths and descriptions. Useful for understanding the organization of documentation."
+      },
+      "manage_project_file": {
+        "name": "manage_project_file",
+        "description": "Smart tool that automatically determines which project file to create or update based on context. Use this when making changes to the project - it will check project state and determine if index.md, ROADMAP.md, TODO.md, STATUS.md, or DECISIONS.md should be created/updated. This is the primary tool for managing project documentation during development."
+      },
+      "check_project_state": {
+        "name": "check_project_state",
+        "description": "Checks the current state of project management files. Returns which files exist (.project/index.md, ROADMAP.md, TODO.md, STATUS.md, DECISIONS.md) and provides a summary of project state. Use this before making changes to understand what exists."
+      },
+      "create_or_update_roadmap": {
+        "name": "create_or_update_roadmap",
+        "description": "Creates or updates the ROADMAP.md file in .project/ directory. Use this when planning future work, milestones, or phases. If the file exists, intelligently merges new content with existing roadmap."
+      },
+      "create_or_update_todo": {
+        "name": "create_or_update_todo",
+        "description": "Creates or updates the TODO.md file in .project/ directory. Use this when adding tasks, marking items complete, or updating task status. Intelligently organizes tasks into sections (In Progress, Next Up, Blocked, Completed)."
+      },
+      "create_or_update_status": {
+        "name": "create_or_update_status",
+        "description": "Creates or updates the STATUS.md file in .project/ directory. Use this when updating project health, recent changes, metrics, or current phase. Automatically updates the \"Last Updated\" timestamp."
+      },
+      "create_or_update_index": {
+        "name": "create_or_update_index",
+        "description": "Creates or updates the index.md file in .project/ directory. This is the contract file that defines how agents should interpret sources. Use this when setting up project structure or updating source mappings."
+      },
+      "create_or_update_decisions": {
+        "name": "create_or_update_decisions",
+        "description": "Creates or updates the DECISIONS.md file in .project/ directory. Use this when documenting architecture decisions, trade-offs, or rationale. Helps maintain a decision log for the project."
+      },
+      "add_decision": {
+        "name": "add_decision",
+        "description": "Adds a single architecture decision record (ADR) to DECISIONS.md. Creates a structured entry with title, context, decision, and consequences sections."
+      },
+      "list_decisions": {
+        "name": "list_decisions",
+        "description": "Lists all architecture decisions from DECISIONS.md with optional filtering by status or tag."
+      },
+      "update_project_status": {
+        "name": "update_project_status",
+        "description": "Quick status update for the project. Adds a timestamped entry to STATUS.md with the current status, changes, or notes."
+      },
+      "add_roadmap_milestone": {
+        "name": "add_roadmap_milestone",
+        "description": "Adds a milestone or phase to ROADMAP.md. Creates a structured entry with title, description, target date, and deliverables."
+      },
+      "get_decision": {
+        "name": "get_decision",
+        "description": "Reads a specific architecture decision by ADR ID. Returns the full decision content including context, decision, and consequences."
+      },
+      "get_roadmap": {
+        "name": "get_roadmap",
+        "description": "Reads the current roadmap content from ROADMAP.md. Returns milestones, phases, and planned work."
+      },
+      "create_task": {
+        "name": "create_task",
+        "description": "Creates a new task with YAML frontmatter metadata. Uses Jira-like IDs (e.g., AUTH-001, API-042) for stable references. Supports dependencies, priorities, estimates, due dates, and tags. Agents can determine execution order by checking dependencies and priorities."
+      },
+      "update_task": {
+        "name": "update_task",
+        "description": "Updates an existing task by ID. Can update any field including status, priority, owner, dependencies, etc. Use this to transition tasks through workflow states."
+      },
+      "get_task": {
+        "name": "get_task",
+        "description": "Reads and returns a specific task by ID. Shows all metadata including frontmatter, description, subtasks, and notes."
+      },
+      "delete_task": {
+        "name": "delete_task",
+        "description": "Permanently deletes a task from todos/. Use with caution - this cannot be undone. Consider using archive_task instead for completed tasks."
+      },
+      "get_next_task": {
+        "name": "get_next_task",
+        "description": "Returns the next task(s) that should be worked on. Considers: dependencies (only returns tasks whose dependencies are done), priority (P0 first), status (excludes done/blocked), and optionally filters by owner or project. This is the key tool for agentic execution - call this to know what to do next."
+      },
+      "list_tasks": {
+        "name": "list_tasks",
+        "description": "Lists all tasks with optional filtering. Returns a summary view of tasks organized by status and priority."
+      },
+      "search_tasks": {
+        "name": "search_tasks",
+        "description": "Search tasks by keyword in title, description, or content. Returns matching tasks with relevance ranking."
+      },
+      "sync_todo_index": {
+        "name": "sync_todo_index",
+        "description": "Syncs the parent TODO.md file with all tasks. Generates a dashboard view with tasks organized by status, priority counts, dependency graph, and execution order. This provides a bird's eye view of all work."
+      },
+      "import_tasks": {
+        "name": "import_tasks",
+        "description": "Parses a plan document and imports tasks to BACKLOG.md (not individual files). Use this to populate the backlog from a roadmap or requirements doc. Tasks stay in BACKLOG until promoted to active work via promote_task."
+      },
+      "promote_task": {
+        "name": "promote_task",
+        "description": "Promotes a task from BACKLOG.md to an active YAML task file in todos/. Use this when starting work on a backlog item. Creates a full task file with YAML frontmatter, dependencies, and metadata."
+      },
+      "archive_task": {
+        "name": "archive_task",
+        "description": "Archives a completed task by moving it from todos/ to archive/. Keeps the active task queue small and focused. Archived tasks are preserved for history but excluded from get_next_task."
+      },
+      "add_to_backlog": {
+        "name": "add_to_backlog",
+        "description": "Adds a single item to BACKLOG.md. Use this for quick task creation without bulk import. Items are added to the specified priority section and can later be promoted to active work."
+      },
+      "get_backlog": {
+        "name": "get_backlog",
+        "description": "Reads and returns the current backlog contents with optional filtering. Shows tasks organized by priority with counts and summary."
+      },
+      "update_backlog_item": {
+        "name": "update_backlog_item",
+        "description": "Updates an item in BACKLOG.md. Can change priority, title, tags, or phase without promoting to active work."
+      },
+      "remove_from_backlog": {
+        "name": "remove_from_backlog",
+        "description": "Removes an item from BACKLOG.md without promoting it. Use for tasks that are no longer needed or were added by mistake."
+      },
+      "list_archived_tasks": {
+        "name": "list_archived_tasks",
+        "description": "Lists tasks in the archive/ directory. Shows completed work history with optional filtering by project or date."
+      },
+      "unarchive_task": {
+        "name": "unarchive_task",
+        "description": "Restores a task from archive/ back to todos/ for further work. Use when a completed task needs to be reopened."
+      },
+      "lint_project_docs": {
+        "name": "lint_project_docs",
+        "description": "Validates project documentation against standards. Checks for required files, valid frontmatter, broken dependencies, missing fields, and formatting issues. Can auto-fix common problems. Run this before commits to ensure documentation quality."
+      },
+      "init_project": {
+        "name": "init_project",
+        "description": "Initializes the .project/ directory with all standard files following strict templates. Creates index.md (contract), TODO.md (dashboard), BACKLOG.md (prioritized work queue), ROADMAP.md, STATUS.md, DECISIONS.md, and todos/ directory. Use this to bootstrap a new project with proper structure."
+      },
+      "process_thoughts": {
+        "name": "process_thoughts",
+        "description": "Reads brain dump markdown files from .project/thoughts/todos/ and returns the content along with project context for analysis.\n\nThis tool gathers:\n1. **Raw thought content** - The unstructured brain dump as written\n2. **Project context** - Existing tasks, roadmap milestones, decisions for reference\n3. **Task format guide** - The YAML structure for creating tasks\n\nYOU (the LLM) should then analyze the content to:\n- Understand the user's intent (explicit, shadow/underlying, practical)\n- Identify logical task groupings (consolidate related items)\n- Determine appropriate priorities based on context\n- Create well-structured tasks using create_task\n- **After creating tasks, use archive_thought to archive the processed file**\n\nThe tool does NOT automatically create tasks - it provides you with everything needed to make intelligent decisions about task creation."
+      },
+      "archive_thought": {
+        "name": "archive_thought",
+        "description": "Archives a processed thought file by moving it to .project/thoughts/todos/.archive/. \nUse this after you've created tasks from a thought file to keep the active thoughts folder clean.\nAlso logs the archive action with timestamp and created task IDs."
+      },
+      "list_thoughts": {
+        "name": "list_thoughts",
+        "description": "Lists all thought files in the .project/thoughts/ directory structure. Shows available brain dump files organized by category."
+      },
+      "list_archived_thoughts": {
+        "name": "list_archived_thoughts",
+        "description": "Lists all archived thought files with their processing history. Shows what thoughts were processed, when, and what tasks were created."
+      },
+      "get_thought": {
+        "name": "get_thought",
+        "description": "Reads a specific thought file and returns its raw content for review."
+      }
+    },
+    "validated": true
   }
 }
