@@ -35,3 +35,6 @@ search:
 
 dev:
 	pnpm run dev
+
+fetch-official-mcp:
+	bun scripts/official-registry/index.ts
