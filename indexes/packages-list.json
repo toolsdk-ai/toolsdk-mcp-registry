@@ -15110,7 +15110,7 @@
   },
   "@paypal/mcp": {
     "category": "finance-fintech",
-    "path": "finance-fintech/paypal-mcp.json",
+    "path": "finance-fintech/paypal-mcp-server.json",
     "validated": false,
     "tools": {}
   },
@@ -42076,7 +42076,7 @@
   },
   "12306-mcp": {
     "category": "travel-transportation",
-    "path": "travel-transportation/jok-12306-mcp.json",
+    "path": "travel-transportation/12306-mcp.json",
     "validated": true,
     "tools": {
       "get-current-date": {
@@ -56089,8 +56089,9 @@
     "tools": {}
   },
   "project-mcp": {
-    "path": "developer-tools/project-mcp.json",
     "category": "developer-tools",
+    "path": "developer-tools/project-mcp.json",
+    "validated": true,
     "tools": {
       "search_project": {
         "name": "search_project",
@@ -56260,7 +56261,6 @@
         "name": "get_thought",
         "description": "Reads a specific thought file and returns its raw content for review."
       }
-    },
-    "validated": true
+    }
   }
 }
