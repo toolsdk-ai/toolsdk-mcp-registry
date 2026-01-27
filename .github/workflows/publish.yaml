@@ -45,9 +45,6 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-      - name: Bump version
-        run: |
-          npm version patch --no-git-tag-version
       - run: |
           make build
 
@@ -56,11 +53,14 @@ jobs:
           git config --global user.name "ToolSDK.ai"
           git config --global user.email "dev@toolsdk.ai"
 
-
       - name: Publish
         run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Bump version
+        run: |
+          npm version patch --no-git-tag-version
 
       - name: Set commit message
         id: commit_message_step
