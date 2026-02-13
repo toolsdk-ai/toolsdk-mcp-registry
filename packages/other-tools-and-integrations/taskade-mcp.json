@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "packageName": "@taskade/mcp-server",
+  "description": "Official Taskade MCP server with 62+ tools for managing workspaces, projects, tasks, AI agents, templates, and media.",
+  "url": "https://github.com/taskade/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "TASKADE_API_KEY": {
+      "description": "API key for Taskade API access",
+      "required": true
+    }
+  },
+  "name": "Taskade MCP Server"
+}
