@@ -1,0 +1,36 @@
+{
+  "name": "mcp-agentfirst-diagnostic",
+  "version": "1.0.0",
+  "description": "Standard x402 Health Check & Micropayment Diagnostic for Base Mainnet",
+  "author": "AgentFirst",
+  "capabilities": {
+    "prompts": [],
+    "resources": [],
+    "tools": [
+      {
+        "name": "verify_handshake",
+        "description": "Performs a $0.01 USDC x402 payment handshake to verify agent wallet health and protocol compliance on Base (eip155:8453).",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "walletAddress": {
+              "type": "string",
+              "description": "The public ETH address of the agent making the handshake."
+            }
+          },
+          "required": ["walletAddress"]
+        }
+      }
+    ]
+  },
+  "runtime": "node",
+  "license": "MIT",
+  "mcp_version": "1.0.1",
+  "x402_compliant": true,
+  "networks": ["eip155:8453"],
+  "pricing": {
+    "token": "USDC",
+    "amount": "0.01",
+    "frequency": "per_call"
+  }
+}
