@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "packageName": "octav-api-mcp",
+  "description": "Multi-chain crypto portfolio tracking MCP server. Access wallet holdings, DeFi protocol positions, transaction history, and token analytics across 20+ blockchains directly from Claude.",
+  "url": "https://github.com/Octav-Labs/octav-api-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "OCTAV_API_KEY": {
+      "description": "API key for the Octav API",
+      "required": true
+    }
+  },
+  "name": "Octav API MCP"
+}
