@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "LightCMS",
+  "packageName": "lightcms",
+  "description": "AI-native CMS with 41 MCP tools for managing websites through natural language.",
+  "url": "https://github.com/jonradoff/lightcms",
+  "runtime": "go",
+  "license": "MIT",
+  "env": {
+    "LIGHTCMS_URL": {
+      "description": "LightCMS server URL",
+      "required": true
+    },
+    "LIGHTCMS_API_KEY": {
+      "description": "API key for authenticating with the LightCMS server",
+      "required": true
+    }
+  }
+}
