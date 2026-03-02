@@ -1,16 +1,9 @@
 {
-  "$schema": "../../schema.json",
   "type": "mcp-server",
   "name": "AgentFirst x402 Diagnostic",
   "packageName": "mcp-agentfirst-diagnostic",
   "description": "Standard x402 Health Check & Micropayment Diagnostic for Base Mainnet. Performs a $0.01 USDC x402 payment handshake to verify agent wallet health and protocol compliance.",
   "url": "https://github.com/agentfirstlabs/mcp-agentfirst-diagnostic",
   "runtime": "node",
-  "license": "MIT",
-  "tags": [
-    "finance",
-    "x402",
-    "base-mainnet",
-    "crypto"
-  ]
+  "license": "MIT"
 }
