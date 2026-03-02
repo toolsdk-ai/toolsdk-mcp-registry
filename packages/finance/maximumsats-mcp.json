@@ -1,0 +1,26 @@
+{
+  "$schema": "../../schema.json",
+  "name": "MaximumSats MCP Server",
+  "packageName": "maximumsats-mcp",
+  "description": "MCP server providing 12 tools for Bitcoin Lightning payments and Nostr Web of Trust scoring. Includes L402-paywalled AI text/image generation and 10 WoT analysis endpoints.",
+  "url": "https://github.com/joelklabo/maximumsats-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "MAXIMUMSATS_API_KEY": {
+      "description": "API key for MaximumSats service",
+      "required": true
+    }
+  },
+  "tags": [
+    "bitcoin",
+    "lightning",
+    "nostr",
+    "web-of-trust",
+    "l402",
+    "payments",
+    "ai",
+    "sybil-detection",
+    "trust-score"
+  ]
+}
