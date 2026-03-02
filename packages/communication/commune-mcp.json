@@ -1,5 +1,4 @@
 {
-  "$schema": "../../schema.json",
   "type": "mcp-server",
   "name": "Commune MCP",
   "packageName": "commune-mcp",
@@ -12,10 +11,5 @@
       "description": "API key for Commune service",
       "required": true
     }
-  },
-  "tags": [
-    "email",
-    "communication",
-    "sms"
-  ]
+  }
 }
