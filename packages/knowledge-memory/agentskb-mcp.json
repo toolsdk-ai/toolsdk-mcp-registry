@@ -1,0 +1,9 @@
+{
+  "type": "mcp-server",
+  "name": "AgentsKB MCP",
+  "packageName": "@agentskb/cli",
+  "description": "Pre-researched knowledge base for AI coding assistants. Provides 5,700+ Q&As covering PostgreSQL, Next.js, Prisma, FastAPI, Docker, AWS, and 40+ other developer domains to ensure AI gets specific technical details right.",
+  "url": "https://github.com/Cranot/agentskb-mcp",
+  "runtime": "node",
+  "license": "unknown"
+}
