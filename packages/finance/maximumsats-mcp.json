@@ -1,5 +1,5 @@
 {
-  "name": "MaximumSats MCP Server",
+  "type": "mcp-server",
   "packageName": "maximumsats-mcp",
   "description": "MCP server providing 12 tools for Bitcoin Lightning payments and Nostr Web of Trust scoring. Includes L402-paywalled AI text/image generation and 10 WoT analysis endpoints.",
   "url": "https://github.com/joelklabo/maximumsats-mcp",
@@ -10,5 +10,6 @@
       "description": "API key for MaximumSats service",
       "required": true
     }
-  }
+  },
+  "name": "MaximumSats MCP Server"
 }
