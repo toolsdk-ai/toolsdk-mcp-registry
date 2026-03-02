@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "name": "Commune MCP",
+  "packageName": "commune-mcp",
+  "description": "Email infrastructure built specifically for AI agents. Enables programmatic inbox creation, bidirectional email with thread tracking, custom sending domains, and structured extraction on inbound mail.",
+  "url": "https://github.com/shanjai-raj/commune-mcp",
+  "runtime": "python",
+  "license": "unknown",
+  "env": {
+    "COMMUNE_API_KEY": {
+      "description": "API key for Commune service",
+      "required": true
+    }
+  }
+}
