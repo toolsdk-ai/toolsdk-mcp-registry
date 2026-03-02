@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "OpenDirectories Business Data",
+  "packageName": "opendirectories-mcp",
+  "description": "Search 12M+ verified businesses across 10 countries via government registers. Government-sourced, Google Maps enriched. 6 tools for search, verification, competitor analysis, and market research.",
+  "url": "https://github.com/BigJai/opendirectories-mcp",
+  "runtime": "python",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://secure-wave--opendirectories-business-data.apify.actor/mcp"
+    }
+  ]
+}
