@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "packageName": "@skillboss/mcp-server",
+  "description": "One API key for 100+ AI services: Claude, GPT, Gemini, DeepSeek, image/video generation, data scraping, payments, email, and more. OpenAI-compatible API that works in Claude Code, Cursor, and Windsurf.",
+  "url": "https://github.com/heeyo-life/skillboss-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "SKILLBOSS_API_KEY": {
+      "description": "Your SkillBoss API key from https://skillboss.co/dashboard",
+      "required": true
+    }
+  },
+  "name": "SkillBoss MCP Server"
+}
