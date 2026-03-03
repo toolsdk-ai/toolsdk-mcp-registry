@@ -1,0 +1,9 @@
+{
+  "type": "mcp-server",
+  "name": "mcp-api-bridge-lite",
+  "packageName": "mcp-api-bridge-lite",
+  "description": "Free, open-source REST API to MCP bridge. Connect any REST API to AI assistants through MCP with simple YAML configuration. Supports GET, POST, PUT, DELETE with authentication, headers, and parameter mapping.",
+  "url": "https://github.com/tiranmoskovitch-dev/mcp-api-bridge-lite",
+  "runtime": "python",
+  "license": "MIT"
+}
