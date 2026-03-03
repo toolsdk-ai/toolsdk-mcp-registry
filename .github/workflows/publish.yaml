@@ -54,7 +54,13 @@ jobs:
           git config --global user.email "dev@toolsdk.ai"
 
       - name: Publish
-        run: npm publish --access public
+        run: |
+          # If publish fails due to E403 (version already exists), bump version and try again
+          npm publish --access public || (
+            echo "Publish failed, attempting to bump version..."
+            npm version patch --no-git-tag-version
+            npm publish --access public
+          )
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
