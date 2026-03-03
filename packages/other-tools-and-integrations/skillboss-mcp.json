@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "name": "SkillBoss",
+  "packageName": "@skillboss/mcp-server",
+  "description": "The complete tool store for AI agents. Provides instant access to 100+ services including AI models, image/video generation, web scraping, payments, databases, and more with a single API key.",
+  "url": "https://skillboss.co",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "SKILLBOSS_API_KEY": {
+      "description": "API key for SkillBoss service",
+      "required": true
+    }
+  }
+}
