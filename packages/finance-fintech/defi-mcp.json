@@ -1,0 +1,9 @@
+{
+  "type": "mcp-server",
+  "name": "defi-mcp",
+  "packageName": "defi-mcp",
+  "description": "DeFi & crypto MCP server with 12 tools: token prices, gas estimates, DEX pool analytics, ENS resolution, trending tokens, DeFi protocol TVL, yield opportunities, and historical price data. Works with Claude Desktop and Cursor.",
+  "url": "https://github.com/OzorOwn/defi-mcp",
+  "runtime": "node",
+  "license": "MIT"
+}
