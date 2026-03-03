@@ -1,0 +1,9 @@
+{
+  "type": "mcp-server",
+  "name": "mcp-database-connector-lite",
+  "packageName": "mcp-database-connector-lite",
+  "description": "Free, open-source SQLite MCP server that gives AI assistants direct database access. Supports query execution, schema inspection, and data manipulation.",
+  "url": "https://github.com/tiranmoskovitch-dev/mcp-database-connector-lite",
+  "runtime": "python",
+  "license": "MIT"
+}
