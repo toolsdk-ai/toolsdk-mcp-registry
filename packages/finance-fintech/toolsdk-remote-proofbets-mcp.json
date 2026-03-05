@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "ProofBets MCP Server",
+  "packageName": "@toolsdk-remote/proofbets-mcp",
+  "description": "Casino intelligence with 13 tools: search 50+ crypto casinos, verify bonus codes, calculate EV, compare P2P prediction markets (Polymarket, Kalshi, Azuro), and on-chain wallet verification",
+  "url": "https://github.com/proofbets/proofbets-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "PROOFBETS_API_KEY": {
+      "description": "Optional API key for higher rate limits",
+      "required": false
+    }
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://proofbets.com/api/mcp/"
+    }
+  ]
+}
