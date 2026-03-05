@@ -53,20 +53,28 @@ jobs:
           git config --global user.name "ToolSDK.ai"
           git config --global user.email "dev@toolsdk.ai"
 
-      - name: Publish
+      - name: Sync and bump version
         run: |
-          # If publish fails due to E403 (version already exists), bump version and try again
-          npm publish --access public || (
-            echo "Publish failed, attempting to bump version..."
+          PACKAGE_NAME=$(node -p "require('./package.json').name")
+          LOCAL_VERSION=$(node -p "require('./package.json').version")
+          NPM_VERSION=$(npm view "$PACKAGE_NAME" version 2>/dev/null || echo "0.0.0")
+          echo "Local: $LOCAL_VERSION, NPM: $NPM_VERSION"
+
+          # If local version is not greater than npm version, bump from npm version
+          if [ "$(npx semver "$LOCAL_VERSION" -r ">$NPM_VERSION")" = "" ]; then
+            echo "Local version is not ahead of npm, bumping from $NPM_VERSION..."
+            # Temporarily set version to npm version so `npm version patch` increments correctly
+            npm version "$NPM_VERSION" --no-git-tag-version --allow-same-version
             npm version patch --no-git-tag-version
-            npm publish --access public
-          )
+          fi
+
+      - name: Publish
+        run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: Bump version
-        run: |
-          npm version patch --no-git-tag-version
+      - name: Bump version for next release
+        run: npm version patch --no-git-tag-version
 
       - name: Set commit message
         id: commit_message_step
