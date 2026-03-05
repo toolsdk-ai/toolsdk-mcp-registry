@@ -1,0 +1,9 @@
+{
+  "type": "mcp-server",
+  "name": "WAzion MCP Server",
+  "packageName": "wazion-mcp-server",
+  "description": "244 WhatsApp Business AI tools — messaging, workflow automation, mass marketing, CRM, sentiment analysis, Shopify integration.",
+  "url": "https://github.com/wazionapps/mcp-server",
+  "runtime": "node",
+  "license": "unknown"
+}
