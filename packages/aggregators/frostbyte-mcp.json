@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "name": "Frostbyte MCP",
+  "packageName": "frostbyte-mcp",
+  "description": "MCP server providing 40+ developer tools: IP geolocation, DNS lookup, crypto prices, website screenshots, code execution, DeFi trading, wallet management, and more.",
+  "url": "https://github.com/OzorOwn/frostbyte-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "FROSTBYTE_API_KEY": {
+      "description": "API key for Frostbyte Gateway (get free key at https://agent-gateway-kappa.vercel.app)",
+      "required": false
+    }
+  }
+}
