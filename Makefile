@@ -38,3 +38,8 @@ dev:
 
 fetch-official-mcp:
 	bun scripts/official-registry/index.ts
+
+# Validate a single MCP Server JSON file
+# Usage: make validate FILE=packages/aggregators/1mcp-agent.json
+validate:
+	bun scripts/validate-package.ts $(FILE)
