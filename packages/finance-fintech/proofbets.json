@@ -1,0 +1,11 @@
+{
+  "type": "mcp-server",
+  "packageName": "proofbets",
+  "description": "Query verified crypto casino data, bonus codes, prediction market fees, and World Cup 2026 odds",
+  "url": "https://github.com/vjrmuc/proofbets/tree/main/mcp-server",
+  "homepage": "https://proofbets.com/developers/",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {},
+  "name": "ProofBets"
+}
