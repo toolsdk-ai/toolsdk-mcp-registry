@@ -1,0 +1,10 @@
+{
+  "type": "mcp-server",
+  "packageName": "proofbets",
+  "description": "13-tool MCP server for querying verified crypto casino data, bonus codes, prediction market fees across 7 platforms, and World Cup 2026 odds. Includes on-chain wallet verification via Etherscan and provably fair hash verification.",
+  "url": "https://github.com/proofbets/proofbets-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {},
+  "name": "ProofBets MCP Server"
+}
