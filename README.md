@@ -12,14 +12,14 @@
 <a href="https://github.com/toolsdk-ai/toolsdk-mcp-registry/actions/workflows/test.yaml">
   <img src="https://github.com/toolsdk-ai/toolsdk-mcp-registry/actions/workflows/test.yaml/badge.svg" alt="Build Status" />
 </a>
-<img src="https://img.shields.io/badge/MCP_Servers-4534-blue?style=flat-square" alt="MCP Servers Count" />
+<img src="https://img.shields.io/badge/MCP_Servers-4538-blue?style=flat-square" alt="MCP Servers Count" />
 <img src="https://img.shields.io/badge/LICENSE-MIT-ff69b4?style=flat-square" alt="License" />
 <br />
 <a href="https://www.producthunt.com/products/toolsdk-ai">
   <img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=997428&theme=light&period=daily" alt="Product Hunt" height="40" />
 </a>
 
-<a href="#mcp-servers">🔍 <b>Browse 4534+ Tools</b></a>
+<a href="#mcp-servers">🔍 <b>Browse 4538+ Tools</b></a>
 &nbsp;&nbsp;•&nbsp;&nbsp;
 <a href="#quick-start">🐳 <b>Self-hosted</b></a>
 &nbsp;&nbsp;•&nbsp;&nbsp;
@@ -75,7 +75,7 @@ docker compose up -d
 - *See [Configuration Guide](./docs/DEVELOPMENT.md) for full details.*
 
 > [!TIP]
-> **Tip for Private Deployment**: This registry contains 4534+ public MCP servers. If you only need a specific subset for your private environment, you can prune the `packages/` directory.
+> **Tip for Private Deployment**: This registry contains 4538+ public MCP servers. If you only need a specific subset for your private environment, you can prune the `packages/` directory.
 > 📖 See [Package Management Guide](./docs/DEVELOPMENT.md#5--package-management-for-private-deployment) for details.
 
 That's it! Your self-hosted MCP registry is now running with:
@@ -87,7 +87,7 @@ That's it! Your self-hosted MCP registry is now running with:
 
 - 🌐 **Local Web Interface**: http://localhost:3003
 - 📚 **Swagger API Docs**: http://localhost:3003/swagger  
-- 🔍 **Search & Execute** 4534+ MCP Servers remotely
+- 🔍 **Search & Execute** 4538+ MCP Servers remotely
 - 🤖 **Integrate** with your AI agents, chatbots, and LLM applications
 
 #### 🌐 Remote Tool Execution Example
@@ -221,7 +221,7 @@ graph TD
 
 This open-source project provides:
 
-- **Structured Registry** - 4534+ MCP servers with metadata
+- **Structured Registry** - 4538+ MCP servers with metadata
 - **Unified Gateway** - HTTP API to query and execute tools remotely
 - **Auto-Generated Docs** - Always up-to-date README and API documentation
 
@@ -320,12 +320,12 @@ Your MCP server will be:
 
 ## MCP Servers Directory
 
-**4534+ AI Agent Tools, LLM Integrations & Automation Servers**
+**4538+ AI Agent Tools, LLM Integrations & Automation Servers**
 
 > [!NOTE]
 > ⭐ **Featured below**: Hand-picked, production-ready MCP servers verified by our team.
 >
-> 📚 **Looking for all 4534+ servers?** Check out [**All MCP Servers**](./docs/ALL-MCP-SERVERS.md) for the complete list.
+> 📚 **Looking for all 4538+ servers?** Check out [**All MCP Servers**](./docs/ALL-MCP-SERVERS.md) for the complete list.
 
 > [!TIP]
 > If a package is marked as `validated: true` in the index, you can usually wire it up in minutes via ToolSDK (e.g. `getAISDKTool(toolKey)`).

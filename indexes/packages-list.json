@@ -56537,8 +56537,32 @@
     }
   },
   "defi-mcp": {
-    "path": "finance-fintech/defi-mcp.json",
     "category": "finance-fintech",
+    "path": "finance-fintech/defi-mcp.json",
+    "validated": false,
+    "tools": {}
+  },
+  "frostbyte-mcp": {
+    "path": "aggregators/frostbyte-mcp.json",
+    "category": "aggregators",
+    "tools": {},
+    "validated": false
+  },
+  "wazion-mcp-server": {
+    "path": "communication/wazion-mcp-server.json",
+    "category": "communication",
+    "tools": {},
+    "validated": false
+  },
+  "@toolsdk-remote/proofbets-mcp": {
+    "path": "finance-fintech/toolsdk-remote-proofbets-mcp.json",
+    "category": "finance-fintech",
+    "tools": {},
+    "validated": false
+  },
+  "geoscore-mcp": {
+    "path": "marketing/geoscore-mcp.json",
+    "category": "marketing",
     "tools": {},
     "validated": false
   }

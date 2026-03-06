@@ -14335,8 +14335,8 @@ packages:
   '@types/node@24.3.0':
     resolution: {integrity: sha512-aPTXCrfwnDLj4VvXrm+UUCQjNEvJgNA8s5F1cvwQU+3KNltTOkBm1j30uNLyqqPNe7gE3KFzImYoZEfLhp4Yow==}
 
-  '@types/node@25.3.3':
-    resolution: {integrity: sha512-DpzbrH7wIcBaJibpKo9nnSQL0MTRdnWttGyE5haGwK86xgMOkFLp7vEyfQPGLOJh5wNYiJ3V9PmUMDhV9u8kkQ==}
+  '@types/node@25.3.5':
+    resolution: {integrity: sha512-oX8xrhvpiyRCQkG1MFchB09f+cXftgIXb3a7UUa4Y3wpmZPw5tyZGTLWhlESOLq1Rq6oDlc8npVU2/9xiCuXMA==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -36733,7 +36733,7 @@ snapshots:
     dependencies:
       '@modelcontextprotocol/sdk': 1.27.1(@cfworker/json-schema@4.1.1)(zod@3.25.76)
       '@types/luxon': 3.7.1
-      '@types/node': 25.3.3
+      '@types/node': 25.3.5
       luxon: 3.7.2
       qrcode: 1.5.4
       qrcode-terminal: 0.12.0
@@ -41651,7 +41651,7 @@ snapshots:
 
   '@mendable/firecrawl-js@1.27.0':
     dependencies:
-      axios: 1.11.0
+      axios: 1.13.2(debug@4.4.1)
       typescript-event-target: 1.1.1
       zod: 3.25.76
       zod-to-json-schema: 3.24.6(zod@3.25.76)
@@ -42034,7 +42034,7 @@ snapshots:
     dependencies:
       '@modelcontextprotocol/sdk': 1.27.1(@cfworker/json-schema@4.1.1)(zod@3.25.76)
       '@types/luxon': 3.7.1
-      '@types/node': 25.3.3
+      '@types/node': 25.3.5
       luxon: 3.7.2
       qrcode: 1.5.4
       qrcode-terminal: 0.12.0
@@ -51648,7 +51648,7 @@ snapshots:
     dependencies:
       undici-types: 7.10.0
 
-  '@types/node@25.3.3':
+  '@types/node@25.3.5':
     dependencies:
       undici-types: 7.18.2
 

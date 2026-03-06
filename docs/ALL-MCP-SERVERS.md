@@ -1,6 +1,6 @@
 # 📚 All MCP Servers
 
-> **Complete directory of all 4534+ MCP servers in the ToolSDK Registry**
+> **Complete directory of all 4538+ MCP servers in the ToolSDK Registry**
 >
 > Looking for production-ready servers only? See the [main README](../README.md) for validated servers.
 
@@ -8,9 +8,9 @@
 
 ## 📊 Statistics
 
-- 📦 **Total Servers**: 4534
+- 📦 **Total Servers**: 4538
 - ✅ **Validated & Tested**: 812
-- ⚙️ **Community Contributed**: 3722
+- ⚙️ **Community Contributed**: 3726
 
 ---
 
@@ -625,7 +625,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 
 
 <a id="aggregators"></a>
-### Aggregators <small>(84 servers)</small>
+### Aggregators <small>(85 servers)</small>
 
 > Servers that let you access multiple apps and tools through one MCP server.
 
@@ -670,6 +670,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [❌ dify](https://github.com/zhuzhoulin/dify-mcp-server): Integrates with Dify's AI application platform, enabling seamless creation, management, and deployment of AI applications through TypeScript-based request handling and API bridging.  (node) 
 - [❌ dify-workflows](https://github.com/gotoolkits/mcp-difyworkflow-server): Integrates with the Dify API to enable AI-driven workflow execution and management for automated task processing and decision making across domains.  (go) 
 - [❌ fastn](https://github.com/fastnai/mcp-fastn): Dynamically registers and executes tools across multiple services, enabling seamless integration and real-time operations through a flexible, API-driven platform with robust logging and error handling.  (python) 
+- [❌ frostbyte-mcp](https://github.com/OzorOwn/frostbyte-mcp): MCP server providing 40+ developer tools: IP geolocation, DNS lookup, crypto prices, website screenshots, code execution, DeFi trading, wallet management, and more.  (node) 
 - [❌ gateway](https://github.com/arnavsurve/gateway-mcp): Connects AI assistants to multiple specialized services through a unified gateway, enabling dynamic tool discovery and seamless interaction across various MCP servers and HTTP APIs without leaving the conversation context.  (python) 
 - [❌ gemini-mcp-server](https://github.com/lucky-dersan/gemini-mcp-server): A Python-based MCP server that enables integration of Gemini AI models with MCP-compatible applications like Cursor/Claude, allowing for interaction with Gemini APIs through the Model Context Protocol.  (python) 
 - [❌ gemsuite-(google-gemini)](https://github.com/pv-bhat/gemsuite-mcp): Integrates with Google's Gemini API through specialized tools for search, reasoning, processing, and file analysis, automatically selecting optimal models based on content type.  (node) 
@@ -1461,7 +1462,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 
 
 <a id="communication"></a>
-### Communication <small>(211 servers)</small>
+### Communication <small>(212 servers)</small>
 
 > Connect with messaging platforms to manage chats and interact with team tools.
 
@@ -1660,6 +1661,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [❌ vonage-assist](https://github.com/micahman33/vonageaicodeassist): Integrates with Vonage APIs to provide targeted documentation search and retrieval for developers implementing communication features like SMS, voice, verification, and video.  (python) 
 - [❌ votars](https://github.com/scarletlabs-ai/votars-mcp): Integrates with Votars platform to provide access to meeting transcripts, enabling retrieval and analysis of voice recordings through transcript fetching tools.  (go) 
 - [❌ warpcast](https://github.com/zhangzhongnan928/mcp-warpcast-server): Integrates with Warpcast to enable posting, reading, searching, and managing interactions on the Farcaster social network for automated content curation and trend analysis.  (python) 
+- [❌ wazion-mcp-server](https://github.com/wazionapps/mcp-server): 244 WhatsApp Business AI tools — messaging, workflow automation, mass marketing, CRM, sentiment analysis, Shopify integration.  (node) 
 - [❌ webex-mcp-server](https://github.com/Kashyap-AI-ML-Solutions/webex-messaging-mcp-server): A Model Context Protocol (MCP) server that provides AI assistants with comprehensive access to Cisco Webex messaging capabilities.  (node) 
 - [❌ wechat-summarizer](https://github.com/chatmcp/mcp-server-chatsum): Hook into your WeChat history and pull summaries of conversations.  (node) 
 - [❌ wecom](https://github.com/gotoolkits/mcp-wecombot-server): Integrates WeCom group messaging, enabling automated sending of diverse message types and file uploads for streamlined team communication and notifications.  (go) 
@@ -2711,7 +2713,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 
 
 <a id="finance-fintech"></a>
-### Finance & Fintech <small>(270 servers)</small>
+### Finance & Fintech <small>(271 servers)</small>
 
 > Work with financial data, market info, and trading platforms using AI tools.
 
@@ -2774,6 +2776,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [❌ @paypal/mcp](https://github.com/paypal/paypal-mcp-server): A command line tool for setting up PayPal MCP server  (node) 
 - [❌ @stripe/agent-toolkit](https://github.com/stripe/agent-toolkit): Integrates with Stripe's API to enable payment processing, customer management, and financial operations for e-commerce and billing workflows.  (node) 
 - [❌ @stripe/agent-toolkit/tree/main/modelcontextprotocol](https://github.com/stripe/agent-toolkit/tree/main/modelcontextprotocol): The Stripe Model Context Protocol server allows you to integrate with Stripe APIs through function calling.  (node) 
+- [❌ @toolsdk-remote/proofbets-mcp](https://github.com/proofbets/proofbets-mcp): Casino intelligence with 13 tools: search 50+ crypto casinos, verify bonus codes, calculate EV, compare P2P prediction markets (Polymarket, Kalshi, Azuro), and on-chain wallet verification  (node) 
 - [❌ @toolsdk.ai/mcp-mercury](https://github.com/dragonkhoi/mercury-mcp/tree/main/src): Simple MCP server that interfaces with the Mercury API, allowing you to talk to your Mercury banking data from any MCP client like Cursor or Claude Desktop.  (node) 
 - [❌ 1inch-cross-chain-swap](https://github.com/vaibhavgeek/one_inch_mcp): Execute cross-chain token swaps using 1inch Fusion+  (node) 
 - [❌ a-share-financial-data-(baostock)](https://github.com/24mlight/a-share-mcp-is-just-i-need): Provides financial data tools for Chinese stock market analysis through the Baostock API, enabling retrieval of historical prices, financial reports, industry classifications, index constituents, and macroeconomic indicators.  (python) 
@@ -3323,7 +3326,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 
 
 <a id="marketing"></a>
-### Marketing <small>(50 servers)</small>
+### Marketing <small>(51 servers)</small>
 
 > Create and edit marketing content, manage metadata, and refine product positioning.
 
@@ -3355,6 +3358,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [❌ clickfunnels](https://github.com/illgatesmusic/click-funnels-mcp-shared): Integrates with ClickFunnels marketing platform to provide tools for listing and retrieving funnels, managing contacts, and debugging API connections through a modular TypeScript architecture.  (node) 
 - [❌ facebook-ads](https://github.com/gomarble-ai/facebook-ads-mcp-server): Integrates with Facebook's advertising platform to retrieve and analyze ad account data, campaign metrics, ad sets, creatives, and performance insights using the Facebook Graph API.  (python) 
 - [❌ facebook-ads-library](https://github.com/trypeggy/facebook-ads-library-mcp): Integrates with Meta's advertising platform through the Scrape Creators API to search for brand platform IDs and retrieve currently running Facebook ads with structured data including media URLs, ad copy, and campaign timing for competitive analysis and marketing intelligence.  (python) 
+- [❌ geoscore-mcp](https://github.com/henu-wang/geoscore-mcp): AI search optimization (GEO). Scan websites for AI search readiness, generate llms.txt, Schema.org fixes, meta tag optimizations.  (node) 
 - [❌ google-ads](https://github.com/cohnen/mcp-google-ads): Integrates with Google Ads API to enable direct access and management of advertising campaigns, performance analysis, and optimization within conversations.  (python) 
 - [❌ hypefury](https://github.com/eugenechabanov/hf-mcp): Enables AI systems to authenticate with and schedule posts through the Hypefury platform, creating a secure bridge for automated content publishing workflows.  (node) 
 - [❌ instagram-analytics](https://github.com/duhlink/instagram-server-next-mcp): Integrates with Instagram's API and web scraping tools to enable social media analytics, account management, and content strategy insights.  (node) 
