@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "OBSD LaunchPad",
+  "packageName": "obsd-launchpad-mcp",
+  "description": "MCP server for AI agents to deploy, trade, and earn on the OBSD LaunchPad (Base chain). 12 tools: launch tokens, buy/sell, claim fees, referrals, and analytics.",
+  "url": "https://github.com/thryxagi/obsd-launchpad",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "PRIVATE_KEY": {
+      "description": "Private key for the deployer wallet (hex string)",
+      "required": true
+    },
+    "RPC_URL": {
+      "description": "Base mainnet RPC URL (defaults to https://mainnet.base.org)",
+      "required": false
+    }
+  }
+}
