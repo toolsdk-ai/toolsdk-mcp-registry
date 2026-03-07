@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/com-bamboosnow-omnis-venture-intelligence",
+  "name": "Omnis Venture Intelligence MCP",
+  "description": "Hosted MCP and API for startup discovery, company scoring, venture monitoring, and private workspace automation for investors and autonomous agents.",
+  "url": "https://github.com/HCS412/ventureautomated",
+  "runtime": "node",
+  "license": "mit",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.bamboosnow.co/api/v1/mcp"
+    }
+  ]
+}
