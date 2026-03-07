@@ -1,0 +1,9 @@
+{
+  "type": "mcp-server",
+  "name": "OBSD LaunchPad MCP",
+  "packageName": "obsd-launchpad-mcp",
+  "description": "Token Lifecycle Server for AI Agents on Base. 12 tools for deploying, trading, and managing tokens on OBSD LaunchPad.",
+  "url": "https://github.com/thryxagi/obsd-launchpad",
+  "runtime": "node",
+  "license": "unknown"
+}
