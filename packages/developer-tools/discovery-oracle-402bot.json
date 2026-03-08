@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "402.bot Discovery Oracle",
+  "packageName": "@toolsdk-remote/discovery-oracle-402bot",
+  "description": "Discover live agent APIs, ranked endpoints, trust, payment telemetry, and x402 surfaces.",
+  "url": "https://github.com/sam00101011/402.bot-public",
+  "runtime": "node",
+  "logo": "https://api.402.bot/brand/402bot-logo-400.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.402.bot/mcp"
+    }
+  ]
+}
