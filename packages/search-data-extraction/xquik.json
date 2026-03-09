@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "packageName": "xquik",
+  "name": "Xquik X/Twitter Data Platform",
+  "description": "X/Twitter data platform — MCP server, 76 REST API endpoints, 20 extraction tools",
+  "url": "https://github.com/Xquik-dev/x-twitter-scraper",
+  "runtime": "node",
+  "license": "UNLICENSED",
+  "env": {
+    "XQUIK_API_KEY": {
+      "description": "API key for authenticating with the Xquik MCP server",
+      "required": true
+    }
+  }
+}
