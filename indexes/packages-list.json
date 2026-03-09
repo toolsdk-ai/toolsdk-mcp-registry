@@ -56543,26 +56543,119 @@
     "tools": {}
   },
   "frostbyte-mcp": {
-    "path": "aggregators/frostbyte-mcp.json",
     "category": "aggregators",
-    "tools": {},
-    "validated": false
+    "path": "aggregators/frostbyte-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "wazion-mcp-server": {
-    "path": "communication/wazion-mcp-server.json",
     "category": "communication",
-    "tools": {},
-    "validated": false
+    "path": "communication/wazion-mcp-server.json",
+    "validated": false,
+    "tools": {}
   },
   "@toolsdk-remote/proofbets-mcp": {
-    "path": "finance-fintech/toolsdk-remote-proofbets-mcp.json",
     "category": "finance-fintech",
-    "tools": {},
-    "validated": false
+    "path": "finance-fintech/toolsdk-remote-proofbets-mcp.json",
+    "validated": false,
+    "tools": {}
   },
   "geoscore-mcp": {
-    "path": "marketing/geoscore-mcp.json",
     "category": "marketing",
+    "path": "marketing/geoscore-mcp.json",
+    "validated": false,
+    "tools": {}
+  },
+  "agentic-ads": {
+    "category": "uncategorized",
+    "path": "uncategorized/agentic-ads.json",
+    "validated": false,
+    "tools": {}
+  },
+  "proofbets": {
+    "category": "finance-fintech",
+    "path": "finance-fintech/proofbets.json",
+    "validated": false,
+    "tools": {}
+  },
+  "obsd-launchpad-mcp": {
+    "category": "finance-fintech",
+    "path": "finance-fintech/obsd-launchpad.json",
+    "validated": true,
+    "tools": {
+      "get_platform_stats": {
+        "name": "get_platform_stats",
+        "description": "Get OBSD LaunchPad platform statistics — total launches, ETH fees collected, contract addresses"
+      },
+      "list_launches": {
+        "name": "list_launches",
+        "description": "List tokens launched on the OBSD LaunchPad. Optionally filter by creator address."
+      },
+      "get_token_info": {
+        "name": "get_token_info",
+        "description": "Get detailed info about a token deployed on the OBSD LaunchPad — stats, pool, creator, earnings, fees"
+      },
+      "get_creator_earnings": {
+        "name": "get_creator_earnings",
+        "description": "Check OBSD earnings for a creator address across all their launched tokens"
+      },
+      "quote_buy": {
+        "name": "quote_buy",
+        "description": "Get a quote for buying a token with ETH via the PlatformRouter (includes 0.5% ETH fee)"
+      },
+      "quote_sell": {
+        "name": "quote_sell",
+        "description": "Get a quote for selling a LaunchPad token back to ETH via PlatformRouter"
+      },
+      "launch_token": {
+        "name": "launch_token",
+        "description": "Deploy a new token on the OBSD LaunchPad. Requires DEPLOYER_PRIVATE_KEY env var. The token is paired with OBSD on Aerodrome — the creator earns OBSD on every swap forever."
+      },
+      "buy_token": {
+        "name": "buy_token",
+        "description": "Buy a LaunchPad token with ETH via PlatformRouter. Requires DEPLOYER_PRIVATE_KEY env var. 0.5% ETH fee goes to treasury, swap fees earn OBSD for the token creator."
+      },
+      "sell_token": {
+        "name": "sell_token",
+        "description": "Sell a LaunchPad token for ETH via PlatformRouter. Requires DEPLOYER_PRIVATE_KEY env var. Tokens are approved and swapped automatically."
+      },
+      "claim_fees": {
+        "name": "claim_fees",
+        "description": "Distribute pending swap fees for a LaunchPad token. Fees are split: 37.5% to creator, 37.5% to treasury, 25% to backing vault. Anyone can call this — it benefits the creator."
+      },
+      "get_pool_info": {
+        "name": "get_pool_info",
+        "description": "Get Aerodrome pool info for a LaunchPad token — pool balances, supply, burn stats"
+      },
+      "get_staking_info": {
+        "name": "get_staking_info",
+        "description": "Get OBSD StakingVault stats — total staked, OBSD balance, fee aggregator address"
+      },
+      "register_referral": {
+        "name": "register_referral",
+        "description": "Register as an OBSD affiliate. Claim a unique referral code linked to your wallet. When agents launch tokens using your code, you earn 5% of their creator OBSD fees forever. Requires DEPLOYER_PRIVATE_KEY."
+      },
+      "get_referral_stats": {
+        "name": "get_referral_stats",
+        "description": "Check referral stats for a wallet or code. See how many tokens were launched with your referral, and track your affiliate earnings."
+      },
+      "scan_token_security": {
+        "name": "scan_token_security",
+        "description": "FREE — Check if any Base ERC-20 token is safe. Detects honeypot risk, hidden mint, blacklist, pause, owner permissions. No wallet needed."
+      },
+      "get_trending_tokens": {
+        "name": "get_trending_tokens",
+        "description": "FREE — Get trending tokens on Base from DexScreener. Shows price, volume, liquidity, price change. No wallet needed."
+      },
+      "analyze_wallet": {
+        "name": "analyze_wallet",
+        "description": "FREE — Analyze any wallet on Base. Shows ETH balance and checks holdings of popular Base tokens. No wallet needed."
+      }
+    }
+  },
+  "@cabin/agent": {
+    "path": "uncategorized/cabin-flights.json",
+    "category": "uncategorized",
     "tools": {},
     "validated": false
   }

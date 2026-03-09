@@ -1,7 +1,7 @@
 {
   "type": "mcp-server",
   "name": "Cabin Flights",
-  "packageName": "@cabin/agent",
+  "packageName": "@cabin/agent", 
   "description": "AI-first travel booking with natural language. Search flights with crypto micropayments.",
   "url": "https://github.com/yolo-maxi/cabin",
   "runtime": "node",

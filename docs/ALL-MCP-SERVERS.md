@@ -1,6 +1,6 @@
 # 📚 All MCP Servers
 
-> **Complete directory of all 4538+ MCP servers in the ToolSDK Registry**
+> **Complete directory of all 4542+ MCP servers in the ToolSDK Registry**
 >
 > Looking for production-ready servers only? See the [main README](../README.md) for validated servers.
 
@@ -8,9 +8,9 @@
 
 ## 📊 Statistics
 
-- 📦 **Total Servers**: 4538
-- ✅ **Validated & Tested**: 812
-- ⚙️ **Community Contributed**: 3726
+- 📦 **Total Servers**: 4542
+- ✅ **Validated & Tested**: 813
+- ⚙️ **Community Contributed**: 3729
 
 ---
 
@@ -55,7 +55,7 @@
 
 
 <a id="uncategorized"></a>
-### Uncategorized <small>(557 servers)</small>
+### Uncategorized <small>(559 servers)</small>
 
 > Tools that haven’t been sorted into a category yet. AI will categorize it later.
 
@@ -202,6 +202,7 @@ New mcp tool: Exa-code is a context tool for coding   (1 tools) (node)
 - [❌ @anyproto/anytype-mcp](https://github.com/anyproto/anytype-mcp): Converts any OpenAPI 3.0/3.1 specification into callable tools by automatically generating schemas from REST API endpoints, handling authentication via environment variables, and supporting file uploads through multipart form-data while filtering out destructive operations.  (node) 
 - [❌ @atlassian-dc-mcp/confluence](https://github.com/b1ff/atlassian-dc-mcp): MCP server for Atlassian Confluence Data Center - access and manage content  (node) 
 - [❌ @brightdata/mcp](https://github.com/brightdata/brightdata-mcp): Integrates with Bright Data's web scraping infrastructure to provide real-time access to public web data through specialized tools for search engine scraping, webpage extraction, and structured data retrieval from popular websites.  (node) 
+- [❌ @cabin/agent](https://github.com/yolo-maxi/cabin): AI-first travel booking with natural language. Search flights with crypto micropayments.  (node) 
 - [❌ @cablate/mcp-google-calendar](https://github.com/cablate/mcp-google-calendar): Integrates with Google Calendar API to enable creating, updating, and retrieving calendar events for seamless scheduling and event management.  (node) 
 - [❌ @cashfreepayments/cashfree-mcp](https://github.com/cashfree/cashfree-mcp): Cashfree MCP server for cashfree docs and APIs  (node) 
 - [❌ @coolver/home-assistant-mcp](https://github.com/Coolver/home-assistant-mcp): Vibecode your Home Assistant setup from your IDE: automations, dashboards, themes and configs  (node) 
@@ -436,6 +437,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [❌ adamik-(blockchain-and-ai)](https://github.com/adamikhq/adamik-mcp-server): Integrates with the Adamik API to enable blockchain operations and custom AI functionalities via Starknet, supporting secure API key management and efficient request handling.  (node) 
 - [❌ agent-mcp-gateway](https://github.com/roddutra/agent-mcp-gateway): On-demand tool discovery for all your MCPs and per-subagent MCP controls to preserve context window.  (python) 
 - [❌ agentcare-(fhir-emr)](https://github.com/kartha-ai/agentcare-mcp): Integrates with FHIR-enabled EMR systems to provide healthcare tools for patient data retrieval, medical research integration, and AI-assisted clinical analysis.  (node) 
+- [❌ agentic-ads](https://github.com/nicofains1/agentic-ads): Affiliate marketing SDK for MCP servers. Earn USDC on Base for each click on sponsored contextual recommendations. Integrates via MCP tool calls.  (node) 
 - [❌ airflow-mcp-server](https://github.com/abhishekbhakat/airflow-mcp-server): Bridges Claude with Apache Airflow, enabling direct interaction with workflow orchestration through read-only or full-access modes for listing, checking, triggering, and managing Airflow resources via natural language.  (python) 
 - [❌ alchemy-blockchain-api](https://github.com/alchemyplatform/alchemy-mcp-server): Integrates with Alchemy's blockchain APIs to enable querying token prices, NFT ownership, transaction history, and token balances across multiple blockchain networks without writing code.  (node) 
 - [❌ alchemy-sdk](https://github.com/itsanishjain/alchemy-sdk-mcp): Integrates with the Alchemy SDK to enable blockchain and NFT operations, including retrieving metadata, fetching token balances, and querying blockchain data.  (node) 
@@ -2713,7 +2715,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 
 
 <a id="finance-fintech"></a>
-### Finance & Fintech <small>(271 servers)</small>
+### Finance & Fintech <small>(273 servers)</small>
 
 > Work with financial data, market info, and trading platforms using AI tools.
 
@@ -2753,6 +2755,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [✅ mcp-lighthouse](https://github.com/l3wi/mcp-lighthouse): Integrates with Lighthouse.one cryptocurrency portfolio tracker to fetch and display detailed portfolio data including total value, asset allocations, and major holdings through secure token-based authentication.  (5 tools) (node) 
 - [✅ mercadolibre-mcp](https://github.com/lumile/mercadolibre-mcp): Integrates with MercadoLibre's e-commerce platform to simplify product and seller data retrieval, enabling functions like price monitoring, inventory management, and market analysis.  (3 tools) (node) 
 - [✅ moneybird-mcp-server](https://github.com/vanderheijden86/moneybird-mcp-server): Bridges Moneybird accounting software with natural language interaction, enabling users to manage contacts, invoices, financial accounts, products, projects, and time entries through conversational prompts.  (10 tools) (node) 
+- [✅ obsd-launchpad-mcp](https://github.com/thryxagi/obsd-launchpad): MCP server for AI agents to deploy, trade, and earn on the OBSD LaunchPad (Base chain). 12 tools: launch tokens, buy/sell, claim fees, referrals, and analytics.  (17 tools) (node) 
 - [✅ octagon-mcp](https://github.com/octagonai/octagon-mcp-server): Provides specialized investment research tools for analyzing SEC filings, earnings calls, financial data, stock market information, private company details, funding rounds, M&A transactions, and web scraping capabilities.  (3 tools) (node) 
 - [✅ octav-api-mcp](https://github.com/Octav-Labs/octav-api-mcp): Multi-chain crypto portfolio tracking MCP server. Access wallet holdings, DeFi protocol positions, transaction history, and token analytics across 20+ blockchains directly from Claude.  (14 tools) (node) 
 - [✅ search-stock-news-mcp](https://github.com/cognitive-stack/search-stock-news-mcp): Provides a specialized tool for retrieving stock-related news using the Tavily API, enabling financial searches by stock symbol and company name with configurable parameters for Vietnamese financial sources like CafeF and Nguoi Quan Sat.  (2 tools) (node) 
@@ -2921,6 +2924,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [❌ poker-win-calculator](https://github.com/watsonchua/poker_win_calculator): Calculates poker hand win probabilities through Monte Carlo simulations, providing strategic action recommendations based on statistical analysis of possible outcomes.  (python) 
 - [❌ polygon.io](https://github.com/polygon-io/mcp_polygon): Provides complete access to Polygon.io's financial market data API with 35+ tools covering stocks, options, forex, and crypto including real-time trades, quotes, aggregates, market snapshots, ticker details, news, dividends, splits, and financial fundamentals for trading research and market analysis.  (python) 
 - [❌ polymarket](https://github.com/berlinbra/polymarket-mcp): Integrates with PolyMarket's API to fetch and analyze prediction market data for financial insights and decision support.  (python) 
+- [❌ proofbets](https://github.com/vjrmuc/proofbets/tree/main/mcp-server): Query verified crypto casino data, bonus codes, prediction market fees, and World Cup 2026 odds  (node) 
 - [❌ pump.fun](https://github.com/noahgsolomon/pumpfun-mcp-server): Enables direct interaction with the Pump.fun platform on Solana blockchain for creating, buying, and selling tokens with customizable parameters and secure wallet management.  (node) 
 - [❌ quantconnect-mcp](https://github.com/taylorwilsdon/quantconnect-mcp): Integrates with QuantConnect's quantitative finance platform to provide historical data retrieval, statistical analysis, portfolio optimization, universe selection, alternative data access, backtest execution, and project management for algorithmic trading research and financial analytics workflows.  (python) 
 - [❌ quickbooks-time](https://github.com/aallsbury/qb-time-mcp-server): Integrates with QuickBooks Time API to provide unified access for managing timesheets, users, projects, and generating reports.  (python) 

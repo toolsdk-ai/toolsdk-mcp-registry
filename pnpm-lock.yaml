@@ -1045,7 +1045,7 @@ importers:
         version: 1.10.0
       base-network-mcp-server:
         specifier: 0.1.0
-        version: 0.1.0(@aws-sdk/credential-providers@3.835.0)(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(@cfworker/json-schema@4.1.1)(@types/react@19.1.8)(aws4fetch@1.0.20)(bufferutil@4.0.9)(encoding@0.1.13)(immer@10.1.1)(ioredis@5.5.0)(kerberos@2.2.2)(mongodb-client-encryption@6.5.0)(react@18.3.1)(socks@2.8.5)(typescript@5.8.3)(uploadthing@7.7.3(express@5.2.1)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))(zod@3.25.76)
+        version: 0.1.0(@aws-sdk/credential-providers@3.835.0)(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(@cfworker/json-schema@4.1.1)(@types/react@19.1.8)(aws4fetch@1.0.20)(bufferutil@4.0.9)(encoding@0.1.13)(immer@10.1.1)(ioredis@5.5.0)(kerberos@2.2.2)(mongodb-client-encryption@6.5.0)(react@18.3.1)(socks@2.8.5)(typescript@5.8.3)(uploadthing@7.7.3(express@4.21.2)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))(zod@3.25.76)
       better-fetch-mcp:
         specifier: 1.0.0
         version: 1.0.0
@@ -1730,6 +1730,9 @@ importers:
       ntfy-me-mcp:
         specifier: 1.3.5
         version: 1.3.5(@cfworker/json-schema@4.1.1)
+      obsd-launchpad-mcp:
+        specifier: 1.0.7
+        version: 1.0.7(@cfworker/json-schema@4.1.1)(bufferutil@4.0.9)(typescript@5.8.3)
       octagon-deep-research-mcp:
         specifier: 1.0.18
         version: 1.0.18(@cfworker/json-schema@4.1.1)(encoding@0.1.13)(ws@8.18.3(bufferutil@4.0.9))
@@ -8939,6 +8942,10 @@ packages:
     resolution: {integrity: sha512-j84kjAbzEnQHaSIhRPUmB3/eVXu2k3dKPl2LOrR8fSOIL+89U+7lV117EWHtq/GHM3ReGHM46iRBdZfpc4HRUQ==}
     engines: {node: ^14.21.3 || >=16}
 
+  '@noble/curves@1.9.1':
+    resolution: {integrity: sha512-k11yZxZg+t+gWvBbIswW0yoJlu8cHOC7dhunwOzoWH/mXGBiYyR4YY6hAEK/3EUs4UpB8la1RfdRpeGsFHkWsA==}
+    engines: {node: ^14.21.3 || >=16}
+
   '@noble/curves@1.9.2':
     resolution: {integrity: sha512-HxngEd2XUcg9xi20JkwlLCtYwfoFw4JGkuZpT+WlsPD4gB/cxkvTD8fSsoAnphGZhFdZYKeQIPCuFlWPm1uE0g==}
     engines: {node: ^14.21.3 || >=16}
@@ -12997,6 +13004,9 @@ packages:
     resolution: {integrity: sha512-b6aFYmvk0vNCBhG6n6ufivUN1EOBl/d8yQqMiJr1vST1XqzGBp6lSQZlGfxTfH0ZbEy6caPwUmJyBOeICL2WWA==}
     hasBin: true
 
+  '@spruceid/siwe-parser@2.1.2':
+    resolution: {integrity: sha512-d/r3S1LwJyMaRAKQ0awmo9whfXeE88Qt00vRj91q5uv5ATtWIQEGJ67Yr5eSZw5zp1/fZCXZYuEckt8lSkereQ==}
+
   '@spruceid/siwe-parser@3.0.0':
     resolution: {integrity: sha512-Y92k63ilw/8jH9Ry4G2e7lQd0jZAvb0d/Q7ssSD0D9mp/Zt2aCXIc3g0ny9yhplpAx1QXHsMz/JJptHK/zDGdw==}
 
@@ -15073,6 +15083,24 @@ packages:
     resolution: {integrity: sha512-FNoYzHawTMk/6KMQoEG5O4PuioX19UbwdQKF44yw0nLfOypfQdjtfZzo/UIJWAJ23sNIFbD1Ug9lbaDGMwbqQA==}
     engines: {node: '>=8'}
 
+  '@x402/core@2.6.0':
+    resolution: {integrity: sha512-ISC/JeVss6xlKvor2rp18tJf9K5OQlIDDfZW1VZJQGDI2F4gy+HWxxkFfcQalCsPp4YUlwqh0YOkUxP+LTZWVg==}
+
+  '@x402/evm@2.6.0':
+    resolution: {integrity: sha512-wPkNHf483gie1Up2sJSvERnW+VIEvMoT1KRXr09wSoSWgelglsJm+ug3gPPXKnT3C6AcmNAKZ12rBnu9Paff7g==}
+
+  '@x402/express@2.6.0':
+    resolution: {integrity: sha512-Y7If4JD86/z+EpcvlS25REhOutww3O87B4/KBdePC2T+gLIZIjFK0/L8+3wgFINait6276y1FQEMoyNSuM2Gbg==}
+    peerDependencies:
+      '@x402/paywall': 2.6.0
+      express: ^4.0.0 || ^5.0.0
+    peerDependenciesMeta:
+      '@x402/paywall':
+        optional: true
+
+  '@x402/extensions@2.6.0':
+    resolution: {integrity: sha512-aLY9xAOOiRLKDN9HT2r9TYUXbD+IsoBces9qPZNVJGO2TBi2rfmbIBc3pcKCtWKn3iTvG2QFr3gpOFdpJRzqww==}
+
   '@xenova/transformers@2.17.2':
     resolution: {integrity: sha512-lZmHqzrVIkSvZdKZEx7IYY51TK0WDrC8eR0c5IMnBsO8di8are1zzw8BlLhyO2TklZKLN5UffNGs1IJwT6oOqQ==}
 
@@ -15182,6 +15210,17 @@ packages:
     peerDependencies:
       typescript: '>=5.0.4'
       zod: ^3 >=3.22.0
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+      zod:
+        optional: true
+
+  abitype@1.2.3:
+    resolution: {integrity: sha512-Ofer5QUnuUdTFsBRwARMoWKOH1ND5ehwYhJ3OJ/BQO+StkwQjHw0XyVh4vDttzHB7QOFhPHa/o413PJ82gU/Tg==}
+    peerDependencies:
+      typescript: '>=5.0.4'
+      zod: ^3.22.0 || ^4.0.0
     peerDependenciesMeta:
       typescript:
         optional: true
@@ -25645,6 +25684,11 @@ packages:
   obliterator@1.6.1:
     resolution: {integrity: sha512-9WXswnqINnnhOG/5SLimUlzuU1hFJUc8zkwyD59Sd+dPOMf05PmnYG/d6Q7HZ+KmgkZJa1PxRso6QdM3sTNHig==}
 
+  obsd-launchpad-mcp@1.0.7:
+    resolution: {integrity: sha512-0cW2eCiFnARhV3hdkGCrrKm62bxQBrUj7a2Tv4S0Iug6lsrg1ENjhVJiYoZsSmZJpIiyvX3mU00Hu2fa8D01ig==}
+    engines: {node: '>=18'}
+    hasBin: true
+
   obuf@1.1.2:
     resolution: {integrity: sha512-PX1wu0AmAdPqOL1mWhqmlOd8kOIZQwGZw6rh7uby9fTc5lhaOWFLX3I6R1hrF9k3zUY40e6igsLGkDXK92LJNg==}
 
@@ -26052,6 +26096,14 @@ packages:
   own-keys@1.0.1:
     resolution: {integrity: sha512-qFOyK5PjiWZd+QQIh+1jhdb9LpxTF0qs7Pm8o5QHYZ0M3vKqSqzsZaEB6oWlxZ+q2sJBMI/Ktgd2N5ZwQoRHfg==}
     engines: {node: '>= 0.4'}
+
+  ox@0.14.0:
+    resolution: {integrity: sha512-WLOB7IKnmI3Ol6RAqY7CJdZKl8QaI44LN91OGF1061YIeN6bL5IsFcdp7+oQShRyamE/8fW/CBRWhJAOzI35Dw==}
+    peerDependencies:
+      typescript: '>=5.4.0'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
 
   ox@0.8.1:
     resolution: {integrity: sha512-e+z5epnzV+Zuz91YYujecW8cF01mzmrUtWotJ0oEPym/G82uccs7q0WDHTYL3eiONbTUEvcZrptAKLgTBD3u2A==}
@@ -28825,6 +28877,11 @@ packages:
   sisteransi@1.0.5:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
 
+  siwe@2.3.2:
+    resolution: {integrity: sha512-aSf+6+Latyttbj5nMu6GF3doMfv2UYj83hhwZgUF20ky6fTS83uVhkQABdIVnEuS8y1bBdk7p6ltb9SmlhTTlA==}
+    peerDependencies:
+      ethers: ^5.6.8 || ^6.0.8
+
   siwe@3.0.0:
     resolution: {integrity: sha512-P2/ry7dHYJA6JJ5+veS//Gn2XDwNb3JMvuD6xiXX8L/PJ1SNVD4a3a8xqEbmANx+7kNQcD8YAh1B9bNKKvRy/g==}
     peerDependencies:
@@ -31175,6 +31232,9 @@ packages:
       typescript:
         optional: true
 
+  valid-url@1.0.9:
+    resolution: {integrity: sha512-QQDsV8OnSf5Uc30CKSwG9lnhMPe6exHtTXLRYX8uMwKENy640pU+2BgBL0LRbDh/eYRahNCS7aewCx0wf3NYVA==}
+
   validate-npm-package-license@3.0.4:
     resolution: {integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==}
 
@@ -31240,6 +31300,14 @@ packages:
 
   viem@2.31.4:
     resolution: {integrity: sha512-0UZ/asvzl6p44CIBRDbwEcn3HXIQQurBZcMo5qmLhQ8s27Ockk+RYohgTLlpLvkYs8/t4UUEREAbHLuek1kXcw==}
+    peerDependencies:
+      typescript: '>=5.0.4'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+
+  viem@2.47.0:
+    resolution: {integrity: sha512-jU5e1E1s5E5M1y+YrELDnNar/34U8NXfVcRfxtVETigs2gS1vvW2ngnBoQUGBwLnNr0kNv+NUu4m10OqHByoFw==}
     peerDependencies:
       typescript: '>=5.0.4'
     peerDependenciesMeta:
@@ -43660,6 +43728,10 @@ snapshots:
     dependencies:
       '@noble/hashes': 1.7.0
 
+  '@noble/curves@1.9.1':
+    dependencies:
+      '@noble/hashes': 1.8.0
+
   '@noble/curves@1.9.2':
     dependencies:
       '@noble/hashes': 1.8.0
@@ -48484,7 +48556,7 @@ snapshots:
   '@safe-global/safe-apps-sdk@9.1.0(bufferutil@4.0.9)(typescript@5.8.3)(zod@3.25.76)':
     dependencies:
       '@safe-global/safe-gateway-typescript-sdk': 3.23.1
-      viem: 2.31.4(bufferutil@4.0.9)(typescript@5.8.3)(zod@3.25.76)
+      viem: 2.47.0(bufferutil@4.0.9)(typescript@5.8.3)(zod@3.25.76)
     transitivePeerDependencies:
       - bufferutil
       - typescript
@@ -49606,6 +49678,13 @@ snapshots:
       - supports-color
       - typescript
       - valibot
+
+  '@spruceid/siwe-parser@2.1.2':
+    dependencies:
+      '@noble/hashes': 1.8.0
+      apg-js: 4.4.0
+      uri-js: 4.4.1
+      valid-url: 1.0.9
 
   '@spruceid/siwe-parser@3.0.0':
     dependencies:
@@ -52305,15 +52384,15 @@ snapshots:
 
   '@vue/shared@3.5.17': {}
 
-  '@wagmi/connectors@3.1.11(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(@types/react@19.1.8)(aws4fetch@1.0.20)(bufferutil@4.0.9)(encoding@0.1.13)(ioredis@5.5.0)(react@18.3.1)(typescript@5.8.3)(uploadthing@7.7.3(express@5.2.1)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))(viem@1.21.4(bufferutil@4.0.9)(typescript@5.8.3)(zod@3.25.76))(zod@3.25.76)':
+  '@wagmi/connectors@3.1.11(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(@types/react@19.1.8)(aws4fetch@1.0.20)(bufferutil@4.0.9)(encoding@0.1.13)(ioredis@5.5.0)(react@18.3.1)(typescript@5.8.3)(uploadthing@7.7.3(express@4.21.2)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))(viem@1.21.4(bufferutil@4.0.9)(typescript@5.8.3)(zod@3.25.76))(zod@3.25.76)':
     dependencies:
       '@coinbase/wallet-sdk': 3.9.3
       '@safe-global/safe-apps-provider': 0.18.6(bufferutil@4.0.9)(typescript@5.8.3)(zod@3.25.76)
       '@safe-global/safe-apps-sdk': 8.1.0(bufferutil@4.0.9)(typescript@5.8.3)(zod@3.25.76)
-      '@walletconnect/ethereum-provider': 2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(@types/react@19.1.8)(aws4fetch@1.0.20)(bufferutil@4.0.9)(encoding@0.1.13)(ioredis@5.5.0)(react@18.3.1)(uploadthing@7.7.3(express@5.2.1)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))
+      '@walletconnect/ethereum-provider': 2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(@types/react@19.1.8)(aws4fetch@1.0.20)(bufferutil@4.0.9)(encoding@0.1.13)(ioredis@5.5.0)(react@18.3.1)(uploadthing@7.7.3(express@4.21.2)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))
       '@walletconnect/legacy-provider': 2.0.0(encoding@0.1.13)
       '@walletconnect/modal': 2.6.2(@types/react@19.1.8)(react@18.3.1)
-      '@walletconnect/utils': 2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(ioredis@5.5.0)(uploadthing@7.7.3(express@5.2.1)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))
+      '@walletconnect/utils': 2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(ioredis@5.5.0)(uploadthing@7.7.3(express@4.21.2)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))
       abitype: 0.8.7(typescript@5.8.3)(zod@3.25.76)
       eventemitter3: 4.0.7
       viem: 1.21.4(bufferutil@4.0.9)(typescript@5.8.3)(zod@3.25.76)
@@ -52346,9 +52425,9 @@ snapshots:
       - utf-8-validate
       - zod
 
-  '@wagmi/core@1.4.13(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(@types/react@19.1.8)(aws4fetch@1.0.20)(bufferutil@4.0.9)(encoding@0.1.13)(immer@10.1.1)(ioredis@5.5.0)(react@18.3.1)(typescript@5.8.3)(uploadthing@7.7.3(express@5.2.1)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))(viem@1.21.4(bufferutil@4.0.9)(typescript@5.8.3)(zod@3.25.76))(zod@3.25.76)':
+  '@wagmi/core@1.4.13(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(@types/react@19.1.8)(aws4fetch@1.0.20)(bufferutil@4.0.9)(encoding@0.1.13)(immer@10.1.1)(ioredis@5.5.0)(react@18.3.1)(typescript@5.8.3)(uploadthing@7.7.3(express@4.21.2)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))(viem@1.21.4(bufferutil@4.0.9)(typescript@5.8.3)(zod@3.25.76))(zod@3.25.76)':
     dependencies:
-      '@wagmi/connectors': 3.1.11(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(@types/react@19.1.8)(aws4fetch@1.0.20)(bufferutil@4.0.9)(encoding@0.1.13)(ioredis@5.5.0)(react@18.3.1)(typescript@5.8.3)(uploadthing@7.7.3(express@5.2.1)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))(viem@1.21.4(bufferutil@4.0.9)(typescript@5.8.3)(zod@3.25.76))(zod@3.25.76)
+      '@wagmi/connectors': 3.1.11(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(@types/react@19.1.8)(aws4fetch@1.0.20)(bufferutil@4.0.9)(encoding@0.1.13)(ioredis@5.5.0)(react@18.3.1)(typescript@5.8.3)(uploadthing@7.7.3(express@4.21.2)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))(viem@1.21.4(bufferutil@4.0.9)(typescript@5.8.3)(zod@3.25.76))(zod@3.25.76)
       abitype: 0.8.7(typescript@5.8.3)(zod@3.25.76)
       eventemitter3: 4.0.7
       viem: 1.21.4(bufferutil@4.0.9)(typescript@5.8.3)(zod@3.25.76)
@@ -52383,21 +52462,21 @@ snapshots:
       - utf-8-validate
       - zod
 
-  '@walletconnect/core@2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(bufferutil@4.0.9)(encoding@0.1.13)(ioredis@5.5.0)(uploadthing@7.7.3(express@5.2.1)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))':
+  '@walletconnect/core@2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(bufferutil@4.0.9)(encoding@0.1.13)(ioredis@5.5.0)(uploadthing@7.7.3(express@4.21.2)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))':
     dependencies:
       '@walletconnect/heartbeat': 1.2.1
       '@walletconnect/jsonrpc-provider': 1.0.13
       '@walletconnect/jsonrpc-types': 1.0.3
       '@walletconnect/jsonrpc-utils': 1.0.8
       '@walletconnect/jsonrpc-ws-connection': 1.0.14(bufferutil@4.0.9)
-      '@walletconnect/keyvaluestorage': 1.1.1(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(ioredis@5.5.0)(uploadthing@7.7.3(express@5.2.1)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))
+      '@walletconnect/keyvaluestorage': 1.1.1(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(ioredis@5.5.0)(uploadthing@7.7.3(express@4.21.2)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))
       '@walletconnect/logger': 2.1.2
       '@walletconnect/relay-api': 1.0.11
       '@walletconnect/relay-auth': 1.1.0
       '@walletconnect/safe-json': 1.0.2
       '@walletconnect/time': 1.0.2
-      '@walletconnect/types': 2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(ioredis@5.5.0)(uploadthing@7.7.3(express@5.2.1)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))
-      '@walletconnect/utils': 2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(ioredis@5.5.0)(uploadthing@7.7.3(express@5.2.1)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))
+      '@walletconnect/types': 2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(ioredis@5.5.0)(uploadthing@7.7.3(express@4.21.2)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))
+      '@walletconnect/utils': 2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(ioredis@5.5.0)(uploadthing@7.7.3(express@4.21.2)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))
       events: 3.3.0
       isomorphic-unfetch: 3.1.0(encoding@0.1.13)
       lodash.isequal: 4.5.0
@@ -52444,17 +52523,17 @@ snapshots:
     dependencies:
       tslib: 1.14.1
 
-  '@walletconnect/ethereum-provider@2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(@types/react@19.1.8)(aws4fetch@1.0.20)(bufferutil@4.0.9)(encoding@0.1.13)(ioredis@5.5.0)(react@18.3.1)(uploadthing@7.7.3(express@5.2.1)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))':
+  '@walletconnect/ethereum-provider@2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(@types/react@19.1.8)(aws4fetch@1.0.20)(bufferutil@4.0.9)(encoding@0.1.13)(ioredis@5.5.0)(react@18.3.1)(uploadthing@7.7.3(express@4.21.2)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))':
     dependencies:
       '@walletconnect/jsonrpc-http-connection': 1.0.8(encoding@0.1.13)
       '@walletconnect/jsonrpc-provider': 1.0.14
       '@walletconnect/jsonrpc-types': 1.0.4
       '@walletconnect/jsonrpc-utils': 1.0.8
       '@walletconnect/modal': 2.6.2(@types/react@19.1.8)(react@18.3.1)
-      '@walletconnect/sign-client': 2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(bufferutil@4.0.9)(encoding@0.1.13)(ioredis@5.5.0)(uploadthing@7.7.3(express@5.2.1)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))
-      '@walletconnect/types': 2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(ioredis@5.5.0)(uploadthing@7.7.3(express@5.2.1)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))
-      '@walletconnect/universal-provider': 2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(bufferutil@4.0.9)(encoding@0.1.13)(ioredis@5.5.0)(uploadthing@7.7.3(express@5.2.1)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))
-      '@walletconnect/utils': 2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(ioredis@5.5.0)(uploadthing@7.7.3(express@5.2.1)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))
+      '@walletconnect/sign-client': 2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(bufferutil@4.0.9)(encoding@0.1.13)(ioredis@5.5.0)(uploadthing@7.7.3(express@4.21.2)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))
+      '@walletconnect/types': 2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(ioredis@5.5.0)(uploadthing@7.7.3(express@4.21.2)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))
+      '@walletconnect/universal-provider': 2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(bufferutil@4.0.9)(encoding@0.1.13)(ioredis@5.5.0)(uploadthing@7.7.3(express@4.21.2)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))
+      '@walletconnect/utils': 2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(ioredis@5.5.0)(uploadthing@7.7.3(express@4.21.2)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))
       events: 3.3.0
     transitivePeerDependencies:
       - '@azure/app-configuration'
@@ -52539,11 +52618,11 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@walletconnect/keyvaluestorage@1.1.1(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(ioredis@5.5.0)(uploadthing@7.7.3(express@5.2.1)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))':
+  '@walletconnect/keyvaluestorage@1.1.1(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(ioredis@5.5.0)(uploadthing@7.7.3(express@4.21.2)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))':
     dependencies:
       '@walletconnect/safe-json': 1.0.2
       idb-keyval: 6.2.2
-      unstorage: 1.16.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(idb-keyval@6.2.2)(ioredis@5.5.0)(uploadthing@7.7.3(express@5.2.1)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))
+      unstorage: 1.16.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(idb-keyval@6.2.2)(ioredis@5.5.0)(uploadthing@7.7.3(express@4.21.2)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -52663,16 +52742,16 @@ snapshots:
     dependencies:
       tslib: 1.14.1
 
-  '@walletconnect/sign-client@2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(bufferutil@4.0.9)(encoding@0.1.13)(ioredis@5.5.0)(uploadthing@7.7.3(express@5.2.1)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))':
+  '@walletconnect/sign-client@2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(bufferutil@4.0.9)(encoding@0.1.13)(ioredis@5.5.0)(uploadthing@7.7.3(express@4.21.2)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))':
     dependencies:
-      '@walletconnect/core': 2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(bufferutil@4.0.9)(encoding@0.1.13)(ioredis@5.5.0)(uploadthing@7.7.3(express@5.2.1)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))
+      '@walletconnect/core': 2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(bufferutil@4.0.9)(encoding@0.1.13)(ioredis@5.5.0)(uploadthing@7.7.3(express@4.21.2)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))
       '@walletconnect/events': 1.0.1
       '@walletconnect/heartbeat': 1.2.1
       '@walletconnect/jsonrpc-utils': 1.0.8
       '@walletconnect/logger': 2.1.2
       '@walletconnect/time': 1.0.2
-      '@walletconnect/types': 2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(ioredis@5.5.0)(uploadthing@7.7.3(express@5.2.1)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))
-      '@walletconnect/utils': 2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(ioredis@5.5.0)(uploadthing@7.7.3(express@5.2.1)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))
+      '@walletconnect/types': 2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(ioredis@5.5.0)(uploadthing@7.7.3(express@4.21.2)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))
+      '@walletconnect/utils': 2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(ioredis@5.5.0)(uploadthing@7.7.3(express@4.21.2)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))
       events: 3.3.0
     transitivePeerDependencies:
       - '@azure/app-configuration'
@@ -52701,12 +52780,12 @@ snapshots:
     dependencies:
       tslib: 1.14.1
 
-  '@walletconnect/types@2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(ioredis@5.5.0)(uploadthing@7.7.3(express@5.2.1)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))':
+  '@walletconnect/types@2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(ioredis@5.5.0)(uploadthing@7.7.3(express@4.21.2)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))':
     dependencies:
       '@walletconnect/events': 1.0.1
       '@walletconnect/heartbeat': 1.2.1
       '@walletconnect/jsonrpc-types': 1.0.3
-      '@walletconnect/keyvaluestorage': 1.1.1(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(ioredis@5.5.0)(uploadthing@7.7.3(express@5.2.1)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))
+      '@walletconnect/keyvaluestorage': 1.1.1(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(ioredis@5.5.0)(uploadthing@7.7.3(express@4.21.2)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))
       '@walletconnect/logger': 2.1.2
       events: 3.3.0
     transitivePeerDependencies:
@@ -52729,16 +52808,16 @@ snapshots:
       - ioredis
       - uploadthing
 
-  '@walletconnect/universal-provider@2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(bufferutil@4.0.9)(encoding@0.1.13)(ioredis@5.5.0)(uploadthing@7.7.3(express@5.2.1)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))':
+  '@walletconnect/universal-provider@2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(bufferutil@4.0.9)(encoding@0.1.13)(ioredis@5.5.0)(uploadthing@7.7.3(express@4.21.2)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))':
     dependencies:
       '@walletconnect/jsonrpc-http-connection': 1.0.8(encoding@0.1.13)
       '@walletconnect/jsonrpc-provider': 1.0.13
       '@walletconnect/jsonrpc-types': 1.0.4
       '@walletconnect/jsonrpc-utils': 1.0.8
       '@walletconnect/logger': 2.1.2
-      '@walletconnect/sign-client': 2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(bufferutil@4.0.9)(encoding@0.1.13)(ioredis@5.5.0)(uploadthing@7.7.3(express@5.2.1)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))
-      '@walletconnect/types': 2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(ioredis@5.5.0)(uploadthing@7.7.3(express@5.2.1)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))
-      '@walletconnect/utils': 2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(ioredis@5.5.0)(uploadthing@7.7.3(express@5.2.1)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))
+      '@walletconnect/sign-client': 2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(bufferutil@4.0.9)(encoding@0.1.13)(ioredis@5.5.0)(uploadthing@7.7.3(express@4.21.2)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))
+      '@walletconnect/types': 2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(ioredis@5.5.0)(uploadthing@7.7.3(express@4.21.2)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))
+      '@walletconnect/utils': 2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(ioredis@5.5.0)(uploadthing@7.7.3(express@4.21.2)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))
       events: 3.3.0
     transitivePeerDependencies:
       - '@azure/app-configuration'
@@ -52763,7 +52842,7 @@ snapshots:
       - uploadthing
       - utf-8-validate
 
-  '@walletconnect/utils@2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(ioredis@5.5.0)(uploadthing@7.7.3(express@5.2.1)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))':
+  '@walletconnect/utils@2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(ioredis@5.5.0)(uploadthing@7.7.3(express@4.21.2)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))':
     dependencies:
       '@stablelib/chacha20poly1305': 1.0.1
       '@stablelib/hkdf': 1.0.1
@@ -52773,7 +52852,7 @@ snapshots:
       '@walletconnect/relay-api': 1.0.11
       '@walletconnect/safe-json': 1.0.2
       '@walletconnect/time': 1.0.2
-      '@walletconnect/types': 2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(ioredis@5.5.0)(uploadthing@7.7.3(express@5.2.1)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))
+      '@walletconnect/types': 2.11.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(ioredis@5.5.0)(uploadthing@7.7.3(express@4.21.2)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))
       '@walletconnect/window-getters': 1.0.1
       '@walletconnect/window-metadata': 1.0.1
       detect-browser: 5.3.0
@@ -53053,6 +53132,50 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
+  '@x402/core@2.6.0':
+    dependencies:
+      zod: 3.25.76
+
+  '@x402/evm@2.6.0(bufferutil@4.0.9)(ethers@6.14.4(bufferutil@4.0.9))(typescript@5.8.3)':
+    dependencies:
+      '@x402/core': 2.6.0
+      '@x402/extensions': 2.6.0(bufferutil@4.0.9)(ethers@6.14.4(bufferutil@4.0.9))(typescript@5.8.3)
+      viem: 2.47.0(bufferutil@4.0.9)(typescript@5.8.3)(zod@3.25.76)
+      zod: 3.25.76
+    transitivePeerDependencies:
+      - bufferutil
+      - ethers
+      - typescript
+      - utf-8-validate
+
+  '@x402/express@2.6.0(bufferutil@4.0.9)(ethers@6.14.4(bufferutil@4.0.9))(express@4.21.2)(typescript@5.8.3)':
+    dependencies:
+      '@x402/core': 2.6.0
+      '@x402/extensions': 2.6.0(bufferutil@4.0.9)(ethers@6.14.4(bufferutil@4.0.9))(typescript@5.8.3)
+      express: 4.21.2
+      viem: 2.47.0(bufferutil@4.0.9)(typescript@5.8.3)(zod@3.25.76)
+      zod: 3.25.76
+    transitivePeerDependencies:
+      - bufferutil
+      - ethers
+      - typescript
+      - utf-8-validate
+
+  '@x402/extensions@2.6.0(bufferutil@4.0.9)(ethers@6.14.4(bufferutil@4.0.9))(typescript@5.8.3)':
+    dependencies:
+      '@scure/base': 1.2.6
+      '@x402/core': 2.6.0
+      ajv: 8.17.1
+      siwe: 2.3.2(ethers@6.14.4(bufferutil@4.0.9))
+      tweetnacl: 1.0.3
+      viem: 2.47.0(bufferutil@4.0.9)(typescript@5.8.3)(zod@3.25.76)
+      zod: 3.25.76
+    transitivePeerDependencies:
+      - bufferutil
+      - ethers
+      - typescript
+      - utf-8-validate
+
   '@xenova/transformers@2.17.2':
     dependencies:
       '@huggingface/jinja': 0.2.2
@@ -53246,6 +53369,11 @@ snapshots:
       zod: 3.25.76
 
   abitype@1.0.8(typescript@5.8.3)(zod@3.25.76):
+    optionalDependencies:
+      typescript: 5.8.3
+      zod: 3.25.76
+
+  abitype@1.2.3(typescript@5.8.3)(zod@3.25.76):
     optionalDependencies:
       typescript: 5.8.3
       zod: 3.25.76
@@ -54881,10 +55009,10 @@ snapshots:
 
   base-64@0.1.0: {}
 
-  base-network-mcp-server@0.1.0(@aws-sdk/credential-providers@3.835.0)(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(@cfworker/json-schema@4.1.1)(@types/react@19.1.8)(aws4fetch@1.0.20)(bufferutil@4.0.9)(encoding@0.1.13)(immer@10.1.1)(ioredis@5.5.0)(kerberos@2.2.2)(mongodb-client-encryption@6.5.0)(react@18.3.1)(socks@2.8.5)(typescript@5.8.3)(uploadthing@7.7.3(express@5.2.1)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))(zod@3.25.76):
+  base-network-mcp-server@0.1.0(@aws-sdk/credential-providers@3.835.0)(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(@cfworker/json-schema@4.1.1)(@types/react@19.1.8)(aws4fetch@1.0.20)(bufferutil@4.0.9)(encoding@0.1.13)(immer@10.1.1)(ioredis@5.5.0)(kerberos@2.2.2)(mongodb-client-encryption@6.5.0)(react@18.3.1)(socks@2.8.5)(typescript@5.8.3)(uploadthing@7.7.3(express@4.21.2)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))(zod@3.25.76):
     dependencies:
       '@modelcontextprotocol/sdk': 1.27.1(@cfworker/json-schema@4.1.1)(zod@3.25.76)
-      '@wagmi/core': 1.4.13(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(@types/react@19.1.8)(aws4fetch@1.0.20)(bufferutil@4.0.9)(encoding@0.1.13)(immer@10.1.1)(ioredis@5.5.0)(react@18.3.1)(typescript@5.8.3)(uploadthing@7.7.3(express@5.2.1)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))(viem@1.21.4(bufferutil@4.0.9)(typescript@5.8.3)(zod@3.25.76))(zod@3.25.76)
+      '@wagmi/core': 1.4.13(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(@types/react@19.1.8)(aws4fetch@1.0.20)(bufferutil@4.0.9)(encoding@0.1.13)(immer@10.1.1)(ioredis@5.5.0)(react@18.3.1)(typescript@5.8.3)(uploadthing@7.7.3(express@4.21.2)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))))(viem@1.21.4(bufferutil@4.0.9)(typescript@5.8.3)(zod@3.25.76))(zod@3.25.76)
       dotenv: 16.6.1
       ethers: 6.14.4(bufferutil@4.0.9)
       natural: 6.12.0(@aws-sdk/credential-providers@3.835.0)(kerberos@2.2.2)(mongodb-client-encryption@6.5.0)(socks@2.8.5)
@@ -68061,6 +68189,23 @@ snapshots:
 
   obliterator@1.6.1: {}
 
+  obsd-launchpad-mcp@1.0.7(@cfworker/json-schema@4.1.1)(bufferutil@4.0.9)(typescript@5.8.3):
+    dependencies:
+      '@modelcontextprotocol/sdk': 1.21.1(@cfworker/json-schema@4.1.1)
+      '@x402/core': 2.6.0
+      '@x402/evm': 2.6.0(bufferutil@4.0.9)(ethers@6.14.4(bufferutil@4.0.9))(typescript@5.8.3)
+      '@x402/express': 2.6.0(bufferutil@4.0.9)(ethers@6.14.4(bufferutil@4.0.9))(express@4.21.2)(typescript@5.8.3)
+      ethers: 6.14.4(bufferutil@4.0.9)
+      express: 4.21.2
+      zod: 3.25.76
+    transitivePeerDependencies:
+      - '@cfworker/json-schema'
+      - '@x402/paywall'
+      - bufferutil
+      - supports-color
+      - typescript
+      - utf-8-validate
+
   obuf@1.1.2: {}
 
   octagon-deep-research-mcp@1.0.18(@cfworker/json-schema@4.1.1)(encoding@0.1.13)(ws@8.18.3(bufferutil@4.0.9)):
@@ -68734,6 +68879,21 @@ snapshots:
       get-intrinsic: 1.3.0
       object-keys: 1.1.1
       safe-push-apply: 1.0.0
+
+  ox@0.14.0(typescript@5.8.3)(zod@3.25.76):
+    dependencies:
+      '@adraffy/ens-normalize': 1.11.0
+      '@noble/ciphers': 1.3.0
+      '@noble/curves': 1.9.1
+      '@noble/hashes': 1.8.0
+      '@scure/bip32': 1.7.0
+      '@scure/bip39': 1.6.0
+      abitype: 1.2.3(typescript@5.8.3)(zod@3.25.76)
+      eventemitter3: 5.0.1
+    optionalDependencies:
+      typescript: 5.8.3
+    transitivePeerDependencies:
+      - zod
 
   ox@0.8.1(typescript@5.8.3)(zod@3.25.76):
     dependencies:
@@ -72422,6 +72582,14 @@ snapshots:
 
   sisteransi@1.0.5: {}
 
+  siwe@2.3.2(ethers@6.14.4(bufferutil@4.0.9)):
+    dependencies:
+      '@spruceid/siwe-parser': 2.1.2
+      '@stablelib/random': 1.0.2
+      ethers: 6.14.4(bufferutil@4.0.9)
+      uri-js: 4.4.1
+      valid-url: 1.0.9
+
   siwe@3.0.0(ethers@6.14.4(bufferutil@4.0.9)):
     dependencies:
       '@spruceid/siwe-parser': 3.0.0
@@ -75003,7 +75171,7 @@ snapshots:
 
   unreal-remote-execution@1.0.0: {}
 
-  unstorage@1.16.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(idb-keyval@6.2.2)(ioredis@5.5.0)(uploadthing@7.7.3(express@5.2.1)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3)))):
+  unstorage@1.16.0(@azure/identity@4.10.1)(@azure/keyvault-secrets@4.10.0)(@azure/storage-blob@12.26.0)(aws4fetch@1.0.20)(idb-keyval@6.2.2)(ioredis@5.5.0)(uploadthing@7.7.3(express@4.21.2)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3)))):
     dependencies:
       anymatch: 3.1.3
       chokidar: 4.0.3
@@ -75020,7 +75188,7 @@ snapshots:
       aws4fetch: 1.0.20
       idb-keyval: 6.2.2
       ioredis: 5.5.0
-      uploadthing: 7.7.3(express@5.2.1)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3)))
+      uploadthing: 7.7.3(express@4.21.2)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3)))
 
   untildify@4.0.0: {}
 
@@ -75057,7 +75225,7 @@ snapshots:
       semver: 7.7.2
       xdg-basedir: 5.1.0
 
-  uploadthing@7.7.3(express@5.2.1)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))):
+  uploadthing@7.7.3(express@4.21.2)(h3@1.15.3)(next@15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0))(tailwindcss@3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))):
     dependencies:
       '@effect/platform': 0.85.2(effect@3.16.8)
       '@standard-schema/spec': 1.0.0-beta.4
@@ -75065,7 +75233,7 @@ snapshots:
       '@uploadthing/shared': 7.1.9
       effect: 3.16.8
     optionalDependencies:
-      express: 5.2.1
+      express: 4.21.2
       h3: 1.15.3
       next: 15.5.2(@babel/core@7.27.4)(@opentelemetry/api@1.9.0)(@playwright/test@1.53.2)(babel-plugin-macros@3.1.0)(react-dom@19.1.0(react@18.3.1))(react@18.3.1)(sass@1.90.0)
       tailwindcss: 3.4.17(ts-node@10.9.2(@swc/core@1.15.4(@swc/helpers@0.5.17))(@types/node@22.15.33)(typescript@5.8.3))
@@ -75253,6 +75421,8 @@ snapshots:
     optionalDependencies:
       typescript: 5.8.3
 
+  valid-url@1.0.9: {}
+
   validate-npm-package-license@3.0.4:
     dependencies:
       spdx-correct: 3.2.0
@@ -75346,6 +75516,23 @@ snapshots:
       isows: 1.0.7(ws@8.18.2(bufferutil@4.0.9))
       ox: 0.8.1(typescript@5.8.3)(zod@3.25.76)
       ws: 8.18.2(bufferutil@4.0.9)
+    optionalDependencies:
+      typescript: 5.8.3
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
+      - zod
+
+  viem@2.47.0(bufferutil@4.0.9)(typescript@5.8.3)(zod@3.25.76):
+    dependencies:
+      '@noble/curves': 1.9.1
+      '@noble/hashes': 1.8.0
+      '@scure/bip32': 1.7.0
+      '@scure/bip39': 1.6.0
+      abitype: 1.2.3(typescript@5.8.3)(zod@3.25.76)
+      isows: 1.0.7(ws@8.18.3(bufferutil@4.0.9))
+      ox: 0.14.0(typescript@5.8.3)(zod@3.25.76)
+      ws: 8.18.3(bufferutil@4.0.9)
     optionalDependencies:
       typescript: 5.8.3
     transitivePeerDependencies:

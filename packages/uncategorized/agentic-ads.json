@@ -1,0 +1,9 @@
+{
+  "type": "mcp-server",
+  "name": "agentic-ads",
+  "packageName": "agentic-ads",
+  "description": "Affiliate marketing SDK for MCP servers. Earn USDC on Base for each click on sponsored contextual recommendations. Integrates via MCP tool calls.",
+  "url": "https://github.com/nicofains1/agentic-ads",
+  "runtime": "node",
+  "license": "MIT"
+}

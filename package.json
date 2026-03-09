@@ -1,6 +1,6 @@
 {
   "name": "@toolsdk.ai/registry",
-  "version": "1.0.160",
+  "version": "1.0.163",
   "description": "An Open, Structured, and Standard Registry for MCP Servers and Packages.",
   "keywords": [
     "mcp",
@@ -649,6 +649,7 @@
     "npm-search-mcp-server": "0.1.1",
     "nrepl-mcp-server": "1.0.2",
     "ntfy-me-mcp": "1.3.5",
+    "obsd-launchpad-mcp": "1.0.7",
     "octagon-deep-research-mcp": "1.0.18",
     "octagon-mcp": "1.0.22",
     "octav-api-mcp": "1.1.0",

@@ -12,14 +12,14 @@
 <a href="https://github.com/toolsdk-ai/toolsdk-mcp-registry/actions/workflows/test.yaml">
   <img src="https://github.com/toolsdk-ai/toolsdk-mcp-registry/actions/workflows/test.yaml/badge.svg" alt="Build Status" />
 </a>
-<img src="https://img.shields.io/badge/MCP_Servers-4538-blue?style=flat-square" alt="MCP Servers Count" />
+<img src="https://img.shields.io/badge/MCP_Servers-4542-blue?style=flat-square" alt="MCP Servers Count" />
 <img src="https://img.shields.io/badge/LICENSE-MIT-ff69b4?style=flat-square" alt="License" />
 <br />
 <a href="https://www.producthunt.com/products/toolsdk-ai">
   <img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=997428&theme=light&period=daily" alt="Product Hunt" height="40" />
 </a>
 
-<a href="#mcp-servers">🔍 <b>Browse 4538+ Tools</b></a>
+<a href="#mcp-servers">🔍 <b>Browse 4542+ Tools</b></a>
 &nbsp;&nbsp;•&nbsp;&nbsp;
 <a href="#quick-start">🐳 <b>Self-hosted</b></a>
 &nbsp;&nbsp;•&nbsp;&nbsp;
@@ -75,7 +75,7 @@ docker compose up -d
 - *See [Configuration Guide](./docs/DEVELOPMENT.md) for full details.*
 
 > [!TIP]
-> **Tip for Private Deployment**: This registry contains 4538+ public MCP servers. If you only need a specific subset for your private environment, you can prune the `packages/` directory.
+> **Tip for Private Deployment**: This registry contains 4542+ public MCP servers. If you only need a specific subset for your private environment, you can prune the `packages/` directory.
 > 📖 See [Package Management Guide](./docs/DEVELOPMENT.md#5--package-management-for-private-deployment) for details.
 
 That's it! Your self-hosted MCP registry is now running with:
@@ -87,7 +87,7 @@ That's it! Your self-hosted MCP registry is now running with:
 
 - 🌐 **Local Web Interface**: http://localhost:3003
 - 📚 **Swagger API Docs**: http://localhost:3003/swagger  
-- 🔍 **Search & Execute** 4538+ MCP Servers remotely
+- 🔍 **Search & Execute** 4542+ MCP Servers remotely
 - 🤖 **Integrate** with your AI agents, chatbots, and LLM applications
 
 #### 🌐 Remote Tool Execution Example
@@ -221,7 +221,7 @@ graph TD
 
 This open-source project provides:
 
-- **Structured Registry** - 4538+ MCP servers with metadata
+- **Structured Registry** - 4542+ MCP servers with metadata
 - **Unified Gateway** - HTTP API to query and execute tools remotely
 - **Auto-Generated Docs** - Always up-to-date README and API documentation
 
@@ -320,12 +320,12 @@ Your MCP server will be:
 
 ## MCP Servers Directory
 
-**4538+ AI Agent Tools, LLM Integrations & Automation Servers**
+**4542+ AI Agent Tools, LLM Integrations & Automation Servers**
 
 > [!NOTE]
 > ⭐ **Featured below**: Hand-picked, production-ready MCP servers verified by our team.
 >
-> 📚 **Looking for all 4538+ servers?** Check out [**All MCP Servers**](./docs/ALL-MCP-SERVERS.md) for the complete list.
+> 📚 **Looking for all 4542+ servers?** Check out [**All MCP Servers**](./docs/ALL-MCP-SERVERS.md) for the complete list.
 
 > [!TIP]
 > If a package is marked as `validated: true` in the index, you can usually wire it up in minutes via ToolSDK (e.g. `getAISDKTool(toolKey)`).
@@ -988,6 +988,7 @@ Work with financial data, market info, and trading platforms using AI tools.
 - [✅ mcp-lighthouse](https://github.com/l3wi/mcp-lighthouse): Integrates with Lighthouse.one cryptocurrency portfolio tracker to fetch and display detailed portfolio data including total value, asset allocations, and major holdings through secure token-based authentication.  (5 tools) (node) 
 - [✅ mercadolibre-mcp](https://github.com/lumile/mercadolibre-mcp): Integrates with MercadoLibre's e-commerce platform to simplify product and seller data retrieval, enabling functions like price monitoring, inventory management, and market analysis.  (3 tools) (node) 
 - [✅ moneybird-mcp-server](https://github.com/vanderheijden86/moneybird-mcp-server): Bridges Moneybird accounting software with natural language interaction, enabling users to manage contacts, invoices, financial accounts, products, projects, and time entries through conversational prompts.  (10 tools) (node) 
+- [✅ obsd-launchpad-mcp](https://github.com/thryxagi/obsd-launchpad): MCP server for AI agents to deploy, trade, and earn on the OBSD LaunchPad (Base chain). 12 tools: launch tokens, buy/sell, claim fees, referrals, and analytics.  (17 tools) (node) 
 - [✅ octagon-mcp](https://github.com/octagonai/octagon-mcp-server): Provides specialized investment research tools for analyzing SEC filings, earnings calls, financial data, stock market information, private company details, funding rounds, M&A transactions, and web scraping capabilities.  (3 tools) (node) 
 - [✅ octav-api-mcp](https://github.com/Octav-Labs/octav-api-mcp): Multi-chain crypto portfolio tracking MCP server. Access wallet holdings, DeFi protocol positions, transaction history, and token analytics across 20+ blockchains directly from Claude.  (14 tools) (node) 
 - [✅ search-stock-news-mcp](https://github.com/cognitive-stack/search-stock-news-mcp): Provides a specialized tool for retrieving stock-related news using the Tavily API, enabling financial searches by stock symbol and company name with configurable parameters for Vietnamese financial sources like CafeF and Nguoi Quan Sat.  (2 tools) (node) 
