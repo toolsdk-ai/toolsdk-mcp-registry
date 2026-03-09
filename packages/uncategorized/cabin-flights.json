@@ -4,15 +4,8 @@
   "packageName": "@cabin/agent", 
   "description": "AI-first travel booking with natural language. Search flights with crypto micropayments.",
   "url": "https://github.com/yolo-maxi/cabin",
-  "homepage": "https://cabin.com",
   "runtime": "node",
   "license": "MIT",
-  "keywords": ["travel", "flights", "booking", "crypto", "x402", "micropayments", "ai-agent"],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/yolo-maxi/cabin.git",
-    "directory": "packages/agent"
-  },
   "env": {
     "X402_PRIVATE_KEY": {
       "description": "EVM wallet private key for x402 micropayments (0x-prefixed hex string)",
@@ -34,27 +27,5 @@
       "required": false,
       "default": "info"
     }
-  },
-  "tools": [
-    {
-      "name": "search_flights",
-      "description": "Search for flights between airports with flexible parameters. Costs $0.01 USDC per search.",
-      "category": "travel"
-    },
-    {
-      "name": "get_flight_details",
-      "description": "Get detailed information about a specific flight from search results.",
-      "category": "travel"
-    },
-    {
-      "name": "check_balance",
-      "description": "Check x402 payment wallet balance and system health.",
-      "category": "payment"
-    },
-    {
-      "name": "get_booking_status",
-      "description": "Check the status of a flight booking (requires booking reference).",
-      "category": "travel"
-    }
-  ]
+  }
 }
