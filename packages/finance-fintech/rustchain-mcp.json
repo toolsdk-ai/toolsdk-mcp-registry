@@ -5,9 +5,5 @@
   "url": "https://github.com/Scottcjn/rustchain-mcp",
   "runtime": "python",
   "license": "MIT",
-  "env": {
-    "RUSTCHAIN_NODE_URL": "https://rustchain.org",
-    "BOTTUBE_API_URL": "https://bottube.ai"
-  },
   "name": "RustChain MCP"
 }
