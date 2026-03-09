@@ -9626,7 +9626,7 @@
   },
   "mongodb-mcp-server": {
     "category": "databases",
-    "path": "databases/mongodb-mcp.json",
+    "path": "databases/mongodb-mcp-server.json",
     "validated": true,
     "tools": {
       "connect": {
@@ -15110,7 +15110,7 @@
   },
   "@paypal/mcp": {
     "category": "finance-fintech",
-    "path": "finance-fintech/paypal-mcp-server.json",
+    "path": "finance-fintech/paypal-mcp.json",
     "validated": false,
     "tools": {}
   },
@@ -56660,13 +56660,36 @@
     "tools": {}
   },
   "@toolsdk-remote/com-bamboosnow-omnis-venture-intelligence": {
-    "path": "uncategorized/toolsdk-remote-com-bamboosnow-omnis-venture-intelligence.json",
     "category": "uncategorized",
-    "tools": {},
-    "validated": false
+    "path": "uncategorized/toolsdk-remote-com-bamboosnow-omnis-venture-intelligence.json",
+    "validated": false,
+    "tools": {}
   },
   "rustchain-mcp": {
-    "path": "finance-fintech/rustchain-mcp.json",
-    "category": "finance-fintech"
+    "category": "finance-fintech",
+    "path": "finance-fintech/rustchain-mcp.json"
+  },
+  "@toolsdk-remote/discovery-oracle-402bot": {
+    "path": "developer-tools/discovery-oracle-402bot.json",
+    "category": "developer-tools",
+    "tools": {
+      "discover_endpoints": {
+        "name": "discover_endpoints",
+        "description": "Search ranked live endpoint candidates by capability and network."
+      },
+      "inspect_endpoint": {
+        "name": "inspect_endpoint",
+        "description": "Inspect endpoint trust, routing, and payment telemetry."
+      },
+      "review_endpoint_readiness": {
+        "name": "review_endpoint_readiness",
+        "description": "Return a machine-actionable recommendation, blockers, and remediation actions for one endpoint."
+      },
+      "inspect_agent": {
+        "name": "inspect_agent",
+        "description": "Inspect agent routing and payment analytics."
+      }
+    },
+    "validated": true
   }
 }

@@ -1,6 +1,6 @@
 # 📚 All MCP Servers
 
-> **Complete directory of all 4544+ MCP servers in the ToolSDK Registry**
+> **Complete directory of all 4545+ MCP servers in the ToolSDK Registry**
 >
 > Looking for production-ready servers only? See the [main README](../README.md) for validated servers.
 
@@ -8,8 +8,8 @@
 
 ## 📊 Statistics
 
-- 📦 **Total Servers**: 4544
-- ✅ **Validated & Tested**: 813
+- 📦 **Total Servers**: 4545
+- ✅ **Validated & Tested**: 814
 - ⚙️ **Community Contributed**: 3731
 
 ---
@@ -1742,8 +1742,8 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [✅ mcp-timeplus](https://github.com/jovezhong/mcp-timeplus): Integrates with Timeplus to enable SQL query execution and database information retrieval for real-time analytics and data exploration.  (7 tools) (python) 
 - [✅ mcp-turso-cloud](https://github.com/spences10/mcp-turso-cloud): Provides a bridge between AI assistants and Turso SQLite databases, enabling organization-level management and database-level queries with persistent context, schema exploration, and vector similarity search capabilities.  (9 tools) (node) 
 - [✅ mochow-mcp-server](https://github.com/baidu/mochow-mcp-server-python): Provides direct access to Mochow vector database capabilities for managing databases, tables, and performing vector similarity and full-text searches with filtering options.  (14 tools) (python) 
-- [✅ mongodb-mcp-server](https://github.com/mongodb-js/mongodb-mcp-server): MongoDB Model Context Protocol Server  (21 tools) (node) 
-- [✅ mongodb-mcp-server](https://github.com/mongodb-js/mongodb-mcp-server): MongoDB Model Context Protocol Server  (21 tools) (node) 
+- [✅ mongodb-mcp-server](https://github.com/mongodb-js/mongodb-mcp-server): Provides a bridge between MongoDB databases and conversational interfaces, enabling comprehensive database operations, collection management, schema inspection, and Atlas cloud service interactions with authentication and telemetry support.  (21 tools) (node) 
+- [✅ mongodb-mcp-server](https://github.com/mongodb-js/mongodb-mcp-server): Provides a bridge between MongoDB databases and conversational interfaces, enabling comprehensive database operations, collection management, schema inspection, and Atlas cloud service interactions with authentication and telemetry support.  (21 tools) (node) 
 - [✅ mysql-mcp-server](https://github.com/dpflucas/mysql-mcp-server): Provides secure, read-only access to MySQL databases for exploring schemas and executing SELECT queries with built-in safeguards against SQL injection, query timeouts, and row limits.  (4 tools) (node) 
 - [✅ mysql-query-mcp-server](https://github.com/devakone/mysql-query-mcp-server): Provides a secure, read-only bridge to MySQL databases, enabling natural language querying across multiple environments with strict validation and comprehensive error handling.  (3 tools) (node) 
 - [✅ mysqldb-mcp-server](https://github.com/burakdirin/mysqldb-mcp-server): Enables direct SQL query execution and database connections to MySQL databases through a simple interface that returns results in JSON format.  (2 tools) (python) 
@@ -2055,7 +2055,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 
 
 <a id="developer-tools"></a>
-### Developer Tools <small>(364 servers)</small>
+### Developer Tools <small>(365 servers)</small>
 
 > Enhance your development workflow with tools for coding and environment management.
 
@@ -2086,6 +2086,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [✅ @stakpak/mcp](https://github.com/stakpak/mcp): Integrates with Stakpak API to generate infrastructure code for projects, enabling developers to quickly create configurations through a dedicated tool that works with various IDEs.  (1 tools) (node) 
 - [✅ @sveltejs/mcp](https://github.com/sveltejs/mcp): The official Svelte MCP server providing docs and autofixing tools for Svelte development  (4 tools) (node) 
 - [✅ @tgomareli/macos-tools-mcp](https://github.com/tornikegomareli/macos-tools-mcp-server): Provides macOS system monitoring with SQLite-based historical data storage and enhanced file search with tagging support, collecting real-time CPU, memory, disk, and network metrics while offering content-based file searching with regex support and macOS file tagging operations through native utilities like Spotlight and extended attributes.  (2 tools) (node) 
+- [✅ @toolsdk-remote/discovery-oracle-402bot](https://github.com/sam00101011/402.bot-public): Discover live agent APIs, ranked endpoints, trust, payment telemetry, and x402 surfaces.  (4 tools) (node) 
 - [✅ @wenbopan/things-mcp](https://github.com/wbopan/things-mcp): Integrates with Things.app task management for macOS, enabling task and project creation with full metadata support, update operations including completion status, database export functionality, and summary generation through URL scheme and direct database access.  (6 tools) (node) 
 - [✅ @yodakeisuke/mcp-micromanage](https://github.com/yodakeisuke/mcp-micromanage-your-agent): Task management system that visualizes development work as interactive flowcharts, enabling structured breakdown of tickets into minimal PRs and commits with progress tracking capabilities.  (3 tools) (node) 
 - [✅ a11y-mcp](https://github.com/priyankark/a11y-mcp): Perform accessibility audits on webpages using axe-core. Use the results in an agentic loop with your favorite AI assistants (Cline/Cursor/GH Copilot) and let them fix a11y issues for you.  (2 tools) (node) 
@@ -2776,8 +2777,8 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [❌ @paddle/paddle-mcp](https://github.com/paddlehq/paddle-mcp-server): Enables developers to manage billing operations using natural language commands, streamlining financial API interactions for SaaS businesses.  (node) 
 - [❌ @paybyrd/ai-agent-toolkit](https://github.com/paybyrd/ai-agent-toolkit-js): Integrates with Paybyrd's payment processing API to enable creating payment links, processing refunds, and retrieving order information through a JavaScript library with configurable permissions and comprehensive error handling.  (node) 
 - [❌ @paypal/agent-toolkit](https://github.com/paypal/agent-toolkit): The PayPal Model Context Protocol server allows you to integrate with PayPal APIs through function calling.  (node) 
-- [❌ @paypal/mcp](https://github.com/paypal/paypal-mcp-server): A command line tool for setting up PayPal MCP server  (node) 
-- [❌ @paypal/mcp](https://github.com/paypal/paypal-mcp-server): A command line tool for setting up PayPal MCP server  (node) 
+- [❌ @paypal/mcp](https://github.com/paypal/paypal-mcp-server): AI agent integration with PayPal services.  (node) 
+- [❌ @paypal/mcp](https://github.com/paypal/paypal-mcp-server): AI agent integration with PayPal services.  (node) 
 - [❌ @stripe/agent-toolkit](https://github.com/stripe/agent-toolkit): Integrates with Stripe's API to enable payment processing, customer management, and financial operations for e-commerce and billing workflows.  (node) 
 - [❌ @stripe/agent-toolkit/tree/main/modelcontextprotocol](https://github.com/stripe/agent-toolkit/tree/main/modelcontextprotocol): The Stripe Model Context Protocol server allows you to integrate with Stripe APIs through function calling.  (node) 
 - [❌ @toolsdk-remote/proofbets-mcp](https://github.com/proofbets/proofbets-mcp): Casino intelligence with 13 tools: search 50+ crypto casinos, verify bonus codes, calculate EV, compare P2P prediction markets (Polymarket, Kalshi, Azuro), and on-chain wallet verification  (node) 
