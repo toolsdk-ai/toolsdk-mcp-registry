@@ -1,0 +1,31 @@
+{
+  "type": "mcp-server",
+  "name": "Cabin Flights",
+  "packageName": "@cabin/agent", 
+  "description": "AI-first travel booking with natural language. Search flights with crypto micropayments.",
+  "url": "https://github.com/yolo-maxi/cabin",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "X402_PRIVATE_KEY": {
+      "description": "EVM wallet private key for x402 micropayments (0x-prefixed hex string)",
+      "required": true,
+      "secret": true
+    },
+    "CABIN_API_URL": {
+      "description": "Cabin API base URL",
+      "required": false,
+      "default": "https://api.cabin.team"
+    },
+    "X402_NETWORK": {
+      "description": "Blockchain network for payments (base, ethereum, polygon)",
+      "required": false,
+      "default": "base"
+    },
+    "LOG_LEVEL": {
+      "description": "Log level (debug, info, warn, error)",
+      "required": false,
+      "default": "info"
+    }
+  }
+}
