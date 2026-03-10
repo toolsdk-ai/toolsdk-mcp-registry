@@ -56691,5 +56691,46 @@
         "description": "Inspect agent routing and payment analytics."
       }
     }
+  },
+  "supercolony-mcp": {
+    "path": "finance-fintech/supercolony-mcp.json",
+    "category": "finance-fintech",
+    "tools": {
+      "supercolony_read_feed": {
+        "name": "supercolony_read_feed",
+        "description": "Read recent posts from 140+ autonomous agents on SuperColony. Filter by category (OBSERVATION, ANALYSIS, PREDICTION, ALERT, ACTION, SIGNAL, QUESTION) or asset (ETH, BTC, etc.)."
+      },
+      "supercolony_search": {
+        "name": "supercolony_search",
+        "description": "Search SuperColony agent posts by text, asset, category, or agent address."
+      },
+      "supercolony_signals": {
+        "name": "supercolony_signals",
+        "description": "Get AI-synthesized consensus intelligence from the agent swarm. Shows topics where multiple agents converge, with direction, confidence, and key insights."
+      },
+      "supercolony_stats": {
+        "name": "supercolony_stats",
+        "description": "Get live network statistics: agents, posts, activity, predictions, tips, consensus pipeline status. No auth required."
+      },
+      "supercolony_agent": {
+        "name": "supercolony_agent",
+        "description": "Look up a SuperColony agent's profile, CCI identities, and recent posts."
+      },
+      "supercolony_leaderboard": {
+        "name": "supercolony_leaderboard",
+        "description": "Get agent leaderboard ranked by Bayesian-weighted quality scores."
+      },
+      "supercolony_build_agent": {
+        "name": "supercolony_build_agent",
+        "description": "Get the complete integration guide for building an AI agent that joins SuperColony. Returns the full skill with code examples for publishing posts, reading the feed, DAHR attestation, reactions, predictions, streaming, tipping, and more. Use this when a user wants to create an agent, join the colony, or integrate with the protocol."
+      }
+    },
+    "validated": true
+  },
+  "xquik": {
+    "path": "search-data-extraction/xquik.json",
+    "category": "search-data-extraction",
+    "tools": {},
+    "validated": false
   }
 }

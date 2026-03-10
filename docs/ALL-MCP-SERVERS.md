@@ -1,6 +1,6 @@
 # 📚 All MCP Servers
 
-> **Complete directory of all 4545+ MCP servers in the ToolSDK Registry**
+> **Complete directory of all 4547+ MCP servers in the ToolSDK Registry**
 >
 > Looking for production-ready servers only? See the [main README](../README.md) for validated servers.
 
@@ -8,9 +8,9 @@
 
 ## 📊 Statistics
 
-- 📦 **Total Servers**: 4545
-- ✅ **Validated & Tested**: 814
-- ⚙️ **Community Contributed**: 3731
+- 📦 **Total Servers**: 4547
+- ✅ **Validated & Tested**: 815
+- ⚙️ **Community Contributed**: 3732
 
 ---
 
@@ -2717,7 +2717,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 
 
 <a id="finance-fintech"></a>
-### Finance & Fintech <small>(274 servers)</small>
+### Finance & Fintech <small>(275 servers)</small>
 
 > Work with financial data, market info, and trading platforms using AI tools.
 
@@ -2764,6 +2764,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [✅ setu_mcp_kyc](https://github.com/setuhq/setu-mcps/tree/HEAD/kyc): Integrates Setu's Digital Gateway APIs to provide KYC verification tools for PAN, GST, and name matching, enabling automated identity checks and regulatory compliance.  (3 tools) (python) 
 - [✅ setu_mcp_upi_deeplinks](https://github.com/setuhq/setu-mcps/tree/HEAD/upi-deeplinks): Integrates Setu's UPI payment infrastructure to enable seamless generation and management of payment links for applications.  (5 tools) (python) 
 - [✅ square-mcp-server](https://github.com/square/square-mcp-server): Provides a bridge between Square's complete API ecosystem and conversational interfaces, enabling comprehensive e-commerce and payment processing capabilities including payments, orders, inventory, and customer management.  (3 tools) (node) 
+- [✅ supercolony-mcp](https://github.com/TheSuperColony/supercolony-mcp): Real-time intelligence from 140+ autonomous AI agents publishing on-chain observations, analyses, and predictions on Demos blockchain. Tools for feed reading, search, consensus signals, agent profiles, leaderboard, and network stats.  (7 tools) (node) 
 - [✅ tesouro-direto-mcp](https://github.com/atilioa/tesouro-direto-mcp): Provides real-time access to Brazil's Treasury Direct bond market data, enabling users to retrieve market status, search bonds by type and maturity date, and access detailed information for investment analysis.  (3 tools) (node) 
 - [✅ xero-mcp](https://github.com/john-zhang-dev/xero-mcp): Integrates with Xero Accounting Software to access financial data including accounts, transactions, contacts, invoices, and more through authenticated API connections for financial analysis and bookkeeping tasks.  (12 tools) (node) 
 - [✅ yfmcp](https://github.com/narumiruna/yfinance-mcp): Provides real-time financial data from Yahoo Finance through specialized tools for retrieving stock information, market trends, and news for investment research and analysis.  (5 tools) (python) 
@@ -3463,7 +3464,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 
 
 <a id="search-data-extraction"></a>
-### Search & Data Extraction <small>(407 servers)</small>
+### Search & Data Extraction <small>(408 servers)</small>
 
 > Find and extract data from various sources quickly and efficiently.
 
@@ -3860,6 +3861,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [❌ wordware-research](https://github.com/aleksandrkrivolap/wordware-mcp): Integrates with Wordware's research and productivity tools to enable deep research on individuals, companies, and topics with direct saving to Notion and other specialized functions.  (python) 
 - [❌ writer-blog-search-(substack-&-medium)](https://github.com/jean-technologies/mcp-writer-substack): Connect to your Substack/Medium blogs via their RSS feeds, fetches your posts, and permanently caches them locally. It also generates embeddings for each post, enabling semantic search to find the most relevant essays based on your queries.  (python) 
 - [❌ xiaohongshu-search-and-comment](https://github.com/chenningling/redbook-search-comment-mcp): Enables AI to search and analyze content from Xiaohongshu (Little Red Book) social media platform through web scraping, providing access to comments and search results for market research and trend analysis in the Chinese consumer market.  (python) 
+- [❌ xquik](https://github.com/Xquik-dev/x-twitter-scraper): X/Twitter data platform — MCP server, 76 REST API endpoints, 20 extraction tools  (node) 
 - [❌ youtube](https://github.com/prajwal-ak-0/youtube-mcp): Integrates with YouTube to enable video content analysis through transcript extraction, search, comment retrieval, and content summarization for research and educational insights  (python) 
 - [❌ youtube-captions](https://github.com/nattyraz/youtube-mcp): Extracts and transforms YouTube video content, providing metadata, multi-language captions, chapter information, and customizable markdown transcripts with search capabilities through the YouTube Data API.  (node) 
 - [❌ youtube-downloader](https://github.com/xue160709/yt-mcp-server): Bridges AI systems with YouTube content through yt-dlp, enabling video information extraction and downloading capabilities for content analysis and media processing.  (node) 

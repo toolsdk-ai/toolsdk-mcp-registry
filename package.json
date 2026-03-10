@@ -1,6 +1,6 @@
 {
   "name": "@toolsdk.ai/registry",
-  "version": "1.0.168",
+  "version": "1.0.169",
   "description": "An Open, Structured, and Standard Registry for MCP Servers and Packages.",
   "keywords": [
     "mcp",
@@ -716,6 +716,7 @@
     "structured-thinking": "1.0.2",
     "sub-agents-mcp": "0.4.0",
     "super-shell-mcp": "2.0.13",
+    "supercolony-mcp": "0.1.5",
     "systemprompt-mcp-notion": "1.0.7",
     "tachibot-mcp": "2.2.6",
     "tana-mcp": "1.2.0",
