@@ -1,10 +1,12 @@
 import { readFileSync } from "node:fs";
+import { createServer } from "node:http";
 import { join } from "node:path";
-import { serve } from "@hono/node-server";
+import { getRequestListener } from "@hono/node-server";
 import { swaggerUI } from "@hono/swagger-ui";
 import { OpenAPIHono } from "@hono/zod-openapi";
 import type { Context } from "hono";
 import { configRoutes } from "../domains/config/config-route";
+import { createMcpGatewayHandler } from "../domains/mcp-gateway/mcp-gateway";
 import { oauthDemoRoutes, oauthRoutes } from "../domains/oauth/oauth-route";
 import { repository } from "../domains/package/package-handler";
 import { packageRoutes } from "../domains/package/package-route";
@@ -93,11 +95,50 @@ app.onError((err: Error, c: Context) => {
 
 const port = getServerPort();
 
-serve({
-  fetch: app.fetch,
-  port,
+// MCP Gateway handler — intercepts /mcp/:packageName before Hono
+const mcpGatewayHandler = createMcpGatewayHandler(repository);
+const MCP_PATH_PREFIX = "/mcp/";
+
+// Create a raw Node.js HTTP server so we can route /mcp/* to the
+// Streamable HTTP transport (which needs raw IncomingMessage/ServerResponse)
+// and everything else to Hono.
+const honoListener = getRequestListener(app.fetch);
+
+const server = createServer(async (req, res) => {
+  const url = req.url ?? "";
+
+  if (url.startsWith(MCP_PATH_PREFIX)) {
+    // Extract package name: /mcp/@scope/name or /mcp/name
+    // Handle scoped packages: /mcp/@scope/name → @scope/name
+    const pathAfterPrefix = url.slice(MCP_PATH_PREFIX.length);
+    // Remove query string if any
+    const packageName = decodeURIComponent(pathAfterPrefix.split("?")[0]);
+
+    if (!packageName) {
+      res.writeHead(400, { "Content-Type": "application/json" });
+      res.end(JSON.stringify({ error: "Missing package name in URL" }));
+      return;
+    }
+
+    try {
+      await mcpGatewayHandler(req, res, packageName);
+    } catch (error) {
+      console.error("[MCP Gateway] Unhandled error:", error);
+      if (!res.headersSent) {
+        res.writeHead(500, { "Content-Type": "application/json" });
+        res.end(JSON.stringify({ error: "Internal server error" }));
+      }
+    }
+    return;
+  }
+
+  // All other routes → Hono
+  honoListener(req, res);
 });
 
-console.log(`🚀 Server is running on http://localhost:${port}`);
+server.listen(port, () => {
+  console.log(`🚀 Server is running on http://localhost:${port}`);
+  console.log(`🔌 MCP Gateway available at http://localhost:${port}/mcp/<packageName>`);
+});
 
 export default app;
