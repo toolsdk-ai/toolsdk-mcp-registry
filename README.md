@@ -107,6 +107,28 @@ curl -X POST http://localhost:3003/api/v1/packages/run \
   }'
 ```
 
+#### 🔌 MCP Gateway (Streamable HTTP Proxy)
+
+The registry also acts as an **MCP Gateway** — any registered package can be accessed as a standard [Streamable HTTP](https://modelcontextprotocol.io/specification/2025-03-26/basic/transports#streamable-http) endpoint, even if the original server is STDIO-only.
+
+**Endpoint:** `POST /mcp/<packageName>`
+
+Pass environment variables via `x-mcp-env-*` headers:
+
+```bash
+curl -X POST http://localhost:3003/mcp/@modelcontextprotocol/server-github \
+  -H "Content-Type: application/json" \
+  -H "x-mcp-env-GITHUB_PERSONAL_ACCESS_TOKEN: ghp_your_token" \
+  -d '{"jsonrpc":"2.0","id":1,"method":"tools/list"}'
+```
+
+The server returns a `mcp-session-id` header — include it in subsequent requests to reuse the session (sessions expire after 30 min).
+
+This is useful for:
+- **Protocol Bridging** — Expose local STDIO servers as remote HTTP endpoints
+- **Centralized Access** — Give AI agents a single HTTP gateway to all MCP tools
+- **Client Compatibility** — Connect from any MCP client that supports Streamable HTTP
+
 <details>
 <summary><strong>Alternative: Use as Registry SDK (Data Only)</strong></summary>
 
@@ -274,45 +296,9 @@ const searchTool = await searchMCP.getAISDKTool('tavily-search');
 
 ## Contribute Your MCP Server
 
-Help grow the ecosystem! Share your AI tools, plugins, and integrations with the community.
-
-### Quick Submission
+Want to add your MCP server to the registry? Check out our [Contributing Guide](./docs/CONTRIBUTING.md) for the full submission process, JSON schema reference, and examples (including remote servers and OAuth 2.1).
 
 [![Watch the video](https://img.youtube.com/vi/J_oaDtCoVVo/hqdefault.jpg)](https://www.youtube.com/watch?v=J_oaDtCoVVo)
-
-1. [Fork this repository](https://github.com/toolsdk-ai/toolsdk-mcp-registry/fork)
-2. Create `your-mcp-server.json` in [packages/uncategorized](./packages/uncategorized) (or the best matching category folder)
-3. Submit a PR
-
-Config Example:
-
-```json
-{
-  "type": "mcp-server",
-  "name": "Github",
-  "packageName": "@modelcontextprotocol/server-github",
-  "description": "MCP server for using the GitHub API",
-  "url": "https://github.com/modelcontextprotocol/servers/blob/main/src/github",
-  "runtime": "node",
-  "license": "MIT",
-  "env": {
-    "GITHUB_PERSONAL_ACCESS_TOKEN": {
-      "description": "Personal access token for GitHub API access",
-      "required": true
-    }
-  }
-}
-```
-
-Your MCP server will be:
-- ✅ Listed in the registry
-- 🔍 Searchable via REST API
-- 📦 Available in npm package
-- 🌐 Featured on [ToolSDK.ai](https://toolsdk.ai)
-
-📖 **Source of truth (schema, fields, remotes, OAuth)**: [CONTRIBUTING.md](./CONTRIBUTING.md)
-
-📚 Additional docs: [docs/guide.md](./docs/guide.md)
 
 ---
 
