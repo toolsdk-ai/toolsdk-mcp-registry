@@ -472,9 +472,10 @@ This project follows **Domain-Driven Design (DDD)** architecture with **Service 
     │   └── index.ts  # Server initialization and route registration
     ├── domains/      # Business domains (core logic)
     │   ├── config/   # Configuration management
-    │   ├── executor/ # Tool execution (local-executor, sandbox-executor)
-    │   ├── package/  # Package management (SO, handler, routes)
-    │   ├── sandbox/  # Sandbox management (pooling, providers)
+    │   ├── executor/    # Tool execution (local-executor, sandbox-executor)
+    │   ├── mcp-gateway/ # MCP Gateway — proxies packages as Streamable HTTP endpoints
+    │   ├── package/     # Package management (SO, handler, routes)
+    │   ├── sandbox/     # Sandbox management (pooling, providers)
     │   └── search/   # Search service integration
     └── shared/       # Shared infrastructure
         ├── config/   # Environment configuration (environment.ts)

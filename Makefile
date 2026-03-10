@@ -40,6 +40,10 @@ fetch-official-mcp:
 	bun scripts/official-registry/index.ts
 
 # Validate a single MCP Server JSON file
-# Usage: make validate FILE=packages/aggregators/1mcp-agent.json
+# Usage: make validate packages/aggregators/1mcp-agent.json
 validate:
-	bun scripts/validate-package.ts $(FILE)
+	bun scripts/validate-package.ts $(wordlist 2,$(words $(MAKECMDGOALS)),$(MAKECMDGOALS))
+
+# Swallow positional args so make doesn't treat them as targets
+%:
+	@:
