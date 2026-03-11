@@ -1,7 +1,7 @@
 {
   "type": "mcp-server",
   "name": "Roundtable",
-  "packageName": "roundtable-mcp",
+  "packageName": "@toolsdk-remote/roundtable-mcp",
   "description": "Multi-model AI debate platform — consult GPT-4o, Claude, Gemini & 200+ models that discuss your problem, then synthesize a unified insight. Tools: consult_council, review_code, debug_issue, design_architecture, plan_implementation, assess_tradeoffs.",
   "url": "https://github.com/deadpixel/roundtable-dashboard",
   "runtime": "node",
