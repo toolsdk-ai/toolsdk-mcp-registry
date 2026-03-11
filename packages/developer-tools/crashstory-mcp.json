@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "CrashStory MCP",
+  "packageName": "@toolsdk-remote/crashstory-mcp",
+  "description": "CrashStory MCP provides 15 tools for searching Colorado car accident data. Query 594K+ crash records by location, date, and severity. Compare 600+ personal injury attorneys with AI-analyzed review intelligence.",
+  "url": "https://github.com/DavidMelamed/crashstory-platform",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://crashstory-mcp-production.up.railway.app/mcp"
+    }
+  ]
+}
