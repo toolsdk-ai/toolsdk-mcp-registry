@@ -1,7 +1,7 @@
 {
   "type": "mcp-server",
   "name": "Frihet",
-  "packageName": "@frihet/mcp-server",
+  "packageName": "@toolsdk-remote/frihet-mcp-server",
   "description": "AI-native business management MCP server with 31 tools for invoicing, expenses, clients, products, quotes, and tax compliance (VeriFactu). Supports multi-currency (40 currencies), OCR, Stripe Connect, and webhooks.",
   "url": "https://github.com/berthelius/frihet-mcp",
   "runtime": "node",
@@ -17,8 +17,7 @@
       "type": "streamable-http",
       "url": "https://mcp.frihet.io/mcp",
       "auth": {
-        "type": "oauth2",
-        "scopes": []
+        "type": "oauth2"
       }
     }
   ]
