@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "A2ABench",
+  "packageName": "@toolsdk-remote/a2abench",
+  "description": "Agent-native developer Q&A benchmark with MCP tools for asking questions, submitting answers, and discovering answer jobs.",
+  "url": "https://github.com/khalidsaidi/a2abench",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://a2abench-mcp.web.app/mcp"
+    }
+  ]
+}
