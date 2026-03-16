@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "PanchangaAPI",
+  "packageName": "@toolsdk-remote/panchanga-api",
+  "description": "Vedic astrology MCP server — Panchanga, Kundali, Dasha, compatibility, Muhurta, festivals",
+  "url": "https://panchanga.api.mymultiverse.dev",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "PANCHANGA_API_KEY": {
+      "description": "API Key for PanchangaAPI",
+      "required": false
+    }
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://panchanga.api.mymultiverse.dev/mcp"
+    }
+  ]
+}
