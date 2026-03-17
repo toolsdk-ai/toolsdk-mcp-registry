@@ -1,0 +1,10 @@
+{
+  "type": "mcp-server",
+  "packageName": "preflight-dev",
+  "description": "24-tool MCP server for Claude Code that catches ambiguous prompts before they cost you 2-3x in wrong→fix cycles. Features 12-category prompt scoring, correction pattern learning, cross-service contract awareness, semantic session history search with LanceDB vectors, and cost estimation.",
+  "url": "https://github.com/preflight-dev/preflight",
+  "runtime": "node",
+  "license": "mit",
+  "env": {},
+  "name": "Preflight"
+}
