@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "Arch Tools",
+  "packageName": "arch-tools-mcp",
+  "description": "61 production AI tools — web scraping, crypto data, AI generation, sentiment analysis, OCR, TTS, and more. Pay per-call with USDC via x402 protocol or use API keys. The first API platform where AI agents pay with crypto.",
+  "url": "https://github.com/Deesmo/Arch-AI-Tools",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://archtools.dev/logo.png",
+  "author": "Arch Tools",
+  "env": {
+    "ARCH_TOOLS_API_KEY": {
+      "description": "API key from archtools.dev (optional — can pay with USDC via x402 instead)",
+      "required": false
+    }
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://arch-tools-mcp.onrender.com/mcp"
+    }
+  ]
+}
