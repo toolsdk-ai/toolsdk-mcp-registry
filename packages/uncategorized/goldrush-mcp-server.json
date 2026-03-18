@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "name": "GoldRush",
+  "packageName": "@covalenthq/goldrush-mcp-server",
+  "description": "Blockchain data across 100+ chains — wallet balances, token prices, transactions, DEX pairs, and more. REST API, real-time WebSocket with OHLCV price feeds, CLI, and x402 pay-per-request.",
+  "url": "https://github.com/covalenthq/goldrush-mcp-server",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "GOLDRUSH_API_KEY": {
+      "description": "API key for GoldRush API (get free key at goldrush.dev)",
+      "required": true
+    }
+  }
+}
