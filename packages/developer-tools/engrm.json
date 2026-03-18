@@ -1,0 +1,10 @@
+{
+  "type": "mcp-server",
+  "packageName": "engrm",
+  "description": "Shared memory for AI agents across devices, sessions, and coding systems, with continuity across OpenClaw, Claude Code, and Codex.",
+  "url": "https://github.com/dr12hes/engrm",
+  "runtime": "node",
+  "license": "fsl-1.1-alv2",
+  "env": {},
+  "name": "Engrm"
+}
