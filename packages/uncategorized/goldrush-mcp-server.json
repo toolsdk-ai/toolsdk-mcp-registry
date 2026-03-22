@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "name": "GoldRush",
+  "packageName": "@covalenthq/goldrush-mcp-server",
+  "description": "Exposes GoldRush APIs as MCP resources and tools, enabling LLMs to interact with blockchain data across 100+ chains.",
+  "url": "https://goldrush.dev/docs/goldrush-mcp-server",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "GOLDRUSH_API_KEY": {
+      "description": "API key for GoldRush API (get free key at goldrush.dev)",
+      "required": true
+    }
+  }
+}
