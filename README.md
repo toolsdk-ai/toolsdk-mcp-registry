@@ -327,6 +327,7 @@ Browse by category: Developer Tools, AI Agents, Databases, Cloud Platforms, APIs
 Tools that haven’t been sorted into a category yet. AI will categorize it later.
 
 - [✅ @antv/mcp-server-chart](https://github.com/antvis/mcp-server-chart): A visualization mcp contains 25+ visual charts using @antvis. Using for chart generation and data analysis.  (25 tools) (node) 
+- [claw-army/claude-node](https://github.com/claw-army/claude-node) - Python subprocess bridge for Claude Code CLI, giving Python code direct access to Claude Code native capabilities via stream-json.
 - [✅ @atlassian-dc-mcp/bitbucket](https://github.com/b1ff/atlassian-dc-mcp): MCP server for Atlassian Bitbucket Data Center - interact with repositories and code  (9 tools) (node) 
 - [✅ @atlassian-dc-mcp/jira](https://github.com/b1ff/atlassian-dc-mcp): MCP server for Atlassian Jira Data Center - search, view, and create issues  (6 tools) (node) 
 - [✅ @bankless/onchain-mcp](https://github.com/bankless/onchain-mcp): Integrates with blockchain networks to enable smart contract interaction, transaction history access, and on-chain data exploration through specialized tools for reading contract state, retrieving ABIs, and filtering event logs.  (10 tools) (node) 
