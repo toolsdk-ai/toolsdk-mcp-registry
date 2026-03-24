@@ -1,0 +1,10 @@
+{
+  "type": "mcp-server",
+  "packageName": "flash-payment-system-busd1-runes-mcp",
+  "description": "First write-capable Bitcoin Runes MCP server. 12 tools to mint, transfer, batch-mint, and list BITCOIN USD ONE Runes. bUSD1 stablecoin backed 1:1 by Runes on Bitcoin L1 with Chainlink Proof of Reserves. Agent swarm coordination and x402 payments. 99 tests.",
+  "url": "https://github.com/ElromEvedElElyon/flash-payment-system",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "name": "Flash Payment System (bUSD1 Runes MCP)"
+}

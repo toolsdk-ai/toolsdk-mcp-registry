@@ -1,0 +1,10 @@
+{
+    "type": "mcp-server",
+    "name": "Claw MCP Toolkit",
+    "packageName": "claw-mcp-toolkit",
+    "description": "All-in-one MCP server with 26 tools across 5 modules: Crypto, Web, Social, Finance, Productivity. Zero config, zero API keys.",
+    "url": "https://github.com/ElromEvedElElyon/claw-mcp-toolkit",
+    "runtime": "node",
+    "license": "MIT",
+    "env": {}
+}

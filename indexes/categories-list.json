@@ -2698,6 +2698,7 @@
       "quickbooks-time",
       "@osmosis-agent-toolkit/mcp",
       "1inch-cross-chain-swap",
+      "flash-payment-system-busd1-runes-mcp",
       "yfinance-trader",
       "stripe",
       "bitcoin-(coingecko)",

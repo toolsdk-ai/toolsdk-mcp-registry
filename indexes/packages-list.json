@@ -36954,6 +36954,12 @@
     "validated": false,
     "tools": {}
   },
+  "flash-payment-system-busd1-runes-mcp": {
+    "category": "finance-fintech",
+    "path": "finance-fintech/flash-payment-system-busd1-runes-mcp.json",
+    "validated": false,
+    "tools": {}
+  },
   "realtime-crypto-mcp-server": {
     "category": "finance-fintech",
     "path": "finance-fintech/realtime-crypto-mcp-server.json",
