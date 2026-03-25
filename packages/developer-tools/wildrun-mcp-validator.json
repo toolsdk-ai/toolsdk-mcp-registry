@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "WildRun MCP Validator",
+  "packageName": "wildrun-mcp-validator",
+  "description": "Validate MCP tool definitions for quality, completeness, and spec compliance. Checks naming conventions, descriptions, inputSchema, parameter descriptions, annotations (readOnlyHint/destructiveHint), outputSchema, and destructive tool detection. Returns a score (0-100), grade (A-F), and per-tool issue reports with fix suggestions.",
+  "url": "https://github.com/thomwseo/wildrunai",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://wildrunai.com/api/mcp"
+    }
+  ]
+}
