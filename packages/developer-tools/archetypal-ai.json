@@ -1,0 +1,10 @@
+{
+  "type": "mcp-server",
+  "name": "Archetypal AI",
+  "packageName": "archetypal-ai",
+  "description": "Persistent memory for AI agents. recall, remember, checkpoint.",
+  "url": "https://github.com/archetypal-ai/archetypal-ai",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {}
+}
