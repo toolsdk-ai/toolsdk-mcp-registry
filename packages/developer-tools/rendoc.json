@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "name": "RenDoc MCP Server",
+  "packageName": "@rendoc/mcp-server",
+  "description": "Generate PDF documents from HTML templates and data via MCP.",
+  "url": "https://github.com/yoryocoruxo-ai/rendoc",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "RENDOC_API_KEY": {
+      "description": "API Key for RenDoc",
+      "required": true
+    }
+  }
+}
