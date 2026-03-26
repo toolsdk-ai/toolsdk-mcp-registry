@@ -1,0 +1,10 @@
+{
+  "type": "mcp-server",
+  "name": "AgentFolio MCP Server",
+  "packageName": "agentfolio-mcp-server",
+  "description": "Provides verifiable agent identity and trust scores via the Solana Agent Transfer Protocol (SATP). Enables AI agents to verify identities and query trust scores.",
+  "url": "https://github.com/brainAI-bot/agentfolio-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {}
+}
