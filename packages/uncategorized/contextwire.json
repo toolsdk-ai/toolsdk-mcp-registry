@@ -1,17 +1,15 @@
 {
   "type": "mcp-server",
   "name": "ContextWire",
-  "packageName": "contextwire-mcp",
+  "packageName": "@toolsdk-remote/contextwire-mcp",
   "description": "Free search API for AI agents. 105 engines, 22 search profiles, 94.3% SimpleQA accuracy. MCP server with 5 tools: ask, search, extract, research, batch_search. 1,000 free queries/month.",
   "url": "https://github.com/keptlive/contextwire-mcp",
-  "homepage": "https://contextwire.dev",
   "runtime": "node",
   "license": "MIT",
-  "isRemote": true,
-  "remoteUrl": "https://contextwire.dev/mcp",
-  "capabilities": {
-    "tools": true,
-    "resources": false,
-    "prompts": false
-  }
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://contextwire.dev/mcp"
+    }
+  ]
 }
