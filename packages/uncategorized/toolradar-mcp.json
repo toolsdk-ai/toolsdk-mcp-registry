@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "name": "Toolradar MCP",
+  "packageName": "toolradar-mcp",
+  "description": "Search, compare, and get pricing for 8,600+ software tools with verified data, editorial scores, G2/Capterra ratings, and real alternatives.",
+  "url": "https://github.com/Nadeus/toolradar-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "TOOLRADAR_API_KEY": {
+      "description": "API key for higher rate limits. Free tier (100 calls/day) works without a key.",
+      "required": false
+    }
+  }
+}
