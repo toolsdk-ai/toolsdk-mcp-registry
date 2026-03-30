@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "NexusAPI",
+  "packageName": "@toolsdk-remote/nexusapi",
+  "description": "18 compute tools for AI Agents: Web Scrape, Python Execution, ML Inference, Text Analysis, Image Processing, Data Tools, Utilities.",
+  "url": "https://github.com/ruizmr/nexusapi-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://marble-appendix-accurately-mark.trycloudflare.com/mcp"
+    }
+  ]
+}
