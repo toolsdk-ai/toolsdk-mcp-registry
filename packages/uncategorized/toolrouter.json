@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "ToolRouter",
+  "packageName": "toolrouter-mcp",
+  "description": "Give your AI agent superpowers with access to 150+ tools on demand with just one account. Competitor research, video production, web search, image generation, security scanning, and more. One API key replaces managing dozens of provider accounts.",
+  "url": "https://toolrouter.com",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "TOOLROUTER_API_KEY": {
+      "description": "Your ToolRouter API key. Get one at https://toolrouter.com",
+      "required": true
+    }
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.toolrouter.com/mcp"
+    }
+  ]
+}
