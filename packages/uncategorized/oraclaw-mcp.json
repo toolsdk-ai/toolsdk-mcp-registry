@@ -1,0 +1,10 @@
+{
+  "type": "mcp-server",
+  "name": "OraClaw Decision Intelligence",
+  "packageName": "@oraclaw/mcp-server",
+  "description": "Decision intelligence MCP server with 12 tools providing 19 ML algorithms (Bandits, Q-learning, A*, Genetic) for AI agents.",
+  "url": "https://github.com/Whatsonyourmind/oraclaw",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {}
+}
