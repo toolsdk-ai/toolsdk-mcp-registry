@@ -1,0 +1,31 @@
+{
+  "type": "mcp-server",
+  "name": "mcp-openapi-runner",
+  "packageName": "mcp-openapi-runner",
+  "description": "MCP server that turns any OpenAPI 3.x spec into callable tools for AI agents. Zero config, instant API access.",
+  "url": "https://github.com/saurav61091/mcp-openapi",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "OPENAPI_BEARER_TOKEN": {
+      "description": "Bearer token for Authorization header",
+      "required": false
+    },
+    "OPENAPI_API_KEY": {
+      "description": "API key value",
+      "required": false
+    },
+    "OPENAPI_API_KEY_HEADER": {
+      "description": "Header name for API key (default: X-Api-Key)",
+      "required": false
+    },
+    "OPENAPI_BASIC_USER": {
+      "description": "HTTP Basic auth username",
+      "required": false
+    },
+    "OPENAPI_BASIC_PASS": {
+      "description": "HTTP Basic auth password",
+      "required": false
+    }
+  }
+}
