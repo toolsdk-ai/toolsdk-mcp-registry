@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "ToolPipe",
+  "packageName": "@toolsdk-remote/toolpipe-mcp",
+  "description": "145+ developer utility tools via MCP: code review, JSON formatting, QR codes, hashing, UUID, DNS, WHOIS, SSL checking, regex, JWT, SQL formatting, Docker Compose, and more.",
+  "url": "https://github.com/COSAI-Labs/toolpipe-mcp-server",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://toolpipe.dev/mcp"
+    }
+  ]
+}
