@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "packageName": "newsletter-commerce-mcp",
+  "name": "Newsletter Commerce MCP",
+  "description": "Extracts affiliate-ready product entities from newsletter content. Identifies products, brands, categories, sponsorship context, and purchase intent with 100% F1 accuracy. Free tier: 200 calls/day. Paid: $0.01/call via x402 micropayments. OWASP-compliant, 643 tests.",
+  "url": "https://github.com/teamsincetoday/newsletter-commerce-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/teamsincetoday/newsletter-commerce-mcp/master/assets/logo.png",
+  "author": "Since Today",
+  "env": {
+    "OPENAI_API_KEY": {
+      "description": "OpenAI API key for product entity extraction intelligence",
+      "required": true
+    }
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://newsletter-commerce-mcp.sincetoday.workers.dev/mcp"
+    }
+  ]
+}
