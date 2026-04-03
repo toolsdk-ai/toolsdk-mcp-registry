@@ -1,12 +1,11 @@
 {
   "type": "mcp-server",
-  "packageName": "podcast-commerce-mcp",
+  "packageName": "@toolsdk-remote/podcast-commerce-mcp",
   "name": "Podcast Commerce MCP",
   "description": "Extracts affiliate-ready product entities from podcast transcripts. Identifies product names, brands, categories, prices, and recommendation strength with 100% F1 accuracy. Free tier: 200 calls/day. Paid: $0.01/call via x402 micropayments. OWASP-compliant, 643 tests.",
   "url": "https://github.com/teamsincetoday/podcast-commerce-mcp",
   "runtime": "node",
   "license": "MIT",
-  "logo": "https://raw.githubusercontent.com/teamsincetoday/podcast-commerce-mcp/master/assets/logo.png",
   "author": "Since Today",
   "env": {
     "OPENAI_API_KEY": {

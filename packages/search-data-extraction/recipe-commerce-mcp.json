@@ -1,12 +1,11 @@
 {
   "type": "mcp-server",
-  "packageName": "recipe-commerce-mcp",
+  "packageName": "@toolsdk-remote/recipe-commerce-mcp",
   "name": "Recipe Commerce MCP",
   "description": "Extracts affiliate-ready ingredient and product entities from recipe content. Identifies products, brands, categories, substitutes, and purchase links with 100% F1 accuracy. Free tier: 200 calls/day. Paid: $0.01/call via x402 micropayments. OWASP-compliant, 643 tests.",
   "url": "https://github.com/teamsincetoday/recipe-commerce-mcp",
   "runtime": "node",
   "license": "MIT",
-  "logo": "https://raw.githubusercontent.com/teamsincetoday/recipe-commerce-mcp/master/assets/logo.png",
   "author": "Since Today",
   "env": {
     "OPENAI_API_KEY": {
