@@ -1,0 +1,9 @@
+{
+  "type": "npm",
+  "packageName": "@auto.dev/sdk",
+  "description": "VIN decode, vehicle listings, payments, recalls, specs, and more — via MCP tools, CLI, SDK, or direct API. One install covers everything.",
+  "url": "https://github.com/drivly/auto-dev-skill",
+  "runtime": "node",
+  "license": "MIT",
+  "env": []
+}
