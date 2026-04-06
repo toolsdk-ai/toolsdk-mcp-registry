@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Iteration Layer",
+  "packageName": "iterationlayer",
+  "description": "Document extraction, image transformation, programmatic image generation, document generation, and sheet generation via composable APIs.",
+  "url": "https://github.com/iterationlayer/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.iterationlayer.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
