@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "packageName": "chartlibrary-mcp",
+  "description": "Historical chart pattern intelligence for AI agents. Search 24M+ embeddings across 19K+ symbols to find visually similar historical patterns and see what happened next. Includes forward return predictions, pattern detection, regime analysis, and trade simulation.",
+  "url": "https://github.com/grahammccain/chart-library-mcp",
+  "runtime": "python",
+  "license": "mit",
+  "env": {
+    "CHART_LIBRARY_API_KEY": {
+      "description": "API key from chartlibrary.io/developers (optional — free tier works without key)",
+      "required": false
+    }
+  },
+  "name": "Chart Library MCP"
+}
