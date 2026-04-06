@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "packageName": "@botoi/sdk",
+  "name": "Botoi MCP Server",
+  "description": "150+ developer utility APIs via MCP. Hashing, encoding, DNS lookup, IP geolocation, QR codes, JWT tools, URL shortening, email validation, screenshot capture, and more.",
+  "url": "https://github.com/botoi-com/botoi",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "BOTOI_API_KEY": {
+      "description": "API key from botoi.com for authenticated access. Optional for anonymous usage (5 req/min, 100 req/day).",
+      "required": false
+    }
+  }
+}
