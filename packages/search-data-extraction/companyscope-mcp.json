@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "CompanyScope",
+  "packageName": "@toolsdk-remote/companyscope-mcp",
+  "description": "Company intelligence from a single MCP tool call. Aggregates data from 8 free public sources to build comprehensive company profiles with founding info, tech stack, financials, competitors, and news.",
+  "url": "https://github.com/Stewyboy1990/companyscope-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://companyscope-mcp.stewwilli.workers.dev/mcp"
+    }
+  ]
+}
