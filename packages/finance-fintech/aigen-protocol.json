@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "AIGEN Protocol",
+  "packageName": "@toolsdk-remote/aigen-protocol",
+  "description": "Token Safety + Agent Economy (38 tools). Security checks, honeypot simulation, DeFi data, and agent task economy across 6 EVM chains.",
+  "url": "https://github.com/Aigen-Protocol/aigen-protocol",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://cryptogenesis.duckdns.org/mcp"
+    }
+  ]
+}
