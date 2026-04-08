@@ -1,0 +1,9 @@
+{
+  "type": "mcp-server",
+  "name": "global-chat-mcp-server",
+  "packageName": "@global-chat/mcp-server",
+  "description": "AI agent discovery MCP server. Search 100K+ agents across 15+ registries and protocols (MCP, A2A, agents.txt, ACDP). Protocol-agnostic directory for the fragmented agent ecosystem.",
+  "url": "https://github.com/pumanitro/global-chat",
+  "runtime": "node",
+  "license": "MIT"
+}
