@@ -1,0 +1,10 @@
+{
+  "type": "mcp-server",
+  "name": "Clarvia AEO Scanner",
+  "packageName": "clarvia-mcp-server",
+  "description": "AI agent tool discovery and AEO quality scoring. Search, score, and compare 27,843+ MCP servers and AI tools. Rates tool agent-readiness 0-100 across documentation, schema compliance, and compatibility.",
+  "url": "https://github.com/clarvia-project/scanner",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {}
+}
