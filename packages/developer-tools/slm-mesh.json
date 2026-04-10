@@ -1,0 +1,10 @@
+{
+  "type": "mcp-server",
+  "name": "SLM Mesh",
+  "packageName": "slm-mesh",
+  "description": "P2P communication for AI coding agents. 8 MCP tools including peer discovery, messaging, shared state, file locking, and events. Any MCP agent.",
+  "url": "https://github.com/qualixar/slm-mesh",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {}
+}
