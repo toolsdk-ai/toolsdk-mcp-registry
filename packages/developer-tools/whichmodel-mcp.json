@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "WhichModel",
+  "packageName": "@toolsdk-remote/whichmodel-mcp",
+  "description": "Helps AI agents choose the right model for every task at the best price. Cross-verified pricing data across AI model providers updated every 4 hours.",
+  "url": "https://github.com/Which-Model/whichmodel-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://whichmodel.dev/mcp"
+    }
+  ]
+}
