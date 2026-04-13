@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "QR Business Cards",
+  "packageName": "qr-business-cards-mcp",
+  "description": "Create professional QR business cards via AI assistants. No API key required. Generate profiles with contact info, social links, and get printable QR-coded business cards delivered.",
+  "url": "https://github.com/ajfrai/qr-business-cards-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "ajfrai",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://qr-business-cards.com/api/mcp"
+    }
+  ]
+}
