@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "AgentGrade",
+  "packageName": "agentgrade",
+  "description": "Grade any website on AI agent readiness. Scores 80+ checks across payments, APIs, and discovery.",
+  "url": "https://agentgrade.com",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://agentgrade.com/favicon.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://agentgrade.com/mcp"
+    }
+  ]
+}
