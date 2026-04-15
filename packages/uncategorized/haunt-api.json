@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "name": "Haunt API",
+  "packageName": "@hauntapi/mcp-server",
+  "description": "AI-powered web scraping MCP server. Extract structured data from any webpage using natural language prompts. Supports JavaScript rendering, CSS selectors, and structured JSON output.",
+  "url": "https://github.com/Darko893/mcp-server",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "HAUNT_API_KEY": {
+      "description": "API key from hauntapi.com (free tier: 100 requests/month)",
+      "required": true
+    }
+  }
+}
