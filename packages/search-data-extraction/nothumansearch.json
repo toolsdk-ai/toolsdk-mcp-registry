@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Not Human Search",
+  "packageName": "@toolsdk-remote/nothumansearch",
+  "description": "MCP-native search engine that indexes and verifies MCP servers via live JSON-RPC probes. Search 1000+ MCP tools by name, description, or capability. Returns ranked results with agentic scores, categories, and live endpoint verification.",
+  "url": "https://nothumansearch.ai",
+  "runtime": "remote",
+  "license": "proprietary",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://nothumansearch.ai/mcp"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "AI Dev Jobs",
+  "packageName": "@toolsdk-remote/aidevboard",
+  "description": "MCP server for searching AI and LLM developer job listings. Find roles across ML engineering, LLM fine-tuning, AI research, and agent development from 55+ ATS sources. Supports filtering by location, level, and category.",
+  "url": "https://aidevboard.com",
+  "runtime": "remote",
+  "license": "proprietary",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://aidevboard.com/mcp"
+    }
+  ]
+}
