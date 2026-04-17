@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "AI Dev Jobs",
+  "packageName": "com.aidevboard/jobs",
+  "description": "Structured data for 8,400+ active AI/ML engineering jobs from 580 company ATS boards (Anthropic, OpenAI, Meta FAIR, DeepMind, Scale, Cohere, and 475+ more). Search by role, tags, location, workplace, salary, experience level. 4 tools: search_jobs, get_job, list_companies, get_stats. No auth required.",
+  "url": "https://aidevboard.com/docs",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://aidevboard.com/mcp"
+    }
+  ]
+}
