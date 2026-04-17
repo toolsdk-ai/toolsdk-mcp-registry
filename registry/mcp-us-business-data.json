@@ -1,0 +1,10 @@
+{
+  "name": "mcp-us-business-data",
+  "description": "Search US Secretary of State business registrations (17 states), building permits (400+ cities), and Yellow Pages listings",
+  "homepage": "https://github.com/avabuildsdata/mcp-us-business-data",
+  "repository": "https://github.com/avabuildsdata/mcp-us-business-data",
+  "license": "MIT",
+  "language": "go",
+  "tools": ["search_business_entity", "search_building_permits", "search_yellow_pages"],
+  "categories": ["data", "business", "government"]
+}
