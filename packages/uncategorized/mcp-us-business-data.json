@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "US Business Data MCP Server",
+  "packageName": "mcp-us-business-data",
+  "description": "Search US business entities, contractors, court records, and professionals across 17 states via Secretary of State filings, contractor licenses, and public records",
+  "url": "https://github.com/avabuildsdata/mcp-us-business-data",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/sse?tools=pink_comic/us-business-entity-search"
+    }
+  ]
+}
