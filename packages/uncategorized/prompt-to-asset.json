@@ -1,0 +1,9 @@
+{
+  "type": "mcp-server",
+  "name": "Prompt to Asset",
+  "packageName": "prompt-to-asset",
+  "description": "MCP server that generates production-ready visual assets (app icons, favicons, OG images, logos, wordmarks) by routing prompts across 30+ image generation models. Three execution modes: inline SVG, external prompt, and full API generation. Zero API key required for first run via Pollinations and Stable Horde free tiers.",
+  "url": "https://github.com/MohamedAbdallah-14/prompt-to-asset",
+  "runtime": "node",
+  "license": "MIT"
+}
