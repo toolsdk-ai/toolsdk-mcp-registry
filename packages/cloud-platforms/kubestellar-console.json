@@ -1,0 +1,10 @@
+{
+  "type": "mcp-server",
+  "packageName": "kubestellar-console",
+  "description": "AI-powered multi-cluster Kubernetes management dashboard with built-in MCP server (kc-agent) for AI-assisted operations, compliance auditing, and cross-cluster resource management.",
+  "url": "https://github.com/kubestellar/console",
+  "runtime": "go",
+  "license": "Apache-2.0",
+  "env": {},
+  "name": "KubeStellar Console"
+}
