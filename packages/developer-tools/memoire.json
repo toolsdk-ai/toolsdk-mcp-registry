@@ -1,0 +1,12 @@
+{
+  "type": "mcp-server",
+  "packageName": "@sarveshsea/memoire",
+  "bin": "memi",
+  "binArgs": ["mcp"],
+  "description": "MCP server and CLI for shadcn-native Design CI. Diagnose UI debt, extract Tailwind tokens, export shadcn registries, and plan safe UI fixes.",
+  "url": "https://github.com/sarveshsea/m-moire",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "name": "Memoire"
+}
