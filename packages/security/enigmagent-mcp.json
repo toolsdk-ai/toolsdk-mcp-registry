@@ -1,6 +1,6 @@
 {
   "type": "mcp-server",
-  "name": "EnigmAgent",
+  "name": "enigmagent-mcp",
   "packageName": "enigmagent-mcp",
   "description": "AES-256-GCM + Argon2id encrypted local vault MCP server for AI agent credentials. Resolves {{PLACEHOLDER}} secrets at runtime so API keys never appear in prompts, logs, or LLM context.",
   "url": "https://github.com/Agnuxo1/EnigmAgent",
