@@ -1,0 +1,27 @@
+{
+  "type": "mcp-server",
+  "name": "Spinnaker MCP",
+  "packageName": "spinnaker-mcp",
+  "description": "A bridge that exposes any Spinnaker instance as an MCP server via the Gate API, enabling LLMs to manage applications, pipelines, executions, and cloud infrastructure.",
+  "url": "https://github.com/GeiserX/spinnaker-mcp",
+  "runtime": "node",
+  "license": "gpl-3.0",
+  "env": {
+    "GATE_URL": {
+      "description": "Spinnaker Gate API URL (e.g. http://spin-gate:8084)",
+      "required": true
+    },
+    "GATE_TOKEN": {
+      "description": "Bearer token for Gate authentication",
+      "required": false
+    },
+    "GATE_USER": {
+      "description": "Basic auth username (alternative to token)",
+      "required": false
+    },
+    "GATE_PASS": {
+      "description": "Basic auth password",
+      "required": false
+    }
+  }
+}

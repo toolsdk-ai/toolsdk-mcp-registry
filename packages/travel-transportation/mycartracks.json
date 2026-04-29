@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "MyCarTracks",
+  "packageName": "mycartracks-mcp",
+  "description": "Mainly app-based GPS vehicle tracking and automatic mileage tracking with MCP access to trip, track, and vehicle data.",
+  "url": "https://mycartracks.com/resources/connect-with-ai",
+  "readme": "https://mycartracks.com/resources/connect-with-ai",
+  "runtime": "java",
+  "license": "unknown",
+  "logo": "https://mycartracks.com/images/android-chrome-512x512.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mycartracks.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
