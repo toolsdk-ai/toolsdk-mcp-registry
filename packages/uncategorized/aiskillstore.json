@@ -1,0 +1,16 @@
+{
+    "type": "mcp-server",
+    "name": "AI Skill Store",
+    "packageName": "@toolsdk-remote/aiskillstore",
+    "description": "The skill marketplace where AI agents search, install, and contribute skills via API. 138+ security-vetted skills, auto-converted for 7 platforms (Claude Code, Cursor, Codex CLI, Gemini CLI, and more) via the USK open standard. Features Supply Loop, Draft Upload, and full MCP integration.",
+    "url": "https://github.com/garasegae/aiskillstore",
+    "runtime": "node",
+    "license": "MIT",
+    "env": {},
+    "remotes": [
+          {
+                  "type": "streamable-http",
+                  "url": "https://aiskillstore.io/mcp"
+          }
+    ]
+}
