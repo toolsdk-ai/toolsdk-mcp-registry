@@ -1,0 +1,11 @@
+{
+  "type": "mcp-server",
+  "packageName": "bitcoin-mcp",
+  "key": "bortlesboat-bitcoin-mcp",
+  "description": "Bitcoin MCP server with 49 tools for fee intelligence, mempool analysis, blocks, transactions, mining, price, supply, and AI agent Bitcoin workflows. Works zero-config through Satoshi API, with optional self-hosting.",
+  "url": "https://github.com/Bortlesboat/bitcoin-mcp",
+  "runtime": "python",
+  "license": "MIT",
+  "env": {},
+  "name": "Bortlesboat Bitcoin MCP"
+}
