@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Inferventis — Live Financial Data MCP",
+  "packageName": "@inferventis/mcp-server",
+  "description": "Live financial data MCP for AI agents: real-time FX rates, stock quotes, crypto prices (10,000+ coins via CoinGecko), Open Banking (PSD2/TrueLayer, 300+ banks), Stripe payment data, and a financial calculator. Includes semantic tool_finder for agent discovery. Pay-per-call via x402 micropayments on Base ($0.001 USDC) — no API key required.",
+  "url": "https://github.com/Bankee-ai/inferventis",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "X_API_KEY": {
+      "description": "Optional API key for the /mcp endpoint (Stripe billing). Use /mcp-pay instead for keyless x402 micropayment access.",
+      "required": false
+    }
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp-server-295985738387.europe-west1.run.app/mcp-pay"
+    }
+  ]
+}
