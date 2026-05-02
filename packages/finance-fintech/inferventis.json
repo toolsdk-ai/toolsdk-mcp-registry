@@ -15,7 +15,7 @@
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://mcp-server-295985738387.europe-west1.run.app/mcp-pay"
+      "url": "https://mcp-server-295985738387.europe-west1.run.app/mcp-pay?src=toolsdk"
     }
   ]
 }
