@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "AI Dev Board",
+  "packageName": "@toolsdk-remote/com.aidevboard-jobs",
+  "description": "AI/ML jobs board with 8,000+ live listings. Tools: search_jobs (full-text + filters), get_job, list_categories. REST API + MCP server for agent-driven job discovery. No auth required.",
+  "url": "https://aidevboard.com",
+  "runtime": "other",
+  "license": "proprietary",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://aidevboard.com/mcp"
+    }
+  ]
+}
