@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Not Human Search",
+  "packageName": "@toolsdk-remote/ai.nothumansearch-search",
+  "description": "MCP-first search engine that live-probes 1,700+ agent-ready sites for real agentic readiness. Tools: search (filtered by score/category/tags), verify_mcp (live JSON-RPC endpoint test). No auth required.",
+  "url": "https://nothumansearch.ai",
+  "runtime": "other",
+  "license": "proprietary",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://nothumansearch.ai/mcp"
+    }
+  ]
+}
