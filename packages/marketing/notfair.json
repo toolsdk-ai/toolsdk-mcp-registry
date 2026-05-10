@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "NotFair Google Ads MCP",
+  "packageName": "@toolsdk-remote/notfair-google-ads",
+  "description": "Google Ads MCP server. Connects Claude and AI agents to a Google Ads account: diagnose campaign performance (CPA, ROAS, search-term waste, quality scores), recommend optimizations (bids, budgets, negatives, ad copy), and execute approved changes via the Google Ads API with a built-in human-approval gate.",
+  "url": "https://github.com/nowork-studio/toprank",
+  "runtime": "node",
+  "license": "Proprietary",
+  "author": "nowork-studio",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://notfair.co/api/mcp/google_ads"
+    }
+  ]
+}
