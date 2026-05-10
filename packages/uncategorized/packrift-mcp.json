@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Packrift MCP",
+  "packageName": "packrift-mcp",
+  "description": "Remote MCP server for Packrift's packaging-supplies catalog with product search, pricing, inventory, packaging recommendations, and checkout URLs.",
+  "url": "https://github.com/Packrift/packrift-mcp",
+  "readme": "https://github.com/Packrift/packrift-mcp#readme",
+  "runtime": "node",
+  "license": "unknown",
+  "author": "Packrift",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.packrift.com/mcp"
+    }
+  ]
+}
