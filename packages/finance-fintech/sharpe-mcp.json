@@ -1,0 +1,12 @@
+{
+  "type": "mcp-server",
+  "packageName": "sharpe-mcp",
+  "description": "MCP server for agent-ready crypto market intelligence, covering funding rates, futures, options, arbitrage, narratives, exchange listings, and news.",
+  "url": "https://pypi.org/project/sharpe-mcp/",
+  "readme": "https://www.sharpe.ai/docs/mcp-server",
+  "runtime": "python",
+  "license": "MIT",
+  "env": {},
+  "name": "Sharpe MCP Server",
+  "bin": "sharpe-mcp"
+}
