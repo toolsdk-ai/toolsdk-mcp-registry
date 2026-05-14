@@ -8,7 +8,7 @@
   "license": "MIT",
   "env": {
     "XQUIK_API_KEY": {
-      "description": "Xquik API key from https://dashboard.xquik.com/account",
+      "description": "Xquik API key from https://dashboard.xquik.com/en/account",
       "required": true
     }
   },
