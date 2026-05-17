@@ -1,0 +1,12 @@
+{
+  "type": "mcp-server",
+  "name": "click-to-mcp",
+  "packageName": "click-to-mcp",
+  "description": "Auto-wrap any Click or typer CLI as an MCP server without writing server code. AI agents can call existing CLI tools instantly.",
+  "url": "https://github.com/Coding-Dev-Tools/click-to-mcp",
+  "runtime": "python",
+  "license": "mit",
+  "bin": "click-to-mcp",
+  "binArgs": ["serve"],
+  "env": {}
+}
