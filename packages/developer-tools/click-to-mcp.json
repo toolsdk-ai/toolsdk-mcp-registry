@@ -1,0 +1,12 @@
+{
+  "type": "mcp-server",
+  "packageName": "click-to-mcp",
+  "description": "Auto-wrap any Click/Typer Python CLI as an MCP server for AI agent integration. Zero boilerplate — one command turns your CLI into a Model Context Protocol server.",
+  "url": "https://github.com/Coding-Dev-Tools/click-to-mcp",
+  "runtime": "python",
+  "license": "other",
+  "env": {},
+  "name": "click-to-mcp",
+  "bin": "click-to-mcp",
+  "author": "Coding-Dev-Tools"
+}
