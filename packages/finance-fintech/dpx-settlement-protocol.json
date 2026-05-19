@@ -1,0 +1,10 @@
+{
+  "type": "mcp-server",
+  "packageName": "@untitledfinancial/dpx-mcp",
+  "description": "Settlement protocol MCP server for institutional cross-border USDC transactions on Base mainnet. 14 tools covering Stability Oracle (macro, FX, ESG, climate, supply chain, earth systems), ESG scoring, FX quotes, Verification of Payee, and settlement execution. x402 pay-per-call. MiCA-aligned, GENIUS Act compatible.",
+  "url": "https://github.com/untitledfinancial/dpx-mcp",
+  "runtime": "node",
+  "license": "BSD-3-Clause",
+  "env": {},
+  "name": "DPX Settlement Protocol"
+}
