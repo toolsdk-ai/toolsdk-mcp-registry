@@ -1,0 +1,28 @@
+{
+  "type": "mcp-server",
+  "runtime": "node",
+  "packageName": "@martinloop/mcp",
+  "key": "martinloop-mcp",
+  "name": "MartinLoop MCP",
+  "description": "Governed MCP server for AI coding agents with budgets, verifier gates, and inspectable runs.",
+  "readme": "https://github.com/Keesan12/martin-loop/blob/main/packages/mcp/README.md",
+  "url": "https://github.com/Keesan12/martin-loop",
+  "license": "Apache-2.0",
+  "author": "Vakeesan Mahalingam and Gobi Shanthan",
+  "bin": "martin-loop-mcp",
+  "binArgs": [],
+  "env": {
+    "MARTIN_LIVE": {
+      "description": "Set to false for stub or smoke flows when the live coding loop should be disabled.",
+      "required": false
+    },
+    "MARTIN_RUNS_DIR": {
+      "description": "Override the persistent runs directory used to store run records and verification evidence.",
+      "required": false
+    },
+    "MARTIN_MCP_WORKSPACE_ROOT": {
+      "description": "Constrain workspace-safe paths for tool calls.",
+      "required": false
+    }
+  }
+}
