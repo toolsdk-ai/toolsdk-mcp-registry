@@ -1,0 +1,10 @@
+{
+    "type": "mcp-server",
+    "name": "Fast HTML MCP",
+    "packageName": "@surfsense/fast-html-mcp",
+    "description": "Five-tier MCP server for lightning-fast HTML generation from AI agents. Assembly, patch, read, raw, and consistency tiers with 15 tools, 22 components, and 25 templates. Sub-second cold starts, #id fast-path editing, AI-grade token compression.",
+    "url": "https://github.com/Aimino-Tech/fast-html-mcp",
+    "runtime": "node",
+    "license": "GPL-3.0",
+    "env": {}
+}
