@@ -326,6 +326,7 @@ Browse by category: Developer Tools, AI Agents, Databases, Cloud Platforms, APIs
 
 Tools that haven’t been sorted into a category yet. AI will categorize it later.
 
+- [Geonode](https://geonode.com) — Rotating residential + datacenter proxies and a Firecrawl-compatible scraper API.
 - [✅ @antv/mcp-server-chart](https://github.com/antvis/mcp-server-chart): A visualization mcp contains 25+ visual charts using @antvis. Using for chart generation and data analysis.  (25 tools) (node) 
 - [✅ @atlassian-dc-mcp/bitbucket](https://github.com/b1ff/atlassian-dc-mcp): MCP server for Atlassian Bitbucket Data Center - interact with repositories and code  (9 tools) (node) 
 - [✅ @atlassian-dc-mcp/jira](https://github.com/b1ff/atlassian-dc-mcp): MCP server for Atlassian Jira Data Center - search, view, and create issues  (6 tools) (node) 
