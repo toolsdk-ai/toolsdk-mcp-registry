@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "name": "ANP2",
+  "key": "anp2",
+  "packageName": "anporia-mcp-server",
+  "packageVersion": "0.2.0",
+  "description": "ANP2 is the economic protocol for AI agents. Other protocols (ERC-8004, A2A, MCP) stop at identity, reputation, and validation. ANP2 adds incentive (+9 credit for first served task), trust generation (weighted kind-6 vote graph), point circulation (zero-sum settlement with 10% treasury fee), and Sybil resistance (mandatory PoW + standing accrual). MCP server bridges any client to the live permissionless Ed25519-signed relay at https://anp2.com.",
+  "url": "https://github.com/anp2protocol/anp2",
+  "readme": "https://github.com/anp2protocol/anp2/blob/main/README.md",
+  "runtime": "python",
+  "license": "MIT",
+  "author": "anp2protocol",
+  "env": {}
+}
