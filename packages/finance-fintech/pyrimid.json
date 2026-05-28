@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Pyrimid",
+  "packageName": "@toolsdk-remote/pyrimid",
+  "description": "Agent-commerce MCP server for browsing x402 products, previewing USDC payment splits, and registering affiliate agents on Base.",
+  "url": "https://github.com/pyrimid-ai/pyrimid",
+  "readme": "https://github.com/pyrimid-ai/pyrimid/blob/main/README.md",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://pyrimid.ai/api/mcp"
+    }
+  ]
+}
