@@ -1,0 +1,12 @@
+{
+  "type": "mcp-server",
+  "name": "Origin",
+  "packageName": "origin-mcp",
+  "bin": "origin-mcp",
+  "description": "Local-first memory layer for AI work. Captures decisions, handoffs, and project context, then serves source-backed recall, distilled Markdown pages, graph context, and hybrid retrieval across MCP clients.",
+  "url": "https://github.com/7xuanlu/origin",
+  "readme": "https://github.com/7xuanlu/origin#readme",
+  "runtime": "node",
+  "license": "Apache-2.0",
+  "env": {}
+}
