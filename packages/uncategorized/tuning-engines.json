@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Tuning Engines",
+  "packageName": "tuningengines-cli",
+  "packageVersion": "0.4.15",
+  "bin": "te",
+  "binArgs": ["mcp", "serve"],
+  "description": "Govern model, agent, skill, and MCP workflows with policy controls, approvals, traces, and usage analytics.",
+  "url": "https://github.com/cerebrixos-org/tuning-engines-cli",
+  "readme": "https://github.com/cerebrixos-org/tuning-engines-cli#readme",
+  "logo": "https://app.tuningengines.com/icon.png",
+  "license": "MIT",
+  "author": "Ockham Labs Inc.",
+  "runtime": "node",
+  "env": {
+    "TE_API_KEY": {
+      "description": "Tenant-scoped Tuning Engines API key.",
+      "required": true
+    }
+  }
+}
