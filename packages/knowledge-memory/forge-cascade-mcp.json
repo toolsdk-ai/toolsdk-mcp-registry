@@ -3,11 +3,11 @@
   "key": "forge-cascade-mcp",
   "name": "Forge Cascade MCP",
   "packageName": "ghcr.io/sunflash12/forge-cascade-mcp",
-  "description": "Public MCP connector for Forge Cascade enterprise AI memory and RAG buyer routes. Exposes docs, pricing, intake, ranked direct Stripe checkout paths, and no-secret source-backed context for agents.",
+  "description": "Public MCP connector for Forge Cascade enterprise AI memory and RAG buyer routes. Exposes docs, pricing, intake, ranked direct Stripe checkout paths, paid route recommendations, and no-secret source-backed context for agents.",
   "url": "https://github.com/SunFlash12/forge-cascade-mcp",
   "readme": "https://github.com/SunFlash12/forge-cascade-mcp#readme",
   "runtime": "docker",
-  "binArgs": ["run", "--rm", "-i", "ghcr.io/sunflash12/forge-cascade-mcp:v0.1.5"],
+  "binArgs": ["run", "--rm", "-i", "ghcr.io/sunflash12/forge-cascade-mcp:v0.1.7"],
   "license": "MIT",
   "env": {}
 }
