@@ -39,7 +39,7 @@ allowBuilds:
   esbuild: true
   feuse-mcp: true
   geckodriver: true
-  isolated-vm: true
+  isolated-vm: false
   keccak: true
   kerberos: true
   lefthook: true
