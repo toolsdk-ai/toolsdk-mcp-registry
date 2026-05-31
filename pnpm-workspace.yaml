@@ -24,7 +24,7 @@ allowBuilds:
   '@xiaohui-wang/mcpadvisor': true
   attio-mcp: true
   aws-sdk: true
-  better-sqlite3: true
+  better-sqlite3: false
   bufferutil: true
   bun: true
   canvas: true
@@ -41,7 +41,7 @@ allowBuilds:
   geckodriver: true
   isolated-vm: false
   keccak: true
-  kerberos: true
+  kerberos: false
   lefthook: true
   mcp-package-version: true
   mongodb-client-encryption: true
