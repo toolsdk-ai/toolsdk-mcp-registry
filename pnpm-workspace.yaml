@@ -22,27 +22,33 @@ allowBuilds:
   '@tailwindcss/oxide': true
   '@tree-sitter-grammars/tree-sitter-yaml': true
   '@xiaohui-wang/mcpadvisor': true
+  archetypal-ai: false
   attio-mcp: true
   aws-sdk: true
   better-sqlite3: false
   bufferutil: true
   bun: true
   canvas: true
+  cashpilot-mcp: false
   ccxt: true
   core-js: true
   core-js-pure: true
   cpu-features: true
   cursor-chat-history-mcp: true
   cursor-rules-mcp: true
+  duplicacy-mcp: false
   edgedriver: true
   es5-ext: true
   esbuild: true
   feuse-mcp: true
   geckodriver: true
+  genieacs-mcp: false
   isolated-vm: false
   keccak: true
   kerberos: false
   lefthook: true
+  lynxprompt-mcp: false
+  lzo: false
   mcp-package-version: true
   mongodb-client-encryption: true
   msgpackr-extract: true
@@ -51,13 +57,18 @@ allowBuilds:
   onnxruntime-node: true
   oracledb: true
   os-dns-native: true
+  phantomjs-prebuilt: false
   protobufjs: true
+  pumperly-mcp: false
   puppeteer: true
   secp256k1: true
   sharp: true
+  slm-mesh: false
   sqlite3: true
   ssh2: true
+  spinnaker-mcp: false
   tesseract.js: true
+  telegram-archive-mcp: false
   tree-sitter: true
   tree-sitter-javascript: true
   tree-sitter-json: true
