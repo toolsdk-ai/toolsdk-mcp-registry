@@ -1,0 +1,11 @@
+{
+  "type": "mcp-server",
+  "packageName": "@automatelab/n8n-mcp",
+  "name": "n8n MCP (AutomateLab)",
+  "description": "Nine tools for n8n workflow development: generate valid workflow JSON from natural language, scaffold custom node TypeScript skeletons, lint workflows for deprecated node types, missing typeVersion, and broken connections, and diagnose per-node execution failures. Debugging-first design with no live n8n instance required for authoring.",
+  "url": "https://github.com/AutomateLab-tech/n8n-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "AutomateLab",
+  "env": {}
+}
