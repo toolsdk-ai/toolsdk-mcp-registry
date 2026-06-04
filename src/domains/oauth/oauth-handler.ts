@@ -351,10 +351,21 @@ export async function handleRefresh(request: OAuthRefreshRequest) {
  * Generate HTML response for OAuth callback
  * Uses postMessage to notify parent window
  */
+function escapeJsonForScriptBlock(json: string): string {
+  return json.replace(/</g, "\\u003c").replace(/\//g, "\\/").replace(/\u2028/g, "\\u2028").replace(/\u2029/g, "\\u2029");
+}
+
+function escapeHtml(str: string): string {
+  return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#x27;");
+}
+
 function generateCallbackHtml(success: boolean, errorMessage?: string, sessionId?: string): string {
   const data = success
     ? JSON.stringify({ success: true, sessionId })
     : JSON.stringify({ success: false, error: errorMessage });
+
+  const safeData = escapeJsonForScriptBlock(data);
+  const safeErrorMessage = errorMessage ? escapeHtml(errorMessage) : "";
 
   return `<!DOCTYPE html>
 <html>
@@ -396,13 +407,13 @@ function generateCallbackHtml(success: boolean, errorMessage?: string, sessionId
         : `
       <div class="icon">❌</div>
       <h1 class="error">Authorization Failed</h1>
-      <p>${errorMessage || "An error occurred"}</p>
+      <p>${safeErrorMessage || "An error occurred"}</p>
     `
     }
   </div>
   <script>
     (function() {
-      const data = ${data};
+      const data = ${safeData};
       
       // Try postMessage to parent/opener
       if (window.opener) {
