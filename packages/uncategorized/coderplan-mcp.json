@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "name": "CoderPlan",
+  "packageName": "@coderplan-ai/coderplan-mcp",
+  "description": "OpenAI-compatible LLM API gateway MCP server. Access Claude, GPT-4o, Gemini, and 200+ models through a unified API.",
+  "url": "https://github.com/coderplan-ai/coderplan-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "CODERPLAN_API_KEY": {
+      "description": "API key for CoderPlan LLM gateway",
+      "required": true
+    }
+  }
+}
