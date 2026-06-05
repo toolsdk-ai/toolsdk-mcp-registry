@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "packageName": "coderplan",
+  "description": "OpenAI-compatible LLM API gateway supporting Claude, GPT, Gemini, DeepSeek, and Grok models with pay-per-use pricing. Provides low-latency access via Hong Kong and Singapore nodes.",
+  "url": "https://github.com/coderplan-ai/coderplan",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {
+    "OPENAI_API_KEY": {
+      "description": "CoderPlan API key from https://coderplan.ai",
+      "required": true
+    },
+    "OPENAI_BASE_URL": {
+      "description": "CoderPlan API endpoint: https://api.coderplan.ai/v1",
+      "required": true
+    }
+  },
+  "name": "CoderPlan"
+}
