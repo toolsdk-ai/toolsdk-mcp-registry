@@ -109,7 +109,7 @@ describe("XSS escape in OAuth callback HTML", () => {
       // Extract the script block
       const scriptMatch = result.html.match(/<script>([\s\S]*?)<\/script>/);
       expect(scriptMatch).toBeTruthy();
-      const scriptContent = scriptMatch![1];
+      const scriptContent = scriptMatch?.[1];
 
       // The JSON data in the script should have escaped slashes
       expect(scriptContent).toContain("\\/");
@@ -123,7 +123,7 @@ describe("XSS escape in OAuth callback HTML", () => {
 
       const scriptMatch = result.html.match(/<script>([\s\S]*?)<\/script>/);
       expect(scriptMatch).toBeTruthy();
-      const scriptContent = scriptMatch![1];
+      const scriptContent = scriptMatch?.[1];
 
       // < should be escaped as \\u003c in the script block data
       expect(scriptContent).toContain("\\u003c");
@@ -141,7 +141,7 @@ describe("XSS escape in OAuth callback HTML", () => {
 
       // The escaped JSON should be parseable as JavaScript
       // (\\/ is valid in JS, \\u003c is valid unicode escape)
-      const rawData = dataMatch![1];
+      const rawData = dataMatch?.[1];
       expect(rawData).toBeTruthy();
     });
   });
