@@ -352,11 +352,20 @@ export async function handleRefresh(request: OAuthRefreshRequest) {
  * Uses postMessage to notify parent window
  */
 function escapeJsonForScriptBlock(json: string): string {
-  return json.replace(/</g, "\\u003c").replace(/\//g, "\\/").replace(/\u2028/g, "\\u2028").replace(/\u2029/g, "\\u2029");
+  return json
+    .replace(/</g, "\\u003c")
+    .replace(/\//g, "\\/")
+    .replace(/\u2028/g, "\\u2028")
+    .replace(/\u2029/g, "\\u2029");
 }
 
 function escapeHtml(str: string): string {
-  return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#x27;");
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#x27;");
 }
 
 function generateCallbackHtml(success: boolean, errorMessage?: string, sessionId?: string): string {
