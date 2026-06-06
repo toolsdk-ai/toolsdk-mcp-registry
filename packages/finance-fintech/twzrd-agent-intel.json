@@ -3,7 +3,7 @@
   "name": "TWZRD Agent Intel",
   "packageName": "twzrd-agent-intel",
   "description": "Solana-native agent trust scoring and x402 micropayment verification. Free on-chain preflight checks (agent score lookup, activity scan, wallet validation) + paid signed V5 trust receipts settled on Solana in <1s via HTTP 402.",
-  "url": "https://github.com/twzrd-sol/wzrd-final/tree/main/packages/twzrd-agent-intel",
+  "url": "https://intel.twzrd.xyz",
   "runtime": "python",
   "license": "MIT",
   "env": {},
