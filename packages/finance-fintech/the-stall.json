@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "The Stall",
+  "packageName": "@toolsdk-remote/the-stall",
+  "description": "172 pay-per-call market data tools (x402, USDC). Stocks, crypto, DeFi, macro, options, compliance — no API key needed, pay-as-you-go.",
+  "url": "https://github.com/thebrierfox/the-stall",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "thebrierfox",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://the-stall.intuitek.ai/mcp"
+    }
+  ]
+}
+
