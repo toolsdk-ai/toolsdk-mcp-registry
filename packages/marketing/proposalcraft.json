@@ -1,0 +1,10 @@
+{
+  "type": "mcp-server",
+  "packageName": "github:jabbawocky/proposalcraft",
+  "name": "ProposalCraft",
+  "description": "MCP server for Claude Desktop that drafts client proposals in your voice. Save 2-3 past winning proposals; ProposalCraft loads them as style examples and returns a structured context block — Claude drafts the new proposal using your examples. Zero API key required, runs entirely locally.",
+  "url": "https://github.com/jabbawocky/proposalcraft",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {}
+}
