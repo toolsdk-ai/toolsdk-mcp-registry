@@ -1,0 +1,10 @@
+{
+  "type": "mcp-server",
+  "packageName": "the-stall",
+  "description": "181-tool pay-per-call MCP server: blockchain OSINT, DeFi analytics, OFAC sanctions screening, crypto wallet risk scoring, finance data, AI image generation, weather, and more. x402 USDC micropayments on Base — no API key needed.",
+  "url": "https://github.com/thebrierfox/the-stall",
+  "runtime": "remote",
+  "license": "MIT",
+  "env": {},
+  "name": "The Stall"
+}
