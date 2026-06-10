@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "The Stall",
+  "packageName": "the-stall-mcp",
+  "description": "207 pay-per-call AI capabilities via x402 micropayments — financial data, market intelligence, blockchain analytics, weather, and more. Agents pay micro-USDC per call. No API keys, no subscriptions.",
+  "url": "https://the-stall.intuitek.ai",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://the-stall.intuitek.ai/mcp"
+    }
+  ]
+}
