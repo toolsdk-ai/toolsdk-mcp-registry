@@ -1,0 +1,10 @@
+{
+  "type": "mcp-server",
+  "packageName": "apistatuscheck-mcp-server",
+  "description": "Check real-time operational status of 114+ cloud services and APIs — AWS, GitHub, Stripe, OpenAI, Vercel, Cloudflare, and more — directly from AI assistants without leaving the chat.",
+  "url": "https://github.com/shibley/apistatuscheck-mcp-server",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "name": "API Status Check MCP Server"
+}
