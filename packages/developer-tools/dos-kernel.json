@@ -1,0 +1,13 @@
+{
+  "type": "mcp-server",
+  "name": "DOS Kernel",
+  "key": "dos-kernel",
+  "packageName": "dos-kernel",
+  "description": "Trust substrate for fleets of autonomous agents: verify that a claimed task actually shipped from git evidence (never from the agent's self-report), arbitrate concurrent file access with lane leases, and refuse with typed reasons from a closed vocabulary. The MCP server needs the mcp extra: pip install \"dos-kernel[mcp]\" (server binary: dos-mcp).",
+  "url": "https://github.com/anthony-chaudhary/dos-kernel",
+  "runtime": "python",
+  "license": "MIT",
+  "bin": "dos-mcp",
+  "author": "anthony-chaudhary",
+  "env": {}
+}
