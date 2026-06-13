@@ -1,0 +1,11 @@
+{
+  "type": "mcp-server",
+  "packageName": "@automatelab/citation-intelligence",
+  "name": "Citation Intelligence MCP (AutomateLab)",
+  "description": "26 tools to query which URLs Perplexity, Claude, ChatGPT, Gemini, Google AI Overviews, and Bing cite for any query. Tracks citation rate, share of voice vs competitors, average rank, and sentiment over a query set via a turnkey report.visibility tool. Self-hosted, BYO API keys, no backend.",
+  "url": "https://github.com/AutomateLab-tech/citation-intelligence",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "AutomateLab",
+  "env": {}
+}
