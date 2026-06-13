@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "packageName": "hyperfx-ai/marketing-skills",
+  "description": "Connects AI agents to 200+ marketing integrations and tools, covering paid ads (Google Ads, Meta, TikTok, LinkedIn, Amazon, Pinterest), SEO and analytics (GA4, Search Console, Google Tag Manager, BigQuery), social publishing, ad-library and social scrapers, and image and video generation, with every action gated behind human-in-the-loop approval.",
+  "url": "https://github.com/hyperfx-ai/marketing-skills",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "name": "Hyper",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://hyperfx.ai/mcp"
+    }
+  ]
+}
