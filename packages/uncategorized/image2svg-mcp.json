@@ -1,0 +1,10 @@
+{
+  "type": "mcp-server",
+  "name": "Image2SVG",
+  "packageName": "image2svg-mcp",
+  "description": "MCP server that converts raster images (PNG/JPG/WEBP/TIFF) to SVG vector format. Single tool, accepts base64 or URL input.",
+  "url": "https://github.com/botmonster/image2svg-mcp",
+  "runtime": "python",
+  "license": "Apache-2.0",
+  "env": {}
+}
