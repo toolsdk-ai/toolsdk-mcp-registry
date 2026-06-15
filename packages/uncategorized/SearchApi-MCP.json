@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "name": "SearchApi",
+  "packageName": "searchapi-mcp",
+  "description": "MCP server for real-time SERP and web data. 100+ tools across Google, Bing, Amazon, YouTube, Maps, travel, and social.",
+  "url": "https://github.com/SearchApi/searchapi-mcp",
+  "runtime": "node",
+  "license": "Proprietary",
+  "env": {
+    "SEARCHAPI_MCP_URL": {
+      "description": "Your unique SearchApi MCP URL from the SearchApi dashboard. Get it at https://www.searchapi.io/integrations/mcp",
+      "required": true
+    }
+  }
+}
