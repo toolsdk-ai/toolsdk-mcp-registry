@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "packageName": "pyrimid",
+  "description": "MCP server and x402 catalog for paid AI/API products, paid MCP tools, and agent-to-agent commerce on Base USDC.",
+  "url": "https://github.com/pyrimid-ai/pyrimid",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "name": "Pyrimid",
+  "readme": "https://github.com/pyrimid-ai/pyrimid#readme",
+  "logo": "https://pyrimid.ai/favicon.ico",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://pyrimid.ai/api/mcp"
+    }
+  ]
+}
