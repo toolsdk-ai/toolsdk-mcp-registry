@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "MuAPI",
+  "packageName": "muapi-mcp-server",
+  "description": "Hosted MCP server for 100+ generative AI models \u2014 image generation (FLUX, Midjourney, GPT-4o, HiDream), video (Veo3, Kling, HunyuanVideo, Runway), audio (Suno, MMAudio), editing (lipsync, upscale, face swap, Ghibli). No local install required.",
+  "url": "https://github.com/SamurAIGPT/muapi-mcp-server",
+  "runtime": "node",
+  "license": "ISC",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.muapi.ai/mcp"
+    }
+  ],
+  "env": {
+    "MUAPI_API_KEY": {
+      "description": "Your MuAPI API key from muapi.ai/dashboard/keys",
+      "required": true
+    }
+  }
+}
