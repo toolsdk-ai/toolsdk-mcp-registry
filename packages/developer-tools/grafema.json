@@ -1,0 +1,12 @@
+{
+  "type": "mcp-server",
+  "name": "Grafema",
+  "packageName": "grafema",
+  "bin": "grafema-mcp",
+  "binArgs": ["--project", "."],
+  "description": "Semantic code graph MCP server for AI coding agents. Indexes your codebase into a typed graph (functions/types/modules as nodes; CALLS/IMPORTS/DATAFLOW/EFFECTS as typed edges) and exposes 40+ tools for call-chain tracing, data-flow analysis, semantic search, and invariant checking — so agents navigate code structure instead of reading files line by line.",
+  "url": "https://github.com/Disentinel/grafema",
+  "runtime": "node",
+  "license": "FSL-1.1-Apache-2.0",
+  "env": {}
+}
