@@ -1,0 +1,24 @@
+{
+  "type": "mcp-server",
+  "name": "GetXAPI MCP",
+  "packageName": "@getxapi/mcp",
+  "packageVersion": "0.1.1",
+  "bin": "getxapi-mcp",
+  "description": "X/Twitter MCP server with tools for tweet search, user profile lookup, follower lists, and tweet-by-id retrieval. Streamable HTTP transport with Bearer token authentication.",
+  "url": "https://github.com/getxapi/getxapi-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "GetXAPI",
+  "env": {
+    "GETXAPI_API_KEY": {
+      "description": "Bearer token for GetXAPI API access",
+      "required": true
+    }
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.getxapi.com/mcp"
+    }
+  ]
+}
