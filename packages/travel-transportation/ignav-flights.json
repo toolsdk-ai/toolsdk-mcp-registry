@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Ignav Flights",
+  "packageName": "@toolsdk-remote/com-ignav-flights",
+  "description": "Hosted Streamable HTTP MCP server for live flight prices, booking links, and airport lookup for AI agents.",
+  "url": "https://github.com/gusgordon/ignav-skill",
+  "readme": "https://github.com/gusgordon/ignav-skill/blob/main/llms-install.md",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://ignav.com/mcp"
+    }
+  ]
+}
