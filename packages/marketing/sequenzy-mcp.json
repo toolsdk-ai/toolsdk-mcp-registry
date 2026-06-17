@@ -1,0 +1,24 @@
+{
+  "type": "mcp-server",
+  "name": "Sequenzy MCP",
+  "packageName": "@sequenzy/mcp",
+  "description": "Official MCP server for Sequenzy email marketing automation: manage subscribers, lists, segments, templates, campaigns, sequences, transactional email, analytics, and AI-generated email content.",
+  "url": "https://github.com/Sequenzy/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "SEQUENZY_API_KEY": {
+      "description": "Sequenzy API key for local stdio usage",
+      "required": true
+    }
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.sequenzy.com/v1/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
