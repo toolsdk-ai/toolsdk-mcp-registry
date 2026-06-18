@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "agentage Memory",
+  "packageName": "@toolsdk-remote/io-agentage-memory",
+  "description": "One memory. Every AI. Owned by you. A shared memory layer for every AI - one markdown memory Claude, Cursor, and ChatGPT read and write through MCP, mirrored locally as plain .md you own and can export anytime. Tools: memory__search, memory__read, memory__write, memory__edit, memory__list, memory__delete.",
+  "url": "https://memory.agentage.io",
+  "runtime": "node",
+  "license": "unknown",
+  "logo": "https://memory.agentage.io/icon.svg",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://memory.agentage.io/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
