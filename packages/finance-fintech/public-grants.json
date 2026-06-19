@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Public Grants",
+  "packageName": "public-grants",
+  "description": "French public grants advisor for startups and AI agents. 21 tools for company onboarding (SIRENE registry pre-fill, auto-enrichment + customisable input), eligibility check across 49 programmes (CIR, JEI, BPI, CNC, ADEME, EIC Accelerator) with per-rule pass/fail from official legal texts, application drafting (.md/.docx export), and free strategic briefing PDF. EUR 49/dossier vs EUR 2,000-5,000 at consulting firms.",
+  "url": "https://grants.mrchief.ai",
+  "runtime": "python",
+  "author": "PyratzLabs",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://grants.mrchief.ai/mcp/"
+    }
+  ]
+}
