@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "packageName": "@kaitoinfra/twitterapi-io-mcp-server",
+  "packageVersion": "0.1.2",
+  "description": "Official Model Context Protocol (MCP) server for twitterapi.io — Twitter / X data API. Search tweets, get user profiles, followers, replies, trends — all via Claude Desktop, Cursor, or any MCP-compatible client.",
+  "url": "https://github.com/kaitoInfra/twitterapi-io-mcp-server",
+  "runtime": "node",
+  "license": "MIT",
+  "name": "TwitterAPI.io MCP Server",
+  "author": "kaitoInfra",
+  "env": {
+    "TWITTERAPI_API_KEY": {
+      "description": "API key from https://twitterapi.io (free signup, pay-per-call)",
+      "required": true
+    }
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.twitterapi.io/mcp"
+    }
+  ]
+}
