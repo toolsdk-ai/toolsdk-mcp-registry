@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "BuyWhere",
+  "packageName": "@buywhere/mcp-server",
+  "description": "Real-time product search and price-comparison MCP server. 11M+ products across Shopee, Lazada, Amazon, Walmart, and 20+ retailers in Singapore, SEA, and US. Exposes search_products, get_product, compare_products, find_best_price, get_deals, list_categories, find_similar.",
+  "url": "https://github.com/BuyWhere/buywhere-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "BUYWHERE_API_KEY": {
+      "description": "Free API key from https://api.buywhere.ai/v1/auth/register (no signup flow, 3-second registration)",
+      "required": false
+    }
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.buywhere.ai/mcp"
+    }
+  ]
+}
