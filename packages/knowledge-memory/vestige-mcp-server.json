@@ -1,0 +1,12 @@
+{
+  "type": "mcp-server",
+  "packageName": "vestige-mcp-server",
+  "packageVersion": "2.1.27",
+  "description": "Local-first cognitive memory MCP server for coding agents, with SQLite storage, FSRS-style retention, hybrid retrieval, provenance/correction tools, and a dashboard.",
+  "url": "https://github.com/samvallad33/vestige",
+  "runtime": "node",
+  "license": "AGPL-3.0-only",
+  "env": {},
+  "bin": "vestige-mcp",
+  "name": "Vestige"
+}
