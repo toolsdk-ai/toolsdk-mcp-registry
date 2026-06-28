@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "GPT55 x402 Gateway",
+  "packageName": "gpt55-x402-gateway",
+  "description": "Remote MCP and OpenAI-compatible GPT gateway with quote-first x402 Base USDC payments for chat, translation, buyer safety, wallet signing, paid MCP onboarding, and x402 discovery tools.",
+  "url": "https://github.com/go165/gpt55-x402-gateway",
+  "readme": "https://gpt55.558686.xyz/llms-install.md",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "go165",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gpt55.558686.xyz/mcp"
+    }
+  ]
+}
