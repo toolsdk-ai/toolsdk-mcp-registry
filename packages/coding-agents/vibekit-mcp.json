@@ -1,0 +1,10 @@
+{
+  "type": "mcp-server",
+  "packageName": "vibekit-mcp",
+  "description": "Build, deploy, and manage hosted full-stack apps — each with a live URL and database — and chat with their per-app AI agents, from any MCP client via the VibeKit REST API.",
+  "url": "https://github.com/609NFT/vibekit-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "name": "VibeKit"
+}
