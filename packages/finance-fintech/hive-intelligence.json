@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "hive-intelligence",
+  "description": "Managed crypto intelligence MCP for AI agents with 369 callable tools across market data, DeFi, wallets, token risk, DEX, NFTs, Solana, infrastructure, prediction markets, and stateful monitoring.",
+  "url": "https://github.com/hive-intel/hive-sdk",
+  "readme": "https://github.com/hive-intel/hive-sdk#readme",
+  "runtime": "node",
+  "license": "UNLICENSED",
+  "env": {
+    "HIVE_API_KEY": {
+      "description": "Hive API key for live tool execution. Create a free key at https://hiveintelligence.xyz/dashboard/keys.",
+      "required": true
+    }
+  },
+  "name": "Hive Intelligence",
+  "bin": "hive"
+}

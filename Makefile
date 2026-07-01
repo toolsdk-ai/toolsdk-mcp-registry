@@ -1,13 +1,13 @@
 build:
 	bun scripts/cat-dirs.ts
   # Install the dependencies needed to run `indexing-lists.ts`
-	pnpm install --no-frozen-lockfile
+	pnpm install --ignore-scripts --no-frozen-lockfile
 	bun scripts/indexing-lists.ts
 	bun scripts/check-config.ts
   # Install dependencies based on the updated `package.json`
-	pnpm install --no-frozen-lockfile
+	pnpm install --ignore-scripts --no-frozen-lockfile
 	npx tsx scripts/test-mcp-clients.ts
-	pnpm install --no-frozen-lockfile
+	pnpm install --ignore-scripts --no-frozen-lockfile
 	pnpm prune
 	bun scripts/readme-gen.ts
 	pnpm run sort
