@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "name": "Hushvert",
+  "packageName": "@hushvert/mcp",
+  "description": "MCP server that gives AI agents file-conversion tools over the hushvert hosted API: office docs to PDF, PDF to Word, video, and LLM-ready Markdown.",
+  "url": "https://github.com/hushvert/mcp",
+  "runtime": "node",
+  "license": "mit",
+  "env": {
+    "HUSHVERT_API_KEY": {
+      "description": "API key for the hushvert hosted conversion API",
+      "required": true
+    }
+  }
+}
