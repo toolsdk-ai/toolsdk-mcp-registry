@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "name": "DocPull",
+  "packageName": "docpull",
+  "packageVersion": "6.0.0",
+  "description": "Local-first MCP server for turning public web sources into cited context dependencies for AI agents, RAG systems, and developer workflows.",
+  "url": "https://github.com/raintree-technology/docpull",
+  "readme": "https://github.com/raintree-technology/docpull#readme",
+  "runtime": "python",
+  "license": "MIT",
+  "author": "Raintree Technology",
+  "bin": "docpull",
+  "binArgs": ["mcp"],
+  "env": {}
+}
