@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "LLM Pulse",
+  "packageName": "llm-pulse",
+  "description": "AI visibility analytics for brand mentions, citations, sentiment, share of voice, recommendations, GEO Writer data, Search Console, and AI traffic where plan access allows.",
+  "url": "https://github.com/LLM-Pulse/llmpulse-mcp",
+  "readme": "https://github.com/LLM-Pulse/llmpulse-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "LLM Pulse",
+  "env": {
+    "LLM_PULSE_API_KEY": {
+      "description": "LLM Pulse API key used as a Bearer token for the hosted MCP endpoint.",
+      "required": true
+    }
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.llmpulse.ai/api/v1/mcp"
+    }
+  ]
+}
