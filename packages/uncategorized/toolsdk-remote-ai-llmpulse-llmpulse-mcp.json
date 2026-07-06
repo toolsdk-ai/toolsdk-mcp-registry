@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "LLM Pulse",
+  "packageName": "@toolsdk-remote/ai-llmpulse-llmpulse-mcp",
+  "description": "AI search visibility analytics over MCP for brand mentions, citations, sentiment, share of voice, tracked prompts, recommendations, and AI-referred traffic.",
+  "url": "https://github.com/LLM-Pulse/llmpulse-mcp",
+  "readme": "https://llmpulse.ai/features/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/LLM-Pulse/llmpulse-mcp/main/logo.png",
+  "author": "LLM Pulse",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.llmpulse.ai/api/v1/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
