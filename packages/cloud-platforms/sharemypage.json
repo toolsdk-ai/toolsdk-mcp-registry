@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "ShareMyPage",
+  "packageName": "sharemypage",
+  "description": "Host the HTML pages your AI generates and give each a shareable link, with inline comments, version history, and access control.",
+  "url": "https://sharemypage.app/mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://sharemypage.app/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
