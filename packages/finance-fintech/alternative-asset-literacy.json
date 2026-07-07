@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Alternative Asset Literacy",
+  "packageName": "@toolsdk-remote/com-alternativeassetliteracy-mcp",
+  "description": "14-tool MCP server for research-backed financial education covering alternative assets, DeFi, behavioral economics, art investing, ESG & climate finance, and gender lens investing. Includes glossary lookup/search across 351 terms, learning module discovery, investor/audience profile routing, institutional research paper access (IMF, BIS, World Bank, FSB, TCFD, EU), geographic HNW/investor community intelligence, and an advisor client education gift-bundle generator. Educational content only, not financial advice.",
+  "url": "https://github.com/untitledfinancial/alternative-asset-literacy-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://alternativeassetliteracy.com/mcp"
+    }
+  ]
+}
