@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "FXMacroData MCP",
+  "packageName": "mcp-server-fxmacrodata",
+  "description": "Macroeconomic, FX, release-calendar, COT, commodities, and central-bank data for AI agents.",
+  "url": "https://github.com/fxmacrodata/mcp-server-fxmacrodata",
+  "readme": "https://github.com/fxmacrodata/mcp-server-fxmacrodata#readme",
+  "runtime": "python",
+  "license": "mit",
+  "env": {
+    "FXMD_API_KEY": {
+      "description": "Optional FXMacroData API key for protected multi-currency and premium endpoint access.",
+      "required": false
+    }
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://fxmacrodata.com/mcp"
+    }
+  ]
+}
