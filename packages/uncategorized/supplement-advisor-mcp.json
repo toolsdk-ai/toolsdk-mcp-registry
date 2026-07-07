@@ -1,0 +1,10 @@
+{
+  "type": "mcp-server",
+  "name": "Supplement Advisor MCP",
+  "packageName": "supplement-advisor-mcp",
+  "description": "Evidence-graded dietary-supplement guidance: dosing ranges, best-absorbed forms, drug-nutrient interactions, and cost-per-effective-dose. Every recommendation traces to a PubMed source.",
+  "url": "https://github.com/erinheit451/supplement-advisor-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {}
+}
