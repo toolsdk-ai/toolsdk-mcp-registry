@@ -1,0 +1,12 @@
+{
+  "type": "mcp-server",
+  "packageName": "@memi-design/cli",
+  "bin": "memi",
+  "binArgs": ["mcp", "start", "--no-figma"],
+  "description": "Interface-understanding MCP server and CLI for AI coding agents. Diagnose UI debt, audit UX tenets, extract Tailwind tokens, export shadcn registries, and install Agent Skills.",
+  "url": "https://github.com/sarveshsea/memi",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "name": "memi"
+}
