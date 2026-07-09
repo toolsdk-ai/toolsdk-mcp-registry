@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "LatLng MCP",
+  "packageName": "@latlng/mcp-server",
+  "description": "Official LatLng MCP server for geocoding, reverse geocoding, places search, nearby places, and place categories powered by OpenStreetMap data.",
+  "url": "https://github.com/latlng-work/latlng-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "bin": "npx",
+  "binArgs": ["-y", "@latlng/mcp-server"],
+  "env": {
+    "LATLNG_SERVER_KEY": {
+      "description": "LatLng Server Key from https://dash.latlng.work for authenticated API access.",
+      "required": true
+    }
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.latlng.work/mcp"
+    }
+  ]
+}
