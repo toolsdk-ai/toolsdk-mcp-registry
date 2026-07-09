@@ -1,0 +1,10 @@
+{
+  "type": "mcp-server",
+  "name": "Moltalyzer",
+  "packageName": "moltalyzer-mcp",
+  "description": "Polymarket and AI-agent-community intelligence MCP server — order-book microstructure, whale-trader calibration, and market digests for prediction-market agents. x402 pay-per-call on Base USDC, no API key.",
+  "url": "https://www.npmjs.com/package/moltalyzer-mcp",
+  "readme": "https://www.npmjs.com/package/moltalyzer-mcp",
+  "runtime": "node",
+  "env": {}
+}

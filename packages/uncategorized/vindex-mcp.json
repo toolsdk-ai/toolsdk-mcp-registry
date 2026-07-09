@@ -1,0 +1,10 @@
+{
+  "type": "mcp-server",
+  "name": "Vindex",
+  "packageName": "vindex-mcp",
+  "description": "Vehicle-data MCP server — decode any VIN with factory warranty terms, plus safety recalls, known issues / reliability, and US/CA purchase-cost estimates (NHTSA + Transport Canada). x402 pay-per-call on Base USDC, no API key.",
+  "url": "https://www.npmjs.com/package/vindex-mcp",
+  "readme": "https://www.npmjs.com/package/vindex-mcp",
+  "runtime": "node",
+  "env": {}
+}
