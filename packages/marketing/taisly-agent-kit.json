@@ -1,0 +1,30 @@
+{
+  "type": "mcp-server",
+  "name": "Taisly Agent Kit",
+  "packageName": "@taisly/agent",
+  "packageVersion": "0.2.8",
+  "bin": "taisly",
+  "binArgs": ["mcp"],
+  "description": "Official MCP server for publishing and scheduling short-form videos to TikTok, Instagram Reels, YouTube Shorts, X, and Facebook through Taisly.",
+  "url": "https://github.com/taisly/agent",
+  "readme": "https://github.com/taisly/agent#readme",
+  "logo": "https://app.taisly.com/logo512.png",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Taisly",
+  "env": {
+    "TAISLY_API_KEY": {
+      "description": "Optional Taisly API key for local MCP authentication.",
+      "required": false
+    }
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.taisly.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
