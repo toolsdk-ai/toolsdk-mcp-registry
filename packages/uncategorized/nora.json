@@ -1,0 +1,25 @@
+{
+  "type": "mcp-server",
+  "key": "nora",
+  "name": "Nora",
+  "packageName": "@noraai/mcp-server",
+  "description": "Operate self-hosted OpenClaw and Hermes agent fleets on Docker or Kubernetes through Nora's control plane, including deployment, lifecycle actions, monitoring, metrics, events, and per-agent cost.",
+  "url": "https://github.com/solomon2773/nora/tree/master/mcp-server",
+  "readme": "https://github.com/solomon2773/nora/blob/master/mcp-server/README.md",
+  "runtime": "node",
+  "license": "Apache-2.0",
+  "env": {
+    "NORA_API_URL": {
+      "description": "Base URL of the Nora backend API, for example https://nora.example.com",
+      "required": true
+    },
+    "NORA_API_KEY": {
+      "description": "Nora workspace API key with the scopes required by the tools you use",
+      "required": true
+    },
+    "NORA_MCP_ALLOW_DESTRUCTIVE": {
+      "description": "Set to true to register destructive tools such as delete_agent; disabled by default",
+      "required": false
+    }
+  }
+}
