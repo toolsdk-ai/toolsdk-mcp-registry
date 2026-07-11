@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Spala Public MCP",
+  "packageName": "@toolsdk-remote/ai-spala-public-mcp",
+  "description": "Official public MCP for Spala's AI backend builder. Discover Spala, search documentation, inspect templates and addons, authenticate, select a project, and hand off to the exact project-scoped MCP URL for backend inspection, build, validation, and publishing.",
+  "url": "https://docs.spala.ai/agents/mcp/",
+  "readme": "https://spala.ai/mcp.md",
+  "runtime": "node",
+  "logo": "https://spala.ai/brand/icon-square.svg",
+  "author": "Spala AI",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.spala.ai/mcp"
+    }
+  ]
+}
