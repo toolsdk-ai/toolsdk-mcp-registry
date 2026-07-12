@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "DomScan",
+  "packageName": "@toolsdk-remote/domscan-mcp",
+  "description": "Domain intelligence for DNS, WHOIS/RDAP, TLS, reputation, valuation, email security, and brand protection.",
+  "url": "https://github.com/estevecastells/domscan-mcp",
+  "readme": "https://github.com/estevecastells/domscan-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://domscan.net/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
