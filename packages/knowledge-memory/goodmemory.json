@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "GoodMemory",
+  "packageName": "goodmemory",
+  "description": "Local-first, auditable memory layer for AI agents with durable SQLite storage, BM25 recall, read-only inspection tools, and opt-in governed writeback.",
+  "url": "https://github.com/hjqcan/GoodMemory",
+  "readme": "https://github.com/hjqcan/GoodMemory#standalone-mcp-for-any-client",
+  "runtime": "node",
+  "bin": "goodmemory-mcp",
+  "binArgs": ["--standalone"],
+  "license": "MIT",
+  "env": {
+    "GOODMEMORY_USER_ID": {
+      "description": "Stable user identifier used to scope standalone memory",
+      "required": true
+    }
+  }
+}
