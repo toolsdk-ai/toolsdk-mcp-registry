@@ -1,0 +1,28 @@
+{
+  "type": "mcp-server",
+  "name": "KLinePic MCP Server",
+  "key": "klinepic-mcp-server",
+  "packageName": "ghcr.io/sher1096/klinepic-mcp-server",
+  "packageVersion": "0.1.0",
+  "description": "Turns broker and exchange fills into annotated post-trade candlestick review charts. Provides capability discovery, no-charge preflight validation, and chart rendering without signals, predictions, investment advice, or order execution.",
+  "url": "https://github.com/sher1096/klinepic-agent-api-examples",
+  "readme": "https://github.com/sher1096/klinepic-agent-api-examples/blob/master/README.md",
+  "logo": "https://raw.githubusercontent.com/sher1096/klinepic-agent-api-examples/master/assets/klinepic-400.png",
+  "runtime": "docker",
+  "license": "MIT",
+  "author": "sher1096",
+  "binArgs": [
+    "run",
+    "--rm",
+    "-i",
+    "-e",
+    "KLINE_AGENT_API_KEY",
+    "ghcr.io/sher1096/klinepic-mcp-server:0.1.0"
+  ],
+  "env": {
+    "KLINE_AGENT_API_KEY": {
+      "description": "KLinePic Agent API key used for authenticated preflight and chart requests",
+      "required": true
+    }
+  }
+}
