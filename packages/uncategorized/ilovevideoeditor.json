@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "iLoveVideoEditor",
+  "packageName": "@ilovevideoeditor/mcp-server",
+  "description": "Render videos from JSON via the iLoveVideoEditor cloud API: motion-design templates, GPU effects, transitions, batch rendering, webhooks.",
+  "url": "https://github.com/ilovevideoeditor/mcp-server",
+  "runtime": "node",
+  "license": "Apache-2.0",
+  "env": {
+    "VF_API_KEY": {
+      "description": "iLoveVideoEditor API key (generate at ilovevideoeditor.com/dashboard/account/api)",
+      "required": true
+    },
+    "VF_API_BASE_URL": {
+      "description": "API base URL override",
+      "required": false
+    }
+  }
+}
