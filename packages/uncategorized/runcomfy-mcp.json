@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "RunComfy MCP",
+  "packageName": "@toolsdk-remote/runcomfy-mcp",
+  "description": "Official remote MCP server for the RunComfy Serverless API (ComfyUI): create and manage GPU deployments, run async inference, and retrieve image/video results.",
+  "url": "https://github.com/runcomfy-com/runcomfy-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "RUNCOMFY_API_KEY": {
+      "description": "RunComfy API token, sent as 'Authorization: Bearer <token>'. Get it from https://www.runcomfy.com/profile",
+      "required": true
+    }
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.runcomfy.com/mcp"
+    }
+  ]
+}
