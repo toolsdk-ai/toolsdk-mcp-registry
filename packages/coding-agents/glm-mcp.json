@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "packageName": "glm-mcp",
+  "description": "Run GLM (Zhipu/Z.ai) as a real sub-agent inside Claude Code, GitHub Copilot, or Codex — its own read/write/edit/run agent loop on your repo with peak-aware Opus-vs-GLM routing and diff/dry-run/git-revert oversight. ~10x cheaper than Opus.",
+  "url": "https://github.com/djerok/glm-mcp",
+  "runtime": "node",
+  "license": "mit",
+  "env": {
+    "GLM_API_KEY": {
+      "description": "Z.ai / Zhipu GLM Coding Plan API key",
+      "required": true
+    }
+  },
+  "name": "GLM Subagent MCP"
+}
