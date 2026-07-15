@@ -3,7 +3,8 @@
   "name": "RunComfy MCP",
   "packageName": "@toolsdk-remote/runcomfy-mcp",
   "description": "Official remote MCP server for the RunComfy Serverless API (ComfyUI): create and manage GPU deployments, run async inference, and retrieve image/video results.",
-  "url": "https://github.com/runcomfy-com/runcomfy-mcp",
+  "url": "https://www.runcomfy.com",
+  "logo": "https://github.com/runcomfy-com.png",
   "runtime": "node",
   "license": "MIT",
   "env": {
