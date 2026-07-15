@@ -1,12 +1,11 @@
 {
   "type": "mcp-server",
-  "packageName": "@sarveshsea/memoire",
-  "bin": "memi",
-  "binArgs": ["mcp"],
-  "description": "MCP server and CLI for shadcn-native Design CI. Diagnose UI debt, extract Tailwind tokens, export shadcn registries, and plan safe UI fixes.",
-  "url": "https://github.com/sarveshsea/m-moire",
+  "packageName": "@memi-design/cli",
+  "binArgs": ["mcp", "start", "--no-figma"],
+  "description": "Agent design CI and interface understanding for coding agents, with focused Agent Skills and 47 MCP tools for UI audits, tokens, component structure, accessibility, and handoff receipts.",
+  "url": "https://github.com/sarveshsea/memi",
   "runtime": "node",
   "license": "MIT",
   "env": {},
-  "name": "Memoire"
+  "name": "Memi"
 }
