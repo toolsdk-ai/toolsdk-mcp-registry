@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "packageName": "com.getbeachfinder/beachfinder",
+  "name": "BeachFinder",
+  "description": "Search and compare 184,900 beaches, lakes, and swimming spots worldwide with current planning signals, water activities, public providers, source attribution, and canonical BeachFinder links through a read-only remote MCP server.",
+  "url": "https://github.com/troulin-a11y/BeachFinder-mcp",
+  "readme": "https://github.com/troulin-a11y/BeachFinder-mcp/blob/main/README.md",
+  "logo": "https://getbeachfinder.com/logo.png",
+  "runtime": "node",
+  "env": {},
+  "author": "BeachFinder",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://getbeachfinder.com/mcp"
+    }
+  ]
+}
