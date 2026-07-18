@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Find MCP",
+  "packageName": "@agentage/find-mcp",
+  "description": "Search 17,000+ MCP servers synced from the official MCP registry (registry.modelcontextprotocol.io) via the agentage MCP Catalog",
+  "url": "https://github.com/agentage/find-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "agentage",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://catalog.agentage.io/mcp"
+    }
+  ]
+}
