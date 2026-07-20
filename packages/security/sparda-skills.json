@@ -1,0 +1,10 @@
+{
+  "type": "mcp-server",
+  "name": "SPARDA Security Gate",
+  "packageName": "@residual-labs/sparda",
+  "description": "Connects AI coding agents (Claude Code, Cursor, Windsurf) to the SPARDA Security Gate to validate edits via Proof-Carrying Code (PCC) invariants before applying them.",
+  "url": "https://github.com/zyx77550/sparda-skills",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {}
+}
