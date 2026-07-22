@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Chainflip Broker as a Service",
+  "packageName": "chainflip-broker-baas",
+  "key": "chainflip-broker-baas",
+  "description": "Cross-chain cryptocurrency swaps via the Chainflip protocol. Get quotes, execute simple or DCA swaps between native BTC, ETH, SOL, and more, and track swap progress. Hosted remote server, no API key required.",
+  "url": "https://github.com/CumpsD/broker-as-a-service",
+  "readme": "https://docs.chainflip-broker.io/resources/ai-documentation/",
+  "runtime": "node",
+  "author": "CumpsD",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://chainflip-broker.io/mcp"
+    }
+  ]
+}
