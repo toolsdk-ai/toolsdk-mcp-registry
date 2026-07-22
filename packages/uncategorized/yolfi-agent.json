@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "key": "yolfi-agent",
+  "name": "Yolfi Payments MCP",
+  "packageName": "@yolfi/agent",
+  "binArgs": ["mcp"],
+  "description": "AI agent payment integration for crypto checkout, payment links, webhooks, and payment status checks through Yolfi.",
+  "readme": "https://github.com/yolfinance/yolfi-agent#readme",
+  "url": "https://github.com/yolfinance/yolfi-agent",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Yolfi",
+  "env": {
+    "YOLFI_API_KEY": {
+      "description": "Optional API key for CI or other non-interactive environments. Local setup can store credentials securely instead.",
+      "required": false
+    },
+    "YOLFI_WEBHOOK_SECRET": {
+      "description": "Optional webhook verification secret for CI or deployed environments.",
+      "required": false
+    }
+  }
+}
