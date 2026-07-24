@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Longbridge MCP",
+  "packageName": "com.longbridge/mcp",
+  "packageVersion": "0.3.2",
+  "description": "Official Longbridge brokerage MCP — 133 tools for US/HK/CN real-time quotes, options, trading, fundamentals, IPO, alerts, DCA & portfolio management. OAuth 2.1 RFC 9728.",
+  "url": "https://github.com/longbridge/longbridge-mcp",
+  "logo": "https://raw.githubusercontent.com/longbridge/longbridge-mcp/main/docs/logo.png",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://openapi.longbridge.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["quote", "trade"]
+      }
+    }
+  ]
+}

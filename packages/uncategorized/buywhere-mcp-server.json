@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "BuyWhere",
+  "packageName": "@buywhere/mcp-server",
+  "description": "Real-time product search and price comparison for Singapore and Southeast Asia. Search 260K+ products from Lazada, Shopee, Courts, FairPrice, and other major SEA merchants. Get live prices, stock availability, and cross-merchant comparison in a single query.",
+  "url": "https://github.com/BuyWhere/buywhere-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "BUYWHERE_API_KEY": {
+      "description": "BuyWhere API key for product search access. Get a free key at https://buywhere.ai/api-keys",
+      "required": true
+    }
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.buywhere.ai/mcp"
+    }
+  ]
+}

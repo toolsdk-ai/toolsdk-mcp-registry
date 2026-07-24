@@ -1,0 +1,11 @@
+{
+  "type": "mcp-server",
+  "packageName": "@ratamaha/content-distribution-mcp",
+  "name": "Content Distribution MCP (AutomateLab)",
+  "description": "8 tools to publish one piece of content to multiple channels: DEV.to, Hashnode, GitHub Discussions, Reddit, Bluesky, Medium, LinkedIn, and Twitter. Features idempotent retry, per-platform adaptation, and scheduling. No vendor lock-in — bring your own API keys.",
+  "url": "https://github.com/AutomateLab-tech/content-distribution-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "AutomateLab",
+  "env": {}
+}

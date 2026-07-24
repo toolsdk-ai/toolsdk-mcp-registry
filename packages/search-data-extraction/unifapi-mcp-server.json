@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "UnifAPI MCP Server",
+  "packageName": "@toolsdk-remote/com-unifapi-mcp",
+  "description": "Hosted public-data MCP server for social, search, scrape, news, creator research, and KOL pricing workflows.",
+  "url": "https://github.com/unifapi-agent/unifapi-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.unifapi.com",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "The Stall",
+  "packageName": "@toolsdk-remote/the-stall",
+  "description": "210 pay-per-call AI capabilities via x402 micropayments. Stocks, options, DeFi yields, blockchain analytics, macro data, wallet risk. USDC on Base, $0.001–$1.50/call. No API key needed.",
+  "url": "https://github.com/thebrierfox/the-stall",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://the-stall.intuitek.ai/mcp"
+    }
+  ]
+}

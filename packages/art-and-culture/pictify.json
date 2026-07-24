@@ -1,0 +1,24 @@
+{
+  "type": "mcp-server",
+  "packageName": "@pictify/mcp-server",
+  "description": "Render images, animated GIFs, and PDFs from HTML/CSS, live URLs, or reusable Handlebars/FabricJS templates. Batch up to 100 personalised renders per request and A/B test image variants with built-in experiments. Hosted remote at https://mcp.pictify.io or self-host via npx @pictify/mcp-server.",
+  "url": "https://github.com/pictify-io/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "name": "Pictify",
+  "key": "pictify",
+  "author": "pictify-io",
+  "logo": "https://pictify.io/logo.png",
+  "env": {
+    "PICTIFY_API_KEY": {
+      "description": "Pictify API key from https://pictify.io/dashboard/api-tokens",
+      "required": true
+    }
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.pictify.io"
+    }
+  ]
+}

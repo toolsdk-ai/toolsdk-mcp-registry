@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "packageName": "@automatelab/seo-performance-mcp",
+  "name": "SEO Performance MCP (AutomateLab)",
+  "description": "Post-publish SEO performance MCP that unifies Google Search Console, Matomo, GA4, Clarity, and AI-citation signals per URL. Emits a per-post verdict (refresh / expand / merge / kill / double_down / hold) with reason codes. Tracks impressions, CTR, decay curves, and citation gaps across AI engines.",
+  "url": "https://github.com/AutomateLab-tech/seo-performance-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "AutomateLab",
+  "env": {
+    "GSC_CLIENT_EMAIL": {
+      "description": "Google Search Console service account email",
+      "required": true
+    },
+    "GSC_PRIVATE_KEY": {
+      "description": "Google Search Console service account private key",
+      "required": true
+    }
+  }
+}

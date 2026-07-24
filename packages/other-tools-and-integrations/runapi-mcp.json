@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "RunAPI MCP Server",
+  "packageName": "@runapi.ai/mcp",
+  "description": "Connects MCP-compatible coding tools to RunAPI for model discovery, pricing lookup, media task creation, polling, and balance checks.",
+  "url": "https://github.com/runapi-ai/mcp",
+  "readme": "https://github.com/runapi-ai/mcp#readme",
+  "license": "Apache-2.0",
+  "runtime": "node",
+  "env": {
+    "RUNAPI_API_KEY": {
+      "description": "RunAPI API key. Free catalog tools work without it.",
+      "required": false
+    }
+  }
+}

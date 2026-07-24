@@ -1,0 +1,11 @@
+{
+  "type": "mcp-server",
+  "name": "Coinpaprika MCP",
+  "packageName": "@coinpaprika/mcp",
+  "bin": "coinpaprika-mcp",
+  "description": "Provides CoinPaprika cryptocurrency market data: prices, tickers, OHLCV history, exchanges, coin metadata, contract address lookups, and search across 59,000+ coins and 1,100+ exchanges. Free public API, no key required for most endpoints.",
+  "url": "https://github.com/coinpaprika/coinpaprika-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {}
+}

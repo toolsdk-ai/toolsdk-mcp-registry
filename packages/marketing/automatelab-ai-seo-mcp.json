@@ -1,0 +1,11 @@
+{
+  "type": "mcp-server",
+  "packageName": "@automatelab/ai-seo-mcp",
+  "name": "AI SEO MCP (AutomateLab)",
+  "description": "19 tools to audit, score, and rewrite pages for AI-citation eligibility (AEO/GEO/LLM visibility). Scores schema.org coverage, robots.txt and llms.txt health, canonical and OpenGraph setup, and AI-citation likelihood. Includes an Agentic Browsing score (llms.txt + WebMCP + a11y-tree + layout stability) and per-section answer-extractability scoring. Also ships a GitHub Action that gates PRs on a minimum AI-SEO score. Read-only, no API keys required.",
+  "url": "https://github.com/AutomateLab-tech/ai-seo-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "AutomateLab",
+  "env": {}
+}

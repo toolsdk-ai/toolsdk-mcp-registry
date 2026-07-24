@@ -1,25 +1,30 @@
 {
   "type": "mcp-server",
+  "name": "FastMCP Telegram",
   "packageName": "fast-mcp-telegram",
-  "description": "Telegram MCP server with search and messaging capabilities",
+  "description": "Full Telegram API for AI agents: messages, media, calls, polls, groups, reactions, admin, search",
   "url": "https://github.com/leshchenko1979/fast-mcp-telegram",
   "runtime": "python",
-  "license": "unknown",
+  "license": "MIT",
   "env": {
     "API_ID": {
-      "description": "Telegram API ID (from https://my.telegram.org/apps)",
+      "description": "Telegram API ID from my.telegram.org",
       "required": true
     },
     "API_HASH": {
-      "description": "Telegram API Hash (from https://my.telegram.org/apps)",
+      "description": "Telegram API Hash from my.telegram.org",
       "required": true
     },
-    "SERVER_MODE": {
-      "description": "Server mode: stdio (local), http-no-auth (dev), http-auth (prod)",
+    "BOT_API_TOKEN": {
+      "description": "Bot token from @BotFather (alternative to phone+OTP auth)",
       "required": false
     },
-    "SESSION_DIR": {
-      "description": "Custom session directory (defaults to ~/.config/fast-mcp-telegram/)",
+    "PHONE_NUMBER": {
+      "description": "Phone number for Telegram user auth (with +country code)",
+      "required": false
+    },
+    "DOMAIN": {
+      "description": "Public domain (for MCP config generation)",
       "required": false
     }
   }
