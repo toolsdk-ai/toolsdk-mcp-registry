@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "name": "PostEverywhere",
+  "packageName": "@posteverywhere/mcp",
+  "description": "Schedule and publish social posts to 11 platforms (X, Instagram, TikTok, YouTube, LinkedIn, Facebook, Threads, Pinterest, Bluesky, Telegram, Discord) with media uploads, campaigns, analytics, AI captions and AI image generation. 33 tools with safety annotations. Also available as a hosted remote (Streamable HTTP + OAuth 2.1) at https://mcp.posteverywhere.ai/mcp and listed in the Official MCP Registry as ai.posteverywhere/mcp.",
+  "url": "https://github.com/posteverywhere/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "POSTEVERYWHERE_API_KEY": {
+      "description": "PostEverywhere API key (create one at app.posteverywhere.ai under Settings, API)",
+      "required": true
+    }
+  }
+}
