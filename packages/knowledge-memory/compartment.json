@@ -1,10 +1,10 @@
 {
   "type": "mcp-server",
-  "packageName": "engram-memory-vault",
+  "packageName": "compartment",
   "description": "Fully offline, encrypted-at-rest vector memory for AI agents over MCP or CLI, with RAM-resident exact vector search, per-record crypto-shred deletion, a hash-chained audit log, and optional keyfile two-factor unlock.",
-  "url": "https://github.com/MaxFreedomPollard/engRAM",
+  "url": "https://github.com/MaxFreedomPollard/Compartment",
   "runtime": "python",
   "license": "MIT",
   "env": {},
-  "name": "engRAM"
+  "name": "Compartment"
 }
