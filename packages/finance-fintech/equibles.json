@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "packageName": "equibles",
+  "name": "Equibles",
+  "description": "US stock market data over MCP: live stock and options prices, congressional trades, insider transactions, SEC filings full-text search, XBRL fundamentals, 13F institutional holdings, earnings-call transcripts, short interest, and FRED macro series. 90+ tools.",
+  "url": "https://github.com/daniel3303/stock-market-mcp-server",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.equibles.com/mcp"
+    }
+  ]
+}
