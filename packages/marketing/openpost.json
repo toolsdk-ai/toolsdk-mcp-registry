@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "OpenPost",
+  "packageName": "ghcr.io/rodrgds/openpost",
+  "description": "Open-source social publishing and scheduling with an authenticated MCP server for preparing destination-specific content, reusing media, validating, scheduling, publishing, and inspecting delivery status.",
+  "url": "https://github.com/rodrgds/openpost",
+  "readme": "https://docs.openpost.social/mcp/",
+  "runtime": "docker",
+  "license": "AGPL-3.0-only",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.openpost.social/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
