@@ -12,6 +12,5 @@
       "required": true
     }
   },
-  "name": "Hive Intelligence",
-  "bin": "hive"
+  "name": "Hive Intelligence"
 }
