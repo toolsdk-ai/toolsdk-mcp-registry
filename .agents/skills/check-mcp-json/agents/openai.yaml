@@ -1,0 +1,4 @@
+interface:
+  display_name: "Check MCP JSON"
+  short_description: "Review and merge MCP registry JSON PRs"
+  default_prompt: "Use $check-mcp-json to review this MCP registry pull request safely."

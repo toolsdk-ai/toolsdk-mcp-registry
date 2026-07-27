@@ -1,164 +1,235 @@
-# 🤝 Contributing to the ToolSDK MCP Registry
+# Contributing to the ToolSDK MCP Registry
 
-Thanks for your interest in contributing to ToolSDK MCP Registry! 🎉 Your help makes this registry of Model Context Protocol servers even more toolsdk.
+Thank you for contributing an MCP server, documentation improvement, or code change.
 
-## 🚀 Submit New MCP Servers
+This guide is the source of truth for registry submissions. The root README and generated indexes
+are outputs of the registry build and must not be edited to add a server. For an intentional README
+documentation change, edit `docs/_templates/README.tpl.md` and regenerate the README.
 
-Want to add a new MCP server to our registry? It's easy! Just follow these steps:
+## Submit an MCP Server
 
-1. **Fork this repo** 🍴 - Click the fork button at the top right of this page
-2. **Create a JSON file** 📄 - Add a new file named `your-mcp-server.json` in the [packages/uncategorized](../packages/uncategorized) folder. AI will automatically categorize it later.
-3. **Fill in the details** ✍️ - Use the format below.
-4. **Submit a pull request** 🚀 - We'll review it and merge it in!
+1. Fork the repository and create a focused branch.
+2. Add one JSON file under `packages/<category>/`.
+3. Validate the change against the latest `main`.
+4. Open a pull request that links the official package or server documentation.
 
-If you know which category your server fits into, feel free to put it in the appropriate folder instead of `uncategorized`.
+Prefer one MCP server per pull request. A PR may contain multiple closely related servers from the
+same publisher, but it must not include unrelated workspace, workflow, dependency, lockfile, README,
+or generated-index changes.
 
-### Minimal Example
+### File Location and Name
+
+- Choose a category defined in [`config/categories.mjs`](../config/categories.mjs). Use
+  [`packages/uncategorized`](../packages/uncategorized) when no category is a clear fit.
+- Place the file directly in that category directory; nested package directories are not supported.
+- Use a lowercase kebab-case filename, for example `packages/databases/example-mcp.json`.
+- Do not manually edit the root README or files under `indexes/`; they are generated. README
+  documentation changes belong in `docs/_templates/README.tpl.md`.
+
+### Source Requirements
+
+A registry entry must identify something users can actually connect to or run:
+
+- A local entry needs a public package or Docker image whose name and command can be verified.
+- A remote entry needs an official, public HTTPS Streamable HTTP endpoint.
+- The repository, package registry, license, environment variables, authentication, and description
+  must agree with the publisher's current documentation.
+- Do not submit an unpublished package, private repository, placeholder package name, unrelated npm
+  package, or a full application without a stable standalone MCP command or endpoint.
+
+Reviewers verify metadata from primary sources. They do not install or execute contributed MCP
+packages during review.
+
+## Local Package Example
 
 ```json
 {
   "type": "mcp-server",
-  "name": "Github",
-  "packageName": "@modelcontextprotocol/server-github",
-  "description": "MCP server for using the GitHub API",
-  "url": "https://github.com/modelcontextprotocol/servers/blob/main/src/github",
+  "name": "Example MCP Server",
+  "packageName": "example-mcp-server",
+  "description": "Provides example operations for MCP clients.",
+  "url": "https://github.com/example/example-mcp-server",
+  "readme": "https://github.com/example/example-mcp-server#readme",
   "runtime": "node",
   "license": "MIT",
   "env": {
-    "GITHUB_PERSONAL_ACCESS_TOKEN": {
-      "description": "Personal access token for GitHub API access",
-      "required": true
+    "EXAMPLE_API_KEY": {
+      "description": "API key for the Example service.",
+      "required": true,
+      "secret": true
     }
   }
 }
 ```
 
-> Every file that enters this repository will be validated by Zod. You can open [common-schema.ts](../src/shared/schemas/common-schema.ts) to see the definition of the Zod schema.
+For Node packages, normally omit `bin`. The gateway resolves the first `bin` entry, or `main`, from
+the installed package manifest. A configured `bin` is treated as a JavaScript entry-file path passed
+to Node; it is not an npm executable alias.
 
-### Validate Locally
-
-You can validate your JSON file before submitting a PR:
-
-```bash
-make validate packages/uncategorized/your-mcp-server.json
-```
-
-## 📋 JSON Schema Reference
-
-Here's the complete list of fields you can use in your MCP server configuration:
-
-| Field            | Type     | Required | Description                                                                                                |
-| ---------------- | -------- | -------- | ---------------------------------------------------------------------------------------------------------- |
-| `type`           | string   | Yes      | Must be `"mcp-server"`                                                                                     |
-| `runtime`        | string   | Yes      | Runtime environment: `"node"`, `"python"`, `"java"`, `"go"`, `"docker"`                                    |
-| `packageName`    | string   | Yes      | Name of the package (e.g. npm, PyPI, Maven package name, or Docker image)                                  |
-| `packageVersion` | string   | No       | Version of the package. If not provided, latest version will be used                                       |
-| `bin`            | string   | No       | Binary command to run the MCP server. If not provided, the package name will be used                       |
-| `binArgs`        | string[] | No       | Arguments to pass to the binary command. Defaults to an empty array                                        |
-| `key`            | string   | No       | Unique key for URL and slug. If not provided, the package name will be used                                |
-| `name`           | string   | No       | Custom display name. If not provided, the package name will be used                                        |
-| `description`    | string   | No       | Description of the MCP server                                                                              |
-| `readme`         | string   | No       | URL to the README file. If not provided, the package URL will be used                                      |
-| `url`            | string   | No       | GitHub repository URL                                                                                      |
-| `license`        | string   | No       | Open source license (e.g. MIT, AGPL, GPL)                                                                  |
-| `logo`           | string   | No       | URL to custom logo image. If the URL is GitHub and logo is not set, the GitHub avatar will be used         |
-| `author`         | string   | No       | Author name or ToolSDK.ai developer ID                                                                     |
-| `env`            | object   | No       | Environment variables required by the server. Use an empty object `{}` if none are needed                  |
-| `remotes`        | array    | No       | Remote server endpoints for hosted MCP servers (see [Remote MCP Servers](#-remote-mcp-servers) below)      |
-
-Each environment variable in the `env` object should have:
-
-- `description` (string): A brief description of what the variable is used for
-- `required` (boolean): Whether the variable is required
-- `default` (string, optional): A non-secret default value
-- `secret` (boolean, optional): Whether clients should treat the value as sensitive. Secret values
-  cannot define defaults.
-
-## 🌐 Remote MCP Servers
-
-If your MCP server supports remote hosting via Streamable HTTP transport, you can add a `remotes` array to enable direct connection without local installation:
+For Docker entries, use the published image as `packageName`, set `runtime` to `docker`, and put the
+complete Docker CLI argument list in `binArgs`:
 
 ```json
 {
   "type": "mcp-server",
-  "name": "Remote GitHub MCP Server",
-  "packageName": "@toolsdk-remote/github-mcp",
-  "description": "A GitHub automation tool with remote hosting support",
+  "name": "Example Docker MCP",
+  "packageName": "ghcr.io/example/example-mcp",
+  "description": "Runs the Example MCP server from its published container image.",
+  "url": "https://github.com/example/example-mcp",
+  "runtime": "docker",
+  "license": "MIT",
+  "binArgs": ["run", "--rm", "-i", "ghcr.io/example/example-mcp:latest"],
+  "env": {}
+}
+```
+
+The image and referenced tag must exist.
+
+## Remote MCP Servers
+
+Remote servers use a registry placeholder beginning with `@toolsdk-remote/` and a non-empty
+`remotes` array:
+
+```json
+{
+  "type": "mcp-server",
+  "name": "Example Remote MCP",
+  "packageName": "@toolsdk-remote/example-mcp",
+  "description": "Connects to the hosted Example MCP endpoint.",
+  "url": "https://github.com/example/example-mcp",
   "runtime": "node",
+  "license": "MIT",
   "env": {},
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://your-server.com/mcp"
+      "url": "https://example.com/mcp"
     }
   ]
 }
 ```
 
-### Remote with OAuth 2.1 Authentication
+Remote rules:
 
-For MCP servers that require OAuth 2.1 authentication, add the `auth` configuration:
+- `packageName` must start with `@toolsdk-remote/`.
+- A package beginning with `@toolsdk-remote/` must define at least one remote endpoint.
+- Do not define `key`; the remote `packageName` is its registry and gateway identity.
+- Endpoints must use HTTPS and cannot target localhost or a private network.
+- `runtime: "remote"` is not valid. Use the implementation runtime when known. For a hosted-only
+  server without local runtime metadata, use `node`; the remote transport is selected first.
+
+### OAuth 2.1
+
+The registry can describe OAuth2 authentication:
 
 ```json
 {
   "type": "mcp-server",
-  "name": "OAuth GitHub MCP Server",
-  "packageName": "@toolsdk-remote/github-mcp",
-  "description": "GitHub MCP with OAuth authentication",
+  "name": "Example OAuth MCP",
+  "packageName": "@toolsdk-remote/example-oauth-mcp",
+  "description": "Connects to the hosted Example MCP endpoint using OAuth.",
   "runtime": "node",
   "env": {},
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://your-server.com/mcp",
+      "url": "https://example.com/mcp",
       "auth": {
         "type": "oauth2",
-        "scopes": ["repo", "user"]
+        "scopes": ["read", "write"]
       }
     }
   ]
 }
 ```
 
-### Remote Configuration Fields
+OAuth2 is currently the only supported remote `auth.type`. Bearer/API-key header metadata and
+credentials embedded dynamically in remote URLs are not supported. Do not model Bearer auth as
+OAuth2 or add an environment variable expecting the remote transport to inject it. A server with a
+useful unauthenticated subset may be listed without `auth` when the description clearly states the
+limitation. `auth.scopes` is optional; when present, it must be an array of strings.
 
-| Field         | Type     | Required | Description                                              |
-| ------------- | -------- | -------- | -------------------------------------------------------- |
-| `type`        | string   | Yes      | Transport type. Currently only `"streamable-http"`       |
-| `url`         | string   | Yes      | Remote server endpoint URL (must be a valid URL)         |
-| `auth`        | object   | No       | Authentication configuration                             |
-| `auth.type`   | string   | Yes*     | Authentication type. Currently only `"oauth2"`           |
-| `auth.scopes` | string[] | No       | OAuth scopes to request                                  |
+## Configuration Fields
 
-> *Required when `auth` object is provided
+Package JSON is strict. Unknown fields are rejected.
 
-Every configuration with a non-empty `remotes` array must use a `packageName` beginning with
-`@toolsdk-remote/`. Remote endpoints must use HTTPS and cannot point to localhost or a private
-network. Remote configurations cannot define a custom `key`; their `packageName` is also their
-registry and gateway identity.
+| Field | Type | Required | Description |
+| --- | --- | --- | --- |
+| `type` | string | Yes | Must be `"mcp-server"`. |
+| `runtime` | string | Yes | One of `node`, `python`, `java`, `go`, or `docker`. |
+| `packageName` | string | Yes | Published package/image identity, or an `@toolsdk-remote/` placeholder. |
+| `packageVersion` | string | No | Package version; latest is used when omitted. |
+| `bin` | string | No | Node entry-file path. Normally omit and use the package manifest. |
+| `binArgs` | string[] | No | Arguments passed to the runtime command. |
+| `remotes` | array | No | Hosted Streamable HTTP endpoints. |
+| `key` | string | No | Custom local registry identity. Forbidden for remote entries. |
+| `name` | string | No | Display name. |
+| `description` | string | No | Accurate, current summary of the server's capabilities. |
+| `readme` | string | No | Official README or documentation URL. |
+| `url` | string | No | Official package or source repository URL. |
+| `license` | string | No | License reported by the official source. |
+| `logo` | string | No | Custom logo URL. |
+| `author` | string | No | Publisher or ToolSDK developer identifier. |
+| `env` | object | No | Environment-variable metadata; use `{}` when none are needed. |
 
-New package keys must be unique. The registry uses `key` when provided and otherwise falls back to
-`packageName`; a new file cannot reuse an identity already present in the registry.
+Each environment variable requires:
 
-## 💻 Code Contributions
+- `description`: what the value is used for.
+- `required`: whether the server can start or provide its advertised capability without it.
+- `secret` (optional): set to `true` for tokens, passwords, private keys, and similar credentials.
+- `default` (optional): a non-secret default value. Secret variables cannot define defaults.
 
-We warmly welcome contributions to both our **code** and **documentation**.
-Whether you're fixing a small bug, improving performance, or adding an exciting new feature, your efforts are valued. 💪
+## Registry Identity and Duplicates
 
-### How You Can Contribute
+The effective identity is `key` when a non-empty custom key is present; otherwise it is
+`packageName`.
 
-- 🛠 **Fix bugs** — squash those pesky issues
-- ✨ **Add new features** — bring your ideas to life
-- 📚 **Improve documentation** — make it clearer and more complete
-- ⚡ **Optimize code** — enhance performance and readability
+- New entries must not reuse an identity already present on the latest `main`.
+- A new file cannot replace an existing identity, even when the old file would be deleted in the
+  same PR.
+- Historical duplicate identities are tolerated only while unchanged; a PR cannot introduce a new
+  collision.
+- Use a custom `key` only when a local package needs a stable identity distinct from its package
+  name. Never use it to take over an existing entry.
 
-Don't worry about perfection — **just submit your work**!
-Our team will review, provide feedback, and help polish it before merging. 🙌
+## Validate Before Opening a PR
 
-> 💡 Tip: Even small changes matter — every pull request counts!
+The registry validator uses Node.js built-ins and does not require installing repository
+dependencies.
 
-## 🎉 Thanks for Making MCP ToolSDK!
+```bash
+git fetch origin main
+node scripts/validate-registry.mjs --base origin/main
+```
 
-Your contributions help build a better ecosystem for everyone working with Model Context Protocol servers. Every addition matters! ❤️
+This validates the package JSON changed by your branch and checks identities against the current
+base. To validate every registry entry in the working tree:
 
-For detailed technical information, check out our [Development Guide](./DEVELOPMENT.md) and [Guide](./guide.md).
+```bash
+node scripts/validate-registry.mjs --all
+```
+
+Do not use `make build` as a submission validator. It installs and executes registry packages and
+also regenerates repository outputs.
+
+## Pull Request Checklist
+
+- [ ] The PR contains only the intended package JSON file or closely related package files.
+- [ ] The filename is lowercase kebab-case and the category exists.
+- [ ] Package/image names, tags, commands, endpoints, auth, environment variables, and license were
+      checked against official sources.
+- [ ] The effective registry identity is new.
+- [ ] Remote entries follow the `@toolsdk-remote/` and `remotes` rules.
+- [ ] Secrets are marked and have no defaults.
+- [ ] `node scripts/validate-registry.mjs --base origin/main` passes.
+- [ ] The PR description links the official package, repository, or endpoint documentation.
+
+CI passing is required but is not the final review. Maintainers also inspect the diff and verify the
+source metadata. When the fork allows maintainer edits, an authorized maintainer may push a small
+metadata correction to the contributor branch; any new commit is reviewed again before merge.
+
+## Code and Documentation Contributions
+
+Keep code changes separate from registry-entry submissions when possible. Describe the behavior,
+tests, and migration impact in the PR. See the [Development Guide](./DEVELOPMENT.md) and
+[Registry PR Review](./PR_REVIEW.md) for repository-specific engineering and review rules.

@@ -25,7 +25,7 @@
 &nbsp;&nbsp;•&nbsp;&nbsp;
 <a href="#install-via-package-manager">📦 <b>Use as SDK</b></a>
 &nbsp;&nbsp;•&nbsp;&nbsp;
-<a href="#submit-new-mcp-servers">➕ <b>Add Server</b></a>
+<a href="./docs/CONTRIBUTING.md">➕ <b>Add Server</b></a>
 &nbsp;&nbsp;•&nbsp;&nbsp;
 <a href="https://www.youtube.com/watch?v=J_oaDtCoVVo" target="_blank">🎥 <b>Video Tutorial</b></a>
 
@@ -42,7 +42,7 @@
 - 🔍 I want to **find an MCP Server** → [Browse Directory](#mcp-servers)
 - 🔌 I want to **integrate MCP tools** into my AI app → [Integration Guide](https://toolsdk.ai/docs/tutorials/getting-started#-quick-start)
 - 🚀 I want to **deploy an MCP Gateway** → [Deployment Guide](#deploy-enterprise-gateway-recommended)
-- ➕ I want to **submit my MCP Server** → [Contribution Guide](#contribute-your-mcp-server)
+- ➕ I want to **submit my MCP Server** → [Contribution Guide](./docs/CONTRIBUTING.md)
 
 > [!IMPORTANT]
 > **Pro Tip**: If a server is marked as `validated: true`, you can use it instantly with **Vercel AI SDK**:
@@ -287,18 +287,6 @@ const searchTool = await searchMCP.getAISDKTool('tavily-search');
 - **Docker Image** - Full-featured Gateway & Registry
 - **NPM Package** - TypeScript/JavaScript SDK for data access
 - **Raw Data** - JSON endpoints for direct integration
-
----
-
-<a id="getting-started"></a>
-
-<a id="submit-new-mcp-servers"></a>
-
-## Contribute Your MCP Server
-
-Want to add your MCP server to the registry? Check out our [Contributing Guide](./docs/CONTRIBUTING.md) for the full submission process, JSON schema reference, and examples (including remote servers and OAuth 2.1).
-
-[![Watch the video](https://img.youtube.com/vi/J_oaDtCoVVo/hqdefault.jpg)](https://www.youtube.com/watch?v=J_oaDtCoVVo)
 
 ---
 
@@ -1496,4 +1484,3 @@ Miscellaneous tools and integrations that don’t fit into other categories.
 - [✅ ygg-torrent-mcp](https://github.com/philogicae/ygg-torrent-mcp): Provides secure access to YggTorrent through an unofficial API wrapper, enabling torrent searching with category filtering, detailed metadata retrieval, and magnet link generation with automatic passkey injection for authenticated downloads.  (5 tools) (python) 
 
 </details>
-

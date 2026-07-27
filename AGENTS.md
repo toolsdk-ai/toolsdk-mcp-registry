@@ -1,6 +1,8 @@
 # Registry Agent Instructions
 
 When reviewing or merging registry pull requests, follow `docs/PR_REVIEW.md`.
+Use `.agents/skills/check-mcp-json/SKILL.md` for the reusable review, repair, and exact-SHA merge
+workflow and its read-only helper scripts.
 
 - Use the validator from the trusted `main` branch to inspect pull request JSON. Do not execute
   scripts from a contributor branch.
