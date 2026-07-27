@@ -14,11 +14,5 @@
       "description": "Bearer token for GetXAPI API access",
       "required": true
     }
-  },
-  "remotes": [
-    {
-      "type": "streamable-http",
-      "url": "https://api.getxapi.com/mcp"
-    }
-  ]
+  }
 }
