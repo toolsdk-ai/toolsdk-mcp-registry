@@ -1,7 +1,7 @@
 {
   "type": "mcp-server",
   "name": "ShareMyPage",
-  "packageName": "sharemypage",
+  "packageName": "@toolsdk-remote/sharemypage",
   "description": "Host the HTML pages your AI generates and give each a shareable link, with inline comments, version history, and access control.",
   "url": "https://sharemypage.app/mcp",
   "runtime": "node",
