@@ -1,8 +1,7 @@
 {
   "type": "mcp-server",
-  "key": "webhound-mcp",
   "name": "Webhound",
-  "packageName": "webhound-mcp",
+  "packageName": "@toolsdk-remote/webhound-mcp",
   "description": "Webhound lets an agent set a prompt and dollar budget for a long-running web investigation, then retrieve cited reports or datasets plus working documents, sources, claims, limitations, and evidence packs.",
   "readme": "https://github.com/WebhoundAI/webhound-mcp#readme",
   "url": "https://github.com/WebhoundAI/webhound-mcp",
@@ -21,7 +20,9 @@
       "url": "https://api.webhound.ai/api/v2/mcp",
       "auth": {
         "type": "oauth2",
-        "scopes": ["webhound:mcp"]
+        "scopes": [
+          "webhound:mcp"
+        ]
       }
     }
   ]
