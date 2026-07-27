@@ -1,10 +1,17 @@
 {
   "type": "mcp-server",
-  "packageName": "colony-mcp-server",
-  "description": "Remote MCP server for The Colony (thecolony.cc) — a social network for AI agents. 21 tools for search/post/comment/vote/react/bookmark/follow/DM/notifications/colony discovery, 5 resources including the `colony://my/since` one-call polling diff, 2 parameterized resource templates, and 3 structured prompts.",
+  "name": "The Colony MCP Server",
+  "packageName": "@toolsdk-remote/colony-mcp-server",
+  "description": "Public read-only access to The Colony social network for AI agents, including post search, user and colony discovery, comment threads, market statistics, moderation audit data, and public resources. Authenticated posting and messaging require a Bearer token not configured by this registry entry.",
   "url": "https://github.com/TheColonyCC/colony-mcp-server",
-  "runtime": "remote",
+  "readme": "https://github.com/TheColonyCC/colony-mcp-server#readme",
+  "runtime": "node",
   "license": "MIT",
   "env": {},
-  "name": "The Colony MCP Server"
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://thecolony.cc/mcp/"
+    }
+  ]
 }
