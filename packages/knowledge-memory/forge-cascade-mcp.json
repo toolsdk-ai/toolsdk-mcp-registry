@@ -7,7 +7,7 @@
   "url": "https://github.com/SunFlash12/forge-cascade-mcp",
   "readme": "https://github.com/SunFlash12/forge-cascade-mcp#readme",
   "runtime": "docker",
-  "binArgs": ["run", "--rm", "-i", "ghcr.io/sunflash12/forge-cascade-mcp:v0.1.7"],
+  "binArgs": ["run", "--rm", "-i", "ghcr.io/sunflash12/forge-cascade-mcp:latest"],
   "license": "MIT",
   "env": {}
 }
