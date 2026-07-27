@@ -2,7 +2,7 @@
   "type": "mcp-server",
   "packageName": "superhighway-mcp",
   "description": "Web search API for AI agents. Provides web search, news search, image search, page scraping, and deep research tools that return clean JSON. Backed by the Superhighway API with a free API key or x402 USDC micropayments on Base.",
-  "url": "https://github.com/patwalls/superhighway",
+  "url": "https://github.com/patwalls/superhighway-mcp",
   "runtime": "node",
   "license": "MIT",
   "env": {
