@@ -1,7 +1,7 @@
 {
   "type": "mcp-server",
   "name": "OpenPost",
-  "packageName": "ghcr.io/rodrgds/openpost",
+  "packageName": "@toolsdk-remote/openpost",
   "description": "Open-source social publishing and scheduling with an authenticated MCP server for preparing destination-specific content, reusing media, validating, scheduling, publishing, and inspecting delivery status.",
   "url": "https://github.com/rodrgds/openpost",
   "readme": "https://docs.openpost.social/mcp/",
