@@ -1,7 +1,7 @@
 {
   "type": "mcp-server",
   "name": "FXMacroData MCP",
-  "packageName": "mcp-server-fxmacrodata",
+  "packageName": "@toolsdk-remote/fxmacrodata",
   "description": "Macroeconomic, FX, release-calendar, COT, commodities, and central-bank data for AI agents.",
   "url": "https://github.com/fxmacrodata/mcp-server-fxmacrodata",
   "readme": "https://github.com/fxmacrodata/mcp-server-fxmacrodata#readme",
