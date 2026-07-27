@@ -1,14 +1,20 @@
 {
   "type": "mcp-server",
   "packageName": "superhighway-mcp",
-  "description": "Web search API for AI agents. Provides web search, news search, image search, page scraping, and deep research tools that return clean JSON. Backed by the Superhighway API with a free API key or x402 USDC micropayments on Base.",
+  "description": "MCP server providing live web search, news search, and page scraping, paid per call with USDC through x402.",
   "url": "https://github.com/patwalls/superhighway-mcp",
   "runtime": "node",
   "license": "MIT",
   "env": {
-    "SUPERHIGHWAY_API_KEY": {
-      "description": "Your Superhighway API key from https://superhighway.walls.sh (free key available). Optional if using x402 micropayments.",
-      "required": false
+    "AGENT_PRIVATE_KEY": {
+      "description": "Private key for a low-balance wallet funded with USDC on the selected Base network",
+      "required": true,
+      "secret": true
+    },
+    "X402_NETWORK": {
+      "description": "x402 payment network",
+      "required": false,
+      "default": "base"
     }
   },
   "name": "Superhighway Web Search MCP"
