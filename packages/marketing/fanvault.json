@@ -2,7 +2,6 @@
   "type": "mcp-server",
   "runtime": "node",
   "packageName": "@toolsdk-remote/io-github-thefanvault-fanvault",
-  "key": "fanvault",
   "name": "Fanvault",
   "description": "Run creator storefronts, listings, digital products, orders, content, fulfillment, messages, and analytics through AI.",
   "readme": "https://raw.githubusercontent.com/thefanvault/fanvault-mcp/main/README.md",
