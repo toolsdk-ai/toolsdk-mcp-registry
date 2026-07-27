@@ -71,7 +71,7 @@
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
     "test:package": "vitest run src/domains/package",
-    "test:registry-validator": "node --test scripts/lib/registry-validator.node-test.mjs",
+    "test:registry-validator": "node --test scripts/lib/registry-validator.node-test.mjs scripts/validate-registry.node-test.mjs",
     "test:ui": "vitest --ui",
     "test:watch": "vitest watch",
     "validate:registry": "node scripts/validate-registry.mjs --all"

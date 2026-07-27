@@ -33,8 +33,13 @@ function parseArgs(argv) {
   return options;
 }
 
-function git(args, encoding = "utf8") {
-  return execFileSync("git", args, { cwd: rootDir, encoding, maxBuffer: 64 * 1024 * 1024 });
+function git(args, encoding = "utf8", input) {
+  return execFileSync("git", args, {
+    cwd: rootDir,
+    encoding,
+    input,
+    maxBuffer: 64 * 1024 * 1024,
+  });
 }
 
 function listWorkingTreePackageFiles() {
@@ -76,14 +81,65 @@ function loadWorkingTreeEntries(issues) {
   return entries;
 }
 
-function parseChanges(base) {
-  const mergeBase = git(["merge-base", base, "HEAD"]).trim();
+function loadRefEntries(ref, issues) {
+  const output = git(["ls-tree", "-r", "--name-only", "-z", ref, "--", "packages"]);
+  const files = output.split("\0").filter((file) => file.endsWith(".json"));
+  const entries = new Map();
+  if (files.length === 0) return entries;
+
+  const requests = files.map((file) => `${ref}:${file}\n`).join("");
+  const objects = git(["cat-file", "--batch"], null, requests);
+  let offset = 0;
+
+  for (const file of files) {
+    const headerEnd = objects.indexOf(0x0a, offset);
+    const header = objects.subarray(offset, headerEnd).toString("utf8");
+    const match = header.match(/^[0-9a-f]+ blob (\d+)$/);
+    if (!match) {
+      issues.push({
+        level: "error",
+        code: "BASE_FILE_READ_FAILED",
+        message: `Could not read ${file} from ${ref}: ${header}`,
+        file,
+      });
+      offset = headerEnd + 1;
+      continue;
+    }
+
+    const size = Number(match[1]);
+    const contentStart = headerEnd + 1;
+    const contentEnd = contentStart + size;
+    const config = parseConfig(
+      objects.subarray(contentStart, contentEnd).toString("utf8"),
+      file,
+      issues,
+    );
+    if (config !== undefined) entries.set(file, config);
+    offset = contentEnd + 1;
+  }
+
+  return entries;
+}
+
+function resolveComparison(base) {
+  const isActionsPullRequestMerge =
+    process.env.GITHUB_ACTIONS === "true" &&
+    /^refs\/pull\/\d+\/merge$/.test(process.env.GITHUB_REF ?? "");
+  if (isActionsPullRequestMerge) {
+    return { base: "HEAD^1", head: "HEAD^2" };
+  }
+  return { base, head: "HEAD" };
+}
+
+function parseChanges(base, head) {
+  const mergeBase = git(["merge-base", base, head]).trim();
   const output = git([
     "diff",
     "--name-status",
     "-z",
     "--find-renames",
     mergeBase,
+    head,
     "--",
     "packages",
   ]);
@@ -101,29 +157,17 @@ function parseChanges(base) {
   return { changes, mergeBase };
 }
 
-function reconstructBaseEntries(headEntries, changes, mergeBase, issues) {
-  const entries = new Map(headEntries);
+function applyChanges(baseEntries, headEntries, changes) {
+  const entries = new Map(baseEntries);
   for (const change of changes) {
-    if (change.status === "A") {
+    if (change.status === "D") {
       entries.delete(change.path);
       continue;
     }
 
-    if (change.status === "R") entries.delete(change.path);
-    const basePath = change.oldPath ?? change.path;
-    if (!basePath.endsWith(".json")) continue;
-    try {
-      const content = git(["show", `${mergeBase}:${basePath}`]);
-      const config = parseConfig(content, basePath, issues);
-      if (config !== undefined) entries.set(basePath, config);
-    } catch (error) {
-      issues.push({
-        level: "error",
-        code: "BASE_FILE_READ_FAILED",
-        message: `Could not read ${basePath} from ${mergeBase}: ${error.message}`,
-        file: basePath,
-      });
-    }
+    if (change.status === "R") entries.delete(change.oldPath);
+    const config = headEntries.get(change.path);
+    if (config !== undefined) entries.set(change.path, config);
   }
   return entries;
 }
@@ -162,7 +206,8 @@ function main() {
       issues.push(...validatePackageConfig(config, file));
     }
   } else {
-    const { changes, mergeBase } = parseChanges(options.base);
+    const comparison = resolveComparison(options.base);
+    const { changes } = parseChanges(comparison.base, comparison.head);
     for (const change of changes) {
       if (change.path.endsWith(".json") && change.status !== "D") changedJsonPaths.add(change.path);
     }
@@ -181,11 +226,12 @@ function main() {
       }
     }
 
-    const baseEntries = reconstructBaseEntries(headEntries, changes, mergeBase, issues);
+    const baseEntries = loadRefEntries(comparison.base, issues);
+    const proposedEntries = applyChanges(baseEntries, headEntries, changes);
     const jsonChanges = changes.filter(
       (change) => change.path.endsWith(".json") || change.oldPath?.endsWith(".json"),
     );
-    issues.push(...validateKeyChanges(baseEntries, headEntries, jsonChanges));
+    issues.push(...validateKeyChanges(baseEntries, proposedEntries, jsonChanges));
 
     const categoryKeys = new Set(categories.map((category) => category.key));
     for (const change of jsonChanges) {
