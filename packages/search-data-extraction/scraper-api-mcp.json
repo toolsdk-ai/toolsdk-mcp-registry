@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Scraper API",
+  "packageName": "scraper-api-mcp",
+  "runtime": "node",
+  "bin": "scraper-api-mcp",
+  "url": "https://github.com/bitterdev/scraper-api-mcp",
+  "license": "MIT",
+  "author": "Fabian Bitter",
+  "description": "One tool per scraper-api.com endpoint. Pulls public profiles, posts, reels, transcripts, comments and ads from the large social platforms, plus German business directories and real estate portals, as consistent JSON.",
+  "env": {
+    "SCRAPER_API_KEY": {
+      "description": "API key from the scraper-api.com dashboard",
+      "required": true,
+      "secret": true
+    }
+  }
+}

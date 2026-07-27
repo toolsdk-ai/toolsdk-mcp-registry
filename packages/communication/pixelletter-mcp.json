@@ -1,0 +1,31 @@
+{
+  "type": "mcp-server",
+  "name": "PixelLetter",
+  "packageName": "pixelletter-mcp",
+  "runtime": "node",
+  "bin": "pixelletter-mcp",
+  "url": "https://github.com/bitterdev/pixelletter-mcp",
+  "license": "MIT",
+  "author": "Fabian Bitter",
+  "description": "Sends physical letters and faxes through the PixelLetter interface. Hand it a PDF or plain text plus an address and it is printed, franked and posted. Registered mail, colour and duplex options, and a test mode that submits an order without printing or charging.",
+  "env": {
+    "PIXELLETTER_EMAIL": {
+      "description": "E-mail address the PixelLetter account is registered with",
+      "required": true
+    },
+    "PIXELLETTER_PASSWORD": {
+      "description": "PixelLetter account password",
+      "required": true,
+      "secret": true
+    },
+    "PIXELLETTER_DEFAULT_DESTINATION": {
+      "description": "Default destination country as a two letter ISO code",
+      "required": false
+    },
+    "PIXELLETTER_FORCE_TEST_MODE": {
+      "description": "Force test mode for every order so nothing is printed, sent or charged",
+      "required": false,
+      "default": "false"
+    }
+  }
+}

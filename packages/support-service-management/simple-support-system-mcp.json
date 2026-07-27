@@ -1,0 +1,27 @@
+{
+  "type": "mcp-server",
+  "name": "Simple Support System",
+  "packageName": "simple-support-system-mcp",
+  "runtime": "node",
+  "bin": "simple-support-system-mcp",
+  "url": "https://github.com/bitterdev/simple-support-system-mcp",
+  "license": "MIT",
+  "author": "Fabian Bitter",
+  "description": "Works the tickets of the self hosted Simple Support System helpdesk for Concrete CMS: read a ticket with its comments, reply, move it through its states, and manage projects, attachments and comment moderation.",
+  "env": {
+    "SIMPLE_SUPPORT_SYSTEM_BASE_URL": {
+      "description": "Base URL of the Concrete CMS site running the Simple Support System package",
+      "required": true
+    },
+    "SIMPLE_SUPPORT_SYSTEM_API_KEY": {
+      "description": "API key sent as the X-Api-Key header, needed for administrative calls",
+      "required": false,
+      "secret": true
+    },
+    "SIMPLE_SUPPORT_SYSTEM_PROJECT_TOKEN": {
+      "description": "Default access token for private projects",
+      "required": false,
+      "secret": true
+    }
+  }
+}
