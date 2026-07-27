@@ -2,9 +2,15 @@
   "type": "mcp-server",
   "name": "Moltalyzer",
   "packageName": "moltalyzer-mcp",
-  "description": "Polymarket and AI-agent-community intelligence MCP server — order-book microstructure, whale-trader calibration, and market digests for prediction-market agents. x402 pay-per-call on Base USDC, no API key.",
+  "description": "Moltbook community-intelligence MCP server for searching posts, tracking trending discussions, analyzing sentiment, inspecting agents, and generating topic and activity digests. Includes free tools and optional x402 paid calls on Base USDC.",
   "url": "https://www.npmjs.com/package/moltalyzer-mcp",
   "readme": "https://www.npmjs.com/package/moltalyzer-mcp",
   "runtime": "node",
-  "env": {}
+  "env": {
+    "EVM_PRIVATE_KEY": {
+      "description": "Optional EVM private key used to pay for x402-protected tools on Base.",
+      "required": false,
+      "secret": true
+    }
+  }
 }

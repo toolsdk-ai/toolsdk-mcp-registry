@@ -2,9 +2,15 @@
   "type": "mcp-server",
   "name": "Vindex",
   "packageName": "vindex-mcp",
-  "description": "Vehicle-data MCP server — decode any VIN with factory warranty terms, plus safety recalls, known issues / reliability, and US/CA purchase-cost estimates (NHTSA + Transport Canada). x402 pay-per-call on Base USDC, no API key.",
+  "description": "Vehicle-data MCP server for VIN decoding, factory warranties, safety recalls, known issues, reliability, and US/Canada purchase-cost estimates. Includes free tools and optional x402 paid calls on Base USDC.",
   "url": "https://www.npmjs.com/package/vindex-mcp",
   "readme": "https://www.npmjs.com/package/vindex-mcp",
   "runtime": "node",
-  "env": {}
+  "env": {
+    "EVM_PRIVATE_KEY": {
+      "description": "Optional EVM private key used to pay for x402-protected tools on Base.",
+      "required": false,
+      "secret": true
+    }
+  }
 }

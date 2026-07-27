@@ -2,9 +2,15 @@
   "type": "mcp-server",
   "name": "Isocast",
   "packageName": "isocast-mcp",
-  "description": "Polymarket weather-market signal MCP server — temperature-bucket threshold crossings and live odds across 37 cities, for agents trading daily-temperature prediction markets. x402 pay-per-call on Base USDC, no API key.",
+  "description": "Weather-market signal MCP server for Polymarket, covering temperature-bucket threshold crossings and live odds across 37 cities. Includes free tools and optional x402 paid calls on Base USDC.",
   "url": "https://www.npmjs.com/package/isocast-mcp",
   "readme": "https://www.npmjs.com/package/isocast-mcp",
   "runtime": "node",
-  "env": {}
+  "env": {
+    "EVM_PRIVATE_KEY": {
+      "description": "Optional EVM private key used to pay for x402-protected tools on Base.",
+      "required": false,
+      "secret": true
+    }
+  }
 }
