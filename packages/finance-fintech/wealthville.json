@@ -1,8 +1,8 @@
 {
   "type": "mcp-server",
   "name": "WealthVille",
-  "packageName": "@wealthville/mcp-server",
-  "description": "DeFi liquidity-pool scoring and signals. Ranks ~68,800 Solana LP pools (Meteora DLMM, Orca Whirlpool, Raydium AMM/CLMM/CPMM) plus 575 EVM pools across Ethereum, Arbitrum, Base, Optimism, Polygon and BSC, returning a 0-100 pool score and an ENTER/HOLD/EXIT/REDUCE/AVOID verdict with per-protocol calibrated confidence. Publishes a miss-inclusive 30-day track record.",
+  "packageName": "@toolsdk-remote/wealthville",
+  "description": "DeFi liquidity-pool scoring and signals. Ranks ~68,800 Solana LP pools (Meteora DLMM, Orca Whirlpool, Raydium AMM/CLMM/CPMM) plus 575 EVM pools across Ethereum, Arbitrum, Base, Optimism, Polygon and BSC, returning a 0-100 pool score and an ENTER/HOLD/EXIT/REDUCE/AVOID verdict with per-protocol calibrated confidence. Publishes a miss-inclusive 30-day track record. Also available as a local stdio server via the npm package @wealthville/mcp-server.",
   "url": "https://github.com/amitesh-m/wealthville-integrations",
   "runtime": "node",
   "license": "MIT",
