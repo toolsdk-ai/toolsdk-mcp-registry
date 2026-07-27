@@ -3,7 +3,6 @@
   "name": "Scraper API",
   "packageName": "scraper-api-mcp",
   "runtime": "node",
-  "bin": "scraper-api-mcp",
   "url": "https://github.com/bitterdev/scraper-api-mcp",
   "license": "MIT",
   "author": "Fabian Bitter",

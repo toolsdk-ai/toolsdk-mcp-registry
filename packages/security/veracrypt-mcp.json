@@ -3,7 +3,6 @@
   "name": "VeraCrypt",
   "packageName": "veracrypt-mcp",
   "runtime": "python",
-  "bin": "veracrypt-mcp",
   "url": "https://github.com/bitterdev/veracrypt-mcp",
   "license": "MIT",
   "author": "Fabian Bitter",

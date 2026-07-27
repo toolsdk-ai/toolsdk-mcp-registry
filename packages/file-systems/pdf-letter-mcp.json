@@ -3,7 +3,6 @@
   "name": "PDF Letter",
   "packageName": "pdf-letter-mcp",
   "runtime": "node",
-  "bin": "pdf-letter-mcp",
   "url": "https://github.com/bitterdev/pdf-letter-mcp",
   "license": "MIT",
   "author": "Fabian Bitter",

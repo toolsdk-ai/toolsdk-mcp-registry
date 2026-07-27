@@ -3,7 +3,6 @@
   "name": "PixelLetter",
   "packageName": "pixelletter-mcp",
   "runtime": "node",
-  "bin": "pixelletter-mcp",
   "url": "https://github.com/bitterdev/pixelletter-mcp",
   "license": "MIT",
   "author": "Fabian Bitter",

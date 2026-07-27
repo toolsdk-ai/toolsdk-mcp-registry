@@ -3,7 +3,6 @@
   "name": "Enpass",
   "packageName": "enpass-mcp",
   "runtime": "node",
-  "bin": "enpass-mcp",
   "binArgs": [
     "serve"
   ],

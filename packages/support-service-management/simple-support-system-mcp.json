@@ -3,7 +3,6 @@
   "name": "Simple Support System",
   "packageName": "simple-support-system-mcp",
   "runtime": "node",
-  "bin": "simple-support-system-mcp",
   "url": "https://github.com/bitterdev/simple-support-system-mcp",
   "license": "MIT",
   "author": "Fabian Bitter",
