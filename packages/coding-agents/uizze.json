@@ -1,7 +1,6 @@
 {
   "type": "mcp-server",
   "name": "UIZZE",
-  "key": "uizze",
   "packageName": "@toolsdk-remote/io-github-samuelbushi-uizze",
   "description": "Real UI references, design contracts, validation, audits, and critiques for coding agents. The public catalog is free to browse; hosted MCP workflows require full access.",
   "url": "https://github.com/uizze/uizze-mcp",
