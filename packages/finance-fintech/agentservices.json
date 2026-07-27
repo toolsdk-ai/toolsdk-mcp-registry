@@ -1,6 +1,6 @@
 {
   "type": "mcp-server",
-  "packageName": "agentservices",
+  "packageName": "@toolsdk-remote/agentservices",
   "description": "Paid APIs for AI agents via x402. 50 services covering crypto data, market intelligence, DeFi analytics, on-chain data, portfolio intelligence, and AI inference. Agents discover and pay per-call using USDC micropayments on Base.",
   "url": "https://github.com/vbkotecha/aiservices-api",
   "runtime": "node",
