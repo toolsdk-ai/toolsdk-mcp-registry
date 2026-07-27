@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "PDF Letter",
+  "packageName": "pdf-letter-mcp",
+  "runtime": "node",
+  "url": "https://github.com/bitterdev/pdf-letter-mcp",
+  "license": "MIT",
+  "author": "Fabian Bitter",
+  "description": "Renders a structured letter as a print ready PDF laid out to DIN 5008, so the recipient block sits in the window of a DL or C6/C5 envelope. Works offline with no external API, with sender profiles, English and German fixed texts and signature images.",
+  "env": {
+    "PDF_LETTER_OUTPUT_DIR": {
+      "description": "Directory for generated letter PDFs, defaults to the system temp directory",
+      "required": false
+    },
+    "PDF_LETTER_FONT_DIR": {
+      "description": "Additional font directory searched when a font family is resolved by name",
+      "required": false
+    }
+  }
+}
