@@ -1,7 +1,7 @@
 {
   "type": "mcp-server",
   "name": "Sequenzy MCP",
-  "packageName": "@sequenzy/mcp",
+  "packageName": "@toolsdk-remote/sequenzy-mcp",
   "description": "Official MCP server for Sequenzy email marketing automation: manage subscribers, lists, segments, templates, campaigns, sequences, transactional email, analytics, and AI-generated email content.",
   "url": "https://github.com/Sequenzy/mcp",
   "runtime": "node",
