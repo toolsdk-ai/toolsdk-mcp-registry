@@ -1,6 +1,6 @@
 {
   "type": "mcp-server",
-  "packageName": "pyrimid",
+  "packageName": "@toolsdk-remote/pyrimid",
   "description": "MCP server and x402 catalog for paid AI/API products, paid MCP tools, and agent-to-agent commerce on Base USDC.",
   "url": "https://github.com/pyrimid-ai/pyrimid",
   "runtime": "node",
