@@ -1,7 +1,7 @@
 {
   "type": "mcp-server",
   "name": "Arch Tools",
-  "packageName": "arch-tools-mcp",
+  "packageName": "@toolsdk-remote/arch-tools-mcp",
   "description": "61 production AI tools — web scraping, crypto data, AI generation, sentiment analysis, OCR, TTS, and more. Pay per-call with USDC via x402 protocol or use API keys. The first API platform where AI agents pay with crypto.",
   "url": "https://github.com/Deesmo/Arch-AI-Tools",
   "runtime": "node",

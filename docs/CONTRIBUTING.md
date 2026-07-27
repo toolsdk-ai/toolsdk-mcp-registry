@@ -70,6 +70,9 @@ Each environment variable in the `env` object should have:
 
 - `description` (string): A brief description of what the variable is used for
 - `required` (boolean): Whether the variable is required
+- `default` (string, optional): A non-secret default value
+- `secret` (boolean, optional): Whether clients should treat the value as sensitive. Secret values
+  cannot define defaults.
 
 ## 🌐 Remote MCP Servers
 
@@ -79,7 +82,7 @@ If your MCP server supports remote hosting via Streamable HTTP transport, you ca
 {
   "type": "mcp-server",
   "name": "Remote GitHub MCP Server",
-  "packageName": "github-mcp",
+  "packageName": "@toolsdk-remote/github-mcp",
   "description": "A GitHub automation tool with remote hosting support",
   "runtime": "node",
   "env": {},
@@ -100,7 +103,7 @@ For MCP servers that require OAuth 2.1 authentication, add the `auth` configurat
 {
   "type": "mcp-server",
   "name": "OAuth GitHub MCP Server",
-  "packageName": "github-mcp",
+  "packageName": "@toolsdk-remote/github-mcp",
   "description": "GitHub MCP with OAuth authentication",
   "runtime": "node",
   "env": {},
@@ -128,6 +131,14 @@ For MCP servers that require OAuth 2.1 authentication, add the `auth` configurat
 | `auth.scopes` | string[] | No       | OAuth scopes to request                                  |
 
 > *Required when `auth` object is provided
+
+Every configuration with a non-empty `remotes` array must use a `packageName` beginning with
+`@toolsdk-remote/`. Remote endpoints must use HTTPS and cannot point to localhost or a private
+network. Remote configurations cannot define a custom `key`; their `packageName` is also their
+registry and gateway identity.
+
+New package keys must be unique. The registry uses `key` when provided and otherwise falls back to
+`packageName`; a new file cannot reuse an identity already present in the registry.
 
 ## 💻 Code Contributions
 

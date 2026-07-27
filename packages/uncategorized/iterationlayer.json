@@ -1,7 +1,7 @@
 {
   "type": "mcp-server",
   "name": "Iteration Layer",
-  "packageName": "iterationlayer",
+  "packageName": "@toolsdk-remote/iterationlayer",
   "description": "Document extraction, image transformation, programmatic image generation, document generation, and sheet generation via composable APIs.",
   "url": "https://github.com/iterationlayer/mcp",
   "runtime": "node",

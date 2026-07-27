@@ -1,7 +1,7 @@
 {
   "type": "mcp-server",
   "name": "MyCarTracks",
-  "packageName": "mycartracks-mcp",
+  "packageName": "@toolsdk-remote/mycartracks",
   "description": "Mainly app-based GPS vehicle tracking and automatic mileage tracking with MCP access to trip, track, and vehicle data.",
   "url": "https://mycartracks.com/resources/connect-with-ai",
   "readme": "https://mycartracks.com/resources/connect-with-ai",

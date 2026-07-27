@@ -60,18 +60,22 @@ export const MCPServerPackageConfigSchema = z
 
     remotes: z
       .array(
-        z.object({
-          type: z.literal("streamable-http"),
-          url: z.string().url(),
-          auth: z
-            .object({
-              type: z.enum(["oauth2"]),
-              scopes: z.array(z.string()).optional(),
-            })
-            .optional()
-            .describe("OAuth 2.1 authentication configuration for MCP Server"),
-        }),
+        z
+          .object({
+            type: z.literal("streamable-http"),
+            url: z.string().url(),
+            auth: z
+              .object({
+                type: z.enum(["oauth2"]),
+                scopes: z.array(z.string()).optional(),
+              })
+              .strict()
+              .optional()
+              .describe("OAuth 2.1 authentication configuration for MCP Server"),
+          })
+          .strict(),
       )
+      .min(1)
       .optional(),
 
     // if no custom key then would use name
@@ -97,13 +101,21 @@ export const MCPServerPackageConfigSchema = z
     author: z.string().optional().describe("Author name of the ToolSDK.ai's developer ID"),
     env: z
       .record(
-        z.object({
-          description: z.string(),
-          required: z.boolean(),
-        }),
+        z
+          .object({
+            description: z.string(),
+            required: z.boolean(),
+            default: z.string().optional(),
+            secret: z.boolean().optional(),
+          })
+          .strict()
+          .refine((definition) => definition.secret !== true || definition.default === undefined, {
+            message: "Secret environment variables cannot define default values",
+          }),
       )
       .optional(),
   })
+  .strict()
   .openapi("MCPServerPackageConfig");
 
 export const PackageConfigSchema = z

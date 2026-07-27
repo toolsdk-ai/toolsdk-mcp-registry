@@ -1,7 +1,7 @@
 {
   "type": "mcp-server",
   "name": "BuyWhere",
-  "packageName": "@buywhere/mcp-server",
+  "packageName": "@toolsdk-remote/buywhere",
   "description": "Real-time product search and price-comparison MCP server. 11M+ products across Shopee, Lazada, Amazon, Walmart, and 20+ retailers in Singapore, SEA, and US. Exposes search_products, get_product, compare_products, find_best_price, get_deals, list_categories, find_similar.",
   "url": "https://github.com/BuyWhere/buywhere-mcp",
   "runtime": "node",

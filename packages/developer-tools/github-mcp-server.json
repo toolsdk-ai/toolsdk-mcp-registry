@@ -1,6 +1,6 @@
 {
   "type": "mcp-server",
-  "packageName": "github-mcp-server",
+  "packageName": "@toolsdk-remote/github-mcp-server",
   "description": "GitHub's official MCP Server",
   "url": "https://github.com/github/github-mcp-server",
   "runtime": "node",

@@ -5,7 +5,7 @@ env:
 
 on:
   pull_request:
-    types: [opened, synchronize, reopened]
+    types: [opened, synchronize, reopened, ready_for_review]
     branches:
       - main
 
@@ -21,33 +21,14 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: pnpm/action-setup@v4
-        with:
-          version: 10
-
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: "pnpm"
 
-      - uses: oven-sh/setup-bun@v2
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+      - name: Test registry validator
+        run: node --test scripts/lib/registry-validator.node-test.mjs
 
       - name: Validate changed package JSON files
         env:
           BASE_SHA: ${{ github.event.pull_request.base.sha }}
-        run: |
-          mapfile -t files < <(git diff --name-only "$BASE_SHA...HEAD" -- 'packages/**/*.json')
-
-          if [ "${#files[@]}" -eq 0 ]; then
-            echo "No changed package JSON files to validate."
-            exit 0
-          fi
-
-          for file in "${files[@]}"; do
-            if [ -f "$file" ]; then
-              bun scripts/validate-package.ts "$file" --schema-only
-            fi
-          done
+        run: node scripts/validate-registry.mjs --base "$BASE_SHA" --format github

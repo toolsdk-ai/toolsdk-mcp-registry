@@ -1,6 +1,6 @@
 {
   "type": "mcp-server",
-  "packageName": "xquik",
+  "packageName": "@toolsdk-remote/xquik",
   "name": "Xquik X/Twitter Data Platform",
   "description": "X (Twitter) data platform for tweet search, profile tweets, follower export, media download, posting, DMs, webhooks, 100+ REST endpoints, 23 extraction types, and MCP tools.",
   "url": "https://github.com/Xquik-dev/x-twitter-scraper",

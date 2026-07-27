@@ -6,14 +6,5 @@
   "runtime": "node",
   "license": "mit",
   "env": {},
-  "remotes": [
-    {
-      "type": "streamable-http",
-      "url": "http://localhost:3001/mcp",
-      "auth": {
-        "type": "oauth2"
-      }
-    }
-  ],
   "name": "Local Remote GitHub MCP Server"
 }

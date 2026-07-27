@@ -1,6 +1,6 @@
 {
   "type": "mcp-server",
-  "packageName": "postman/postman-mcp-server",
+  "packageName": "@toolsdk-remote/postman-postman-mcp-server",
   "description": "A basic MCP server to operate on the Postman API.",
   "url": "https://github.com/postmanlabs/postman-mcp-server",
   "runtime": "node",

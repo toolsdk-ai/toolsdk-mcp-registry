@@ -102,38 +102,26 @@ async function discoverProtectedResourceMetadata(
 
 function determinePackageInfo(server: RegistryServer): { runtime: string; packageName: string } {
   let runtime = "node";
-  let packageName: string | null = null;
 
   if (server.packages && server.packages.length > 0) {
     const pkg = server.packages[0];
     // Note: RegistryPackage interface uses 'registryType' as string, but we check for specific values
     if (pkg.registryType === "pypi") {
       runtime = "python";
-      if (pkg.identifier) {
-        packageName = pkg.identifier.split(":")[0];
-      }
     } else if (pkg.registryType === "npm") {
       runtime = "node";
-      if (pkg.identifier) {
-        packageName =
-          pkg.identifier.split("@").slice(0, -1).join("@") || pkg.identifier.split("@")[1];
-      }
     }
   }
 
-  if (!packageName && server.name) {
-    const namePart = server.name
-      .toLowerCase()
-      .replace(/[/.\s]+/g, "-")
-      .replace(/[^a-z0-9-]/g, "")
-      .replace(/-+/g, "-")
-      .replace(/^-|-$/g, "");
-    packageName = `@toolsdk-remote/${namePart}`;
-  }
-
+  const namePart = server.name
+    .toLowerCase()
+    .replace(/[/.\s]+/g, "-")
+    .replace(/[^a-z0-9-]/g, "")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "");
   return {
     runtime,
-    packageName: packageName || "unknown",
+    packageName: `@toolsdk-remote/${namePart || "unknown"}`,
   };
 }
 

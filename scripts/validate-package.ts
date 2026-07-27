@@ -26,6 +26,7 @@ import {
   MCPServerPackageConfigSchema,
   withTimeout,
 } from "../src/shared/scripts-helpers";
+import { validatePackageConfig } from "./lib/registry-validator.mjs";
 
 // ── CLI args ──────────────────────────────────────────────────────────
 const args = process.argv.slice(2);
@@ -111,7 +112,7 @@ try {
 
 // Basic structural check before Zod
 if (typeof raw !== "object" || raw === null || Array.isArray(raw)) {
-  fail("JSON root must be an object, got " + (Array.isArray(raw) ? "array" : typeof raw));
+  fail(`JSON root must be an object, got ${Array.isArray(raw) ? "array" : typeof raw}`);
 }
 
 console.log("✅ Valid JSON");
@@ -137,6 +138,18 @@ try {
   }
   fail("Schema validation failed", (e as Error).message);
 }
+
+const semanticIssues = validatePackageConfig(raw, filePath).filter(
+  (issue) => issue.level === "error",
+);
+if (semanticIssues.length > 0) {
+  console.error("\n❌ Registry policy validation failed:\n");
+  for (const issue of semanticIssues) {
+    console.error(`  • [${issue.code}] ${issue.message}`);
+  }
+  process.exit(1);
+}
+console.log("✅ Registry policy validation passed");
 
 // ── Step 3: Print summary ─────────────────────────────────────────────
 console.log("");

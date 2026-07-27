@@ -1,6 +1,6 @@
 {
   "type": "mcp-server",
-  "packageName": "@youdotcom-oss/mcp",
+  "packageName": "@toolsdk-remote/youdotcom-oss-mcp",
   "description": "Web search, AI agent, and content extraction via You.com APIs",
   "url": "https://github.com/youdotcom-oss/dx-toolkit",
   "runtime": "node",

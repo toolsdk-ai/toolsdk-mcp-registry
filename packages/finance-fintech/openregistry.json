@@ -1,7 +1,7 @@
 {
   "type": "mcp-server",
   "name": "OpenRegistry",
-  "packageName": "openregistry-mcp",
+  "packageName": "@toolsdk-remote/openregistry",
   "description": "Connects AI agents to live data from 30 official national company registries (UK Companies House, France RNE, Germany Handelsregister, Korea OpenDART, and more) for KYB, due diligence, and ownership chain walks. Returns the registry's own response unmodified.",
   "url": "https://github.com/sophymarine/openregistry",
   "runtime": "node",

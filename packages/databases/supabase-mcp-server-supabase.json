@@ -1,7 +1,7 @@
 {
   "type": "mcp-server",
   "name": "Supabase MCP",
-  "packageName": "@supabase/mcp-server-supabase",
+  "packageName": "@toolsdk-remote/supabase-mcp-server-supabase",
   "description": "MCP server for interacting with the Supabase platform",
   "url": "https://github.com/supabase-community/supabase-mcp",
   "runtime": "node",

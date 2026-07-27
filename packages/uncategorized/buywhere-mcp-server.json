@@ -1,7 +1,7 @@
 {
   "type": "mcp-server",
   "name": "BuyWhere",
-  "packageName": "@buywhere/mcp-server",
+  "packageName": "@toolsdk-remote/buywhere-mcp-server",
   "description": "Real-time product search and price comparison for Singapore and Southeast Asia. Search 260K+ products from Lazada, Shopee, Courts, FairPrice, and other major SEA merchants. Get live prices, stock availability, and cross-merchant comparison in a single query.",
   "url": "https://github.com/BuyWhere/buywhere-mcp",
   "runtime": "node",

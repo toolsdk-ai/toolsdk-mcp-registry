@@ -1,6 +1,6 @@
 {
   "type": "mcp-server",
-  "packageName": "@publora/mcp-server",
+  "packageName": "@toolsdk-remote/publora",
   "name": "Publora",
   "description": "Schedule and publish social media posts across 10 platforms from AI agents. Create, list, update, and delete scheduled posts, request media upload URLs, list connected channels, and manage LinkedIn comments and reactions.",
   "url": "https://github.com/publora/mcp-server",

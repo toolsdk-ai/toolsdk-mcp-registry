@@ -1,6 +1,6 @@
 {
   "type": "mcp-server",
-  "packageName": "@sveltejs/mcp",
+  "packageName": "@toolsdk-remote/sveltejs-mcp",
   "description": "The official Svelte MCP server providing docs and autofixing tools for Svelte development",
   "url": "https://github.com/sveltejs/mcp",
   "runtime": "node",

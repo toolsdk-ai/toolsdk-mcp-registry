@@ -1,7 +1,7 @@
 {
   "type": "mcp-server",
   "name": "Ads MCP",
-  "packageName": "tiktok-ads-mcp-server",
+  "packageName": "@toolsdk-remote/tiktok-ads-mcp-server",
   "description": "TikTok Ads MCP Server – Model Context Protocol Server for TikTok Ads Marketing API Integration",
   "url": "https://github.com/AdsMCP/tiktok-ads-mcp-server",
   "runtime": "python",
