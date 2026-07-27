@@ -1,14 +1,15 @@
 {
   "type": "mcp-server",
-  "key": "adlicio",
   "name": "Adlicio",
-  "packageName": "commentscraper",
+  "packageName": "@toolsdk-remote/adlicio",
   "description": "Research customer language, pain points, sentiment, and market themes from Reddit discussions and comments across supported review and community platforms.",
   "readme": "https://tryadlicio.com/mcp",
   "url": "https://github.com/daniel-ddtech/commentscraper-cli",
   "runtime": "node",
   "bin": "commentscraper",
-  "binArgs": ["mcp"],
+  "binArgs": [
+    "mcp"
+  ],
   "author": "DDTechSolution",
   "env": {},
   "remotes": [
@@ -17,7 +18,9 @@
       "url": "https://mcp.tryadlicio.com/mcp",
       "auth": {
         "type": "oauth2",
-        "scopes": ["mcp:tools"]
+        "scopes": [
+          "mcp:tools"
+        ]
       }
     }
   ]
