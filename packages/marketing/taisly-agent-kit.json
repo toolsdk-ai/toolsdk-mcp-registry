@@ -1,10 +1,12 @@
 {
   "type": "mcp-server",
   "name": "Taisly Agent Kit",
-  "packageName": "@taisly/agent",
+  "packageName": "@toolsdk-remote/taisly-agent-kit",
   "packageVersion": "0.2.8",
   "bin": "taisly",
-  "binArgs": ["mcp"],
+  "binArgs": [
+    "mcp"
+  ],
   "description": "Official MCP server for publishing and scheduling short-form videos to TikTok, Instagram Reels, YouTube Shorts, X, and Facebook through Taisly.",
   "url": "https://github.com/taisly/agent",
   "readme": "https://github.com/taisly/agent#readme",
