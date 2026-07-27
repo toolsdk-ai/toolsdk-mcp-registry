@@ -1,7 +1,7 @@
 {
   "type": "mcp-server",
   "name": "Find MCP",
-  "packageName": "@agentage/find-mcp",
+  "packageName": "@toolsdk-remote/find-mcp",
   "description": "Search 17,000+ MCP servers synced from the official MCP registry (registry.modelcontextprotocol.io) via the agentage MCP Catalog",
   "url": "https://github.com/agentage/find-mcp",
   "runtime": "node",
