@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Brainiall TTS MCP",
+  "packageName": "@toolsdk-remote/brainiall-tts-mcp",
+  "description": "Connects to hosted text-to-speech with 54 voices across nine languages, including Brazilian Portuguese. Tool discovery and health checks work without authentication; synthesis and voice listing require a Brainiall API key configured directly in the MCP client.",
+  "url": "https://github.com/fasuizu-br/brainiall-tts-mcp",
+  "readme": "https://github.com/fasuizu-br/brainiall-tts-mcp#readme",
+  "runtime": "python",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.brainiall.com/mcp/tts/mcp"
+    }
+  ]
+}
