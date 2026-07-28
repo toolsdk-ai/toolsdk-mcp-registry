@@ -1,0 +1,25 @@
+{
+  "type": "mcp-server",
+  "name": "Loa Healthcare Pricing",
+  "packageName": "@toolsdk-remote/io-github-aanari-loacare-healthcare-pricing",
+  "description": "Provides OAuth-authenticated U.S. healthcare price, CPT/HCPCS, provider, hospital, and provenance searches through a hosted MCP endpoint, plus reviewed provider correction submission.",
+  "url": "https://github.com/aanari/loacare-healthcare-pricing",
+  "readme": "https://www.loacare.com/mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.loacare.com/api/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "openid",
+          "email",
+          "profile"
+        ]
+      }
+    }
+  ]
+}
