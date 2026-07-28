@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "DepthFeed",
+  "packageName": "@toolsdk-remote/depthfeed",
+  "description": "Provides read-only access to live and historical Polymarket, Kalshi, and Limitless order books, market search, snapshots, and cross-venue screening. Keyless access includes BTC Polymarket data.",
+  "url": "https://github.com/vcorp-dev/depthfeed-mcp",
+  "readme": "https://github.com/vcorp-dev/depthfeed-mcp#readme",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.depthfeed.com/mcp"
+    }
+  ]
+}
