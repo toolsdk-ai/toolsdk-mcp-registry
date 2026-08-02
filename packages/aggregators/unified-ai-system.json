@@ -2,7 +2,7 @@
   "type": "mcp-server",
   "name": "Unified AI System",
   "packageName": "ghcr.io/happy520ai/unified-ai-system/mcp-server",
-  "description": "Runs a self-hosted, terminal-first AI gateway that exposes eight stdio MCP tools for health, readiness, deterministic credential-free chat, knowledge, workflow, and workforce inspection.",
+  "description": "Runs a self-hosted, terminal-first AI gateway that exposes nine stdio MCP tools for provider-free prompt enhancement, health, readiness, deterministic credential-free chat, knowledge, workflow, and workforce inspection.",
   "url": "https://github.com/happy520ai/unified-ai-system",
   "readme": "https://github.com/happy520ai/unified-ai-system/tree/master/packages/mcp-server",
   "runtime": "docker",
@@ -12,7 +12,7 @@
     "run",
     "--rm",
     "-i",
-    "ghcr.io/happy520ai/unified-ai-system/mcp-server:0.3.3"
+    "ghcr.io/happy520ai/unified-ai-system/mcp-server:0.4.0"
   ],
   "env": {}
 }
