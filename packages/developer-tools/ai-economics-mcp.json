@@ -1,7 +1,7 @@
 {
   "type": "mcp-server",
   "packageName": "@michalpiszczek/ai-economics-mcp",
-  "description": "12 calculators for AI cost, energy and agent verification: token cost across vendors, context-window sizing, agent-hour cost (compute plus human review), model-routing savings, LLM energy and CO2, joules per verified task, org-wide token burn, humanoid energy budgets, Proof-Adjusted Autonomy, revocation exposure, verification bottleneck and proof debt. Backed by a keyless, stateless JSON API; every response carries the formula, an interpretation and a citable source.",
+  "description": "12 calculators for AI cost, energy and agent verification: token cost across vendors, context-window sizing, agent-hour cost (compute plus human review), model-routing savings, LLM energy and CO2, joules per verified task, org-wide token burn, humanoid energy budgets, Proof-Adjusted Autonomy, revocation exposure, verification bottleneck and proof debt. Backed by a keyless, stateless JSON API; every response carries the formula, an interpretation and a citable source. By Michał Piszczek — https://piszczek.pl/tools.",
   "url": "https://github.com/pich/ai-economics-mcp",
   "runtime": "node",
   "license": "MIT",
