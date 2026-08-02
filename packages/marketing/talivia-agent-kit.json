@@ -1,0 +1,27 @@
+{
+  "type": "mcp-server",
+  "name": "Talivia Agent Kit",
+  "packageName": "@toolsdk-remote/talivia-agent-kit",
+  "packageVersion": "0.1.0",
+  "bin": "talivia",
+  "binArgs": [
+    "mcp"
+  ],
+  "description": "Official MCP server for installing and verifying revenue-first website analytics, tracking live events, and connecting traffic to payment attribution through Talivia.",
+  "url": "https://github.com/talivia-group/agent",
+  "readme": "https://github.com/talivia-group/agent#readme",
+  "logo": "https://talivia.com/apple-touch-icon.png",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Talivia",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://talivia.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
