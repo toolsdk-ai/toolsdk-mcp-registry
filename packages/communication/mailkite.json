@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "MailKite",
+  "packageName": "@toolsdk-remote/mailkite",
+  "description": "Give any AI agent its own real email inbox — receive inbound mail as structured tool calls and send from a verified (SPF+DKIM) domain over a hosted remote MCP server. 60+ tools covering transactional send, inbound routing, domain registration and DNS verification, templates, contact lists, broadcasts, and webhook testing.",
+  "url": "https://github.com/mailkite/mailkite-mcp",
+  "readme": "https://mailkite.dev/docs/ai-agents",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.mailkite.dev/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
