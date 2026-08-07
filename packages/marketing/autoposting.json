@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Autoposting",
+  "packageName": "@toolsdk-remote/autoposting",
+  "description": "Remote MCP server for Autoposting: draft and rewrite posts, generate ideas with AI agents, build carousels, clip and render video, search a knowledge base, manage brands and webhooks, and schedule or publish to X, LinkedIn, Instagram, Threads and YouTube.",
+  "url": "https://github.com/Autoposting-ai/autoposting-mcp",
+  "readme": "https://docs.autoposting.ai/mcp/overview",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Autoposting",
+  "logo": "https://autoposting.ai/autoposting-logo.svg",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.autoposting.ai/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
