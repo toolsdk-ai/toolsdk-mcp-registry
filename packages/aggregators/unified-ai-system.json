@@ -12,7 +12,7 @@
     "run",
     "--rm",
     "-i",
-    "ghcr.io/happy520ai/unified-ai-system/mcp-server:0.4.0"
+    "ghcr.io/happy520ai/unified-ai-system/mcp-server:0.4.8"
   ],
   "env": {}
 }
