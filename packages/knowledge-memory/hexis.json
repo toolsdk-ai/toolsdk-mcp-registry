@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "Hexis",
+  "packageName": "@toolsdk-remote/software-bevel-hexis",
+  "description": "Git-backed platform for skills, tools, and context for AI agents. The remote MCP server exposes role-scoped skills and context, reviewed changes, and tools backed by an encrypted secrets vault.",
+  "readme": "https://github.com/Bevel-Software/Hexis#readme",
+  "url": "https://github.com/Bevel-Software/Hexis",
+  "runtime": "node",
+  "license": "Apache-2.0",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://demo.bevel.software/api/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "mcp"
+        ]
+      }
+    }
+  ]
+}
