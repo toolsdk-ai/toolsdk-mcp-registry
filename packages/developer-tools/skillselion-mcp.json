@@ -1,0 +1,11 @@
+{
+  "type": "mcp-server",
+  "packageName": "skillselion-mcp",
+  "description": "Searches a catalog of community agent skills, MCP servers, plugins and marketplaces ranked by install count, then materializes a matching SKILL.md and its bundled scripts into the session so the agent follows it mid-task.",
+  "url": "https://github.com/skillselion/skillselion-mcp",
+  "readme": "https://github.com/skillselion/skillselion-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "name": "Skillselion"
+}
