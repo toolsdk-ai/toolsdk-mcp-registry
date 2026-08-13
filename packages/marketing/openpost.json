@@ -3,7 +3,7 @@
   "name": "OpenPost",
   "packageName": "@toolsdk-remote/openpost",
   "description": "Open-source social publishing and scheduling with an authenticated MCP server for preparing destination-specific content, reusing media, validating, scheduling, publishing, and inspecting delivery status.",
-  "url": "https://github.com/rodrgds/openpost",
+  "url": "https://github.com/getopenpost/openpost",
   "readme": "https://docs.openpost.social/mcp/",
   "runtime": "docker",
   "license": "AGPL-3.0-only",
