@@ -1,0 +1,12 @@
+{
+  "type": "mcp-server",
+  "name": "LWC",
+  "packageName": "@i-xor/lwc",
+  "description": "Read-only MCP server for bounded exploration of source-grounded project memory with citations, provenance, SQLite/FTS5 retrieval, and optional document and code graphs.",
+  "url": "https://github.com/JanYork/llm-wiki-cli",
+  "readme": "https://github.com/JanYork/llm-wiki-cli#native-agent-setup",
+  "runtime": "node",
+  "binArgs": ["serve", "--mcp"],
+  "license": "Apache-2.0",
+  "env": {}
+}
