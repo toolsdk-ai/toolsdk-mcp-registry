@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "AI Tool Directory",
+  "packageName": "@toolsdk-remote/ai-tooldirectory-catalog",
+  "description": "Search a curated catalog of 2,000+ AI tools — pricing, features, ratings, categories, and editorially curated alternatives — plus checks for whether a tool is still active, defunct, or acquired. Tools: search_tools, get_tool, check_tool_status, find_alternatives, compare_tools, list_tools.",
+  "url": "https://github.com/AI-Directory-Partners/tooldirectory-mcp",
+  "readme": "https://github.com/AI-Directory-Partners/tooldirectory-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://tooldirectory.ai/api/mcp"
+    }
+  ]
+}
