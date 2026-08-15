@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Palisade DMARC Agent",
+  "packageName": "@palisadeemail/mcp",
+  "description": "AI-powered DMARC, SPF, DKIM, BIMI, MTA-STS, DNS, and email-authentication management for AI agents.",
+  "url": "https://github.com/palisadeemail/palisade-mcp",
+  "readme": "https://github.com/palisadeemail/palisade-mcp#readme",
+  "logo": "https://palisade.email/images/palisade-icon.png",
+  "author": "Palisade",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "PALISADE_API_KEY": {
+      "description": "Palisade API key used to authenticate the local MCP bridge to Palisade's hosted MCP service.",
+      "required": true,
+      "secret": true
+    }
+  }
+}
