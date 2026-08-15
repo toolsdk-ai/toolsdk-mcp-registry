@@ -1,0 +1,12 @@
+{
+  "type": "mcp-server",
+  "packageName": "agent-qa",
+  "description": "Runs natural-language web and mobile tests, retains execution memory, and exposes authoring, execution, artifact, and triage tools to MCP clients.",
+  "url": "https://github.com/vostride/agent-qa",
+  "readme": "https://vostride.com/docs/agent-qa",
+  "runtime": "node",
+  "license": "FSL-1.1-ALv2",
+  "binArgs": ["mcp"],
+  "env": {},
+  "name": "agent-qa"
+}
