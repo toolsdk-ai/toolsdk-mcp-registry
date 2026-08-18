@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Kairos Signal",
+  "packageName": "@toolsdk-remote/kairos-signal",
+  "description": "First-party DePIN supply telemetry API. 792 networks catalogued, 171 with first-party supply feeds (node counts, committed capacity, coverage), every value carrying source + as_of + verify_url. Self-register for $5 free credits, no card. 10 tools including register_agent, list_products, purchase_data.",
+  "url": "https://github.com/OV3RK177/kairos-signal",
+  "readme": "https://github.com/OV3RK177/kairos-signal#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://kairossignal.com/mcp/"
+    }
+  ]
+}
