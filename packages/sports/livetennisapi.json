@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Live Tennis API MCP",
+  "packageName": "livetennisapi-mcp",
+  "description": "Bridge to the Live Tennis API for live tennis scores, fixtures, player rankings, and head-to-head, plus market prices and model win-probability on the paid tiers. Covers ATP, WTA, Challenger, ITF, and juniors.",
+  "url": "https://github.com/livetennisapi/livetennisapi-mcp",
+  "readme": "https://github.com/livetennisapi/livetennisapi-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "LIVETENNISAPI_KEY": {
+      "description": "Live Tennis API key. A free key (no card) is available at https://livetennisapi.com/subscribe/free; the server starts without it, but only the status check works until it is set.",
+      "required": false,
+      "secret": true
+    }
+  }
+}
