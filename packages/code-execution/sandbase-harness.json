@@ -1,0 +1,31 @@
+{
+  "type": "mcp-server",
+  "name": "SandBase Harness MCP",
+  "packageName": "ghcr.io/sandbaseai/sandbase-harness-mcp",
+  "description": "Connects MCP clients to a self-hosted SandBase Harness runtime for agent, session, streamed turn, artifact, and cancellation operations.",
+  "url": "https://github.com/sandbaseai/sandbase-harness",
+  "readme": "https://github.com/sandbaseai/sandbase-harness#readme",
+  "runtime": "docker",
+  "license": "Apache-2.0",
+  "binArgs": [
+    "run",
+    "--rm",
+    "-i",
+    "-e",
+    "MANAGED_AGENTS_URL",
+    "-e",
+    "MANAGED_AGENTS_API_KEY",
+    "ghcr.io/sandbaseai/sandbase-harness-mcp:0.3.4"
+  ],
+  "env": {
+    "MANAGED_AGENTS_URL": {
+      "description": "Base URL of the SandBase Harness runtime API.",
+      "required": true
+    },
+    "MANAGED_AGENTS_API_KEY": {
+      "description": "API key for an authenticated SandBase Harness runtime.",
+      "required": false,
+      "secret": true
+    }
+  }
+}
