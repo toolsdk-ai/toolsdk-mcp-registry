@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "name": "Wondel.ai Skills MCP",
+  "packageName": "wondel-skills-mcp",
+  "description": "Read-only remote MCP server over 50 book-based agent skills and 12 guided journeys: routes a task to the right framework (recommend_skills) and serves the real SKILL.md in-session (load_skill). No install, no account, no auth.",
+  "url": "https://github.com/mjaskolski/wondel-skills-mcp",
+  "license": "unknown",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://skills.wondel.ai/mcp"
+    }
+  ]
+}
