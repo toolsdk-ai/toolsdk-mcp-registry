@@ -3,7 +3,7 @@
   "name": "AdMapix MCP",
   "packageName": "admapix-mcp",
   "packageVersion": "1.0.0",
-  "description": "Searches competitor ad creatives and mobile app market data, including rankings, downloads, and revenue.",
+  "description": "Searches competitor ad creatives with keyword, country, date, creative type, and industry filters.",
   "url": "https://github.com/fly0pants/admapix",
   "readme": "https://github.com/fly0pants/admapix#readme",
   "runtime": "python",
