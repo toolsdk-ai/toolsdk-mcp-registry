@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "404.directory",
+  "packageName": "@toolsdk-remote/404-directory",
+  "description": "Hosted read-only MCP gateway for one-call official documentation search across OpenAI, Microsoft Learn, AWS, and Cloudflare, plus capability-based tool discovery, trust comparison, live schema inspection, and approved remote execution.",
+  "readme": "https://github.com/MM-sheng/404-directory#readme",
+  "url": "https://github.com/MM-sheng/404-directory",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "MM-sheng",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://404.directory/mcp"
+    }
+  ]
+}
