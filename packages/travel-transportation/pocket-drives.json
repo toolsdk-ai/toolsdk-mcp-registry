@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Pocket Drives",
+  "packageName": "@toolsdk-remote/pocket-drives",
+  "description": "Search peer-to-peer luxury, exotic, and EV rentals from independent hosts. Remote Streamable HTTP, no auth.",
+  "url": "https://github.com/RevList/pocket-drives-mcp",
+  "readme": "https://github.com/RevList/pocket-drives-mcp#readme",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://pocketdrives.ai/mcp"
+    }
+  ]
+}
