@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "Worklittle Jobs",
+  "packageName": "@toolsdk-remote/worklittle-jobs",
+  "description": "Search jobs with visa, salary, and distance filters, swipe to apply in your AI app, and save roles to a Worklittle account.",
+  "url": "https://github.com/worklittle/jobs-mcp",
+  "readme": "https://docs.worklittle.com/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/worklittle/jobs-mcp/main/logo.png",
+  "author": "Worklittle",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.worklittle.com/",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["jobs:read", "jobs:apply", "jobs:apply_with_ai"]
+      }
+    }
+  ]
+}
