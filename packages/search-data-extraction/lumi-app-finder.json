@@ -1,0 +1,12 @@
+{
+  "type": "mcp-server",
+  "name": "Lumi App Finder",
+  "packageName": "ghcr.io/alice51849/lumi-app-finder",
+  "description": "Matches a task, app name, or buyer need to Lumi Studio's live iOS apps and returns publisher-authored, editorially localized context, the purchase model, a guide link, and a direct App Store link for the matching storefront. First-party publisher catalog: results are text relevance matches, not an independent ranking, review, or measured search volume. The runtime is offline, needs no account or API key, and makes no network request.",
+  "url": "https://github.com/alice51849/lumi-mcp",
+  "readme": "https://github.com/alice51849/lumi-mcp#readme",
+  "runtime": "docker",
+  "license": "MIT",
+  "binArgs": ["run", "--rm", "-i", "ghcr.io/alice51849/lumi-app-finder:1.2.0"],
+  "env": {}
+}
