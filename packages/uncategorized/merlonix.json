@@ -1,15 +1,10 @@
 {
   "type": "mcp-server",
-  "name": "Merlonix",
-  "packageName": "merlonix-mcp",
+  "packageName": "@toolsdk-remote/merlonix",
   "description": "Website and infrastructure monitoring over MCP: live SSL/TLS, DNS and domain-registration (RDAP) health for any hostname, MCP server health checks (initialize handshake + tools list + A–F security posture), AI agent-readiness scoring, email-blacklist and broken-link checks, and live cloud-vendor status. 8 public tools, no auth.",
-  "readme": "https://merlonix.com/docs/mcp-server/",
   "url": "https://github.com/cmhenry79/merlonix-mcp",
   "runtime": "node",
-  "bin": "merlonix-mcp",
-  "binArgs": [],
-  "author": "Merlonix",
-  "env": {},
+  "license": "MIT",
   "remotes": [
     {
       "type": "streamable-http",
