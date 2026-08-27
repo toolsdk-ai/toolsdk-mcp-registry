@@ -2,8 +2,9 @@
   "type": "mcp-server",
   "name": "UIZZE",
   "packageName": "@toolsdk-remote/io-github-samuelbushi-uizze",
-  "description": "Real UI references, design contracts, validation, audits, and critiques for coding agents. The public catalog is free to browse; hosted MCP workflows require full access.",
-  "url": "https://github.com/uizze/uizze-mcp",
+  "description": "Authenticated UIZZE MCP for coding agents: find_ui_references and find_ui_materials provide focused UI references and hosted design materials grounded in 800,000+ real web and iOS screens. The free anti-ui-slop Skill and conservative GitHub Action are available separately.",
+  "url": "https://github.com/uizze/uizze",
+  "readme": "https://uizze.com/docs",
   "runtime": "node",
   "env": {
     "UIZZE_AGENT_TOKEN": {
