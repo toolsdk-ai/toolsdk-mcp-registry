@@ -1,0 +1,23 @@
+{
+    "type": "mcp-server",
+    "name": "PZERO",
+    "packageName": "@toolsdk-remote/pzero",
+    "description": "Frontier First AI Marketplace. One balance for text, image, and video. Hosted Model Context Protocol.",
+    "url": "https://docs.pzero.studio/agents/mcp",
+    "readme": "https://docs.pzero.studio/agents/mcp",
+    "runtime": "node",
+    "license": "MIT",
+    "env": {
+          "PZERO_API_KEY": {
+                  "description": "Bearer API key for hosted PZERO MCP.",
+                  "required": true,
+                  "secret": true
+          }
+    },
+    "remotes": [
+          {
+                  "type": "streamable-http",
+                  "url": "https://mcp.pzero.studio/mcp"
+          }
+    ]
+}
