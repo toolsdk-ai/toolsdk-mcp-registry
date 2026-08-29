@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "DC Hub",
+  "packageName": "@toolsdk-remote/dc-hub",
+  "description": "Live data-center, power-grid, fiber and natural-gas infrastructure intelligence for site selection - facility and market lookups, grid capacity and interconnection queues, energy prices, and market scoring, with a provenance stamp on every response.",
+  "readme": "https://github.com/azmartone67/dchub-mcp-server#readme",
+  "url": "https://github.com/azmartone67/dchub-mcp-server",
+  "runtime": "node",
+  "license": "unknown",
+  "author": "azmartone67",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://dchub.cloud/mcp"
+    }
+  ]
+}
