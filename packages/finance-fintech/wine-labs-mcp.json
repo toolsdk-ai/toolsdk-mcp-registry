@@ -3,7 +3,7 @@
   "name": "Wine Labs MCP",
   "packageName": "@toolsdk-remote/wine-labs-mcp",
   "description": "Fine-wine identity matching, pricing, auction and exchange research, merchant comparisons, portfolios, and cellar workflows through the hosted Wine Labs service.",
-  "url": "https://github.com/imiraoui/winelabs-mcp",
+  "url": "https://winelabs.ai/agents",
   "readme": "https://github.com/imiraoui/winelabs-mcp#readme",
   "runtime": "python",
   "env": {},
