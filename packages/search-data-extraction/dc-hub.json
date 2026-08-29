@@ -6,7 +6,7 @@
   "readme": "https://github.com/azmartone67/dchub-mcp-server#readme",
   "url": "https://github.com/azmartone67/dchub-mcp-server",
   "runtime": "node",
-  "license": "unknown",
+  "license": "MIT",
   "author": "azmartone67",
   "env": {},
   "remotes": [
