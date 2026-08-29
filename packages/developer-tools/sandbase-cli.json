@@ -1,0 +1,13 @@
+{
+  "type": "mcp-server",
+  "name": "SandBase CLI",
+  "packageName": "@sandbaseai/cli",
+  "packageVersion": "0.1.14",
+  "description": "Secure local MCP bridge for AI clients to discover, inspect, and run models and APIs.",
+  "url": "https://github.com/sandbaseai/cli",
+  "readme": "https://github.com/sandbaseai/cli#readme",
+  "runtime": "node",
+  "license": "Apache-2.0",
+  "binArgs": ["connect"],
+  "env": {}
+}
