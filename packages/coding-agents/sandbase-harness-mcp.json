@@ -1,0 +1,32 @@
+{
+  "type": "mcp-server",
+  "name": "SandBase Harness MCP Bridge",
+  "packageName": "ghcr.io/sandbaseai/sandbase-harness-mcp",
+  "description": "A stdio MCP bridge for the self-hosted SandBase Harness AI agent runtime, exposing agent discovery, persistent session execution, artifacts, and session control.",
+  "url": "https://github.com/sandbaseai/sandbase-harness",
+  "readme": "https://github.com/sandbaseai/sandbase-harness#portable-agent-plugin",
+  "runtime": "docker",
+  "license": "Apache-2.0",
+  "author": "sandbaseai",
+  "binArgs": [
+    "run",
+    "--rm",
+    "-i",
+    "-e",
+    "MANAGED_AGENTS_URL",
+    "-e",
+    "MANAGED_AGENTS_API_KEY",
+    "ghcr.io/sandbaseai/sandbase-harness-mcp:0.3.8"
+  ],
+  "env": {
+    "MANAGED_AGENTS_URL": {
+      "description": "Base URL of the connected SandBase Harness API; defaults to http://127.0.0.1:3000 when omitted.",
+      "required": false
+    },
+    "MANAGED_AGENTS_API_KEY": {
+      "description": "Optional API key for an authenticated SandBase Harness API.",
+      "required": false,
+      "secret": true
+    }
+  }
+}
