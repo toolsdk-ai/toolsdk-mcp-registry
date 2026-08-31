@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "GEO Tracker by DigestSEO",
+  "packageName": "@toolsdk-remote/digestseo-geo",
+  "description": "Tracks brand visibility, citations, competitors, content gaps, and fresh scans across ChatGPT, Claude, Perplexity, Gemini, and Google AI Overviews through the DigestSEO-hosted OAuth MCP endpoint.",
+  "url": "https://github.com/AKzar1el/mcp-geo",
+  "readme": "https://github.com/AKzar1el/mcp-geo#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/AKzar1el/mcp-geo/main/assets/logo.png",
+  "author": "DigestSEO",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://geo-mcp.digestseo.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
