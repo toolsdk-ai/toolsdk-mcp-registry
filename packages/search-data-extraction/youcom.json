@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "You.com MCP",
+  "packageName": "@toolsdk-remote/youcom",
+  "description": "You.com hosted MCP endpoint providing current web and news search (you-search) with domain, country, language, and freshness filters, plus URL content extraction, cited research, and finance tools on the authenticated profile. OAuth is required for the full tool set; a keyless basic web-search profile is available at https://api.you.com/mcp?profile=free.",
+  "readme": "https://you.com/docs",
+  "url": "https://you.com/docs",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.you.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
