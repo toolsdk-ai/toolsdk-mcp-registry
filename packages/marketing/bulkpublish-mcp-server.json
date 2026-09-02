@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "BulkPublish MCP Server",
+  "packageName": "@bulkpublish/mcp-server",
+  "description": "MCP server for AI agents to plan, review, schedule, publish, and analyze social media content through BulkPublish.",
+  "url": "https://github.com/azeemkafridi/bulkpublish-api",
+  "readme": "https://app.bulkpublish.com/docs",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "BULKPUBLISH_API_KEY": {
+      "description": "BulkPublish API key used to authenticate social media operations.",
+      "required": true,
+      "secret": true
+    },
+    "BULKPUBLISH_BASE_URL": {
+      "description": "Optional BulkPublish API base URL for self-hosted instances.",
+      "required": false,
+      "default": "https://app.bulkpublish.com"
+    }
+  }
+}
