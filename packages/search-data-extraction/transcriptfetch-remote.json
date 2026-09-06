@@ -1,0 +1,26 @@
+{
+  "type": "mcp-server",
+  "name": "TranscriptFetch (Remote)",
+  "packageName": "@toolsdk-remote/transcriptfetch",
+  "description": "Connects to the hosted TranscriptFetch MCP endpoint: transcripts for YouTube, TikTok and Instagram videos and for podcasts (Spotify, Apple, RSS, direct media files), automatic transcription when no captions exist, and YouTube video, channel and playlist search. Requires signing in with a TranscriptFetch account (free tier available).",
+  "url": "https://github.com/TranscriptFetch/mcp-server",
+  "readme": "https://transcriptfetch.com/mcp-server",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://transcriptfetch.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "openid",
+          "profile",
+          "email",
+          "offline_access"
+        ]
+      }
+    }
+  ]
+}

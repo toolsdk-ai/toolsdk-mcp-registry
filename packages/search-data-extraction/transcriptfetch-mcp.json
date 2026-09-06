@@ -13,15 +13,5 @@
       "required": true,
       "secret": true
     }
-  },
-  "remotes": [
-    {
-      "type": "streamable-http",
-      "url": "https://transcriptfetch.com/mcp",
-      "auth": {
-        "type": "oauth2",
-        "scopes": ["openid", "profile", "email", "offline_access"]
-      }
-    }
-  ]
+  }
 }
