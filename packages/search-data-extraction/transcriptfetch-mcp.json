@@ -1,0 +1,27 @@
+{
+  "type": "mcp-server",
+  "name": "TranscriptFetch",
+  "packageName": "transcriptfetch-mcp",
+  "description": "Fetches transcripts for YouTube, TikTok and Instagram videos and for podcasts (Spotify, Apple, RSS, direct media files), transcribing automatically when no captions exist, and searches YouTube videos, channels and playlists. Official TranscriptFetch server; requires a TranscriptFetch API key (free tier available).",
+  "url": "https://github.com/TranscriptFetch/mcp-server",
+  "readme": "https://github.com/TranscriptFetch/mcp-server#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "TRANSCRIPTFETCH_API_KEY": {
+      "description": "TranscriptFetch API key from https://transcriptfetch.com/app/keys.",
+      "required": true,
+      "secret": true
+    }
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://transcriptfetch.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["openid", "profile", "email", "offline_access"]
+      }
+    }
+  ]
+}
