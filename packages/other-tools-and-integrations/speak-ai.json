@@ -1,0 +1,11 @@
+{
+  "type": "mcp-server",
+  "packageName": "@speakai/mcp-server",
+  "description": "Official Speak AI MCP server for transcription, media search, and call/meeting analysis: capture meetings, search recordings, run async voice/video surveys, create clips, and automate workflows.",
+  "url": "https://github.com/speakai/speakai-mcp",
+  "readme": "https://docs.speakai.co/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "name": "Speak AI"
+}
