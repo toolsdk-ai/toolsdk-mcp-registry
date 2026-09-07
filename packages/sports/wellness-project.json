@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "Wellness Project",
+  "packageName": "@toolsdk-remote/wellness-project",
+  "description": "Hosted health and fitness MCP server that connects health, fitness, nutrition, sleep, recovery, body metrics, goals, labs, wellbeing, and wearable data to AI assistants. Aggregates Apple Health, Google Health Connect, Fitbit, Oura, and other sources alongside manual logging, and exposes read and write tools plus interactive chart widgets over a remote OAuth 2.1 endpoint with Dynamic Client Registration. Published in the Official MCP Registry as ai.wellnessproject/wellness-project.",
+  "url": "https://github.com/turnnoblindeye/wellness-project-mcp",
+  "readme": "https://github.com/turnnoblindeye/wellness-project-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://wellnessproject.ai/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
