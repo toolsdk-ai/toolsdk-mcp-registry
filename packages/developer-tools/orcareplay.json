@@ -1,0 +1,11 @@
+{
+  "type": "mcp-server",
+  "packageName": "orcareplay",
+  "description": "Reads recorded coding-agent runs: lists runs, shows a run's timeline of model calls, tool calls and per-turn file changes, lists the checkpoints a run can be forked from, replays a run offline and compares forks across models.",
+  "url": "https://github.com/Continuum-AI-Corp/OrcaReplay",
+  "readme": "https://github.com/Continuum-AI-Corp/OrcaReplay#readme",
+  "runtime": "node",
+  "license": "apache-2.0",
+  "env": {},
+  "name": "OrcaReplay"
+}
