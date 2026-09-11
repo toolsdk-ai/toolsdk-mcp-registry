@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Taskade Hosted MCP",
+  "packageName": "@toolsdk-remote/taskade",
+  "description": "Hosted Taskade MCP (OAuth) at https://www.taskade.com/mcp — connect agents to a Taskade workspace and Genesis apps.",
+  "url": "https://github.com/taskade/mcp",
+  "readme": "https://www.taskade.com/docs/mcp/hosted-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Taskade",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.taskade.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
