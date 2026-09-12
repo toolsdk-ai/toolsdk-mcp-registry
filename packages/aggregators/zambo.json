@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Zambo",
+  "packageName": "@toolsdk-remote/zambo",
+  "description": "Open-source MCP execution layer: 120 native tools across 17 products (code audit, lead gen, price tracking, payments, prompt defense) behind one zero-auth endpoint. Free 20 calls/tool/day, no account.",
+  "url": "https://github.com/zambodotdev/zambo-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://zambo.dev/api/mcp"
+    }
+  ]
+}
