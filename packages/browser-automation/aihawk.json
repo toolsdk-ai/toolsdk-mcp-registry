@@ -1,0 +1,11 @@
+{
+  "type": "mcp-server",
+  "name": "AIHawk",
+  "packageName": "aihawk",
+  "description": "Gives an MCP client a real Firefox to drive: opens pages, clicks, types, reads text and takes screenshots from plain-English instructions, through the real pointer and keyboard.",
+  "url": "https://github.com/feder-cr/AIHawk",
+  "readme": "https://github.com/feder-cr/AIHawk#readme",
+  "runtime": "python",
+  "license": "MIT",
+  "env": {}
+}
