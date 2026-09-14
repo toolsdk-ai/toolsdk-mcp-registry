@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "CareClinic Health Tracker",
+  "packageName": "@toolsdk-remote/careclinic-health-tracker",
+  "description": "Reviews personal medication schedules, symptoms, mood, and confirmed health check-ins.",
+  "url": "https://cdn.careclinic.io/mcp/help/index.html",
+  "readme": "https://cdn.careclinic.io/mcp/help/index.html",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.careclinic.io/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
