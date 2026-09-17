@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "ContextStream",
+  "packageName": "@toolsdk-remote/contextstream",
+  "description": "Shared project context for Cursor, Claude Code, Codex, Grok, and other AI coding tools — one query, same context across tools.",
+  "url": "https://github.com/contextstream/mcp-server",
+  "readme": "https://contextstream.io/docs/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.contextstream.io/mcp"
+    }
+  ]
+}
