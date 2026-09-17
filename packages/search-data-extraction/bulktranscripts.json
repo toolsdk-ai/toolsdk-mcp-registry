@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "BulkTranscripts",
+  "packageName": "@toolsdk-remote/bulktranscripts",
+  "description": "Hosted BulkTranscripts MCP (OAuth) at https://bulktranscripts.co/mcp. Fetch transcripts for one YouTube video or a whole channel or playlist, search YouTube and inside a channel, list channel and playlist videos, and track new uploads. Seven read-only tools.",
+  "url": "https://github.com/pratie/bulktranscripts-mcp",
+  "readme": "https://bulktranscripts.co/youtube-mcp-server",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "BulkTranscripts",
+  "logo": "https://bulktranscripts.co/logo-512-plate.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://bulktranscripts.co/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
