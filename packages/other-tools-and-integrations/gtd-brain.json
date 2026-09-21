@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "GTD Brain",
+  "packageName": "@toolsdk-remote/gtd-brain",
+  "description": "Hosted Getting Things Done (GTD) board: capture to Inbox, next actions by context, projects, waiting-for and weekly review, synced in real time with the GTD Brain web, iOS and Android apps. 16 tools and 4 prompts; sign in with an email code (OAuth 2.1). A new account gets a few free tool calls, then a GTD Brain subscription is required.",
+  "url": "https://gtdbrain.com/connect?source=toolsdk-mcp-registry",
+  "readme": "https://gtdbrain.com/connect?source=toolsdk-mcp-registry",
+  "runtime": "node",
+  "logo": "https://gtdbrain.com/gtdbrain/icon-512.png",
+  "author": "Minosin AB",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.gtdbrain.com/api/gtdbrain/v1/mcp",
+      "auth": { "type": "oauth2" }
+    }
+  ]
+}
