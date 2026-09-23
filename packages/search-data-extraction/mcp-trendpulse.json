@@ -1,0 +1,11 @@
+{
+  "type": "mcp-server",
+  "name": "TrendPulse",
+  "packageName": "mcp-trendpulse",
+  "description": "Provides Google News research and Google Trends analysis for keyword, market, SEO, and content research through MCP.",
+  "url": "https://github.com/AKzar1el/mcp-trendpulse",
+  "readme": "https://github.com/AKzar1el/mcp-trendpulse#readme",
+  "runtime": "python",
+  "license": "MIT",
+  "env": {}
+}
