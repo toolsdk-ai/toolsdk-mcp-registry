@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "SaaSCity",
+  "packageName": "@toolsdk-remote/saascity",
+  "description": "Product launch toolkit: audits a homepage before launch, recommends and filters 1,600+ startup, SaaS and AI directories by Ahrefs DR, dofollow/nofollow and price, and submits the product to the SaaSCity launch directory as a draft the human claims.",
+  "url": "https://github.com/nyyhao/saascity-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "SaaSCity",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://saascity.io/api/mcp"
+    }
+  ]
+}
