@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Shared Forest",
+  "packageName": "@toolsdk-remote/shared-forest",
+  "description": "Official hosted server for Shared Forest, a shared illustrated forest that grows from its traffic. Reads forest stats and trees, plants one tree per caller per day, and designs, quotes and finds spots for sponsored trees without an account. Starting a sponsorship and reading orders need OAuth 2.1 on the same endpoint; the user confirms and pays on a returned link.",
+  "url": "https://github.com/ArneFfm/shared-forest-agents",
+  "readme": "https://sharedforest.com/developers",
+  "runtime": "node",
+  "logo": "https://sharedforest.com/icon-512.png",
+  "author": "Arne Kellmann",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://sharedforest.com/mcp"
+    }
+  ]
+}
