@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Orbit by Noveum",
+  "packageName": "@toolsdk-remote/noveum-orbit",
+  "description": "Manage workspace issues, projects, sprints, docs and files through Orbit's hosted MCP. A free Orbit account and workspace-scoped OAuth consent are required.",
+  "url": "https://github.com/Noveum/orbit",
+  "readme": "https://github.com/Noveum/orbit/blob/main/docs/mcp.md",
+  "runtime": "node",
+  "license": "Apache-2.0",
+  "author": "Noveum",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://orbit.noveum.ai/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["orbit.read", "orbit.write"]
+      }
+    }
+  ]
+}
