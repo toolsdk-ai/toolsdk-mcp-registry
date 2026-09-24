@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "API.market MCP Gateway",
+  "packageName": "@toolsdk-remote/api-market-gateway",
+  "description": "Connects AI agents to 580+ APIs through a hosted gateway for API discovery, operation schemas, execution, usage checks and subscription management. OAuth authentication; individual APIs have different free tiers and paid plans, with subscription and usage charges applying.",
+  "readme": "https://api.market/mcp",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.market/api/mcp/gateway",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
