@@ -1,0 +1,24 @@
+{
+  "type": "mcp-server",
+  "name": "Noveum",
+  "packageName": "@toolsdk-remote/noveum",
+  "description": "Inspect AI agent traces, manage evaluation datasets, run evaluations, and test voice agents through Noveum. Requires a Noveum account.",
+  "url": "https://noveum.ai/en/mcp",
+  "readme": "https://noveum.ai/en/docs/platform/mcp-server-reference",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://noveum.ai/api/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "noveum.read",
+          "noveum.write",
+          "noveum.execute"
+        ]
+      }
+    }
+  ]
+}
