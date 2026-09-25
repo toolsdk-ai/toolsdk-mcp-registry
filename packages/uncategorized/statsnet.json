@@ -2,7 +2,7 @@
   "type": "mcp-server",
   "name": "Statsnet",
   "packageName": "@toolsdk-remote/statsnet",
-  "description": "Company data for Kazakhstan, Uzbekistan and Kyrgyzstan: registration, executives and finances.",
+  "description": "Background check any company in the world: registration, executives, courts and finances.",
   "url": "https://github.com/usenetstate/statsnet-mcp",
   "runtime": "node",
   "license": "MIT",
