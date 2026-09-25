@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Serato DJ MCP",
+  "packageName": "serato-dj-mcp",
+  "description": "Lets an AI assistant search and audit a local Serato DJ library: harmonic BPM and Camelot key search, crates, duplicate and missing-file audits, and new crates built with a preview before anything is written. macOS. Unofficial.",
+  "url": "https://github.com/Venut-Technologies/serato-dj-mcp",
+  "readme": "https://github.com/Venut-Technologies/serato-dj-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "SERATO_LIBRARY_PATH": {
+      "description": "Optional path to the Serato library folder (the one holding master.sqlite). Found automatically on macOS when unset.",
+      "required": false
+    }
+  }
+}

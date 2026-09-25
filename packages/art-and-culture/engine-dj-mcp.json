@@ -1,0 +1,11 @@
+{
+  "type": "mcp-server",
+  "name": "Engine DJ MCP",
+  "packageName": "engine-dj-mcp",
+  "description": "Lets an AI assistant search, audit and build playlists in a local Engine DJ (Denon) library: BPM and Camelot key search, duplicate and missing-file audits, cues and beatgrids, opt-in playlist and tag edits. macOS. Unofficial.",
+  "url": "https://github.com/Venut-Technologies/engine-dj-mcp",
+  "readme": "https://github.com/Venut-Technologies/engine-dj-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {}
+}
