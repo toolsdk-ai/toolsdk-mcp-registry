@@ -1,0 +1,12 @@
+{
+  "type": "mcp-server",
+  "name": "repomap",
+  "packageName": "@sylphx/repomap",
+  "description": "A map of your codebase for AI agents: a tree-sitter code graph for 13 languages with tools for map (modules, central files, entry points), search (BM25 + symbol names), context (code, callers, callees, tests), trace (call paths) and impact (blast radius, including git diff). Local Rust binary, no API key.",
+  "url": "https://github.com/SylphxAI/repomap",
+  "readme": "https://github.com/SylphxAI/repomap#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "binArgs": ["mcp"],
+  "env": {}
+}
