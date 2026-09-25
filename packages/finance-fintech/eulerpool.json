@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Eulerpool",
+  "packageName": "@toolsdk-remote/eulerpool",
+  "description": "Financial data for AI agents: 250+ tools covering stocks, fundamentals, ETFs, macro (FRED/ECB/IMF/World Bank), crypto, FX, insider trades, congress trading and options flow. Hosted server, OAuth login.",
+  "url": "https://github.com/eulerpool/eulerpool-mcp",
+  "readme": "https://eulerpool.com/developers/mcp-server",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://eulerpool.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
