@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Sendsets",
+  "packageName": "@toolsdk-remote/sendsets",
+  "description": "Hosted Sendsets MCP (OAuth) for cold email: connect and inspect sending mailboxes and warmup, build and launch outbound campaigns, add leads, and read and answer replies. Send actions go through an approval policy.",
+  "url": "https://github.com/AddisonHoff/sendsets",
+  "readme": "https://docs.sendsetsapi.com/api/mcp/",
+  "runtime": "node",
+  "license": "Apache-2.0",
+  "author": "Sendsets",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.sendsetsapi.com/v1/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
