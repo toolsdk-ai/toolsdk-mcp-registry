@@ -1,0 +1,11 @@
+{
+  "type": "mcp-server",
+  "name": "ThreadFox Lite",
+  "packageName": "threadfox-lite",
+  "description": "Read-only Reddit research tools: a subreddit's rules with self-promotion rules flagged, communities for a topic, an account's standing and whether a post is still live. Reads through the user's own signed-in Chrome via Microsoft's Playwright Extension; never posts or votes; no API keys.",
+  "url": "https://github.com/amflimited/threadfox-lite",
+  "readme": "https://github.com/amflimited/threadfox-lite#readme",
+  "runtime": "python",
+  "license": "MIT",
+  "env": {}
+}
