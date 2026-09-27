@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Upload-Post MCP Server",
+  "packageName": "@upload-post/mcp",
+  "description": "Official Upload-Post MCP server to publish and schedule videos, photos, text and documents to TikTok, Instagram, YouTube, LinkedIn, Facebook, X, Threads, Pinterest, Reddit and Bluesky, and read analytics, comments and DMs.",
+  "url": "https://github.com/Upload-Post/upload-post-mcp",
+  "readme": "https://github.com/Upload-Post/upload-post-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "UPLOAD_POST_API_KEY": {
+      "description": "Upload-Post API key used to authenticate API requests.",
+      "required": true,
+      "secret": true
+    },
+    "UPLOAD_POST_BASE_URL": {
+      "description": "Optional Upload-Post API base URL override for staging or self-hosted setups.",
+      "required": false,
+      "default": "https://api.upload-post.com/api"
+    }
+  }
+}
