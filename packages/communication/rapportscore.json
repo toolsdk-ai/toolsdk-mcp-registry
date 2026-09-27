@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "RapportScore",
+  "packageName": "@toolsdk-remote/rapportscore",
+  "description": "Authorized access to conversation sessions, transcripts, measurements, and coaching, plus permissioned Team Dynamics reports during a limited U.S. pilot.",
+  "url": "https://app.rapportscore.ai",
+  "runtime": "node",
+  "author": "Rapport Score LLC",
+  "logo": "https://images.g2crowd.com/uploads/product/image/fd1c98813e7142b107d532bbe334baa4/rapportscore.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.rapportscore.ai/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
