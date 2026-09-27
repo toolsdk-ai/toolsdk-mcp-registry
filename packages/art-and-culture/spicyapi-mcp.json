@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "SpicyAPI MCP",
+  "packageName": "@spicyapi/mcp",
+  "description": "Official SpicyAPI server for image, video and text generation: browse the live model catalog, quote prices, create, wait for and retry tasks, upload inputs and fetch outputs.",
+  "url": "https://github.com/Spicy-API/spicy-mcp",
+  "readme": "https://docs.spicyapi.ai/docs/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "bin": "dist/src/mcp/stdio.js",
+  "env": {
+    "SPICY_API_KEY": {
+      "description": "SpicyAPI API key (starts with sk-spicy-). Browsing models and quoting work without it; creating tasks requires it.",
+      "required": false,
+      "secret": true
+    }
+  }
+}
