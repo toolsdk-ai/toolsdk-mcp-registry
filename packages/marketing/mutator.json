@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "Mutator",
+  "packageName": "@toolsdk-remote/mutator",
+  "description": "Draft and test-run formats that turn a product photo or a website into short TikTok and Instagram videos, slideshows and product photos, and read what each run made. It cannot publish: a person schedules every post in Mutator. Needs a paid Mutator plan.",
+  "url": "https://mutator.app/docs/mcp",
+  "readme": "https://mutator.app/docs/mcp",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mutator.app/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "read",
+          "write"
+        ]
+      }
+    }
+  ]
+}
