@@ -1,0 +1,12 @@
+{
+  "type": "mcp-server",
+  "name": "since-cutoff",
+  "packageName": "since-cutoff",
+  "description": "Tells coding agents which public APIs of a Python library changed after a model's training cutoff: a static griffe diff between the release at the cutoff and the pinned or latest one (removed or moved names, parameter changes, deprecations), for one package or a whole lockfile. No API key needed.",
+  "url": "https://github.com/MohammadHijjawi97/since-cutoff",
+  "readme": "https://github.com/MohammadHijjawi97/since-cutoff#readme",
+  "runtime": "python",
+  "license": "MIT",
+  "binArgs": ["mcp"],
+  "env": {}
+}
