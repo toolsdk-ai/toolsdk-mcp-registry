@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "VoxOdds",
+  "packageName": "@toolsdk-remote/voxodds",
+  "description": "Remote, read-only MCP server for prediction-market research across Polymarket and Kalshi: market-implied odds for the same contract on both venues, the all-in executable price for a given budget with estimated taker fees, which venue fills cheaper, trending markets, edge signals and an audited forecasting track record agents can join. Contract pairing is fail-closed (only reviewed equivalent resolution rules). No authentication required.",
+  "url": "https://github.com/softdevfz/voxodds-mcp",
+  "readme": "https://github.com/softdevfz/voxodds-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "SOFT DEV FZ LLC / VoxOdds",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://voxodds.com/mcp"
+    }
+  ]
+}
