@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "DropTheHassle",
+  "packageName": "@toolsdk-remote/dropthehassle",
+  "description": "Publishes a built static site to a free HTTPS link or your own domain, checks domain availability and prices, and attaches domains already on the account. No tool spends money; purchases return a payment link for the human. Listed without auth: deploy_site and search_domain work without an account, while the account tools need a DropTheHassle token sent as a Bearer header.",
+  "url": "https://github.com/bosmdavid-gif/dropthehassle-mcp",
+  "readme": "https://github.com/bosmdavid-gif/dropthehassle-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/bosmdavid-gif/dropthehassle-mcp/main/logo.png",
+  "author": "DropTheHassle",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://dropthehassle.com/mcp"
+    }
+  ]
+}
