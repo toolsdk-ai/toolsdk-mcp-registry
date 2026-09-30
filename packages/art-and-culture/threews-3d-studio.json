@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "three.ws 3D Studio",
+  "packageName": "@toolsdk-remote/threews-3d-studio",
+  "description": "Turns a text prompt or reference image into a textured, downloadable 3D model (GLB), auto-rigs static models into animation-ready humanoids, refines models from plain-language edits, and renders multi-angle previews. Hosted by three.ws; no authentication.",
+  "url": "https://github.com/nirholas/three.ws",
+  "readme": "https://three.ws/docs/mcp-studio",
+  "runtime": "node",
+  "license": "Apache-2.0",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://three.ws/api/mcp-studio"
+    }
+  ]
+}
