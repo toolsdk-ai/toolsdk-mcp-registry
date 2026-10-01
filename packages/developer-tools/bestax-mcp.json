@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Bestax",
+  "packageName": "bestax-mcp",
+  "description": "Gives coding agents the props, examples, CSS variables and Agent Skills for the Bestax React component library (Bulma v1). Runs offline.",
+  "url": "https://github.com/allxsmith/bestax/tree/main/bestax-mcp",
+  "readme": "https://github.com/allxsmith/bestax/blob/main/bestax-mcp/README.md",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "BESTAX_MCP_NO_VERSION_CHECK": {
+      "description": "Set to 1 to skip the check of the installed bestax-bulma version.",
+      "required": false
+    }
+  }
+}
