@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Fast GST Refund",
+  "packageName": "@toolsdk-remote/fast-gst-refund",
+  "description": "Five free tools for Indian service-export GST refund checklists, cited guides, upload-error explanations and anonymous receipt-allocation checks. No account or API key required.",
+  "url": "https://github.com/syllogismos/fast-gst-refund-mcp",
+  "readme": "https://fastgstrefund.com/for-agents/",
+  "runtime": "node",
+  "license": "Proprietary",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://fastgstrefund.com/mcp"
+    }
+  ]
+}
