@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "PumpGTM",
+  "packageName": "@toolsdk-remote/pumpgtm",
+  "description": "PumpGTM is a hosted MCP server that lets Claude, ChatGPT, Cursor, Codex or any AI agent find buyers showing intent, run LinkedIn, email and X outreach from your own accounts inside each platform's limits, and hand every reply back to a human. Sign in with OAuth; no API key is needed for AI clients.",
+  "url": "https://github.com/pumpgtm/pumpgtm-mcp",
+  "readme": "https://pumpgtm.com/docs/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "PumpGTM",
+  "logo": "https://pumpgtm.com/icon.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.pumpgtm.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
