@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Soundcheck Instant Quotes",
+  "packageName": "@toolsdk-remote/soundcheck-instant-quotes",
+  "description": "Live-event quoting for businesses that sell live event services.",
+  "url": "https://soundchecklive.io",
+  "readme": "https://soundchecklive.io",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.soundchecklive.io/public/mcp"
+    }
+  ]
+}

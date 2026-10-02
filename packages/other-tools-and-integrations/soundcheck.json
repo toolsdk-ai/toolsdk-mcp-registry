@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Soundcheck",
+  "packageName": "@toolsdk-remote/soundcheck",
+  "description": "Authenticated Soundcheck member server. Streamable HTTP with OAuth.",
+  "url": "https://soundchecklive.io",
+  "readme": "https://soundchecklive.io",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.soundchecklive.io/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
