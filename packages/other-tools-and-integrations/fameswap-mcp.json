@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "FameSwap MCP",
+  "packageName": "@toolsdk-remote/fameswap-mcp",
+  "description": "Hosted FameSwap social account marketplace integration with 19 tools for listings, offers and messages. FameSwap account sign-in and account plan limits apply.",
+  "url": "https://app.fameswap.com/page/api-docs#mcp",
+  "readme": "https://app.fameswap.com/page/api-docs#mcp",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.fameswap.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
