@@ -1,0 +1,28 @@
+{
+  "type": "mcp-server",
+  "name": "PodcastsToText (Remote)",
+  "packageName": "@toolsdk-remote/podcaststotext",
+  "description": "Connects to the hosted PodcastsToText MCP endpoint: transcribe Spotify, Apple Podcasts, YouTube and TikTok links or audio files with speaker labels and timestamps, find a podcast's RSS feed, search your transcripts, and generate show notes, chapters and translations. Requires signing in with a PodcastsToText account (free tier available).",
+  "url": "https://github.com/marstyl99/podcaststotext-agent",
+  "readme": "https://podcaststotext.com/docs/agents",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "PodcastsToText",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://podcaststotext.com/api/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "transcriptions:read",
+          "transcriptions:write",
+          "shows:read",
+          "shows:write",
+          "ai:write"
+        ]
+      }
+    }
+  ]
+}
