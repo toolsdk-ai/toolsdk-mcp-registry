@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Creative Claw",
+  "packageName": "@toolsdk-remote/creative-claw",
+  "description": "Hosted MCP server for generating and editing images, video, and audio with reusable Characters and brand assets through OAuth.",
+  "url": "https://github.com/CreativeClawCo/creative-claw-marketplace",
+  "readme": "https://creativeclaw.co/how-to-connect/",
+  "runtime": "node",
+  "license": "Apache-2.0",
+  "logo": "https://creativeclaw.co/logo.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.creativeclaw.co/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
