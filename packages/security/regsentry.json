@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "RegSentry",
+  "packageName": "@toolsdk-remote/regsentry",
+  "description": "Inspect authorized static tracking signals and review supplied consent evidence.",
+  "url": "https://regsentry.com/mcp-guide",
+  "readme": "https://regsentry.com/mcp-guide",
+  "runtime": "node",
+  "author": "Soxoa LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://regsentry.com/mcp"
+    }
+  ]
+}

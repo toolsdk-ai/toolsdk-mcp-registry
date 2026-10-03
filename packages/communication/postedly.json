@@ -1,0 +1,25 @@
+{
+  "type": "mcp-server",
+  "name": "Postedly",
+  "packageName": "@toolsdk-remote/postedly",
+  "description": "Quote available handwritten cards, open a private review link, and read owned order status.",
+  "url": "https://postedly.com/developers",
+  "readme": "https://postedly.com/developers",
+  "runtime": "node",
+  "author": "Soxoa LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://postedly.com/mcp/send",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "orders:read",
+          "quotes:write",
+          "checkout:write"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "type": "mcp-server",
+  "name": "Dibatto",
+  "packageName": "@toolsdk-remote/dibatto",
+  "description": "Review saved podcast rundowns and transcripts, and prepare private episode drafts.",
+  "url": "https://dibatto.com/developers",
+  "readme": "https://dibatto.com/developers",
+  "runtime": "node",
+  "author": "Soxoa LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://dibatto.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "studio:read",
+          "rundown:prepare",
+          "episode:prepare"
+        ]
+      }
+    }
+  ]
+}

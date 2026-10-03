@@ -1,0 +1,25 @@
+{
+  "type": "mcp-server",
+  "name": "Dokyumi",
+  "packageName": "@toolsdk-remote/dokyumi",
+  "description": "Extract attached documents with saved schemas and review confidence and validation.",
+  "url": "https://dokyumi.com/docs/mcp",
+  "readme": "https://dokyumi.com/docs/mcp",
+  "runtime": "node",
+  "author": "Soxoa LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://dokyumi.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "dokyumi:read",
+          "dokyumi:extract",
+          "offline_access"
+        ]
+      }
+    }
+  ]
+}

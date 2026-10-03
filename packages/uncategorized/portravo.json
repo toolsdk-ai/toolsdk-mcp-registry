@@ -1,0 +1,28 @@
+{
+  "type": "mcp-server",
+  "name": "Portravo",
+  "packageName": "@toolsdk-remote/portravo",
+  "description": "Review construction plan takeoffs and download estimates after review and pricing.",
+  "url": "https://portravo.com/developers/mcp",
+  "readme": "https://portravo.com/developers/mcp",
+  "runtime": "node",
+  "author": "Soxoa LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://portravo.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "projects:read",
+          "projects:write",
+          "plans:write",
+          "extractions:write",
+          "estimates:read",
+          "offline_access"
+        ]
+      }
+    }
+  ]
+}

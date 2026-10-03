@@ -1,0 +1,25 @@
+{
+  "type": "mcp-server",
+  "name": "Ocolta",
+  "packageName": "@toolsdk-remote/ocolta",
+  "description": "Read your existing categorical document review signals, confidence and indicator counts.",
+  "url": "https://app.ocolta.com/workspace/integrations",
+  "readme": "https://app.ocolta.com/workspace/integrations",
+  "runtime": "node",
+  "author": "Soxoa LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.ocolta.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "openid",
+          "reviews:list",
+          "reviews:read"
+        ]
+      }
+    }
+  ]
+}

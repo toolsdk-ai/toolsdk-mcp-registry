@@ -1,0 +1,26 @@
+{
+  "type": "mcp-server",
+  "name": "Afterglow",
+  "packageName": "@toolsdk-remote/afterglow",
+  "description": "Read applicable breakup and separation checklists and save confirmed task progress.",
+  "url": "https://afterglow-lime.vercel.app/developers",
+  "readme": "https://afterglow-lime.vercel.app/developers",
+  "runtime": "node",
+  "author": "Soxoa LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://afterglow-lime.vercel.app/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "openid",
+          "email",
+          "checklists:read",
+          "checklists:write"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "type": "mcp-server",
+  "name": "CasaCaddy",
+  "packageName": "@toolsdk-remote/casacaddy",
+  "description": "Read maintenance requirements, prepare confirmed guides and check device-owned guide jobs.",
+  "url": "https://api.casacaddy.com/developers",
+  "readme": "https://api.casacaddy.com/developers",
+  "runtime": "node",
+  "author": "Soxoa LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.casacaddy.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "openid",
+          "guides:read",
+          "guides:generate"
+        ]
+      }
+    }
+  ]
+}
