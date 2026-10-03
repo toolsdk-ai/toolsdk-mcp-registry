@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "MagicPixel",
+  "packageName": "@toolsdk-remote/magicpixel",
+  "description": "Official hosted MCP server for MagicPixel, the AI pixel art editor for game developers. Generate pixel art, variants, new facing directions and merges, browse and buy community marketplace sprites, manage projects, assets and style references, and check credit balance. Results land in your MagicPixel library.",
+  "readme": "https://magicpixel.art/guides/connect",
+  "url": "https://magicpixel.art",
+  "runtime": "node",
+  "license": "Proprietary",
+  "author": "MagicPixel",
+  "logo": "https://magicpixel.art/favicon.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://magicpixel.art/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
