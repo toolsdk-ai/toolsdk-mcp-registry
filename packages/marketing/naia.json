@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "naia GEO Autopilot",
+  "packageName": "@toolsdk-remote/naia",
+  "description": "Run GEO analyses, read AI visibility reports, generate and edit content, and manage execution plans through the Naia hosted MCP server.",
+  "url": "https://github.com/arielvdl/naia-mcp-server",
+  "readme": "https://naia.today/developers",
+  "runtime": "node",
+  "license": "UNLICENSED",
+  "author": "naia",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://naia.today/api/v1/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
