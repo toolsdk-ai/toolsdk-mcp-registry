@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Adrio",
+  "packageName": "@toolsdk-remote/adrio",
+  "description": "AI media buyer for Meta ads. Brief Spark, Adrio's creative agent, to make static and video ad creatives, launch them to Facebook and Instagram, research analyzed competitor ads, and manage brand angles and audiences. Hosted MCP with OAuth sign-in; an Adrio account is required.",
+  "url": "https://adrio.ai",
+  "readme": "https://adrio.ai/docs/mcp",
+  "runtime": "node",
+  "license": "Proprietary",
+  "author": "Adrio",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.adrio.ai/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["adrio:read", "adrio:write", "adrio:spark"]
+      }
+    }
+  ]
+}
