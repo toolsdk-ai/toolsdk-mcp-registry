@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "VidTL Video Editor",
+  "packageName": "@toolsdk-remote/vidtl",
+  "description": "Official hosted MCP server for VidTL, a browser video editor. Edits the user's open editor session live: cuts, transcript-based edits, subtitles, audio cleanup, effects, motion graphics, stock media, preview screenshots and export. Requires a VidTL Pro plan.",
+  "url": "https://vidtl.com",
+  "readme": "https://vidtl.com/video-editor-mcp-cli/",
+  "runtime": "node",
+  "license": "Proprietary",
+  "logo": "https://vidtl.com/app/favicon.png",
+  "author": "VidTL",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://vidtl.com/app/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
