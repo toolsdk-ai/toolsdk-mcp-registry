@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Brainy Prices",
+  "packageName": "@toolsdk-remote/brainy-prices",
+  "description": "UAE cost of living data: school fees (KHDA), registered rents (DLD), fuel, utilities, telecom plans and relocation costs, with source and date on every answer.",
+  "url": "https://prices.brainy.ae/developers.html",
+  "readme": "https://prices.brainy.ae/developers.html",
+  "runtime": "node",
+  "license": "per-source terms, see /developers.html",
+  "author": "SOFT DEV FZ LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://prices.brainy.ae/mcp/v2"
+    }
+  ]
+}
