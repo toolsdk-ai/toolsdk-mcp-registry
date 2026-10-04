@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "HairDora Salon Scheduling",
+  "packageName": "@toolsdk-remote/hairdora",
+  "description": "Read salon availability, appointments, providers, services, clients, quotes and payment status through HairDora's hosted OAuth connector. Results exclude contact details and private notes; no booking or payment actions are exposed.",
+  "url": "https://github.com/hairdora/claude-plugin",
+  "readme": "https://github.com/hairdora/claude-plugin#readme",
+  "runtime": "node",
+  "author": "HairDora LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.hairdora.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "hairdora:read"
+        ]
+      }
+    }
+  ]
+}
