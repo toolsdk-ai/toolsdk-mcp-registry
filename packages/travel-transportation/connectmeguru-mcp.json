@@ -1,0 +1,10 @@
+{
+  "type": "mcp-server",
+  "packageName": "connectmeguru-mcp",
+  "description": "Search prepaid international eSIM travel data plans across 190+ countries, validate discount coupons, check wallet balances, and purchase eSIMs directly in chat",
+  "url": "https://github.com/vineetgoyalhuf/connectmeguru-mcp",
+  "runtime": "node",
+  "license": "isc",
+  "env": {},
+  "name": "ConnectMeGuru MCP Server"
+}
