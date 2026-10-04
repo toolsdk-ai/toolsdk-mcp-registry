@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "Hotelumo Hotel Operations",
+  "packageName": "@toolsdk-remote/hotelumo",
+  "description": "Read property metadata, bookable room availability, aggregate schedules, housekeeping, rate plans and extras through Hotelumo's hosted OAuth connector. It excludes guest and individual reservation data and offers no booking or payment actions.",
+  "url": "https://github.com/hotelumo/claude-plugin",
+  "readme": "https://github.com/hotelumo/claude-plugin#readme",
+  "runtime": "node",
+  "author": "Hotelumo LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.hotelumo.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "hotelumo:read"
+        ]
+      }
+    }
+  ]
+}
