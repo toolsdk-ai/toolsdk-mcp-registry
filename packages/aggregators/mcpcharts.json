@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "MCP Charts",
+  "packageName": "@toolsdk-remote/mcpcharts",
+  "description": "Find MCP servers, agent skills, plugins, agents, prompts and rules for a task. Read-only tools: recommend_resources (ranked shortlist with repository and compatibility evidence), search_resources (keyword search) and get_resource (compatibility evidence, freshness and setup link). No authentication.",
+  "url": "https://github.com/Dri-water/mcpcharts",
+  "readme": "https://github.com/Dri-water/mcpcharts#readme",
+  "logo": "https://raw.githubusercontent.com/Dri-water/mcpcharts/main/assets/logo.png",
+  "runtime": "node",
+  "author": "Dri-water",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcpcharts.com/mcp"
+    }
+  ]
+}
