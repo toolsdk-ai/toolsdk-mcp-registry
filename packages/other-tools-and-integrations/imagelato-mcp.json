@@ -1,0 +1,24 @@
+{
+  "type": "mcp-server",
+  "name": "Imagelato Image Processing",
+  "packageName": "@toolsdk-remote/imagelato",
+  "description": "Inspect image projects, deterministic resize and format presets, processed image batches and webhook health through Imagelato's hosted OAuth connector. Confirmed tools manage projects and presets or delete one batch.",
+  "url": "https://github.com/imagelato/claude-plugin",
+  "readme": "https://github.com/imagelato/claude-plugin#readme",
+  "runtime": "node",
+  "author": "Waiterio LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.imagelato.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "imagelato:read",
+          "imagelato:write"
+        ]
+      }
+    }
+  ]
+}
