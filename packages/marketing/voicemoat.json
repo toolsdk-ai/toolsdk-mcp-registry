@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "VoiceMoat",
+  "packageName": "@toolsdk-remote/voicemoat",
+  "description": "Hosted MCP server for VoiceMoat, the personal brand OS for Twitter/X and LinkedIn. Score drafts against your voice profile, improve them, get post ideas and opening hooks, read your analytics and top posts, and publish or schedule posts with a preview and a confirmation step before anything goes live. OAuth sign-in, no API keys. Tools need a VoiceMoat Pro or Enterprise plan.",
+  "url": "https://github.com/prateeks367/voicemoat-mcp",
+  "readme": "https://docs.voicemoat.com/connect-voicemoat-to-an-assistant",
+  "runtime": "node",
+  "license": "Proprietary",
+  "author": "VoiceMoat",
+  "logo": "https://raw.githubusercontent.com/prateeks367/voicemoat-mcp/main/assets/voicemoat-icon-512.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.voicemoat.com/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
