@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "SkyAccess",
+  "packageName": "@toolsdk-remote/skyaccess",
+  "description": "Search 5,000+ live empty leg flights, get charter price estimates and booking links. No account or API key.",
+  "url": "https://github.com/sky-access/skyaccess-mcp",
+  "readme": "https://github.com/sky-access/skyaccess-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/sky-access/skyaccess-mcp/main/assets/icon.png",
+  "author": "SkyAccess",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.skyaccess.com/mcp"
+    }
+  ]
+}
