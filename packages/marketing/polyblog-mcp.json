@@ -1,0 +1,24 @@
+{
+  "type": "mcp-server",
+  "name": "Polyblog Multilingual Blog",
+  "packageName": "@toolsdk-remote/polyblog",
+  "description": "Review multilingual blogs, articles and localization coverage; plan topics and draft, translate or publish article text through Polyblog's hosted OAuth connector. Persisted changes require confirmation.",
+  "url": "https://github.com/polyblog-io/claude-plugin",
+  "readme": "https://github.com/polyblog-io/claude-plugin#readme",
+  "runtime": "node",
+  "author": "Waiterio LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.polyblog.io/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "polyblog:read",
+          "polyblog:write"
+        ]
+      }
+    }
+  ]
+}
