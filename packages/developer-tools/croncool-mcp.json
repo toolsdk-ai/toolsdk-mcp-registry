@@ -1,0 +1,24 @@
+{
+  "type": "mcp-server",
+  "name": "Croncool Cron Jobs",
+  "packageName": "@toolsdk-remote/croncool",
+  "description": "Review projects, jobs, recent runs, workflows and webhook metadata through Croncool's hosted OAuth connector. A confirmed run-now action can trigger downstream effects.",
+  "url": "https://github.com/croncool/claude-plugin",
+  "readme": "https://github.com/croncool/claude-plugin#readme",
+  "runtime": "node",
+  "author": "Waiterio LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.cron.cool/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "croncool:read",
+          "croncool:write"
+        ]
+      }
+    }
+  ]
+}
