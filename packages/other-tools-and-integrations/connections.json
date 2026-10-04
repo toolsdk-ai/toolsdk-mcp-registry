@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Connections",
+  "packageName": "@toolsdk-remote/connections",
+  "description": "Hosted Connections MCP (OAuth): host and ticket events, import and search contacts, browse and post Deal Flow marketplace deals, keep notes and agent memory, and take payments.",
+  "url": "https://connections.icu",
+  "readme": "https://studio.connections.icu/connect",
+  "runtime": "node",
+  "logo": "https://raw.githubusercontent.com/Lunarwerx/connections-cursor-plugin/main/assets/logo.png",
+  "author": "Connections Global LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://studio.connections.icu/v1/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
