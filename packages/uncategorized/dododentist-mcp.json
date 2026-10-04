@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "DodoDentist Dental Clinic",
+  "packageName": "@toolsdk-remote/dododentist",
+  "description": "Read clinic metadata, bookable availability, provider display names, procedure catalogs and aggregate schedules through DodoDentist's hosted OAuth connector. It does not expose patient records or perform clinical or write actions.",
+  "url": "https://github.com/dododentist/claude-plugin",
+  "readme": "https://github.com/dododentist/claude-plugin#readme",
+  "runtime": "node",
+  "author": "DodoDentist LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.dododentist.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "dododentist:read"
+        ]
+      }
+    }
+  ]
+}
