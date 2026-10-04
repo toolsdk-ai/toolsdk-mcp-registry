@@ -1,0 +1,24 @@
+{
+  "type": "mcp-server",
+  "name": "Wapiworld WhatsApp API",
+  "packageName": "@toolsdk-remote/wapiworld",
+  "description": "Review tenant-owned WhatsApp instances, connection state, recording policy and webhook health through Wapiworld's hosted OAuth connector. Sending one outbound text requires confirmation.",
+  "url": "https://github.com/wapiworld/claude-plugin",
+  "readme": "https://github.com/wapiworld/claude-plugin#readme",
+  "runtime": "node",
+  "author": "Waiterio LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.wapiworld.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "wapiworld:read",
+          "wapiworld:write"
+        ]
+      }
+    }
+  ]
+}
