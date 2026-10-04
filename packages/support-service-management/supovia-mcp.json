@@ -1,0 +1,24 @@
+{
+  "type": "mcp-server",
+  "name": "Supovia Customer Support",
+  "packageName": "@toolsdk-remote/supovia",
+  "description": "Search help-center knowledge, review bounded support conversation summaries, send an approved reply and change resolution state through Supovia's hosted OAuth connector.",
+  "url": "https://github.com/supovia/claude-plugin",
+  "readme": "https://github.com/supovia/claude-plugin#readme",
+  "runtime": "node",
+  "author": "Supovia LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.supovia.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "supovia:read",
+          "supovia:write"
+        ]
+      }
+    }
+  ]
+}
