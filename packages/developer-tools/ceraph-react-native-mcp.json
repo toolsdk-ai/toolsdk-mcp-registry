@@ -2,7 +2,7 @@
   "type": "mcp-server",
   "name": "Ceraph React Native MCP",
   "packageName": "@toolsdk-remote/ceraph-react-native-mcp",
-  "description": "Let your coding agent drive and test React Native and Expo apps end-to-end on iOS and Android devices, simulators and emulators on your own computer, paired with `ceraph connect`. Snapshots, taps, typing, swipes, screenshots, deep links, reloads, builds and runtime errors.",
+  "description": "Drive and test React Native and Expo apps end-to-end on iOS and Android. Supports real devices, simulators, and emulators on your own computer, paired with `ceraph connect`. Snapshots, taps, typing, swipes, screenshots, deep links, reloads, builds, and runtime errors.",
   "url": "https://ceraph.dev",
   "readme": "https://ceraph.dev/docs/remote-connections",
   "runtime": "node",
