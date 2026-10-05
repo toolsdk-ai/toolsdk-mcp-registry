@@ -1482,5 +1482,7 @@ Miscellaneous tools and integrations that don’t fit into other categories.
 - [✅ webdev-mcp](https://github.com/zueai/webdev-mcp): Enables AI to capture screenshots from multiple displays on macOS, Windows, and Linux for analyzing visual content, debugging UI issues, or assisting with design tasks  (2 tools) (node) 
 - [✅ webflow-mcp-server](https://github.com/timkjones/mcp-webflow): Enables direct management of Webflow sites through API access to retrieve site information, handle custom domains, configure localization settings, and manage collections without switching contexts.  (32 tools) (node) 
 - [✅ ygg-torrent-mcp](https://github.com/philogicae/ygg-torrent-mcp): Provides secure access to YggTorrent through an unofficial API wrapper, enabling torrent searching with category filtering, detailed metadata retrieval, and magnet link generation with automatic passkey injection for authenticated downloads.  (5 tools) (python) 
+- [HostDeFi](https://hostdefi.com/api/v1/mcp) - Hosted MCP server: free token-safety scans (A+–F grades) across Solana and 7 EVM chains, plus x402-paid analytics endpoints.
+
 
 </details>
