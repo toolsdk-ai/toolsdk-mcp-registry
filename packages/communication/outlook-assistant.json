@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Outlook Assistant",
+  "packageName": "@littlebearapps/outlook-assistant",
+  "description": "Connects AI assistants to Microsoft Outlook through Microsoft Graph: 22 tools for email, calendar, contacts, folders, rules, categories and mailbox settings, with dry-run previews, send limits, recipient allowlists and a read-only mode. Works with personal Outlook.com and work/school Microsoft 365 accounts using your own Azure app; device-code sign-in needs no client secret.",
+  "url": "https://github.com/littlebearapps/outlook-assistant",
+  "readme": "https://github.com/littlebearapps/outlook-assistant#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "OUTLOOK_CLIENT_ID": {
+      "description": "Application (client) ID of your own Azure app registration. Not a secret. Optional: it can also be supplied at sign-in with the auth tool.",
+      "required": false
+    }
+  }
+}
