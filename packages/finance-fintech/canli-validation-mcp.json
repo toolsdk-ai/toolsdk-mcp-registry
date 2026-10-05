@@ -1,0 +1,34 @@
+{
+  "type": "mcp-server",
+  "name": "Canli Validation",
+  "packageName": "canli-validation-mcp",
+  "description": "Checks whether a backtest result is real or just the luckiest of the variants tried: deflated Sharpe ratio, CSCV probability of backtest overfitting, data-snooping tests (Hansen's SPA, White's Reality Check, Romano-Wolf StepM), minimum track record and backtest length, haircut Sharpe ratio, a lookahead check for signals and a placebo test for a whole research pipeline.",
+  "url": "https://github.com/arhancanli/canli-validation-mcp",
+  "readme": "https://github.com/arhancanli/canli-validation-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "CANLI_KEY": {
+      "description": "A key issued by POST https://canlicapital.com/api/v1/keys. Without one, the server issues a free key on first use.",
+      "required": false,
+      "secret": true
+    },
+    "CANLI_LOCAL": {
+      "description": "Set to 1 to run the validators on this machine: no key, nothing about the series is sent, and no receipt is stored.",
+      "required": false
+    },
+    "CANLI_TOOLSETS": {
+      "description": "Comma-separated toolsets to list: validate, receipts, company, status, lab, or all.",
+      "required": false
+    },
+    "CANLI_FULL_ENVELOPE": {
+      "description": "Set to 1 to return each validation's full API envelope instead of the compact result.",
+      "required": false
+    },
+    "CANLI_API_BASE": {
+      "description": "Where the validation API lives.",
+      "required": false,
+      "default": "https://canlicapital.com"
+    }
+  }
+}
