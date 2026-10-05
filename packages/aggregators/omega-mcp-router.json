@@ -1,0 +1,10 @@
+{
+  "type": "mcp-server",
+  "name": "Omega MCP Router",
+  "packageName": "@omega.js/mcp-router",
+  "description": "One stdio MCP server that proxies many upstream MCP servers: tool schemas come from a disk cache, each upstream starts only on first use, and a session can enable or disable upstreams without a restart.",
+  "url": "https://github.com/Omega-JS-Stack/omega/tree/main/packages/mcp-router",
+  "readme": "https://github.com/Omega-JS-Stack/omega/blob/main/packages/mcp-router/README.md",
+  "runtime": "node",
+  "env": {}
+}
