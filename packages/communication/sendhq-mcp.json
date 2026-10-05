@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "SendHQ",
+  "packageName": "@toolsdk-remote/sendhq",
+  "description": "Send and receive email from your verified domains; manage domains, inboxes, templates and deliverability.",
+  "readme": "https://sendhq.cc/docs/mcp",
+  "runtime": "node",
+  "author": "SendHQ",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.sendhq.cc/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
