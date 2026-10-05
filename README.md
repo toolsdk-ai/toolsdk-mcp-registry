@@ -39,6 +39,10 @@
 
 ## Start Here
 
+**Publishing an MCP server?** [Submit your server](./docs/CONTRIBUTING.md) to make it discoverable in
+the registry. If the registry helps you publish or discover MCP tools, [Star this repository](https://github.com/toolsdk-ai/toolsdk-mcp-registry)
+to keep it handy and help other developers find it. Agent-assisted submissions are welcome.
+
 - 🔍 I want to **find an MCP Server** → [Browse Directory](#mcp-servers)
 - 🔌 I want to **integrate MCP tools** into my AI app → [Integration Guide](https://toolsdk.ai/docs/tutorials/getting-started#-quick-start)
 - 🚀 I want to **deploy an MCP Gateway** → [Deployment Guide](#deploy-enterprise-gateway-recommended)
