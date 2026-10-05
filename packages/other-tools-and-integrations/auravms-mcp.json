@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "AuraVMS",
+  "packageName": "@toolsdk-remote/auravms",
+  "description": "Procurement: manage suppliers, send RFQs, compare supplier quotes and place purchase orders.",
+  "readme": "https://www.auravms.com/ai-connector",
+  "runtime": "node",
+  "author": "AuraVMS",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.auravms.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
