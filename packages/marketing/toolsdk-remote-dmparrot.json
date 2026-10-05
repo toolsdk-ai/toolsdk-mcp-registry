@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "DMParrot",
+  "packageName": "@toolsdk-remote/dmparrot",
+  "description": "Instagram DM automation for AI agents: build comment-to-DM funnels, keyword replies, story-reply and new-follower flows, tags, and broadcasts on the official Instagram messaging API.",
+  "url": "https://dmparrot.com",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://dmparrot.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
