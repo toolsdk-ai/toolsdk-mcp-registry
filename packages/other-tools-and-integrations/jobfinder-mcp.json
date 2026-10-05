@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "JobFinder",
+  "packageName": "@toolsdk-remote/jobfinder",
+  "description": "Review job matches, read drafted outreach, approve or reject applications and track replies.",
+  "readme": "https://www.jobfinder-ai.com/ai-connector",
+  "runtime": "node",
+  "author": "JobFinder",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.jobfinder-ai.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
