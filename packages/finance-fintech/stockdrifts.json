@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "StockDrifts",
+  "packageName": "@stockdrifts/cli",
+  "description": "Rated US 13F funds with average buy prices, company KPIs, Japanese large-shareholder filings and Korean insider trades. 32 read-only tools.",
+  "url": "https://github.com/Stockdrifts/stockdrifts-mcp",
+  "readme": "https://www.stockdrifts.io/api-docs",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/Stockdrifts/stockdrifts-mcp/main/logo.png",
+  "bin": "stockdrifts",
+  "binArgs": [
+    "mcp"
+  ],
+  "env": {
+    "STOCKDRIFTS_API_KEY": {
+      "description": "StockDrifts API key. Create one at https://app.stockdrifts.io/settings/api-keys",
+      "required": true
+    }
+  }
+}
