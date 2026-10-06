@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "BlockVectra",
+  "packageName": "@toolsdk-remote/blockvectra",
+  "description": "Keyless documentation, chain discovery, service status, and public EVM JSON-RPC where available. API-key data tools require a client that supports custom headers.",
+  "url": "https://github.com/blockvectra/mcp",
+  "readme": "https://docs.blockvectra.com/en/?ref=gh-toolsdk-mcp-registry",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://docs.blockvectra.com/mcp"
+    }
+  ]
+}
