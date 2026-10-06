@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Voidpay Marketplace MCP",
+  "packageName": "@voidly/pay-mcp",
+  "description": "Connects AI agents to Voidpay, Voidly's hosted marketplace for agent services. Read-only tools find services and storefronts and prepare checkout links that the owner reviews and approves in their own browser; creator tools need an owner-approved setup file. The connector never signs, pays or holds keys.",
+  "url": "https://github.com/voidly-ai/pay-mcp",
+  "readme": "https://github.com/voidly-ai/pay-mcp#readme",
+  "runtime": "node",
+  "license": "Apache-2.0",
+  "author": "Voidly",
+  "env": {
+    "VOIDPAY_CREATOR_SETUP_FILE": {
+      "description": "Optional absolute path to the owner-approved creator setup JSON. Needed only for the creator tools; discovery works without it.",
+      "required": false,
+      "secret": true
+    },
+    "VOIDPAY_MCP_STATE_DIR": {
+      "description": "Optional absolute path to a private journal directory used for creator recovery.",
+      "required": false
+    }
+  }
+}
