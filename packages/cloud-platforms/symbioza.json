@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Symbioza",
+  "packageName": "@toolsdk-remote/symbioza",
+  "description": "Symbioza runs your containerized GPU job on a rented cloud machine and hands back the files it writes, under a spending limit you set. Describe the job (a container image, the command, links to its input data and a budget) and Symbioza gives you a free estimate first: the expected price, the time limit that applies and whether your prepaid credit covers it. Nothing runs until you approve the submit. Symbioza sizes the machine, runs the job and reports its progress, then returns the output files with their SHA-256 hashes and time-limited download links, and the charge. The budget is a hard ceiling: it is checked before a machine is booked and again before every retry, and you are never billed more than it. Use it for training, fine-tuning, evaluation, batch inference and preprocessing. Credit is added on the Symbioza website.",
+  "url": "https://github.com/symbioza/claude-plugin",
+  "readme": "https://github.com/symbioza/claude-plugin#readme",
+  "runtime": "node",
+  "logo": "https://symbioza.dev/brand/symbioza-appicon-light-512.png",
+  "author": "Symbioza",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://symbioza.dev/mcp",
+      "auth": { "type": "oauth2" }
+    }
+  ]
+}
