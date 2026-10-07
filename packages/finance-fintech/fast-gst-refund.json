@@ -14,9 +14,7 @@
       "url": "https://fastgstrefund.com/mcp",
       "auth": {
         "type": "oauth2",
-        "scopes": [
-          "refund:generate"
-        ]
+        "scopes": ["refund:generate"]
       }
     }
   ]
