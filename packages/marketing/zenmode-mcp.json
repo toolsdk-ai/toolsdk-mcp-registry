@@ -1,0 +1,25 @@
+{
+  "type": "mcp-server",
+  "name": "ZenMode",
+  "packageName": "@toolsdk-remote/zenmode-mcp",
+  "description": "Hosted MCP server for ZenMode LinkedIn outreach. Reads campaigns, contacts and conversation history on the signed-in account, and can add or remove leads, pause or exclude a contact, and change campaign targeting. A connection is read only unless the user chooses Read and change, and there is no tool that sends a LinkedIn message or connection request. Sign in with OAuth, or use a ZenMode API key as a Bearer token. Requires a ZenMode plan (Practitioner and above).",
+  "url": "https://github.com/zenmode87/zenmode-mcp",
+  "readme": "https://www.zen-mode.io/integrations/claude",
+  "runtime": "node",
+  "license": "Proprietary",
+  "author": "ZenMode",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.zen-mode.io/api/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "zenmode.read",
+          "zenmode.write"
+        ]
+      }
+    }
+  ]
+}
