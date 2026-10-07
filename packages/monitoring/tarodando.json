@@ -1,0 +1,29 @@
+{
+  "type": "mcp-server",
+  "name": "Tá Rodando",
+  "packageName": "@toolsdk-remote/tarodando",
+  "description": "Manage uptime monitors, check results, alert channels (email, Telegram, web push, Slack/Discord/Google Chat webhooks), a public status page and incidents in Tá Rodando, a Brazilian uptime monitoring service with a Portuguese UI. Official hosted server; sign in with your Tá Rodando account via OAuth. Free plan available.",
+  "url": "https://tarodando.com.br",
+  "readme": "https://tarodando.com.br/docs",
+  "runtime": "node",
+  "license": "Proprietary",
+  "logo": "https://tarodando.com.br/logo-512.png",
+  "author": "Tá Rodando",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://tarodando.com.br/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "monitors:read",
+          "monitors:write",
+          "channels:read",
+          "channels:write",
+          "page:write"
+        ]
+      }
+    }
+  ]
+}
