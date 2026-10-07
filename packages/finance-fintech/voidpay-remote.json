@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Voidpay (hosted)",
+  "packageName": "@toolsdk-remote/voidpay",
+  "description": "Hosted Voidpay connector with four read-only tools: status, service search, storefront lookup and checkout-link preparation for Voidly's marketplace of AI-agent services. The owner approves any payment in their own browser; the connector never signs, pays or holds keys. No authentication.",
+  "url": "https://github.com/voidly-ai/pay-mcp",
+  "readme": "https://voidly.ai/pay/hosted-connector",
+  "runtime": "node",
+  "author": "Voidly",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.voidly.ai/mcp/voidpay"
+    }
+  ]
+}
