@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "MakeAIVideo",
+  "packageName": "@makeaivideo/mcp",
+  "description": "Official MCP server for MakeAIVideo (makeaivideo.ai), an AI video generator. 44 tools to write a script, create a finished short-form video with AI voiceover, AI or stock scenes, captions and music, estimate credit cost first, get the MP4, and post or schedule it to connected TikTok, Instagram, YouTube and other accounts. The local package bridges to the hosted server at https://mcp.makeaivideo.ai (Streamable HTTP, OAuth 2.1). Listed in the Official MCP Registry as ai.makeaivideo/video-generator. Paid service: plans from $9/month with a 7-day trial.",
+  "url": "https://github.com/makeaivideo-ai/mcp",
+  "readme": "https://github.com/makeaivideo-ai/mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "MakeAIVideo",
+  "env": {
+    "MAKEAIVIDEO_API_KEY": {
+      "description": "MakeAIVideo API key (mav_...), created at https://app.makeaivideo.ai/developers.",
+      "required": true,
+      "secret": true
+    }
+  }
+}
