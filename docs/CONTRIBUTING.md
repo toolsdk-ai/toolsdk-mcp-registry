@@ -4,7 +4,8 @@ Thank you for contributing an MCP server, documentation improvement, or code cha
 
 This guide is the source of truth for registry submissions. The root README and generated indexes
 are outputs of the registry build and must not be edited to add a server. For an intentional README
-documentation change, edit `docs/_templates/README.tpl.md` and regenerate the README.
+documentation change, edit `docs/_templates/README.tpl.md` and regenerate the README with
+`make catalog` (Node.js 22 or later; no dependency installation).
 
 ## Submit an MCP Server
 
@@ -252,3 +253,16 @@ metadata correction to the contributor branch; any new commit is reviewed again 
 Keep code changes separate from registry-entry submissions when possible. Describe the behavior,
 tests, and migration impact in the PR. See the [Development Guide](./DEVELOPMENT.md) and
 [Registry PR Review](./PR_REVIEW.md) for repository-specific engineering and review rules.
+
+For documentation changes:
+
+- Keep the README focused on discovery and quick starts; put complete connection examples in the
+  [Gateway Guide](./GATEWAY.md).
+- Edit `docs/_templates/README.tpl.md`, then run `make catalog` or
+  `node scripts/generate-catalog.mjs` to regenerate `README.md`.
+- Include the template and generated README together. Check links and examples, and keep generated
+  index or full-catalog changes out of a documentation-only PR unless they are intentional.
+
+Registry JSON submissions become visible in the published catalog after a maintainer runs
+**Publish Registry Catalog**. See [Catalog Publication](./CATALOG_PUBLICATION.md) for the manual
+publication process and optional contributor badge replies.

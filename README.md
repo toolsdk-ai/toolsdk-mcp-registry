@@ -1,296 +1,205 @@
 <div align="center">
 
-<img src="assets/logo.png" width="120" alt="ToolSDK MCP Registry" />
+<img src="assets/logo.png" width="96" alt="ToolSDK MCP Registry" />
 
 # ToolSDK MCP Registry
 
-**The Enterprise MCP Registry & Gateway.** A unified infrastructure to discover, secure, and execute Model Context Protocol (MCP) tools. Exposes local processes (STDIO) and remote servers (StreamableHTTP) via a unified HTTP API with built-in Sandbox and OAuth 2.1 support.
+**The Enterprise MCP Registry & Gateway.**
 
-<a href="https://www.npmjs.com/package/@toolsdk.ai/registry">
-  <img src="https://img.shields.io/npm/v/@toolsdk.ai/registry.svg?style=flat-square" alt="npm version" />
-</a>
-<a href="https://github.com/toolsdk-ai/toolsdk-mcp-registry/actions/workflows/test.yaml">
-  <img src="https://github.com/toolsdk-ai/toolsdk-mcp-registry/actions/workflows/test.yaml/badge.svg" alt="Build Status" />
-</a>
-<img src="https://img.shields.io/badge/MCP_Servers-4940-blue?style=flat-square" alt="MCP Servers Count" />
-<img src="https://img.shields.io/badge/LICENSE-MIT-ff69b4?style=flat-square" alt="License" />
-<br />
-<a href="https://www.producthunt.com/products/toolsdk-ai">
-  <img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=997428&theme=light&period=daily" alt="Product Hunt" height="40" />
-</a>
+Discover MCP servers. Connect AI applications. Execute tools through one gateway.<br />
+Structured JSON, STDIO and Streamable HTTP, with built-in Sandbox and OAuth 2.1 support.
 
-<a href="#mcp-servers">🔍 <b>Browse 4940+ Tools</b></a>
-&nbsp;&nbsp;•&nbsp;&nbsp;
-<a href="#quick-start">🐳 <b>Self-hosted</b></a>
-&nbsp;&nbsp;•&nbsp;&nbsp;
-<a href="#install-via-package-manager">📦 <b>Use as SDK</b></a>
-&nbsp;&nbsp;•&nbsp;&nbsp;
-<a href="./docs/CONTRIBUTING.md">➕ <b>Add Server</b></a>
-&nbsp;&nbsp;•&nbsp;&nbsp;
-<a href="https://www.youtube.com/watch?v=J_oaDtCoVVo" target="_blank">🎥 <b>Video Tutorial</b></a>
+[![npm version](https://img.shields.io/npm/v/@toolsdk.ai/registry.svg?style=flat-square)](https://www.npmjs.com/package/@toolsdk.ai/registry)
+[![Build status](https://img.shields.io/github/actions/workflow/status/toolsdk-ai/toolsdk-mcp-registry/test.yaml?style=flat-square&label=build)](https://github.com/toolsdk-ai/toolsdk-mcp-registry/actions/workflows/test.yaml)
+[![MCP servers](https://img.shields.io/badge/MCP_servers-4940-0078D4?style=flat-square)](https://toolsdk-ai.github.io/toolsdk-mcp-registry/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-239B56?style=flat-square)](./LICENSE)
 
-<a href="https://toolsdk.ai" target="_blank">
-  <img src="assets/hero.png" alt="ToolSDK.ai - MCP Servers Hosting" />
+**[Browse&nbsp;Servers](https://toolsdk-ai.github.io/toolsdk-mcp-registry/)** &nbsp; / &nbsp;
+**[Use&nbsp;Gateway](#quick-start)** &nbsp; / &nbsp;
+**[API&nbsp;&amp;&nbsp;SDK](#api--sdk)** &nbsp; / &nbsp;
+**[Submit&nbsp;a&nbsp;Server](./docs/CONTRIBUTING.md)**
+
+<a href="https://toolsdk.ai">
+  <img src="assets/hero.png" width="800" alt="ToolSDK connects AI clients with MCP servers through its registry and hosting platform" />
 </a>
 
----
+[Website](https://toolsdk.ai) &nbsp; / &nbsp;
+[Documentation](./docs/guide.md) &nbsp; / &nbsp;
+[Video Tutorial](https://www.youtube.com/watch?v=J_oaDtCoVVo)
 
 </div>
 
-## Start Here
-
-**Publishing an MCP server?** [Submit your server](./docs/CONTRIBUTING.md) to make it discoverable in
-the registry. If the registry helps you publish or discover MCP tools, [Star this repository](https://github.com/toolsdk-ai/toolsdk-mcp-registry)
-to keep it handy and help other developers find it. Agent-assisted submissions are welcome.
-
-- 🔍 I want to **find an MCP Server** → [Browse Directory](#mcp-servers)
-- 🔌 I want to **integrate MCP tools** into my AI app → [Integration Guide](https://toolsdk.ai/docs/tutorials/getting-started#-quick-start)
-- 🚀 I want to **deploy an MCP Gateway** → [Deployment Guide](#deploy-enterprise-gateway-recommended)
-- ➕ I want to **submit my MCP Server** → [Contribution Guide](./docs/CONTRIBUTING.md)
-
-> [!IMPORTANT]
-> **Pro Tip**: If a server is marked as `validated: true`, you can use it instantly with **Vercel AI SDK**:
->
-> ```ts
-> const tool = await toolSDK.package('<packageName>', { ...env }).getAISDKTool('<toolKey>');
-> ```
-> **Want validation?** Ask AI: *"Analyze the `make build` target in the Makefile and the scripts it invokes, and determine how an MCP server gets marked as `validated: true`."*
+---
 
 ## Getting Started
 
+| Your goal | Start here |
+| --- | --- |
+| Find an MCP server | Search the [complete catalog](https://toolsdk-ai.github.io/toolsdk-mcp-registry/) or browse [all 4940 servers](./docs/ALL-MCP-SERVERS.md). |
+| Connect an MCP client | Deploy the Gateway and add a [Streamable HTTP connection](#connect-an-mcp-client). |
+| Integrate tools into an AI app | Use the [HTTP API or ToolSDK](#api--sdk). |
+| Publish your MCP server | Submit a JSON configuration with the [Contribution Guide](./docs/CONTRIBUTING.md). |
+
+## Quick Start
+
 <a id="docker-self-hosting"></a>
+<a id="deploy-enterprise-gateway-recommended"></a>
 
-### Deploy Enterprise Gateway (Recommended)
-
-Deploy your own **private MCP Gateway & Registry** in minutes. This provides the full feature set: Federated Search, Remote Execution, Sandbox, and OAuth.
-
-#### ⚡ Quick Deploy (One-Liner)
-
-Start the registry immediately with default settings:
+Deploy your own **MCP Gateway & Registry** with Docker Compose:
 
 ```bash
+git clone https://github.com/toolsdk-ai/toolsdk-mcp-registry.git
+cd toolsdk-mcp-registry
 docker compose up -d
 ```
 
-*Did this save you time? Give us a [**Star on GitHub**](https://github.com/toolsdk-ai/toolsdk-mcp-registry) — it helps others discover this registry!*
+Open the [registry](http://localhost:3003) and [interactive API docs](http://localhost:3003/swagger).
+The deployment includes the HTTP API, MCP Gateway, and Meilisearch.
 
-**Configuration:**
-- Set `MCP_SANDBOX_PROVIDER=LOCAL` in `.env` file if you want to disable the sandbox (not recommended for production).
-- *See [Configuration Guide](./docs/DEVELOPMENT.md) for full details.*
-
-> [!TIP]
-> **Tip for Private Deployment**: This registry contains 4940+ public MCP servers. If you only need a specific subset for your private environment, you can prune the `packages/` directory.
-> 📖 See [Package Management Guide](./docs/DEVELOPMENT.md#5--package-management-for-private-deployment) for details.
-
-That's it! Your self-hosted MCP registry is now running with:
-- 🌐 **HTTP API** with OpenAPI documentation
-- 🛡️ **Secure Sandbox execution** for AI agent tools
-- 🔍 **Full-text search** (Meilisearch)
-
-#### 🎉 Access Your Private MCP Registry
-
-- 🌐 **Local Web Interface**: http://localhost:3003
-- 📚 **Swagger API Docs**: http://localhost:3003/swagger  
-- 🔍 **Search & Execute** 4940+ MCP Servers remotely
-- 🤖 **Integrate** with your AI agents, chatbots, and LLM applications
-
-#### 🌐 Remote Tool Execution Example
-
-Execute any MCP tool via HTTP API - perfect for AI automation, chatbot integrations, and serverless deployments:
+Call the example server's `echo` tool:
 
 ```bash
-curl -X POST http://localhost:3003/api/v1/packages/run \
-  -H "Content-Type: application/json" \
+curl --fail-with-body http://localhost:3003/api/v1/packages/run \
+  -H 'Content-Type: application/json' \
   -d '{
     "packageName": "@modelcontextprotocol/server-everything",
     "toolKey": "echo",
-    "inputData": {
-      "message": "Hello from ToolSDK MCP Registry!"
-    },
+    "inputData": { "message": "Hello from ToolSDK!" },
     "envs": {}
   }'
 ```
 
-#### 🔌 MCP Gateway (Streamable HTTP Proxy)
+For isolated API execution, configure a sandbox provider such as Sandock and select it in your
+request. See [Gateway setup](./docs/GATEWAY.md#deploy-the-gateway) for credentials, tool discovery,
+and execution options. For a focused private deployment, see [Package Management](./docs/DEVELOPMENT.md#5--package-management-for-private-deployment).
 
-The registry also acts as an **MCP Gateway** — any registered package can be accessed as a standard [Streamable HTTP](https://modelcontextprotocol.io/specification/2025-03-26/basic/transports#streamable-http) endpoint, even if the original server is STDIO-only.
+## Connect an MCP Client
 
-**Endpoint:** `POST /mcp/<packageName>`
+The Gateway exposes each registered server at **`/mcp/<registry-key>`**, bridging local STDIO
+packages and remote Streamable HTTP servers to MCP clients.
 
-Pass environment variables via `x-mcp-env-*` headers:
+For example, add this to VS Code's `.vscode/mcp.json`:
 
-```bash
-curl -X POST http://localhost:3003/mcp/@modelcontextprotocol/server-github \
-  -H "Content-Type: application/json" \
-  -H "x-mcp-env-GITHUB_PERSONAL_ACCESS_TOKEN: ghp_your_token" \
-  -d '{"jsonrpc":"2.0","id":1,"method":"tools/list"}'
+```json
+{
+  "servers": {
+    "toolsdk-everything": {
+      "type": "http",
+      "url": "http://localhost:3003/mcp/@modelcontextprotocol/server-everything"
+    }
+  }
+}
 ```
 
-The server returns a `mcp-session-id` header — include it in subsequent requests to reuse the session (sessions expire after 30 min).
+Start the connection in your client, select its tools, and ask it to call `echo`. The client handles
+MCP initialization and session headers. Use a Gateway URL reachable from where your client runs.
 
-This is useful for:
-- **Protocol Bridging** — Expose local STDIO servers as remote HTTP endpoints
-- **Centralized Access** — Give AI agents a single HTTP gateway to all MCP tools
-- **Client Compatibility** — Connect from any MCP client that supports Streamable HTTP
+See the [Gateway Guide](./docs/GATEWAY.md#connect-a-standard-mcp-client) for environment-variable
+headers and a complete initialize, list, and call sequence.
+
+## API & SDK
+
+### Registry JSON
+
+Fetch the published index directly to build directories, discovery services, and integrations:
+
+```ts
+const registry = await (
+  await fetch('https://toolsdk-ai.github.io/toolsdk-mcp-registry/indexes/packages-list.json')
+).json();
+
+const server = registry['@modelcontextprotocol/server-everything'];
+console.log(server.path, server.category, server.tools);
+```
+
+Each index entry points to its configuration under `packages/<path>` on the same published site.
+The [complete catalog](https://toolsdk-ai.github.io/toolsdk-mcp-registry/) links directly to these JSON files.
+
+### HTTP API
+
+Use your self-hosted Gateway to inspect a server, discover its tools, and execute them:
+
+| Operation | Endpoint |
+| --- | --- |
+| Read the registry index | `GET /api/v1/indexes/packages-list` |
+| Inspect a server | `GET /api/v1/packages/detail?packageName=<registry-key>` |
+| List its tools | `GET /api/v1/packages/tools?packageName=<registry-key>` |
+| Execute a tool | `POST /api/v1/packages/run` |
+
+Follow the [HTTP API walkthrough](./docs/GATEWAY.md#integrate-through-the-http-api) or explore the
+[OpenAPI specification](http://localhost:3003/api/v1/doc) in your deployment.
+
+### ToolSDK for AI Applications
+
+Validated packages include discovered tool metadata for ready-to-use adapters, including
+**Vercel AI SDK tools**:
+
+```ts
+import { ToolSDKApiClient } from 'toolsdk/api';
+
+const toolSDK = new ToolSDKApiClient({ apiKey: process.env.TOOLSDK_AI_API_KEY });
+const searchMCP = await toolSDK.package('@toolsdk.ai/tavily-mcp', {
+  TAVILY_API_KEY: process.env.TAVILY_API_KEY,
+});
+const searchTool = await searchMCP.getAISDKTool('tavily-search');
+```
+
+This example uses the hosted ToolSDK API. See the [ToolSDK integration tutorial](https://toolsdk.ai/docs/tutorials/getting-started)
+for setup and AI application examples.
 
 <details>
-<summary><strong>Alternative: Use as Registry SDK (Data Only)</strong></summary>
+<summary><strong>Read registry data from the npm package</strong></summary>
 
 <a id="use-as-sdk"></a>
-
-### Alternative: Use as Registry SDK (Data Only)
-
-If you only need to access the **list of MCP servers** programmatically (without execution or gateway features), you can use the NPM package.
+<a id="install-via-package-manager"></a>
 
 ```bash
 npm install @toolsdk.ai/registry
 ```
 
-#### Usage
-
-Perfect for building your own directory or analysis tools:
-
 ```ts
-import mcpServerLists from '@toolsdk.ai/registry/indexes/packages-list.json';
+import registry from '@toolsdk.ai/registry/indexes/packages-list.json';
 ```
 
-#### Access via Public API (No Installation Required)
-
-Fetch the complete MCP server registry programmatically:
-
-```bash
-curl https://toolsdk-ai.github.io/toolsdk-mcp-registry/indexes/packages-list.json
-```
-
-```ts
-// JavaScript/TypeScript - Fetch API
-const mcpServers = await (
-  await fetch('https://toolsdk-ai.github.io/toolsdk-mcp-registry/indexes/packages-list.json')
-).json();
-
-// Use for AI agent tool discovery, LLM integrations, etc.
-console.log(mcpServers);
-```
-
-```python
-# Python - For AI/ML projects
-import requests
-
-mcp_servers = requests.get(
-    'https://toolsdk-ai.github.io/toolsdk-mcp-registry/indexes/packages-list.json'
-).json()
-
-# Perfect for LangChain, CrewAI, AutoGen integrations
-```
+Use the public JSON endpoint above when you prefer to fetch the catalog directly.
 
 </details>
 
-## Why ToolSDK MCP Registry?
+## Capabilities & Architecture
 
-**ToolSDK MCP Registry** is an enterprise-grade gateway for Model Context Protocol (MCP) servers. It solves the challenge of securely discovering and executing AI tools in production environments.
-
-### Key Features
-
-- **Federated Registry** - Unified search across local private servers and the official `@modelcontextprotocol/registry`.
-- **Unified Interface** - Access local STDIO tools and remote StreamableHTTP servers via a single, standardized HTTP API.
-- **Secure Sandbox** - Execute untrusted tools in isolated environments (supports E2B, Daytona, Sandock).
-- **OAuth 2.1 Proxy** - Built-in OAuth 2.1 implementation to handle complex authentication flows for your agents. [Integration Guide](./docs/DEVELOPMENT.md#10--oauth-integration)
-- **Private & Self-Hosted** - Full control over your data and infrastructure with Docker deployment.
-- **Developer-Friendly** - OpenAPI/Swagger documentation and structured JSON configs.
-
-### Use Cases
-
-- **Enterprise AI Gateway** - Centralize tool access for all your internal LLM applications.
-- **Secure Tool Execution** - Run community MCP servers without risking your local environment.
-- **Protocol Adaptation** - Connect remote agents (via HTTP API) to local CLI tools (via STDIO).
-- **Unified Discovery** - One API to search and manage thousands of tools.
-
-### Architecture
+- **Structured Registry** - 4940 MCP servers organized by category, with reusable JSON configurations and tool metadata.
+- **Federated Discovery** - Search local private entries and the official MCP Registry.
+- **Unified Gateway** - Access local STDIO and remote Streamable HTTP tools through an HTTP API or a standard MCP endpoint.
+- **Sandbox Execution** - Isolated API tool execution with Sandock, Daytona, and E2B.
+- **OAuth 2.1 Proxy** - Authorization flows for AI applications. [OAuth Integration](./docs/DEVELOPMENT.md#10--oauth-integration)
+- **Private & Self-Hosted** - Docker deployment, Meilisearch, and OpenAPI documentation.
 
 ```mermaid
-graph TD
-    subgraph ClientSide ["Client Side"]
-        LLM["🤖 AI Agent / LLM"]
-        User["👤 User / Developer"]
-    end
-
-    subgraph DockerEnv ["🐳 Self-Hosted Infrastructure"]
-        
-        subgraph RegistryCore ["Registry Core"]
-            API["🌐 Registry API"]
-            Search["🔍 Meilisearch"]
-            DB["📚 Registry Data"]
-            OAuth["🔐 OAuth Proxy"]
-        end
-
-        subgraph RuntimeEnv ["Runtime Environment"]
-            Local["💻 Local Exec"]
-            Sandbox["🛡️ Secure Sandbox"]
-            MCPServer["⚙️ MCP Server"]
-        end
-    end
-
-    User -->|Search Tools| API
-    LLM -->|Execute Tool| API
-    LLM -->|Auth Flow| OAuth
-    API <-->|Query Index| Search
-    API -->|Read Metadata| DB
-    API -->|Run Tool| Local
-    API -->|Run Tool| Sandbox
-    Local -->|Execute| MCPServer
-    Sandbox -->|Execute| MCPServer
+flowchart TD
+    Apps[AI applications] --> API[HTTP API]
+    Clients[MCP clients] --> Gateway[Streamable HTTP Gateway]
+    API --> Registry[Registry JSON & Search]
+    API --> OAuth[OAuth Proxy]
+    API --> Execution[Local or Sandbox Execution]
+    Execution --> Servers[Local STDIO & Remote MCP Servers]
+    Gateway --> Servers
 ```
 
----
+## Contributing & Community
 
-## What You Get
+**Built by the MCP community.** Publish your server with a focused JSON PR, improve the guides,
+or contribute Gateway features. Agent-assisted submissions are welcome.
 
-This open-source project provides:
+- [Submit an MCP Server](./docs/CONTRIBUTING.md) - configuration examples, validation, and the PR checklist.
+- [Developer Guide](./docs/DEVELOPMENT.md) - local development, deployment, and architecture.
+- [Catalog Publication](./docs/CATALOG_PUBLICATION.md) - generate the directory and publish it manually in one batch.
 
-- **Structured Registry** - 4940+ MCP servers with metadata
-- **Unified Gateway** - HTTP API to query and execute tools remotely
-- **Auto-Generated Docs** - Always up-to-date README and API documentation
+If ToolSDK helps you discover or publish MCP servers, [Star this repository](https://github.com/toolsdk-ai/toolsdk-mcp-registry)
+to keep it handy and help other developers find it.
 
-### ✅ Validated Packages = One-Line Integration (ToolSDK)
-
-Some packages in this registry are marked as `validated: true`.
-
-> [!NOTE]
-> **What does `validated: true` mean for you?**
-> - You can load the MCP package directly via our ToolSDK NPM client and get ready-to-use tool adapters (e.g. **Vercel AI SDK tools**) without writing your own tool schema mapping.
-> - The registry index includes the discovered `tools` metadata for validated packages, so you can pick a `toolKey` and call it immediately.
->
-> **Where is this flag stored?**
-> - See `indexes/packages-list.json` entries (e.g. `{"validated": true, "tools": { ... } }`).
-
-#### Example: Use a validated package with Vercel AI SDK
-
-Template: `const tool = await toolSDK.package('<packageName>', { ...env }).getAISDKTool('<toolKey>');`
-
-```ts
-// import { generateText } from 'ai';
-// import { openai } from '@ai-sdk/openai'
-import { ToolSDKApiClient } from 'toolsdk/api';
-
-const toolSDK = new ToolSDKApiClient({ apiKey: process.env.TOOLSDK_AI_API_KEY });
-const searchMCP = await toolSDK.package('@toolsdk.ai/tavily-mcp', { TAVILY_API_KEY: process.env.TAVILY_API_KEY });
-const searchTool = await searchMCP.getAISDKTool('tavily-search');
-
-// const completion = await generateText({
-//   model: openai('gpt-4.1'),
-//   messages: [{
-//       role: 'user',
-//       content: 'Help me search for the latest AI news',
-//   }],
-//   tools: { searchTool, emailTool },
-// });
-```
-
-**Available as:**
-
-- **Docker Image** - Full-featured Gateway & Registry
-- **NPM Package** - TypeScript/JavaScript SDK for data access
-- **Raw Data** - JSON endpoints for direct integration
+<a href="https://www.producthunt.com/products/toolsdk-ai">
+  <img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=997428&theme=light&period=daily" alt="ToolSDK on Product Hunt" height="40" />
+</a>
 
 ---
 
@@ -298,17 +207,17 @@ const searchTool = await searchMCP.getAISDKTool('tavily-search');
 
 ## MCP Servers Directory
 
-**4940+ AI Agent Tools, LLM Integrations & Automation Servers**
+**4940 MCP servers for AI agents, integrations, and automation.**
+
+[Search the catalog](https://toolsdk-ai.github.io/toolsdk-mcp-registry/) &middot;
+[Browse the complete list](./docs/ALL-MCP-SERVERS.md) &middot;
+[Read the JSON index](https://toolsdk-ai.github.io/toolsdk-mcp-registry/indexes/packages-list.json)
 
 > [!NOTE]
-> ⭐ **Featured below**: Hand-picked, production-ready MCP servers verified by our team.
->
-> 📚 **Looking for all 4940+ servers?** Check out [**All MCP Servers**](./docs/ALL-MCP-SERVERS.md) for the complete list.
+> **Featured below:** Hand-picked, production-ready MCP servers verified by our team.
+> Packages marked `validated: true` include discovered tool metadata for quick ToolSDK integration.
 
-> [!TIP]
-> If a package is marked as `validated: true` in the index, you can usually wire it up in minutes via ToolSDK (e.g. `getAISDKTool(toolKey)`).
-
-Browse by category: Developer Tools, AI Agents, Databases, Cloud Platforms, APIs, and more!
+Browse by category:
 
 
 

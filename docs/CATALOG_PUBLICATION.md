@@ -1,5 +1,7 @@
 # Catalog Publication
 
+## Generate Locally
+
 Run `make catalog` with Node.js 22 to regenerate the entire directory in one batch. This reads
 package JSON, preserves existing validation and tool records, and produces indexes, the README,
 the full catalog, and a searchable static site under `catalog-site/`. It does not install packages,
@@ -9,8 +11,30 @@ An identity collision without a surviving published winner stops generation rath
 entry. If a key moves to a different package path, runtime validation and tool records are not
 inherited from the old path.
 
+```bash
+make catalog
+# Equivalent command, including on Windows:
+node scripts/generate-catalog.mjs
+```
+
+The README source is [`docs/_templates/README.tpl.md`](./_templates/README.tpl.md). Run the same
+generator after editing the template. For a documentation-only PR, include the template and
+regenerated README; inspect any other generated changes before including them.
+
+## Publish Manually
+
 Use **Publish Registry Catalog** on `main` to commit generated directory files and deploy the
 generated Pages artifact. One run covers every eligible entry, including a backlog of merged PRs.
+
+1. Merge the intended registry and documentation PRs into `main`.
+2. Open [Publish Registry Catalog](https://github.com/toolsdk-ai/toolsdk-mcp-registry/actions/workflows/catalog.yaml)
+   in GitHub Actions, choose **Run workflow**, and select `main`.
+3. Leave badge replies empty for a catalog-only publication, or supply specific merged PR numbers
+   to preview contributor replies. Posting replies remains an explicit option.
+4. After the workflow succeeds, check the [published catalog](https://toolsdk-ai.github.io/toolsdk-mcp-registry/)
+   and [JSON index](https://toolsdk-ai.github.io/toolsdk-mcp-registry/indexes/packages-list.json).
+
+Publication is manual; merging a PR does not trigger it.
 The npm and Gateway release processes remain separate. Publishing a directory entry does not
 guarantee that a local package is installed in the Gateway or that authentication is supported.
 

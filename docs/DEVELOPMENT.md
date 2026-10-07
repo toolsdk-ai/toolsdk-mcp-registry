@@ -2,6 +2,11 @@
 
 This document provides developers with detailed information on how to set up, run, and develop the ToolSDK MCP Registry project.
 
+For application and MCP client connections, start with the [Gateway Guide](./GATEWAY.md).
+For server submissions, use the [Contribution Guide](./CONTRIBUTING.md). To update only the
+directory, indexes, or README, follow [Catalog Publication](./CATALOG_PUBLICATION.md); runtime
+development and catalog generation have separate commands.
+
 - [ToolSDK MCP Registry Developer Guide](#toolsdk-mcp-registry-developer-guide)
   - [1. 🧰 Prerequisites](#1--prerequisites)
   - [2. 🧰 Tech Stack](#2--tech-stack)
@@ -44,7 +49,7 @@ This document provides developers with detailed information on how to set up, ru
 Before you begin, ensure your development environment meets the following requirements:
 
 - **Docker** (recommended) - For quick start deployment
-- **Node.js** >= 18.x (latest LTS version recommended) - Required for local development only
+- **Node.js** >= 22.x - Required for catalog generation and local development
 - **pnpm** >= 8.x (package manager) - Required for local development only
 - **Bun** >= 1.x - Required for running build scripts
 
@@ -66,11 +71,11 @@ Before you begin, ensure your development environment meets the following requir
 This project has two main purposes:
 
 1. **MCP Registry** - Collects and indexes various MCP servers, providing search functionality
-2. **MCP Server** - Deployed as a server to remotely call various MCP servers
+2. **MCP Gateway** - Exposes registered tools through an HTTP API and per-server Streamable HTTP endpoints
 
 ### Key Features:
 
-- 📦 **Package Management** - Registry of 6000+ MCP servers with metadata and validation
+- 📦 **Package Management** - Thousands of MCP servers with metadata and validation; see the [complete catalog](./ALL-MCP-SERVERS.md)
 - 🔍 **Search Service** - Full-text search powered by MeiliSearch (optional)
 - 🛡️ **Sandbox Execution** - Secure MCP tool execution in isolated environments:
   - **LOCAL** - Direct local execution (default)
@@ -84,7 +89,8 @@ Additionally, we have deployed a website [ToolSDK.ai](https://toolsdk.ai) that c
 
 ## 4. 🚀 Quick Start with Docker
 
-Docker Compose allows you to quickly deploy the complete MCP Registry with search functionality and SANDOCK remote execution environment.
+Docker Compose deploys the MCP Registry, Gateway, and Meilisearch. HTTP API calls use local
+execution by default; select a configured sandbox provider for isolated API execution.
 
 ### 4.1 Quick Start (5 Minutes)
 
@@ -95,17 +101,20 @@ git clone https://github.com/toolsdk-ai/toolsdk-mcp-registry.git
 cd toolsdk-mcp-registry
 ```
 
-**Step 2: Get Sandock API Key**
+**Step 2: Configure Sandock (Optional)**
 
-Visit [Sandock website](https://sandock.ai) to register and obtain your API Key.
+For isolated API execution, visit [Sandock website](https://sandock.ai) to obtain an API key.
 
 **Step 3: Configure Environment Variables**
 
-In the `.env` file, you only need to modify this line:
+Create a `.env` file with your Sandock key if you will use that provider:
 
 ```env
 SANDOCK_API_KEY=your-sandock-api-key-here  # Replace with your actual API Key
 ```
+
+Select `"sandboxProvider": "SANDOCK"` in API execution requests. The default Compose configuration
+passes the key into the container. The [Gateway Guide](./GATEWAY.md) includes both API and MCP examples.
 
 **Step 4: Start Services**
 
@@ -115,7 +124,9 @@ docker compose up -d
 make up
 ```
 
-> **⚠️ Note:** This command will build and install all 6000+ MCP packages and their dependencies, which may take 10-15 minutes on first run. If you only need specific packages for your use case, consider pruning unwanted packages first by following the guide in [Section 5: Package Management for Private Deployment](#5--package-management-for-private-deployment) to significantly reduce build time and image size.
+> **Deployment tip:** Docker builds the application with its configured Node and Python dependencies.
+> For a focused private deployment, choose the packages you need using
+> [Section 5: Package Management for Private Deployment](#5--package-management-for-private-deployment).
 >
 > **Common Docker commands:**
 > - `make up` or `docker compose up -d` - Start all services
@@ -123,7 +134,7 @@ make up
 > - `make restart` or `docker compose restart` - Restart all services
 
 This will start two services:
-- `mcp-registry` - MCP Registry main application (port 3003)
+- `toolsdk-mcp-registry` - MCP Registry and Gateway application (port 3003)
 - `meilisearch` - Search engine service (port 7700)
 
 **Step 5: Initialize Search Index (Optional)**
@@ -149,13 +160,13 @@ curl -X POST http://localhost:3003/api/v1/search/manage/index
 **List all MCP Servers:**
 
 ```bash
-curl http://localhost:3003/api/v1/packages
+curl http://localhost:3003/api/v1/indexes/packages-list
 ```
 
 **Search MCP Servers:**
 
 ```bash
-curl "http://localhost:3003/api/v1/search/packages?q=github&limit=5"
+curl "http://localhost:3003/api/v1/search/?q=github&limit=5"
 ```
 
 **Execute MCP Tool (using SANDOCK remote execution):**
@@ -164,12 +175,13 @@ curl "http://localhost:3003/api/v1/search/packages?q=github&limit=5"
 curl -X POST http://localhost:3003/api/v1/packages/run \
   -H "Content-Type: application/json" \
   -d '{
-    "packageName": "mcp-starter",
-    "toolKey": "hello_tool",
+    "packageName": "@modelcontextprotocol/server-everything",
+    "toolKey": "echo",
     "inputData": {
-      "name": "World"
+      "message": "Hello from ToolSDK!"
     },
-    "envs": {}
+    "envs": {},
+    "sandboxProvider": "SANDOCK"
   }'
 ```
 
@@ -221,7 +233,8 @@ Subsequent builds will be much faster using Docker cache.
 
 ## 5. 📦 Package Management for Private Deployment
 
-If you're deploying this project privately, you probably don't need all 6000+ MCP packages. Here's how to keep only the packages you need to significantly reduce build time and dependencies.
+Choose a focused set of MCP servers for your private deployment. Catalog generation updates the
+directory and metadata; managing runtime dependencies is a separate deployment step.
 
 ### 5.1 Understanding Package Structure
 
@@ -247,7 +260,7 @@ To remove individual packages within a category, simply delete their JSON config
 
 1. Navigate to the category folder (e.g., `packages/version-control/`)
 2. Delete the `.json` files for packages you don't need
-3. Run the rebuild process using `make build` (see Section 5.3)
+3. Run `make catalog` to update the directory (see Section 5.3).
 
 Example: Keep only GitHub-related packages in version-control by removing other `.json` files like `gitlab.json`, `bitbucket.json`, etc.
 
@@ -272,7 +285,8 @@ To remove entire categories (e.g., gaming, sports), edit the `config/categories.
 }
 ```
 
-3. Run the rebuild process using `make build` - the build script will automatically remove the corresponding directories and their packages
+3. Run `make catalog` to omit those categories from the generated directory. This does not delete
+   package files or modify dependency manifests.
 
 **Option 3: Keep Only What You Need (Minimal Setup)**
 
@@ -280,44 +294,33 @@ For a minimal deployment with only essential categories:
 
 1. Open `config/categories.mjs`
 2. Remove all category entries except the ones you need (e.g., `developer-tools`, `databases`, `cloud-platforms`, `version-control`, `communication`, `file-systems`)
-3. Run the rebuild process using `make build`
+3. Run `make catalog` to generate your selected catalog.
 
 This approach is recommended as it ensures consistency between your configuration and the actual packages.
 
 ### 5.3 Rebuild Indexes
 
-After removing packages, rebuild the indexes:
-
-**For Linux/macOS:**
-
-```bash
-make build
-```
-
-**For Windows:**
-
-The `make` command is not available by default on Windows. You'll need to run the build commands manually. Open the `Makefile` file in the project root and execute the commands in the `build` target one by one:
+After selecting your packages or categories, regenerate the complete directory in one batch with
+Node.js 22 or later:
 
 ```bash
-bun scripts/cat-dirs.ts
-pnpm install --no-frozen-lockfile
-bun scripts/indexing-lists.ts
-bun scripts/check-config.ts
-pnpm install --no-frozen-lockfile
-npx tsx scripts/test-mcp-clients.ts
-pnpm install --no-frozen-lockfile
-pnpm prune
-bun scripts/readme-gen.ts
-pnpm run sort
-pnpm run check
-pnpm run build
+make catalog
 ```
 
-This will:
-- Scan the remaining packages in `packages/` directory
-- Validate them and install only required dependencies
-- Generate new indexes in `indexes/`
-- Update `package.json` with only the necessary Node.js dependencies
+Without `make`, including on Windows, run the equivalent command:
+
+```bash
+node scripts/generate-catalog.mjs
+```
+
+This reads and validates package JSON, preserves existing validation and tool metadata, and
+generates `indexes/`, `README.md`, `docs/ALL-MCP-SERVERS.md`, and `catalog-site/`. It does not
+install or execute MCP servers, modify dependencies, or rerun runtime validation.
+
+For public publication, maintainers manually run **Publish Registry Catalog** on `main`; see
+[Catalog Publication](./CATALOG_PUBLICATION.md). For a private runtime deployment, also align
+`package.json` and the Python dependency configuration with your selected servers before building
+the image. Regenerating a catalog alone does not prune installed dependencies.
 
 ### 5.4 Benefits of Package Pruning
 
@@ -342,7 +345,8 @@ Edit `config/categories.mjs` and keep only these essential categories:
 - `communication` - Slack, Discord, etc.
 - `file-systems` - File management tools
 
-To do this, open `config/categories.mjs` and remove all other category entries (like gaming, sports, marketing, travel, etc.). After rebuilding using `make build`, this will give you a practical set of ~200-300 packages instead of 6000+.
+To do this, edit `config/categories.mjs` and run `make catalog`. Review the generated catalog to
+confirm your selection, then align runtime dependencies as described in Section 5.3.
 
 ## 6. 💻 Local Development Setup
 
@@ -354,7 +358,8 @@ This section is for developers who want to contribute to the project or need fas
 - Developing new features
 
 **Quick command reference:**
-- `make build` - Build the project and install dependencies
+- `make catalog` - Generate directory data and documentation without installing or running MCP servers
+- `make build` - Install dependencies, run MCP validation, regenerate outputs, and build the application
 - `make search` - Start MeiliSearch container (for search functionality)
 - `make dev` - Start the development server with hot reload
 
@@ -373,7 +378,12 @@ make build
 This will perform the following operations:
 - Validate all MCP server configurations
 - Install all necessary dependencies
+- Run MCP servers to discover tools and record runtime validation
 - Build TypeScript code
+
+For directory or README changes only, use `make catalog` instead. The full runtime build still uses
+the legacy indexing scripts; use the catalog generator as the final step when preparing published
+catalog outputs.
 
 ### 6.3 Start Development Server (Without Search Function)
 
@@ -445,7 +455,7 @@ Error reading MCP Client for package: claude-prompts... ENOENT: no such file or 
 **This is normal!** The reason for these errors is:
 
 - This project includes thousands of MCP packages
-- The build process attempts to test all packages through the [test-mcp-clients.ts](file:///root/vika/toolsdk-mcp-registry/scripts/test-mcp-clients.ts) script
+- The build process attempts to test all packages through the [test-mcp-clients.ts](../scripts/test-mcp-clients.ts) script
 - Due to the large number, the testing process may take several hours
 - Not all packages need to be installed and tested, as most packages are not essential for running the registry
 
@@ -492,18 +502,22 @@ This project follows **Domain-Driven Design (DDD)** architecture with **Service 
 - **Factory Pattern**: Dynamic object creation (Executor, Sandbox providers)
 - **Dependency Injection**: Loose coupling through constructor injection
 
+<a id="environment-variables"></a>
+
 ## 9. ⚙️ Environment Variables
 
 ### Quick Configuration (Only 1 Variable Required)
 
-For Docker deployment, you only need to configure **`SANDOCK_API_KEY`**:
+For Sandock API execution in Docker, configure **`SANDOCK_API_KEY`** and select the provider in
+your API request:
 
 ```env
 # 🔑 Required: Get it from https://sandock.ai
 SANDOCK_API_KEY=your-sandock-api-key-here
 ```
 
-All other configurations have reasonable default values and do not need to be modified.
+The default provider is `LOCAL`. Select `SANDOCK` with the API's `sandboxProvider` field for
+isolated execution. For local development, `MCP_SANDBOX_PROVIDER` sets the default provider.
 
 ### Optional Configuration
 
@@ -521,7 +535,7 @@ If you need to customize, you can configure the following variables:
 
 | Variable | Description | Default |
 |----------|-------------|---------|
-| `MCP_SANDBOX_PROVIDER` | Sandbox type | `SANDOCK` |
+| `MCP_SANDBOX_PROVIDER` | Default API sandbox provider | `LOCAL` |
 | `SANDOCK_API_URL` | Sandock service URL | `https://sandock.ai` |
 | `MEILI_HTTP_ADDR` | MeiliSearch address | `http://meilisearch:7700` |
 | `MEILI_MASTER_KEY` | MeiliSearch master key | - |
@@ -531,7 +545,7 @@ If you need to customize, you can configure the following variables:
 
 #### Sandbox Provider Options
 
-- **SANDOCK** ⭐ - Default recommendation, lightweight Docker sandbox designed for AI Agents
+- **SANDOCK** ⭐ - Recommended for isolated API execution, lightweight Docker sandbox designed for AI Agents
 - **LOCAL** - Direct local execution, no isolation (for development and testing)
 - **DAYTONA** - Cloud development environment (team collaboration)
 - **E2B** - Code interpreter sandbox (specific scenarios)
@@ -540,10 +554,13 @@ If you need to customize, you can configure the following variables:
 
 ### Configuration Files
 
-- `.env` - Main configuration file (copy from `.env.example`)
+- `.env` - Main configuration file; create it with the variables you need
 - `.env.local` - Local override configuration (not committed to Git)
 
 All environment variables are managed centrally through `src/shared/config/environment.ts`.
+For Docker Compose, `.env` supplies Compose substitutions; additional container variables must be
+listed in the service's `environment` configuration. The default Compose file passes the Sandock
+key and search settings.
 
 ## 10. 🔐 OAuth Integration
 
