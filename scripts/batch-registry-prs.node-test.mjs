@@ -61,6 +61,7 @@ function fixture() {
       state: "OPEN",
       isDraft: false,
       baseRefName: "main",
+      headRefOid: git(["rev-parse", "HEAD"]).trim(),
       mergeable: "MERGEABLE",
       mergeStateStatus: "CLEAN",
       reviewDecision: "APPROVED",
@@ -73,6 +74,7 @@ function fixture() {
         nodes: [
           {
             commit: {
+              oid: git(["rev-parse", "HEAD"]).trim(),
               statusCheckRollup: {
                 contexts: {
                   totalCount: 2,
@@ -107,7 +109,7 @@ const {execFileSync}=require('node:child_process');const args=process.argv.slice
     path.join(bin, "gh"),
     `#!/usr/bin/env node
 const fs=require('node:fs');const {execFileSync}=require('node:child_process');const path=require('node:path');const args=process.argv.slice(2);const temp=process.env.TEST_TEMP;const meta=JSON.parse(fs.readFileSync(path.join(temp,'metadata.json')));fs.appendFileSync(path.join(temp,'calls.jsonl'),JSON.stringify(args)+'\\n');
-if(args[1]==='graphql'){const count=fs.readFileSync(path.join(temp,'calls.jsonl'),'utf8').trim().split('\\n').filter(line=>JSON.parse(line)[1]==='graphql').length;if(process.env.TEST_FAIL_REFRESH==='true'&&count>=3)meta.p1.commits.nodes[0].commit.statusCheckRollup.contexts.nodes[0].conclusion='FAILURE';const query=args.find(a=>a.startsWith('query=')).slice(6);const numbers=[...query.matchAll(/p(\\d+):pullRequest/g)].map(m=>m[1]);const repository=numbers.length?Object.fromEntries(numbers.map(n=>['p'+n,meta['p'+n]])):{pullRequests:{pageInfo:{hasNextPage:false},nodes:Object.values(meta)}};console.log(JSON.stringify({data:{repository}}));}
+if(args[1]==='graphql'){const count=fs.readFileSync(path.join(temp,'calls.jsonl'),'utf8').trim().split('\\n').filter(line=>JSON.parse(line)[1]==='graphql').length;if(process.env.TEST_FAIL_REFRESH==='true'&&count>=3)meta.p1.commits.nodes[0].commit.statusCheckRollup.contexts.nodes[0].conclusion='FAILURE';if(process.env.TEST_HEAD_REFRESH==='true'&&count>=4){meta.p1.headRefOid='updated-head';meta.p1.commits.nodes[0].commit.oid='updated-head';}const query=args.find(a=>a.startsWith('query=')).slice(6);const numbers=[...query.matchAll(/p(\\d+):pullRequest/g)].map(m=>m[1]);const repository=numbers.length?Object.fromEntries(numbers.map(n=>['p'+n,meta['p'+n]])):{pullRequests:{pageInfo:{hasNextPage:false},nodes:Object.values(meta)}};console.log(JSON.stringify({data:{repository}}));}
 else{const number=args[1].match(/pulls\\/(\\d+)\\/merge$/)?.[1];if(!number||!args.includes('merge_method=squash'))throw new Error('Unexpected mutation');const ref='refs/pull/'+number+'/head';const sha=execFileSync(process.env.TEST_GIT,['--git-dir='+process.env.TEST_REMOTE,'rev-parse',ref],{encoding:'utf8'}).trim();if(!args.includes('sha='+sha))throw new Error('Missing current-head precondition');execFileSync(process.env.TEST_GIT,['--git-dir='+process.env.TEST_REMOTE,'update-ref','refs/heads/main',sha]);meta['p'+number].state='MERGED';fs.writeFileSync(path.join(temp,'metadata.json'),JSON.stringify(meta));console.log(JSON.stringify({merged:true,sha}));}
 `,
     { mode: 0o755 },
@@ -178,6 +180,21 @@ test("a check that fails after the report prevents an approved merge", () => {
     );
     assert.equal(results[0].result, "SKIPPED");
     assert.ok(results[0].blockers.includes("CI_NOT_PASSED"));
+    assert.equal(JSON.parse(fs.readFileSync(path.join(temp, "metadata.json"))).p1.state, "OPEN");
+  } finally {
+    fs.rmSync(temp, { recursive: true, force: true });
+  }
+});
+
+test("a contributor update between fetching JSON and checking CI prevents merge", () => {
+  const { temp, root, run } = fixture();
+  try {
+    assert.throws(() => run(["merge", "--approved", "1"], { TEST_HEAD_REFRESH: "true" }));
+    const results = JSON.parse(
+      fs.readFileSync(path.join(root, "registry-review/merge-results.json")),
+    );
+    assert.equal(results[0].result, "SKIPPED");
+    assert.ok(results[0].blockers.includes("PR_CHANGED_DURING_REVIEW"));
     assert.equal(JSON.parse(fs.readFileSync(path.join(temp, "metadata.json"))).p1.state, "OPEN");
   } finally {
     fs.rmSync(temp, { recursive: true, force: true });

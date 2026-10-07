@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { checkBlockers, flagOverlaps, reviewAddition } from "./batch-review.mjs";
+import { checkBlockers, checkReviewedHead, flagOverlaps, reviewAddition } from "./batch-review.mjs";
 
 function readyPr(number = 1) {
   return {
@@ -105,4 +105,16 @@ test("overlapping paths or identities hold both otherwise ready submissions", ()
     flagOverlaps([review(), independent]).map((pr) => pr.blockers),
     [[], []],
   );
+});
+
+test("checks must belong to the Git content actually reviewed", () => {
+  const pr = readyPr();
+  pr.headRefOid = "reviewed-head";
+  pr.commits.nodes[0].commit.oid = "reviewed-head";
+  assert.deepEqual(checkReviewedHead(pr, "reviewed-head"), []);
+  pr.headRefOid = "new-head";
+  assert.deepEqual(checkReviewedHead(pr, "reviewed-head"), ["PR_CHANGED_DURING_REVIEW"]);
+  pr.headRefOid = "reviewed-head";
+  pr.commits.nodes[0].commit.oid = "old-checks";
+  assert.deepEqual(checkReviewedHead(pr, "reviewed-head"), ["PR_CHANGED_DURING_REVIEW"]);
 });

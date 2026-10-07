@@ -45,6 +45,12 @@ export function checkBlockers(pr) {
   return blockers;
 }
 
+export function checkReviewedHead(pr, reviewedHead) {
+  return pr.headRefOid !== reviewedHead || pr.commits.nodes[0]?.commit.oid !== reviewedHead
+    ? ["PR_CHANGED_DURING_REVIEW"]
+    : [];
+}
+
 export function reviewAddition(pr, base, changes, contents, categoryKeys) {
   const issues = validateRegistryPrScope(changes);
   const blockers = checkBlockers(pr);

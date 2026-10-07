@@ -5,15 +5,21 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import categories from "../config/categories.mjs";
-import { checkBlockers, flagOverlaps, renderReport, reviewAddition } from "./lib/batch-review.mjs";
+import {
+  checkBlockers,
+  checkReviewedHead,
+  flagOverlaps,
+  renderReport,
+  reviewAddition,
+} from "./lib/batch-review.mjs";
 import { isRegistryJsonPath } from "./lib/registry-validator.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const repository = "toolsdk-ai/toolsdk-mcp-registry";
-const fields = `number title url state isDraft baseRefName mergeable mergeStateStatus reviewDecision
+const fields = `number title url state isDraft baseRefName headRefOid mergeable mergeStateStatus reviewDecision
 files(first:100){totalCount nodes{path}}
 reviewThreads(first:100){nodes{isResolved isOutdated} pageInfo{hasNextPage}}
-commits(last:1){nodes{commit{statusCheckRollup{contexts(first:100){totalCount nodes{... on CheckRun{name status conclusion} ... on StatusContext{context state}}}}}}}`;
+commits(last:1){nodes{commit{oid statusCheckRollup{contexts(first:100){totalCount nodes{... on CheckRun{name status conclusion} ... on StatusContext{context state}}}}}}}`;
 const categoryKeys = new Set(categories.map((category) => category.key));
 const trustedFiles = [
   "config/categories.mjs",
@@ -137,13 +143,16 @@ function refreshAndReview(prs) {
         (change) => change.status === "A" && isRegistryJsonPath(change.path),
       );
       const contents = readBlobs(additions.map((change) => `${ref}:${change.path}`));
-      return reviewAddition(
+      const reviewed = reviewAddition(
         pr,
         base,
         changes,
         new Map(additions.map((change, index) => [change.path, contents[index]])),
         categoryKeys,
       );
+      reviewed.reviewedHead = git(["rev-parse", ref]).trim();
+      reviewed.blockers.push(...checkReviewedHead(pr, reviewed.reviewedHead));
+      return reviewed;
     }),
   );
 }
@@ -203,6 +212,10 @@ function main() {
         ...new Set([
           ...item.blockers,
           ...checkBlockers(prs.find((pr) => pr.number === item.number)),
+          ...checkReviewedHead(
+            prs.find((pr) => pr.number === item.number),
+            item.reviewedHead,
+          ),
         ]),
       ],
     }));
@@ -231,6 +244,7 @@ function main() {
         const reviewed = refreshAndReview([current])[0];
         const refreshed = metadata([candidate.number])[0];
         reviewed.blockers.push(...checkBlockers(refreshed));
+        reviewed.blockers.push(...checkReviewedHead(refreshed, reviewed.reviewedHead));
         if (reviewed.blockers.length) {
           result = {
             number: candidate.number,
@@ -247,7 +261,7 @@ function main() {
           "-f",
           "merge_method=squash",
           "-f",
-          `sha=${git(["rev-parse", `refs/codex/batch-review/${candidate.number}`]).trim()}`,
+          `sha=${reviewed.reviewedHead}`,
         ]);
         if (!response.merged) throw new Error(response.message || "Merge rejected");
         result = { number: candidate.number, result: "MERGED", commit: response.sha };

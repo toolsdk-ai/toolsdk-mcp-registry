@@ -70,7 +70,9 @@ node scripts/batch-registry-prs.mjs merge --approved "123 124"
 
 Merge mode refreshes every approved PR's state, checks, discussions, and JSON against current main,
 then squash-merges sequentially. A GitHub merge precondition rejects a changed contributor head;
-no commit-history review is needed. Base-branch update rejections are retried with fresh validation.
+CI metadata must also belong to the exact Git content reviewed, so an update between fetching JSON
+and refreshing checks holds the PR rather than combining evidence from different revisions.
+No commit-history review is needed. Base-branch update rejections are retried with fresh validation.
 Results are saved after every action in `merge-results.json`; held or failed PRs produce a nonzero
 exit status. It never substitutes an unapproved PR or uses admin overrides or auto-merge.
 
