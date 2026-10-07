@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Voidly Atlas (hosted)",
+  "packageName": "@toolsdk-remote/voidly-atlas",
+  "description": "Hosted read-only Atlas connector with public censorship reads: incident statistics, incident detail, country data and measurement summaries built on OONI, Censored Planet and IODA. No relay tools and no authentication. Check the observation date and source coverage before treating a result as current.",
+  "url": "https://github.com/voidly-ai/atlas-mcp",
+  "readme": "https://github.com/voidly-ai/atlas-mcp#hosted-atlas-four-public-reads",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Voidly",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://atlas-mcp.voidly.ai/mcp"
+    }
+  ]
+}

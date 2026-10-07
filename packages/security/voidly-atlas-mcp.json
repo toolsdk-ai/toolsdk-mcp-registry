@@ -1,0 +1,37 @@
+{
+  "type": "mcp-server",
+  "name": "Voidly Atlas MCP",
+  "packageName": "@voidly/mcp-server",
+  "description": "Internet-censorship data for AI agents: country status, domain-blocking checks, citable incidents with evidence links to OONI, Censored Planet and IODA measurements, and Sentinel shutdown-risk forecasts. Also includes agent relay tools: relay writes are off until the owner enables them in the environment, and relay messages are relay-readable, not end-to-end encrypted.",
+  "url": "https://github.com/voidly-ai/atlas-mcp",
+  "readme": "https://github.com/voidly-ai/atlas-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Voidly",
+  "env": {
+    "VOIDLY_MCP_RELAY_HOME": {
+      "description": "Optional relay credential directory (default ~/.voidly/mcp-relay). Not needed for the censorship and forecast tools.",
+      "required": false
+    },
+    "VOIDLY_MCP_RELAY_DID": {
+      "description": "Optional relay identity (DID) the relay tools act as.",
+      "required": false
+    },
+    "VOIDLY_MCP_RELAY_ALLOWED_RECIPIENTS": {
+      "description": "Optional comma-separated list of relay DIDs the agent may send to or create tasks for. Unset means relay sends are refused.",
+      "required": false
+    },
+    "VOIDLY_MCP_RELAY_ALLOW_OPEN_WRITES": {
+      "description": "Optional. Set to 1 to allow channel posts and profile changes on the relay. Unset means refused.",
+      "required": false
+    },
+    "VOIDLY_MCP_RELAY_ALLOW_STATE_CHANGES": {
+      "description": "Optional. Set to 1 to allow relay state changes other parties can see (joining channels, read marks, deletes). Unset means refused.",
+      "required": false
+    },
+    "VOIDLY_MCP_RELAY_ALLOW_MEMORY_WRITES": {
+      "description": "Optional. Set to 1 to allow relay-side memory writes (relay-readable). Unset means refused.",
+      "required": false
+    }
+  }
+}
