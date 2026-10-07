@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Cryptowisser News",
+  "packageName": "@toolsdk-remote/cryptowisser-news",
+  "description": "Up-to-date crypto news from Cryptowisser's newsroom: the latest headlines, news on any coin, company or person, this week's biggest stories and full articles, all with source links.",
+  "url": "https://github.com/cryptowisser-com/cryptowisser-news-plugin",
+  "readme": "https://www.cryptowisser.com/mcp/",
+  "runtime": "node",
+  "logo": "https://www.cryptowisser.com/img/mcp-icon-512.png",
+  "author": "Cryptowisser",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.cryptowisser.com/mcp/server"
+    }
+  ]
+}
