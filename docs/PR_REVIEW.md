@@ -41,6 +41,51 @@ node scripts/validate-registry.mjs --all
 
 ## Pull Request Review
 
+### Batch Review and Approved Merge
+
+From a clean, up-to-date trusted `main` checkout, run:
+
+```bash
+git fetch origin main
+git merge --ff-only origin/main
+node scripts/batch-registry-prs.mjs review
+```
+
+The default mode creates `registry-review/report.md` and `report.json` without merging, commenting,
+closing, installing, or probing anything. It batches GitHub metadata and Git object reads and uses
+the validator from the trusted checkout. Only additions under `packages/` with unique identities,
+passing schema and format CI, a clean merge state, and no blocking review are offered as ready.
+Existing-entry edits, ambiguous Node `bin` aliases, incomplete pagination, and overlapping open
+submissions are held. Metadata validity does not prove source authenticity or runtime compatibility;
+inspect the official-source links before approving a list.
+
+Missing or old CI never silently passes. Local JSON validation still runs and records findings;
+the maintainer must arrange current schema and formatting checks before such PRs can be merged.
+
+After authorization for specific PRs:
+
+```bash
+node scripts/batch-registry-prs.mjs merge --approved "123 124"
+```
+
+Merge mode refreshes every approved PR's state, checks, discussions, and JSON against current main,
+then squash-merges sequentially. A GitHub merge precondition rejects a changed contributor head;
+CI metadata must also belong to the exact Git content reviewed, so an update between fetching JSON
+and refreshing checks holds the PR rather than combining evidence from different revisions.
+No commit-history review is needed. Base-branch update rejections are retried with fresh validation.
+Results are saved after every action in `merge-results.json`; held or failed PRs produce a nonzero
+exit status. It never substitutes an unapproved PR or uses admin overrides or auto-merge.
+
+The **Batch Registry PR Review** manual workflow exposes the same two modes. Review is the default;
+`merge-approved` requires an explicit PR list. Reports are attached as artifacts. The CLI works
+with normal maintainer GitHub credentials; workflow merges still obey repository branch protection
+and GitHub token permissions. No scheduled unattended merge is configured.
+
+Formatting CI installs only pinned Biome 2.2.2 outside the project and checks changed files without
+writing fixes. Existing formatting debt is not rewritten as part of package submission review.
+
+### Individual Review
+
 The deterministic reviewer may validate independent pull requests in parallel against `main`. It
 must:
 

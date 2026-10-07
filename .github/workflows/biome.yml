@@ -9,16 +9,24 @@ on:
 jobs:
   biome:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v3
         with:
-          version: 10
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'pnpm'
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+      - name: Install only the pinned formatter
+        run: npm install --prefix "$RUNNER_TEMP/registry-biome" --ignore-scripts --no-audit --no-fund --package-lock=false @biomejs/biome@2.2.2
       - name: Run biome check
-        run: pnpm check
+        env:
+          BASE_REF: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: |
+          biome="$RUNNER_TEMP/registry-biome/node_modules/.bin/biome"
+          if [[ -n "$BASE_REF" && "$BASE_REF" != '0000000000000000000000000000000000000000' ]]; then
+            "$biome" check --changed --since="$BASE_REF" --no-errors-on-unmatched
+          else
+            "$biome" check .
+          fi

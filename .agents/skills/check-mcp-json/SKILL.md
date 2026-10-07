@@ -34,6 +34,13 @@ Repository instructions and the user's latest authorization override this skill.
 
 ## Review Workflow
 
+For a backlog, use `node scripts/batch-registry-prs.mjs review` from a clean, current trusted
+`main` checkout. This uses the same validator rules and reads PR JSON through batched Git blobs;
+it never checks out or runs contributor code. Review `registry-review/report.md` and official-source
+links, then use `node scripts/batch-registry-prs.mjs merge --approved "123 124"` only for the PR
+numbers explicitly authorized by the user. See `docs/PR_REVIEW.md` for CI gates, held submissions,
+the manual workflow, and merge results. Keep the individual helper below for focused inspection.
+
 1. Refresh the trusted checkout:
 
    ```bash
