@@ -2,7 +2,7 @@
   "type": "mcp-server",
   "name": "Ball Ranks",
   "packageName": "@toolsdk-remote/ball-ranks",
-  "description": "Read-only NFL and NBA fantasy rankings and player projections from Ball Ranks, including weekly, season, and player-specific results.",
+  "description": "Read-only NFL and NBA fantasy rankings and player projections from Ball Ranks. This connection provides anonymous Model Zero access, limited to 10 requests daily; higher limits and Model One require Bearer authentication that this registry cannot configure.",
   "url": "https://ballranks.com",
   "readme": "https://ballranks.com/developers#mcp",
   "runtime": "node",
