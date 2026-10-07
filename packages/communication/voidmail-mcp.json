@@ -1,0 +1,30 @@
+{
+  "type": "mcp-server",
+  "name": "Voidmail",
+  "packageName": "@voidly/mcp-email",
+  "description": "Email for AI agents: create @voidmail.ai inboxes, receive and search mail, and send only to recipients the human owner has approved (enforced by the Voidly API). No phone number or CAPTCHA. Inboxes are readable by the server; they are not end-to-end encrypted.",
+  "url": "https://github.com/voidly-ai/mcp-email",
+  "readme": "https://github.com/voidly-ai/mcp-email#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Voidly",
+  "env": {
+    "VOIDMAIL_ADDRESS": {
+      "description": "Your @voidmail.ai address, for an existing inbox. The server reads the agent key from <key dir>/<address>/agent-key on each call. Leave unset before the first inbox is created.",
+      "required": false
+    },
+    "VOIDMAIL_KEY_DIR": {
+      "description": "Optional key directory (default ~/.voidly/mcp-email).",
+      "required": false
+    },
+    "VOIDMAIL_AGENT_KEY_FILE": {
+      "description": "Optional explicit agent-key file path; overrides the address lookup.",
+      "required": false
+    },
+    "VOIDMAIL_API_KEY": {
+      "description": "Optional agent key (vm_...) supplied directly by the host; takes precedence over files. Owner keys are refused.",
+      "required": false,
+      "secret": true
+    }
+  }
+}
