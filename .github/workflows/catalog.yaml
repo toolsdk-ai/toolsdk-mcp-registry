@@ -23,6 +23,8 @@ jobs:
   publish:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    outputs:
+      catalog_commit: ${{ steps.snapshot.outputs.commit }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -48,6 +50,9 @@ jobs:
         with:
           commit_message: 'docs: refresh published MCP catalog'
           file_pattern: 'indexes/*.json README.md docs/ALL-MCP-SERVERS.md'
+      - name: Record the deployed catalog snapshot
+        id: snapshot
+        run: echo "commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -66,7 +71,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: main
+          ref: ${{ needs.publish.outputs.catalog_commit }}
       - uses: actions/setup-node@v4
         with:
           node-version: 22

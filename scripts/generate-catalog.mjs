@@ -19,6 +19,7 @@ export function generateCatalog(root = defaultRoot, site = path.join(root, "cata
     : {};
   const packages = Object.create(null);
   const configs = new Map();
+  const candidates = new Map();
   const groups = Object.fromEntries(
     categories.map((config) => [config.key, { config, packagesList: [] }]),
   );
@@ -37,14 +38,26 @@ export function generateCatalog(root = defaultRoot, site = path.join(root, "cata
         const key = getPackageKey(config);
         if (excluded.has(key) || excluded.has(config.packageName)) continue;
         const relative = path.relative(path.join(root, "packages"), file).split(path.sep).join("/");
-        // Keep the published winner of unchanged historical identity collisions.
-        if (packages[key] && previous[key]?.path !== relative) continue;
-        packages[key] = { ...previous[key], path: relative, category };
-        configs.set(key, config);
+        const entries = candidates.get(key) ?? [];
+        entries.push({ config, path: relative, category });
+        candidates.set(key, entries);
       }
     }
   };
   for (const category of categories) visit(path.join(root, "packages", category.key), category.key);
+  for (const [key, entries] of candidates) {
+    // Historical collisions keep their published winner; new ambiguity requires a maintainer.
+    const selected =
+      entries.find((entry) => entry.path === previous[key]?.path) ??
+      (entries.length === 1 ? entries[0] : undefined);
+    if (!selected)
+      throw new Error(
+        `Ambiguous registry identity "${key}": ${entries.map((entry) => entry.path).join(", ")}`,
+      );
+    const metadata = selected.path === previous[key]?.path ? previous[key] : {};
+    packages[key] = { ...metadata, path: selected.path, category: selected.category };
+    configs.set(key, selected.config);
+  }
   const keys = [
     ...Object.keys(previous).filter((key) => Object.hasOwn(packages, key)),
     ...Object.keys(packages)
