@@ -13,7 +13,7 @@ Structured JSON, STDIO and Streamable HTTP, with built-in Sandbox and OAuth 2.1 
 [![Build status](https://img.shields.io/github/actions/workflow/status/toolsdk-ai/toolsdk-mcp-registry/test.yaml?style=flat-square&label=build)](https://github.com/toolsdk-ai/toolsdk-mcp-registry/actions/workflows/test.yaml)
 [![MCP servers](https://img.shields.io/badge/MCP_servers-4940-0078D4?style=flat-square)](https://toolsdk-ai.github.io/toolsdk-mcp-registry/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-239B56?style=flat-square)](./LICENSE)
-[![ToolSDK registry status for @toolsdk.ai/tavily-mcp](https://badges.toolsdk.ai/badge/@toolsdk.ai/tavily-mcp)](https://toolsdk-ai.github.io/toolsdk-mcp-registry/#%40toolsdk.ai%2Ftavily-mcp)
+[![ToolSDK MCP Community](https://badges.toolsdk.ai/badge/toolsdk-mcp-registry)](https://github.com/toolsdk-ai/toolsdk-mcp-badges)
 
 <a href="https://www.producthunt.com/products/toolsdk-ai">
   <img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=997428&theme=light&period=daily" alt="ToolSDK on Product Hunt" height="40" />
@@ -207,18 +207,18 @@ or complete the Star action when already authorized. See the
 ### Add a Badge to Your MCP Server
 
 Show your server's registry status in its README with [ToolSDK MCP Badges](https://github.com/toolsdk-ai/toolsdk-mcp-badges).
-For example, the `@toolsdk.ai/tavily-mcp` Web search server displays:
+Start with a Community badge, even before your server is indexed:
 
-[![ToolSDK registry status for @toolsdk.ai/tavily-mcp](https://badges.toolsdk.ai/badge/@toolsdk.ai/tavily-mcp)](https://toolsdk-ai.github.io/toolsdk-mcp-registry/#%40toolsdk.ai%2Ftavily-mcp)
+[![ToolSDK MCP Community badge example](https://badges.toolsdk.ai/badge/your-mcp-server)](https://github.com/toolsdk-ai/toolsdk-mcp-badges)
 
-Replace `<registry-key>` with your server's key from the published index:
+Replace `<registry-key>` with your server's package name or published registry key:
 
 ```markdown
 [![ToolSDK MCP Registry](https://badges.toolsdk.ai/badge/<registry-key>)](https://toolsdk-ai.github.io/toolsdk-mcp-registry/)
 ```
 
-Badges update automatically: **Registered** for indexed servers, **Verified** for entries marked
-`validated: true`, and **Community** for keys not found in the index. Updates are cached for five minutes.
+Badges update automatically: **Community** for keys not found in the index, **Registered** for
+indexed servers, and **Verified** for entries marked `validated: true`. Updates are cached for five minutes.
 
 If ToolSDK helps you discover MCP servers, [Star this repository](https://github.com/toolsdk-ai/toolsdk-mcp-registry)
 to keep it handy and help other developers find it.
