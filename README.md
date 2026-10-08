@@ -14,6 +14,10 @@ Structured JSON, STDIO and Streamable HTTP, with built-in Sandbox and OAuth 2.1 
 [![MCP servers](https://img.shields.io/badge/MCP_servers-4940-0078D4?style=flat-square)](https://toolsdk-ai.github.io/toolsdk-mcp-registry/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-239B56?style=flat-square)](./LICENSE)
 
+<a href="https://www.producthunt.com/products/toolsdk-ai">
+  <img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=997428&theme=light&period=daily" alt="ToolSDK on Product Hunt" height="40" />
+</a>
+
 **[Browse&nbsp;Servers](https://toolsdk-ai.github.io/toolsdk-mcp-registry/)** &nbsp; / &nbsp;
 **[Use&nbsp;Gateway](#quick-start)** &nbsp; / &nbsp;
 **[API&nbsp;&amp;&nbsp;SDK](#api--sdk)** &nbsp; / &nbsp;
@@ -196,10 +200,6 @@ or contribute Gateway features. Agent-assisted submissions are welcome.
 
 If ToolSDK helps you discover or publish MCP servers, [Star this repository](https://github.com/toolsdk-ai/toolsdk-mcp-registry)
 to keep it handy and help other developers find it.
-
-<a href="https://www.producthunt.com/products/toolsdk-ai">
-  <img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=997428&theme=light&period=daily" alt="ToolSDK on Product Hunt" height="40" />
-</a>
 
 ---
 
