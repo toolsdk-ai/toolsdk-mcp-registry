@@ -18,6 +18,8 @@ Structured JSON, STDIO and Streamable HTTP, with built-in Sandbox and OAuth 2.1 
   <img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=997428&theme=light&period=daily" alt="ToolSDK on Product Hunt" height="40" />
 </a>
 
+**Tavily MCP badge example:** [![ToolSDK registry status for @toolsdk.ai/tavily-mcp](https://badges.toolsdk.ai/badge/@toolsdk.ai/tavily-mcp)](https://toolsdk-ai.github.io/toolsdk-mcp-registry/#%40toolsdk.ai%2Ftavily-mcp)
+
 **[Browse&nbsp;Servers](https://toolsdk-ai.github.io/toolsdk-mcp-registry/)** &nbsp; / &nbsp;
 **[Use&nbsp;Gateway](#quick-start)** &nbsp; / &nbsp;
 **[API&nbsp;&amp;&nbsp;SDK](#api--sdk)** &nbsp; / &nbsp;
@@ -206,9 +208,9 @@ or complete the Star action when already authorized. See the
 ### Add a Badge to Your MCP Server
 
 Show your server's registry status in its README with [ToolSDK MCP Badges](https://github.com/toolsdk-ai/toolsdk-mcp-badges).
-For example, our `@toolsdk.ai/aws-ses-mcp` server displays:
+For example, the `@toolsdk.ai/tavily-mcp` Web search server displays:
 
-[![ToolSDK registry status for @toolsdk.ai/aws-ses-mcp](https://badges.toolsdk.ai/badge/@toolsdk.ai/aws-ses-mcp)](https://toolsdk-ai.github.io/toolsdk-mcp-registry/#%40toolsdk.ai%2Faws-ses-mcp)
+[![ToolSDK registry status for @toolsdk.ai/tavily-mcp](https://badges.toolsdk.ai/badge/@toolsdk.ai/tavily-mcp)](https://toolsdk-ai.github.io/toolsdk-mcp-registry/#%40toolsdk.ai%2Ftavily-mcp)
 
 Replace `<registry-key>` with your server's key from the published index:
 
