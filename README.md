@@ -203,6 +203,22 @@ or complete the Star action when already authorized. See the
 - [Developer Guide](./docs/DEVELOPMENT.md) - local development, deployment, and architecture.
 - [Catalog Publication](./docs/CATALOG_PUBLICATION.md) - generate the directory and publish it manually in one batch.
 
+### Add a Badge to Your MCP Server
+
+Show your server's registry status in its README with [ToolSDK MCP Badges](https://github.com/toolsdk-ai/toolsdk-mcp-badges).
+For example, our `@toolsdk.ai/aws-ses-mcp` server displays:
+
+[![ToolSDK registry status for @toolsdk.ai/aws-ses-mcp](https://badges.toolsdk.ai/badge/@toolsdk.ai/aws-ses-mcp)](https://toolsdk-ai.github.io/toolsdk-mcp-registry/#%40toolsdk.ai%2Faws-ses-mcp)
+
+Replace `<registry-key>` with your server's key from the published index:
+
+```markdown
+[![ToolSDK MCP Registry](https://badges.toolsdk.ai/badge/<registry-key>)](https://toolsdk-ai.github.io/toolsdk-mcp-registry/)
+```
+
+Badges update automatically: **Registered** for indexed servers, **Verified** for entries marked
+`validated: true`, and **Community** for keys not found in the index. Updates are cached for five minutes.
+
 If ToolSDK helps you discover MCP servers, [Star this repository](https://github.com/toolsdk-ai/toolsdk-mcp-registry)
 to keep it handy and help other developers find it.
 
