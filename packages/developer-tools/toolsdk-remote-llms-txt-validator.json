@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "llms.txt Validator",
+  "packageName": "@toolsdk-remote/llms-txt-validator",
+  "description": "Validate a website's llms.txt against the llmstxt.org specification: checks structure, fetches every linked URL so broken links surface, and returns a 0-100 score with specific fixes. Also validates raw llms.txt text and scaffolds a starter file from a homepage and sitemap. No account or API key.",
+  "url": "https://llms-txt-validator.dev",
+  "readme": "https://llms-txt-validator.dev/api",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://llms-txt-validator.dev/mcp"
+    }
+  ]
+}
