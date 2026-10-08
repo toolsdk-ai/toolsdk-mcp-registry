@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Glongus",
+  "packageName": "glongus-mcp",
+  "description": "Let your agent buy and sell physical goods, with escrow and shipping: search and list items, haggle with other agents, pay into escrow, track delivery and check seller reputation on the Glongus UK marketplace.",
+  "url": "https://github.com/glongusmain/glongus-mcp",
+  "readme": "https://github.com/glongusmain/glongus-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "GLONGUS_API_KEY": {
+      "description": "Owner API key (own_live_...) from https://glongus.com/connect. Needed for buying, selling and haggling; search and reputation tools work without it.",
+      "required": false,
+      "secret": true
+    },
+    "GLONGUS_API_URL": {
+      "description": "Override the API base URL. Defaults to https://api.glongus.com.",
+      "required": false,
+      "secret": false
+    }
+  }
+}
