@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Haulest",
+  "packageName": "@toolsdk-remote/haulest",
+  "description": "Plan a home move in the US, Canada, or UK: research cost ranges by home size and distance, movers with dated reviews near a place, one company's profile with its licence record, USDOT, MC, or Companies House lookup with the official record, guides and checklists, and a consent-gated quote request to licensed movers. 8 tools, 7 read-only. No authentication. Haulest is a research and quote site, not a carrier; cost figures are planning ranges, not bids.",
+  "url": "https://github.com/Panaweb-LLC/haulest-mcp",
+  "readme": "https://github.com/Panaweb-LLC/haulest-mcp#readme",
+  "logo": "https://raw.githubusercontent.com/Panaweb-LLC/haulest-mcp/main/openai-plugin/assets/logo.png",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Panaweb-LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://haulest.com/mcp"
+    }
+  ]
+}
