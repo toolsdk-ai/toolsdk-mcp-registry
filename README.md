@@ -37,12 +37,10 @@ Structured JSON, STDIO and Streamable HTTP, with built-in Sandbox and OAuth 2.1 
 
 ## Getting Started
 
-| Your goal | Start here |
-| --- | --- |
-| Find an MCP server | Search the [complete catalog](https://toolsdk-ai.github.io/toolsdk-mcp-registry/) or browse [all 4940 servers](./docs/ALL-MCP-SERVERS.md). |
-| Connect an MCP client | Deploy the Gateway and add a [Streamable HTTP connection](#connect-an-mcp-client). |
-| Integrate tools into an AI app | Use the [HTTP API or ToolSDK](#api--sdk). |
-| Publish your MCP server | Submit a JSON configuration with the [Contribution Guide](./docs/CONTRIBUTING.md). |
+- 🔍 I want to **find an MCP Server** → [Browse Directory](https://toolsdk-ai.github.io/toolsdk-mcp-registry/)
+- 🔌 I want to **integrate MCP tools** into my AI app → [API & SDK](#api--sdk)
+- 🚀 I want to **deploy an MCP Gateway** → [Deployment Guide](#quick-start) · [Connect an MCP Client](#connect-an-mcp-client)
+- ➕ I want to **submit my MCP Server** → [Contribution Guide](./docs/CONTRIBUTING.md)
 
 ## Quick Start
 
