@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "varg",
+  "packageName": "@toolsdk-remote/varg",
+  "description": "AI video, image, speech and music generation: Kling, Seedance, Veo, Sora, Flux, ElevenLabs and 90+ models through one hosted MCP endpoint. Paid plans (from $24/month, no free tier); OAuth 2.1 login with a varg.ai account.",
+  "url": "https://docs.varg.ai/mcp-server",
+  "readme": "https://docs.varg.ai/mcp-server",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "vargHQ",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.varg.ai/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["email", "offline_access"]
+      }
+    }
+  ]
+}
