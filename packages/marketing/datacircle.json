@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Datacircle",
+  "packageName": "@toolsdk-remote/datacircle",
+  "description": "Hosted MCP server for Datacircle's B2B data API: LinkedIn profile lookups through B2B data providers (Up2Data, HarvestAPI) at each provider's own price, no markup, paid from one prepaid Datacircle balance; also the balance, download links for the free 10M+ U.S. B2B leads dataset and the co-op files, and a Stripe link to add funds. A $5 credit at sign-up with a work email.",
+  "url": "https://docs.datacircle.dev/mcp-server",
+  "readme": "https://docs.datacircle.dev/mcp-server",
+  "runtime": "node",
+  "logo": "https://datacircle.dev/favicon.png",
+  "author": "Datacircle",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.datacircle.dev/mcp",
+      "auth": { "type": "oauth2" }
+    }
+  ]
+}
