@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "OutSend",
+  "packageName": "@toolsdk-remote/outsend",
+  "description": "Find and enrich local businesses (emails, social profiles) and run B2B lead pipelines; tool calls need an API key or OAuth.",
+  "url": "https://outsend.xyz",
+  "readme": "https://outsend.xyz/docs/integration/mcp",
+  "runtime": "node",
+  "author": "OutSend",
+  "logo": "https://outsend.xyz/static/icons/icon-512.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://outsend.xyz/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp"]
+      }
+    }
+  ]
+}
