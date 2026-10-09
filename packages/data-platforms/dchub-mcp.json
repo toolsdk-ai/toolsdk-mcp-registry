@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "DC Hub MCP Server",
+  "packageName": "@toolsdk-remote/cloud-dchub-mcp",
+  "description": "Connects AI clients to DC Hub, live data-center site-selection intelligence: mapped power, grid, gas and fiber assets, 300+ markets scored daily, live feeds from the seven US ISOs, and a capacity marketplace. 94 tools; the free tier needs no key and some tools require a DC Hub API key or plan.",
+  "url": "https://github.com/azmartone67/dchub-mcp-server",
+  "readme": "https://dchub.cloud/integrations/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://dchub.cloud/mcp"
+    }
+  ]
+}
