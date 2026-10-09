@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "SerpKite",
+  "packageName": "@toolsdk-remote/serpkite-mcp",
+  "description": "Hosted SerpKite MCP server: Google web, news, images, maps, places, scholar and patent search plus webpage-to-Markdown extraction for AI agents. Authenticates with OAuth 2.1 (browser sign-in); an API key can also be sent as a Bearer header by clients that support custom headers.",
+  "url": "https://github.com/SerpKite/serpkite-mcp",
+  "readme": "https://serpkite.com/docs/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.serpkite.com/v1/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp"]
+      }
+    }
+  ]
+}
