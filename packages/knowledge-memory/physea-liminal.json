@@ -16,12 +16,7 @@
       "url": "https://liminality.physea.ai/mcp",
       "auth": {
         "type": "oauth2",
-        "scopes": [
-          "openid",
-          "profile",
-          "email",
-          "offline_access"
-        ]
+        "scopes": ["openid", "profile", "email", "offline_access"]
       }
     }
   ]
