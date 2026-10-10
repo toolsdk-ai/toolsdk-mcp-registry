@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "packageName": "@affixio/mcp",
+  "description": "Local stdio MCP wrapping the affixio SDK. Host-side ACTION attestation with attest_action, verify_action, and gate_tool_call. PII stays on the host; not KYC.",
+  "url": "https://github.com/AffixIO/affixio-mcp",
+  "runtime": "node",
+  "license": "Apache-2.0",
+  "env": {
+    "AFFIX_API_KEY": {
+      "description": "Licence key; defaults to local_operator for offline use.",
+      "required": false
+    },
+    "AFFIX_MCP_HOME": {
+      "description": "State directory; defaults to ~/.affix-mcp.",
+      "required": false
+    }
+  },
+  "name": "AffixIO Action Attestation MCP"
+}
