@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Unusual Whales",
+  "packageName": "@unusualwhales/mcp",
+  "description": "Official Unusual Whales MCP server. Market data tools over 200+ endpoints: options flow, dark pool prints, congressional trades, Greek exposure, volatility, futures, prediction markets, insider and institutional activity, earnings, news, screeners, technicals, alerts and watchlists.",
+  "url": "https://github.com/unusual-whales/unusual-whales-official-mcp",
+  "readme": "https://github.com/unusual-whales/unusual-whales-official-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Unusual Whales",
+  "env": {
+    "UW_API_KEY": {
+      "description": "Unusual Whales API key (paid plan, trial available) from https://unusualwhales.com/dashboard/api",
+      "required": true,
+      "secret": true
+    }
+  }
+}
