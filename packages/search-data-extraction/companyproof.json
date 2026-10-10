@@ -1,0 +1,25 @@
+{
+  "type": "mcp-server",
+  "name": "CompanyProof",
+  "packageName": "@toolsdk-remote/companyproof",
+  "description": "Search legal companies, retrieve registry profiles and verify six company identity fields with source evidence. Public beta; data calls require an eligible CompanyProof account and shared credits.",
+  "url": "https://github.com/sens663/companyproof-mcp",
+  "readme": "https://companyproof.ai/docs/mcp",
+  "runtime": "node",
+  "logo": "https://companyproof.ai/app-icon-512.png",
+  "author": "CompanyProof",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://companyproof.ai/v2/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "company.read",
+          "proof.write"
+        ]
+      }
+    }
+  ]
+}
