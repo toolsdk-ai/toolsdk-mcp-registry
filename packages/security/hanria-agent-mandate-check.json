@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "HANRIA Agent Mandate Check",
+  "packageName": "@toolsdk-remote/hanria-agent-mandate-check",
+  "description": "Free, advisory check of a proposed agent action against an operator's written mandate. Returns permit, deny or escalate with the governing clause. It cannot stop an action and keeps no request content.",
+  "url": "https://hanria.ai/check/",
+  "readme": "https://hanria.ai/check/",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://check.hanria.ai/v1/mcp"
+    }
+  ]
+}
