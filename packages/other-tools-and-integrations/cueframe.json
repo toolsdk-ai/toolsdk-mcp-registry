@@ -15,5 +15,6 @@
         "type": "oauth2"
       }
     }
-  ]
+  ],
+  "logo": "https://raw.githubusercontent.com/cueframe-ai/cueframe-mcp/main/assets/logo-400.png"
 }
