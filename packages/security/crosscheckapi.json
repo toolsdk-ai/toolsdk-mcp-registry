@@ -1,0 +1,27 @@
+{
+  "type": "mcp-server",
+  "packageName": "crosscheckapi",
+  "bin": "crosscheckapi",
+  "description": "Independent checks for agents, paid per call in USDC on Base over x402 with a free Base Sepolia trial: skillcheck reviews a skill or MCP server's files before install for piped installers, credential reads, exfiltration, persistence, hidden Unicode, and instructions aimed at the agent; accept checks another agent's deliverable against its task before payment; check reviews a draft before the human sees it. Every result has a signed receipt.",
+  "url": "https://github.com/maxugc/crosscheck",
+  "runtime": "node",
+  "license": "mit",
+  "env": {
+    "CROSSCHECK_WALLET_KEY": {
+      "description": "Private key of a dedicated wallet that pays per check (a few dollars of USDC on Base, or free test USDC on Base Sepolia). Never your main wallet. Only needed for paid checks; skillcheck lookups are free.",
+      "required": false,
+      "secret": true
+    },
+    "CROSSCHECK_NETWORKS": {
+      "description": "Networks the client may pay on, in order of preference. Set eip155:84532 to use Base Sepolia test USDC only.",
+      "required": false,
+      "default": "eip155:8453,eip155:84532"
+    },
+    "CROSSCHECK_MAX_USD": {
+      "description": "Refuse to pay more than this per check.",
+      "required": false,
+      "default": "0.10"
+    }
+  },
+  "name": "crosscheck"
+}
