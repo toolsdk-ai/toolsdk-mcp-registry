@@ -2,7 +2,7 @@
   "type": "mcp-server",
   "name": "BestPrice Shopping",
   "packageName": "@toolsdk-remote/bestprice-shopping",
-  "description": "Searches BestPrice.gr products, compares current merchant offers, and returns price history for the Greek market through an official read-only remote endpoint.",
+  "description": "Gets evidence-backed shopping decisions, searches grouped BestPrice.gr products, compares current Greek merchant offers with delivered totals, and returns price history through the official read-only zero-auth endpoint.",
   "url": "https://github.com/TheBestCo/bestprice-mcp",
   "readme": "https://github.com/TheBestCo/bestprice-mcp#readme",
   "runtime": "node",
@@ -14,5 +14,6 @@
       "type": "streamable-http",
       "url": "https://mcp.bestprice.gr/mcp"
     }
-  ]
+  ],
+  "license": "Apache-2.0"
 }
