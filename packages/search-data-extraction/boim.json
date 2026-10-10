@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "BOIM Korean Business Directory",
+  "packageName": "@toolsdk-remote/boim",
+  "description": "Hosted read-only MCP server for finding businesses in Korea: 2.7M businesses across all industries by region and industry, 75,000+ public-procurement vendor cards from Public Procurement Service data, and open public bids (KONEPS, Defense e-Procurement, LH, K-water, Nuri-jangteo). No authentication for the free tier, which returns up to 5 results per tool plus a link to the full public web list; full results need a BOIM API key.",
+  "url": "https://boim.io",
+  "readme": "https://github.com/kikiyop1101/boim-mcp#readme",
+  "runtime": "node",
+  "logo": "https://raw.githubusercontent.com/kikiyop1101/boim-mcp/main/assets/logo.png",
+  "author": "Public identity Co., Ltd.",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://boim.io/api/mcp"
+    }
+  ]
+}
