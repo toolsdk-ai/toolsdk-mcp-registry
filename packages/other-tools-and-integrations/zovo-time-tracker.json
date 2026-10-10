@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Zovo Time Tracker",
+  "packageName": "@toolsdk-remote/zovo-time-tracker",
+  "description": "Track billable time without leaving the chat: start and stop timers, log entries against jobs, and produce timesheets and billable summaries. Tool calls need a free token minted via GET https://mcp.zovo.one/mcp/token (no account, no card); unauthenticated clients still get initialize and tools/list.",
+  "url": "https://github.com/theluckystrike/mcp-servers",
+  "readme": "https://github.com/theluckystrike/mcp-servers/blob/main/servers/time-tracker/README.md",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/theluckystrike/mcp-servers/main/assets/time-tracker-logo.png",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.zovo.one/mcp/time-tracker"
+    }
+  ]
+}
