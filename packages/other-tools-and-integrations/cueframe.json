@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "CueFrame",
+  "packageName": "@toolsdk-remote/cueframe",
+  "description": "Compose, edit, preview and render videos with captions, graphics and audio through CueFrame\u2019s hosted OAuth MCP server.",
+  "url": "https://github.com/cueframe-ai/cueframe-mcp",
+  "readme": "https://github.com/cueframe-ai/cueframe-mcp#readme",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.cueframe.ai/v1/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ],
+  "logo": "https://cueframe.ai/icon.svg"
+}
