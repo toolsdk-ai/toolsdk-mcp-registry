@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Proofite",
+  "packageName": "proofite-mcp",
+  "description": "Read your AI-written daily news briefing and retune the filter behind it: RSS feeds, newsletters, monitored web searches, topic preferences, read-later queue and podcast. 27 tools plus resources and prompts. Hosted remote at https://proofite.com/mcp, or run the stdio bridge via npx proofite-mcp. Published in the official MCP Registry as com.proofite/proofite.",
+  "url": "https://github.com/hanicker/proofite-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "hanicker",
+  "env": {
+    "PROOFITE_API_KEY": {
+      "description": "Proofite API key, created at https://proofite.com/app/settings under Connections. Keys can be created read-only.",
+      "required": true
+    }
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://proofite.com/mcp"
+    }
+  ]
+}
