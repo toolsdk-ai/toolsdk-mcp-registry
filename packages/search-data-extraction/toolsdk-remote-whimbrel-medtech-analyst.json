@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Whimbrel MedTech Analyst",
+  "packageName": "@toolsdk-remote/whimbrel-medtech-analyst",
+  "description": "MedTech BD analyst on demand: research up-and-coming US medtech companies from NIH and NSF grants, federal contracts, FDA clearances and Breakthrough marketing authorizations. Company research comes with every line linked to its source. Free to connect with OAuth.",
+  "url": "https://github.com/WhimbrelResearch/whimbrel-mcp",
+  "readme": "https://whimbrelresearch.com/connect/",
+  "runtime": "node",
+  "author": "Whimbrel Research",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://data.whimbrelresearch.com",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["whimbrel"]
+      }
+    }
+  ]
+}
