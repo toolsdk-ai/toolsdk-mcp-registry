@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Reach by Locus - Google Business Profile MCP",
+  "packageName": "@toolsdk-remote/reach-google-business-profile-mcp",
+  "description": "Hosted Google Business Profile MCP (GBP MCP) for local SEO workflows. Read profiles, reviews, performance, Google Maps rankings, competitors and leads; preview and approve review replies, Google posts, profile edits and photo changes. Uses Reach account OAuth; permissions, Google connection state and plan limits apply.",
+  "readme": "https://reach.locus-intelligence.com/google-business-profile-mcp",
+  "author": "Reach by Locus",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://reach.locus-intelligence.com/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
