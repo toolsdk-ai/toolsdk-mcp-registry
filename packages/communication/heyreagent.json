@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "HeyReagent",
+  "packageName": "@toolsdk-remote/heyreagent",
+  "description": "Hosted MCP server for your own LinkedIn account: read the inbox and see who is waiting for a reply, send messages and connection invitations, search people, and read profiles and posts, with a daily limit per account for each kind of action. Not affiliated with LinkedIn.",
+  "url": "https://heyreagent.com/linkedin-mcp",
+  "readme": "https://github.com/linglistack/heyreagent-linkedin-mcp",
+  "runtime": "node",
+  "logo": "https://raw.githubusercontent.com/linglistack/heyreagent-linkedin-mcp/main/icon.png",
+  "author": "HeyReagent",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.heyreagent.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
