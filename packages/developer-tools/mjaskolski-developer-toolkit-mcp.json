@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "name": "AI Developer Toolkit MCP",
+  "packageName": "developer-toolkit-mcp",
+  "description": "Read-only remote MCP endpoint over 950+ AI-development guides (Cursor, Claude Code, Codex) in EN+PL: search (query to ranked results) and fetch (id to full article markdown). No account, no API key.",
+  "url": "https://github.com/mjaskolski/developer-toolkit-mcp",
+  "license": "unknown",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://developertoolkit.ai/mcp"
+    }
+  ]
+}
