@@ -1,0 +1,11 @@
+{
+  "type": "mcp-server",
+  "name": "Concord MCP",
+  "packageName": "@concord-ai/concord-mcp",
+  "description": "Local-first shared work-state for coding agents: presence, claims, messaging, handoffs, and review packets.",
+  "url": "https://github.com/Get-Concord-AI/concord-mcp",
+  "readme": "https://github.com/Get-Concord-AI/concord-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {}
+}
