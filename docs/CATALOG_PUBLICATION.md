@@ -40,6 +40,11 @@ guarantee that a local package is installed in the Gateway or that authenticatio
 
 ## Contributor Badge Replies
 
+Replies on the original registry submission PR are the default badge outreach; contributors can
+copy the Markdown into their own README. See [Publication Follow-Up and Badges](./PR_REVIEW.md#publication-follow-up-and-badges)
+for how reviewers carry merged submissions into publication batches. Upstream README PRs are a
+separately requested exception.
+
 The catalog workflow accepts an optional space-separated list of merged PR numbers. After Pages
 deployment, it checks that each added entry is present in the published index and that published
 JSON matches the deployed catalog snapshot, even if main changes while the workflow is running.

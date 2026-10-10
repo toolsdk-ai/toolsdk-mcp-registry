@@ -119,3 +119,12 @@ git pull --ff-only origin main
 ```
 
 Report the resulting merge commit, remaining open PRs, and local worktree status.
+
+## Publication Follow-Up
+
+Keep the merged submission PR numbers for the next manual catalog publication. Follow
+[`docs/PR_REVIEW.md`](../../../docs/PR_REVIEW.md#publication-follow-up-and-badges) for the default
+badge outreach: preview an English reply with `scripts/badge-replies.mjs`, then post to the original
+registry PR once publication is confirmed and replies to those PRs are authorized. Authors add
+the badge themselves. Do not fork publisher repositories or create upstream README PRs unless
+the user explicitly requests that exception.
