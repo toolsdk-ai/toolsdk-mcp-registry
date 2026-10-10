@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "OtaKit",
+  "packageName": "@toolsdk-remote/otakit",
+  "description": "Over-the-air updates for Capacitor apps. The hosted MCP server lets an agent read apps, bundles, releases and rollout health, prepare and publish releases after the human approves them, adjust staged rollouts, create preview links and revert. Sign in with OAuth or use an OtaKit organization API key.",
+  "url": "https://otakit.app",
+  "readme": "https://otakit.app/docs/agents",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://www.otakit.app/logo.png",
+  "author": "OtaKit",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://console.otakit.app/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["otakit:read", "otakit:app:write", "otakit:bundle:write", "otakit:release:write"]
+      }
+    }
+  ]
+}
