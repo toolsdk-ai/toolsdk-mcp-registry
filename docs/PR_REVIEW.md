@@ -130,3 +130,40 @@ The agent must not use `--admin` or `--auto`. After merging, it reports the resu
 refreshes `main` before validating a new batch. Pull requests with pairwise-disjoint changed paths
 and registry identities may submit squash merges concurrently; retry GitHub's transient
 `Base branch was modified` rejection after another merge lands.
+
+## Publication Follow-Up and Badges
+
+The default badge outreach is an English reply on the original registry submission PR, providing
+the published listing, configuration link, and copyable README badge Markdown. The contributor
+chooses whether to add the badge to their README. Creating a fork or an upstream README PR is a
+separate, explicitly requested exception, not the standard submission workflow.
+
+Keep the successfully merged submission PR numbers from each batch for the next manual catalog
+publication. Merge approval alone does not authorize posting comments; include the intended reply
+PR numbers when obtaining publication/reply approval, and reuse that authorization once given.
+
+After publication, use the existing reply helper from the trusted, up-to-date checkout:
+
+```bash
+# Preview only; replace these example numbers with the merged submission PRs.
+node scripts/badge-replies.mjs 123 124
+
+# Post only when replies to these PRs have been authorized.
+node scripts/badge-replies.mjs 123 124 --post
+```
+
+The helper confirms that each PR was merged into `main`, that newly added entries are in the
+public index, and that their published JSON matches the local catalog snapshot. It saves previews
+to `badge-replies/<pr-number>.md` and skips entries that are not published. Do not announce
+publication immediately after merging. The `<!-- toolsdk-registry-published -->` comment marker
+prevents duplicate replies; existing-entry edits are not notified automatically.
+
+Use each server's actual registry identity for its dynamic badge. Do not hard-code a badge tier
+or describe a listing as certification. Keep badge adoption optional, without affecting acceptance
+or review priority. Avoid sending both a badge invitation and an upstream README PR to the same
+publisher for the same listing unless requested.
+
+The manual **Publish Registry Catalog** workflow can preview or post these replies after deployment
+in the same run. See [Catalog Publication](./CATALOG_PUBLICATION.md#contributor-badge-replies) for
+the workflow inputs. Report posted, already-notified, skipped, and failed PRs in the completion
+summary; retain unpublished PRs for a later publication batch.
