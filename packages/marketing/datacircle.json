@@ -2,7 +2,7 @@
   "type": "mcp-server",
   "name": "Datacircle",
   "packageName": "@toolsdk-remote/datacircle",
-  "description": "Hosted MCP server. Datacircle is a data co-op. Query your favorite B2B data APIs through us. Same request, same price, no markup. Every morning, you get the flat file of your data plus everyone else's. Right now we have 2 live LinkedIn profile APIs that we trust: Up2Data and HarvestAPI. Sign up at datacircle.dev with your work email: a $5 credit, that's 4,000 LinkedIn profiles at $1.25 per 1,000.",
+  "description": "Hosted MCP server. Datacircle is a data co-op. Query your favorite B2B data APIs through us. Same request, same price, no markup. Every morning, you get the flat file of your data plus everyone else's. Right now we have 2 live LinkedIn profile APIs that we trust: Up2Data and HarvestAPI. Sign up at datacircle.dev with your work email: a $5 credit, that's 2,105 LinkedIn profiles at $2.375 per 1,000.",
   "url": "https://docs.datacircle.dev/mcp-server",
   "readme": "https://docs.datacircle.dev/mcp-server",
   "runtime": "node",
