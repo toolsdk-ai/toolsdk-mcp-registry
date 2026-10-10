@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Yalla Exit",
+  "packageName": "@toolsdk-remote/yallaexit",
+  "description": "Search published Egyptian property-contract-transfer opportunities and manage your own buyer requirements, interests, and seller drafts or review submissions. Requires OAuth sign-in with a Yalla Exit account.",
+  "readme": "https://yallaexit.com/en/ai-integrations",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.yallaexit.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
