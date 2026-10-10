@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "Liminal",
+  "packageName": "@toolsdk-remote/physea-liminal",
+  "description": "Augment your work with Liminal. Stop repeating yourself and build on what’s already solved. Liminal turns objectives into structured work by strategizing through an atomic, deterministic basis: setting guardrails around scope, compiling resources and constraints, uncovering gaps, and organizing research and next steps. All while carrying continuity and priorities forward so your AI builds on what’s already done.",
+  "readme": "https://github.com/jaybro2042-alt/liminality-mcp#readme",
+  "url": "https://github.com/jaybro2042-alt/liminality-mcp",
+  "runtime": "node",
+  "license": "Apache-2.0",
+  "logo": "https://liminality.physea.ai/logo.png",
+  "author": "Physea",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://liminality.physea.ai/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["openid", "profile", "email", "offline_access"]
+      }
+    }
+  ]
+}
