@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Patent by Ouroboros Apps",
+  "packageName": "@toolsdk-remote/ouroboros-patent",
+  "description": "Patent by Ouroboros Apps (https://ouroborosapps.com). USPTO patent search and prior art lookup: search public patent records, fetch a patent, list citations, and run a prior-art search. Not legal advice. The hosted server searches the USPTO Open Data Portal; EPO Open Patent Services is not turned on. Tools: search_patents, get_patent, find_patent_citations, search_prior_art. Hosted remote endpoint with OAuth and Dynamic Client Registration; requires an account. Docs: https://ouroborosapps.com/docs/patent. Published in the Official MCP Registry as io.github.LAHutchins91/patent.",
+  "url": "https://github.com/LAHutchins91/patent-mcp",
+  "readme": "https://github.com/LAHutchins91/patent-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://patent-mcp.vercel.app/logo.jpg",
+  "author": "Ouroboros Apps",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://patent-mcp.vercel.app/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

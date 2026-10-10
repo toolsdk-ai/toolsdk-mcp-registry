@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Invoice by Ouroboros Apps",
+  "packageName": "@toolsdk-remote/ouroboros-invoice",
+  "description": "Invoice by Ouroboros Apps (https://ouroborosapps.com). Freelance invoice records: approved invoice line items, quantities, agreed rates, due dates, and late terms; invoice changes need explicit approval. Tools: list_invoices, begin_invoice, read_invoice, place_line, describe_line, quote_line_rate, set_line_quantity, set_invoice_due, write_late_terms, offer_discount, seal_invoice, suggest_invoice_change, accept_invoice_change. Hosted remote endpoint with OAuth and Dynamic Client Registration; requires an account. Docs: https://ouroborosapps.com/docs/invoice. Published in the Official MCP Registry as io.github.LAHutchins91/invoice.",
+  "url": "https://github.com/LAHutchins91/invoice-mcp",
+  "readme": "https://github.com/LAHutchins91/invoice-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://invoice-continuity2.vercel.app/logo.jpg",
+  "author": "Ouroboros Apps",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://invoice-continuity2.vercel.app/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

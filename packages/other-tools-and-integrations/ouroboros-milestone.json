@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Milestone by Ouroboros Apps",
+  "packageName": "@toolsdk-remote/ouroboros-milestone",
+  "description": "Milestone by Ouroboros Apps (https://ouroborosapps.com). Freelance project milestones: approved milestones, deliverables, and acceptance criteria; a milestone is only done when the saved criteria are met. Tools: list_milestone_sets, open_milestone_set, read_milestone_set, define_milestone, save_acceptance_criterion, save_deliverable, save_work_item, record_criterion_met, declare_milestone_complete, declare_next_payment_released, mark_work_done, write_client_wording, approve_milestones, suggest_milestone_change, accept_milestone_change. Hosted remote endpoint with OAuth and Dynamic Client Registration; requires an account. Docs: https://ouroborosapps.com/docs/milestone. Published in the Official MCP Registry as io.github.LAHutchins91/milestone.",
+  "url": "https://github.com/LAHutchins91/milestone-mcp",
+  "readme": "https://github.com/LAHutchins91/milestone-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://milestone-continuity2.vercel.app/logo.jpg",
+  "author": "Ouroboros Apps",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://milestone-continuity2.vercel.app/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

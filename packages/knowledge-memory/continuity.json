@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Continuity by Ouroboros Apps",
+  "packageName": "@toolsdk-remote/continuity",
+  "description": "Continuity by Ouroboros Apps (https://ouroborosapps.com). Story continuity for fiction writers: a series bible and novel memory that keeps characters, places, timelines, and plot facts consistent across chats. Tools: list_story_projects, create_story_project, get_continuity_context, search_story_canon, upsert_canon_entry, get_canon_history, list_approved_scenes, record_approved_scene, save_story_checkpoint, list_story_checkpoints, continuity_audit. Hosted remote endpoint with OAuth and Dynamic Client Registration; requires an account. Docs: https://ouroborosapps.com/docs/continuity. Site: https://continuitywriter.com. Published in the Official MCP Registry as io.github.LAHutchins91/continuity.",
+  "url": "https://github.com/LAHutchins91/continuity-mcp",
+  "readme": "https://github.com/LAHutchins91/continuity-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://continuitywriter.com/logo.jpg",
+  "author": "Ouroboros Apps",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://continuitywriter.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

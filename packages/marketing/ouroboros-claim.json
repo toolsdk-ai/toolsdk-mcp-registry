@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Claim by Ouroboros Apps",
+  "packageName": "@toolsdk-remote/ouroboros-claim",
+  "description": "Claim by Ouroboros Apps (https://ouroborosapps.com). Brand claims and marketing copy compliance: approved claims, offers, proof, brand voice, and banned phrases, with a check that rejects copy inventing a guarantee or discount. Tools: list_brands, create_brand, get_brand_guide, save_approved_claim, save_offer, save_proof, save_brand_voice, save_banned_phrase, remove_banned_phrase, check_brand_copy. Hosted remote endpoint with OAuth and Dynamic Client Registration; requires an account. Docs: https://ouroborosapps.com/docs/claim. Published in the Official MCP Registry as io.github.LAHutchins91/claim.",
+  "url": "https://github.com/LAHutchins91/claim-mcp",
+  "readme": "https://github.com/LAHutchins91/claim-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://claim-continuity2.vercel.app/logo.jpg",
+  "author": "Ouroboros Apps",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://claim-continuity2.vercel.app/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

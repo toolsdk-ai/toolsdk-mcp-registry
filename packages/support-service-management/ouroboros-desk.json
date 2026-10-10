@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Desk by Ouroboros Apps",
+  "packageName": "@toolsdk-remote/ouroboros-desk",
+  "description": "Desk by Ouroboros Apps (https://ouroborosapps.com). Customer support policy for assistants: approved support answers, refund rules, and escalation limits read before replying; unapproved promises go to human review. Tools: list_support_desks, create_support_desk, save_approved_answer, search_approved_answers, save_refund_rule, list_refund_rules, save_escalation_limit, list_escalation_limits, save_approved_commitment, list_approved_commitments, evaluate_commitment, evaluate_escalation, get_desk_context. Hosted remote endpoint with OAuth and Dynamic Client Registration; requires an account. Docs: https://ouroborosapps.com/docs/desk. Published in the Official MCP Registry as io.github.LAHutchins91/desk.",
+  "url": "https://github.com/LAHutchins91/desk-mcp",
+  "readme": "https://github.com/LAHutchins91/desk-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://desk-mcp-continuity2.vercel.app/logo.jpg",
+  "author": "Ouroboros Apps",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://desk-mcp-continuity2.vercel.app/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
