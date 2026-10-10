@@ -8,7 +8,7 @@
   "license": "gpl-3.0",
   "env": {
     "TELEGRAM_ARCHIVE_URL": {
-      "description": "Telegram Archive instance URL (e.g. http://localhost:3000)",
+      "description": "Telegram Archive instance URL (e.g. http://localhost:8000)",
       "required": true
     },
     "TELEGRAM_ARCHIVE_USER": {
