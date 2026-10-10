@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "RankControl",
+  "packageName": "@toolsdk-remote/rankcontrol",
+  "description": "Hosted RankControl workspace for content planning, article writing and CMS publishing, with reports on rankings, traffic and AI citations.",
+  "url": "https://github.com/rankcontrol/rankcontrol",
+  "readme": "https://rctrl.com/docs/mcp",
+  "runtime": "node",
+  "license": "Proprietary",
+  "logo": "https://rctrl.com/icon.png",
+  "author": "RankControl",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.rctrl.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
