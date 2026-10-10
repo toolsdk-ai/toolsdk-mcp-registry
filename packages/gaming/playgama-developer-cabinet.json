@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "Playgama Developer Cabinet",
+  "packageName": "@toolsdk-remote/playgama-developer-cabinet",
+  "description": "Publishes and manages HTML5 games on Playgama from a coding agent: creates a game and fills in its form, uploads builds and covers, edits the in-app purchase catalog and leaderboards, returns a QA Tool link, and publishes a sandbox - a public link anyone can play with no moderation step. 22 tools, 11 of them read-only; submitting to moderation, deleting and payouts stay human actions in the cabinet.",
+  "runtime": "node",
+  "url": "https://github.com/Playgama/developer-cabinet-mcp",
+  "readme": "https://wiki.playgama.com/playgama/mcp",
+  "license": "MIT",
+  "author": "Playgama",
+  "logo": "https://static.playgama.com/p-static/static/image/favicon-512.forced.0e230cda.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://developer.playgama.com/api/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp"]
+      }
+    }
+  ]
+}
