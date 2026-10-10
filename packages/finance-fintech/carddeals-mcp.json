@@ -1,0 +1,10 @@
+{
+  "type": "mcp-server",
+  "packageName": "carddeals-mcp",
+  "description": "Official CardDeals Model Context Protocol (MCP) Server for real-time digital gift card discounts across 700+ brands",
+  "url": "https://github.com/cello305/carddeals-mcp",
+  "runtime": "remote",
+  "license": "MIT",
+  "env": {},
+  "name": "CardDeals MCP Server"
+}
