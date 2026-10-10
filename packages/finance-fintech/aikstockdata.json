@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "aikstockdata — Korean Stock Data",
+  "packageName": "@toolsdk-remote/aikstockdata",
+  "description": "Korean stock data for AI agents: the previous trading day's settled closing prices for KOSPI, KOSDAQ and KONEX stocks in the Financial Services Commission price feed (ETFs excluded), DART regulatory filings with the time each was received, earnings from periodic filings, and median market-adjusted price paths after each filing type. End-of-day data refreshed every trading day, not intraday quotes. No account and no API key. Data terms: Non-commercial use with attribution; commercial redistribution is not permitted.",
+  "url": "https://github.com/na77tech-creator/aikstockdata",
+  "readme": "https://aikstockdata.com/en/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.aikstockdata.com/mcp"
+    }
+  ]
+}
