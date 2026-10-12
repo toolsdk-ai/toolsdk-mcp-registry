@@ -15,10 +15,7 @@
       "url": "https://www.zen-mode.io/api/mcp",
       "auth": {
         "type": "oauth2",
-        "scopes": [
-          "zenmode.read",
-          "zenmode.write"
-        ]
+        "scopes": ["zenmode.read", "zenmode.write"]
       }
     }
   ]
