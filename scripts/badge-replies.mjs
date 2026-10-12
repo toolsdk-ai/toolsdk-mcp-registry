@@ -18,9 +18,7 @@ export function renderBadgeReply(entries) {
     const listing = `${siteUrl}/#${encodeURIComponent(key)}`;
     const configuration = `${siteUrl}/packages/${file.split("/").map(encodeURIComponent).join("/")}`;
     const badgeMarkdown = `[![ToolSDK MCP Registry](${badge})](${listing})`;
-    const displayName = (name || key)
-      .replace(/[\r\n`]/g, " ")
-      .replace(/([\\*_\[\]<>])/g, "\\$1");
+    const displayName = (name || key).replace(/[\r\n`]/g, " ").replace(/([\\*_[\]<>])/g, "\\$1");
     return `Thanks for contributing ${displayName}! We've reviewed your submission, and your server is now part of the [ToolSDK MCP Registry](${listing}). We're glad to have you in the community.
 
 **This ToolSDK badge recognizes your contribution and your server's inclusion in the registry:**
