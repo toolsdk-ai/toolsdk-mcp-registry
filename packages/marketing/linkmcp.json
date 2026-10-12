@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "LinkMCP",
+  "packageName": "@toolsdk-remote/linkmcp",
+  "description": "Hosted LinkedIn MCP server for the user's own LinkedIn account: profile and company lookup, people, job and Sales Navigator search, LinkedIn inbox, posts, comments and reactions, connection requests, own analytics, and work email and mobile finding. 7-day free trial; connecting a LinkedIn account needs a paid plan. Not affiliated with LinkedIn.",
+  "url": "https://github.com/linkmcp-io/linkmcp",
+  "readme": "https://github.com/linkmcp-io/linkmcp#readme",
+  "runtime": "node",
+  "logo": "https://app.linkmcp.io/logo-512.png",
+  "author": "LinkMCP",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.linkmcp.io/api/mcp",
+      "auth": { "type": "oauth2" }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Soxoa",
+  "packageName": "@toolsdk-remote/soxoa",
+  "description": "Estimate illustrative automation ROI and prioritize user-described recurring workflows.",
+  "url": "https://soxoa.com/mcp-guide",
+  "readme": "https://soxoa.com/mcp-guide",
+  "runtime": "node",
+  "author": "Soxoa LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://soxoa.com/mcp"
+    }
+  ]
+}

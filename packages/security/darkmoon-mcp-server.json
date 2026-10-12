@@ -1,0 +1,32 @@
+{
+  "type": "mcp-server",
+  "name": "Darkmoon",
+  "packageName": "@darkmoon_ai/mcp-server",
+  "description": "Start autonomous AI pentest runs, poll run status, list campaigns and read findings on your own self-hosted Darkmoon Pro instance over local stdio MCP.",
+  "url": "https://github.com/ASCIT31/darkmoon-mcp-server",
+  "readme": "https://github.com/ASCIT31/darkmoon-mcp-server#readme",
+  "runtime": "node",
+  "license": "GPL-3.0-only",
+  "env": {
+    "DARKMOON_BASE_URL": {
+      "description": "Base URL of your self-hosted Darkmoon Pro Dashboard API.",
+      "required": true,
+      "secret": false
+    },
+    "DARKMOON_USERNAME": {
+      "description": "Dashboard user.",
+      "required": false,
+      "secret": false
+    },
+    "DARKMOON_PASSWORD": {
+      "description": "Dashboard password.",
+      "required": false,
+      "secret": true
+    },
+    "DARKMOON_TOKEN": {
+      "description": "Pre-issued JWT, alternative to username and password.",
+      "required": false,
+      "secret": true
+    }
+  }
+}

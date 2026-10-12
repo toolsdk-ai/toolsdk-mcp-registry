@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Claude Imagine",
+  "packageName": "@toolsdk-remote/claude-imagine",
+  "description": "Generate and edit AI images and videos (Nano Banana 2, GPT Image 2.5, Seedream 4.5, Flux 2 Pro, Veo 3.1 Fast) through Claude Imagine's hosted MCP server. Requires a Claude Imagine account via OAuth; free signup credits, then paid plans.",
+  "url": "https://github.com/lumian2015/claudeimagine-mcp",
+  "readme": "https://claudeimagine.com/docs/mcp",
+  "logo": "https://claudeimagine.com/logo.png",
+  "runtime": "node",
+  "author": "Claude Imagine",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://claudeimagine.com/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

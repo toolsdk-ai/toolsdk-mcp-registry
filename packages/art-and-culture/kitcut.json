@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "KitCut",
+  "packageName": "@toolsdk-remote/kitcut",
+  "description": "Make narrated, scored animated films from a chat: from an idea, or from a video template (event and speaker promos, invitations) with a few words and pictures. Run series projects with recurring characters and publish finished films to YouTube. Hosted remote with OAuth sign-in; films are link-only by default.",
+  "readme": "https://kitcut.ai/docs/assistants",
+  "runtime": "node",
+  "author": "KitCut",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://kitcut.ai/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["films"]
+      }
+    }
+  ]
+}

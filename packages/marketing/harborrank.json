@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "HarborRank",
+  "packageName": "@toolsdk-remote/harborrank",
+  "description": "Hosted SEO server for AI agents: keyword metrics, live Google SERPs and local Maps results, domain and backlink overviews, rank-tracker reads, site audits, and read-only Google Search Console performance and URL inspection. OAuth login; Free plan with 1,000 credits a month, paid plans from $29 a month.",
+  "url": "https://github.com/winsley-jeune/harborrank-skills",
+  "readme": "https://harborrank.com/docs/mcp",
+  "runtime": "node",
+  "logo": "https://harborrank.com/android-chrome-512x512.png",
+  "author": "HarborRank",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.harborrank.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

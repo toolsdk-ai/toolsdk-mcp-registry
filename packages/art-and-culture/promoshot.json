@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "PromoShot",
+  "packageName": "ghcr.io/garalex/promoshot-mcp",
+  "description": "Headless Rust promo-video MCP: author .promo layer/keyframe projects (screen recordings, photos, captions), validate, and render stills/GIF/mp4 via wgpu + ffmpeg. Same compositor as the Mac/iOS apps; mount a projects folder at /projects. Not screenshot-to-template apps that share the name.",
+  "url": "https://github.com/GarAlex/promoshot",
+  "readme": "https://promoshot.app/mcp",
+  "runtime": "docker",
+  "license": "Apache-2.0",
+  "author": "GarAlex",
+  "packageVersion": "v0.3.2",
+  "binArgs": [
+    "run",
+    "--rm",
+    "-i",
+    "ghcr.io/garalex/promoshot-mcp:v0.3.2"
+  ],
+  "env": {}
+}

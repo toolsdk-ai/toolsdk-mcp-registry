@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "VideoGen MCP",
+  "packageName": "@videogen/mcp",
+  "description": "Official VideoGen MCP for product demos, ecommerce ads, video, image, voiceover, music, and avatar creation, project remixing, and export. Setup: https://videogen.io/videogen-mcp",
+  "url": "https://github.com/video-gen/videogen-mcp",
+  "readme": "https://docs.videogen.io/libraries/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "VIDEOGEN_API_KEY": {
+      "description": "Your VideoGen API key, created at https://app.videogen.io/api.",
+      "required": true,
+      "secret": true
+    }
+  }
+}

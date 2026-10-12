@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Clickwise",
+  "packageName": "@toolsdk-remote/clickwise",
+  "description": "Remote MCP server for the Clickwise affiliate network: find affiliate programs that fit a site, app, newsletter or social channel, mint tracked links with no signup, and browse deals and program news. Without credentials this public subset is what works; GTIN product search (1.1M+ products, 7 markets), batch deep links, program applications and commission reports need a free publisher API key sent as the X-API-Key header, which this entry does not configure.",
+  "url": "https://github.com/softdevfz/clickwise-api",
+  "readme": "https://github.com/softdevfz/clickwise-api/tree/main/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "SOFT DEV FZ LLC / Clickwise",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://partners.clickwise.net/api/v1/mcp"
+    }
+  ]
+}

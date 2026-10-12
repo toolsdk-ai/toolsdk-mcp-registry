@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "GovContractScout MCP Server",
+  "packageName": "govcontractscout-mcp",
+  "description": "MCP server exposing GovContractScout's US state and local government contracts API to AI agents: search contracts, get contract details, NAICS lookups, and AI match scoring.",
+  "url": "https://github.com/govcontractscout/govcontractscout-mcp",
+  "readme": "https://github.com/govcontractscout/govcontractscout-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "GCS_API_KEY": {
+      "description": "API key for the GovContractScout API.",
+      "required": true,
+      "secret": true
+    }
+  }
+}

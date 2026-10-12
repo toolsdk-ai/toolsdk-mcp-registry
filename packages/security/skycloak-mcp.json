@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Skycloak MCP",
+  "packageName": "@toolsdk-remote/skycloak-mcp",
+  "description": "Managed Keycloak identity for AI agents: SSO, realms, users, apps, domains, and audit via MCP.",
+  "url": "https://github.com/sky-cloak/skycloak-mcp",
+  "readme": "https://skycloak.io/mcp",
+  "runtime": "go",
+  "license": "Apache-2.0",
+  "author": "Skycloak",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.skycloak.io",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["openid", "profile", "email"]
+      }
+    }
+  ]
+}
