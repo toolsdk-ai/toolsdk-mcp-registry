@@ -5,6 +5,7 @@
   "url": "https://github.com/Continuum-AI-Corp/OrcaReplay",
   "readme": "https://github.com/Continuum-AI-Corp/OrcaReplay#readme",
   "runtime": "node",
+  "binArgs": ["mcp"],
   "license": "apache-2.0",
   "env": {},
   "name": "OrcaReplay"
