@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Midpoint Card Prices",
+  "packageName": "@toolsdk-remote/midpoint-card-prices",
+  "description": "Read-only trading card market data: raw and graded (PSA, CGC, BGS, SGC, TAG) prices for 1.5M+ Pokémon, Magic, Yu-Gi-Oh!, One Piece, Lorcana and sports cards from real sold listings, plus grading ROI, price history, 30-day movers, liquid movers and priced set checklists. No account or API key.",
+  "url": "https://github.com/kolourr/midpoint-mcp",
+  "readme": "https://github.com/kolourr/midpoint-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.cardcenteringtool.com/mcp"
+    }
+  ]
+}

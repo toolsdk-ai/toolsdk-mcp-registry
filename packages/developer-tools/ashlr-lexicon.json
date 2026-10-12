@@ -1,0 +1,12 @@
+{
+  "type": "mcp-server",
+  "name": "Lexicon",
+  "packageName": "@ashlr/lexicon",
+  "bin": "dist/mcp/server.js",
+  "description": "Personal lexicon for dictated prompts. Keeps one YAML file of the names and jargon speech-to-text gets wrong and corrects transcripts with normalize_transcript before the agent acts on them. Also adds, removes, learns and imports terms. Runs locally with no API key.",
+  "url": "https://github.com/ashlrai/lexicon",
+  "readme": "https://github.com/ashlrai/lexicon/blob/main/docs/MCP.md",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {}
+}

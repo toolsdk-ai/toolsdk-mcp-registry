@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "InvoiceVista Invoice Maker",
+  "packageName": "@toolsdk-remote/invoicevista",
+  "description": "Review owned businesses, product catalogs, plan quotas, revenue, receivables and quote-pipeline aggregates through InvoiceVista's hosted OAuth connector. It does not expose customer records or individual invoices, payments or quotes.",
+  "url": "https://github.com/invoicevista/claude-plugin",
+  "readme": "https://github.com/invoicevista/claude-plugin#readme",
+  "runtime": "node",
+  "author": "InvoiceVista LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.invoicevista.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "invoicevista:read"
+        ]
+      }
+    }
+  ]
+}

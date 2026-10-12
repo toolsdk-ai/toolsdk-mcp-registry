@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Arcmira: YouTube Transcript Search",
+  "packageName": "@toolsdk-remote/arcmira",
+  "description": "Search indexed YouTube transcripts with timestamped source links. Research speaker appearances, mentions, sponsors and recommendations across videos and livestreams, and save research to monitors. Requires an Arcmira account. A Premium read uses credits from your plan, then your on-demand budget. Monitor changes require write authorization.",
+  "url": "https://github.com/arcmira/mcp",
+  "readme": "https://arcmira.com/docs",
+  "runtime": "node",
+  "license": "UNLICENSED",
+  "logo": "https://mcp.arcmira.com/icon.png",
+  "author": "Arcmira",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.arcmira.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

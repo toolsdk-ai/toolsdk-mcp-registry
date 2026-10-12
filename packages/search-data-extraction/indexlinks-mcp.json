@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "IndexLinks",
+  "packageName": "@toolsdk-remote/indexlinks",
+  "description": "Check how search engines and AI crawlers see a site, send new pages to Bing, Google (via Search Console) and AI crawlers, and read verified crawl receipts.",
+  "readme": "https://indexlinks.app/ai-connector",
+  "runtime": "node",
+  "author": "IndexLinks",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.indexlinks.app/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

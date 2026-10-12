@@ -1,19 +1,21 @@
 {
   "type": "mcp-server",
   "packageName": "@masonator/coolify-mcp",
-  "description": "Integrates with Coolify to enable natural language management of servers, projects, applications, and databases through the Coolify API, allowing users to perform DevOps operations without leaving their conversation interface.",
-  "url": "https://github.com/stumason/coolify-mcp",
+  "description": "Manage Coolify from an MCP client: servers, projects, applications, databases, services, deployments, logs, environment variables and storage, with diagnostics that name the cause of a failure and a bundled Coolify documentation search.",
+  "url": "https://github.com/StuMason/coolify-mcp",
   "runtime": "node",
-  "license": "unknown",
+  "license": "MIT",
   "env": {
     "COOLIFY_ACCESS_TOKEN": {
-      "description": "0|your-secret-token",
-      "required": true
+      "description": "Coolify API token, created under Keys & Tokens in your Coolify dashboard.",
+      "required": true,
+      "secret": true
     },
     "COOLIFY_BASE_URL": {
-      "description": "https://your-coolify-instance.com",
+      "description": "Base URL of your Coolify instance, for example https://coolify.example.com",
       "required": true
     }
   },
-  "name": "Coolify MCP"
+  "name": "Coolify MCP",
+  "readme": "https://github.com/StuMason/coolify-mcp#readme"
 }

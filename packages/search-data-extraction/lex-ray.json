@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "Lex-Ray",
+  "packageName": "@toolsdk-remote/lex-ray",
+  "description": "Search structured EU and UK legislation. Metadata is public, showcase articles need a free account, and full text needs Lex-Ray access.",
+  "url": "https://lexray.simmons-simmons.com/",
+  "readme": "https://lexray.simmons-simmons.com/llms.txt",
+  "runtime": "python",
+  "author": "Simmons & Simmons",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://lexray.simmons-simmons.com/mcp/",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

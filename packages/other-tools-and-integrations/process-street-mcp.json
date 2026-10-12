@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Process Street MCP Server",
+  "packageName": "@toolsdk-remote/process-street-mcp",
+  "description": "Connect AI agents to Process Street workflows, tasks, runs, data sets, and operational records.",
+  "readme": "https://www.process.st/help/docs/mcp-server/",
+  "url": "https://github.com/process-street/process-street-mcp",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.process.st/",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

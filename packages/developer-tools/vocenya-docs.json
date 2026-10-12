@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Vocenya Docs",
+  "packageName": "@toolsdk-remote/vocenya-docs",
+  "description": "Public, read-only search over the Vocenya AI receptionist developer docs and REST API reference, with code samples in cURL, Node, PHP and Python. No authentication.",
+  "url": "https://github.com/gadyamedia/vocenya-mcp",
+  "readme": "https://vocenya.com/docs/mcp",
+  "runtime": "node",
+  "license": "Proprietary",
+  "author": "GH Business Solutions",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://vocenya.com/mcp/docs"
+    }
+  ]
+}

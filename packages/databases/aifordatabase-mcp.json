@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "AI for Database",
+  "packageName": "@toolsdk-remote/aifordatabase",
+  "description": "Ask your connected databases questions in plain English, run read-only SQL, browse schemas and set up data alert workflows.",
+  "readme": "https://www.aifordatabase.com/ai-connector",
+  "runtime": "node",
+  "author": "AI for Database",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.aifordatabase.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

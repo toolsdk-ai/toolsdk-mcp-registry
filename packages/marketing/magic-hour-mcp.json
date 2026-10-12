@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Magic Hour MCP",
+  "packageName": "@toolsdk-remote/magic-hour-mcp",
+  "description": "Generate and edit AI video, images, and audio through Magic Hour's hosted MCP server. Tool discovery is public; generation calls require a Magic Hour API key.",
+  "url": "https://magichour.ai",
+  "readme": "https://github.com/magichourhq/magic-hour-mcp/blob/main/user.md",
+  "logo": "https://github.com/magichourhq.png",
+  "runtime": "python",
+  "author": "Magic Hour",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.magichour.ai/",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

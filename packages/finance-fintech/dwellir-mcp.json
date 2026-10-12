@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Dwellir",
+  "packageName": "@toolsdk-remote/dwellir",
+  "description": "Hosted MCP server for read-only blockchain RPC queries across 150+ networks (EVM, Substrate, Solana, Bitcoin, Starknet, Sui), Hyperliquid Info data, short WebSocket samples, and Dwellir account usage and API key management. It cannot broadcast transactions, trade, or change billing.",
+  "url": "https://github.com/dwellir-public/dwellir-skill",
+  "readme": "https://www.dwellir.com/docs/agents/mcp",
+  "runtime": "node",
+  "author": "Dwellir",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.dwellir.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["read", "read-write"]
+      }
+    }
+  ]
+}

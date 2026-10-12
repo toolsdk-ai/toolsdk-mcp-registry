@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Kleap",
+  "packageName": "@toolsdk-remote/kleap",
+  "description": "Website infrastructure for AI agents — create, edit, and publish real websites via MCP with a verified-live guarantee.",
+  "url": "https://github.com/kleaphq/cli",
+  "readme": "https://github.com/kleaphq/cli#readme",
+  "runtime": "node",
+  "license": "SEE LICENSE IN REPO",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://kleap.co/api/mcp"
+    }
+  ]
+}

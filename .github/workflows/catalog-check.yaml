@@ -1,0 +1,27 @@
+name: Catalog Check
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'scripts/generate-catalog.mjs'
+      - 'scripts/badge-replies.mjs'
+      - 'scripts/catalog.node-test.mjs'
+      - 'scripts/lib/registry-validator.mjs'
+      - 'config/**'
+      - 'docs/_templates/**'
+      - '.github/workflows/catalog*.yaml'
+
+permissions:
+  contents: read
+
+jobs:
+  catalog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node --test scripts/catalog.node-test.mjs
+      - run: node scripts/generate-catalog.mjs

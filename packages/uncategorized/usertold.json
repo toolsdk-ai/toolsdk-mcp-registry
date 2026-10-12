@@ -1,0 +1,26 @@
+{
+  "type": "mcp-server",
+  "name": "UserTold",
+  "packageName": "@toolsdk-remote/usertold",
+  "description": "Run consented in-product interviews and review source-linked Evidence and Findings through OAuth-protected MCP.",
+  "url": "https://usertold.ai",
+  "readme": "https://usertold.ai/docs/mcp",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.usertold.ai/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "openid",
+          "profile",
+          "email",
+          "agent:read",
+          "agent:write"
+        ]
+      }
+    }
+  ]
+}

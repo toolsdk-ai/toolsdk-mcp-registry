@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "Your Next Tours",
+  "packageName": "@toolsdk-remote/your-next-tours",
+  "description": "Hosted MCP for Your Next Tours, a phone-based audio guide system for tour groups: tour guides manage tour templates, travel programs, trips and participants.",
+  "url": "https://github.com/First-Point/your-next-tours-mcp",
+  "readme": "https://yournext.tours/ai-assistant-integration/",
+  "runtime": "node",
+  "author": "Your Next Tours",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.yournext.tours/api/mcp/guide",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

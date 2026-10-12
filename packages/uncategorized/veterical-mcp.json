@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "Veterical Vet Clinic",
+  "packageName": "@toolsdk-remote/veterical",
+  "description": "Read veterinary-clinic capacity, provider display names, aggregate schedules, numeric catalog configuration, payment totals and subscription entitlements through Veterical's hosted OAuth connector. It excludes animal and owner records and offers no clinical or write actions.",
+  "url": "https://github.com/veterical/claude-plugin",
+  "readme": "https://github.com/veterical/claude-plugin#readme",
+  "runtime": "node",
+  "author": "Veterical LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.veterical.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "veterical:read"
+        ]
+      }
+    }
+  ]
+}

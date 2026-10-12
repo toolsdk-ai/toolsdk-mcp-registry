@@ -7,8 +7,7 @@
   "url": "https://github.com/hjqcan/GoodMemory",
   "readme": "https://github.com/hjqcan/GoodMemory/blob/v0.7.2/docs/GoodMemory-Standalone-MCP-Setup-Guide.md",
   "runtime": "node",
-  "bin": "scripts/goodmemory-mcp.js",
-  "binArgs": ["--standalone"],
+  "binArgs": ["mcp", "serve", "--standalone"],
   "license": "MIT",
   "env": {
     "GOODMEMORY_USER_ID": {

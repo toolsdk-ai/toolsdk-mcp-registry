@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Singapore Proxy MCP",
+  "packageName": "singapore-proxy-mcp",
+  "description": "Fetches web pages, runs Singapore-localized Google searches and rotates the exit IP through real Singapore mobile connections on the Singtel and M1 networks, via the hosted Singapore Mobile Proxy endpoint. Requires an API key; a free 24-hour trial key (10 GB) is available, then paid plans.",
+  "url": "https://github.com/Xavierfok/singapore-proxy-mcp",
+  "readme": "https://github.com/Xavierfok/singapore-proxy-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "SMP_API_KEY": {
+      "description": "API key from https://singaporemobileproxy.com/client/mcp",
+      "required": true,
+      "secret": true
+    }
+  }
+}

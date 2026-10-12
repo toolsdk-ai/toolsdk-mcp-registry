@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "GDEX Trading",
+  "packageName": "@gemachdao/gdex-mcp-server",
+  "description": "Official MCP server for GDEX (gdex.pro), Gemach DAO's multi-chain trading terminal: spot swaps on Solana, Sui and 10 EVM chains, Hyperliquid perps including HIP-3 equity, FX and commodity markets, limit orders, copy trading, cross-chain bridging, portfolio and token discovery (117 tools: 109 execution, 8 documentation).",
+  "url": "https://github.com/GemachDAO/gdex-skill",
+  "readme": "https://github.com/GemachDAO/gdex-skill/tree/main/mcp-server#readme",
+  "logo": "https://raw.githubusercontent.com/GemachDAO/brand-assets/main/logos/gdex/gdex-icon-1024.png",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "GemachDAO",
+  "env": {
+    "GDEX_API_KEY": {
+      "description": "GDEX API key; the server auto-authenticates with it on startup.",
+      "required": false,
+      "secret": true
+    },
+    "GDEX_API_URL": {
+      "description": "Override the GDEX API base URL (default: https://trade-api.gemach.io/v1).",
+      "required": false
+    }
+  }
+}

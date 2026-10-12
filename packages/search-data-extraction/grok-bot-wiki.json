@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "name": "Grok Bot Wiki",
+  "packageName": "@toolsdk-remote/grok-bot-wiki",
+  "description": "Search public Grok Bot templates and read source-linked setup and troubleshooting guides. Eight read-only tools, no authentication. Independent community resource, not affiliated with xAI; template listings come from public share pages, not tested Bot runs.",
+  "readme": "https://www.grokbotwiki.com/mcp",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.grokbotwiki.com/api/mcp"
+    }
+  ]
+}

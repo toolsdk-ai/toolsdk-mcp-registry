@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "VASTlint",
+  "packageName": "@toolsdk-remote/vastlint",
+  "description": "Validate VAST, VMAP, and DAAST ad tags against IAB Tech Lab specs. Public tools require no auth: validate_vast, validate_vast_url, inspect_vast, list_rules, explain_rule, fix_vast.",
+  "url": "https://github.com/aleksUIX/vastlint",
+  "readme": "https://vastlint.org/docs/mcp/",
+  "runtime": "node",
+  "license": "Apache-2.0",
+  "logo": "https://vastlint.org/openai/logo-512.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://vastlint.org/mcp"
+    }
+  ]
+}

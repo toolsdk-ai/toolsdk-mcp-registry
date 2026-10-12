@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Postel",
+  "packageName": "@toolsdk-remote/postel",
+  "description": "Drafts X (Twitter) and LinkedIn posts in the user's saved voice and schedules or publishes them through the hosted Postel endpoint; research of high-performing X posts works without sign-in, all other tools require OAuth.",
+  "url": "https://github.com/robinfaraj/postel-mcp",
+  "readme": "https://github.com/robinfaraj/postel-mcp#readme",
+  "runtime": "node",
+  "logo": "https://raw.githubusercontent.com/robinfaraj/postel-mcp/main/assets/icon.png",
+  "author": "Postel",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.postel.app/api/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["postel:mcp"]
+      }
+    }
+  ]
+}

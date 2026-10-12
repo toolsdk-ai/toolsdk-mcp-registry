@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Zensei Index",
+  "packageName": "@toolsdk-remote/zensei-index",
+  "description": "Today's Zensei Index: a 0-100 US stock market risk score (lower is healthier), its ten indicators, and the latest market summary. Read-only, no account needed.",
+  "url": "https://github.com/wegravel/zensei-mcp",
+  "readme": "https://github.com/wegravel/zensei-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.zensei.com/mcp"
+    }
+  ]
+}

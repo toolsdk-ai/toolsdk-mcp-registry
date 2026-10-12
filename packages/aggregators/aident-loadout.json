@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Aident Loadout",
+  "packageName": "@toolsdk-remote/aident-loadout",
+  "description": "Connect Codex, Claude Code, Cursor, ChatGPT and other MCP clients to 1,000+ apps and 400+ expert-built Skills through one reusable setup. Credentials stay in Aident Vault; every action is logged in Audit; 50+ built-in services run on one balance.",
+  "url": "https://github.com/Aident-AI/aident-skill",
+  "readme": "https://docs.aident.ai/loadout/overview",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://aident.ai/favicon.ico",
+  "author": "Aident AI",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://loadout.aident.ai/mcp"
+    }
+  ]
+}

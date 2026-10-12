@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Court Rules MCP",
+  "packageName": "@toolsdk-remote/court-rules-mcp",
+  "description": "Hosted MCP server for U.S. federal court rules, local rules, judge standing orders, and court holidays, with a source citation for every answer. Includes document compliance checks, holiday-aware deadline data, and privacy enforcement records.",
+  "url": "https://github.com/foklepoint/court-rules-mcp",
+  "readme": "https://docs.courtrules.app/guides/mcp-court-rules",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Court Rules",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.courtrules.app/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

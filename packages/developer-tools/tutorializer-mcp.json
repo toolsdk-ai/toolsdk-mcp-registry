@@ -1,0 +1,24 @@
+{
+  "type": "mcp-server",
+  "name": "Tutorializer Video Tutorials",
+  "packageName": "@toolsdk-remote/tutorializer",
+  "description": "Review projects, tutorials, videos, voiceover text and pronunciation rules through Tutorializer's hosted OAuth connector. Create or update tutorial content and make narrowly confirmed media or rule changes.",
+  "url": "https://github.com/tutorializer/claude-plugin",
+  "readme": "https://github.com/tutorializer/claude-plugin#readme",
+  "runtime": "node",
+  "author": "Waiterio LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.tutorializer.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "tutorializer:read",
+          "tutorializer:write"
+        ]
+      }
+    }
+  ]
+}

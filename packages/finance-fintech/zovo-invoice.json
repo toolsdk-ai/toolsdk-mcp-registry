@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Zovo Invoice",
+  "packageName": "@toolsdk-remote/zovo-invoice",
+  "description": "Create real PDF invoices from your AI chat: clients, sequential numbering, VAT, discounts and overdue reports. Tool calls need a free token minted in a browser at https://mcp.zovo.one/mcp/connect (no account, no card, 600 calls/hour free); unauthenticated clients still get initialize and tools/list.",
+  "url": "https://github.com/theluckystrike/mcp-invoice-generator",
+  "readme": "https://github.com/theluckystrike/mcp-invoice-generator#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/theluckystrike/mcp-servers/main/assets/invoice-logo.png",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.zovo.one/mcp/invoice"
+    }
+  ]
+}
