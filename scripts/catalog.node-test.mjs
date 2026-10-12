@@ -130,10 +130,7 @@ test("badge replies verify published JSON over HTTP and only post on explicit re
     };
     await runBadgeReplies(options);
     assert.equal(mutations.length, 0);
-    assert.match(
-      fs.readFileSync(path.join(root, "badge-replies/123.md"), "utf8"),
-      /Thanks for contributing/,
-    );
+    assert.ok(fs.readFileSync(path.join(root, "badge-replies/123.md"), "utf8").startsWith(marker));
     assert.ok(requests.includes(`/packages/${relative}`));
     publishedConfig = { ...config, description: "Stale deployed content" };
     await runBadgeReplies({ ...options, post: true });
@@ -152,12 +149,17 @@ test("badge replies verify published JSON over HTTP and only post on explicit re
   }
 });
 
-test("badge replies use scoped registry keys and distinguish listing from runtime validation", () => {
+test("badge replies include a rendered preview and matching copyable Markdown for scoped keys", () => {
   const body = renderBadgeReply([
     { key: "@toolsdk-remote/example", file: "developer-tools/example.json" },
   ]);
   assert.match(body, /badges\.toolsdk\.ai\/badge\/@toolsdk-remote\/example/);
   assert.match(body, /#%40toolsdk-remote%2Fexample/);
   assert.match(body, /packages\/developer-tools\/example\.json/);
-  assert.match(body, /not an official endorsement/);
+  const [visible, copyable, footer] = body.split(/```(?:markdown)?\n/);
+  assert.ok(visible.startsWith(marker));
+  const preview = visible.match(/^\[!\[ToolSDK MCP Registry\].+$/m)?.[0];
+  assert.ok(preview, "badge preview must appear outside the code block");
+  assert.equal(copyable.trim(), preview);
+  assert.ok(footer, "the copyable Markdown block must be closed");
 });
