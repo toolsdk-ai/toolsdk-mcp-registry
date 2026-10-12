@@ -959,7 +959,9 @@
       "groundng-(qa-for-cursor)",
       "cloudflare-browser-rendering-(playwright)",
       "x-(twitter)",
-      "agent-qa"
+      "agent-qa",
+      "@toolsdk-remote/agentrender",
+      "agentrender-mcp"
     ]
   },
   "cloud-platforms": {
@@ -1655,7 +1657,8 @@
       "@shinzolabs/hubspot-mcp",
       "mcp-salesforce-connector",
       "@toolsdk-remote/intakra",
-      "@toolsdk-remote/vibe-prospecting"
+      "@toolsdk-remote/vibe-prospecting",
+      "@kooperativa_team/mcp-server"
     ]
   },
   "databases": {
@@ -2366,7 +2369,8 @@
       "mcp-openapi-runner",
       "since-cutoff",
       "skillselion-mcp",
-      "slm-mesh"
+      "slm-mesh",
+      "sf-intelligence"
     ]
   },
   "data-science-tools": {
@@ -2469,7 +2473,8 @@
       "data-explorer",
       "mlflow-prompt-registry",
       "mcp-vcd",
-      "@toolsdk-remote/io-github-aanari-loacare-healthcare-pricing"
+      "@toolsdk-remote/io-github-aanari-loacare-healthcare-pricing",
+      "@toolsdk-remote/invokely"
     ]
   },
   "embedded-system": {
@@ -3499,7 +3504,8 @@
       "@toolsdk-remote/apistatuscheck-mcp-server",
       "@toolsdk-remote/noveum",
       "@toolsdk-remote/uptimely",
-      "duplicacy-mcp"
+      "duplicacy-mcp",
+      "@toolsdk-remote/solidping"
     ]
   },
   "search-data-extraction": {
@@ -3936,7 +3942,8 @@
       "scraper-api-mcp",
       "singapore-proxy-mcp",
       "superhighway-mcp",
-      "transcriptfetch-mcp"
+      "transcriptfetch-mcp",
+      "@toolsdk-remote/getyoutubetranscript"
     ]
   },
   "security": {
