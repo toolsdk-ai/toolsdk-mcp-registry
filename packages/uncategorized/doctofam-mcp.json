@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "DoctoFam Medical Clinic",
+  "packageName": "@toolsdk-remote/doctofam",
+  "description": "Read clinic availability, provider display names, rooms, procedure catalogs, subscription entitlements and aggregate schedules through DoctoFam's hosted OAuth connector. It does not expose patient records or perform clinical or write actions.",
+  "url": "https://github.com/doctofam/claude-plugin",
+  "readme": "https://github.com/doctofam/claude-plugin#readme",
+  "runtime": "node",
+  "author": "Doctofam LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.doctofam.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "doctofam:read"
+        ]
+      }
+    }
+  ]
+}

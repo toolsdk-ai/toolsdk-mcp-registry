@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "CoworkingView",
+  "packageName": "@toolsdk-remote/coworkingview",
+  "description": "Hosted, read-only MCP server to search and compare coworking spaces and private offices in cities across Germany, Spain, the UK, the Netherlands and the UAE, with operator-published prices and per-city market rates. No authentication.",
+  "url": "https://coworkingview.com/en/mcp",
+  "readme": "https://coworkingview.com/en/mcp",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.coworkingview.com/mcp"
+    }
+  ]
+}

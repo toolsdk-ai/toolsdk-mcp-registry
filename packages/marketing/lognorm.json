@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "LogNorm",
+  "packageName": "@toolsdk-remote/lognorm",
+  "description": "Hosted MCP server that gives coding agents a ranked backlog of SEO and AI-visibility work: site audits, fixes, content drafts and AI-answer tracking.",
+  "url": "https://github.com/lognorm/lognorm-mcp",
+  "readme": "https://lognorm.com/connect.md",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://lognorm.com/api/mcp"
+    }
+  ]
+}

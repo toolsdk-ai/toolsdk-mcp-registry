@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "PDFtoMarkdown.ai MCP",
+  "packageName": "@happywp/pdftomarkdown-mcp",
+  "description": "Converts local PDFs, Word, PowerPoint, Excel, images, HTML, and EPUB files into clean, structured Markdown (headings, tables, OCR text) through the PDFtoMarkdown.ai API, exposed as a convert_pdf_to_markdown tool for MCP clients.",
+  "url": "https://github.com/happywpco/pdftomarkdown-mcp",
+  "readme": "https://github.com/happywpco/pdftomarkdown-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "PDFTOMARKDOWN_API_KEY": {
+      "description": "PDFtoMarkdown.ai API key from https://pdftomarkdown.ai/account (free tier available).",
+      "required": true,
+      "secret": true
+    }
+  }
+}

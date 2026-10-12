@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "name": "Fluxmail",
+  "packageName": "fluxmail",
+  "description": "Self-hosted email for Gmail, Outlook, Exchange, and IMAP/SMTP: search, read, draft, send, schedule, and organize mail with per-client permissions. Run instance setup and connect a mailbox before starting the MCP server.",
+  "url": "https://github.com/churichard/fluxmail",
+  "readme": "https://fluxmail.ai/docs/quickstart",
+  "runtime": "node",
+  "license": "Elastic-2.0",
+  "binArgs": [
+    "stdio"
+  ],
+  "env": {}
+}

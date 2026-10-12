@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "STRIDE",
+  "packageName": "@toolsdk-remote/stride",
+  "description": "Track digital-regulation developments across jurisdictions. STRIDE analysis tools require a separately granted STRIDE entitlement.",
+  "url": "https://stride.simmons-simmons.com/",
+  "runtime": "python",
+  "author": "Simmons & Simmons",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://stride.simmons-simmons.com/mcp/",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

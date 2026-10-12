@@ -1,0 +1,92 @@
+name: Publish Registry Catalog
+
+on:
+  workflow_dispatch:
+    inputs:
+      pull_requests:
+        description: 'Merged PR numbers for badge reply previews (space-separated, optional)'
+        type: string
+        default: ''
+      post_badge_replies:
+        description: 'Post the replies to the specified merged PRs after publishing'
+        type: boolean
+        default: false
+
+concurrency:
+  group: registry-publication
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    outputs:
+      catalog_commit: ${{ steps.snapshot.outputs.commit }}
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Test catalog generation and badge replies
+        run: node --test scripts/catalog.node-test.mjs
+      - name: Validate registry and generate the complete catalog
+        run: |
+          node scripts/validate-registry.mjs --all
+          node scripts/generate-catalog.mjs
+      - name: Commit generated directory files
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'docs: refresh published MCP catalog'
+          file_pattern: 'indexes/*.json README.md docs/ALL-MCP-SERVERS.md'
+      - name: Record the deployed catalog snapshot
+        id: snapshot
+        run: echo "commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: catalog-site
+      - name: Deploy generated catalog
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  badge-replies:
+    needs: publish
+    if: inputs.pull_requests != ''
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.publish.outputs.catalog_commit }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Preview or post contributor replies
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBERS: ${{ inputs.pull_requests }}
+          POST_REPLIES: ${{ inputs.post_badge_replies }}
+        run: |
+          read -r -a prs <<< "$PR_NUMBERS"
+          args=()
+          if [[ "$POST_REPLIES" == 'true' ]]; then args+=(--post); fi
+          node scripts/badge-replies.mjs "${prs[@]}" "${args[@]}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: badge-reply-previews
+          path: badge-replies/*.md
+          if-no-files-found: warn

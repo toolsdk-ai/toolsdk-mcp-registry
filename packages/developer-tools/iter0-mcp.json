@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "iter0",
+  "packageName": "@toolsdk-remote/iter0",
+  "description": "Builds and edits launch-ready founder websites from a brief or an authorised reference. Account tools use OAuth; paid steps return an exact quote that the person confirms before credits are spent. Health and developer-docs tools need no sign-in.",
+  "url": "https://github.com/inchwormz/iter0-mcp",
+  "readme": "https://iter0.com/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://iter0.com/api/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["sites:read", "sites:build", "sites:edit"]
+      }
+    }
+  ]
+}

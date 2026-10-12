@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "decodx",
+  "packageName": "@toolsdk-remote/decodx",
+  "description": "Hosted decodx MCP (OAuth): turn a website or brief into a narrated product video — MP4, captions, chapters and a written guide.",
+  "url": "https://github.com/decodx-ai/claude-plugin",
+  "readme": "https://decodx.ai/docs/automate/mcp-server",
+  "runtime": "node",
+  "author": "decodx",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.decodx.ai/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

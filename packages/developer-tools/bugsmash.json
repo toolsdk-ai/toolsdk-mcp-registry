@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "BugSmash",
+  "packageName": "@toolsdk-remote/bugsmash",
+  "description": "Manage visual review projects, versions, folders, and feedback in BugSmash from an AI assistant.",
+  "url": "https://github.com/solutionwise/bugsmash-ai-plugin",
+  "readme": "https://github.com/solutionwise/bugsmash-ai-plugin#readme",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.bugsmash.io/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

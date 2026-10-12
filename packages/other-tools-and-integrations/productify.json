@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "Productify",
+  "packageName": "@toolsdk-remote/productify",
+  "description": "Hosted Productify MCP (OAuth) at https://www.useproductify.com/api/mcp: creates Printify products from chat, with listings written in the shop's voice. Nothing is created, published or edited until the seller approves a preview. Requires a Productify account.",
+  "readme": "https://www.useproductify.com/printify-chatgpt-mcp",
+  "runtime": "node",
+  "author": "Productify",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.useproductify.com/api/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["productify", "productify.manage"]
+      }
+    }
+  ]
+}

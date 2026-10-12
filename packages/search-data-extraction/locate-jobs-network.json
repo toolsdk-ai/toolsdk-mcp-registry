@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Locate Jobs Network",
+  "packageName": "@toolsdk-remote/locate-jobs-network",
+  "description": "Search current office and desk jobs across the Locate Jobs Network boards.",
+  "url": "https://locatejobsnetwork.com",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://locatejobsnetwork.com/api/mcp"
+    }
+  ]
+}

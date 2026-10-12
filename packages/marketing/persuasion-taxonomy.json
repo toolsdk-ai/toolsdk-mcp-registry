@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Persuasion Taxonomy",
+  "packageName": "@toolsdk-remote/persuasion-taxonomy",
+  "description": "Plans, checks and fixes marketing copy against the nine questions every reader silently asks. Searches 766 persuasion techniques documented from real advertising, diagnoses drafts for gaps and machine-written phrasing, checks headlines and claims, and sizes and reads A/B tests. Free, no API key, no AI calls of its own.",
+  "url": "https://github.com/Otha-Labs/persuasion-mcp",
+  "readme": "https://github.com/Otha-Labs/persuasion-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://taxonomy.coppica.com/mcp"
+    }
+  ]
+}

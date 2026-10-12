@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "QuerySail: Google Search Console",
+  "packageName": "@toolsdk-remote/querysail-gsc",
+  "description": "Hosted, read-only Google Search Console data: properties, clicks, impressions, CTR and position by query, page, country, device or date, period comparisons, URL inspection and sitemaps. Requires a QuerySail account (7-day free trial).",
+  "url": "https://github.com/GidianB/querysail-gsc",
+  "readme": "https://github.com/GidianB/querysail-gsc#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "QuerySail",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.querysail.com/gsc/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

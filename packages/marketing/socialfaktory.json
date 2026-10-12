@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "SocialFaktory",
+  "packageName": "@toolsdk-remote/socialfaktory",
+  "description": "Write, generate, schedule and publish a brand's social content, in its own voice, on every channel: read brands, channels and media, write posts in the brand's voice, quote and generate short video, upload files, and schedule or send posts on TikTok, Instagram, YouTube, X, LinkedIn, Facebook and Pinterest. Homepage: https://www.socialfaktory.com",
+  "url": "https://github.com/adifsgaid/socialfaktory-mcp",
+  "readme": "https://www.socialfaktory.com/docs/mcp",
+  "runtime": "node",
+  "author": "SocialFaktory",
+  "logo": "https://www.socialfaktory.com/connector-icon-512.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.socialfaktory.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["read", "generate", "publish"]
+      }
+    }
+  ]
+}
