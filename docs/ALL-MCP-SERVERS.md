@@ -1,6 +1,6 @@
 # 📚 All MCP Servers
 
-> **Complete directory of all 4940+ MCP servers in the ToolSDK Registry**
+> **Complete directory of all 4947+ MCP servers in the ToolSDK Registry**
 >
 > Looking for production-ready servers only? See the [main README](../README.md) for validated servers.
 
@@ -8,9 +8,9 @@
 
 ## 📊 Statistics
 
-- 📦 **Total Servers**: 4940
+- 📦 **Total Servers**: 4947
 - ✅ **Validated & Tested**: 812
-- ⚙️ **Community Contributed**: 4128
+- ⚙️ **Community Contributed**: 4135
 
 ---
 
@@ -848,7 +848,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 
 
 <a id="browser-automation"></a>
-### Browser Automation <small>(165 servers)</small>
+### Browser Automation <small>(167 servers)</small>
 
 > Tools for browsing, scraping, and automating web content in AI-compatible formats.
 
@@ -894,8 +894,10 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [❌ @djyde/browser-mcp](https://github.com/djyde/browser-mcp): Browser extension that enables real-time interaction with web pages, allowing retrieval of content as markdown, CSS styling modifications, and browser history searches.  (node)
 - [❌ @nicholmikey/chrome-tools](https://github.com/nicholmikey/chrome-tools-mcp): Integrates with Chrome's DevTools Protocol to enable remote control of browser tabs, including JavaScript execution, screenshot capture, and network traffic monitoring.  (node)
 - [❌ @thedaviddias/mcp-llms-txt-explorer](https://github.com/thedaviddias/mcp-llms-txt-explorer): Provides a bridge for exploring websites with llms.txt files, enabling fetching and parsing of website-specific language model instructions for context-aware interactions in web-based environments.  (node)
+- [❌ @toolsdk-remote/agentrender](https://github.com/corbinvachal48/agentrender-mcp): Hosted AgentRender MCP endpoint: turn a URL into a screenshot, a PDF, or a structured extract (title, main text, links) without running a browser. Sign in with OAuth; a free plan (150 renders/month, no card) is available at https://agentrenderapi.com.  (python)
 - [❌ adspower-browser-manager](https://github.com/adspower/local-api-mcp-typescript): Enables AI-driven browser profile management through AdsPower's local API, providing tools for creating, updating, opening, and deleting browsers with customizable fingerprints and proxy configurations.  (node)
 - [❌ agent-qa](https://github.com/vostride/agent-qa): Runs natural-language web and mobile tests, retains execution memory, and exposes authoring, execution, artifact, and triage tools to MCP clients.  (node)
+- [❌ agentrender-mcp](https://github.com/corbinvachal48/agentrender-mcp): Turns a URL into a screenshot (returned as an image), a PDF, or a structured extract (title, main text, links) using the hosted AgentRender render API, so agents do not need to run a headless browser. Includes a get_free_key tool that issues a free API key (150 renders/month, no card).  (python)
 - [❌ ai-cursor-scraping-assistant](https://github.com/thewebscrapingclub/ai-cursor-scraping-assistant): Streamlines web scraper development for e-commerce sites by analyzing website structure, detecting anti-bot protections, and generating Scrapy or Camoufox scrapers through a structured workflow.  (python)
 - [❌ android-uiautomator2](https://github.com/nim444/mcp-android-server-python): Provides a bridge between Android devices and automation tools for controlling apps, interacting with UI elements, and capturing screenshots through UIAutomator2 technology.  (python)
 - [❌ apify-rag-web-browser](https://github.com/apify/mcp-server-rag-web-browser): Integrate with Apify's open-source RAG Web Browser Actor to perform web searches, scrape URLs, and return content in Markdown.  (node)
@@ -1686,7 +1688,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 
 
 <a id="customer-data-platforms"></a>
-### Customer Data Platforms <small>(23 servers)</small>
+### Customer Data Platforms <small>(24 servers)</small>
 
 > Access customer profiles and data from customer data platforms.
 
@@ -1694,6 +1696,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [✅ @hubspot/mcp-server](https://github.com/hubspot/mcp-server): Integrates with HubSpot CRM to enable secure access to contact information, company records, deal data, and task management with customizable data access through Private App scopes.  (21 tools) (node)
 - [✅ @tsmztech/mcp-server-salesforce](https://github.com/tsmztech/mcp-server-salesforce): Integrates with Salesforce CRM for natural language-driven data management, querying, and administration tasks.  (15 tools) (node)
 - [✅ attio-mcp-server](https://github.com/hmk/attio-mcp-server): Integrates with Attio's API for reading and writing company records and notes, enabling CRM operations without direct interface navigation.  (4 tools) (node)
+- [❌ @kooperativa_team/mcp-server](https://github.com/kooperativa-team/kooperativa-mcp): Enrich and search people and company profiles, read hiring signals, job changes and headcount by seniority, and manage webhook monitors through the Kooperativa.io API.  (node)
 - [❌ @koundinya/zd-mcp-server](https://github.com/koundinya/zd-mcp-server): A Model Context Protocol (MCP) server that provides AI assistants like Claude with seamless integration to Zendesk Support.    (node)
 - [❌ @lkm1developer/hubspot-mcp-server](https://github.com/lkm1developer/hubspot-mcp-server/tree/main/src): A powerful Model Context Protocol (MCP) server implementation for seamless HubSpot CRM integration, enabling AI assistants to interact with your HubSpot data.  (node)
 - [❌ @NaorAIdeas/hubspot-mcp-server](https://github.com/NaorAIdeas/hubspot-mcp-server/tree/main/src): A Model Context Protocol (MCP) server implementation for HubSpot, providing a standardized interface for interacting with HubSpot's API.  (node)
@@ -2043,7 +2046,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 
 
 <a id="developer-tools"></a>
-### Developer Tools <small>(377 servers)</small>
+### Developer Tools <small>(378 servers)</small>
 
 > Enhance your development workflow with tools for coding and environment management.
 
@@ -2375,6 +2378,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [❌ sap-docs](https://github.com/marianfoo/mcp-sap-docs): Provides offline access to SAP documentation and community content with searchable indexes across SAPUI5, CAP, OpenUI5 API documentation, and real-time SAP Community integration for fast technical reference without web-based searches.  (node)
 - [❌ scast](https://github.com/davidkingzyb/scast): Static Code Analysis and Visualization. Convert Code to UML and Flow Diagram and explain by AI.  (node)
 - [❌ sensei-(dojo)](https://github.com/dojoengine/sensei-mcp): Provides specialized guidance for Starknet ecosystem development with Cairo programming and Entity Component System (ECS) framework expertise through TypeScript-based tools for Dojo developers building onchain games and applications.  (node)
+- [❌ sf-intelligence](https://github.com/PranavNagrecha/Salesforce-Intelligence): Ask your AI what breaks before you change Salesforce. Offline, read-only answers cited from an org's real metadata: field deletion safety, what runs on save, who can see a record, dependency impact. Serves a local org-kb vault built by the sfi CLI. Not affiliated with Salesforce.  (node)
 - [❌ shadcn-ui](https://github.com/ymadd/shadcn-ui-mcp-server): Provides a dynamic server for accessing shadcn/ui component documentation by scraping and caching information from the official documentation site and GitHub repository, enabling developers to list, retrieve, and search through React UI component details.  (node)
 - [❌ since-cutoff](https://github.com/MohammadHijjawi97/since-cutoff): Tells coding agents which public APIs of a Python library changed after a model's training cutoff: a static griffe diff between the release at the cutoff and the pinned or latest one (removed or moved names, parameter changes, deprecations), for one package or a whole lockfile. No API key needed.  (python)
 - [❌ sinstaller](https://github.com/semcp/mcp-sinstaller): Automates installation and containerization of MCP servers from GitHub repositories by analyzing codebases, generating Docker configurations, and building ready-to-run container images with automatic transport detection and client configuration generation.  (python)
@@ -2429,7 +2433,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 
 
 <a id="data-science-tools"></a>
-### Data Science Tools <small>(94 servers)</small>
+### Data Science Tools <small>(95 servers)</small>
 
 > Simplify data analysis and exploration with tools for data science workflows.
 
@@ -2441,6 +2445,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [✅ mcp-excel-server](https://github.com/yzfly/mcp-excel-server): Enables Excel file operations and data analysis with tools for statistical analysis, data filtering, pivot table creation, and visualization through charts and plots.  (8 tools) (python)
 - [✅ optuna-mcp](https://github.com/optuna/optuna-mcp): Provides automated hyperparameter optimization and analysis using Optuna framework with support for multiple samplers, multi-objective optimization, parameter importance analysis, and interactive visualizations including optimization history and Pareto fronts.  (26 tools) (python)
 - [✅ scmcp](https://github.com/huang-sh/scmcp): Provides natural language access to single-cell RNA sequencing analysis through Scanpy, enabling bioinformatics workflows like clustering, dimensionality reduction, and cell type annotation without writing code.  (51 tools) (python)
+- [❌ @toolsdk-remote/invokely](#): Query official statistics through indicators, values, time series, place comparisons, and rankings. Each figure includes its period, unit, source URL, retrieval date, and citation. The no-account Streamable HTTP trial at /mcp/trial is limited to 25 calls per IP per day; authenticated MCP access is available at https://invokely.ai/mcp.  (node)
 - [❌ @toolsdk-remote/io-github-aanari-loacare-healthcare-pricing](https://github.com/aanari/loacare-healthcare-pricing): Provides OAuth-authenticated U.S. healthcare price, CPT/HCPCS, provider, hospital, and provenance searches through a hosted MCP endpoint, plus reviewed provider correction submission.  (node)
 - [❌ adaptive-graph-of-thoughts](https://github.com/saptadey/adaptive-graph-of-thoughts-mcp-server): Processes complex scientific queries through an 8-stage Graph-of-Thoughts pipeline that decomposes questions into hypotheses, gathers evidence, builds knowledge graphs in Neo4j, and provides confidence-scored conclusions with bias detection and falsifiability assessment for systematic research analysis.  (python)
 - [❌ analytical](https://github.com/quanticsoul4772/analytical-mcp): Enhances structured problem-solving and analytical reasoning with tools for research verification, statistical analysis, logical reasoning, and multi-perspective generation for data analysts, researchers, and decision-makers.  (node)
@@ -3490,7 +3495,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 
 
 <a id="monitoring"></a>
-### Monitoring <small>(63 servers)</small>
+### Monitoring <small>(64 servers)</small>
 
 > Analyze app performance and error reports with monitoring tools.
 
@@ -3508,6 +3513,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [❌ @dynatrace-oss/dynatrace-mcp-server](https://github.com/dynatrace-oss/dynatrace-mcp): Integrates with Dynatrace to provide real-time observability data, enabling developers to monitor problems, security vulnerabilities, logs, and metrics directly in their development workflows.  (node)
 - [❌ @toolsdk-remote/apistatuscheck-mcp-server](https://github.com/shibley/apistatuscheck-mcp-server): Check real-time operational status of 285+ cloud services and APIs — AWS, GitHub, Stripe, OpenAI, Vercel, Cloudflare, and more — directly from AI assistants without leaving the chat.  (node)
 - [❌ @toolsdk-remote/noveum](https://noveum.ai/en/mcp): Inspect AI agent traces, manage evaluation datasets, run evaluations, and test voice agents through Noveum. Requires a Noveum account.  (node)
+- [❌ @toolsdk-remote/solidping](https://github.com/fclairamb/solidping): Uptime monitoring from SolidPing: create, run and diagnose checks across 43 types, read results and incidents, and manage status pages and maintenance windows.  (go)
 - [❌ @toolsdk-remote/uptimely](https://github.com/DevinoSolutions/mcp-servers/tree/main/uptimely): Manage uptime monitors, incidents and status pages, and read check results, in Uptimely. Official hosted server operated by Devino Solutions; sign in with your Uptimely account via OAuth.  (node)
 - [❌ @winor30/mcp-server-datadog](https://github.com/winor30/mcp-server-datadog): Integrates with Datadog's API to enable incident management, including listing and retrieving incident information for system monitoring and observability workflows.  (node)
 - [❌ activitywatch](https://github.com/8bitgentleman/activitywatch-mcp-server): Integrates with ActivityWatch to enable LLMs to interact with time tracking data, providing tools for listing buckets, executing AQL queries, and retrieving raw events for enhanced productivity analysis and time management.  (node)
@@ -3562,7 +3568,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 
 
 <a id="search-data-extraction"></a>
-### Search & Data Extraction <small>(428 servers)</small>
+### Search & Data Extraction <small>(429 servers)</small>
 
 > Find and extract data from various sources quickly and efficiently.
 
@@ -3695,12 +3701,13 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [❌ @toolsdk-remote/apitube-news](https://github.com/apitube/news-api-mcp): Hosted news search over the APITube News API: 500,000+ sources, 177 countries, 59 languages, with sentiment scores and named entities on every article. Two read-only tools: search_news, covering most of the News API filter set, and suggest, which resolves a name into entity, category, topic and industry IDs. Tool calls need an APITube API key in an Authorization: Bearer header and a paid plan; unauthenticated clients still get initialize and tools/list.  (node)
 - [❌ @toolsdk-remote/arcmira](https://github.com/arcmira/mcp): Search indexed YouTube transcripts with timestamped source links. Research speaker appearances, mentions, sponsors and recommendations across videos and livestreams, and save research to monitors. Requires an Arcmira account. A Premium read uses credits from your plan, then your on-demand budget. Monitor changes require write authorization.  (node)
 - [❌ @toolsdk-remote/base2026-public-mcp](https://github.com/offflinerpsy/base2026): Public, read-only MCP access to Base2026's source-backed expert-video evidence: search reviewed sources, inspect source and creator records, resolve topics and deterministic topic signals, and read the public manifest.  (node)
-- [❌ @toolsdk-remote/bestprice-shopping](https://github.com/TheBestCo/bestprice-mcp): Searches BestPrice.gr products, compares current merchant offers, and returns price history for the Greek market through an official read-only remote endpoint.  (node)
+- [❌ @toolsdk-remote/bestprice-shopping](https://github.com/TheBestCo/bestprice-mcp): Gets evidence-backed shopping decisions, searches grouped BestPrice.gr products, compares current Greek merchant offers with delivered totals, and returns price history through the official read-only zero-auth endpoint.  (node)
 - [❌ @toolsdk-remote/birkinbagstock](https://birkinbagstock.com): Independent Hermès resale index: inventory, market prices, auction calendar and results.  (node)
 - [❌ @toolsdk-remote/bulktranscripts](https://github.com/pratie/bulktranscripts-mcp): Hosted BulkTranscripts MCP (OAuth) at https://bulktranscripts.co/mcp. Fetch transcripts for one YouTube video or a whole channel or playlist, search YouTube and inside a channel, list channel and playlist videos, and track new uploads. Seven read-only tools.  (node)
 - [❌ @toolsdk-remote/com-unifapi-mcp](https://github.com/unifapi-agent/unifapi-mcp-server): Hosted public-data MCP server for social, search, scrape, news, creator research, and KOL pricing workflows.  (node)
 - [❌ @toolsdk-remote/companyscope-mcp](https://github.com/Stewyboy1990/companyscope-mcp): Company intelligence from a single MCP tool call. Aggregates data from 8 free public sources to build comprehensive company profiles with founding info, tech stack, financials, competitors, and news.  (node)
 - [❌ @toolsdk-remote/court-rules-mcp](https://github.com/foklepoint/court-rules-mcp): Hosted MCP server for U.S. federal court rules, local rules, judge standing orders, and court holidays, with a source citation for every answer. Includes document compliance checks, holiday-aware deadline data, and privacy enforcement records.  (node)
+- [❌ @toolsdk-remote/getyoutubetranscript](https://github.com/tubeagentkit/youtube-mcp): Hosted GetYouTubeTranscript MCP (OAuth) at https://getyoutubetranscript.com/api/mcp. Get the full transcript of a YouTube video, search YouTube and inside a channel, list a channel's or playlist's videos, check a channel's latest uploads, and read your credit balance. Seven read-only tools.  (node)
 - [❌ @toolsdk-remote/grok-bot-wiki](#): Search public Grok Bot templates and read source-linked setup and troubleshooting guides. Eight read-only tools, no authentication. Independent community resource, not affiliated with xAI; template listings come from public share pages, not tested Bot runs.  (node)
 - [❌ @toolsdk-remote/helium-mcp](https://github.com/connerlambden/helium-mcp): Real-time news with bias scoring across 5,000+ sources (15+ dimensions), AI-powered options pricing, balanced news synthesis, live market data, and meme search. 9 tools. 50 free queries, no signup needed.  (node)
 - [❌ @toolsdk-remote/indexlinks](#): Check how search engines and AI crawlers see a site, send new pages to Bing, Google (via Search Console) and AI crawlers, and read verified crawl receipts.  (node)

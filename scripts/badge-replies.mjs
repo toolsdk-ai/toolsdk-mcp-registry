@@ -12,28 +12,31 @@ const siteUrl = "https://toolsdk-ai.github.io/toolsdk-mcp-registry";
 const repository = "toolsdk-ai/toolsdk-mcp-registry";
 
 export function renderBadgeReply(entries) {
-  const blocks = entries.map(({ key, file }) => {
+  const blocks = entries.map(({ key, file, name }) => {
     // Literal scoped keys match the existing badge worker's wildcard route.
     const badge = `https://badges.toolsdk.ai/badge/${encodeURI(key)}`;
     const listing = `${siteUrl}/#${encodeURIComponent(key)}`;
     const configuration = `${siteUrl}/packages/${file.split("/").map(encodeURIComponent).join("/")}`;
-    return `### ${key.replace(/[\r\n`]/g, "")}
+    const badgeMarkdown = `[![ToolSDK MCP Registry](${badge})](${listing})`;
+    const displayName = (name || key).replace(/[\r\n`]/g, " ").replace(/([\\*_[\]<>])/g, "\\$1");
+    return `Thanks for contributing ${displayName}! We've reviewed your submission, and your server is now part of the [ToolSDK MCP Registry](${listing}). We're glad to have you in the community.
 
-- [Registry listing](${listing})
-- [Published configuration](${configuration})
+**This ToolSDK badge recognizes your contribution and your server's inclusion in the registry:**
 
-Optional README badge:
+${badgeMarkdown}
+
+We'd love to see it in your README! It showcases your listing and helps more developers discover both your MCP server and the community registry.
 
 \`\`\`markdown
-[![ToolSDK MCP Registry](${badge})](${listing})
-\`\`\``;
+${badgeMarkdown}
+\`\`\`
+
+The badge automatically updates to reflect your server's registry status.
+
+[Published configuration](${configuration})`;
   });
   return `${marker}
-Thanks for contributing! Your MCP server configuration is now published in the ToolSDK MCP Registry.
-
 ${blocks.join("\n\n")}
-
-Registered means listed in the directory. Verified reflects the registry's existing runtime validation record; it is not an official endorsement or a guarantee of Gateway compatibility. Badge data is cached for five minutes.
 `;
 }
 
@@ -79,7 +82,7 @@ export async function runBadgeReplies({
         console.log(`#${number}: ${key} does not match the published configuration; skipped`);
         continue;
       }
-      entries.push({ key, file: relative });
+      entries.push({ key, file: relative, name: config.name });
     }
     if (!entries.length) {
       console.log(`#${number}: no newly published entries; skipped`);

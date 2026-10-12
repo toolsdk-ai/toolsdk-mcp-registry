@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "AgentRender (hosted)",
+  "packageName": "@toolsdk-remote/agentrender",
+  "description": "Hosted AgentRender MCP endpoint: turn a URL into a screenshot, a PDF, or a structured extract (title, main text, links) without running a browser. Sign in with OAuth; a free plan (150 renders/month, no card) is available at https://agentrenderapi.com.",
+  "url": "https://github.com/corbinvachal48/agentrender-mcp",
+  "readme": "https://github.com/corbinvachal48/agentrender-mcp#hosted-mcp-no-install",
+  "runtime": "python",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.agentrenderapi.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp:tools"]
+      }
+    }
+  ]
+}

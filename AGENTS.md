@@ -28,6 +28,11 @@ When reviewing or merging registry pull requests, follow `docs/PR_REVIEW.md`.
 Use `.agents/skills/check-mcp-json/SKILL.md` for the reusable review, repair, and squash-merge
 workflow and its read-only helper scripts.
 
+For merged server submissions, use the publication follow-up in `docs/PR_REVIEW.md`: the default
+badge outreach is a reply on the original registry PR with copyable badge Markdown for the author.
+Carry the merged PR numbers into the next manual catalog publication. Upstream README PRs are
+only created when explicitly requested; posting replies follows the existing authorization rules.
+
 - Use the validator from the trusted `main` branch to inspect pull request JSON. Do not execute
   scripts from a contributor branch.
 - Never install or run an MCP package submitted by a pull request.

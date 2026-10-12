@@ -11,7 +11,7 @@ Structured JSON, STDIO and Streamable HTTP, with built-in Sandbox and OAuth 2.1 
 
 [![npm version](https://img.shields.io/npm/v/@toolsdk.ai/registry.svg?style=flat-square)](https://www.npmjs.com/package/@toolsdk.ai/registry)
 [![Build status](https://img.shields.io/github/actions/workflow/status/toolsdk-ai/toolsdk-mcp-registry/test.yaml?style=flat-square&label=build)](https://github.com/toolsdk-ai/toolsdk-mcp-registry/actions/workflows/test.yaml)
-[![MCP servers](https://img.shields.io/badge/MCP_servers-4940-0078D4?style=flat-square)](https://toolsdk-ai.github.io/toolsdk-mcp-registry/)
+[![MCP servers](https://img.shields.io/badge/MCP_servers-4947-0078D4?style=flat-square)](https://toolsdk-ai.github.io/toolsdk-mcp-registry/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-239B56?style=flat-square)](./LICENSE)
 [![ToolSDK MCP Community](https://badges.toolsdk.ai/badge/toolsdk-mcp-registry)](https://github.com/toolsdk-ai/toolsdk-mcp-badges)
 
@@ -170,7 +170,7 @@ Use the public JSON endpoint above when you prefer to fetch the catalog directly
 
 ## Capabilities & Architecture
 
-- **Structured Registry** - 4940 MCP servers organized by category, with reusable JSON configurations and tool metadata.
+- **Structured Registry** - 4947 MCP servers organized by category, with reusable JSON configurations and tool metadata.
 - **Federated Discovery** - Search local private entries and the official MCP Registry.
 - **Unified Gateway** - Access local STDIO and remote Streamable HTTP tools through an HTTP API or a standard MCP endpoint.
 - **Sandbox Execution** - Isolated API tool execution with Sandock, Daytona, and E2B.
@@ -229,7 +229,7 @@ to keep it handy and help other developers find it.
 
 ## MCP Servers Directory
 
-**4940 MCP servers for AI agents, integrations, and automation.**
+**4947 MCP servers for AI agents, integrations, and automation.**
 
 [Search the catalog](https://toolsdk-ai.github.io/toolsdk-mcp-registry/) &middot;
 [Browse the complete list](./docs/ALL-MCP-SERVERS.md) &middot;
