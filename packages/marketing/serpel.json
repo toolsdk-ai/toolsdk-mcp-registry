@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/serpel-mcp",
+  "name": "Serpel",
+  "description": "Remote MCP server for Google rankings, site audits, keyword research, and AI visibility monitoring across ChatGPT, Claude, Cursor, Codex, and Gemini.",
+  "url": "https://github.com/Serpelapp/serpel-plugin",
+  "readme": "https://serpel.app/developers/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://serpel.app/brand/serpelAppIcon512.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://serpel.app/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp:read"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Blawgy",
+  "packageName": "@toolsdk-remote/blawgy",
+  "description": "Official hosted Blawgy server for running an SEO blog from any agent. Researches keywords, manages the content plan, writes articles with images and internal links, reads Google Search Console traffic and indexing status, drafts and approves refreshes of live posts, and publishes to WordPress, Shopify, Webflow, Wix, Framer, Ghost or Duda. Requires a Blawgy account on a paid plan (free trial available); OAuth 2.1 with dynamic client registration.",
+  "url": "https://github.com/adamgusky/blawgy-mcp",
+  "readme": "https://blawgy.com/help/connecting-ai-agents",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://blawgy.com/favicon-512.png",
+  "author": "Blawgy",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.blawgy.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Tapetide",
+  "packageName": "tapetide-mcp",
+  "description": "Official MCP server for Tapetide, Indian stock market (NSE and BSE) research covering about 8,200 listed stocks. 55 tools for live quotes, financials, technicals, a 326-ratio fundamental screener and a technical screener, analyst ratings and forecasts, shareholding, FII/DII flows, option chains and IV, index performance, parsed filings (annual reports, concall transcripts), IPOs, bulk and block deals, and portfolio and watchlist tracking.",
+  "url": "https://github.com/Tapetide-hq/nse-bse-indian-stock-market-data-mcp",
+  "readme": "https://github.com/Tapetide-hq/nse-bse-indian-stock-market-data-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "TAPETIDE_TOKEN": {
+      "description": "Tapetide personal token from https://tapetide.com/settings/tokens (free plan available). Without it the server starts and lists tools, but tool calls require the token.",
+      "required": true,
+      "secret": true
+    }
+  }
+}
