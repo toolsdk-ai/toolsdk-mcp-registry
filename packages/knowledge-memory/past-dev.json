@@ -1,0 +1,24 @@
+{
+  "type": "mcp-server",
+  "name": "past.dev",
+  "packageName": "@toolsdk-remote/past-dev",
+  "description": "Memory for AI agents. Send timestamped text, ask what is true now, and get the current facts back with their dated sources and what each one replaced.",
+  "url": "https://github.com/pastdotdev/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.past.dev/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["read", "write"]
+      }
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://past.dev/mcp"
+    }
+  ]
+}

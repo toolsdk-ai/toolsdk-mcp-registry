@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "Famulor MCP",
+  "packageName": "@toolsdk-remote/io-famulor-mcp",
+  "description": "Connects AI clients to Famulor voice assistants, communication history, calls, messaging, campaigns, knowledge, automations, tasks, settings, and related workspace tools.",
+  "url": "https://www.famulor.io",
+  "readme": "https://docs.famulor.io/en/api-reference/introduction",
+  "logo": "https://app.famulor.io/famulor-mcp-logo.svg",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.famulor.io/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

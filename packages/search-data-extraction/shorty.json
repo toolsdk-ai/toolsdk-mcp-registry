@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Shorty",
+  "packageName": "@toolsdk-remote/shorty",
+  "description": "Summarize and transcribe videos, audio files, documents and web pages with Shorty. Official hosted server operated by Devino Solutions; sign in with your Shorty account via OAuth.",
+  "url": "https://github.com/DevinoSolutions/mcp-servers/tree/main/shorty",
+  "readme": "https://aishorty.com/docs/connecting-ai-assistants",
+  "runtime": "node",
+  "logo": "https://raw.githubusercontent.com/DevinoSolutions/mcp-servers/main/shorty/assets/logo.png",
+  "author": "Devino Solutions",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://aishorty.com/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

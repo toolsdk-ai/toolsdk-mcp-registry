@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "LigoSocial",
+  "packageName": "@toolsdk-remote/ligosocial",
+  "description": "LigoSocial's hosted LinkedIn MCP server lets Claude draft posts in your voice, check your content calendar, and schedule or publish them on LinkedIn.",
+  "readme": "https://ligosocial.com/integrations/claude",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://ligosocial.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "read",
+          "write"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "NoMac",
+  "packageName": "@toolsdk-remote/nomac",
+  "description": "A real cloud Mac with Xcode for AI agents, billed by the minute: start a macOS VM, run xcodebuild and Simulator commands, read and write files (images come back as images), move files of up to 2 GB, open the Mac's desktop for a human, manage TestFlight and App Store Connect, then stop the Mac. Needs a NoMac account with prepaid credit.",
+  "url": "https://nomac.app",
+  "readme": "https://nomac.app/install",
+  "runtime": "node",
+  "logo": "https://nomac.app/logo.png",
+  "author": "NoMac",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.nomac.app/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

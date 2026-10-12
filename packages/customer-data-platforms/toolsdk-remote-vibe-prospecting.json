@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Vibe Prospecting",
+  "packageName": "@toolsdk-remote/vibe-prospecting",
+  "description": "B2B company and contact intelligence for prospecting workflows. Power your chat with live B2B data to create lead lists, research companies, enrich contacts, personalize outreach, and inspect business signals, technology stacks, events, and website changes.",
+  "url": "https://github.com/explorium-ai/vibeprospecting-mcp",
+  "readme": "https://github.com/explorium-ai/vibeprospecting-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/explorium-ai/vibeprospecting-plugin/main/assets/icon.png",
+  "author": "Explorium",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://vibeprospecting.explorium.ai/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

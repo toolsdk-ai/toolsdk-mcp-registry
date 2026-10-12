@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "OptionsAhoy",
+  "packageName": "@toolsdk-remote/optionsahoy",
+  "description": "Equity compensation planning: multi-year incentive stock option (ISO) exercise schedules with alternative minimum tax (AMT) calculations, non-qualified stock option (NSO) and restricted stock unit (RSU) calculators, RSU lot ordering, sale planning toward a cash goal, qualified small business stock (QSBS) checks, concentration analysis, and hedge pricing with federal, 50-state, and DC tax math.",
+  "url": "https://github.com/AlvisoOculus/optionsahoy-mcp",
+  "readme": "https://github.com/AlvisoOculus/optionsahoy-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://optionsahoy.com/mcp"
+    }
+  ]
+}

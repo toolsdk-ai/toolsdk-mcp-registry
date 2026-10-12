@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "BioFlow",
+  "packageName": "@toolsdk-remote/bioflow",
+  "description": "Edit and publish your link-in-bio page, its links and blocks, and read page analytics and signups from BioFlow. Official hosted server operated by Devino Solutions; sign in with your BioFlow account via OAuth.",
+  "url": "https://github.com/DevinoSolutions/mcp-servers/tree/main/bioflow",
+  "readme": "https://getbioflow.com/mcp",
+  "runtime": "node",
+  "logo": "https://raw.githubusercontent.com/DevinoSolutions/mcp-servers/main/bioflow/assets/logo.png",
+  "author": "Devino Solutions",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.getbioflow.com/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

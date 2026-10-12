@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Base2026 Public MCP",
+  "packageName": "@toolsdk-remote/base2026-public-mcp",
+  "description": "Public, read-only MCP access to Base2026's source-backed expert-video evidence: search reviewed sources, inspect source and creator records, resolve topics and deterministic topic signals, and read the public manifest.",
+  "url": "https://github.com/offflinerpsy/base2026",
+  "readme": "https://github.com/offflinerpsy/base2026#readme",
+  "runtime": "node",
+  "license": "Apache-2.0",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://base2026.dev/api/mcp"
+    }
+  ]
+}

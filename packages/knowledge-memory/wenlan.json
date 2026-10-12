@@ -1,0 +1,11 @@
+{
+  "type": "mcp-server",
+  "name": "Wenlan",
+  "packageName": "wenlan-mcp",
+  "description": "Provides a local-first AI knowledge base and LLM wiki with source-cited pages, session handoffs, graph context, and hybrid retrieval for MCP clients.",
+  "url": "https://github.com/7xuanlu/wenlan",
+  "readme": "https://github.com/7xuanlu/wenlan/tree/main/crates/wenlan-mcp#readme",
+  "runtime": "node",
+  "license": "Apache-2.0",
+  "env": {}
+}

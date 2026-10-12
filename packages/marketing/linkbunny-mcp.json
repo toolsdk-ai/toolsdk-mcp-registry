@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "LinkBunny MCP",
+  "packageName": "@linkbunny/mcp",
+  "packageVersion": "0.1.1",
+  "description": "Provides owner-authorized LinkBunny workflows for contextually appropriate nofollow link opportunities.",
+  "url": "https://www.npmjs.com/package/@linkbunny/mcp",
+  "readme": "https://getlinkbunny.com/docs/agents",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "LINKBUNNY_API_TOKEN": {
+      "description": "LinkBunny API token created in the owner's account.",
+      "required": true,
+      "secret": true
+    }
+  }
+}

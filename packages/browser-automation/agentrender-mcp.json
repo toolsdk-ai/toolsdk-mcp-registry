@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "AgentRender",
+  "packageName": "agentrender-mcp",
+  "description": "Turns a URL into a screenshot (returned as an image), a PDF, or a structured extract (title, main text, links) using the hosted AgentRender render API, so agents do not need to run a headless browser. Includes a get_free_key tool that issues a free API key (150 renders/month, no card).",
+  "url": "https://github.com/corbinvachal48/agentrender-mcp",
+  "readme": "https://github.com/corbinvachal48/agentrender-mcp#readme",
+  "runtime": "python",
+  "license": "MIT",
+  "env": {
+    "AGENTRENDER_API_KEY": {
+      "description": "AgentRender API key (akr_...). Free and instant at https://agentrenderapi.com, or obtain one in-session with the get_free_key tool.",
+      "required": false,
+      "secret": true
+    },
+    "AGENTRENDER_BASE_URL": {
+      "description": "API base URL.",
+      "required": false,
+      "default": "https://api.agentrenderapi.com"
+    }
+  }
+}

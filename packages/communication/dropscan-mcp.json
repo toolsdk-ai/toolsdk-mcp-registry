@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Dropscan",
+  "packageName": "dropscan-mcp",
+  "runtime": "python",
+  "url": "https://github.com/bitterdev/dropscan-mcp",
+  "license": "MIT",
+  "author": "Fabian Bitter",
+  "description": "Gives an agent your physical letterbox through Dropscan, the German scan-to-email postal service: list scanboxes and mailings, read a letter as PDF, OCR text or envelope scan, manage recipients and forwarding addresses, and request scan, forward, shred or return actions. Write actions are double gated, they need the environment flag and an explicit confirmation on every call.",
+  "env": {
+    "DROPSCAN_TOKEN": {
+      "description": "Personal access token for the Dropscan REST API",
+      "required": true,
+      "secret": true
+    },
+    "DROPSCAN_ALLOW_WRITES": {
+      "description": "Set to 1 to unlock the write and action tools, which still require confirm=true on every call",
+      "required": false,
+      "default": "0"
+    }
+  }
+}

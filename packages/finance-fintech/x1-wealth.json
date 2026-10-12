@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "X1 Wealth",
+  "packageName": "@toolsdk-remote/x1-wealth",
+  "description": "X1 is building an AI family office that adapts to your family's financial life. This MCP server lets the AI assistant you already use work from your X1 household record: the trusts, entities, properties, policies, and documents behind them. Answers come back with their source attached, or X1 declines. X1 does not trade or move money.",
+  "url": "https://github.com/x1wealth/x1-mcp",
+  "readme": "https://x1wealth.com/connect/other",
+  "logo": "https://mcp.x1wealth.com/icon.png",
+  "runtime": "node",
+  "license": "Proprietary",
+  "author": "X1 Wealth",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.x1wealth.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

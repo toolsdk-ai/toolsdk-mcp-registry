@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "MAQAMI Travel",
+  "packageName": "@toolsdk-remote/maqami-travel",
+  "description": "Official MAQAMI MCP server for hotel and flight booking: search live rates across 3M+ hotels, get hotel details, then prebook and book. Hosted Streamable HTTP endpoint, no API key.",
+  "url": "https://github.com/negm17111995/mcp-server",
+  "readme": "https://github.com/negm17111995/mcp-server#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "MAQAMI",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.maqami.co/"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Google Search Console by DigestSEO",
+  "packageName": "@toolsdk-remote/digestseo-gsc",
+  "description": "Connects MCP clients to Google Search Console for search analytics, URL inspection, sitemap management, indexing operations, SEO diagnostics, period comparisons, and weekly reporting through the DigestSEO-hosted OAuth endpoint.",
+  "url": "https://github.com/AKzar1el/mcp-gsc",
+  "readme": "https://github.com/AKzar1el/mcp-gsc#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/AKzar1el/mcp-gsc/main/assets/logo-400.png",
+  "author": "DigestSEO",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp-gsc.digestseo.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

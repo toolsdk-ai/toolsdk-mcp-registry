@@ -1,0 +1,24 @@
+{
+  "type": "mcp-server",
+  "name": "Testimonials.ltd",
+  "packageName": "@toolsdk-remote/testimonials-ltd",
+  "description": "Manage your testimonials.ltd workspace from Claude: import reviews from Trustpilot, G2 or Google, approve and tag in bulk, and pin the best to widgets.",
+  "url": "https://testimonials.ltd/integrations/claude",
+  "readme": "https://testimonials.ltd/integrations/claude",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://testimonials.ltd/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "read",
+          "write"
+        ]
+      }
+    }
+  ]
+}

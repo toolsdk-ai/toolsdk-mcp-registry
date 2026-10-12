@@ -2,6 +2,45 @@ import path from "node:path";
 
 export const REMOTE_PACKAGE_PREFIX = "@toolsdk-remote/";
 
+export function isRegistryJsonPath(file) {
+  return typeof file === "string" && file.startsWith("packages/") && file.endsWith(".json");
+}
+
+export function validateRegistryPrScope(changes) {
+  const issues = [];
+  let registryJsonChanges = 0;
+
+  for (const change of changes) {
+    const paths = [change.oldPath, change.path].filter(Boolean);
+    if (paths.some(isRegistryJsonPath)) registryJsonChanges += 1;
+
+    for (const file of paths) {
+      if (!isRegistryJsonPath(file)) {
+        issues.push(
+          issue(
+            "error",
+            "OUT_OF_SCOPE_CHANGE",
+            "Registry JSON pull requests may only change files under packages/ ending in .json",
+            file,
+          ),
+        );
+      }
+    }
+  }
+
+  if (registryJsonChanges === 0) {
+    issues.push(
+      issue(
+        "error",
+        "NO_PACKAGE_JSON_CHANGES",
+        "Pull request does not change any packages/**/*.json files",
+      ),
+    );
+  }
+
+  return issues;
+}
+
 const RUNTIMES = new Set(["node", "python", "java", "go", "docker"]);
 const TOP_LEVEL_FIELDS = new Set([
   "type",
@@ -446,7 +485,7 @@ export function validateKeyChanges(baseEntries, headEntries, changes) {
   }
 
   for (const change of changes) {
-    if (change.status !== "A") continue;
+    if (change.status !== "A" && change.status !== "R" && change.status !== "C") continue;
     const config = headEntries.get(change.path);
     const key = getPackageKey(config);
     const existingPaths = baseGroups.get(key) ?? [];

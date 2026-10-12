@@ -1,9 +1,11 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import {
+  isRegistryJsonPath,
   validateKeyChanges,
   validateNewPackagePath,
   validatePackageConfig,
+  validateRegistryPrScope,
 } from "./registry-validator.mjs";
 
 function localConfig(overrides = {}) {
@@ -26,6 +28,58 @@ function remoteConfig(overrides = {}) {
 test("accepts valid local and remote package configs", () => {
   assert.deepEqual(validatePackageConfig(localConfig(), "local.json"), []);
   assert.deepEqual(validatePackageConfig(remoteConfig(), "remote.json"), []);
+});
+
+test("accepts any number of package JSON changes", () => {
+  const changes = Array.from({ length: 5 }, (_, index) => ({
+    status: "A",
+    path: `packages/developer-tools/example-${index}.json`,
+  }));
+  assert.deepEqual(validateRegistryPrScope(changes), []);
+});
+
+test("requires manual review when package JSON changes include unrelated files", () => {
+  const issues = validateRegistryPrScope([
+    { status: "A", path: "packages/developer-tools/example.json" },
+    { status: "M", path: "README.md" },
+  ]);
+  assert.ok(
+    issues.some((item) => item.code === "OUT_OF_SCOPE_CHANGE" && item.file === "README.md"),
+  );
+});
+
+test("accepts package JSON deletion and rename but checks both rename paths", () => {
+  assert.deepEqual(
+    validateRegistryPrScope([
+      { status: "D", path: "packages/developer-tools/old.json" },
+      {
+        status: "R",
+        oldPath: "packages/developer-tools/first.json",
+        path: "packages/developer-tools/second.json",
+      },
+    ]),
+    [],
+  );
+
+  const issues = validateRegistryPrScope([
+    {
+      status: "R",
+      oldPath: "packages/developer-tools/example.json",
+      path: "docs/example.json",
+    },
+  ]);
+  assert.ok(
+    issues.some((item) => item.code === "OUT_OF_SCOPE_CHANGE" && item.file === "docs/example.json"),
+  );
+});
+
+test("rejects non-registry changes and case-mismatched JSON extensions", () => {
+  assert.equal(isRegistryJsonPath("packages/developer-tools/example.json"), true);
+  assert.equal(isRegistryJsonPath("packages/developer-tools/example.JSON"), false);
+
+  const issues = validateRegistryPrScope([{ status: "M", path: "docs/guide.md" }]);
+  assert.ok(issues.some((item) => item.code === "OUT_OF_SCOPE_CHANGE"));
+  assert.ok(issues.some((item) => item.code === "NO_PACKAGE_JSON_CHANGES"));
 });
 
 test("requires the ToolSDK prefix whenever remotes are present", () => {
@@ -115,6 +169,12 @@ test("rejects moving an existing key into a newly added file", () => {
     { status: "A", path: newPath },
   ]);
   assert.ok(issues.some((item) => item.code === "EXISTING_KEY_REPLACEMENT"));
+
+  const renamedEntries = new Map([[newPath, config]]);
+  const renameIssues = validateKeyChanges(baseEntries, renamedEntries, [
+    { status: "R", oldPath, path: newPath },
+  ]);
+  assert.ok(renameIssues.some((item) => item.code === "EXISTING_KEY_REPLACEMENT"));
 });
 
 test("allows updates to retain their key and warns when it changes", () => {

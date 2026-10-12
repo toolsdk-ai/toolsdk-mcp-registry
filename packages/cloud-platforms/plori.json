@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "plori",
+  "packageName": "@toolsdk-remote/plori",
+  "description": "Create and drive cloud AI agents in persistent environments with durable disks, real CLI tools, and memory. Supports runs, human input, scheduling, connections, and workflows over remote MCP, with OAuth 2.1 or API-key authentication.",
+  "url": "https://github.com/plori-ai/plori",
+  "readme": "https://plori.ai/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "plori",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.plori.ai/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

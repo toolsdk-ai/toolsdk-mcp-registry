@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/fluentedi-tools",
+  "name": "FluentEDI",
+  "description": "45 deterministic tools for work a language model cannot do reliably by reasoning, free and with no API key. Retail EDI is the deepest coverage: parse X12 850 purchase orders, 856 ASNs, 810 invoices, 855 and 997; generate an 856 with correct HL parent pointers and a fixed-width 106-character ISA; validate envelopes and hierarchy; decode a 997 acknowledgment into plain language; compute GS1 mod-10 check digits. Alongside that: current time and timezone arithmetic, delivery-window containment, cron schedules, exact maths, JSON repair with line and column error localisation, JSONPath, RFC 8785 canonical JSON with a CIDv1, Ed25519/ECDSA/RSA signature verification, secret and PII scanning, link-liveness checking, endpoint assertion, and text position conversion across byte, UTF-16, code point and grapheme indexes. Every tool is read-only and idempotent, so it is safe to auto-run.",
+  "url": "https://fluentedi.com",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://fluentedi.com/mcp"
+    }
+  ]
+}

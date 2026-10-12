@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "call4me",
+  "packageName": "@toolsdk-remote/call4me",
+  "description": "Places real phone calls to businesses for the user: book appointments and dinners, cancel subscriptions, change flights, or ask questions. Works through phone menus, can patch the user into the live call, and returns the transcript and outcome. Prepaid per-minute credits.",
+  "url": "https://github.com/skeptrunedev/call4me",
+  "readme": "https://github.com/skeptrunedev/call4me#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Nick Khami",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://call4.me/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

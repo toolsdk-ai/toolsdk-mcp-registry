@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "AdMapix MCP",
+  "packageName": "admapix-mcp",
+  "packageVersion": "1.0.0",
+  "description": "Searches competitor ad creatives with keyword, country, date, creative type, and industry filters.",
+  "url": "https://github.com/fly0pants/admapix",
+  "readme": "https://github.com/fly0pants/admapix#readme",
+  "runtime": "python",
+  "env": {
+    "ADMAPIX_API_KEY": {
+      "description": "API key for AdMapix data access.",
+      "required": true,
+      "secret": true
+    }
+  }
+}

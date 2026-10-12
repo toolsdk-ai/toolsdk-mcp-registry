@@ -1,0 +1,10 @@
+{
+  "type": "mcp-server",
+  "packageName": "@geek-fun/data-studio-mcp",
+  "description": "Unified MCP server giving AI coding agents direct access to SQL (70+ databases via SqlKit: PostgreSQL, MySQL, SQL Server, SQLite, ClickHouse, Snowflake, BigQuery) and NoSQL (Elasticsearch, MongoDB, DynamoDB via DocKit) — local-first, credentials never leave the machine.",
+  "url": "https://github.com/geek-fun/data-studio-agent",
+  "runtime": "node",
+  "license": "apache-2.0",
+  "env": {},
+  "name": "Data Studio Agent"
+}

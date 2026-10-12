@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Vocenya",
+  "packageName": "@toolsdk-remote/vocenya",
+  "description": "Hosted MCP server for a Vocenya AI receptionist account: list calls, leads, bookings and website chats, create leads, queue outbound AI calls with Do Not Call, consent and calling-hours checks, and add Do Not Call entries. OAuth sign-in; an account owner approves the account, live or test data, and scopes.",
+  "url": "https://github.com/gadyamedia/vocenya-mcp",
+  "readme": "https://vocenya.com/docs/mcp",
+  "runtime": "node",
+  "license": "Proprietary",
+  "author": "GH Business Solutions",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://vocenya.com/mcp/platform",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp:use"]
+      }
+    }
+  ]
+}

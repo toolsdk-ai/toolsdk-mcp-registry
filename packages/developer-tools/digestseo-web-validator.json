@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Web Validator by DigestSEO",
+  "packageName": "@toolsdk-remote/digestseo-web-validator",
+  "description": "Audits authorized public webpages and supplied markup with HTML validation, technical SEO and accessibility checks, JSON-LD syntax validation, broken-link checks, and bounded sitemap-first site audits over MCP.",
+  "url": "https://github.com/AKzar1el/mcp-web-validator",
+  "readme": "https://github.com/AKzar1el/mcp-web-validator#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/AKzar1el/mcp-web-validator/main/icon.jpg",
+  "author": "DigestSEO",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://web-validator-mcp.digestseo.com/mcp"
+    }
+  ]
+}

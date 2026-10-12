@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Canli Fundamentals",
+  "packageName": "canli-fundamentals-mcp",
+  "description": "SEC XBRL company fundamentals point in time: the first-reported value, the latest value and the value as known on any date, plus every period whose value changed after its first report, each value with the filing behind it. Read-only.",
+  "url": "https://github.com/arhancanli/canli-fundamentals-mcp",
+  "readme": "https://github.com/arhancanli/canli-fundamentals-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "CANLI_CACHE_DIR": {
+      "description": "Where downloaded SEC snapshots and company records are cached (default ~/.cache/canli-fundamentals); an empty value keeps nothing on disk.",
+      "required": false
+    },
+    "CANLI_API_BASE": {
+      "description": "The site the company records and snapshots are read from.",
+      "required": false,
+      "default": "https://canlicapital.com"
+    }
+  }
+}

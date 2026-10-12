@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Enpass",
+  "packageName": "enpass-mcp",
+  "runtime": "node",
+  "binArgs": [
+    "serve"
+  ],
+  "url": "https://github.com/bitterdev/enpass-mcp",
+  "license": "MIT",
+  "author": "Fabian Bitter",
+  "description": "Reads local Enpass SQLCipher vaults: list vaults and entries, read an entry or its password, generate TOTP codes and export attachments. Read-only by default; creating and deleting entries is opt-in via ENPASS_MCP_ALLOW_WRITES. The master password is read from the OS keychain and never passes through the model.",
+  "env": {
+    "ENPASS_MCP_ALLOW_WRITES": {
+      "description": "Set to 1 to enable the writing tools (create_item, delete_item, sync_pull). Unset means read-only.",
+      "required": false
+    }
+  }
+}

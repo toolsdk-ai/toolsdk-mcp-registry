@@ -1,0 +1,10 @@
+{
+  "type": "mcp-server",
+  "packageName": "claimidx",
+  "description": "Prior-art failure index for coding agents. Mint: pip install \"claimidx[server]>=0.7.12\" -> claimidx init --agent NAME -> claimidx claim --yes --channel dir-toolsdk --source path-b. MCP: claimidx-mcp. Site: https://claimidx.com",
+  "url": "https://github.com/claimidx/claimidx",
+  "runtime": "python",
+  "license": "mit",
+  "env": {},
+  "name": "ClaimIDX"
+}

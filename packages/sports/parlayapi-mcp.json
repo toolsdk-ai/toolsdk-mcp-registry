@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "ParlayAPI MCP",
+  "packageName": "parlayapi-mcp",
+  "description": "Sports betting odds, player props, and prediction-market data from 45+ sportsbooks and sources across 90+ sports, with verdict, parlay grading, best-bets, arbitrage, +EV, consensus, and middles tools. 9 of the 22 tools run keyless, including a signup tool that returns a free-tier API key.",
+  "url": "https://github.com/JacobiusMakes/parlay-api-mcp",
+  "readme": "https://github.com/JacobiusMakes/parlay-api-mcp#readme",
+  "runtime": "python",
+  "license": "MIT",
+  "env": {
+    "PARLAYAPI_KEY": {
+      "description": "ParlayAPI key. Optional: the server starts keyless with live-preview and signup tools, and the parlayapi_signup tool can create a free-tier key (1,000 credits/month, no card) at runtime.",
+      "required": false,
+      "secret": true
+    }
+  }
+}

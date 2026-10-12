@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "DialMCP",
+  "packageName": "@toolsdk-remote/dialmcp",
+  "description": "Let AI agents place real phone calls from your SMS-verified number, with transcripts, recordings, and structured outcomes. US & Canada.",
+  "url": "https://github.com/SkillfulAgents/dialmcp-connector",
+  "readme": "https://github.com/SkillfulAgents/dialmcp-connector#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "SkillfulAgents",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.dialmcp.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
