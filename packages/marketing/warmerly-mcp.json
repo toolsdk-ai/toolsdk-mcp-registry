@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Warmerly",
+  "packageName": "@toolsdk-remote/warmerly-mcp",
+  "description": "Official hosted server for Warmerly, an email warmup and cold outreach platform: mailbox health and warmup, SPF/DKIM/DMARC checks, inbox placement tests, lead search, email verification, draft campaigns and sequences, and inbox reply triage. Campaign sending is started by the person in the Warmerly dashboard, never by the assistant.",
+  "url": "https://github.com/WarmerlyApp/mcp",
+  "readme": "https://docs.warmerly.com/ai",
+  "runtime": "node",
+  "author": "Warmerly",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.warmerly.com/api/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["warmerly"]
+      }
+    }
+  ]
+}
