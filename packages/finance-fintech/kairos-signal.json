@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Kairos Signal",
+  "packageName": "@toolsdk-remote/kairos-signal",
+  "description": "First-party DePIN supply telemetry API. Query network data with source, as_of, and verification links. Discover datasets and retrieve data through a hosted Streamable HTTP MCP endpoint. Public API-key registration.",
+  "url": "https://github.com/OV3RK177/kairos-mcp-server",
+  "readme": "https://github.com/OV3RK177/kairos-mcp-server#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://kairossignal.com/mcp"
+    }
+  ]
+}

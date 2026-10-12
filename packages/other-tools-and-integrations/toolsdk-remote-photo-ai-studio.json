@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "Photo AI Studio",
+  "packageName": "@toolsdk-remote/photo-ai-studio",
+  "description": "Generate AI photos from a selfie across 150+ themes, apply 19 image edits, and create video. Four discovery tools (themes, pricing, service overview, API capabilities) work with no account; the eight account tools require OAuth.",
+  "readme": "https://www.photoaistudio.com/mcp",
+  "runtime": "node",
+  "author": "Photo AI Studio",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.photoaistudio.com/api/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["photos:read", "photos:write"]
+      }
+    }
+  ]
+}

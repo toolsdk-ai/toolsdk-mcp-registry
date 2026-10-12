@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Murkuz",
+  "packageName": "@toolsdk-remote/murkuz",
+  "description": "Murkuz connects Claude and ChatGPT to your own Search Console, GA4 and Bing Webmaster data across every site, with quick wins, decay and cannibalization.",
+  "readme": "https://murkuz.com/mcp-tools",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://murkuz.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "mcp"
+        ]
+      }
+    }
+  ]
+}

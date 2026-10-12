@@ -1,0 +1,19 @@
+{
+  "description": "Search structured recipes, adjust servings, convert units, find ingredient substitutions, match pantry ingredients, and build shopping lists. Sign in with a Tiny Plates account using OAuth.",
+  "env": {},
+  "logo": "https://www.tinyplates.dev/apple-touch-icon.png",
+  "name": "Tiny Plates",
+  "packageName": "@toolsdk-remote/tiny-plates",
+  "readme": "https://www.tinyplates.dev/docs/mcp",
+  "remotes": [
+    {
+      "auth": {
+        "type": "oauth2"
+      },
+      "type": "streamable-http",
+      "url": "https://api.tinyplates.dev/mcp"
+    }
+  ],
+  "runtime": "node",
+  "type": "mcp-server"
+}

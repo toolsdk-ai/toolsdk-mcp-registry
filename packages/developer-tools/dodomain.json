@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "DoDomain",
+  "packageName": "@toolsdk-remote/dodomain",
+  "description": "Connect customers' custom domains to your product: guided DNS setup, verification and certificates, managed from DoDomain. Official hosted server operated by Devino Solutions; sign in with your DoDomain account via OAuth.",
+  "url": "https://github.com/DevinoSolutions/mcp-servers/tree/main/dodomain",
+  "readme": "https://dodomain.io/docs/connecting-ai-assistants",
+  "runtime": "node",
+  "logo": "https://raw.githubusercontent.com/DevinoSolutions/mcp-servers/main/dodomain/assets/logo.png",
+  "author": "Devino Solutions",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.dodomain.io/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

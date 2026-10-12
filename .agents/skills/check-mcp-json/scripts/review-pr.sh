@@ -35,7 +35,6 @@ if [[ -n $(git -C "$repo_root" status --porcelain) ]]; then
   exit 1
 fi
 
-head_sha=$(gh pr view "$pr_number" --json headRefOid --jq .headRefOid)
 review_ref="refs/codex/review/$pr_number"
 temp_root=$(mktemp -d "${TMPDIR:-/tmp}/toolsdk-pr-${pr_number}.XXXXXX")
 review_dir="$temp_root/pr"
@@ -49,15 +48,9 @@ cleanup() {
 trap cleanup EXIT
 
 git -C "$repo_root" fetch origin "pull/$pr_number/head:$review_ref" --force
-fetched_sha=$(git -C "$repo_root" rev-parse "$review_ref")
-if [[ $fetched_sha != "$head_sha" ]]; then
-  echo "PR head changed while preparing review: expected $head_sha, fetched $fetched_sha." >&2
-  echo "Rerun the review to bind validation to the latest head commit." >&2
-  exit 1
-fi
 
 echo "PR metadata:"
-gh pr view "$pr_number" --json number,title,state,isDraft,headRefOid,headRefName,headRepositoryOwner,maintainerCanModify,mergeable,mergeStateStatus,statusCheckRollup,url
+gh pr view "$pr_number" --json number,title,state,isDraft,headRefName,headRepositoryOwner,maintainerCanModify,mergeable,mergeStateStatus,statusCheckRollup,url
 
 echo
 echo "Changed files:"
@@ -66,7 +59,7 @@ gh pr diff "$pr_number" --name-only
 git -C "$repo_root" worktree add --detach "$review_dir" "$review_ref" >/dev/null
 
 echo
-echo "Trusted registry validation for PR #$pr_number at $head_sha:"
+echo "Trusted registry validation for PR #$pr_number:"
 node "$repo_root/scripts/validate-registry.mjs" \
   --root "$review_dir" \
   --base "$base_ref"

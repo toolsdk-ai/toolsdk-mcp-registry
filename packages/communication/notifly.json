@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Notifly",
+  "packageName": "@toolsdk-remote/notifly",
+  "description": "Manage notification workflows, subscribers and topics, and trigger delivery across email, SMS, push, chat and in-app channels with Notifly. Official hosted server operated by Devino Solutions; sign in with your Notifly account via OAuth.",
+  "url": "https://github.com/DevinoSolutions/mcp-servers/tree/main/notifly",
+  "readme": "https://notifly.io/developers",
+  "runtime": "node",
+  "logo": "https://raw.githubusercontent.com/DevinoSolutions/mcp-servers/main/notifly/assets/logo.png",
+  "author": "Devino Solutions",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.notifly.io/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

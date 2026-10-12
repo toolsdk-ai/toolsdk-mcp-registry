@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Ethora MCP Server (hosted)",
+  "packageName": "@toolsdk-remote/ethora",
+  "description": "Hosted Ethora MCP server: create and manage chat apps, rooms and users, send and search messages, deploy AI agents with a RAG knowledge base, and generate a website chat widget. Sign in with an Ethora account through OAuth.",
+  "url": "https://github.com/dappros/ethora-mcp-server",
+  "readme": "https://github.com/dappros/ethora-mcp-server#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.chat.ethora.com/mcp/oauth",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["read", "write", "admin"]
+      }
+    }
+  ]
+}

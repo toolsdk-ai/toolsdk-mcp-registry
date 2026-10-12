@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "SV Number",
+  "packageName": "sv-number-mcp",
+  "description": "Phone numbers for AI agents: order a private number for one service in one country, wait for the SMS verification code (returned already parsed), request another code on the same number, cancel for a refund, and compute TOTP codes locally (RFC 6238).",
+  "url": "https://github.com/sv-number/mcp-server",
+  "readme": "https://github.com/sv-number/mcp-server#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "SVN_API_KEY": {
+      "description": "API key from the sms-verification-number.com profile page.",
+      "required": true,
+      "secret": true
+    }
+  }
+}

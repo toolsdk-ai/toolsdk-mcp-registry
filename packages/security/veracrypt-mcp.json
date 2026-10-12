@@ -1,0 +1,24 @@
+{
+  "type": "mcp-server",
+  "name": "VeraCrypt",
+  "packageName": "veracrypt-mcp",
+  "runtime": "python",
+  "url": "https://github.com/bitterdev/veracrypt-mcp",
+  "license": "MIT",
+  "author": "Fabian Bitter",
+  "description": "Mounts and unmounts VeraCrypt containers so the assistant can work on the decrypted files with its normal file tools. The password is piped over stdin instead of the command line and can come from the OS keyring.",
+  "env": {
+    "VERACRYPT_MCP_CONTAINER": {
+      "description": "Absolute path of the default container, so mounting works without arguments",
+      "required": false
+    },
+    "VERACRYPT_MCP_KEYCHAIN_ACCOUNT": {
+      "description": "Keyring account name the volume password is stored under",
+      "required": false
+    },
+    "VERACRYPT_MCP_MOUNT_POINT": {
+      "description": "Default mount directory",
+      "required": false
+    }
+  }
+}

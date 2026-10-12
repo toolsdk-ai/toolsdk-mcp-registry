@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Keelen",
+  "packageName": "@toolsdk-remote/keelen",
+  "description": "Hosted MCP for steering GitHub coding through requests and roadmaps. Tokenless signup and email verification only through this registry configuration; workspace tools require a bearer key, which ToolSDK's remote transport does not inject.",
+  "url": "https://github.com/jamie7893/keelen-mcp",
+  "readme": "https://github.com/jamie7893/keelen-mcp#readme",
+  "runtime": "python",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://keelen.ai/mcp"
+    }
+  ]
+}

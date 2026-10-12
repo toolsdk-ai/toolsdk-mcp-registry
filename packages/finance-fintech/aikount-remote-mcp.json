@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Aikount (Remote)",
+  "packageName": "@toolsdk-remote/aikount-mcp",
+  "description": "Hosted endpoint of the official Aikount MCP server (agent-first accounting for Spanish freelancers and SMEs), with the same tools as the aikount-mcp package: invoices, OCR expense ingestion, bank reconciliation, PGC ledger and trial balance, and Modelo 303 VAT returns. Authenticates with OAuth 2.1 (discovery and dynamic client registration).",
+  "url": "https://github.com/mutonby/aikount-mcp",
+  "readme": "https://github.com/mutonby/aikount-mcp#readme",
+  "runtime": "python",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.aikount.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp"]
+      }
+    }
+  ]
+}

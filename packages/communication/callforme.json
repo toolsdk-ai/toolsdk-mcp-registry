@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "CallForMe",
+  "packageName": "@toolsdk-remote/callforme",
+  "description": "Hosted MCP server at https://callforme.tel/mcp that places phone calls to US and Canadian businesses for the agent: works phone menus, waits on hold, asks the agent mid-call when the business needs something, and returns a transcript plus structured answers. OAuth 2.1 (DCR + PKCE). $1 per answered call; free demo lines.",
+  "url": "https://github.com/callforme-tel/callforme",
+  "readme": "https://callforme.tel/docs/mcp?ref=toolsdk",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://callforme.tel/icon-512.png",
+  "author": "Great Work LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://callforme.tel/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

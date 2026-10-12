@@ -4,13 +4,6 @@ env:
   GITHUB_BUILD_NUMBER: ${{ github.run_number }}
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'Dockerfile'
-      - '**/*.ts'
-      - '.github/**'
   workflow_dispatch:
 
 # Using concurrency to cancel previous runs

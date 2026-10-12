@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "VidWords YouTube",
+  "packageName": "@toolsdk-remote/vidwords-youtube",
+  "description": "Searches YouTube transcripts across a whole channel, reads captions, and analyses a video's frames, returning answers with citable timestamps.",
+  "url": "https://github.com/haljishi/vidwords-mcp",
+  "readme": "https://github.com/haljishi/vidwords-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://vidwords.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp"]
+      }
+    }
+  ]
+}

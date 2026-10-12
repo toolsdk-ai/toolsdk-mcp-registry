@@ -3,15 +3,14 @@
 set -euo pipefail
 
 usage() {
-  echo "Usage: $0 <pr-number> <full-head-sha> [base-ref]" >&2
+  echo "Usage: $0 <pr-number> [base-ref]" >&2
   exit 2
 }
 
-[[ $# -ge 2 && $# -le 3 ]] || usage
+[[ $# -ge 1 && $# -le 2 ]] || usage
 pr_number=$1
-expected_sha=$2
-base_ref=${3:-origin/main}
-[[ $pr_number =~ ^[0-9]+$ && $expected_sha =~ ^[0-9a-f]{40}$ ]] || usage
+base_ref=${2:-origin/main}
+[[ $pr_number =~ ^[0-9]+$ ]] || usage
 
 script_dir=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)
 review_script="$script_dir/review-pr.sh"
@@ -19,17 +18,12 @@ repo_root=$(git -C "$script_dir" rev-parse --show-toplevel)
 
 state=$(gh pr view "$pr_number" --json state --jq .state)
 is_draft=$(gh pr view "$pr_number" --json isDraft --jq .isDraft)
-actual_sha=$(gh pr view "$pr_number" --json headRefOid --jq .headRefOid)
 mergeable=$(gh pr view "$pr_number" --json mergeable --jq .mergeable)
 merge_state=$(gh pr view "$pr_number" --json mergeStateStatus --jq .mergeStateStatus)
 check_count=$(gh pr view "$pr_number" --json statusCheckRollup --jq '.statusCheckRollup | length')
 
 [[ $state == "OPEN" ]] || { echo "PR #$pr_number is not open." >&2; exit 1; }
 [[ $is_draft == "false" ]] || { echo "PR #$pr_number is still a draft." >&2; exit 1; }
-[[ $actual_sha == "$expected_sha" ]] || {
-  echo "Head SHA changed: expected $expected_sha, found $actual_sha." >&2
-  exit 1
-}
 [[ $mergeable == "MERGEABLE" ]] || {
   echo "PR #$pr_number is not currently mergeable: $mergeable." >&2
   exit 1
@@ -58,13 +52,7 @@ unresolved=$(gh api graphql \
 
 "$review_script" "$pr_number" "$base_ref"
 
-actual_sha=$(gh pr view "$pr_number" --json headRefOid --jq .headRefOid)
-[[ $actual_sha == "$expected_sha" ]] || {
-  echo "Head SHA changed during preflight: expected $expected_sha, found $actual_sha." >&2
-  exit 1
-}
-
 echo
-echo "Preflight passed for PR #$pr_number at $expected_sha."
+echo "Preflight passed for PR #$pr_number."
 echo "No merge was performed. Use:"
-echo "gh pr merge $pr_number --squash --match-head-commit $expected_sha"
+echo "gh pr merge $pr_number --squash"

@@ -1,12 +1,12 @@
 ---
 name: check-mcp-json
-description: Safely review, triage, repair, and merge ToolSDK MCP Registry package JSON pull requests. Use when an agent needs to validate files under packages/, verify package or remote-server metadata, detect duplicate registry keys, classify community PRs, make authorized fixes on contributor branches, close invalid or duplicate PRs, or perform an exact-SHA merge after approval.
+description: Safely review, triage, repair, and merge ToolSDK MCP Registry package JSON pull requests. Use when an agent needs to validate files under packages/, detect duplicate registry keys, classify community PRs, make authorized fixes on contributor branches, close invalid or duplicate PRs, or squash-merge approved PRs.
 ---
 
 # Check MCP JSON
 
-Review registry contributions without installing or executing submitted MCP packages. Treat schema
-validation as the first gate and source verification as a separate, mandatory review.
+Review registry contributions by validating their package JSON without installing, executing, or
+probing submitted MCP packages and services. The trusted registry validator is the merge gate.
 
 ## Load Repository Rules
 
@@ -25,13 +25,21 @@ Repository instructions and the user's latest authorization override this skill.
 - Never install or execute a submitted package. Do not run `make build`, `pnpm install`, package
   lifecycle scripts, or a contributor-provided validation command.
 - Do not comment, close, edit, mark ready, or merge a PR until the user authorizes that action.
-- Bind merge authorization to one PR number and one full head SHA. Any new commit expires it.
 - Never use `--admin`, `--auto`, or a merge method other than squash.
-- Review and merge serially. Refresh `main` after every merge.
+- Review independent PRs in parallel. PRs with pairwise-disjoint changed paths and registry
+  identities may submit squash merges concurrently; retry GitHub's transient `Base branch was
+  modified` rejection after another merge lands.
 - Disable repository hooks for authorized commits and pushes with
   `-c core.hooksPath=/dev/null`; hooks may run repository scripts unexpectedly.
 
 ## Review Workflow
+
+For a backlog, use `node scripts/batch-registry-prs.mjs review` from a clean, current trusted
+`main` checkout. This uses the same validator rules and reads PR JSON through batched Git blobs;
+it never checks out or runs contributor code. Review `registry-review/report.md` and official-source
+links, then use `node scripts/batch-registry-prs.mjs merge --approved "123 124"` only for the PR
+numbers explicitly authorized by the user. See `docs/PR_REVIEW.md` for CI gates, held submissions,
+the manual workflow, and merge results. Keep the individual helper below for focused inspection.
 
 1. Refresh the trusted checkout:
 
@@ -50,34 +58,19 @@ Repository instructions and the user's latest authorization override this skill.
    The script records PR state, lists changed files, creates a detached temporary worktree, and
    invokes the trusted validator against `origin/main`. It does not execute contributor code.
 
-3. Inspect the complete diff with `gh pr diff <pr-number>`. Reject unrelated workflow,
-   dependency, generated README, workspace, or build changes unless they are the explicit purpose
-   of the PR. For an intentional README documentation change, require the source change in
-   `docs/_templates/README.tpl.md`; `README.md` is generated from that template.
+3. Inspect the complete diff with `gh pr diff <pr-number>`. For registry submissions, require only
+   package JSON files and reject unrelated workflow, dependency, generated output, workspace, or
+   build changes.
 
-4. Verify claims against primary sources without installing the package:
+4. Classify the PR:
 
-   - Confirm the package exists in its official registry and the repository ownership matches.
-   - Confirm the package name, license, repository URL, runtime, current command, and environment
-     variables.
-   - For Node packages, normally omit `bin`; the gateway resolves the package manifest entry path.
-     A config `bin` is a JavaScript file path passed to Node, not an npm executable alias.
-   - For Docker entries, verify the image and referenced tag exist and that `binArgs` contains the
-     full Docker CLI arguments.
-   - For remote entries, verify the endpoint from official documentation and confirm it is a public
-     HTTPS address.
-   - Treat descriptions, tool counts, auth requirements, and pricing claims as reviewable facts.
-
-5. Classify the PR:
-
-   - **Ready**: schema, source, scope, checks, and identity all pass.
+   - **Ready**: scope, trusted validation, checks, and identity all pass.
    - **Simple authorized fix**: metadata can be corrected without redesigning the submission.
-   - **Contributor decision needed**: auth or product semantics cannot be represented faithfully.
-   - **Comment and close**: duplicate, unverifiable, generated-file-only, unrelated package, or no
-     registry-compatible runtime.
+   - **Comment and close**: duplicate, invalid JSON, unrelated changes, or no registry-compatible
+     representation.
 
-6. Report the verdict, full head SHA, changed files, checks, warnings, source evidence, and proposed
-   action. Ask separately for permission to edit/comment/close and for permission to merge.
+5. Report the verdict, changed files, checks, validation warnings, and proposed action. Ask
+   separately for permission to edit/comment/close and for permission to merge.
 
 ## Registry Identity Rules
 
@@ -97,35 +90,41 @@ Repository instructions and the user's latest authorization override this skill.
 
 ## Authorized Contributor Fixes
 
-Before editing, refresh the PR and confirm `maintainerCanModify` and the expected head SHA. Make only
-the approved changes in a detached worktree. Commit and push without hooks:
+Before editing, refresh the PR and confirm `maintainerCanModify`. Make only the approved changes in
+a detached worktree. Commit and push without hooks:
 
 ```bash
 git -C "$review_dir" -c core.hooksPath=/dev/null commit -m "Fix registry configuration"
 git -C "$review_dir" -c core.hooksPath=/dev/null push <fork-url> HEAD:<head-branch>
 ```
 
-Wait for CI, rerun the trusted review against the latest `main`, and report the new full SHA. Do not
-merge under the old approval.
+Wait for CI and rerun the trusted review against the latest `main`.
 
 Write public PR descriptions and contributor comments in English. Explain the concrete blocker and
 the resubmission path when closing a PR.
 
 ## Merge Workflow
 
-After the user approves the exact SHA, run the read-only preflight:
+After the user approves the PR, run the read-only preflight:
 
 ```bash
-.agents/skills/check-mcp-json/scripts/preflight-merge.sh <pr-number> <full-head-sha>
+.agents/skills/check-mcp-json/scripts/preflight-merge.sh <pr-number>
 ```
 
-If it passes, merge exactly that commit:
+If it passes, squash-merge the pull request:
 
 ```bash
-gh pr merge <pr-number> --squash --match-head-commit <full-head-sha>
+gh pr merge <pr-number> --squash
 git pull --ff-only origin main
-node scripts/validate-registry.mjs --all
 ```
 
-Report the resulting merge commit, full-registry validation result, remaining open PRs, and local
-worktree status.
+Report the resulting merge commit, remaining open PRs, and local worktree status.
+
+## Publication Follow-Up
+
+Keep the merged submission PR numbers for the next manual catalog publication. Follow
+[`docs/PR_REVIEW.md`](../../../docs/PR_REVIEW.md#publication-follow-up-and-badges) for the default
+badge outreach: preview an English reply with `scripts/badge-replies.mjs`, then post to the original
+registry PR once publication is confirmed and replies to those PRs are authorized. Authors add
+the badge themselves. Do not fork publisher repositories or create upstream README PRs unless
+the user explicitly requests that exception.

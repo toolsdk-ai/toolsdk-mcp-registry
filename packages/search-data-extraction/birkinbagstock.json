@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "BirkinBagStock",
+  "packageName": "@toolsdk-remote/birkinbagstock",
+  "description": "Independent Hermès resale index: inventory, market prices, auction calendar and results.",
+  "url": "https://birkinbagstock.com",
+  "readme": "https://birkinbagstock.com/llms.txt",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://birkinbagstock.com/mcp"
+    }
+  ]
+}

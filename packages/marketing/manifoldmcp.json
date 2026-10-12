@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Manifold MCP",
+  "packageName": "@toolsdk-remote/manifoldmcp",
+  "description": "An MCP for marketers that gives agents tools for SEO, AEO, socials and ads data: keywords, backlinks, SERPs, Google Search Console, AI answer visibility, ad libraries, social platforms and company lookups, with a generous free tier.",
+  "url": "https://www.manifoldmcp.com",
+  "readme": "https://www.manifoldmcp.com/docs",
+  "runtime": "node",
+  "logo": "https://www.manifoldmcp.com/icon.png",
+  "author": "Manifold",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.manifoldmcp.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Aperture Wallet Knowledge",
+  "packageName": "@toolsdk-remote/aperture-wallet-knowledge",
+  "description": "Read-only, citation-ready knowledge for Aperture Wallet product facts, self-custody security, supported mainnets, releases, app screens, and Journal articles. The 12 tools cannot connect to wallets, access secrets, sign, broadcast, or change state.",
+  "url": "https://github.com/devdasx/aperture",
+  "readme": "https://github.com/devdasx/aperture/blob/main/llms-install.md",
+  "logo": "https://aperturex.io/assets/favicon-32.png",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Aperture",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://aperturex.io/mcp/"
+    }
+  ]
+}

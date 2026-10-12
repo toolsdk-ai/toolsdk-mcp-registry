@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Robot Speed",
+  "packageName": "@toolsdk-remote/robot-speed",
+  "description": "SEO tools for AI agents — audits, Core Web Vitals, keywords, AI visibility, traffic, backlinks, and CMS publishing. 12 free tools without auth; paid tools via OAuth 2.1.",
+  "url": "https://github.com/robot-speed/mcp",
+  "readme": "https://github.com/robot-speed/mcp#readme",
+  "runtime": "node",
+  "license": "SEE LICENSE IN REPO",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.robot-speed.com/api/mcp"
+    }
+  ]
+}

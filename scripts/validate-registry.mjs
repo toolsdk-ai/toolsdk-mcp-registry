@@ -6,9 +6,11 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import categories from "../config/categories.mjs";
 import {
+  isRegistryJsonPath,
   validateKeyChanges,
   validateNewPackagePath,
   validatePackageConfig,
+  validateRegistryPrScope,
 } from "./lib/registry-validator.mjs";
 
 const defaultRootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -140,8 +142,6 @@ function parseChanges(base, head) {
     "--find-renames",
     mergeBase,
     head,
-    "--",
-    "packages",
   ]);
   const tokens = output.split("\0");
   const changes = [];
@@ -149,7 +149,7 @@ function parseChanges(base, head) {
     const statusToken = tokens[index++];
     const status = statusToken[0];
     if (status === "R" || status === "C") {
-      changes.push({ status: "R", oldPath: tokens[index++], path: tokens[index++] });
+      changes.push({ status, oldPath: tokens[index++], path: tokens[index++] });
     } else {
       changes.push({ status, path: tokens[index++] });
     }
@@ -208,8 +208,15 @@ function main() {
   } else {
     const comparison = resolveComparison(options.base);
     const { changes } = parseChanges(comparison.base, comparison.head);
-    for (const change of changes) {
-      if (change.path.endsWith(".json") && change.status !== "D") changedJsonPaths.add(change.path);
+    issues.push(...validateRegistryPrScope(changes));
+
+    const jsonChanges = changes.filter((change) => {
+      const paths = [change.oldPath, change.path].filter(Boolean);
+      return paths.length > 0 && paths.every(isRegistryJsonPath);
+    });
+
+    for (const change of jsonChanges) {
+      if (change.status !== "D") changedJsonPaths.add(change.path);
     }
 
     for (const file of changedJsonPaths) {
@@ -227,15 +234,12 @@ function main() {
     }
 
     const baseEntries = loadRefEntries(comparison.base, issues);
-    const proposedEntries = applyChanges(baseEntries, headEntries, changes);
-    const jsonChanges = changes.filter(
-      (change) => change.path.endsWith(".json") || change.oldPath?.endsWith(".json"),
-    );
+    const proposedEntries = applyChanges(baseEntries, headEntries, jsonChanges);
     issues.push(...validateKeyChanges(baseEntries, proposedEntries, jsonChanges));
 
     const categoryKeys = new Set(categories.map((category) => category.key));
     for (const change of jsonChanges) {
-      if (change.status === "A") {
+      if (change.status === "A" || change.status === "R" || change.status === "C") {
         issues.push(...validateNewPackagePath(change.path, categoryKeys));
       }
     }

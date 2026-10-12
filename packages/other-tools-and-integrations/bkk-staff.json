@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "BKK Staff",
+  "packageName": "@toolsdk-remote/bkk-staff",
+  "description": "Automated resume screening for small businesses: post jobs, rank applicants, email candidates.",
+  "url": "https://www.bkkstaff.com",
+  "readme": "https://app.bkkstaff.com/mcp",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.bkkstaff.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp"]
+      }
+    }
+  ]
+}

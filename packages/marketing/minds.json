@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Minds",
+  "packageName": "@toolsdk-remote/minds-mcp",
+  "description": "Runs synthetic market research: create AI audiences grounded in public sources, interview them one-to-one or in panels, and run studies with executable methods such as MaxDiff, conjoint and NPS, then read the analysis.",
+  "url": "https://github.com/minds-ai-co/minds-mcp",
+  "readme": "https://getminds.ai/mcp/setup",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://getminds.ai/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["sparks:read", "sparks:write", "sparks:chat", "flows:read", "flows:write"]
+      }
+    }
+  ]
+}

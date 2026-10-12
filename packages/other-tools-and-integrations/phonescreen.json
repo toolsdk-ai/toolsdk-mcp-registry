@@ -1,0 +1,26 @@
+{
+  "type": "mcp-server",
+  "name": "PhoneScreen",
+  "packageName": "@toolsdk-remote/io-github-gillinghammer-phonescreen",
+  "description": "Score resumes, screen candidates by phone, review interview results, and check references from AI assistants.",
+  "url": "https://phonescreen.ai/mcp",
+  "readme": "https://phonescreen.ai/mcp",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.phonescreen.ai/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "roles:read",
+          "roles:write",
+          "candidates:read",
+          "candidates:write",
+          "outreach"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "APITube News",
+  "packageName": "@toolsdk-remote/apitube-news",
+  "description": "Hosted news search over the APITube News API: 500,000+ sources, 177 countries, 59 languages, with sentiment scores and named entities on every article. Two read-only tools: search_news, covering most of the News API filter set, and suggest, which resolves a name into entity, category, topic and industry IDs. Tool calls need an APITube API key in an Authorization: Bearer header and a paid plan; unauthenticated clients still get initialize and tools/list.",
+  "url": "https://github.com/apitube/news-api-mcp",
+  "readme": "https://github.com/apitube/news-api-mcp#readme",
+  "logo": "https://apitube.io/favicons/android-icon-192x192.png",
+  "author": "APITube",
+  "license": "MIT",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apitube.io/"
+    }
+  ]
+}

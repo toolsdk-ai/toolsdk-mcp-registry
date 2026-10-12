@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "name": "Parallel Search MCP",
+  "packageName": "@toolsdk-remote/parallel-search-mcp",
+  "description": "Provides real-time web search and clean URL content extraction through a free anonymous endpoint, with optional bearer authentication for higher limits.",
+  "url": "https://docs.parallel.ai/integrations/mcp/search-mcp",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://search.parallel.ai/mcp"
+    }
+  ]
+}
