@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Fincept MCP",
+  "packageName": "@toolsdk-remote/fincept-mcp",
+  "description": "Hosted MCP server for Fincept Terminal: quotes, candles, option chains, fundamentals, economic data, SEC filings, news, backtests, paper trading and 15 quant engines (statistics, forecasting, volatility, portfolio optimisation, derivatives pricing). OAuth 2.1 browser sign-in; requires the paid Exclusive Pro plan.",
+  "url": "https://github.com/Fincept-Corporation/fincept-mcp-docs",
+  "readme": "https://docs.fincept.in",
+  "runtime": "node",
+  "logo": "https://raw.githubusercontent.com/Fincept-Corporation/fincept-mcp-docs/main/assets/logo.png",
+  "author": "Fincept Corporation",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://enterprise.fincept.in/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

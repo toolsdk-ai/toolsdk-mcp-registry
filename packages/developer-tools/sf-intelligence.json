@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Salesforce Intelligence",
+  "packageName": "sf-intelligence",
+  "description": "Ask your AI what breaks before you change Salesforce. Offline, read-only answers cited from an org's real metadata: field deletion safety, what runs on save, who can see a record, dependency impact. Serves a local org-kb vault built by the sfi CLI. Not affiliated with Salesforce.",
+  "url": "https://github.com/PranavNagrecha/Salesforce-Intelligence",
+  "readme": "https://github.com/PranavNagrecha/Salesforce-Intelligence#readme",
+  "runtime": "node",
+  "license": "MIT with Commons Clause",
+  "logo": "https://sfi.auditforce.cloud/assets/img/icon-512.png",
+  "author": "PranavNagrecha",
+  "binArgs": ["mcp"],
+  "env": {
+    "SFI_VAULT": {
+      "description": "Absolute path to the org-kb vault built by `sfi init` and `sfi refresh` in your Salesforce DX project. Without it the server starts in setup mode and lists one tool (sfi.setup_status).",
+      "required": true
+    }
+  }
+}
