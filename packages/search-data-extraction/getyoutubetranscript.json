@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "GetYouTubeTranscript",
+  "packageName": "@toolsdk-remote/getyoutubetranscript",
+  "description": "Hosted GetYouTubeTranscript MCP (OAuth) at https://getyoutubetranscript.com/api/mcp. Get the full transcript of a YouTube video, search YouTube and inside a channel, list a channel's or playlist's videos, check a channel's latest uploads, and read your credit balance. Seven read-only tools.",
+  "url": "https://github.com/tubeagentkit/youtube-mcp",
+  "readme": "https://getyoutubetranscript.com/youtube-mcp-server",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "GetYouTubeTranscript",
+  "logo": "https://getyoutubetranscript.com/images/logo.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://getyoutubetranscript.com/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
