@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Chain.Love MCP",
+  "packageName": "@toolsdk-remote/chain-love-mcp",
+  "description": "Hosted MCP gateway backed by the Chain.Love Web3 registry. Lists supported blockchain networks, searches infrastructure services such as RPC and API providers, explorers, oracles, bridges and wallets, and proxies registry-listed downstream MCP servers through one endpoint. No authentication for the gateway; credentialed downstream servers need x-chainlove-cred-* headers.",
+  "readme": "https://github.com/Chain-Love/chain.love-mcp#readme",
+  "url": "https://github.com/Chain-Love/chain.love-mcp",
+  "runtime": "node",
+  "author": "Chain.Love",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.chain.love/mcp"
+    }
+  ]
+}
