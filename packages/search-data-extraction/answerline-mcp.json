@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "AnswerLine",
+  "packageName": "@toolsdk-remote/answerline",
+  "description": "Hosted MCP server returning what ChatGPT, Gemini and Google (Search, AI Overviews, AI Mode, News) answer for a keyword or question, as structured JSON with cited sources and country targeting. initialize and tools/list are open; tool calls require an X-Api-Key header (free tier at answerline.dev).",
+  "url": "https://answerline.dev",
+  "readme": "https://answerline.dev/docs/mcp/",
+  "logo": "https://answerline.dev/favicon.svg",
+  "author": "Quantive Bt.",
+  "license": "proprietary",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.answerline.dev/mcp"
+    }
+  ]
+}
