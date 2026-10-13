@@ -2,7 +2,7 @@
   "type": "mcp-server",
   "name": "AI Applyd",
   "packageName": "@toolsdk-remote/aiapplyd-mcp",
-  "description": "Auto-Apply That Ends on an Interview. Search jobs matched to your resume, tailor the resume and cover letter for one role, prepare interview answers, and submit the application on the employer's own hiring system across 15 ATS platforms, keeping the confirmation the employer returns.",
+  "description": "Auto-Apply That Ends on an Interview. Search jobs matched to your resume, tailor the resume and cover letter for one role, prepare interview answers, and submit the application on the employer's own hiring system across 34 hiring systems, keeping the confirmation the employer returns.",
   "url": "https://github.com/aiapplyd/aiapplyd-mcp",
   "readme": "https://github.com/aiapplyd/aiapplyd-mcp#readme",
   "runtime": "node",
