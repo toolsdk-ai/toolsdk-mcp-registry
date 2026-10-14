@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "SanctionsKit Developer MCP",
+  "packageName": "@toolsdk-remote/sanctionskit-developer",
+  "description": "Public SanctionsKit documentation, API schema lookup and request-structure validation for sanctions screening integrations. These tools do not submit screening. Authenticated synthetic sandbox account tools are separate and are not exercised by this no-auth configuration; production screening uses the REST API.",
+  "url": "https://www.sanctionskit.com/resources/mcp",
+  "readme": "https://www.sanctionskit.com/resources/mcp",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.sanctionskit.com/mcp"
+    }
+  ]
+}
