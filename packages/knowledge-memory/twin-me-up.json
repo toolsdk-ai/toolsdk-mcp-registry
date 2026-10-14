@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Twin Me Up",
+  "packageName": "twin-me-up",
+  "description": "A personal work twin for AI agents: briefs any agent on the guidance a person has confirmed, checks consequential actions against explicit, expiring grants (anything else returns ask), and turns corrections into lessons only the person can confirm. Local SQLite store, no telemetry.",
+  "url": "https://github.com/GitDakky/twin-me-up",
+  "readme": "https://github.com/GitDakky/twin-me-up#readme",
+  "runtime": "python",
+  "license": "Apache-2.0",
+  "env": {
+    "TWINMEUP_HOME": {
+      "description": "Directory holding the twin's store and settings. Defaults to ~/.twinmeup.",
+      "required": false
+    }
+  }
+}
