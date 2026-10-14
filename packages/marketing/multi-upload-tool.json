@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Multi Upload Tool",
+  "packageName": "@toolsdk-remote/multi-upload-tool",
+  "description": "Official remote MCP server for Multi Upload Tool: schedule and publish videos and photos to TikTok, YouTube Shorts, Instagram, Facebook, LinkedIn, Pinterest, Bluesky, Threads and X; list accounts, create, validate, reschedule, cancel and retry posts, and read post status, analytics, upload limits and hashtag history.",
+  "url": "https://multi-upload-tool.com/integrations/mcp",
+  "readme": "https://docs.multi-upload-tool.com/mcp",
+  "runtime": "node",
+  "author": "Multi Upload Tool",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.multi-upload-tool.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp:read", "mcp:write"]
+      }
+    }
+  ]
+}
