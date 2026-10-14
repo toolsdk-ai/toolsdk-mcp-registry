@@ -1,1 +1,18 @@
-{"type":"mcp-server","name":"Surface","packageName":"@toolsdk-remote/surface-preflight","description":"URL preflight for agents. The preflight_url tool unwraps short links (t.co, bit.ly, lnkd.in, youtu.be), follows redirects, refuses private hosts and unusual ports, and returns the final URL with next: fetch or skip, so an agent can decide before it fetches or opens a link. It never returns the page body. No API key needed; the first 1,000,000 requests each month are free.","url":"https://github.com/Surface-ops/surface","readme":"https://github.com/Surface-ops/surface#readme","runtime":"node","license":"MIT","author":"Surface-ops","env":{},"remotes":[{"type":"streamable-http","url":"https://nova-otter-delta-cloud.grok.me/mcp"}]}
+{
+  "type": "mcp-server",
+  "name": "Surface",
+  "packageName": "@toolsdk-remote/surface-preflight",
+  "description": "URL preflight for agents. The preflight_url tool unwraps short links (t.co, bit.ly, lnkd.in, youtu.be), follows redirects, refuses private hosts and unusual ports, and returns the final URL with next: fetch or skip, so an agent can decide before it fetches or opens a link. It never returns the page body. No API key needed; the first 1,000,000 requests each month are free.",
+  "url": "https://github.com/Surface-ops/surface",
+  "readme": "https://github.com/Surface-ops/surface#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Surface-ops",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://nova-otter-delta-cloud.grok.me/mcp"
+    }
+  ]
+}
