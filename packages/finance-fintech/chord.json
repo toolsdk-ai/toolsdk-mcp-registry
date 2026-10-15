@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Chord",
+  "packageName": "@toolsdk-remote/chord",
+  "description": "Hosted MCP server for Chord, a non-custodial DEX aggregator and on-chain data index. Best-route DEX swap quotes and unsigned swap transactions on 7 EVM chains (Base, Monad, BNB Chain, Avalanche, Arbitrum, Robinhood Chain, Arc), plus market data: token boards, search, candles, trades, wallet PnL, smart money, holders and LP pools (Solana data is read-only). 17 tools; 16 need no key (about 60 requests a minute), only chord_ask needs a Chord API key. Swap tools return unsigned transactions for the user's wallet to sign. Published in the Official MCP Registry as io.github.getchordlabs/chord.",
+  "url": "https://github.com/getchordlabs/chord",
+  "readme": "https://getchord.xyz/docs/agents/mcp/",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Chord",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.getchord.xyz/v1/mcp"
+    }
+  ]
+}
