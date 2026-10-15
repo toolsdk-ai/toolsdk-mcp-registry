@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "MoltNode by Chord",
+  "packageName": "@toolsdk-remote/moltnode",
+  "description": "Hosted MCP server by Chord, no account or API key. Read 31 blockchains over JSON-RPC (Ethereum, Base, Arbitrum, Solana, Monad, BNB Chain, Avalanche, Sui and more) and get best-route DEX swap quotes with the unsigned transaction, approval and simulation via Chord. Tools: list_chains, rpc_call, get_block_number, get_balance, chord_find_token, chord_swap_quote, send_raw_transaction. Non-custodial: tools return unsigned transactions for the user's wallet to sign, and send_raw_transaction only broadcasts an already-signed transaction. Published in the Official MCP Registry as io.github.tuantqse90/moltnode.",
+  "url": "https://github.com/tuantqse90/moltnode-mcp",
+  "readme": "https://moltnode.ag/agents",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Chord",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://moltnode.ag/mcp"
+    }
+  ]
+}
