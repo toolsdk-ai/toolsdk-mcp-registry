@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Tenmomo",
+  "packageName": "@toolsdk-remote/tenmomo",
+  "description": "Search US stores for cashback rates and coupon codes, and get a tracked activation link.",
+  "url": "https://tenmomo.com/mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://tenmomo.com/mcp"
+    }
+  ]
+}
