@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "CurlShot",
+  "packageName": "@toolsdk-remote/curlshot",
+  "description": "Official hosted server for CurlShot, a website screenshot API. take_screenshot renders a URL, HTML or Markdown in a real browser and returns a PNG, JPEG, WebP, PDF or scrolling video (full page, device presets, dark mode, cookie banners hidden); list_devices lists the device presets. list_devices works without credentials; take_screenshot needs a CurlShot API key sent as a Bearer token (free plan: 100 screenshots a month), which this entry does not configure.",
+  "url": "https://github.com/SergiuPogor/curlshot-mcp",
+  "readme": "https://curlshot.com/docs/guides/ai-agents",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "CurlShot",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://curlshot.com/api/mcp"
+    }
+  ]
+}
