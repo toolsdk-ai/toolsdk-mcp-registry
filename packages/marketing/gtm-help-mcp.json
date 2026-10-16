@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "gtm.help",
+  "packageName": "@toolsdk-remote/gtm-help-mcp",
+  "description": "Official gtm.help server: ranked go-to-market plays, buyer-conversation drafts and free site analysis for your business. Uses OAuth.",
+  "url": "https://github.com/consultilycom-lang/gtm-help-mcp",
+  "readme": "https://github.com/consultilycom-lang/gtm-help-mcp#readme",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gtm.help/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
