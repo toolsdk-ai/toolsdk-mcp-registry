@@ -2,10 +2,10 @@
   "type": "mcp-server",
   "name": "Tenmomo",
   "packageName": "@toolsdk-remote/tenmomo",
-  "description": "Search US stores for cashback rates and coupon codes, and get a tracked activation link.",
-  "url": "https://tenmomo.com/mcp",
+  "description": "Search US stores for cashback rates and coupon codes without credentials. Generating personalized cashback activation links requires a Tenmomo API key, which this entry does not configure.",
+  "url": "https://tenmomo.com",
+  "readme": "https://tenmomo.com/llms.txt",
   "runtime": "node",
-  "license": "unknown",
   "env": {},
   "remotes": [
     {
