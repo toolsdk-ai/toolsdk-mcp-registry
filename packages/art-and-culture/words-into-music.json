@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "Words into Music",
+  "packageName": "@toolsdk-remote/words-into-music",
+  "description": "Create songs from prompts or lyrics, check credits, and access your private song library through OAuth. Generation uses existing Words into Music account credits and limits.",
+  "url": "https://wordsintomusic.com/mcp/",
+  "readme": "https://wordsintomusic.com/blog/mcp-setup-guide/",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.wordsintomusic.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["account:read", "songs:create", "songs:read"]
+      }
+    }
+  ]
+}
