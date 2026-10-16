@@ -2,7 +2,7 @@
   "type": "mcp-server",
   "name": "Tanod",
   "packageName": "@toolsdk-remote/tanod-mcp",
-  "description": "Hosted pay-per-call MCP server with 170 tools for AI agents: contract and agent-package security scans, address risk checks, on-chain reads, DNS and TLS lookups, web search, page-to-Markdown, PDF and image tools. Free daily allowance per IP, then USDC payments via x402 on Base, Polygon and Solana. No API key.",
+  "description": "Hosted pay-per-call MCP server for AI agents: contract and agent-package security scans, address risk checks, on-chain reads, DNS and TLS lookups, web search, page-to-Markdown, PDF, OCR, Office and image tools. Free daily allowance per IP, then USDC payments via x402 on Base, Polygon, Solana, BNB Chain or Arbitrum. No API key.",
   "url": "https://github.com/tanod-labs/tanod-mcp",
   "readme": "https://github.com/tanod-labs/tanod-mcp#readme",
   "runtime": "node",
