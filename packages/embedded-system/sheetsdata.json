@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "SheetsData",
+  "packageName": "@toolsdk-remote/sheetsdata",
+  "description": "Electronic component datasheets for AI agents: pinouts, specs, package info and design checks from manufacturer PDFs. Searches parts across JLCPCB, Mouser and DigiKey, finds parts by spec, checks a BOM, reads or searches any datasheet section, compares parts, suggests alternatives and checks operating conditions against a part's ratings. Hosted service; tool calls need a SheetsData account (OAuth). Paid per call with a free start: part search is free and sign-up includes $5 of credit.",
+  "url": "https://github.com/octoco-ltd/sheetsdata-mcp",
+  "readme": "https://github.com/octoco-ltd/sheetsdata-mcp#readme",
+  "author": "Octoco Ltd",
+  "logo": "https://raw.githubusercontent.com/octoco-ltd/sheetsdata-mcp/main/logo.png",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.sheetsdata.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp:tools"]
+      }
+    }
+  ]
+}
