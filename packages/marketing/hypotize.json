@@ -3,7 +3,7 @@
   "name": "Hypotize",
   "packageName": "@toolsdk-remote/hypotize",
   "description": "Growth experiment framework for AI agents through the hosted Hypotize MCP server: check what the team already tested, write hypothesis-first ideas, score them with ICE, PIE or RICE and close each test with a measured result and a learning. OAuth and a Hypotize account (free plan available) are required. The linked repository holds the public plugin and skills.",
-  "url": "https://github.com/viluca94/hypotize-plugin",
+  "url": "https://github.com/hypotizeai/hypotize-plugin",
   "readme": "https://hypotize.ai/mcp",
   "runtime": "node",
   "logo": "https://api.hypotize.ai/icon.png",
