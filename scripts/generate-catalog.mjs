@@ -147,12 +147,26 @@ function escapeHtml(value) {
   );
 }
 
+function documentationUrl(value) {
+  if (typeof value !== "string") return null;
+  try {
+    const url = new URL(value);
+    return url.protocol === "http:" || url.protocol === "https:" ? url.href : null;
+  } catch {
+    return null;
+  }
+}
+
 function renderSite(packages, configs) {
   const rows = Object.entries(packages)
     .map(([key, info]) => {
       const config = configs.get(key);
       const file = info.path.split("/").map(encodeURIComponent).join("/");
-      return `<li id="${escapeHtml(key)}"><a href="packages/${file}">${escapeHtml(key)}</a><span>${escapeHtml(info.category)} &middot; ${escapeHtml(config.runtime)} &middot; ${info.validated === true ? "Verified" : "Registered"}</span><p>${escapeHtml(config.description)}</p></li>`;
+      const readme = documentationUrl(config.readme);
+      const documentation = readme
+        ? `<a href="${escapeHtml(readme)}" target="_blank" rel="noopener noreferrer">Documentation</a>`
+        : "";
+      return `<li id="${escapeHtml(key)}"><a href="packages/${file}">${escapeHtml(key)}</a><span>${escapeHtml(info.category)} &middot; ${escapeHtml(config.runtime)} &middot; ${info.validated === true ? "Verified" : "Registered"}</span><p>${escapeHtml(config.description)}</p>${documentation}</li>`;
     })
     .join("\n");
   return `<!doctype html>

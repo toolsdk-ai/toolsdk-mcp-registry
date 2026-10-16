@@ -89,6 +89,85 @@ test("indexes local and authenticated remote entries offline while retaining val
   }
 });
 
+test("catalog documentation links allow only HTTP(S) URLs and escape HTML attributes", () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "toolsdk-catalog-docs-"));
+  const source = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+  const cases = [
+    {
+      key: "https-docs",
+      readme: "https://docs.example.com/help",
+      href: "https://docs.example.com/help",
+    },
+    {
+      key: "http-docs",
+      readme: "http://docs.example.com/help",
+      href: "http://docs.example.com/help",
+    },
+    {
+      key: "uppercase",
+      readme: "HTTPS://DOCS.EXAMPLE.COM/help",
+      href: "https://docs.example.com/help",
+    },
+    {
+      key: "hostile-characters",
+      readme: "https://docs.example.com/guide?label=\"'><img src=x onerror=alert(1)>&a=1&b=2",
+      href: "https://docs.example.com/guide?label=%22%27%3E%3Cimg%20src=x%20onerror=alert(1)%3E&amp;a=1&amp;b=2",
+    },
+    {
+      key: "entity-injection",
+      readme: "https://docs.example.com/guide?label=&quot; onmouseover=alert(1)&a=1",
+      href: "https://docs.example.com/guide?label=&amp;quot;%20onmouseover=alert(1)&amp;a=1",
+    },
+    { key: "javascript", readme: "javascript:alert(1)" },
+    { key: "obfuscated-javascript", readme: "java\nscript:alert(1)" },
+    { key: "data", readme: "data:text/html,<svg/onload=alert(1)>" },
+    { key: "file", readme: "file:///etc/passwd" },
+    { key: "ftp", readme: "ftp://docs.example.com/help" },
+    { key: "relative", readme: "/help" },
+    { key: "protocol-relative", readme: "//docs.example.com/help" },
+    { key: "malformed", readme: "https://" },
+    { key: "empty", readme: "" },
+    { key: "absent" },
+  ];
+  try {
+    for (const dir of ["indexes", "packages/developer-tools", "docs", "assets"])
+      fs.mkdirSync(path.join(root, dir), { recursive: true });
+    fs.writeFileSync(path.join(root, "indexes/packages-list.json"), "{}");
+    fs.cpSync(path.join(source, "docs/_templates"), path.join(root, "docs/_templates"), {
+      recursive: true,
+    });
+    fs.copyFileSync(path.join(source, "assets/logo.png"), path.join(root, "assets/logo.png"));
+    for (const { key, readme } of cases)
+      fs.writeFileSync(
+        path.join(root, `packages/developer-tools/${key}.json`),
+        JSON.stringify({ type: "mcp-server", runtime: "node", packageName: key, readme }),
+      );
+    generateCatalog(root);
+    const site = fs.readFileSync(path.join(root, "catalog-site/index.html"), "utf8");
+    const rows = new Map(
+      [...site.matchAll(/<li id="([^"]+)">([\s\S]*?)<\/li>/g)].map((m) => [m[1], m[2]]),
+    );
+    assert.equal(rows.size, cases.length);
+    for (const { key, href } of cases) {
+      const row = rows.get(key);
+      assert.ok(row.startsWith(`<a href="packages/developer-tools/${key}.json">${key}</a>`));
+      if (href)
+        assert.ok(
+          row.includes(
+            `<a href="${href}" target="_blank" rel="noopener noreferrer">Documentation</a>`,
+          ),
+          key,
+        );
+      else assert.ok(!row.includes(">Documentation</a>"), key);
+    }
+    assert.equal((site.match(/>Documentation<\/a>/g) ?? []).length, 5);
+    assert.ok(!site.includes("<img src=x"));
+    assert.ok(!site.includes('" onmouseover='));
+  } finally {
+    fs.rmSync(root, { recursive: true, force: true });
+  }
+});
+
 test("badge replies verify published JSON over HTTP and only post on explicit request", async () => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), "toolsdk-badge-http-"));
   const key = "@toolsdk-remote/example";
