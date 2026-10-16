@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "Prends",
+  "packageName": "@toolsdk-remote/prends-mcp",
+  "description": "Prends: find podcasts that take guests, find podcast guests, set up a profile and send connection requests (remote, OAuth).",
+  "readme": "https://prends.app/agents",
+  "runtime": "node",
+  "author": "Smarter Futures LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://prends.app/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["profile:read", "profile:write", "members:read", "requests:read", "requests:write"]
+      }
+    }
+  ]
+}
