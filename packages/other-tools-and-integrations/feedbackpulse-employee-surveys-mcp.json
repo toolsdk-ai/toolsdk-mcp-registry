@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "FeedbackPulse Employee Surveys",
+  "packageName": "@toolsdk-remote/feedbackpulse-employee-surveys",
+  "description": "Design employee surveys with an AI assistant: preview a survey, prepare it and save it to FeedbackPulse. Public endpoint, no sign-in required.",
+  "url": "https://github.com/FeedbackPulseApp/employee-surveys-mcp",
+  "readme": "https://github.com/FeedbackPulseApp/employee-surveys-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.feedbackpulse.com/mcp/employee-surveys"
+    }
+  ]
+}
