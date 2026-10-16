@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Domain Mail Check",
+  "packageName": "@toolsdk-remote/openkrill-domain-mail-check",
+  "description": "Checks a domain's SPF, DKIM and DMARC with a grade and fixes, its MX, TXT, CAA and NS records, whether Gmail and Outlook bulk-sender rules would accept its mail, and its registrar and expiry. Read-only. Remote Streamable HTTP, no auth.",
+  "url": "https://github.com/nguyenhieuec/domain-mail-check-mcp",
+  "readme": "https://github.com/nguyenhieuec/domain-mail-check-mcp#readme",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mailcheck.openkrill.app/mcp"
+    }
+  ]
+}
