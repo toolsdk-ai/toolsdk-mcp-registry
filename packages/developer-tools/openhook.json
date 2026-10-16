@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Openhook",
+  "packageName": "@toolsdk-remote/openhook",
+  "description": "Create webhook inboxes and inspect callbacks. Connection is unauthenticated; inbox operations require private tokens passed as tool arguments.",
+  "url": "https://github.com/openhook-dev/openhook-inbox",
+  "readme": "https://github.com/openhook-dev/openhook-inbox#readme",
+  "runtime": "python",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://openhook.dev/mcp"
+    }
+  ]
+}
