@@ -6,7 +6,6 @@
   "url": "https://github.com/SergiuPogor/curlshot-mcp",
   "readme": "https://curlshot.com/docs/guides/ai-agents",
   "runtime": "node",
-  "license": "MIT",
   "author": "CurlShot",
   "env": {},
   "remotes": [
