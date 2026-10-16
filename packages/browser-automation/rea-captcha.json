@@ -2,7 +2,7 @@
   "type": "mcp-server",
   "name": "rea-captcha",
   "packageName": "rea-captcha",
-  "packageVersion": "0.2.4",
+  "packageVersion": "0.3.1",
   "description": "Local browser-verification MCP server. Starts in stateless mode for evidence analysis and tool discovery; browser actions require a caller-owned Playwright/CDP session and a configured launch instead of --stateless. Provider automation is limited to official test keys on authorized origins.",
   "url": "https://github.com/masakaai/rea-captcha",
   "readme": "https://github.com/masakaai/rea-captcha#readme",
