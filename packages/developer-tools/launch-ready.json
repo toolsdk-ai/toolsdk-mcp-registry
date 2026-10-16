@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Launch Ready",
+  "packageName": "@toolsdk-remote/launch-ready",
+  "description": "Pre-launch website QA: deterministic rule-based scans, readiness score, and blockers for agents. Tools: scan_site, get_report, list_blockers, list_findings, get_finding, list_projects, and create_share_link (Agency plan only). Every request requires a Launch Ready workspace API key (lr_live_…) sent as Authorization: Bearer, created in Settings → API keys and available on every plan, including the $0 Free plan; this entry does not configure that key.",
+  "url": "https://uselaunchready.com",
+  "readme": "https://uselaunchready.com/docs/api",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://uselaunchready.com/api/mcp"
+    }
+  ]
+}
