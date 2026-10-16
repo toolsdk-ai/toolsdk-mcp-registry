@@ -14,9 +14,7 @@
       "url": "https://fillfolio.com/api/mcp",
       "auth": {
         "type": "oauth2",
-        "scopes": [
-          "mcp:read"
-        ]
+        "scopes": ["mcp:read"]
       }
     }
   ]
