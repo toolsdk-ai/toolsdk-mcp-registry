@@ -13,11 +13,7 @@
       "url": "https://mcp.wordsintomusic.com/mcp",
       "auth": {
         "type": "oauth2",
-        "scopes": [
-          "account:read",
-          "songs:create",
-          "songs:read"
-        ]
+        "scopes": ["account:read", "songs:create", "songs:read"]
       }
     }
   ]
