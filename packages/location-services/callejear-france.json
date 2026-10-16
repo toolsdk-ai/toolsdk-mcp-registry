@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "name": "Callejear France",
+  "packageName": "@toolsdk-remote/callejear-france",
+  "description": "Search French communes and street records, retrieve IRIS-level BPE amenity counts and commune-level GASPAR codes, and compare 2–5 streets with five read-only tools. Snapshot: 2,192,808 street records across 101 departments. Missing values and unavailable source dates remain explicit; these are not walking-radius counts or parcel-level risk assessments. Free without an account or API key; 30 tool calls/minute and 100/day per origin, with 1,000/day globally.",
+  "readme": "https://callejear.fr/mcp/",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://callejear.fr/api/mcp"
+    }
+  ]
+}
