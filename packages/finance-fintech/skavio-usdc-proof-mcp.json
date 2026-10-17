@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Skavio USDC Payment Verification & Proof MCP",
+  "packageName": "@toolsdk-remote/skavio-usdc-proof-mcp",
+  "description": "Hosted Streamable HTTP MCP with 18 discoverable tools for verifying native Circle USDC transfers on seven chains, exact recipient and amount matching, blockchain payment evidence PDF, and DNS/TLS auditing. Public discovery; priced calls require a wallet client capable of x402 v2 payment in native USDC on Base. Verification starts at 0.02 USDC; match 0.03, evidence PDF 0.05, DNS/TLS audit 0.05. Evidence PDFs are not tax invoices.",
+  "url": "https://github.com/skavio-eu/skavio-payment-proof-api",
+  "readme": "https://www.skavio.eu/x402/docs/",
+  "runtime": "node",
+  "author": "Skavio LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.skavio.eu/mcp"
+    }
+  ]
+}
