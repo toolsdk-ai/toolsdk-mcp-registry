@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "AutoShort (hosted)",
+  "packageName": "@toolsdk-remote/autoshort",
+  "description": "Hosted AutoShort MCP: draft, revise and render faceless AI short videos from a topic, product page or image, then fetch the MP4. Sign in with OAuth; video generation spends AutoShort credits.",
+  "url": "https://autoshort.org/en/developers",
+  "readme": "https://autoshort.org/en/developers",
+  "runtime": "node",
+  "logo": "https://autoshort.org/logo.png",
+  "author": "AutoShort",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://autoshort.org/api/mcp",
+      "auth": { "type": "oauth2", "scopes": ["mcp"] }
+    }
+  ]
+}
