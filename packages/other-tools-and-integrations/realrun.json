@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "RealRun",
+  "packageName": "@toolsdk-remote/realrun",
+  "description": "Read-only lookups over RealRun's published, independent tests of AI models on everyday tasks (inbox triage, meeting scheduling, receipts, finance). Tools: list_tasks, get_scores, recommend_model and get_warnings return model scores, a recommended model with alternatives, and safety warnings. Free, no auth.",
+  "url": "https://github.com/baseledgerip/realrun-mcp",
+  "readme": "https://github.com/baseledgerip/realrun-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Base Ledger IP LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://realrun.baseledgerip.com/mcp"
+    }
+  ]
+}
