@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "CompatLab",
+  "packageName": "@toolsdk-remote/compatlab",
+  "description": "Read-only access to recorded npm installation and module-loading evidence for exact package versions on pinned Node.js, Bun and Deno runtimes. check_package and get_report return dated public reports or explicit missing evidence. No account, API key or scan submission; loading success does not establish application correctness.",
+  "url": "https://github.com/siddiksawani/CompatLab",
+  "readme": "https://compatlab.me/api#mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "siddiksawani",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://compatlab.me/mcp"
+    }
+  ]
+}
