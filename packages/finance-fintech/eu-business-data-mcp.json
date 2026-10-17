@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "EU Business Data MCP",
+  "packageName": "@toolsdk-remote/eu-business-data-mcp",
+  "description": "EU VAT validation (VIES), EORI validation (EC EOS), official company-registry lookup, EU/UN/OFAC/UK sanctions screening and one-call KYB. Keyless remote server, 20 free calls/day per IP.",
+  "url": "https://github.com/zifengw/eu-business-data-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.wsystem.dev/mcp/"
+    }
+  ]
+}
