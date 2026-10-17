@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "GovContractScout MCP (remote)",
+  "packageName": "@toolsdk-remote/govcontractscout-mcp",
+  "description": "Connects to the hosted GovContractScout MCP endpoint for US state, local and federal government contracts: search, contract detail, NAICS lookup, match scoring and win likelihood.",
+  "url": "https://github.com/govcontractscout/govcontractscout-mcp",
+  "readme": "https://github.com/govcontractscout/govcontractscout-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://scout.govbidportals.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
