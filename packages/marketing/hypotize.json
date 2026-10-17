@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Hypotize",
+  "packageName": "@toolsdk-remote/hypotize",
+  "description": "Growth OS for AI agents through the hosted Hypotize MCP server: idea backlog, experiment pipeline and learning library shared by the team and the agent. The agent checks what the team already tested, writes hypothesis-first ideas, scores them with ICE, PIE or RICE and closes each test with a measured result and a learning. OAuth and a Hypotize account (free plan available) are required. The linked repository holds the public plugin and skills.",
+  "url": "https://github.com/hypotizeai/hypotize-plugin",
+  "readme": "https://hypotize.ai/mcp",
+  "runtime": "node",
+  "logo": "https://api.hypotize.ai/icon.png",
+  "author": "Hypotize",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.hypotize.ai/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["hypotize:read", "hypotize:write", "offline_access"]
+      }
+    }
+  ]
+}
