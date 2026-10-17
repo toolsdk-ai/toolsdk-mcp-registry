@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "BacklinkGenie",
+  "packageName": "@toolsdk-remote/backlinkgenie",
+  "description": "Link-building outreach: list and approve pitches to editors, draft and send replies after you confirm, import post URLs to pitch, and check whether won backlinks are still live and followed. Requires a BacklinkGenie account on a plan with MCP access.",
+  "url": "https://github.com/nikunjness/backlinkgenie-mcp",
+  "readme": "https://github.com/nikunjness/backlinkgenie-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.backlinkgenie.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
