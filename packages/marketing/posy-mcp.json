@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Posy",
+  "packageName": "@toolsdk-remote/posy-mcp",
+  "description": "Build and edit a link-in-bio page on Posy: create or import a page, add, update, move and remove link tiles, set the theme and profile, and publish.",
+  "url": "https://github.com/Himanshu-Sangshetti/posy",
+  "readme": "https://docs.posy.page/agents/connect",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://posy.page/brand/posy-app-512.png",
+  "author": "Himanshu-Sangshetti",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://posy.page/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
