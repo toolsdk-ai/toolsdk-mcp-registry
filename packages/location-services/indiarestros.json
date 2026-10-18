@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "IndiaRestros",
+  "packageName": "@toolsdk-remote/indiarestros",
+  "description": "Search restaurants, cafes, dhabas and delivery kitchens across India: dish search across menus with rupee prices, restaurant details (address, hours with open_now in IST, phones, cost for two, photos), places by state, city and area, and correction reports. Tools: search_restaurants, search_dishes, get_restaurant, get_menu, list_places, get_place, report_correction, about_dataset. Free reads with no key (120 requests a minute per IP).",
+  "url": "https://github.com/rchtjn2-gif/indiarestros-mcp-server",
+  "readme": "https://indiarestros.com/for-agents",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "IndiaRestros",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://indiarestros.com/mcp"
+    }
+  ]
+}
