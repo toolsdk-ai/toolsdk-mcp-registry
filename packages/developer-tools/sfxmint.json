@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "SFXMint",
+  "packageName": "@toolsdk-remote/sfxmint",
+  "description": "Search CC0 sound effects, retrieve event-based sound sets and download URLs without authentication. This entry exposes the free library subset; optional generation requires bearer credentials and a paid pass or plan, not supported by this registry configuration.",
+  "url": "https://github.com/flreey/sfxmint-mcp",
+  "readme": "https://sfxmint.com/api/docs",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://sfxmint.com/mcp"
+    }
+  ]
+}
