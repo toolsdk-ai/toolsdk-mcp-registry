@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Fairquery Agent Trust & Data Safety",
+  "packageName": "@fairquery/agent-trust-mcp",
+  "description": "PII and secret redaction/restore, email syntax and deliverability checks, sanctions screening (OFAC, EU, UK, UN) and OSV.dev vulnerability lookups for AI agents. Free tools run locally or query public sources without an account; optional paid tools run the matching Apify Actors on the user's own Apify account.",
+  "url": "https://github.com/fairquery/fairquery-agent-trust-mcp",
+  "readme": "https://github.com/fairquery/fairquery-agent-trust-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Fairquery",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Optional. Your own Apify API token, only needed for the paid tools (billed to your Apify account). Free tools work without it.",
+      "required": false,
+      "secret": true
+    }
+  }
+}
