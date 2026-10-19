@@ -58281,10 +58281,6 @@
     "path": "other-tools-and-integrations/cueframe.json",
     "category": "other-tools-and-integrations"
   },
-  "@toolsdk-remote/datacircle": {
-    "path": "marketing/datacircle.json",
-    "category": "marketing"
-  },
   "@toolsdk-remote/debriefing": {
     "path": "marketing/debriefing.json",
     "category": "marketing"
