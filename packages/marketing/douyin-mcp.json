@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "SocialDataX Douyin MCP",
+  "packageName": "douyin-mcp",
+  "packageVersion": "0.2.13",
+  "description": "Research Douyin videos, comments, creators and trends through the hosted SocialDataX service. This npm package is a local stdio bridge; business tools require a SocialDataX API Key and sufficient credits. Website and API Key: https://socialdatax.com/ai?from=toolsdk",
+  "url": "https://github.com/DevinChen2014/douyin-mcp",
+  "readme": "https://github.com/DevinChen2014/douyin-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "SOCIALDATAX_API_KEY": {
+      "description": "Your SocialDataX API Key for authenticated, credit-billed tool calls. Obtain it at https://socialdatax.com/ai?from=toolsdk",
+      "required": true,
+      "secret": true
+    }
+  }
+}
