@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Whale Coupons",
+  "packageName": "@toolsdk-remote/whale-coupons",
+  "description": "Official hosted server for Whale Coupons, a coupon directory for independent online stores. Read-only tools find store-issued coupon and discount codes by store name, domain or product URL, search stores by product type or category, show full code details for a store, list categories, and list the largest current discounts. No sign-in or API key. Shop links returned are affiliate links.",
+  "url": "https://github.com/whalecoupons/whale-coupons-mcp",
+  "readme": "https://github.com/whalecoupons/whale-coupons-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Whale Coupons",
+  "logo": "https://whalecoupons.co/whale-logo.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://whalecoupons.co/mcp"
+    }
+  ]
+}
