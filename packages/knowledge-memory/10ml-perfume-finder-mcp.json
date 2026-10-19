@@ -1,0 +1,12 @@
+{
+  "type": "mcp-server",
+  "name": "10ML Fragrance Index",
+  "packageName": "@10ml/perfume-finder-mcp",
+  "description": "Perfume knowledge curated by 10ML's fragrance editors: profiles with note pyramids and accords, notes explained, perfume houses, similar scents, editorial alternatives, layering and guides. Free, read-only, no API key. Sixteen tools, six prompts. The same server is also available as a remote endpoint at https://mcp.10ml.com/mcp.",
+  "url": "https://github.com/10ml-com/perfume-finder-mcp",
+  "readme": "https://github.com/10ml-com/perfume-finder-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://10ml.com/brand/icons/icon-512.png",
+  "env": {}
+}
