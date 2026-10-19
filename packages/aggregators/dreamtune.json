@@ -1,0 +1,27 @@
+{
+  "type": "mcp-server",
+  "name": "Dreamtune",
+  "packageName": "@dreamtune/sdk",
+  "packageVersion": "0.1.1",
+  "description": "Access Dreamtune model requests, tool runs, GPU compute, prompts and request logs. Requires Node.js 22.20.0 or later, a scoped workspace API key and prepaid credit for paid operations.",
+  "url": "https://www.npmjs.com/package/@dreamtune/sdk/v/0.1.1",
+  "readme": "https://docs.dreamtunelabs.com/connect/local-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "binArgs": ["mcp"],
+  "env": {
+    "DREAMTUNE_API_KEY": {
+      "description": "Dreamtune workspace API key with the scopes required for the operations you enable.",
+      "required": true,
+      "secret": true
+    },
+    "DREAMTUNE_API_ORIGIN": {
+      "description": "Dreamtune API origin. Set to https://api.dreamtunelabs.com for the hosted service.",
+      "required": true
+    },
+    "DREAMTUNE_REQUEST_TIMEOUT_MS": {
+      "description": "Request timeout in milliseconds. Set to 120000 for the documented hosted setup.",
+      "required": true
+    }
+  }
+}
