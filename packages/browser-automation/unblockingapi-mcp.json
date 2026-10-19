@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "UnblockingAPI",
+  "packageName": "@unblockingapi/mcp",
+  "description": "Fetch bot-protected and JavaScript-heavy pages for AI agents, choosing plain HTTP or a real browser per site, or parse them to JSON with published templates.",
+  "url": "https://github.com/unblockingapi/mcp",
+  "readme": "https://github.com/unblockingapi/mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "UNBLOCKINGAPI_KEY": {
+      "description": "UnblockingAPI key used to authenticate requests (create one at https://unblockingapi.com).",
+      "required": true,
+      "secret": true
+    }
+  }
+}
