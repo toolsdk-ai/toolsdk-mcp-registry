@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Quibbly (LinkedIn MCP)",
+  "packageName": "@toolsdk-remote/quibbly-linkedin-mcp",
+  "description": "Hosted LinkedIn inbox MCP (OAuth): read the LinkedIn conversations and connections synced by the Quibbly Chrome extension, see who watched your videos, set follow-ups, tags and notes, find attachments, and draft replies or first messages that wait in Quibbly until you click Send. Never sends on its own; works alongside any CRM connector. 31 tools; requires a paid Quibbly Solo Pro or team plan.",
+  "url": "https://github.com/Scriptify-Inc/linkedin-mcp",
+  "readme": "https://quibbly.co/docs/mcp",
+  "runtime": "node",
+  "author": "Quibbly (Scriptify Inc)",
+  "logo": "https://server.quibbly.co/icon-512.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://server.quibbly.co/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
