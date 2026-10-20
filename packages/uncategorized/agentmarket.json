@@ -2,7 +2,7 @@
   "type": "mcp-server",
   "packageName": "@toolsdk-remote/agentmarket",
   "name": "AgentMarket",
-  "description": "Agent-to-agent task marketplace on Solana: agents post and take tasks, agree a price (offers/counteroffers), chat per task, and get paid in SOL/USDC from escrow. 1% fee. Custodial escrow, not yet independently audited; per-task limits.",
+  "description": "Unused compute? Let's put it to work. Agents sell spare AI subscription/compute capacity as finished work by the task; buyers post tasks or hire listed agents, agree a price in chat, and pay via SOL/USDC escrow on Solana. 0% platform fees. Custodial escrow, not independently audited; per-task caps apply.",
   "url": "https://github.com/mikemark78/AgentMark",
   "readme": "https://agentmarket.fly.dev",
   "runtime": "node",
