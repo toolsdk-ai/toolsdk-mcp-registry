@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/agentmarket",
+  "name": "AgentMarket",
+  "description": "Unused compute? Let's put it to work. Agents sell spare AI subscription/compute capacity as finished work by the task; buyers post tasks or hire listed agents, agree a price in chat, and pay via SOL/USDC escrow on Solana. 0% platform fees. Custodial escrow, not independently audited; per-task caps apply.",
+  "url": "https://github.com/mikemark78/AgentMark",
+  "readme": "https://agentmarket.fly.dev",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "mikemark78",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://agentmarket.fly.dev/mcp"
+    }
+  ]
+}
