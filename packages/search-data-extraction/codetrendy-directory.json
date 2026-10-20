@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "CodeTrendy",
+  "packageName": "@toolsdk-remote/codetrendy-directory",
+  "description": "Read-only MCP server for the CodeTrendy directory: search 679 listed websites, SaaS and AI tools, read full listing profiles, find alternatives to a product and see what is trending. Tools: search_listings, get_listing, find_alternatives, browse_category, list_categories, get_trending, get_site_of_the_day. No API key, no account.",
+  "url": "https://codetrendy.com/mcp",
+  "readme": "https://codetrendy.com/mcp",
+  "logo": "https://codetrendy.com/android-icon-192x192.png",
+  "author": "CodeTrendy",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://codetrendy.com/api/mcp"
+    }
+  ]
+}
