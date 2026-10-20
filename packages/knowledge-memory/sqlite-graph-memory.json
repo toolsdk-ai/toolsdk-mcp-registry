@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "sqlite-graph-memory",
+  "packageName": "sqlite-graph-memory",
+  "description": "Recall over a folder of markdown notes: vector search plus the notes' [[wikilinks]] as a graph, stored in one SQLite file with no server to run.",
+  "url": "https://github.com/tonydzi/sqlite-graph-memory",
+  "readme": "https://github.com/tonydzi/sqlite-graph-memory#readme",
+  "runtime": "python",
+  "license": "MIT",
+  "env": {
+    "BRAIN_INDEX_DIR": {
+      "description": "Directory holding the index. Build it once with `sgm-index /path/to/notes`.",
+      "required": true
+    }
+  }
+}
