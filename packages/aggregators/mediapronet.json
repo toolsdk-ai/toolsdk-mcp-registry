@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "MEDIAPRONET",
+  "packageName": "@toolsdk-remote/mediapronet",
+  "description": "Hosted read-only MCP server for the MEDIAPRONET directory of 240+ newly launched startups and web tools: keyword search, alternatives to a product, listing profiles, categories, trending and Site of the Day. No authentication.",
+  "readme": "https://mediapronet.com/mcp",
+  "runtime": "node",
+  "author": "MEDIAPRONET",
+  "logo": "https://mediapronet.com/android-icon-192x192.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mediapronet.com/api/mcp"
+    }
+  ]
+}

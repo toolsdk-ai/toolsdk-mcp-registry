@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "CodeTrendy",
+  "packageName": "@toolsdk-remote/codetrendy",
+  "description": "Hosted read-only MCP server for the CodeTrendy directory of 650+ reviewed SaaS, AI and developer tools: keyword search with category and pricing filters, alternatives to a named product, full listing profiles, categories, trending and Site of the Day. No authentication.",
+  "readme": "https://codetrendy.com/mcp",
+  "runtime": "node",
+  "author": "CodeTrendy",
+  "logo": "https://codetrendy.com/android-icon-192x192.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://codetrendy.com/api/mcp"
+    }
+  ]
+}
