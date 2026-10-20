@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "IPGeolocation.io",
+  "packageName": "ipgeolocation-io-mcp",
+  "description": "Official IPGeolocation.io MCP server with 17 tools for accurate IP geolocation, company information, ASN and network data, IP security (VPN, proxy, Tor, bot, hosting and spam detection), abuse contacts, time zones, astronomy, currency data and user-agent parsing. Runs over stdio on Node.js 22 or later. Available data depends on your IPGeolocation.io plan.",
+  "url": "https://github.com/IPGeolocation/ipgeolocation-io-mcp",
+  "readme": "https://github.com/IPGeolocation/ipgeolocation-io-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "IPGeolocation.io",
+  "env": {
+    "IPGEOLOCATION_API_KEY": {
+      "description": "IPGeolocation.io API key for authenticated API tools. get_my_ip works without a key. get_cached_result requires the same key used for the original lookup.",
+      "required": true,
+      "secret": true
+    }
+  }
+}
