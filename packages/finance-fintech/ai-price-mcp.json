@@ -1,0 +1,12 @@
+{
+  "type": "mcp-server",
+  "name": "Shuita AI Price",
+  "packageName": "ai-price-mcp",
+  "description": "Queries the Shuita (shuita.xyz) price index for AI subscriptions: in-stock reseller prices for ChatGPT, Claude, Gemini, Grok and Cursor plans collected twice daily from 120+ shops, compared with official US prices. Tools: search_products, get_lowest_price, list_shops, get_site_stats, list_all_products. No API key needed.",
+  "url": "https://github.com/gm365/shuita-ai-price",
+  "readme": "https://github.com/gm365/shuita-ai-price/tree/main/mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "gm365",
+  "env": {}
+}
