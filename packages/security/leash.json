@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "Leash",
+  "packageName": "@toolsdk-remote/leash",
+  "description": "Free protected access to connected personal accounts with configurable checks, activity history and undo for supported actions. Hosted proprietary service; public integration documentation.",
+  "url": "https://openleash.com",
+  "readme": "https://github.com/open-leash/leash-plugin#readme",
+  "runtime": "node",
+  "license": "LicenseRef-Proprietary",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://secure.openleash.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "leash"
+        ]
+      }
+    }
+  ]
+}
