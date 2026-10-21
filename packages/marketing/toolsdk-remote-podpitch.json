@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "PodPitch",
+  "packageName": "@toolsdk-remote/podpitch",
+  "description": "Hosted podcast discovery without an account. Search and read public podcast details; existing customers can separately connect with OAuth for private campaigns, drafts, inbox replies and outreach.",
+  "url": "https://github.com/PodPitch/podpitch-plugins",
+  "readme": "https://github.com/PodPitch/podpitch-plugins#readme",
+  "runtime": "python",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.podpitch.com/v1/mcp"
+    }
+  ]
+}
