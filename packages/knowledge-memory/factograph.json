@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "FactoGraph",
+  "packageName": "@toolsdk-remote/app-factograph-factograph",
+  "description": "Answers from facts people approved, every claim linked to the fact behind it: list the facts of a public FactoGraph store, ask it questions for cited answers, or, with the person's consent, make them a private memory store. No sign-in.",
+  "readme": "https://www.factograph.app/for-ai-agents.html",
+  "url": "https://www.factograph.app/for-ai-agents.html",
+  "runtime": "node",
+  "logo": "https://www.factograph.app/favicon.svg",
+  "author": "FactoGraph",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.factograph.app/api/mcp"
+    }
+  ]
+}
