@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "name": "Vibe Monitor",
+  "packageName": "@vibe-monitor/setup",
+  "description": "Local architecture evolution observations and staged advice for AI coding. Read-only source analysis; bounded pseudonymous telemetry defaults on, opting out pauses Free analysis. Apache-2.0 client; separate proprietary cloud policy/scoring. Requires Node.js 22+.",
+  "url": "https://github.com/tubban1/vibe-monitor",
+  "readme": "https://github.com/tubban1/vibe-monitor#readme",
+  "runtime": "node",
+  "license": "Apache-2.0",
+  "binArgs": [
+    "mcp"
+  ],
+  "env": {}
+}
