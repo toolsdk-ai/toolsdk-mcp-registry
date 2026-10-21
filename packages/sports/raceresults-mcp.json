@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Race Results MotoGP MCP",
+  "packageName": "@toolsdk-remote/raceresults-mcp",
+  "description": "Live MotoGP, Moto2 and Moto3 data: championship standings, race, sprint and qualifying results, season calendar with session times, rider profiles, live timing and news.",
+  "url": "https://github.com/manuelescrig/raceresults-mcp",
+  "readme": "https://github.com/manuelescrig/raceresults-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://raceresultsapp.com/mcp"
+    }
+  ]
+}
