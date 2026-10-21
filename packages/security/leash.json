@@ -14,9 +14,7 @@
       "url": "https://secure.openleash.com/mcp",
       "auth": {
         "type": "oauth2",
-        "scopes": [
-          "leash"
-        ]
+        "scopes": ["leash"]
       }
     }
   ]
