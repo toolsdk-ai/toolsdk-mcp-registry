@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Johto Data",
+  "packageName": "@toolsdk-remote/johto-data",
+  "description": "Pay-per-call data tools for agents: multi-market tenders (40 fresh notices across EU, UK, France and Australia for $0.011), OFAC SDN and UK sanctions screening ($0.0025), SEC 8-K/13F and Japan invoice-number checks. initialize, tools/list and sample:true calls are free; paid calls settle over x402 (USDC on Base), with no OAuth or API key.",
+  "url": "https://johtodata.com",
+  "readme": "https://johto-x402-api.johtodata.workers.dev/llms.txt",
+  "runtime": "node",
+  "author": "Johto Data",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://johto-x402-api.johtodata.workers.dev/mcp"
+    }
+  ]
+}
