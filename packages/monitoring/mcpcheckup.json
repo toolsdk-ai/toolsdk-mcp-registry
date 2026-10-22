@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "MCP Checkup",
+  "packageName": "@toolsdk-remote/mcpcheckup",
+  "description": "Look up scheduled check results for public remote MCP servers: availability, protocol handshake and negotiated revision, tool-list and schema drift against an approved baseline, and auth metadata. Results are published as Ed25519-signed DSSE attestations verifiable against https://mcpcheckup.com/.well-known/mcpcheckup-keys.json. Tools: check_mcps, get_mcp_report, get_mcp_history, get_attestation, search_mcps, request_check. No authentication required.",
+  "url": "https://mcpcheckup.com",
+  "readme": "https://github.com/mcpcheckup/checks#readme",
+  "author": "MCP Checkup",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcpcheckup.com/mcp"
+    }
+  ]
+}
