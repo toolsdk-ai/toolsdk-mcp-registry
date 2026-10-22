@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "FootVal",
+  "packageName": "@toolsdk-remote/footval",
+  "description": "Independent football (soccer) player valuations for AI agents: FootVal's own estimated transfer value next to the market value, with the factors behind the gap, scouting filters and rankings, plus live scores, match centres, league tables, team fixtures, season stat leaders and transfer news. 15 read-only tools. Users sign in with a Google account; every account has a free daily allowance of tool calls.",
+  "url": "https://github.com/target1m/footval-mcp",
+  "readme": "https://github.com/target1m/footval-mcp#readme",
+  "runtime": "node",
+  "logo": "https://footval.com/icon-512.png",
+  "author": "FootVal",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.footval.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["footval.read"]
+      }
+    }
+  ]
+}
