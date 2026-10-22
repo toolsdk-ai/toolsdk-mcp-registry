@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Mubboo Flights Search",
+  "packageName": "@toolsdk-remote/mubboo-flights-search",
+  "description": "Free, no-key MCP for airport lookup, trip validation and flight-search links through find_airports, prepare_flight_search and get_service_info. The travel comparison website compares 800+ airlines and 100+ booking sites; booking options can include Booking.com, Trip.com, Expedia, Agoda and Kiwi.com depending on route, dates and market. MCP does not return live fares or availability, make bookings or process payments.",
+  "url": "https://github.com/Mubboo-Ai/mubboo-flights-mcp",
+  "readme": "https://mubboo.flights/mcp",
+  "runtime": "node",
+  "logo": "https://mubboo.flights/mubboo-flights-favicon-512.png",
+  "author": "Mubboo Flights",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mubboo.flights/api/mcp"
+    }
+  ]
+}
