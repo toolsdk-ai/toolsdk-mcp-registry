@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "ContextQA MCP",
+  "packageName": "@toolsdk-remote/contextqa",
+  "description": "Application test authoring, execution and failure investigation through a hosted OAuth MCP service. Requires an authorized workspace; signup at https://ship.contextqa.com/.",
+  "readme": "https://mcp.contextqa.com/docs",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.contextqa.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
