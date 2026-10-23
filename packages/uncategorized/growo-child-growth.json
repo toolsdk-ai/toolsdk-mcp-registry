@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Growo child growth",
+  "packageName": "@toolsdk-remote/com-usegrowo-growo-growth",
+  "description": "Official hosted server for Growo (usegrowo.com). Sixteen read-only tools: WHO and CDC growth percentiles, BMI-for-age, birth size for gestational age, corrected age, mid-parental height, growth velocity and milestones, plus search and fetch over Growo articles. No authentication.",
+  "readme": "https://usegrowo.com/mcp",
+  "runtime": "node",
+  "author": "Growo",
+  "logo": "https://usegrowo.com/icon-192.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.usegrowo.com/"
+    }
+  ]
+}
