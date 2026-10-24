@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "ContactLint",
+  "packageName": "@toolsdk-remote/contactlint",
+  "description": "Hosted MCP server and HTTP API for contact validation. validate_email and validate_emails (up to 50 addresses) check RFC syntax, MX and A records via DNS-over-HTTPS, disposable domains, role addresses, free providers, and domain typos without SMTP probing. validate_phone parses phone numbers and returns valid/possible flags, line type, region, and E.164 format. initialize and tools/list work without credentials; tools/call requires a ContactLint API key sent as a Bearer token (100 free checks per month).",
+  "url": "https://github.com/zksyncer/contactlint",
+  "readme": "https://contactlint.com/email-validation-mcp-server",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "ContactLint",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://contactlint.com/mcp"
+    }
+  ]
+}
