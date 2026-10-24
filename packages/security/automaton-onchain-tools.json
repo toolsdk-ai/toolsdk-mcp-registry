@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Automaton Onchain Tools",
+  "packageName": "@toolsdk-remote/automaton-onchain-tools",
+  "description": "Read-only crypto safety checks for Base, Ethereum and BNB Chain: transaction explainer, token approval check, address and contract-risk inspection, URL phishing check, calldata decoder, wallet and token reports, and a token deep scan (buy/sell honeypot simulation, liquidity, LP burn/lock share, holder concentration). Free ping tool; other tools are pay-per-call via x402 (USDC on Base, $0.005-$1.50), and unpaid calls return the payment requirements. Nothing is signed or sent onchain.",
+  "url": "https://github.com/povrouyre-wq/automaton-onchain-tools",
+  "readme": "https://github.com/povrouyre-wq/automaton-onchain-tools#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://automaton-tx-explainer.vercel.app/mcp"
+    }
+  ]
+}
