@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "ReMCP",
+  "packageName": "@toolsdk-remote/remcp-mcp",
+  "description": "Access computers explicitly paired to your account using ReMCP OAuth. Remote MCP tools include file edits, terminal commands, browser and desktop automation, and diagnostics; these tools can change device state.",
+  "url": "https://github.com/getremcp/remcp",
+  "readme": "https://github.com/getremcp/remcp#the-local-runtime",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/getremcp/remcp/main/assets/remcp-readme-logo.png",
+  "author": "getremcp",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://remcp.site/mcp",
+      "auth": { "type": "oauth2" }
+    }
+  ]
+}
