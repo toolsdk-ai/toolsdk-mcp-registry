@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Flowmingo",
+  "packageName": "@toolsdk-remote/flowmingo-mcp",
+  "description": "Official hosted MCP server for Flowmingo, a free AI Interviewer and screening platform for recruiters. Reads your jobs, interview sets, candidate pipeline and scored AI interview results (per-criterion scores and AI summary), searches and compares candidates, and takes guarded actions (invite, move stage, reject, note, rate, shortlist, tag) that preview the change and ask you to confirm first. Data is scoped to your organisation. OAuth sign-in with a Flowmingo API key; a free plan is available.",
+  "readme": "https://flowmingo.ai/integration/mcp",
+  "runtime": "node",
+  "logo": "https://flowmingo.ai/icon1.png",
+  "author": "Flowmingo",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.flowmingo.ai/mcp",
+      "auth": { "type": "oauth2" }
+    }
+  ]
+}
