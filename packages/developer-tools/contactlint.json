@@ -1,18 +1,19 @@
 {
   "type": "mcp-server",
   "name": "ContactLint",
-  "packageName": "@toolsdk-remote/contactlint",
-  "description": "Hosted MCP server and HTTP API for contact validation. validate_email and validate_emails (up to 50 addresses) check RFC syntax, MX and A records via DNS-over-HTTPS, disposable domains, role addresses, free providers, and domain typos without SMTP probing. validate_phone parses phone numbers and returns valid/possible flags, line type, region, and E.164 format. initialize and tools/list work without credentials; tools/call requires a ContactLint API key sent as a Bearer token (100 free checks per month).",
+  "packageName": "contactlint-mcp",
+  "packageVersion": "1.1.0",
+  "description": "Local stdio MCP server and bridge for ContactLint contact validation. validate_email and validate_emails (up to 50 addresses) check RFC syntax, MX and A records via DNS-over-HTTPS, disposable domains, role addresses, free providers, and domain typos without SMTP probing. validate_phone parses phone numbers and returns valid/possible flags, line type, region, and E.164 format. Reads CONTACTLINT_API_KEY from the environment and forwards authenticated calls to https://contactlint.com/mcp (100 free checks per month, no card required).",
   "url": "https://github.com/zksyncer/contactlint",
-  "readme": "https://contactlint.com/email-validation-mcp-server",
+  "readme": "https://github.com/zksyncer/contactlint#readme",
   "runtime": "node",
   "license": "MIT",
   "author": "ContactLint",
-  "env": {},
-  "remotes": [
-    {
-      "type": "streamable-http",
-      "url": "https://contactlint.com/mcp"
+  "env": {
+    "CONTACTLINT_API_KEY": {
+      "description": "ContactLint API key sent as the Authorization Bearer token for validation tool calls. Get a free key (100 checks/month, no card) at https://contactlint.com/signup",
+      "required": true,
+      "secret": true
     }
-  ]
+  }
 }
