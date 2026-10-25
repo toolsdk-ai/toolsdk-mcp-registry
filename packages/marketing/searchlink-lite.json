@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "SearchLink Lite",
+  "packageName": "searchlink-lite",
+  "description": "Read-only Google Search Console for MCP clients: site overview with period comparison, search performance by query, page, country, device or date, low-CTR and position 8-20 opportunities, URL inspection, sitemap status, on-page checks and Google ranking update history.",
+  "url": "https://github.com/GlobalMatchHub/searchlink-lite",
+  "readme": "https://github.com/GlobalMatchHub/searchlink-lite#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/GlobalMatchHub/searchlink-lite/main/assets/logo-400.png",
+  "author": "GlobalMatchHub",
+  "env": {
+    "GOOGLE_APPLICATION_CREDENTIALS": {
+      "description": "Path to a Google service account key file (or gcloud application default credentials) that can read your Search Console. Not needed for page_check and algorithm_updates.",
+      "required": false,
+      "secret": false
+    }
+  }
+}
