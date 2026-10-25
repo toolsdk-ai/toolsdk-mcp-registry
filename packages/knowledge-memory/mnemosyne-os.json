@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Mnemosyne OS",
+  "packageName": "@mnemosyne_os/mcp",
+  "description": "Memory for AI agents from the Mnemosyne OS desktop app, which must run on the same machine (ws://127.0.0.1:7799). Folders the user declares become separate vaults, searched with vectors fused with a local BM25 channel. Agents can post a status card on the user's canvas, and three tools read Claude Code and Antigravity transcripts to list the other live sessions on the same git worktree, with the app closed. MIT server; the desktop app is open core.",
+  "url": "https://github.com/Mnemosyne-OS/Mnemosyne-Neural-OS/tree/main/packages/mcp",
+  "readme": "https://github.com/Mnemosyne-OS/Mnemosyne-Neural-OS/blob/main/packages/mcp/README.md",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mnemosyne OS",
+  "env": {
+    "MNEMO_VAULTS": {
+      "description": "Comma-separated vault ids the agent may reach. When unset, the agent reaches DEV, PERSONAL and SOCIAL plus the default vault.",
+      "required": false,
+      "secret": false
+    }
+  }
+}
