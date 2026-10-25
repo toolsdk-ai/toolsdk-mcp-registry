@@ -1,6 +1,6 @@
 {
   "type": "mcp-server",
-  "packageName": "@toolsdk-remote/twitterapis-mcp",
+  "packageName": "@twitterapis/mcp",
   "packageVersion": "0.23.0",
   "description": "Official MCP server for TwitterAPIs (twitterapis.com): tweet search, user profiles, followers, timelines, threads, lists, likes, bookmarks and DMs, plus post, reply, like, retweet and follow, as native tools for Claude, Cursor, Windsurf and any MCP client. No X developer account; one API key, $0.0008 per call (about 20 tweets per read), $0.50 free credit.",
   "url": "https://github.com/TwitterAPIs/twitterapis-mcp",
@@ -15,11 +15,5 @@
       "required": true,
       "secret": true
     }
-  },
-  "remotes": [
-    {
-      "type": "streamable-http",
-      "url": "https://api.twitterapis.com/mcp"
-    }
-  ]
+  }
 }
