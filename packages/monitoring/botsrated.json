@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "BotsRated",
+  "packageName": "@toolsdk-remote/botsrated",
+  "description": "Checks paid AI services before an agent pays: x402 sellers (USDC on Base) and remote MCP servers. Free tools: preflight (latest unpaid probe, listed vs quoted price and payTo, signed receipt link), find, coverage and sample. Paid lookups go through x402 on Base: check $0.001 (first 100 a day free), report $0.002, best $0.01. No account or API key.",
+  "url": "https://github.com/botsrated/botsrated",
+  "readme": "https://botsrated.com/llms.txt",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "BotsRated",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://botsrated.com/mcp"
+    }
+  ]
+}
