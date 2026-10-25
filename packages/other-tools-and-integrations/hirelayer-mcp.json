@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "HireLayer MCP",
+  "packageName": "hirelayer-mcp",
+  "description": "Official HireLayer MCP server for recruiting: parse resumes and CVs into structured JSON, extract weighted criteria from a job description, match and rank candidates against a job with explanations, and normalize free-text skills to a taxonomy.",
+  "url": "https://github.com/HireLayer/hirelayer-mcp",
+  "readme": "https://github.com/HireLayer/hirelayer-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "HIRELAYER_API_KEY": {
+      "description": "HireLayer API key, created from the HireLayer dashboard.",
+      "required": true,
+      "secret": true
+    },
+    "HIRELAYER_BASE_URL": {
+      "description": "HireLayer API base URL, for testing.",
+      "required": false,
+      "default": "https://hirelayer.co"
+    }
+  }
+}
