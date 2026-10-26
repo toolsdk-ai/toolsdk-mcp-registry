@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Quant Agent Shop",
+  "packageName": "@toolsdk-remote/quant-agent-shop",
+  "description": "31 pay-per-call tools for agents: web, news, places, patent, shopping and paper search, page fetch to Markdown, cited answers, summaries, JSON extraction, PDF text, OCR, PDF generation, SEC filings, OFAC sanctions screening, company, counterparty, domain, email, phone and SEO checks, URL status, page change, QR, weather and IP lookup. No sign-in: tools/list and the quantagentshop_quote tool are free; every other tool needs an x402 payment (USDC on Base, US$0.01 to US$0.05 a call) in the call's _meta, so paid calls need a client that implements the x402 MCP transport. Failed calls are not charged.",
+  "url": "https://github.com/TeaTime0906/quant-agent-shop",
+  "readme": "https://quantagentshop.com/llms.txt",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/TeaTime0906/quant-agent-shop/main/logo.png",
+  "author": "Quant Agent Shop",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://quantagentshop.com/mcp"
+    }
+  ]
+}
