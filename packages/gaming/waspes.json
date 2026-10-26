@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Waspes",
+  "packageName": "@toolsdk-remote/waspes",
+  "description": "AI Website Builder, 3D Studio & Roblox Studio MCP Server with 8 tools (start_website, get_website, generate_website, generate_form, generate_master_prompt, list_3d_models, connect_roblox, send_to_roblox) to generate full-stack HTML5 websites, standalone contact forms, master prompts, and 3D models (.glb/.obj/.fbx) with live textured MeshPart insertion into Roblox Studio.",
+  "url": "https://github.com/waspes/promptforge-desktop",
+  "readme": "https://waspes.com/api",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://waspes.com/logo-mark-256.png",
+  "author": "Waspes",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://waspes.com/api/mcp"
+    }
+  ]
+}
