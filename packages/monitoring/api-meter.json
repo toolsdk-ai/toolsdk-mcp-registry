@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "API Meter",
+  "packageName": "@toolsdk-remote/api-meter",
+  "description": "Per-customer API usage analytics. Create an account and get server ingest snippets (Express, Hono, FastAPI, Flask, Django, Go, curl) without auth; get_usage and export_usage read monthly usage by customer, endpoint and plan and need an API Meter dashboard key (msd_...) passed as a tool argument.",
+  "url": "https://github.com/Surface-ops/api-meter-mcp",
+  "readme": "https://github.com/Surface-ops/api-meter-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Surface-ops",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api-meter-lab.pages.dev/mcp"
+    }
+  ]
+}
