@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "SecureLend Underwriting (Remote)",
+  "packageName": "@toolsdk-remote/securelend-underwriting",
+  "description": "Hosted MCP for credit desks: open a credit file, chase missing documents, screen sanctions when configured, and draft a cited memo. A person makes the credit decision. OAuth (scope lender) for tools/call; initialize and tools/list are anonymous. SecureLend is not a lender.",
+  "url": "https://github.com/SecureLend/mcp-underwriting",
+  "readme": "https://github.com/SecureLend/mcp-underwriting#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.securelend.ai/v1/lender/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
