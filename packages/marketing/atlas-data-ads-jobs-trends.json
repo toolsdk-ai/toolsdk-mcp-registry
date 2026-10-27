@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "Atlas Data: Ads, Jobs & Trends",
+  "packageName": "@toolsdk-remote/atlas-data-ads-jobs-trends",
+  "description": "Competitor ad and market data for agents: Google Trends (interest over time, by region, related queries), Google Ads Transparency Center ads, LinkedIn Ad Library and TikTok Ad Library ads (text, creatives, landing pages, reach, impressions), and Google Jobs postings with parsed salary. Hosted on Apify's MCP server; sign in with an Apify account (OAuth), billed per result.",
+  "url": "https://github.com/AtlasDataDenmark/atlas-data-mcp",
+  "readme": "https://github.com/AtlasDataDenmark/atlas-data-mcp#readme",
+  "runtime": "node",
+  "author": "Atlas Data",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=atlasdata/google-trends-scraper-reliable,atlasdata/google-ads-transparency-scraper-reliable,atlasdata/linkedin-ad-library-scraper-reliable,atlasdata/tiktok-ad-library-scraper-reliable,atlasdata/google-jobs-scraper-reliable",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
