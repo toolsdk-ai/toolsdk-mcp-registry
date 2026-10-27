@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Nicelydone",
+  "packageName": "@toolsdk-remote/nicelydone",
+  "description": "Search web app screens, UI elements, and user flows for design research. Requires Nicelydone Premium.",
+  "url": "https://github.com/nicelydoneapp/mcp",
+  "readme": "https://nicelydone.club/mcp",
+  "runtime": "node",
+  "logo": "https://raw.githubusercontent.com/nicelydoneapp/mcp/main/assets/icon.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.nicelydone.club/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["library:read", "saved:read", "collections:write"]
+      }
+    }
+  ]
+}
