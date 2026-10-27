@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Shipmail (Remote)",
+  "packageName": "@toolsdk-remote/shipmail",
+  "description": "Hosted Shipmail MCP server with OAuth sign-in: business email on your own domain for people and AI agents. Read, search, send and reply in mailboxes, and manage domains, mailboxes, inbox rules, calendars, booking pages, newsletters and webhooks.",
+  "url": "https://github.com/shipmail-to/shipmail-mcp",
+  "readme": "https://shipmail.to/docs/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/shipmail-to/shipmail-mcp/main/assets/shipmail-mark-400.png",
+  "author": "Shipmail",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://shipmail.to/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

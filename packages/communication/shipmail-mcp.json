@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Shipmail",
+  "packageName": "shipmail-mcp",
+  "description": "Official Shipmail MCP server: business email on your own domain for people and AI agents. Read, search, send and reply in mailboxes, and manage domains, mailboxes, forwarding, inbox rules, calendars, booking pages, newsletters and webhooks.",
+  "url": "https://github.com/shipmail-to/shipmail-mcp",
+  "readme": "https://shipmail.to/docs/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/shipmail-to/shipmail-mcp/main/assets/shipmail-mark-400.png",
+  "author": "Shipmail",
+  "env": {
+    "SHIPMAIL_API_KEY": {
+      "description": "Shipmail API key (sm_live_...). Create one at https://shipmail.to/docs/api/quick-start.",
+      "required": true,
+      "secret": true
+    }
+  }
+}
