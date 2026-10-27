@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "AlertForge",
+  "packageName": "@toolsdk-remote/alertforge",
+  "description": "Create stream overlays, AI alerts, and transparent videos. OAuth account tools require a paid AlertForge subscription; generation consumes credits.",
+  "url": "https://github.com/lasan713/alertforge-agent-plugin",
+  "readme": "https://alertforge.ai/docs/agents",
+  "runtime": "node",
+  "logo": "https://alertforge.ai/icon-512.png",
+  "author": "AlertForge",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://alertforge.ai/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
