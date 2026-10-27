@@ -11,7 +11,7 @@
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://cigo-mcp-system-wzoy.onrender.com/mcp/"
+      "url": "https://cigo-mcp-system-wzoy.onrender.com/mcp/?source=toolsdk"
     }
   ]
 }
