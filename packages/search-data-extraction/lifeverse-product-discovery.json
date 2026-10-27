@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "LifeVerse Product Discovery",
+  "packageName": "@toolsdk-remote/lifeverse-product-discovery",
+  "description": "Public read-only server for discovering, searching, inspecting, and recommending 11 ready-to-use LifeVerse AI products and interactive experiences through four tools. No account or API key is required.",
+  "url": "https://github.com/lifeversegu/lifeverse-mcp",
+  "readme": "https://lifeverse.gufreelancer.com/mcp",
+  "runtime": "node",
+  "license": "mit",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://lifeverse.gufreelancer.com/api/mcp"
+    }
+  ]
+}
