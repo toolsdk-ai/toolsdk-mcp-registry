@@ -2,8 +2,8 @@
   "type": "mcp-server",
   "name": "Skavio USDC Payment Verification & Proof MCP",
   "packageName": "@toolsdk-remote/skavio-usdc-proof-mcp",
-  "description": "Hosted Streamable HTTP MCP: USDC verify, exact-match, evidence PDF and DNS/TLS at 0.02/0.03/0.05/0.05 native Base USDC via x402. Also offers authenticated web_fetch, web_extract and web_monitor with Serper search and optional DeepSeek (separate company Bearer key and credit billing). Includes 18 discoverable tools; paid execution requires matching credentials and a compatible x402-capable wallet client. PDFs are blockchain evidence, not tax invoices.",
-  "url": "https://github.com/skavio-eu/skavio-agent-tools",
+  "description": "Hosted Streamable HTTP MCP: USDC verify, exact-match, evidence PDF and DNS/TLS at 0.02/0.03/0.05/0.05 native Circle USDC on Base or Solana via x402 v2; the three separate HTTP x402 routes remain Base-only. Also offers authenticated web_fetch, web_extract and web_monitor with Serper search and optional DeepSeek (separate company Bearer key and credit billing). Includes 18 discoverable tools; paid execution requires matching credentials and a compatible x402-capable wallet client. PDFs are blockchain evidence, not tax invoices.",
+  "url": "https://getskavio.com/x402/",
   "readme": "https://github.com/skavio-eu/skavio-agent-tools/blob/main/guides/verify-usdc-with-x402.md",
   "runtime": "node",
   "author": "Skavio LLC",
@@ -11,7 +11,7 @@
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://www.skavio.eu/mcp"
+      "url": "https://getskavio.com/mcp"
     }
   ]
 }
