@@ -1,0 +1,12 @@
+{
+  "type": "mcp-server",
+  "name": "MeshMend",
+  "packageName": "meshmend-mcp",
+  "description": "Checks and repairs 3D-printing meshes (STL, 3MF) on your computer: holes, flipped faces, inside-out shells, non-manifold edges and duplicate triangles. Writes a repaired STL next to the original and converts 3MF to STL. No uploads or network requests.",
+  "url": "https://github.com/Keith-CY/meshmend-mcp",
+  "readme": "https://github.com/Keith-CY/meshmend-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Keith-CY",
+  "env": {}
+}
