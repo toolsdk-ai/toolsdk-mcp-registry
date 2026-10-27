@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "EasyGerber",
+  "packageName": "@toolsdk-remote/io-github-easygerber-easygerber",
+  "description": "AI PCB design, layout, and routing. Use published catalog parts to create and edit schematics, generate PCB layouts, inspect previews and checks, and export board files. Guest discovery needs no account; guest operations require a private session limited to one board. Account-board operations require EasyGerber OAuth; this entry advertises guest access only. Placement, routing and scoring run on EasyGerber's proprietary servers.",
+  "url": "https://github.com/EasyGerber/easygerber-agent-plugin",
+  "readme": "https://www.easygerber.com/agents",
+  "runtime": "node",
+  "author": "EasyGerber",
+  "logo": "https://raw.githubusercontent.com/EasyGerber/easygerber-agent-plugin/main/assets/icon.svg",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.easygerber.com/api/mcp"
+    }
+  ]
+}
