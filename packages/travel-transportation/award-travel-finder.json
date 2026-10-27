@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Award Travel Finder",
+  "packageName": "@toolsdk-remote/com-awardtravelfinder-mcp",
+  "description": "Search award flight availability and points pricing across 27 airlines and 23 loyalty programs from any MCP client.",
+  "url": "https://github.com/AwardTravelFinder/mcp",
+  "readme": "https://github.com/AwardTravelFinder/mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/AwardTravelFinder/mcp/main/logo.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.awardtravelfinder.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
