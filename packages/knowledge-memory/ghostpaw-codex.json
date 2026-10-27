@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "GhostPaw Codex",
+  "packageName": "@ghostpaw/codex",
+  "description": "Local memory for AI agents in one SQLite file. Each belief keeps its source, certainty, evidence count and revision history. Seven tools to search, review, inspect, remember, revise and retire beliefs and dismiss near-duplicates. Requires Node.js 24 or later; standalone binaries for Linux, macOS and Windows are on the GitHub releases.",
+  "url": "https://github.com/GhostPawJS/codex",
+  "readme": "https://github.com/GhostPawJS/codex#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Maximilian Stroh",
+  "binArgs": ["mcp"],
+  "env": {
+    "GHOSTPAW_CODEX_DB": {
+      "description": "Absolute path to the SQLite database file. Defaults to ~/.ghostpaw/codex.db.",
+      "required": false
+    }
+  }
+}
