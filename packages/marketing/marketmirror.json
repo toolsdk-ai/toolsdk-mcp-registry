@@ -1,0 +1,11 @@
+{
+  "type": "mcp-server",
+  "name": "MarketMirror",
+  "packageName": "marketmirror",
+  "description": "Tests ads, prices, emails and sales pitches on simulated buyers (interview-grounded personas on MiroFish and CAMEL-AI OASIS) and returns a go / iterate / no-go report with an offline HTML dashboard; can backtest results against real ad data. The LLM provider and key are configured with the server's own setup tools.",
+  "url": "https://github.com/DarkWorldCoder/market-mirror",
+  "readme": "https://github.com/DarkWorldCoder/market-mirror#readme",
+  "runtime": "python",
+  "license": "AGPL-3.0-only",
+  "env": {}
+}
