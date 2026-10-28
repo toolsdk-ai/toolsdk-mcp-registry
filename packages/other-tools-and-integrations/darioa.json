@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Darioa Web Developer",
+  "packageName": "@toolsdk-remote/nl-darioa-webdev",
+  "description": "Official hosted MCP server of darioa, a one-person web developer in Enschede, the Netherlands: list the four fixed-price products (website, booking site, webshop, web app) with prices, get the product and price for a described need, see real client sites and ask for a contact request that the user confirms by email. No authentication.",
+  "url": "https://www.darioa.nl/",
+  "readme": "https://www.darioa.nl/llms.txt",
+  "runtime": "node",
+  "logo": "https://www.darioa.nl/apple-icon.png",
+  "author": "darioa",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.darioa.nl/mcp"
+    }
+  ]
+}
