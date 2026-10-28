@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Tera Studio",
+  "packageName": "@toolsdk-remote/tera-studio",
+  "description": "Hosted Tera Studio MCP server for singers: find a song's key (with its relative key) and tempo in BPM, or move a song up or down by up to 6 semitones at the same speed. Both tools open a small app where the user picks the file; it is analysed or shifted in their browser and never uploaded. A third tool returns the steps and link to hear a song sung in the user's own voice on terastudio.co. Read-only, no sign-in, no API key.",
+  "readme": "https://terastudio.co/ai-assistants/",
+  "runtime": "python",
+  "logo": "https://terastudio.co/images/logo-512.png",
+  "author": "Tera Studio",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://terastudio.co/mcp"
+    }
+  ]
+}
