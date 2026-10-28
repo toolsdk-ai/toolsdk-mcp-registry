@@ -14,9 +14,7 @@
       "url": "https://seoclar.com/mcp",
       "auth": {
         "type": "oauth2",
-        "scopes": [
-          "mcp:tools"
-        ]
+        "scopes": ["mcp:tools"]
       }
     }
   ]
