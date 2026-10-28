@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "ISMS Copilot",
+  "packageName": "@toolsdk-remote/isms-copilot",
+  "description": "The compliance specialist your AI calls: ISO 27001, SOC 2, GDPR, NIS 2, DORA and more. Ask ISMS Copilot framework questions and work with your compliance workspaces, documents, memories, company profile and client companies. Hosted; sign in with an ISMS Copilot account (free plan available).",
+  "url": "https://github.com/better-isms/ismscopilot-plugin",
+  "readme": "https://docs.ismscopilot.com/docs/agents/connect-any-mcp-client",
+  "runtime": "node",
+  "logo": "https://www.ismscopilot.com/favicon-512.png",
+  "author": "Better ISMS",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://account.ismscopilot.com/v1/account/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
