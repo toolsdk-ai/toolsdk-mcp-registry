@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Timesheet",
+  "packageName": "@timesheet/mcp",
+  "description": "Official Timesheet time tracking server: start, pause and stop timers, log past work, manage projects, todos, tags, expenses, absences and teams, and pull statistics, reports and exports (Excel, CSV, PDF). Needs a Timesheet API key.",
+  "url": "https://github.com/timesheetIO/timesheet-mcp",
+  "readme": "https://docs.timesheet.io/integrations/mcp-server/",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Timesheet",
+  "logo": "https://timesheet.io/android-chrome-512x512.png",
+  "env": {
+    "TIMESHEET_API_TOKEN": {
+      "description": "Timesheet API key, created in the web app under Integrations > API Keys.",
+      "required": true,
+      "secret": true
+    }
+  }
+}
