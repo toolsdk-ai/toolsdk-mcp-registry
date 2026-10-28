@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Phasoric",
+  "packageName": "@toolsdk-remote/phasoric",
+  "description": "Search, read, and safely update Markdown notes in connected Phasoric knowledge vaults. OAuth and a Phasoric account with MCP access are required.",
+  "url": "https://phasoric.com",
+  "readme": "https://developers.phasoric.com/mcp-client-setup",
+  "runtime": "node",
+  "license": "Proprietary",
+  "author": "Phasoric",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://phasoric.com/api/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp:read", "mcp:write", "offline_access"]
+      }
+    }
+  ]
+}
