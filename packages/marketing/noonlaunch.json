@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Noonlaunch",
+  "packageName": "@toolsdk-remote/noonlaunch",
+  "description": "Remote MCP server for Noonlaunch, a product launch platform and directory: launch a product on Noonlaunch, search its product directory and weekly winners, check plans and submission status, and browse 333 startup launch directories filtered by category, cost and domain authority. No API key or account is needed to connect; a submission is only published after the maker confirms it through a private claim link.",
+  "url": "https://github.com/mukund1158/noonlaunch-mcp",
+  "readme": "https://noonlaunch.com/launch-with-ai",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Noonlaunch",
+  "logo": "https://raw.githubusercontent.com/mukund1158/noonlaunch-mcp/main/logo.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://noonlaunch.com/mcp"
+    }
+  ]
+}
