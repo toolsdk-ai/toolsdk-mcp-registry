@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Carbon Forge",
+  "packageName": "@toolsdk-remote/carbon-forge",
+  "description": "Hosted Carbon Forge MCP server: source control and a shared record for people and agents. Code, files and prose live in one record on the server; an agent opens a lane instead of cloning, and every landing is one all-or-nothing changeset. Blame, grep, diff and history run on the server. This entry connects without auth, which reads public workspaces only; writing needs a bearer token minted in Carbon Forge, which this registry entry does not configure.",
+  "url": "https://carbonforge.dev",
+  "readme": "https://carbonforge.dev/docs/p/api/mcp-overview",
+  "runtime": "node",
+  "logo": "https://carbonforge.dev/favicon.ico",
+  "author": "100monkeys.ai",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://carbonforge.dev/api/mcp"
+    }
+  ]
+}
