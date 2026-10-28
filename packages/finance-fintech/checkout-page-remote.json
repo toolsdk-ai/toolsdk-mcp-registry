@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Checkout Page (Remote)",
+  "packageName": "@toolsdk-remote/checkout-page",
+  "description": "Hosted MCP server for Checkout Page, a checkout platform on Stripe Connect. 69 tools to create and manage checkout pages, events and ticketing, forms, products, coupons, order bumps and themes, and to work with customers, payments, invoices and subscriptions. Authenticates with OAuth sign-in to a Checkout Page account. A free plan is available; taking payments needs the seller's own Stripe account.",
+  "url": "https://checkoutpage.com/mcp?utm_source=toolsdk&utm_medium=listing",
+  "readme": "https://checkoutpage.com/docs/build/mcp",
+  "runtime": "node",
+  "logo": "https://checkoutpage.com/img/logo.svg",
+  "author": "Checkout Page",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.checkoutpage.com",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
