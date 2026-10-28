@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Sitekick CMS",
+  "packageName": "@toolsdk-remote/sitekick-cms",
+  "description": "Plan and improve WordPress websites with generation, previews, and browser-approved publishing. Requires an eligible account and a registered OAuth client; generation credits apply.",
+  "url": "https://www.sitekick.ai/wordpress-ai",
+  "readme": "https://docs.sitekick.ai/working-with-our-ai-site-editor/mcp-editing",
+  "runtime": "node",
+  "license": "Proprietary",
+  "author": "Sitekick",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.sitekick.ai/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["sites:read", "sites:write", "sites:publish", "sites:create"]
+      }
+    }
+  ]
+}
