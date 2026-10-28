@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "MCP Canary",
+  "packageName": "@toolsdk-remote/mcp-canary",
+  "description": "Official hosted server for MCP Canary, synthetic monitoring for MCP servers. Inspects any remote MCP server: transport, protocol version, tools, and side-effect hints, without calling a tool. Also returns MCP Canary plans and prices. Read-only, no account or API key needed.",
+  "url": "https://mcpcanary.com",
+  "readme": "https://mcpcanary.com",
+  "runtime": "node",
+  "logo": "https://mcpcanary.com/resources/apple-touch-icon.png",
+  "author": "MCP Canary",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.mcpcanary.com/mcp"
+    }
+  ]
+}
