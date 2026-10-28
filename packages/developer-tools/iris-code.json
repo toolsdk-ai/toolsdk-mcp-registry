@@ -1,0 +1,13 @@
+{
+  "type": "mcp-server",
+  "name": "Iris Code",
+  "packageName": "@iris-code/mcp",
+  "description": "Local code-quality rules, findings, preview-first safe fixes, refactor verification and gate results for coding agents. Free single-file workflows; fresh project work requires sign-in and applicable access.",
+  "url": "https://www.npmjs.com/package/@iris-code/mcp",
+  "readme": "https://docs.iriscode.co/agents/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://www.iriscode.co/iris-icon.png",
+  "author": "Iris Code",
+  "env": {}
+}
