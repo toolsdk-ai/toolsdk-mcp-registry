@@ -1,0 +1,12 @@
+{
+  "type": "mcp-server",
+  "name": "Freelance Tax MCP",
+  "packageName": "freelance-tax-mcp",
+  "description": "US freelancer and sole-proprietor 2026 tax calculator: quarterly estimated tax with safe harbor, self-employment tax, the Section 199A QBI deduction, hourly-rate targeting, IRS due dates, mileage (including the July 1, 2026 rate change), home office, SEP IRA vs Solo 401(k) limits and GSA per diem. Figures cite IRS, SSA and GSA sources; results are planning estimates. Runs locally with no API key and no network calls.",
+  "url": "https://github.com/NarwhalThePong/freelance-tax-mcp",
+  "readme": "https://github.com/NarwhalThePong/freelance-tax-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/NarwhalThePong/freelance-tax-mcp/main/assets/logo.png",
+  "env": {}
+}
