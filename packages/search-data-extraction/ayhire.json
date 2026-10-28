@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "AyHire",
+  "packageName": "@toolsdk-remote/ayhire",
+  "description": "Hire engineers by what they shipped: describe a role and AyHire finds developers from their public GitHub work, judges each one against the role's criteria with links to the evidence, says who is open to work, and keeps roles and a shortlist shared with the AyHire web app. 35+ tools, most of them read-only; analyses that cost money are marked as such.",
+  "runtime": "node",
+  "readme": "https://ayhire.com/agents.md",
+  "author": "AyHire",
+  "logo": "https://ayhire.com/icon.svg",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://ayhire.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["read", "write", "spend"]
+      }
+    }
+  ]
+}
