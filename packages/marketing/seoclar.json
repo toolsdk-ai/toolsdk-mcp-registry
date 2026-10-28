@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "SEOclar — SEO MCP Server",
+  "packageName": "@toolsdk-remote/seoclar",
+  "description": "Connect AI assistants to live SEO data for keyword research, SERP rankings, backlinks, competitor analysis, site audits and AI visibility through OAuth.",
+  "url": "https://seoclar.com",
+  "readme": "https://seoclar.com/mcp-tools",
+  "logo": "https://seoclar.com/icon.svg",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://seoclar.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp:tools"]
+      }
+    }
+  ]
+}
