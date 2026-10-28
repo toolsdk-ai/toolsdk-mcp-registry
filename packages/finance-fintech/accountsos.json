@@ -1,0 +1,24 @@
+{
+  "type": "mcp-server",
+  "name": "AccountsOS",
+  "packageName": "@thriveventurelabs/accountsos-mcp",
+  "packageVersion": "0.3.1",
+  "description": "AI accounting MCP server: query your live AccountsOS books (balances, transactions, VAT, deadlines, invoices, documents) from any MCP client.",
+  "url": "https://github.com/thriveventurelabs/accountsos-mcp-server",
+  "readme": "https://github.com/thriveventurelabs/accountsos-mcp-server#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Thrive Venture Labs",
+  "env": {
+    "ACCOUNTSOS_API_KEY": {
+      "description": "AccountsOS API key, created at https://accounts-os.com/settings.",
+      "required": true,
+      "secret": true
+    },
+    "ACCOUNTSOS_BASE_URL": {
+      "description": "Base URL of the AccountsOS instance.",
+      "required": false,
+      "default": "https://accounts-os.com"
+    }
+  }
+}
