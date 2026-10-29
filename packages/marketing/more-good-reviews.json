@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "More Good Reviews",
+  "packageName": "@toolsdk-remote/more-good-reviews",
+  "description": "Hosted More Good Reviews MCP for local service businesses: manage customers, send Google review requests by email or SMS, read and triage reviews, and reply to Google and Facebook reviews from your AI assistant. Sign in with OAuth; a More Good Reviews account is required.",
+  "url": "https://docs.moregoodreviews.com/platform/mcp-server",
+  "readme": "https://docs.moregoodreviews.com/platform/mcp-server",
+  "runtime": "node",
+  "logo": "https://moregoodreviews.com/img/mgr-icon.png",
+  "author": "More Good Reviews",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.moregoodreviews.com/mcp",
+      "auth": { "type": "oauth2", "scopes": ["read", "write", "delete"] }
+    }
+  ]
+}
