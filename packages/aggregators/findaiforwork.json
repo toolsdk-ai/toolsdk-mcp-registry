@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "FindAIforWork",
+  "packageName": "@toolsdk-remote/findaiforwork",
+  "description": "Hosted read-only MCP server for a human-reviewed AI tools directory organized by work scenario: search tools, list categories, read listing details and compare tools. No authentication.",
+  "readme": "https://findaiforwork.com/llms.txt",
+  "runtime": "node",
+  "author": "FindAIforWork",
+  "logo": "https://findaiforwork.com/android-chrome-512x512.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://findaiforwork.com/mcp"
+    }
+  ]
+}
