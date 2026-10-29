@@ -1,0 +1,25 @@
+{
+  "type": "mcp-server",
+  "name": "AgentSearch",
+  "packageName": "@agentsearchhq/agentsearch-mcp",
+  "description": "Web search, page extract (URL to clean markdown) and JavaScript page rendering for AI agents. Free web search works with no key or wallet (up to 25 searches/day per IP, subject to shared daily capacity). Extract and render (and search, if opted in) are paid per call ($0.005 USDC on Base via x402) through the Pocket Network Agentic Portal, or point it at a self-hosted AgentSearch-compatible API. Also includes the free AgentSearch Review Board lookup/submit tools.",
+  "url": "https://github.com/agentsearchhq-coder/agentsearch-mcp",
+  "readme": "https://github.com/agentsearchhq-coder/agentsearch-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "AGENTSEARCH_WALLET_PRIVATE_KEY": {
+      "description": "Optional. Private key of a dedicated wallet holding USDC on Base; enables paid extract/render via the Pocket Network Agentic Portal. Without it, search uses the free tier.",
+      "required": false,
+      "secret": true
+    },
+    "AGENTSEARCH_MODE": {
+      "description": "Optional. Set to 'paid' (with a wallet key) to also pay per call for search instead of using the free tier.",
+      "required": false
+    },
+    "AGENTSEARCH_BASE_URL": {
+      "description": "Optional. Base URL of your own self-hosted AgentSearch-compatible API; takes precedence and no payment is made.",
+      "required": false
+    }
+  }
+}
