@@ -1,0 +1,11 @@
+{
+  "type": "mcp-server",
+  "name": "Budna MCP",
+  "packageName": "@budna-marketplace/mcp",
+  "description": "Read-only access to public data on Budna, a Swedish second-hand marketplace. Searches listings, categories, and filters, and inspects listings, attributes, related and seller listings, public seller profiles, and bid and rating summaries. No account or API key required.",
+  "url": "https://github.com/budna-marketplace/mcp",
+  "readme": "https://github.com/budna-marketplace/mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {}
+}
