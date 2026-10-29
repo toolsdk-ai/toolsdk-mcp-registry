@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "TextKit",
+  "packageName": "@toolsdk-remote/textkit",
+  "description": "Send and receive SMS, verify phone numbers, buy US and Canada numbers, and manage contacts, segments, broadcasts and automations. Hosted service; sign in with OAuth. Free sandbox keys at sign-up.",
+  "url": "https://jointextkit.com",
+  "readme": "https://jointextkit.com/docs/mcp",
+  "logo": "https://jointextkit.com/icon.png",
+  "runtime": "node",
+  "author": "TextKit",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.jointextkit.com",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["sms"]
+      }
+    }
+  ]
+}
