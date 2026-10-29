@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "Melso",
+  "packageName": "@toolsdk-remote/melso",
+  "description": "OAuth-protected remote MCP for Spanish fiscal records, invoices, expenses and tax calendars in Melso. Read records, record expenses, prepare invoices and start a Spanish S.L. incorporation request. The owner pays and approves incorporation in Melso; professionals complete legal formation. Tax-return approval and filing remain in Melso. A Melso account and appropriate tool access are required.",
+  "url": "https://melso.ai/en/mcp",
+  "readme": "https://docs.melso.ai/mcp/overview",
+  "runtime": "node",
+  "author": "Melso",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.melso.ai/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
