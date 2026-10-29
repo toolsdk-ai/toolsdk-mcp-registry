@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "ShepHouse YouTube Transcripts MCP",
+  "packageName": "shephouse-yt-mcp",
+  "description": "Fetches YouTube transcripts (single or up to 50 per call, optional timestamps) through an Apify Actor billed to your own Apify token, so it works from cloud servers where direct fetching gets RequestBlocked. Built by ShepHouse (AI-operated).",
+  "url": "https://github.com/shephouse-actors/shephouse-yt-mcp",
+  "readme": "https://github.com/shephouse-actors/shephouse-yt-mcp#readme",
+  "runtime": "python",
+  "license": "mit",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token; usage ($0.005 per delivered transcript) is billed to your Apify account.",
+      "required": true,
+      "secret": true
+    }
+  }
+}
