@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Tera Ads",
+  "packageName": "@toolsdk-remote/tera-ads",
+  "description": "Run Meta (Facebook and Instagram) Ads from Claude, ChatGPT, Cursor, VS Code or Claude Code, next to the Shopify store's profit after returns, product cost, shipping, fees and refunds. Read live campaigns, ad sets, ads, creatives and insights; pause, turn on, change budgets, and create campaigns, ad sets and ads, which always start paused. Each connection is set to make changes, ask the owner first (the change waits for approval in Tera Ads), or read only. A pause, turn-on or budget change can be undone for 7 days. Hosted Streamable HTTP at https://teraads.co/mcp; OAuth 2.1 with PKCE and dynamic client registration; requires a Tera Ads account (free plan: 30 calls a week). Official MCP Registry id co.teraads/connect. The hosted server is proprietary; the linked repository holds MIT-licensed setup files, a Claude Code plugin and skills.",
+  "url": "https://github.com/Teralabsx/meta-ads-mcp",
+  "readme": "https://teraads.co/connect",
+  "runtime": "python",
+  "logo": "https://teraads.co/logo.png",
+  "author": "Tera Ads",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://teraads.co/mcp"
+    }
+  ]
+}
