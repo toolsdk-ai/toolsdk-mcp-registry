@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "SocialToAI",
+  "packageName": "@toolsdk-remote/socialtoai",
+  "description": "Reads publicly visible social media content: posts, comments, profiles and trending lists on 18 platforms (Reddit, X, TikTok, YouTube, Instagram, LinkedIn, Xiaohongshu, Douyin, Weibo, WeChat and more), plus brand-mention, comment-analysis and creator-search tools. Hosted; pay per call from prepaid credits, failed calls are free.",
+  "url": "https://github.com/socialtoai/socialtoai-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.socialtoai.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
