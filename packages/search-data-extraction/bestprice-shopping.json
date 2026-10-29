@@ -6,7 +6,7 @@
   "url": "https://github.com/TheBestCo/bestprice-mcp",
   "readme": "https://github.com/TheBestCo/bestprice-mcp#readme",
   "runtime": "node",
-  "logo": "https://www.bestprice.gr/images/logo.svg",
+  "logo": "https://raw.githubusercontent.com/TheBestCo/bestprice-mcp/main/assets/bestprice-mcp-logo-1024.png",
   "author": "BestPrice.gr",
   "env": {},
   "remotes": [
