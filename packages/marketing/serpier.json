@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Serpier",
+  "packageName": "@toolsdk-remote/serpier",
+  "description": "Official Serpier server for SEO performance, AI visibility and link building: track keyword rankings, search traffic and backlinks, monitor how AI assistants mention your brand, check published articles, and browse vetted publishers and place link-building orders. OAuth login; free sign-up.",
+  "url": "https://github.com/Serpier/serpier-mcp",
+  "readme": "https://docs.serpier.com/mcp",
+  "runtime": "node",
+  "logo": "https://app.serpier.com/favicon.png",
+  "author": "Serpier",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.serpier.com/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
