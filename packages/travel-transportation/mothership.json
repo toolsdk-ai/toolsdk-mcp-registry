@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Mothership",
+  "packageName": "@toolsdk-remote/mothership",
+  "description": "Mothership LTL, FTL & Local Freight: get quotes and track shipments.",
+  "url": "https://github.com/mothership/agent-plugins",
+  "runtime": "node",
+  "logo": "https://mcp.mothership.com/icon.png",
+  "author": "Mothership",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.mothership.com",
+      "auth": { "type": "oauth2" }
+    }
+  ]
+}
