@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Social Post Flow",
+  "packageName": "@toolsdk-remote/socialpostflow-mcp",
+  "description": "Schedule and publish social media posts to Facebook, X, LinkedIn, Instagram, Threads, Pinterest, TikTok, Bluesky, Mastodon, Telegram and Google Business Profile.",
+  "url": "https://www.socialpostflow.com/documentation/mcp/",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.socialpostflow.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "mcp:use"
+        ]
+      }
+    }
+  ]
+}
