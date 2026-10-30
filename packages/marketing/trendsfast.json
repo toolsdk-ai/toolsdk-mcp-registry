@@ -1,0 +1,24 @@
+{
+  "type": "mcp-server",
+  "name": "TrendsFast",
+  "packageName": "@toolsdk-remote/trendsfast",
+  "description": "Hosted niche trend and customer intelligence with source links, observation dates and coverage limits. Requires a TrendsFast account and usage credits; connect using MCP OAuth.",
+  "url": "https://trendsfast.com",
+  "readme": "https://trendsfast.com/mcp",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://trendsfast.com/api/mcp/v3",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "trends:read",
+          "trends:query",
+          "credits:read"
+        ]
+      }
+    }
+  ]
+}
