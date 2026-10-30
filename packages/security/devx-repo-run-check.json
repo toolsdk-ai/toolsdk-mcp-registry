@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Repo Run Check",
+  "packageName": "@toolsdk-remote/devx-repo-run-check",
+  "description": "Before running a GitHub repo or a pasted shell command, flags risky install scripts, curl-pipe-to-shell patterns, editor autorun tasks, typosquatted dependencies and fake-star signals. Tools: check_repo, check_command (free) and full_report_info (explains the optional paid deeper check, 0.005 USDC on Base over x402; the tool itself does not pay). No account or API key.",
+  "url": "https://github.com/devx-agent/repo-run-check",
+  "readme": "https://github.com/devx-agent/repo-run-check#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "devx-agent",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://repo-run-check.nextill-pos.workers.dev/mcp"
+    }
+  ]
+}

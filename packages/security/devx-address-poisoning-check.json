@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Address Poisoning Check",
+  "packageName": "@toolsdk-remote/devx-address-poisoning-check",
+  "description": "Before sending crypto, checks whether a recipient address is a lookalike of an address you trust (matching first/last characters) and whether its EIP-55 checksum is valid. Tools: check_recipient_lookalike (free) and onchain_check_info (explains the optional paid on-chain check of Ethereum/Base transfer history, 0.005 USDC on Base over x402; the tool itself does not pay). No account or API key.",
+  "url": "https://github.com/devx-agent/address-poisoning-check",
+  "readme": "https://github.com/devx-agent/address-poisoning-check#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "devx-agent",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://address-poisoning-check.nextill-pos.workers.dev/mcp"
+    }
+  ]
+}
