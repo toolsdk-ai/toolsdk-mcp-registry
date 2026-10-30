@@ -1,0 +1,27 @@
+{
+  "type": "mcp-server",
+  "name": "PandaDoc MCP",
+  "packageName": "@toolsdk-remote/pandadoc-mcp",
+  "description": "Official hosted PandaDoc MCP server: create documents from templates, send them for e-signature, and track status, recipients, quotes and catalog items. OAuth sign-in; separate US and EU endpoints.",
+  "url": "https://github.com/PandaDoc/mcp-server-guide",
+  "readme": "https://developers.pandadoc.com/docs/getting-started-with-mcp",
+  "runtime": "node",
+  "author": "PandaDoc",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.pandadoc.com/v1/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.pandadoc.eu/v1/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
