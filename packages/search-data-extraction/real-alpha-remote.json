@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Real Alpha (Remote)",
+  "packageName": "@toolsdk-remote/real-alpha",
+  "description": "Search what AI founders and researchers said in long podcast interviews, by topic, person, company, show or date, with each moment's speaker, show, date, quote and a page to cite. Read only, no sign in.",
+  "url": "https://github.com/rushabhsheth/realalpha-mcp",
+  "readme": "https://realalpha.app/mcp/",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Rushabh Sheth",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://realalpha.app/mcp"
+    }
+  ]
+}
