@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Fictura",
+  "packageName": "@toolsdk-remote/fictura",
+  "description": "Fictura is a unified app growth data layer for AI coding agents. Its hosted MCP server exposes real SDK setup, placements, conversion funnels, subscriptions, experiments, attribution and error traces; permitted paywall/onboarding edits remain drafts. The documentation tools work without sign-in; app data requires OAuth 2.1 or an MCP key.",
+  "url": "https://github.com/Apex-Byte-Technologies/fictura-mcp",
+  "readme": "https://docs.fictura.co/connections/outgoing/mcp-server",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/Apex-Byte-Technologies/fictura-mcp/main/assets/fictura-icon-512.png",
+  "author": "Fictura",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.fictura.co/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
