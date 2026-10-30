@@ -1,0 +1,24 @@
+{
+  "type": "mcp-server",
+  "name": "AdSwipeFile",
+  "packageName": "@toolsdk-remote/adswipefile",
+  "description": "Ad library of winning Facebook and Instagram ads: search real Meta ads by brand, niche and format, see which ads a brand is running and which ran longest, read an ad's full copy, and write hooks and angles from real ads. Saved ads and followed brands are included. Eight read-only tools. Hosted MCP with OAuth sign-in; a free AdSwipeFile account is required.",
+  "url": "https://github.com/adswipefile/adswipefile-plugin",
+  "readme": "https://adswipefile.com/docs/mcp",
+  "runtime": "node",
+  "logo": "https://raw.githubusercontent.com/adswipefile/adswipefile-plugin/25f0a435335033280568b53f68f5661e8424d865/assets/icon.png",
+  "author": "AdSwipeFile",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://adswipefile.com/api/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "mcp:read"
+        ]
+      }
+    }
+  ]
+}
