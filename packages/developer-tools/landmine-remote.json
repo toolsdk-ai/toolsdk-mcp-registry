@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "landmine (hosted)",
+  "packageName": "@toolsdk-remote/landmine",
+  "description": "Hosted landmine endpoint, no auth: look up the open GitHub issues filed against exact npm or PyPI package versions (landmine_lookup) or a code snippet (landmine_check), with the best workaround from each issue thread.",
+  "url": "https://github.com/devanshranjan10/landmines",
+  "readme": "https://github.com/devanshranjan10/landmines#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://landmine.tech/mcp"
+    }
+  ]
+}
