@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "CivicDataForge",
+  "packageName": "@toolsdk-remote/civicdataforge",
+  "description": "US government records (short-term rental permits, lodging licenses, property violations, healthcare exclusions, EPA ECHO) and Norwegian company data. Hosted Streamable HTTP endpoint; free tier needs no sign-in.",
+  "readme": "https://github.com/equinoxaifinance-rgb/civicdataforge-mcp#readme",
+  "url": "https://github.com/equinoxaifinance-rgb/civicdataforge-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Steel Lantern",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://civicdataforge.pages.dev/mcp"
+    }
+  ]
+}
