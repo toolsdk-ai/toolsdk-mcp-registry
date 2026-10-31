@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Polish MCP Servers",
+  "packageName": "polish-mcp-servers",
+  "description": "Stdio MCP server for Polish law and public registers. 14 read-only tools: company lookup by NIP, REGON or KRS in the GUS REGON register (BIR1.2), new and changed KRS companies, Sejm ELI legal acts, SAOS court judgments, EU-funds tenders (Baza Konkurencyjności), CEE public tenders, EIPA EV charging stations, aggregated CEPiK vehicle registrations, GUNB building permits, ULDK land parcels with MPZP/POG zoning, RPWDL healthcare facilities, developer apartment prices and PSE electricity market data. tools/list needs no token; each tools/call runs a public Apify Actor billed pay-per-event to the Apify account behind APIFY_TOKEN.",
+  "url": "https://github.com/kamilkaczmareksolutions/polish-mcp-servers",
+  "readme": "https://github.com/kamilkaczmareksolutions/polish-mcp-servers#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "kamilkaczmareksolutions",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token used to run the Apify Actor behind each tool call. Create one at https://console.apify.com/settings/integrations. Not needed for tools/list.",
+      "required": true,
+      "secret": true
+    }
+  }
+}
