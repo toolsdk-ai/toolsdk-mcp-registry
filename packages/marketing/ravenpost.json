@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Ravenpost",
+  "packageName": "@toolsdk-remote/ravenpost",
+  "description": "Social media scheduling for AI agents: list the accounts connected in Ravenpost (Instagram, TikTok, X, LinkedIn, Threads, Bluesky, YouTube, Pinterest and Telegram), upload media and cut an image to each network's canvas, preview a post as each network will render it with a warning for anything a network would reject, then save it as a draft, schedule it, queue it or publish it; edit or cancel pending posts and read followers and engagement where a network reports them.",
+  "url": "https://github.com/target1m/ravenpost-mcp",
+  "readme": "https://github.com/target1m/ravenpost-mcp#readme",
+  "runtime": "node",
+  "logo": "https://ravenpo.st/icon-512.png",
+  "author": "Ravenpost",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.ravenpo.st/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
