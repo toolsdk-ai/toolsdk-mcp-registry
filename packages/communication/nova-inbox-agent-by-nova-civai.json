@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "Nova Inbox Agent by Nova (CIVAI)",
+  "packageName": "@toolsdk-remote/nova-inbox-agent-by-nova-civai",
+  "description": "Read and send mail from your Nova Inbox (@nova.civai.co) for OTPs, directory signups, and inbound m\u2026",
+  "url": "https://github.com/civai-technologies/email-inbox-agent-mcp-by-nova-civai",
+  "readme": "https://github.com/civai-technologies/email-inbox-agent-mcp-by-nova-civai#readme",
+  "runtime": "python",
+  "license": "MIT",
+  "author": "CIVAI TECHNOLOGIES",
+  "logo": "https://nova.civai.co/catalog-icons/GmailIcon.svg",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://nova.civai.co/mcp/agents/nova-inbox-agent",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["openid", "email", "mcp:access"]
+      }
+    }
+  ]
+}

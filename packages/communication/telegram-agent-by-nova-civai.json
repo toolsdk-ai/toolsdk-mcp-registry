@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "Telegram Agent by Nova (CIVAI)",
+  "packageName": "@toolsdk-remote/telegram-agent-by-nova-civai",
+  "description": "I use your linked Telegram MTProto session (Integrations \u2192 Telegram) to list groups, members, and s\u2026",
+  "url": "https://github.com/civai-technologies/telegram-agent-mcp-by-nova-civai",
+  "readme": "https://github.com/civai-technologies/telegram-agent-mcp-by-nova-civai#readme",
+  "runtime": "python",
+  "license": "MIT",
+  "author": "CIVAI TECHNOLOGIES",
+  "logo": "https://nova.civai.co/catalog-icons/TelegramAgentIcon.svg",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://nova.civai.co/mcp/agents/telegram-agent",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["openid", "email", "mcp:access"]
+      }
+    }
+  ]
+}
