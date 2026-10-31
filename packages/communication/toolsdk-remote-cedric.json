@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Cedric",
+  "packageName": "@toolsdk-remote/cedric",
+  "description": "Cedric, the AI employee for Slack, Telegram and Discord, as a remote MCP server: team memory, channels, meetings, files, scheduling and 3,000+ connected apps, acting as the signed-in person in their own workspace.",
+  "url": "https://meet-cedric.com",
+  "readme": "https://github.com/meet-cedric/cedric-mcp#readme",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.meet-cedric.com/api/v1/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
