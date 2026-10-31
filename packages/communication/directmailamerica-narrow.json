@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "DirectMailAmerica \u2014 Narrow",
+  "packageName": "@toolsdk-remote/directmailamerica-narrow",
+  "description": "Send a single U.S. letter or full-color postcard with 23 focused tools for product discovery, exact quotes, previews, editable cover sheets, approved sending and job status. Paid sending requires explicit approval bound to the mailing and total. OAuth connects an existing workspace.",
+  "url": "https://directmailamerica.com/docs/mcp",
+  "readme": "https://directmailamerica.com/agents/references/mcp-narrow.md",
+  "runtime": "node",
+  "logo": "https://directmailamerica.com/icon",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://directmailamerica.com/api/mcp-narrow",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

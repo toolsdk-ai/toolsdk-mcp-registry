@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "DirectMailAmerica \u2014 Full",
+  "packageName": "@toolsdk-remote/directmailamerica-full",
+  "description": "Mail U.S. letters, Certified Mail and full-color postcards with 75 tools, including editable cover sheets, Email to Letter, Email to Postcard and workspace administration. Paid sends require approval bound to artwork, recipients, options and total; recurring automation has a separate authorization workflow. OAuth connects an existing workspace.",
+  "url": "https://directmailamerica.com/docs/mcp",
+  "readme": "https://directmailamerica.com/agents/references/mcp-full.md",
+  "runtime": "node",
+  "logo": "https://directmailamerica.com/icon",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://directmailamerica.com/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
