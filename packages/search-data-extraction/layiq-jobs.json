@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "LAYIQ Jobs",
+  "packageName": "@toolsdk-remote/layiq-jobs",
+  "description": "Search public job listings and read job details from LAYIQ, a candidate-first job search workspace without sponsored listings. Read-only; no account, login or API key. Tools: search_jobs and get_job_details.",
+  "readme": "https://www.layiq.co/connectors/claude",
+  "runtime": "node",
+  "author": "Roleworthy Labs Inc.",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.layiq.co/mcp"
+    }
+  ]
+}
