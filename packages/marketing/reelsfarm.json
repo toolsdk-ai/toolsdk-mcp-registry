@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "ReelsFarm",
+  "packageName": "@toolsdk-remote/reelsfarm",
+  "description": "Hosted ReelsFarm MCP: create AI avatars, product photos, AI videos and TikTok/Instagram slideshows, then schedule and publish approved posts to connected TikTok, Instagram, YouTube and Facebook accounts. Sign in with OAuth; creating content spends ReelsFarm credits and needs a paid plan or trial.",
+  "url": "https://reelsfarm.com/mcp",
+  "readme": "https://reelsfarm.com/docs/mcp",
+  "runtime": "node",
+  "logo": "https://reelsfarm.com/favicon-rounded.png",
+  "author": "ReelsFarm",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.reelsfarm.com/mcp",
+      "auth": { "type": "oauth2" }
+    }
+  ]
+}
