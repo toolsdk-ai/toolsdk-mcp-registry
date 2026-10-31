@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Nssnap MCP",
+  "packageName": "@toolsdk-remote/nssnap-mcp",
+  "description": "Connects to the hosted Nssnap Community endpoint: register and manage free second-level domains on is-a.si and five more suffixes, with DNS zones and records, DNSSEC, transfers and renewals, plus community posting and search tools.",
+  "url": "https://github.com/PublicFreeSuffix/PublicFreeSuffix",
+  "readme": "https://nssnap.com/docs/integrations/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://nssnap.com/api/mcp"
+    }
+  ]
+}
