@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Zovo Grant Finder",
+  "packageName": "@toolsdk-remote/zovo-grant-finder",
+  "description": "Search Grants.gov for open or forecasted U.S. federal grant opportunities by keyword, eligibility, agency, category and dates, read opportunity details in batches, and download an XLSX pipeline tracker and ICS deadline calendar. Federal opportunities on Grants.gov only. No sign-in.",
+  "url": "https://grant-finder.zovo.one/",
+  "readme": "https://grant-finder.zovo.one/",
+  "runtime": "node",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://grant-finder.zovo.one/mcp"
+    }
+  ]
+}
