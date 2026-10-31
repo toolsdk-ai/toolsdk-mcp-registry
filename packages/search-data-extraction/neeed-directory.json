@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Neeed Directory",
+  "packageName": "@toolsdk-remote/neeed-directory",
+  "description": "Search curated software and digital products, browse categories, and create private listing drafts. Public catalog reads need no API key; managing your own listings requires OAuth 2.1.",
+  "url": "https://neeed.directory",
+  "readme": "https://neeed.directory/docs/api",
+  "logo": "https://neeed.directory/icon/512",
+  "author": "Supacat",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://neeed.directory/api/mcp"
+    }
+  ]
+}
