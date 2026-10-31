@@ -15,9 +15,7 @@
       "url": "https://saaspro.dev/api/mcp",
       "auth": {
         "type": "oauth2",
-        "scopes": [
-          "read"
-        ]
+        "scopes": ["read"]
       }
     }
   ]
