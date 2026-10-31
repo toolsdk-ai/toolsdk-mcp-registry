@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Comunicate.eu",
+  "packageName": "@toolsdk-remote/comunicate-eu",
+  "description": "Hosted MCP server for Comunicate.eu, a platform for publishing press releases, advertorials and SEO articles on news sites in Romania and other European markets. Without an account, only the catalogue tools work: site search with prices, niches, budget plans and campaign types. Drafts, publication orders and reports require a Comunicate.eu account.",
+  "url": "https://github.com/adrianncraciun-cmd/public-mcp",
+  "readme": "https://github.com/adrianncraciun-cmd/public-mcp#readme",
+  "runtime": "node",
+  "logo": "https://comunicate.eu/icoane/icon-512.png",
+  "author": "Comunicate.eu",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.comunicate.eu/mcp"
+    }
+  ]
+}
