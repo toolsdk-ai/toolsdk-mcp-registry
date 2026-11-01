@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Gosset",
+  "packageName": "@toolsdk-remote/gosset",
+  "description": "Search connected pharmaceutical drug, clinical trial, result, patent and deal data with source links through Gosset’s hosted OAuth MCP server.",
+  "url": "https://gosset.ai/mcp-api",
+  "readme": "https://docs.gosset.ai/guide/claude-connector",
+  "runtime": "node",
+  "author": "Gosset, Inc.",
+  "logo": "https://gosset.ai/favicon.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.gosset.ai/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
