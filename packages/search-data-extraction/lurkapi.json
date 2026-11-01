@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "LurkAPI",
+  "packageName": "@toolsdk-remote/lurkapi",
+  "description": "Hosted, read-only MCP server with live public data from 16 social platforms and the web: TikTok, Instagram and YouTube profiles and posts, Reddit threads, comments, video transcripts, and ads from the Meta, Google, TikTok and LinkedIn ad libraries. One tool per endpoint. Sign in with OAuth; most calls cost 1 credit, with 100 free credits at signup.",
+  "url": "https://lurkapi.com",
+  "readme": "https://lurkapi.com/docs#claude",
+  "runtime": "node",
+  "logo": "https://lurkapi.com/icon-512.png",
+  "author": "LurkAPI",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.lurkapi.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
