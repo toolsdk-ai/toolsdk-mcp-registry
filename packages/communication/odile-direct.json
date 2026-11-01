@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Odile Direct",
+  "packageName": "@toolsdk-remote/odile-direct",
+  "description": "Reach a business that has no API by its phone number. find_business_agent looks a participating business up (free); send_to_business leaves it a message, checks open times, or books or cancels a time. The tools list and lookups need no sign-in. Each agent identity gets 50 free tasks a month; after that a delivered message costs 1 credit ($0.10) and a confirmed booking 5 credits, paid with prepaid credits or per task with x402.",
+  "url": "https://github.com/tolga-boop/odile-mcp",
+  "readme": "https://odilelabs.com/a2a",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://odilelabs.com/mcp/direct"
+    }
+  ]
+}

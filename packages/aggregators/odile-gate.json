@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "name": "Odile Gate",
+  "packageName": "@toolsdk-remote/odile-gate",
+  "description": "Odile Gate puts a key, an allow-list of calls, a rate limit, a loop breaker, held approvals on risky writes and an audit log in front of an HTTP API. These tools create a project and an app per agent, check the setup, read the audit log and explain refused calls. gate_create_project needs no sign-up or payment; the other tools take that project's admin key. Free for 3 apps and 10,000 calls a month; Pro is $29 a month.",
+  "readme": "https://odilelabs.com/gate",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gate.odilelabs.com/mcp"
+    }
+  ]
+}
