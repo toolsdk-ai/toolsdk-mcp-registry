@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Tectova Runway Records",
+  "packageName": "@toolsdk-remote/tectova-runway-records",
+  "description": "Official hosted server for Tectova, the runway record of the fashion industry. Read-only, no API key: look up models' runway careers, show casts, fashion-house histories and models by country at New York, London, Milan and Paris fashion weeks. Every answer links back to tectova.com.",
+  "url": "https://github.com/tectova/tectova-mcp",
+  "readme": "https://tectova.com/tools/mcp",
+  "runtime": "node",
+  "logo": "https://tectova.com/press/tectova-mark-oxblood-1200.png",
+  "author": "Tectova",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://tectova.com/mcp"
+    }
+  ]
+}
