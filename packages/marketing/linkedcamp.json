@@ -1,0 +1,25 @@
+{
+  "type": "mcp-server",
+  "name": "linkedcamp",
+  "packageName": "@toolsdk-remote/linkedcamp-mcp",
+  "description": "Official hosted MCP server for LinkedCamp: LinkedIn and email outreach for lead-gen agencies. Build and launch campaigns, write multi-step sequences, triage the unified inbox, manage prospects and pull analytics and client reports across 133 tools in 14 groups. Destructive tools are annotated so clients confirm first. Auth is OAuth 2.1 with PKCE and dynamic client registration, or an X-Api-Key header. Needs a Pro or Agency plan (14-day free trial).",
+  "url": "https://github.com/LinkedCamp/linkedcamp-mcp",
+  "readme": "https://docs.linkedcamp.com/mcp/overview",
+  "runtime": "node",
+  "author": "LinkedCamp",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.linkedcamp.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "mcp:read",
+          "mcp:write",
+          "mcp:destroy"
+        ]
+      }
+    }
+  ]
+}
