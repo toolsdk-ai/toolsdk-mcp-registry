@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "CoreSpeed",
+  "packageName": "@toolsdk-remote/io-corespeed-mcp",
+  "description": "Hosted MCP gateway for any agent: your connected apps (Notion, Slack, GitHub, Gmail and more), shared team memory, web search, social data and media tools, with spend caps and an activity log.",
+  "readme": "https://corespeed.io/docs/mcp",
+  "runtime": "node",
+  "logo": "https://corespeed.io/brand/corespeed-icon.svg",
+  "author": "CoreSpeed",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.corespeed.io/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
