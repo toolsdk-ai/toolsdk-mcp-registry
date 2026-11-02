@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "Adspy",
+  "packageName": "@toolsdk-remote/adspy",
+  "description": "Hosted Adspy (adspy.sh) MCP server for researching brands' public Meta and Google ads and their organic TikTok, YouTube and Instagram posts: search ads, read their available creative analysis, compare brands and see which posts later ran as ads. Answers come with counts and dates, never with spend or ROAS; TikTok ads are not covered. Requires a paid Adspy plan; sign in with OAuth.",
+  "url": "https://www.adspy.sh",
+  "readme": "https://www.adspy.sh/connect",
+  "runtime": "node",
+  "author": "Adspy",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.adspy.sh/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
