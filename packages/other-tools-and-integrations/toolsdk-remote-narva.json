@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Narva",
+  "packageName": "@toolsdk-remote/narva",
+  "description": "Official Narva remote MCP server: make faceless YouTube videos and Shorts from a topic or a script (script, AI narration in 32 languages, AI visuals, archive footage, motion graphics, captions, music, thumbnails), edit them in words and publish or schedule them to your YouTube channel. Sign in with your Narva account via OAuth (a plan is required to make videos).",
+  "readme": "https://github.com/Negmus/narva-mcp#readme",
+  "url": "https://narva.app",
+  "runtime": "node",
+  "author": "Narva",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://narva.app/mcp",
+      "auth": { "type": "oauth2", "scopes": ["mcp:use"] }
+    }
+  ]
+}
