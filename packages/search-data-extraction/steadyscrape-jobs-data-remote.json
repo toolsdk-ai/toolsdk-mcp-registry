@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Jobs Data MCP (SteadyScrape)",
+  "packageName": "@toolsdk-remote/steadyscrape-jobs-data",
+  "description": "Live job postings collected from employers' own career sites (Greenhouse, Lever, Ashby, Workday, SmartRecruiters, Workable and more), plus keyword job search and remote-eligibility search by country, region or time zone. Three tools served through Apify's hosted MCP gateway; results are billed per job on the user's own Apify account.",
+  "url": "https://github.com/steadyscrape/jobs-data-mcp",
+  "readme": "https://github.com/steadyscrape/jobs-data-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "steadyscrape",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=steady-scrape/ats-job-feed,steady-scrape/career-jobs-search,steady-scrape/remote-jobs-api",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
