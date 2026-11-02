@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Metadata Remover AI Inspector",
+  "packageName": "@toolsdk-remote/metadataremoverai-mcp",
+  "description": "Hosted MCP server from metadataremoverai.com: fetches a public image or video URL (JPEG, PNG, WebP, AVIF, HEIC, GIF, TIFF, MP4, MOV; up to 15 MB) and reports hidden metadata: GPS location, camera and lens, timestamps, software, C2PA Content Credentials and AI-generator signals. Read-only, no auth; does not modify or store files.",
+  "readme": "https://metadataremoverai.com",
+  "runtime": "node",
+  "logo": "https://metadataremoverai.com/apple-touch-icon.png",
+  "author": "fazal-bhinder",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://metadataremoverai.com/mcp"
+    }
+  ]
+}
