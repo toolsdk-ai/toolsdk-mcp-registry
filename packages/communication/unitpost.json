@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Unitpost",
+  "packageName": "@toolsdk-remote/unitpost",
+  "description": "Hosted MCP server for Unitpost, an email and SMS platform. Agents send transactional email, campaigns and SMS, and manage contacts, segments, templates, sending domains, webhooks, suppressions and inbound email.",
+  "url": "https://www.unitpost.com/ai/mcp",
+  "readme": "https://www.unitpost.com/ai/mcp",
+  "runtime": "node",
+  "logo": "https://www.unitpost.com/web-app-manifest-512x512.png",
+  "author": "Unitpost",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.unitpost.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
