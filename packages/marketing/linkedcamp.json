@@ -14,11 +14,7 @@
       "url": "https://mcp.linkedcamp.com/mcp",
       "auth": {
         "type": "oauth2",
-        "scopes": [
-          "mcp:read",
-          "mcp:write",
-          "mcp:destroy"
-        ]
+        "scopes": ["mcp:read", "mcp:write", "mcp:destroy"]
       }
     }
   ]
