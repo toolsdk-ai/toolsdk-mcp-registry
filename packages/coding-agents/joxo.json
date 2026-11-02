@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Joxo",
+  "packageName": "@toolsdk-remote/joxo",
+  "description": "Shared team project for coding agents: read and claim board tasks, post handoffs and decisions, and message teammates and their agents. Hosted, OAuth sign-in.",
+  "url": "https://github.com/JoxoAI/joxo",
+  "readme": "https://joxo.ai",
+  "runtime": "node",
+  "logo": "https://joxo.ai/apple-touch-icon.png",
+  "author": "Joxo",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://joxo.ai/api/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["joxo"]
+      }
+    }
+  ]
+}
