@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "PreReason",
+  "packageName": "@prereason/mcp",
+  "description": "A financial data MCP server and REST API for AI agents: briefings reasoned in advance, from the economy to listed companies' results. Start at www.prereason.com/agents.md",
+  "url": "https://github.com/PreReason/mcp",
+  "readme": "https://github.com/PreReason/mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "PREREASON_API_KEY": {
+      "description": "Your API key",
+      "required": false,
+      "secret": true
+    }
+  }
+}
