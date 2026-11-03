@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Homesage.ai MCP",
+  "packageName": "@toolsdk-remote/homesage-ai",
+  "description": "Official hosted MCP server for Homesage.ai's US real estate data on 160M+ properties: estimated values and comps, condition and renovation cost from listing photos, rent, flip and investment returns, area search and owner of record. Requires a Homesage.ai account.",
+  "url": "https://github.com/ZR2021DC/homesage-mcp",
+  "readme": "https://github.com/ZR2021DC/homesage-mcp#readme",
+  "logo": "https://homesage.ai/wp-content/uploads/2026/03/cropped-Homesage-Favicon-270x270.png",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Homesage.ai",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.homesage.ai/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
