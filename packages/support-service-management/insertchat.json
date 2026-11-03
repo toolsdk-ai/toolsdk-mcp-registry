@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "InsertChat - AI Receptionist",
+  "packageName": "@toolsdk-remote/insertchat",
+  "description": "AI receptionist and AI chatbot: triage calls and chats that need you, draft replies, look up leads, review reports, and train your assistant on web pages. Drafts only; it never sends messages, places calls, or books. Requires an InsertChat account.",
+  "url": "https://github.com/MindCraftersGroup/claude-plugin",
+  "readme": "https://github.com/MindCraftersGroup/claude-plugin#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/MindCraftersGroup/claude-plugin/main/assets/logo.png",
+  "author": "MindCrafters LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.insertchat.com/v2/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
