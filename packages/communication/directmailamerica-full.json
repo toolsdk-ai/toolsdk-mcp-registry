@@ -4,7 +4,7 @@
   "packageName": "@toolsdk-remote/directmailamerica-full",
   "description": "Mail U.S. letters, Certified Mail and full-color postcards with 75 tools, including editable cover sheets, Email to Letter, Email to Postcard and workspace administration. Paid sends require approval bound to artwork, recipients, options and total; recurring automation has a separate authorization workflow. OAuth connects an existing workspace.",
   "url": "https://directmailamerica.com/docs/mcp?utm_source=toolsdk&utm_medium=referral&utm_campaign=mcp_directories",
-  "readme": "https://directmailamerica.com/agents/references/mcp-full.md",
+  "readme": "https://directmailamerica.com/agents/references/mcp-full.md?utm_source=toolsdk&utm_medium=referral&utm_campaign=mcp_directories",
   "runtime": "node",
   "logo": "https://directmailamerica.com/icon",
   "env": {},

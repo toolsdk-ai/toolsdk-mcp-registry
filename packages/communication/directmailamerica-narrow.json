@@ -4,7 +4,7 @@
   "packageName": "@toolsdk-remote/directmailamerica-narrow",
   "description": "Send a single U.S. letter or full-color postcard with 23 focused tools for product discovery, exact quotes, previews, editable cover sheets, approved sending and job status. Paid sending requires explicit approval bound to the mailing and total. OAuth connects an existing workspace.",
   "url": "https://directmailamerica.com/docs/mcp?utm_source=toolsdk&utm_medium=referral&utm_campaign=mcp_directories",
-  "readme": "https://directmailamerica.com/agents/references/mcp-narrow.md",
+  "readme": "https://directmailamerica.com/agents/references/mcp-narrow.md?utm_source=toolsdk&utm_medium=referral&utm_campaign=mcp_directories",
   "runtime": "node",
   "logo": "https://directmailamerica.com/icon",
   "env": {},
