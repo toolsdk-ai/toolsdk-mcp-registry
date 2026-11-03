@@ -1,0 +1,12 @@
+{
+  "type": "mcp-server",
+  "name": "Seller Fees MCP",
+  "packageName": "seller-fees-mcp",
+  "description": "Calculates seller fees, payouts and break-even prices for Gumroad, Stripe, PayPal and Etsy (US sellers, USD). Tools: fee, payout, price_for_target, compare and platforms. Runs locally with no API key, no account and no network calls.",
+  "url": "https://github.com/NarwhalThePong/seller-fees-mcp",
+  "readme": "https://github.com/NarwhalThePong/seller-fees-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/NarwhalThePong/seller-fees-mcp/main/assets/logo.png",
+  "env": {}
+}
