@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "IPO Radar MCP",
+  "packageName": "@toolsdk-remote/ipo-radar-mcp",
+  "description": "Free hosted MCP with live India IPO GMP, subscription, upcoming IPOs, and GMP accuracy. Streamable HTTP, no auth.",
+  "url": "https://github.com/songiangvan40006-boop/ipo-radar-mcp",
+  "readme": "https://ipogmpradar.com/mcp-server",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://ipogmpradar.com/mcp"
+    }
+  ]
+}
