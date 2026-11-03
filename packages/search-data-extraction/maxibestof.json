@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "MaxiBestOf",
+  "packageName": "@toolsdk-remote/maxibestof",
+  "description": "Search website designs, UI sections, fonts, palettes, and design profiles. Requires MaxiBestOf Pro.",
+  "url": "https://github.com/luminous8/maxibestof-mcp",
+  "readme": "https://maxibestof.one/mcp",
+  "runtime": "node",
+  "logo": "https://maxibestof.one/favicon.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://maxibestof.one/mcp-server",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp:read"]
+      }
+    }
+  ]
+}
