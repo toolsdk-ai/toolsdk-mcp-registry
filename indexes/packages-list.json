@@ -59824,5 +59824,13 @@
   "hirelayer-mcp": {
     "path": "other-tools-and-integrations/hirelayer-mcp.json",
     "category": "other-tools-and-integrations"
+  },
+  "@agentsearchhq/agentsearch-mcp": {
+    "path": "search-data-extraction/agentsearch-mcp.json",
+    "category": "search-data-extraction"
+  },
+  "arcbounty-mcp": {
+    "path": "finance-fintech/arcbounty-mcp.json",
+    "category": "finance-fintech"
   }
 }

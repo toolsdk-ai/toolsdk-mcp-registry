@@ -3145,7 +3145,8 @@
       "@toolsdk-remote/nebenkostenpro",
       "@toolsdk-remote/zovo-grant-finder",
       "freelance-tax-mcp",
-      "seller-fees-mcp"
+      "seller-fees-mcp",
+      "arcbounty-mcp"
     ]
   },
   "gaming": {
@@ -4281,7 +4282,8 @@
       "@toolsdk-remote/real-alpha",
       "@toolsdk-remote/tasarim-ai-catalog",
       "@toolsdk-remote/world-monitor",
-      "polish-mcp-servers"
+      "polish-mcp-servers",
+      "@agentsearchhq/agentsearch-mcp"
     ]
   },
   "security": {

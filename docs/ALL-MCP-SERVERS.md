@@ -1,6 +1,6 @@
 # 📚 All MCP Servers
 
-> **Complete directory of all 5360+ MCP servers in the ToolSDK Registry**
+> **Complete directory of all 5362+ MCP servers in the ToolSDK Registry**
 >
 > Looking for production-ready servers only? See the [main README](../README.md) for validated servers.
 
@@ -8,9 +8,9 @@
 
 ## 📊 Statistics
 
-- 📦 **Total Servers**: 5360
+- 📦 **Total Servers**: 5362
 - ✅ **Validated & Tested**: 811
-- ⚙️ **Community Contributed**: 4549
+- ⚙️ **Community Contributed**: 4551
 
 ---
 
@@ -2835,7 +2835,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 
 
 <a id="finance-fintech"></a>
-### Finance & Fintech <small>(364 servers)</small>
+### Finance & Fintech <small>(365 servers)</small>
 
 > Work with financial data, market info, and trading platforms using AI tools.
 
@@ -2996,6 +2996,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [❌ alphavantage](https://github.com/lifejwang11/alphavantage-mcp): Bridges AlphaVantage's financial data ecosystem by providing real-time access to stock market, forex, cryptocurrency, and fundamental financial metrics for data-driven investment research and analysis.  (python)
 - [❌ alphavantage-trader](https://github.com/akramsheriff5/mcp-server): Integrates with AlphaVantage API to fetch intraday stock data, calculate technical indicators, and generate trade recommendations based on market analysis.  (python)
 - [❌ arbitrum](https://github.com/gfable/arbitrum_mcp_server): Integrates with Arbiscan API to provide real-time Arbitrum blockchain data analysis, enabling natural language queries for block information, transaction details, account balances and network statistics  (node)
+- [❌ arcbounty-mcp](https://github.com/Sofiia7/ARC/tree/main/mcp-server): Put an AI agent to work for USDC, or let it hire. Browse, take and submit paid tasks, or post your own, on ArcBounty (Arc) and BaseBounty (Base) through ERC-8183 escrow, with ERC-8004 reputation for each paid job whose worker has a registered agent id. Browsing needs no credentials.  (node)
 - [❌ armor-wallet](https://github.com/armorwallet/armor-crypto-mcp): Enables direct blockchain operations, crypto trading, and wallet management through the Armor Wallet API with JWT authentication and detailed logging for portfolio monitoring and trading strategy execution.  (python)
 - [❌ artemis-mcp](https://github.com/artemis-xyz/artemis-mcp): Integrates with Artemis API to create and manage cryptocurrency data analysis formulas for accessing price data, fees, revenue, and other time-series metrics without switching contexts.  (python)
 - [❌ awslabs.cost-analysis-mcp-server](https://github.com/awslabs/mcp/tree/HEAD/src/cost-analysis-mcp-server): Analyze AWS service costs and generate cost reports.  (python)
@@ -3838,7 +3839,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 
 
 <a id="search-data-extraction"></a>
-### Search & Data Extraction <small>(497 servers)</small>
+### Search & Data Extraction <small>(498 servers)</small>
 
 > Find and extract data from various sources quickly and efficiently.
 
@@ -3945,6 +3946,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [✅ websearch-mcp](https://github.com/mnhlt/websearch-mcp): Provides real-time web search capabilities via a dedicated crawler service with configurable result limits, language filtering, and domain rules  (1 tools) (node)
 - [✅ youtube-data-mcp-server](https://github.com/icraft2170/youtube-data-mcp-server): Integrates with YouTube Data API to retrieve and analyze video content, transcripts, channel statistics, and engagement metrics across different regions and categories without leaving the conversation interface.  (9 tools) (node)
 - [✅ youtube-dlp-server](https://github.com/agentx-ai/agentx-mcp-servers/tree/HEAD/youtube_dlp_server): Extracts YouTube video metadata, subtitles in multiple languages, and top comments using yt-dlp with proxy support for content analysis and accessibility workflows.  (3 tools) (python)
+- [❌ @agentsearchhq/agentsearch-mcp](https://github.com/agentsearchhq-coder/agentsearch-mcp): Web search, page extract (URL to clean markdown) and JavaScript page rendering for AI agents. Free web search works with no key or wallet (up to 25 searches/day per IP, subject to shared daily capacity). Extract and render (and search, if opted in) are paid per call ($0.005 USDC on Base via x402) through the Pocket Network Agentic Portal, or point it at a self-hosted AgentSearch-compatible API. Also includes the free AgentSearch Review Board lookup/submit tools.  (node)
 - [❌ @apify/actors-mcp-server](https://github.com/apify/apify-mcp-server): The Apify Model Context Protocol (MCP) Server at mcp.apify.com instantly connects AI applications and agents to thousands of ready‑built tools. It allows your AI assistant to use any Apify Actor for web scraping, data extraction, and automation tasks in real time.  (node)
 - [❌ @arabold/docs-mcp-server](https://github.com/arabold/docs-mcp-server): Provides specialized documentation scraping and retrieval from GitHub, NPM, PyPI, and web pages, enabling accurate reference to up-to-date library documentation without disrupting workflow.  (node)
 - [❌ @automatelab/citation-intelligence](https://github.com/AutomateLab-tech/citation-intelligence): 26 tools to query which URLs Perplexity, Claude, ChatGPT, Gemini, Google AI Overviews, and Bing cite for any query. Tracks citation rate, share of voice vs competitors, average rank, and sentiment over a query set via a turnkey report.visibility tool. Self-hosted, BYO API keys, no backend.  (node)
