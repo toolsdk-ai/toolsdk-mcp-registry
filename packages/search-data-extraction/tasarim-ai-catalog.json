@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "name": "tasarim.ai AI Catalog",
+  "packageName": "@toolsdk-remote/tasarim-ai-catalog",
+  "description": "Find AI design tools, compare catalog records, and inspect stored evidence and limitations.",
+  "runtime": "node",
+  "readme": "https://tasarim.ai/en/mcp",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://tasarim.ai/api/mcp"
+    }
+  ]
+}
