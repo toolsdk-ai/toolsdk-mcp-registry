@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "Best Electrician Jobs",
+  "packageName": "@toolsdk-remote/best-electrician-jobs",
+  "description": "Hosted MCP server for BestElectricianJobs.com, a job board for electricians and electrical contractors. Employers draft, publish, pause and unpublish their own job posts, read applicants and résumés, add private notes and move candidates through hiring; publishing, rejecting and hiring need the employer's approval. Employer accounts only, via OAuth.",
+  "url": "https://github.com/854Labs/best-electrician-jobs",
+  "readme": "https://www.bestelectricianjobs.com/ai",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://www.bestelectricianjobs.com/icon-512.png",
+  "author": "854 Labs",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.bestelectricianjobs.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["openid"]
+      }
+    }
+  ]
+}
