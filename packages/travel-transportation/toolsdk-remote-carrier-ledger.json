@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Carrier Ledger",
+  "packageName": "@toolsdk-remote/carrier-ledger",
+  "description": "Authority, insurance and notices for any USDOT or MC number, each with its FMCSA source. Lookups are free with no account. Hosted Streamable HTTP endpoint; free tier needs no sign-in.",
+  "readme": "https://github.com/equinoxaifinance-rgb/carrier-ledger-docs#readme",
+  "url": "https://github.com/equinoxaifinance-rgb/carrier-ledger-docs",
+  "runtime": "node",
+  "author": "Steel Lantern",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://carrierledger.steellantern.com/mcp"
+    }
+  ]
+}
