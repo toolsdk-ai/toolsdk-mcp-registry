@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "WriteStack",
+  "packageName": "@toolsdk-remote/writestack",
+  "description": "Connect Claude, ChatGPT, Notion, or any MCP client to a writer's WriteStack account. Draft and schedule Substack Notes, manage articles, and read statistics.",
+  "url": "https://github.com/WriteStack/mcp",
+  "readme": "https://www.writestack.io/mcp",
+  "license": "MIT",
+  "logo": "https://cdn.writestack.io/writestack-app/og/logo.png",
+  "runtime": "node",
+  "author": "WriteStack",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.writestack.io/api/mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
