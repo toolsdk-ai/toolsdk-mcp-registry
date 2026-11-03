@@ -3692,7 +3692,8 @@
       "@toolsdk-remote/ravenpost",
       "@toolsdk-remote/reelsfarm",
       "@toolsdk-remote/serpier",
-      "@toolsdk-remote/trendsfast"
+      "@toolsdk-remote/trendsfast",
+      "@toolsdk-remote/trypost"
     ]
   },
   "monitoring": {

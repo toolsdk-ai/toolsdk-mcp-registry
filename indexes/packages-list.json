@@ -59800,5 +59800,9 @@
   "@toolsdk-remote/remembite": {
     "path": "uncategorized/remembite-mcp.json",
     "category": "uncategorized"
+  },
+  "@toolsdk-remote/trypost": {
+    "path": "marketing/trypost.json",
+    "category": "marketing"
   }
 }

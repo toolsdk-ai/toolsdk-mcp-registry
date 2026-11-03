@@ -1,6 +1,6 @@
 # 📚 All MCP Servers
 
-> **Complete directory of all 5354+ MCP servers in the ToolSDK Registry**
+> **Complete directory of all 5355+ MCP servers in the ToolSDK Registry**
 >
 > Looking for production-ready servers only? See the [main README](../README.md) for validated servers.
 
@@ -8,9 +8,9 @@
 
 ## 📊 Statistics
 
-- 📦 **Total Servers**: 5354
+- 📦 **Total Servers**: 5355
 - ✅ **Validated & Tested**: 811
-- ⚙️ **Community Contributed**: 4543
+- ⚙️ **Community Contributed**: 4544
 
 ---
 
@@ -3580,7 +3580,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 
 
 <a id="marketing"></a>
-### Marketing <small>(166 servers)</small>
+### Marketing <small>(167 servers)</small>
 
 > Create and edit marketing content, manage metadata, and refine product positioning.
 
@@ -3702,6 +3702,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [❌ @toolsdk-remote/testimonials-ltd](https://testimonials.ltd/integrations/claude): Manage your testimonials.ltd workspace from Claude: import reviews from Trustpilot, G2 or Google, approve and tag in bulk, and pin the best to widgets.  (node)
 - [❌ @toolsdk-remote/tiktok-ads-mcp-server](https://github.com/AdsMCP/tiktok-ads-mcp-server): TikTok Ads MCP Server – Model Context Protocol Server for TikTok Ads Marketing API Integration  (python)
 - [❌ @toolsdk-remote/trendsfast](https://trendsfast.com): Hosted niche trend and customer intelligence with source links, observation dates and coverage limits. Requires a TrendsFast account and usage credits; connect using MCP OAuth.  (node)
+- [❌ @toolsdk-remote/trypost](https://github.com/trypostit/trypost): Run your social media on autopilot with AI agents. Your agent plans, writes and schedules posts across 13 networks, with approvals and analytics. Open source.  (node)
 - [❌ @toolsdk-remote/tubetext-ad-intelligence](https://github.com/LMSlay/tubetext-mcp): Facebook/Instagram ads from Meta Ad Library plus AI teardowns of Meta and YouTube video ads. Hosted on Apify's MCP server; tools are the pay-per-event Apify Actors tubetext/meta-ad-library-videos, tubetext/video-ad-analyzer. Sign in with an Apify account (OAuth); failed or empty results are not billed.  (node)
 - [❌ @toolsdk-remote/ugc](https://ugc.africa): Human Ad Network. Create and fund campaigns, discover slots, and check a wallet from chat.  (node)
 - [❌ @toolsdk-remote/ugc-vz-creator-search](https://github.com/ugcvz/ugc-vz-mcp): Hosted endpoint for UGC VZ, a free directory of human user-generated-content creators based in Germany, Austria and Switzerland. Agents can look up creators by topic or city, read public profiles with portfolio links and self-reported rates, file a contact request on behalf of a brand, and check that request's status. No API key or OAuth is needed.  (node)
