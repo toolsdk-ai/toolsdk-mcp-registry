@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "name": "Ironheights",
+  "packageName": "ironheights",
+  "packageVersion": "0.33.0",
+  "description": "Local static scanner for AI agent skills (OpenClaw/ClawHub, Claude Code, Codex, Cursor) and MCP configs. The stdio MCP server lets a client check a skill before installing it (check_skill returns a fail-closed allow/blocked decision with grade, findings and a receipt), compare a shortlist, detect MCP tool-description drift and check a threat model. Rule-based and early-stage; no API key or network service needed.",
+  "url": "https://github.com/Frank-Masciopinto/ironheights",
+  "readme": "https://github.com/Frank-Masciopinto/ironheights/blob/main/docs/mcp.md",
+  "runtime": "node",
+  "license": "Apache-2.0",
+  "author": "Frank-Masciopinto",
+  "binArgs": ["mcp"],
+  "env": {}
+}
