@@ -59404,5 +59404,377 @@
   "@toolsdk-remote/watchr": {
     "path": "marketing/watchr.json",
     "category": "marketing"
+  },
+  "@allratestoday/central-bank-mcp": {
+    "path": "finance-fintech/allratestoday-central-bank-mcp.json",
+    "category": "finance-fintech"
+  },
+  "@babelize/mcp": {
+    "path": "translation-services/babelize-mcp.json",
+    "category": "translation-services"
+  },
+  "@budna-marketplace/mcp": {
+    "path": "other-tools-and-integrations/budna-mcp.json",
+    "category": "other-tools-and-integrations"
+  },
+  "@imageat/mcp": {
+    "path": "art-and-culture/imageat.json",
+    "category": "art-and-culture"
+  },
+  "@light-cloud/mcp-server": {
+    "path": "cloud-platforms/light-cloud-mcp-server.json",
+    "category": "cloud-platforms"
+  },
+  "@omophub/omophub-mcp": {
+    "path": "data-science-tools/omophub-mcp.json",
+    "category": "data-science-tools"
+  },
+  "@prereason/mcp": {
+    "path": "finance-fintech/prereason-mcp.json",
+    "category": "finance-fintech"
+  },
+  "@thriveventurelabs/accountsos-mcp": {
+    "path": "finance-fintech/accountsos.json",
+    "category": "finance-fintech"
+  },
+  "@timesheet/mcp": {
+    "path": "other-tools-and-integrations/timesheet-mcp.json",
+    "category": "other-tools-and-integrations"
+  },
+  "@toolsdk-remote/agenticwebscore-mcp": {
+    "path": "marketing/agenticwebscore-mcp.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/aiagentcycle": {
+    "path": "knowledge-memory/aiagentcycle-mcp.json",
+    "category": "knowledge-memory"
+  },
+  "@toolsdk-remote/alertforge": {
+    "path": "uncategorized/alertforge.json",
+    "category": "uncategorized"
+  },
+  "@toolsdk-remote/ayhire": {
+    "path": "search-data-extraction/ayhire.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/billstride": {
+    "path": "finance-fintech/billstride.json",
+    "category": "finance-fintech"
+  },
+  "@toolsdk-remote/birkan-educational-tools": {
+    "path": "uncategorized/birkan-educational-tools.json",
+    "category": "uncategorized"
+  },
+  "@toolsdk-remote/carrier-ledger": {
+    "path": "travel-transportation/toolsdk-remote-carrier-ledger.json",
+    "category": "travel-transportation"
+  },
+  "@toolsdk-remote/cedric": {
+    "path": "communication/toolsdk-remote-cedric.json",
+    "category": "communication"
+  },
+  "@toolsdk-remote/checkout-page": {
+    "path": "finance-fintech/checkout-page-remote.json",
+    "category": "finance-fintech"
+  },
+  "@toolsdk-remote/citewing": {
+    "path": "marketing/citewing.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/clawdchat-mcp": {
+    "path": "communication/clawdchat-mcp.json",
+    "category": "communication"
+  },
+  "@toolsdk-remote/cockatoo": {
+    "path": "cloud-platforms/cockatoo.json",
+    "category": "cloud-platforms"
+  },
+  "@toolsdk-remote/computefirst": {
+    "path": "developer-tools/computefirst.json",
+    "category": "developer-tools"
+  },
+  "@toolsdk-remote/comunicate-eu": {
+    "path": "marketing/comunicate-eu.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/crakseo-search-console": {
+    "path": "marketing/toolsdk-remote-crakseo-search-console.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/crevio": {
+    "path": "marketing/crevio.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/cruisehops": {
+    "path": "travel-transportation/cruisehops.json",
+    "category": "travel-transportation"
+  },
+  "@toolsdk-remote/devx-7702-sweeper-check": {
+    "path": "security/devx-7702-sweeper-check.json",
+    "category": "security"
+  },
+  "@toolsdk-remote/devx-address-poisoning-check": {
+    "path": "security/devx-address-poisoning-check.json",
+    "category": "security"
+  },
+  "@toolsdk-remote/devx-crypto-link-check": {
+    "path": "security/devx-crypto-link-check.json",
+    "category": "security"
+  },
+  "@toolsdk-remote/devx-multichain-balances": {
+    "path": "finance-fintech/devx-multichain-balances.json",
+    "category": "finance-fintech"
+  },
+  "@toolsdk-remote/devx-repo-run-check": {
+    "path": "security/devx-repo-run-check.json",
+    "category": "security"
+  },
+  "@toolsdk-remote/devx-token-snapshot": {
+    "path": "finance-fintech/devx-token-snapshot.json",
+    "category": "finance-fintech"
+  },
+  "@toolsdk-remote/directmailamerica-full": {
+    "path": "communication/directmailamerica-full.json",
+    "category": "communication"
+  },
+  "@toolsdk-remote/directmailamerica-narrow": {
+    "path": "communication/directmailamerica-narrow.json",
+    "category": "communication"
+  },
+  "@toolsdk-remote/dropshippingleads-mcp": {
+    "path": "search-data-extraction/dropshippingleads-mcp.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/easy-peasy-ai": {
+    "path": "marketing/easy-peasy-ai.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/edusign-mcp": {
+    "path": "uncategorized/edusign-mcp.json",
+    "category": "uncategorized"
+  },
+  "@toolsdk-remote/equivista": {
+    "path": "finance-fintech/equivista.json",
+    "category": "finance-fintech"
+  },
+  "@toolsdk-remote/fincodesapi": {
+    "path": "finance-fintech/fincodesapi.json",
+    "category": "finance-fintech"
+  },
+  "@toolsdk-remote/flowmingo-mcp": {
+    "path": "other-tools-and-integrations/flowmingo-mcp.json",
+    "category": "other-tools-and-integrations"
+  },
+  "@toolsdk-remote/formquote": {
+    "path": "other-tools-and-integrations/toolsdk-remote-formquote.json",
+    "category": "other-tools-and-integrations"
+  },
+  "@toolsdk-remote/genflick-mcp": {
+    "path": "other-tools-and-integrations/genflick-mcp.json",
+    "category": "other-tools-and-integrations"
+  },
+  "@toolsdk-remote/gosset": {
+    "path": "search-data-extraction/gosset.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/io-github-easygerber-easygerber": {
+    "path": "embedded-system/easygerber.json",
+    "category": "embedded-system"
+  },
+  "@toolsdk-remote/isms-copilot": {
+    "path": "security/isms-copilot.json",
+    "category": "security"
+  },
+  "@toolsdk-remote/johnvc-youtube-shorts": {
+    "path": "search-data-extraction/johnvc-youtube-shorts.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/johnvc-youtube-transcripts": {
+    "path": "search-data-extraction/johnvc-youtube-transcripts.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/landmine": {
+    "path": "developer-tools/landmine-remote.json",
+    "category": "developer-tools"
+  },
+  "@toolsdk-remote/lasso-mcp": {
+    "path": "marketing/lasso-mcp.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/lurkapi": {
+    "path": "search-data-extraction/lurkapi.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/mailows": {
+    "path": "communication/mailows.json",
+    "category": "communication"
+  },
+  "@toolsdk-remote/makeviral": {
+    "path": "marketing/makeviral.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/mcp-ads": {
+    "path": "marketing/mcp-ads.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/melso": {
+    "path": "finance-fintech/melso.json",
+    "category": "finance-fintech"
+  },
+  "@toolsdk-remote/nebenkostenpro": {
+    "path": "finance-fintech/nebenkostenpro.json",
+    "category": "finance-fintech"
+  },
+  "@toolsdk-remote/neeed-directory": {
+    "path": "search-data-extraction/neeed-directory.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/nl-darioa-webdev": {
+    "path": "other-tools-and-integrations/darioa.json",
+    "category": "other-tools-and-integrations"
+  },
+  "@toolsdk-remote/nl-feminiqrides-booking": {
+    "path": "travel-transportation/feminiqrides.json",
+    "category": "travel-transportation"
+  },
+  "@toolsdk-remote/nl-jetcabams-booking": {
+    "path": "travel-transportation/jetcabams.json",
+    "category": "travel-transportation"
+  },
+  "@toolsdk-remote/orizn-visa": {
+    "path": "travel-transportation/orizn-visa.json",
+    "category": "travel-transportation"
+  },
+  "@toolsdk-remote/pandadoc-mcp": {
+    "path": "other-tools-and-integrations/pandadoc-mcp.json",
+    "category": "other-tools-and-integrations"
+  },
+  "@toolsdk-remote/paper-plane-post": {
+    "path": "communication/paper-plane-post.json",
+    "category": "communication"
+  },
+  "@toolsdk-remote/posty-hu": {
+    "path": "marketing/posty-hu.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/rankwise": {
+    "path": "marketing/rankwise.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/ravenpost": {
+    "path": "marketing/ravenpost.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/real-alpha": {
+    "path": "search-data-extraction/real-alpha-remote.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/recordhtml": {
+    "path": "browser-automation/recordhtml.json",
+    "category": "browser-automation"
+  },
+  "@toolsdk-remote/reelsfarm": {
+    "path": "marketing/reelsfarm.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/saas-pro-max": {
+    "path": "monitoring/saas-pro-max.json",
+    "category": "monitoring"
+  },
+  "@toolsdk-remote/scalekit": {
+    "path": "aggregators/toolsdk-remote-scalekit.json",
+    "category": "aggregators"
+  },
+  "@toolsdk-remote/serpier": {
+    "path": "marketing/serpier.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/shipmail": {
+    "path": "communication/shipmail.json",
+    "category": "communication"
+  },
+  "@toolsdk-remote/tasarim-ai-catalog": {
+    "path": "search-data-extraction/tasarim-ai-catalog.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/tectova-runway-records": {
+    "path": "art-and-culture/tectova-runway-records.json",
+    "category": "art-and-culture"
+  },
+  "@toolsdk-remote/timesheet": {
+    "path": "other-tools-and-integrations/timesheet-remote.json",
+    "category": "other-tools-and-integrations"
+  },
+  "@toolsdk-remote/trendsfast": {
+    "path": "marketing/trendsfast.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/versum-agent-assistant": {
+    "path": "location-services/versum-agent-assistant.json",
+    "category": "location-services"
+  },
+  "@toolsdk-remote/world-monitor": {
+    "path": "search-data-extraction/world-monitor.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/zovo-grant-finder": {
+    "path": "finance-fintech/zovo-grant-finder.json",
+    "category": "finance-fintech"
+  },
+  "@wiro-ai/wiro-mcp": {
+    "path": "art-and-culture/wiro-ai.json",
+    "category": "art-and-culture"
+  },
+  "brewpage-mcp": {
+    "path": "developer-tools/brewpage-mcp.json",
+    "category": "developer-tools"
+  },
+  "cloudgpu-mcp": {
+    "path": "cloud-platforms/cloudgpu-mcp.json",
+    "category": "cloud-platforms"
+  },
+  "faxforagents-mcp": {
+    "path": "communication/faxforagents-mcp.json",
+    "category": "communication"
+  },
+  "freelance-tax-mcp": {
+    "path": "finance-fintech/freelance-tax-mcp.json",
+    "category": "finance-fintech"
+  },
+  "lake-level-mcp": {
+    "path": "location-services/lake-level-mcp.json",
+    "category": "location-services"
+  },
+  "landmines": {
+    "path": "developer-tools/landmines.json",
+    "category": "developer-tools"
+  },
+  "mcp-probe-kit": {
+    "path": "coding-agents/mcp-probe-kit.json",
+    "category": "coding-agents"
+  },
+  "meshmend-mcp": {
+    "path": "other-tools-and-integrations/meshmend-mcp.json",
+    "category": "other-tools-and-integrations"
+  },
+  "polish-mcp-servers": {
+    "path": "search-data-extraction/polish-mcp-servers.json",
+    "category": "search-data-extraction"
+  },
+  "quasarui-mcp": {
+    "path": "developer-tools/quasarui-mcp.json",
+    "category": "developer-tools"
+  },
+  "seller-fees-mcp": {
+    "path": "finance-fintech/seller-fees-mcp.json",
+    "category": "finance-fintech"
+  },
+  "shipmail-mcp": {
+    "path": "communication/shipmail-mcp.json",
+    "category": "communication"
+  },
+  "signbee-mcp": {
+    "path": "other-tools-and-integrations/signbee-mcp.json",
+    "category": "other-tools-and-integrations"
   }
 }
