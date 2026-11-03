@@ -1,0 +1,24 @@
+{
+  "type": "mcp-server",
+  "name": "Wiro AI",
+  "packageName": "@wiro-ai/wiro-mcp",
+  "description": "Official MCP server for Wiro AI. Search 3,500+ AI models for images, video, audio, speech, music and text, check each model's parameters and price, run it and get the results back in your assistant.",
+  "url": "https://github.com/wiroai/Wiro-MCP",
+  "readme": "https://wiro.ai/docs/mcp-self-hosted",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://wiro.ai/images/favicon/icon-512x512.png",
+  "author": "Wiro AI",
+  "env": {
+    "WIRO_API_KEY": {
+      "description": "Your Wiro project API key.",
+      "required": true,
+      "secret": true
+    },
+    "WIRO_API_SECRET": {
+      "description": "Your Wiro project API secret. Only needed for signature-based projects.",
+      "required": false,
+      "secret": true
+    }
+  }
+}
