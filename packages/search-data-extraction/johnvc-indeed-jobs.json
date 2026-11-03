@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "johnvc Indeed Jobs API",
+  "packageName": "@toolsdk-remote/johnvc-indeed-jobs",
+  "description": "Indeed job listings on any Indeed country site: search by keyword and location, list a company's jobs, or fetch job URLs, with pay, job type, benefits, apply link and the full description. Hosted on Apify's MCP server; the tool is the Apify Actor johnvc/indeed-jobs-api. Sign in with an Apify account (OAuth).",
+  "url": "https://apify.com/johnvc/indeed-jobs-api",
+  "readme": "https://apify.com/johnvc/indeed-jobs-api",
+  "runtime": "node",
+  "logo": "https://apify-image-uploads-prod.s3.us-east-1.amazonaws.com/yhqxg2vZPwtBLHewL-actor-lXNhuFdXgfOzO1mAE-fE0J19oF2G-icon.png",
+  "author": "johnvc",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=fetch-actor-details,johnvc/indeed-jobs-api",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
