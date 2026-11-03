@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "ComputeFirst",
+  "packageName": "@toolsdk-remote/computefirst",
+  "description": "Search a catalog of versioned, deterministic tools for exact arithmetic, CSV and JSON transforms, ISO 8601 date math, text, hashing, identifier check digits and unit conversions, read a tool's input schema and limits, then execute it by id and version (one call or a batch of up to 20). Anonymous access with no API key; optional account tools (sign-in, saved tools, activity) are also exposed.",
+  "url": "https://github.com/321zz321/computefirst-skill",
+  "readme": "https://computefirst.net/docs",
+  "runtime": "node",
+  "logo": "https://computefirst.net/icon-512.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://computefirst.net/mcp"
+    }
+  ]
+}
