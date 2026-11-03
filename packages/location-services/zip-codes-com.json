@@ -2,7 +2,7 @@
   "type": "mcp-server",
   "name": "Zip-Codes.com ZIP & Postal Code MCP",
   "packageName": "@toolsdk-remote/zip-codes-com",
-  "description": "Location intelligence for US addresses and ZIP Codes: standardize a US street address to its ZIP+4, look up US ZIP Codes and Canadian postal codes, search by radius, measure distance and request census tract demographics and district overlaps. Listed without a key, the endpoint runs in demo mode: real values, with deeper fields withheld except on demo codes and addresses. An X-Api-Key header with a free key (2,500 credits a day) removes the masking.",
+  "description": "Location intelligence for US addresses and ZIP Codes: standardize a US address to ZIP+4, look up US ZIP and Canadian postal codes, search by radius, measure distance and get census tract demographics and district overlaps. Without a key it runs in demo mode: real values, deeper fields withheld except on demo values. A free key (X-Api-Key, 2,500 credits a day) removes the masking. Agents with an MPP wallet can buy a prepaid API key through buy_credits; the wallet's owner approves each payment.",
   "url": "https://github.com/ZIP-Codes-API/zip-codes-mcp",
   "readme": "https://www.zip-codes.com/api/mcp",
   "runtime": "node",
