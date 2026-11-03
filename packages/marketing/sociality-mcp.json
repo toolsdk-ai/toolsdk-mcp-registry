@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "Sociality MCP",
+  "packageName": "@toolsdk-remote/sociality-mcp",
+  "description": "Official Sociality.io MCP server for social media analytics, post insights, and competitor benchmarking across Facebook, X, Instagram, YouTube, LinkedIn, and TikTok. Read-focused; the only write action adds a tracked competitor. Post publishing is not supported.",
+  "url": "https://github.com/socialityio/sociality-mcp",
+  "readme": "https://github.com/socialityio/sociality-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://sociality.io/icons/logo.png",
+  "author": "Sociality.io",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.sociality.io/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp:use"]
+      }
+    }
+  ]
+}
