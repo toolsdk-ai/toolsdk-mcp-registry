@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Google Ads Transparency MCP: Competitor Ads",
+  "packageName": "@toolsdk-remote/google-ads-transparency-mcp",
+  "description": "Competitor Google ads from the Google Ads Transparency Center by domain, advertiser ID, Transparency Center link or advertiser name: which ads are new, running or stopped, with first and last shown dates, format and ad links. Hosted Streamable HTTP via Apify (Apify OAuth or API token); open-source Node.js and Python stdio servers in the repo.",
+  "url": "https://github.com/GeminiGeorge22/google-ads-transparency-mcp",
+  "readme": "https://github.com/GeminiGeorge22/google-ads-transparency-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "publicrecords",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com?tools=publicrecords/google-ads-transparency-scraper",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
