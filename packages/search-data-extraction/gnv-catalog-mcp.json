@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Good Nature Vibe Catalog",
+  "packageName": "@toolsdk-remote/gnv-catalog-mcp",
+  "description": "Connects to the official read-only Good Nature Vibe product catalog and published shop knowledge.",
+  "url": "https://github.com/aiagentcycle/gnv-catalog-mcp",
+  "readme": "https://github.com/aiagentcycle/gnv-catalog-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://catalog-mcp.goodnaturevibe.com/mcp"
+    }
+  ]
+}
