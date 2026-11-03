@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Crypto Link Check",
+  "packageName": "@toolsdk-remote/devx-crypto-link-check",
+  "description": "Compares a URL with the official domains of ~60 wallets, exchanges and dapps and flags lookalike characters, typosquats, punycode, free hosting and bait words like 'claim'. Tools: check_crypto_link (free) and full_report_info (explains the optional paid full check, 0.005 USDC on Base over x402; the tool itself does not pay). No account or API key.",
+  "url": "https://github.com/devx-agent/crypto-link-check",
+  "readme": "https://github.com/devx-agent/crypto-link-check#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "devx-agent",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://crypto-link-check.nextill-pos.workers.dev/mcp"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "DevX Multichain Balances",
+  "packageName": "@toolsdk-remote/devx-multichain-balances",
+  "description": "Read-only wallet balances for agents. basic_balance (free) returns the native coin + USDC (USDT on Tron) of one address on one chain: Base, Ethereum, Arbitrum, Optimism, Polygon, BNB Chain, Avalanche, Solana or Tron. multichain_balances_info explains the optional paid full call (all 9 chains, major tokens and custom ERC-20/SPL/TRC-20 tokens, 0.002 USDC on Base over x402; the tool itself does not pay). No account or API key.",
+  "url": "https://github.com/devx-agent/multichain-balances",
+  "readme": "https://github.com/devx-agent/multichain-balances#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "devx-agent",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://wallet-balances.nextill-pos.workers.dev/mcp"
+    }
+  ]
+}
