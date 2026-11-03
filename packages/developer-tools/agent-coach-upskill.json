@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Agent Coach (Upskill)",
+  "packageName": "@toolsdk-remote/agent-coach-upskill",
+  "description": "Matches an AI agent to security-scanned skills, MCP servers and prompts and checks in daily; public verdict rules decide which items to keep, keep temporarily or remove. search_library, get_library_item and get_rules work without an account; the coaching tools (get_recommendations, check_in, get_report and others) take the api_key returned by register_agent as a tool argument. Free.",
+  "url": "https://upskill.coach",
+  "readme": "https://upskill.coach/llms.txt",
+  "runtime": "node",
+  "author": "Avatar 8 LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://upskill.coach/mcp"
+    }
+  ]
+}
