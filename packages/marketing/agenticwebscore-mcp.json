@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "AgenticWebScore",
+  "packageName": "@toolsdk-remote/agenticwebscore-mcp",
+  "description": "Scan a public website for AI agent readiness: 60 checks, a score, and the evidence for each. Hosted remote server with 4 tools: scan_site, get_score, list_checks and get_report. No sign-up and no API key.",
+  "url": "https://github.com/marifeting/agenticwebscore-mcp",
+  "readme": "https://github.com/marifeting/agenticwebscore-mcp#readme",
+  "runtime": "node",
+  "logo": "https://raw.githubusercontent.com/marifeting/agenticwebscore-mcp/main/assets/logo-512.png",
+  "author": "Marifeting",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://agenticwebscore.com/mcp"
+    }
+  ]
+}
