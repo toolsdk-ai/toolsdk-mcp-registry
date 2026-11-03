@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Fax for Agents",
+  "packageName": "faxforagents-mcp",
+  "description": "Fax for Agents is a fax API, a hosted MCP server and SDKs built so AI agents can send and receive faxes. It is made by JSB Holdings LLC. This package runs the same 15 tools locally over stdio, with quotes, human review, delegated policies, delivery evidence, guide resources and prompts. A free sandbox key works without a carrier and live sends are prepaid.",
+  "url": "https://github.com/faxforagents/mcp",
+  "readme": "https://github.com/faxforagents/mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "FAXFORAGENTS_API_KEY": {
+      "description": "Fax for Agents API key from https://app.faxforagents.com. A test key reaches the free sandbox and a live key reaches the carrier.",
+      "required": true,
+      "secret": true
+    }
+  }
+}
