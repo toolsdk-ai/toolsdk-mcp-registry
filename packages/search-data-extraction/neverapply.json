@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "NeverApply",
+  "packageName": "@toolsdk-remote/neverapply",
+  "description": "Search jobs, explore explained matches, and manage applications with your AI assistant.",
+  "url": "https://github.com/kasovy/neverapply-mcp",
+  "readme": "https://neverapply.co/features/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://neverapply.co/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
