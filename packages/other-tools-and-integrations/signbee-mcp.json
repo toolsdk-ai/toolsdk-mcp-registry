@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Signbee MCP Server",
+  "packageName": "signbee-mcp",
+  "description": "Send Markdown or PDF documents for two-party electronic signing with SHA-256 cryptographic audit certificates and OTP verification.",
+  "url": "https://github.com/signbee/mcp",
+  "readme": "https://github.com/signbee/mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "SIGNBEE_API_KEY": {
+      "description": "Optional API key from https://signb.ee/dashboard for instant document sending without OTP prompt.",
+      "required": false,
+      "secret": true
+    }
+  }
+}
