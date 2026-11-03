@@ -2,7 +2,7 @@
   "type": "mcp-server",
   "name": "Postel",
   "packageName": "@toolsdk-remote/postel",
-  "description": "Drafts X (Twitter) and LinkedIn posts in the user's saved voice and schedules or publishes them through the hosted Postel endpoint; research of high-performing X posts works without sign-in, all other tools require OAuth.",
+  "description": "Finds posts going viral in the user's niche and writes their own version in their saved voice, then schedules or publishes it to X (Twitter), LinkedIn, Bluesky or Mastodon through the hosted Postel endpoint; viral post research works without sign-in, all other tools require OAuth.",
   "url": "https://github.com/robinfaraj/postel-mcp",
   "readme": "https://github.com/robinfaraj/postel-mcp#readme",
   "runtime": "node",
