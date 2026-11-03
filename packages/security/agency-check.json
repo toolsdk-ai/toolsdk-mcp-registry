@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Agency Check",
+  "packageName": "@toolsdk-remote/agency-check",
+  "description": "Hosted second-look check for AI agents. Before an agent buys, sends, books, shares, signs up, or connects an app, it calls agency_check with what it is about to do and gets back Ready, Pause, or Clarify with a plain-language reason (for example, the user named one recipient but the send goes to 214 people). Also offers describe_ruleset, explain_rule, and get_receipt. Sign in with Google via OAuth; the Free plan includes 20 checks a month with no card.",
+  "url": "https://github.com/CyberStrategy1/agency-check",
+  "readme": "https://github.com/CyberStrategy1/agency-check#readme",
+  "runtime": "node",
+  "author": "Cyber Strategy Institute",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://agency-check.app/mcp",
+      "auth": { "type": "oauth2", "scopes": ["agency.check"] }
+    }
+  ]
+}
