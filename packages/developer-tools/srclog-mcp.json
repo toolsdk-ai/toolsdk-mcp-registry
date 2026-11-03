@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "SrcLog",
+  "packageName": "@toolsdk-remote/srclog-mcp",
+  "description": "Search open-source GitHub repositories, find alternatives to any project, browse curated topics, and rank top developers and organizations by language and country. Read-only, no auth.",
+  "url": "https://github.com/srclogcom/srclog-mcp",
+  "readme": "https://github.com/srclogcom/srclog-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/srclogcom/srclog-mcp/main/logo.png",
+  "author": "SrcLog",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://srclog.com/mcp"
+    }
+  ]
+}
