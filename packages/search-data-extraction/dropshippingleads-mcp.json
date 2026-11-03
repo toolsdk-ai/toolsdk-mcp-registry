@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "DropshippingLeads MCP",
+  "packageName": "@toolsdk-remote/dropshippingleads-mcp",
+  "description": "Query a public snapshot of small online retailers by keyword, category and recorded sales-market label for merchant research. Free access covers 14 categories with 100 records per category, excluding food and beverages; no service API key is required. Four tools provide coverage, merchant search, merchant details and methodology. Queries do not run live searches or crawling. Framework code uses MIT; actual data follows separate Free Data Terms v1.0 for internal research, retention and private AI analysis, without resale or public redistribution.",
+  "url": "https://github.com/anbani-tech/dropshippingleads-mcp",
+  "readme": "https://github.com/anbani-tech/dropshippingleads-mcp/blob/main/docs/CONNECTION-GUIDE.md",
+  "runtime": "node",
+  "license": "MIT (code only); separate Free Data Terms v1.0 for data",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.dropshippingleads.com/mcp"
+    }
+  ]
+}
