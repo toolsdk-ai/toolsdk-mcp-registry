@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "name": "crawlerpeek",
+  "packageName": "crawlerpeek",
+  "packageVersion": "0.1.3",
+  "description": "Checks whether AI crawlers such as GPTBot, ClaudeBot and PerplexityBot can access a URL: robots.txt rules per bot (RFC 9309) plus the live HTTP status fetched with each bot's user agent. Three read-only tools.",
+  "url": "https://github.com/crawlerpeek/crawlerpeek",
+  "readme": "https://crawlerpeek.com/cli",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "crawlerpeek",
+  "binArgs": ["mcp"],
+  "env": {}
+}
