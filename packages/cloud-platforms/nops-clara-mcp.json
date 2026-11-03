@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Clara by nOps",
+  "packageName": "@toolsdk-remote/nops-clara",
+  "description": "Official nOps FinOps assistant. Query AWS, GCP and Azure cost and usage, Reserved Instance and Savings Plan performance, budgets, reports, cost allocation and anomalies. Hosted Streamable HTTP endpoint with OAuth sign-in to a nOps account.",
+  "url": "https://github.com/nops-io/clara-mcp",
+  "readme": "https://github.com/nops-io/clara-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/nops-io/clara-mcp/main/assets/logo.png",
+  "author": "nOps",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.nops.io",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
