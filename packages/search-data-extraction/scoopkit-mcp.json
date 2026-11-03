@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Scoopkit",
+  "packageName": "@toolsdk-remote/scoopkit-mcp",
+  "description": "AI-industry news as structured events: each story deduplicated across outlets and classified against a published taxonomy (10 categories, 57 subcategories), with sources and correction history. list_events, get_event and taxonomy need no key; an optional X-Api-Key header unlocks Pro semantic search.",
+  "url": "https://github.com/nateslabach/scoopkit-mcp",
+  "runtime": "python",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.scoopkit.dev/mcp"
+    }
+  ]
+}
