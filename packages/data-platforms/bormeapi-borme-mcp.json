@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "BORME API",
+  "packageName": "@toolsdk-remote/bormeapi-borme-mcp",
+  "description": "Official hosted server for BORME API: Spain's company registry gazette (BORME) as typed events, more than 9.6 million events since 2009. Ten read-only tools for company, officer, history, insolvency and daily-digest lookups. Anonymous calls use the free tier; an X-API-Key header selects a paid plan (not modelled in this registry). A separate OAuth endpoint is at https://mcp.bormeapi.com/mcp/oauth.",
+  "url": "https://github.com/bormeapi/borme-mcp",
+  "readme": "https://bormeapi.com/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "BORME API",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.bormeapi.com/mcp"
+    }
+  ]
+}
