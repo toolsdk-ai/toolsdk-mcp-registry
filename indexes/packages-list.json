@@ -59804,5 +59804,13 @@
   "@toolsdk-remote/trypost": {
     "path": "marketing/trypost.json",
     "category": "marketing"
+  },
+  "agentfem-mcp": {
+    "path": "data-science-tools/agentfem-mcp.json",
+    "category": "data-science-tools"
+  },
+  "aria-icons": {
+    "path": "developer-tools/aria-icons.json",
+    "category": "developer-tools"
   }
 }

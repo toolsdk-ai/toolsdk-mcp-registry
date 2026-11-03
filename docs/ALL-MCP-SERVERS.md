@@ -1,6 +1,6 @@
 # 📚 All MCP Servers
 
-> **Complete directory of all 5355+ MCP servers in the ToolSDK Registry**
+> **Complete directory of all 5357+ MCP servers in the ToolSDK Registry**
 >
 > Looking for production-ready servers only? See the [main README](../README.md) for validated servers.
 
@@ -8,9 +8,9 @@
 
 ## 📊 Statistics
 
-- 📦 **Total Servers**: 5355
+- 📦 **Total Servers**: 5357
 - ✅ **Validated & Tested**: 811
-- ⚙️ **Community Contributed**: 4544
+- ⚙️ **Community Contributed**: 4546
 
 ---
 
@@ -2125,7 +2125,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 
 
 <a id="developer-tools"></a>
-### Developer Tools <small>(415 servers)</small>
+### Developer Tools <small>(416 servers)</small>
 
 > Enhance your development workflow with tools for coding and environment management.
 
@@ -2287,6 +2287,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [❌ archetypal-ai](https://github.com/archetypal-ai/archetypal-ai): Persistent memory for AI agents. recall, remember, checkpoint.  (node)
 - [❌ archy](https://github.com/phxdev1/archy-mcp): Generates architectural diagrams from text descriptions or GitHub repositories using Mermaid syntax, supporting flowcharts, class diagrams, sequence diagrams, and repository evolution tracking.  (node)
 - [❌ argocd](https://github.com/severity1/argocd-mcp): Integrates with ArgoCD to enable natural language control of Kubernetes application deployments through a Python-based bridge that supports GitOps workflows.  (python)
+- [❌ aria-icons](https://github.com/LeulAria/Aria-Icons): Search 1.4M open-source SVG icons and add them to your project as SVG or React/Vue components.  (node)
 - [❌ arthas-jvm-diagnostics](https://github.com/xzq-xu/jvm-mcp-server): Enables direct interaction with running Java applications through Arthas diagnostic tools via SSH connections, allowing for remote command execution, performance monitoring, and debugging of JVM processes.  (python)
 - [❌ artifacthub](https://github.com/alexw00/artifacthub-mcp): Provides a bridge to Artifact Hub's Helm chart repository, enabling quick retrieval, searching, and analysis of Helm chart configurations, templates, and default values directly within conversations.  (node)
 - [❌ ast-grep](https://github.com/ast-grep/ast-grep-mcp): Bridges to the ast-grep code search tool for finding code patterns in projects using abstract syntax tree matching, enabling efficient code analysis and refactoring tasks.  (python)
@@ -2549,7 +2550,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 
 
 <a id="data-science-tools"></a>
-### Data Science Tools <small>(97 servers)</small>
+### Data Science Tools <small>(98 servers)</small>
 
 > Simplify data analysis and exploration with tools for data science workflows.
 
@@ -2566,6 +2567,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [❌ @toolsdk-remote/io-github-aanari-loacare-healthcare-pricing](https://github.com/aanari/loacare-healthcare-pricing): Provides OAuth-authenticated U.S. healthcare price, CPT/HCPCS, provider, hospital, and provenance searches through a hosted MCP endpoint, plus reviewed provider correction submission.  (node)
 - [❌ @toolsdk-remote/space-mushroom](https://github.com/simulsarker007/space-mushroom-mcp): Read-only access to an open materials database of metals, polymers, ceramics, composites and space materials. Each value is returned with its unit, test conditions, method and source. 11 tools; no API key.  (node)
 - [❌ adaptive-graph-of-thoughts](https://github.com/saptadey/adaptive-graph-of-thoughts-mcp-server): Processes complex scientific queries through an 8-stage Graph-of-Thoughts pipeline that decomposes questions into hypotheses, gathers evidence, builds knowledge graphs in Neo4j, and provides confidence-scored conclusions with bias detection and falsifiability assessment for systematic research analysis.  (python)
+- [❌ agentfem-mcp](https://github.com/haoming-luo/agentfem-mcp): Create, validate and run inspectable finite-element projects, then retrieve numerical evidence through seven typed local tools. Requires Python 3.11+ and a separately installed compatible AgentFEM scientific runtime; the adapter alone does not provide the solver. No embedded LLM or hosted compute service.  (python)
 - [❌ analytical](https://github.com/quanticsoul4772/analytical-mcp): Enhances structured problem-solving and analytical reasoning with tools for research verification, statistical analysis, logical reasoning, and multi-perspective generation for data analysts, researchers, and decision-makers.  (node)
 - [❌ apache-jena-sparql](https://github.com/ramuzes/mcp-jena): Provides a bridge between AI agents and Apache Jena for executing SPARQL queries, performing updates, and accessing RDF data stored in Jena Fuseki servers with secure API key authentication.  (node)
 - [❌ auto-causal-inference](https://github.com/lethienhoavn/auto-causal-inference): Automates causal inference analysis on SQLite banking data by using LLM-guided variable classification to generate causal graphs and estimate Average Treatment Effects through DoWhy statistical methods with plain-language business summaries.  (python)
