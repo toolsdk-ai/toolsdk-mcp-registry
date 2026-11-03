@@ -1,0 +1,30 @@
+{
+  "type": "mcp-server",
+  "name": "CloudGPU MCP",
+  "packageName": "cloudgpu-mcp",
+  "description": "Lets an AI agent rent a GPU on cloudgpu.app by the minute: list GPUs with live prices and templates (JupyterLab, Ollama, ComfyUI, LLaMA-Factory), get a quote, create an instance from an approved quote with server-enforced spend, time and idle limits, run commands, tail logs, upload and download files over SFTP, and destroy the instance. Also lists models on the same account's OpenAI-compatible API. CLOUDGPU_READ_ONLY=1 registers only the look-up tools.",
+  "url": "https://github.com/mrhy7176/cloudgpu-mcp",
+  "readme": "https://cloudgpu.app/docs/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "CloudGPU",
+  "env": {
+    "CLOUDGPU_API_KEY": {
+      "description": "API key from https://cloudgpu.app/api; usage is paid from the account's prepaid balance.",
+      "required": true,
+      "secret": true
+    },
+    "CLOUDGPU_MAX_SPEND_USD": {
+      "description": "Highest budget in USD the agent may set for one instance (default 50).",
+      "required": false
+    },
+    "CLOUDGPU_MAX_HOURS": {
+      "description": "Longest time limit in hours the agent may set for one instance (default 24).",
+      "required": false
+    },
+    "CLOUDGPU_READ_ONLY": {
+      "description": "Set to 1 to register only the look-up tools.",
+      "required": false
+    }
+  }
+}
