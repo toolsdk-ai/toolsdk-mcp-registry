@@ -59776,5 +59776,17 @@
   "signbee-mcp": {
     "path": "other-tools-and-integrations/signbee-mcp.json",
     "category": "other-tools-and-integrations"
+  },
+  "@toolsdk-remote/brainattic": {
+    "path": "knowledge-memory/brainattic.json",
+    "category": "knowledge-memory"
+  },
+  "@toolsdk-remote/flaremail": {
+    "path": "communication/flaremail.json",
+    "category": "communication"
+  },
+  "@toolsdk-remote/rentreboot-mcp": {
+    "path": "location-services/rentreboot-mcp.json",
+    "category": "location-services"
   }
 }

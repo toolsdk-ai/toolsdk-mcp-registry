@@ -1,6 +1,6 @@
 # 📚 All MCP Servers
 
-> **Complete directory of all 5348+ MCP servers in the ToolSDK Registry**
+> **Complete directory of all 5351+ MCP servers in the ToolSDK Registry**
 >
 > Looking for production-ready servers only? See the [main README](../README.md) for validated servers.
 
@@ -8,9 +8,9 @@
 
 ## 📊 Statistics
 
-- 📦 **Total Servers**: 5348
+- 📦 **Total Servers**: 5351
 - ✅ **Validated & Tested**: 811
-- ⚙️ **Community Contributed**: 4537
+- ⚙️ **Community Contributed**: 4540
 
 ---
 
@@ -1494,7 +1494,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 
 
 <a id="communication"></a>
-### Communication <small>(255 servers)</small>
+### Communication <small>(256 servers)</small>
 
 > Connect with messaging platforms to manage chats and interact with team tools.
 
@@ -1563,6 +1563,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [❌ @toolsdk-remote/directmailamerica-full](https://directmailamerica.com/docs/mcp?utm_source=toolsdk&utm_medium=referral&utm_campaign=mcp_directories): Mail U.S. letters, Certified Mail and full-color postcards with 75 tools, including editable cover sheets, Email to Letter, Email to Postcard and workspace administration. Paid sends require approval bound to artwork, recipients, options and total; recurring automation has a separate authorization workflow. OAuth connects an existing workspace.  (node)
 - [❌ @toolsdk-remote/directmailamerica-narrow](https://directmailamerica.com/docs/mcp?utm_source=toolsdk&utm_medium=referral&utm_campaign=mcp_directories): Send a single U.S. letter or full-color postcard with 23 focused tools for product discovery, exact quotes, previews, editable cover sheets, approved sending and job status. Paid sending requires explicit approval bound to the mailing and total. OAuth connects an existing workspace.  (node)
 - [❌ @toolsdk-remote/ethora](https://github.com/dappros/ethora-mcp-server): Hosted Ethora MCP server: create and manage chat apps, rooms and users, send and search messages, deploy AI agents with a RAG knowledge base, and generate a website chat widget. Sign in with an Ethora account through OAuth.  (node)
+- [❌ @toolsdk-remote/flaremail](https://sendwithflare.com): Read, search, draft, and send email from a FlareMail inbox on your own domain. Hosted Streamable HTTP with OAuth 2.1 PKCE. Scope: email.  (node)
 - [❌ @toolsdk-remote/heyreagent](https://heyreagent.com/linkedin-mcp): Hosted MCP server for your own LinkedIn account: read the inbox and see who is waiting for a reply, send messages and connection invitations, search people, and read profiles and posts, with a daily limit per account for each kind of action. Not affiliated with LinkedIn.  (node)
 - [❌ @toolsdk-remote/inboxmcp](https://github.com/breakcold/inboxmcp): Hosted MCP for LinkedIn, WhatsApp, Telegram and Instagram inboxes: read conversations, research profiles and send user-approved messages. Requires an InboxMCP account, connected provider accounts and an active trial or paid subscription. The hosted implementation is proprietary; the public repository contains metadata and documentation.  (node)
 - [❌ @toolsdk-remote/io-famulor-mcp](https://www.famulor.io): Connects AI clients to Famulor voice assistants, communication history, calls, messaging, campaigns, knowledge, automations, tasks, settings, and related workspace tools.  (node)
@@ -3256,7 +3257,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 
 
 <a id="knowledge-memory"></a>
-### Knowledge & Memory <small>(230 servers)</small>
+### Knowledge & Memory <small>(231 servers)</small>
 
 > Store and query structured information for AI models to use across sessions.
 
@@ -3311,6 +3312,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [❌ @toolsdk-remote/aiagentcycle](https://github.com/aiagentcycle/aiagentcycle-mcp): Public read-only MCP server for sourced Dutch and English information about AIAgentCycle's workflow automation, self-hosted n8n integrations, AI agents, services, prices, case studies, and contact details.  (python)
 - [❌ @toolsdk-remote/anansi-haven](https://github.com/kburrus64-max/anansi-haven): Free public-beta home base for AI agents. Key-less utility tools (time zones and market hours, unit conversion, calculator, text tools, JSON Schema validation, UUIDs/hashes, URL metadata), a tools catalog (find_tools), persistent memory, an end-to-end encrypted private house (server stores ciphertext only), a job board, an agent directory and Agent Commons rooms. Free tools work with no key; an optional API key unlocks storage and posting.  (node)
 - [❌ @toolsdk-remote/app-factograph-factograph](https://www.factograph.app/for-ai-agents.html): Answers from facts people approved, every claim linked to the fact behind it: list the facts of a public FactoGraph store, ask it questions for cited answers, or, with the person's consent, make them a private memory store. No sign-in.  (node)
+- [❌ @toolsdk-remote/brainattic](https://brainattic.ai/docs/connect): Official EU-hosted Brainattic MCP service: hybrid semantic and keyword search, permission-scoped knowledge retrieval, versioned documents, and authorized document creation and updates. Connect using a Brainattic account and OAuth 2.1 with PKCE and dynamic client registration.  (node)
 - [❌ @toolsdk-remote/com-abuzzhive-abuzzhive](https://www.abuzzhive.com): Public Q&A boards where AI agents help each other. Look up errors other agents already solved (find_by_error, matching ignores paths, line numbers and ids), search solved problems, post a problem when stuck with the exact error and what you tried, solve open problems, confirm and vote. OAuth is approved automatically: no sign-up, no API key needed (API keys optional).  (node)
 - [❌ @toolsdk-remote/com-scento-perfume-api](https://github.com/Scento-com/perfume-mcp-server): The perfume knowledge connector for AI assistants. Portraits, raw materials, scent pairings and occasion edits from Scento's verified perfume database: 1,400+ designer and niche perfumes and 400+ raw materials. Twelve read-only tools, no key and no account. Tools: perfume-search, perfume-portrait, scent-neighbours, perfume-contrast, note-portrait, material-match, house-portrait, family-map, occasion-edit, wardrobe-composer, perfumery-lexicon, journal-search.  (node)
 - [❌ @toolsdk-remote/continuity](https://github.com/LAHutchins91/continuity-mcp): Continuity by Ouroboros Apps (https://ouroborosapps.com). Story continuity for fiction writers: a series bible and novel memory that keeps characters, places, timelines, and plot facts consistent across chats. Tools: list_story_projects, create_story_project, get_continuity_context, search_story_canon, upsert_canon_entry, get_canon_history, list_approved_scenes, record_approved_scene, save_story_checkpoint, list_story_checkpoints, continuity_audit. Hosted remote endpoint with OAuth and Dynamic Client Registration; requires an account. Docs: https://ouroborosapps.com/docs/continuity. Site: https://continuitywriter.com. Published in the Official MCP Registry as io.github.LAHutchins91/continuity.  (node)
@@ -3495,7 +3497,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 
 
 <a id="location-services"></a>
-### Location Services <small>(70 servers)</small>
+### Location Services <small>(71 servers)</small>
 
 > Work with maps, weather, and location-based data for analytics and insights.
 
@@ -3512,6 +3514,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [❌ @toolsdk-remote/beachfinder](https://github.com/troulin-a11y/BeachFinder-mcp): Search and compare 184,900 beaches, lakes, and swimming spots worldwide with current planning signals, water activities, public providers, source attribution, and canonical BeachFinder links through a read-only remote MCP server.  (node)
 - [❌ @toolsdk-remote/callejear-france](#): Search French communes and street records, retrieve IRIS-level BPE amenity counts and commune-level GASPAR codes, and compare 2–5 streets with five read-only tools. Snapshot: 2,192,808 street records across 101 departments. Missing values and unavailable source dates remain explicit; these are not walking-radius counts or parcel-level risk assessments. Free without an account or API key; 30 tool calls/minute and 100/day per origin, with 1,000/day globally.  (node)
 - [❌ @toolsdk-remote/mystreetdata-usa](#): Free read-only street search and context for 1.33M records across 8 US states. Five tools; no API key. Shared limits: 100 calls/day per origin and 1,000/day globally.  (node)
+- [❌ @toolsdk-remote/rentreboot-mcp](https://rentreboot.com): NYC apartment search, renter guides, neighborhood information and rent data through public hosted MCP tools. Personal alerts, saved searches and housing lottery status require scoped OAuth and are not available through this anonymous configuration. Website alert plans are separate. Public connection documentation is MIT licensed; the hosted implementation is proprietary.  (node)
 - [❌ @toolsdk-remote/versum-agent-assistant](https://github.com/sudzikcoin/versum-agent-assistant): Local businesses for AI agents: find a business by name, trade or meaning, see what it sells with prices, get a delivery quote from the shop's own cart, and open real order or booking links. No auth.  (node)
 - [❌ @toolsdk-remote/wheremind](https://wheremind.ai): Hosted MCP server giving AI agents live places search, place details, geocoding, nearby search and directions.  (node)
 - [❌ @toolsdk-remote/zaptu](https://github.com/TommyTap11/zaptu): US home-service request intake for AI assistants: send a person's consented contact request (service, ZIP, name, phone) to independent local providers, or get a plumbing call number the person dials themselves. Zaptu does not perform the work. No auth; dry_run validates without saving.  (python)

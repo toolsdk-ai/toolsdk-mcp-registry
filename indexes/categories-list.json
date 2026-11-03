@@ -1695,7 +1695,8 @@
       "@toolsdk-remote/paper-plane-post",
       "@toolsdk-remote/shipmail",
       "faxforagents-mcp",
-      "shipmail-mcp"
+      "shipmail-mcp",
+      "@toolsdk-remote/flaremail"
     ]
   },
   "customer-data-platforms": {
@@ -3432,7 +3433,8 @@
       "@toolsdk-remote/studiomeyer-memory",
       "selvedge-mcp",
       "sqlite-graph-memory",
-      "@toolsdk-remote/aiagentcycle"
+      "@toolsdk-remote/aiagentcycle",
+      "@toolsdk-remote/brainattic"
     ]
   },
   "location-services": {
@@ -3511,7 +3513,8 @@
       "ipgeolocation-io-mcp",
       "muslim-prayer-mcp",
       "@toolsdk-remote/versum-agent-assistant",
-      "lake-level-mcp"
+      "lake-level-mcp",
+      "@toolsdk-remote/rentreboot-mcp"
     ]
   },
   "marketing": {
