@@ -2,7 +2,7 @@
   "type": "mcp-server",
   "name": "Mnemoverse Memory",
   "packageName": "@mnemoverse/mcp-memory-server",
-  "description": "Persistent memory for AI agents over MCP, backed by the hosted Mnemoverse memory engine. Write and read memories, report whether a recalled memory helped or misled so recall is re-ranked by that feedback, and share memory rooms between agents. One API key gives Claude Code, Cursor, VS Code, Windsurf and ChatGPT the same memory. MIT server; the engine is a hosted service with a free tier.",
+  "description": "Persistent memory for AI agents over MCP, backed by the hosted Mnemoverse memory engine. Write and read memories and share rooms (beta) between agents; rating a recalled memory as helpful or misleading re-ranks what comes back next. One API key gives Claude Code, Cursor, VS Code and Windsurf the same memory. MIT server; the engine is a hosted service with a free tier.",
   "url": "https://github.com/mnemoverse/mcp-memory-server",
   "readme": "https://mnemoverse.com/docs/api/mcp-server",
   "runtime": "node",
