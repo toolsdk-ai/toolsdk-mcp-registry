@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "VivaDialog",
+  "packageName": "@toolsdk-remote/vivadialog",
+  "description": "Read and work a VivaDialog social inbox: reply to customers, tag, manage contacts and automations.",
+  "readme": "https://vivadialog.com/help/connected-apps",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.vivadialog.com/mcp",
+      "auth": { "type": "oauth2" }
+    }
+  ]
+}
