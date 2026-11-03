@@ -59832,5 +59832,337 @@
   "arcbounty-mcp": {
     "path": "finance-fintech/arcbounty-mcp.json",
     "category": "finance-fintech"
+  },
+  "@iris-code/mcp": {
+    "path": "developer-tools/iris-code.json",
+    "category": "developer-tools"
+  },
+  "@modelsalt/model-salt": {
+    "path": "art-and-culture/model-salt.json",
+    "category": "art-and-culture"
+  },
+  "@toolsdk-remote/agent-coach-upskill": {
+    "path": "developer-tools/agent-coach-upskill.json",
+    "category": "developer-tools"
+  },
+  "@toolsdk-remote/aiagentslisting": {
+    "path": "search-data-extraction/aiagentslisting.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/appscreen": {
+    "path": "marketing/appscreen.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/batchdata": {
+    "path": "other-tools-and-integrations/toolsdk-remote-batchdata.json",
+    "category": "other-tools-and-integrations"
+  },
+  "@toolsdk-remote/best-electrician-jobs": {
+    "path": "other-tools-and-integrations/best-electrician-jobs.json",
+    "category": "other-tools-and-integrations"
+  },
+  "@toolsdk-remote/bormeapi-borme-mcp": {
+    "path": "data-platforms/bormeapi-borme-mcp.json",
+    "category": "data-platforms"
+  },
+  "@toolsdk-remote/botsrated": {
+    "path": "monitoring/botsrated.json",
+    "category": "monitoring"
+  },
+  "@toolsdk-remote/bowmark": {
+    "path": "search-data-extraction/toolsdk-remote-bowmark.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/carbon-forge": {
+    "path": "version-control/carbon-forge-mcp.json",
+    "category": "version-control"
+  },
+  "@toolsdk-remote/cartviral": {
+    "path": "marketing/cartviral.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/civicdataforge": {
+    "path": "data-platforms/toolsdk-remote-civicdataforge.json",
+    "category": "data-platforms"
+  },
+  "@toolsdk-remote/close-knit": {
+    "path": "location-services/close-knit.json",
+    "category": "location-services"
+  },
+  "@toolsdk-remote/com-addtocrm-crm": {
+    "path": "customer-data-platforms/add-to-crm.json",
+    "category": "customer-data-platforms"
+  },
+  "@toolsdk-remote/com-awardtravelfinder-mcp": {
+    "path": "travel-transportation/award-travel-finder.json",
+    "category": "travel-transportation"
+  },
+  "@toolsdk-remote/company-facts": {
+    "path": "data-platforms/company-facts-mcp.json",
+    "category": "data-platforms"
+  },
+  "@toolsdk-remote/cooper-email": {
+    "path": "communication/cooper-email.json",
+    "category": "communication"
+  },
+  "@toolsdk-remote/discordtimestampgen-mcp": {
+    "path": "communication/discordtimestampgen-mcp.json",
+    "category": "communication"
+  },
+  "@toolsdk-remote/dmd-costs-tools": {
+    "path": "uncategorized/dmd-costs-tools.json",
+    "category": "uncategorized"
+  },
+  "@toolsdk-remote/domain-search-king": {
+    "path": "search-data-extraction/domain-search-king.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/emojidig-mcp": {
+    "path": "communication/emojidig-mcp.json",
+    "category": "communication"
+  },
+  "@toolsdk-remote/eventsend": {
+    "path": "monitoring/eventsend.json",
+    "category": "monitoring"
+  },
+  "@toolsdk-remote/fictura": {
+    "path": "developer-tools/fictura.json",
+    "category": "developer-tools"
+  },
+  "@toolsdk-remote/findaiforwork": {
+    "path": "aggregators/findaiforwork.json",
+    "category": "aggregators"
+  },
+  "@toolsdk-remote/fittest": {
+    "path": "data-science-tools/fittest.json",
+    "category": "data-science-tools"
+  },
+  "@toolsdk-remote/flightqueue": {
+    "path": "travel-transportation/flightqueue.json",
+    "category": "travel-transportation"
+  },
+  "@toolsdk-remote/fluxproof": {
+    "path": "monitoring/toolsdk-remote-fluxproof.json",
+    "category": "monitoring"
+  },
+  "@toolsdk-remote/folklore-mcp": {
+    "path": "data-science-tools/folklore-mcp.json",
+    "category": "data-science-tools"
+  },
+  "@toolsdk-remote/fontglitch-mcp": {
+    "path": "art-and-culture/fontglitch-mcp.json",
+    "category": "art-and-culture"
+  },
+  "@toolsdk-remote/fotofoto": {
+    "path": "art-and-culture/fotofoto.json",
+    "category": "art-and-culture"
+  },
+  "@toolsdk-remote/futureinfra": {
+    "path": "cloud-platforms/futureinfra.json",
+    "category": "cloud-platforms"
+  },
+  "@toolsdk-remote/goanyapi": {
+    "path": "search-data-extraction/goanyapi.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/handlepilot": {
+    "path": "marketing/handlepilot.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/house-ai": {
+    "path": "other-tools-and-integrations/house-ai.json",
+    "category": "other-tools-and-integrations"
+  },
+  "@toolsdk-remote/insertchat": {
+    "path": "support-service-management/insertchat.json",
+    "category": "support-service-management"
+  },
+  "@toolsdk-remote/jobspipe-mcp": {
+    "path": "search-data-extraction/jobspipe-mcp.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/joxo": {
+    "path": "coding-agents/joxo.json",
+    "category": "coding-agents"
+  },
+  "@toolsdk-remote/kin": {
+    "path": "security/kin.json",
+    "category": "security"
+  },
+  "@toolsdk-remote/kineticist": {
+    "path": "gaming/kineticist.json",
+    "category": "gaming"
+  },
+  "@toolsdk-remote/landed-mcp": {
+    "path": "search-data-extraction/landed-mcp.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/layiq-jobs": {
+    "path": "search-data-extraction/layiq-jobs.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/leal": {
+    "path": "marketing/leal.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/lifeverse-product-discovery": {
+    "path": "search-data-extraction/lifeverse-product-discovery.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/maxibestof": {
+    "path": "search-data-extraction/maxibestof.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/mcp-canary": {
+    "path": "monitoring/mcp-canary.json",
+    "category": "monitoring"
+  },
+  "@toolsdk-remote/metadataremoverai-mcp": {
+    "path": "security/metadataremoverai-mcp.json",
+    "category": "security"
+  },
+  "@toolsdk-remote/monito": {
+    "path": "browser-automation/monito.json",
+    "category": "browser-automation"
+  },
+  "@toolsdk-remote/more-good-reviews": {
+    "path": "marketing/more-good-reviews.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/mothership": {
+    "path": "travel-transportation/mothership.json",
+    "category": "travel-transportation"
+  },
+  "@toolsdk-remote/neverapply": {
+    "path": "search-data-extraction/neverapply.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/nicelydone": {
+    "path": "search-data-extraction/nicelydone.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/noonlaunch": {
+    "path": "marketing/noonlaunch.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/nops-clara": {
+    "path": "cloud-platforms/nops-clara-mcp.json",
+    "category": "cloud-platforms"
+  },
+  "@toolsdk-remote/odin": {
+    "path": "security/odin.json",
+    "category": "security"
+  },
+  "@toolsdk-remote/origami-tutor": {
+    "path": "art-and-culture/origami-tutor.json",
+    "category": "art-and-culture"
+  },
+  "@toolsdk-remote/paidnice": {
+    "path": "finance-fintech/paidnice.json",
+    "category": "finance-fintech"
+  },
+  "@toolsdk-remote/pallyy": {
+    "path": "marketing/pallyy.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/perceptlayer": {
+    "path": "search-data-extraction/perceptlayer.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/phasoric": {
+    "path": "knowledge-memory/phasoric.json",
+    "category": "knowledge-memory"
+  },
+  "@toolsdk-remote/prooffetch": {
+    "path": "search-data-extraction/toolsdk-remote-prooffetch.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/quant-agent-shop": {
+    "path": "search-data-extraction/quant-agent-shop.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/recall-kitchen": {
+    "path": "search-data-extraction/recall-kitchen.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/relaticle": {
+    "path": "customer-data-platforms/relaticle.json",
+    "category": "customer-data-platforms"
+  },
+  "@toolsdk-remote/requstory-mcp": {
+    "path": "other-tools-and-integrations/requstory-mcp.json",
+    "category": "other-tools-and-integrations"
+  },
+  "@toolsdk-remote/scoopkit-mcp": {
+    "path": "search-data-extraction/scoopkit-mcp.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/securelend-underwriting": {
+    "path": "finance-fintech/securelend-underwriting-remote.json",
+    "category": "finance-fintech"
+  },
+  "@toolsdk-remote/seoclar": {
+    "path": "marketing/seoclar.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/signal-desk": {
+    "path": "finance-fintech/signal-desk.json",
+    "category": "finance-fintech"
+  },
+  "@toolsdk-remote/silvertongue": {
+    "path": "marketing/silvertongue.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/sitekick-cms": {
+    "path": "developer-tools/sitekick-cms.json",
+    "category": "developer-tools"
+  },
+  "@toolsdk-remote/slicktrip": {
+    "path": "travel-transportation/slicktrip.json",
+    "category": "travel-transportation"
+  },
+  "@toolsdk-remote/socialtoai": {
+    "path": "marketing/socialtoai.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/speechyou-mcp": {
+    "path": "knowledge-memory/speechyou-mcp.json",
+    "category": "knowledge-memory"
+  },
+  "@toolsdk-remote/sports-odds-api": {
+    "path": "sports/sports-odds-api.json",
+    "category": "sports"
+  },
+  "@toolsdk-remote/srclog-mcp": {
+    "path": "developer-tools/srclog-mcp.json",
+    "category": "developer-tools"
+  },
+  "@toolsdk-remote/textkit": {
+    "path": "communication/textkit.json",
+    "category": "communication"
+  },
+  "@toolsdk-remote/vivadialog": {
+    "path": "communication/vivadialog.json",
+    "category": "communication"
+  },
+  "@toolsdk-remote/waspes": {
+    "path": "gaming/waspes.json",
+    "category": "gaming"
+  },
+  "@toolsdk-remote/webextract": {
+    "path": "search-data-extraction/webextract-remote.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/weir": {
+    "path": "search-data-extraction/weir.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/weir-docs": {
+    "path": "search-data-extraction/weir-docs.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/writestack": {
+    "path": "marketing/writestack.json",
+    "category": "marketing"
   }
 }
