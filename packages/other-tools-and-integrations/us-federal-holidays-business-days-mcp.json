@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "US Federal Holidays and Business Days MCP",
+  "packageName": "@toolsdk-remote/us-federal-holidays-business-days-mcp",
+  "description": "Exact U.S. federal holidays and business days 1971-2100, OPM and Federal Reserve observance. Tools: list_federal_holidays, is_business_day, add_business_days, count_business_days, invoice_due_date. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/us-federal-holidays-business-days-mcp",
+  "readme": "https://github.com/theluckystrike/us-federal-holidays-business-days-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://us-federal-holidays-business-days-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}

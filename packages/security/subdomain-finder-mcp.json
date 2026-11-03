@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Subdomain Finder MCP",
+  "packageName": "@toolsdk-remote/subdomain-finder-mcp",
+  "description": "Passive subdomain enumeration from certificate transparency (certspotter, crt.sh) with DNS checks. Tools: find_subdomains, resolve_subdomains, get_certificate_history, summarize_attack_surface. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/subdomain-finder-mcp",
+  "readme": "https://github.com/theluckystrike/subdomain-finder-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://subdomain-finder-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "AP Score Distributions MCP",
+  "packageName": "@toolsdk-remote/ap-score-distributions-mcp",
+  "description": "Official College Board AP score distributions 2026, 2025, 2024: percentiles, pass rates. Tools: get_ap_score_distribution, estimate_ap_percentile, compare_ap_exams, list_ap_exams, estimate_ap_score_from_composite. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/ap-score-distributions-mcp",
+  "readme": "https://github.com/theluckystrike/ap-score-distributions-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://ap-score-distributions-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}
