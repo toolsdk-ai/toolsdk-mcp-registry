@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Leal",
+  "packageName": "@toolsdk-remote/leal",
+  "description": "Design and launch Apple Wallet and Google Wallet loyalty stamp cards for shops, cafés and salons. Reads a business's name, colours and logo from its website, previews card designs as real wallet passes, then saves the card, rewards, a QR signup poster and the store location. Design previews work without an account; saving signs in to Leal (free account available) with OAuth. No delete tools, no customer personal data, no billing.",
+  "url": "https://www.getleal.com/mcp",
+  "readme": "https://www.getleal.com/mcp",
+  "runtime": "node",
+  "license": "Proprietary",
+  "author": "Leal",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.getleal.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["read", "write"]
+      }
+    }
+  ]
+}
