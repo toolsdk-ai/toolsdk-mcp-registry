@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "Scalekit MCP Server",
+  "packageName": "@toolsdk-remote/scalekit",
+  "description": "Connects to the hosted Scalekit MCP server to set up and manage agent integrations: 600+ connectors and 35,000+ tools with per-user OAuth, plus Scalekit environments, organizations, users, OIDC connections, roles and scopes. Requires OAuth sign-in.",
+  "url": "https://github.com/scalekit-inc/scalekit-mcp-server",
+  "readme": "https://github.com/scalekit-inc/scalekit-mcp-server#readme",
+  "runtime": "node",
+  "license": "Apache-2.0",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.scalekit.com/",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
