@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Google Search Console MCP + Bing Webmaster Tools",
+  "packageName": "@toolsdk-remote/crakseo-search-console",
+  "description": "Free access to your own Google Search Console and Bing Webmaster Tools data: clicks, impressions, queries and pages, URL inspection, sitemap listing and submission, and Bing query, page and traffic stats, crawl issues and URL submission quota.",
+  "url": "https://docs.crakseo.com/mcp-servers/search-console",
+  "readme": "https://docs.crakseo.com/mcp-servers/search-console",
+  "runtime": "node",
+  "author": "CrakSEO",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://crakseo.com/mcp/search-console",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["console:read", "console:write"]
+      }
+    }
+  ]
+}
