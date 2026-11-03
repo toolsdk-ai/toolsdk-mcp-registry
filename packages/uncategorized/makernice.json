@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Makernice",
+  "packageName": "@toolsdk-remote/makernice",
+  "description": "Generate AI videos and images with 17 models; every job is priced in USD before it runs. Requires a Makernice account and prepaid balance; OAuth sign-in.",
+  "url": "https://makernice.com/mcp/",
+  "readme": "https://makernice.com/developers.md",
+  "logo": "https://makernice.com/android-chrome-512x512.png",
+  "author": "Makernice",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.makernice.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
