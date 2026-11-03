@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "BatchData",
+  "packageName": "@toolsdk-remote/batchdata",
+  "description": "Official hosted MCP server for BatchData's U.S. real estate data: property lookup, comparables, property search, owner skip tracing, phone verification and address geocoding. Requires a BatchData account.",
+  "url": "https://github.com/batchdataco/batchdata-mcp-server",
+  "readme": "https://github.com/batchdataco/batchdata-mcp-server#readme",
+  "logo": "https://raw.githubusercontent.com/batchdataco/batchdata-mcp-server/main/assets/batchdata-logo-400x400.png",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "batchdataco",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.batchdata.com",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
