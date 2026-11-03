@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "TryPost",
+  "packageName": "@toolsdk-remote/trypost",
+  "description": "Run your social media on autopilot with AI agents. Your agent plans, writes and schedules posts across 13 networks, with approvals and analytics. Open source.",
+  "url": "https://github.com/trypostit/trypost",
+  "readme": "https://docs.trypost.it",
+  "runtime": "node",
+  "license": "AGPL-3.0",
+  "logo": "https://avatars.githubusercontent.com/u/255571204?v=4",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.trypost.it/mcp/trypost",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
