@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "App Store & Google Play Review Intelligence",
+  "packageName": "@toolsdk-remote/app-store-review-intelligence-mcp",
+  "description": "Review intelligence for any iOS App Store or Google Play app: top complaint themes, rating by app version, what got worse in the latest update, and side-by-side competitor comparisons. Hosted on Apify with pay-per-call pricing; sign in with an Apify account via OAuth.",
+  "url": "https://github.com/gunnargray-dev/app-store-review-intelligence-mcp",
+  "readme": "https://github.com/gunnargray-dev/app-store-review-intelligence-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Parallel Studio",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://parallelstudio--app-store-review-intelligence-mcp.apify.actor/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["full_api_access"]
+      }
+    }
+  ]
+}
