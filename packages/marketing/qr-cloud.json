@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "QR Cloud",
+  "packageName": "@toolsdk-remote/qr-cloud",
+  "description": "Official QR Cloud MCP server: create dynamic QR codes and short links, set up QR Reviews that route guests to Google or Tripadvisor, and read click, scan and review statistics. OAuth 2.1 or API key.",
+  "url": "https://qr-cloud.com/mcp-server/",
+  "readme": "https://qr-cloud.com/mcp-server/",
+  "runtime": "node",
+  "license": "Proprietary",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://qr-cloud.com/mcp"
+    }
+  ]
+}
