@@ -1,6 +1,6 @@
 # 📚 All MCP Servers
 
-> **Complete directory of all 5351+ MCP servers in the ToolSDK Registry**
+> **Complete directory of all 5354+ MCP servers in the ToolSDK Registry**
 >
 > Looking for production-ready servers only? See the [main README](../README.md) for validated servers.
 
@@ -8,9 +8,9 @@
 
 ## 📊 Statistics
 
-- 📦 **Total Servers**: 5351
+- 📦 **Total Servers**: 5354
 - ✅ **Validated & Tested**: 811
-- ⚙️ **Community Contributed**: 4540
+- ⚙️ **Community Contributed**: 4543
 
 ---
 
@@ -55,7 +55,7 @@
 
 
 <a id="uncategorized"></a>
-### Uncategorized <small>(560 servers)</small>
+### Uncategorized <small>(561 servers)</small>
 
 > Tools that haven’t been sorted into a category yet. AI will categorize it later.
 
@@ -443,6 +443,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [❌ @toolsdk-remote/packrift-mcp](https://github.com/Packrift/packrift-mcp): Remote MCP server for Packrift's packaging-supplies catalog with product search, pricing, inventory, packaging recommendations, and checkout URLs.  (node)
 - [❌ @toolsdk-remote/portravo](https://portravo.com/developers/mcp): Review construction plan takeoffs and download estimates after review and pricing.  (node)
 - [❌ @toolsdk-remote/qr-business-cards-mcp](https://github.com/ajfrai/qr-business-cards-mcp): Create professional QR business cards via AI assistants. No API key required. Generate profiles with contact info, social links, and get printable QR-coded business cards delivered.  (node)
+- [❌ @toolsdk-remote/remembite](#): Hosted food log for Claude and ChatGPT: your AI works out grams, calories and macros, and Remembite saves the meal. Free; sign in with OAuth.  (node)
 - [❌ @toolsdk-remote/runcomfy-mcp](https://www.runcomfy.com): Official remote MCP server for the RunComfy Serverless API (ComfyUI): create and manage GPU deployments, run async inference, and retrieve image/video results.  (node)
 - [❌ @toolsdk-remote/screenrig](https://screenrig.ai/): Manage digital signage screens, playlists, media, schedules and playback reports through the official hosted screenRIG MCP server.  (go)
 - [❌ @toolsdk-remote/statsnet](https://github.com/usenetstate/statsnet-mcp): Background check any company in the world: registration, executives, courts and finances.  (node)
@@ -628,7 +629,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 
 
 <a id="aggregators"></a>
-### Aggregators <small>(88 servers)</small>
+### Aggregators <small>(89 servers)</small>
 
 > Servers that let you access multiple apps and tools through one MCP server.
 
@@ -657,6 +658,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [❌ @toolsdk-remote/404-directory](https://github.com/MM-sheng/404-directory): Hosted read-only MCP gateway for one-call official documentation search across OpenAI, Microsoft Learn, AWS, and Cloudflare, plus capability-based tool discovery, trust comparison, live schema inspection, and approved remote execution.  (node)
 - [❌ @toolsdk-remote/agentsvc](https://github.com/agentsvc/agentsvc): 122 pay-per-call tools for AI agents over one Streamable HTTP endpoint: a task agent that runs many tools in one call, speech to text, web scraping and crawling to Markdown, screenshots, invoice extraction, company checks (LEI, VAT, sanctions), token pre-trade checks, scam message and prompt injection detection, IOTA notarization, and page, token and wallet watches with webhooks. No account or API key: tool calls are paid with USDC on Base, Solana, Polygon or Arbitrum via x402 inside tools/call; calls with the example input are free.  (node)
 - [❌ @toolsdk-remote/agentworld](https://github.com/shawnhvac/agentworld-mcp): Live AI agent economy on Base L2: agent rosters, venture business game, SolvScore credit bureau, x402 payment tools, crypto news feed, and on-chain economy stats. 100+ tools over Streamable HTTP.  (node)
+- [❌ @toolsdk-remote/ahel](https://github.com/ahel-technologies/ahel): Hosted Ahel MCP server: one catalog of data tasks for AI agents, including work email finding, company and people enrichment, SEO, SERP and keyword data, social media data (TikTok, Instagram, YouTube, X, Reddit, LinkedIn), official EU business registers with sanctions screening, and web page monitoring. The agent searches the catalog, gets the price of the exact run before it starts, then runs it. Paid from a prepaid Ahel balance (public sign-up, free starting credit); OAuth sign-in, no API key.  (node)
 - [❌ @toolsdk-remote/aident-loadout](https://github.com/Aident-AI/aident-skill): Connect Codex, Claude Code, Cursor, ChatGPT and other MCP clients to 1,000+ apps and 400+ expert-built Skills through one reusable setup. Credentials stay in Aident Vault; every action is logged in Audit; 50+ built-in services run on one balance.  (node)
 - [❌ @toolsdk-remote/api-market-gateway](#): Connects AI agents to 580+ APIs through a hosted gateway for API discovery, operation schemas, execution, usage checks and subscription management. OAuth authentication; individual APIs have different free tiers and paid plans, with subscription and usage charges applying.  (node)
 - [❌ @toolsdk-remote/chain-love-mcp](https://github.com/Chain-Love/chain.love-mcp): Hosted MCP gateway backed by the Chain.Love Web3 registry. Lists supported blockchain networks, searches infrastructure services such as RPC and API providers, explorers, oracles, bridges and wallets, and proxies registry-listed downstream MCP servers through one endpoint. No authentication for the gateway; credentialed downstream servers need x-chainlove-cred-* headers.  (node)
@@ -1494,7 +1496,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 
 
 <a id="communication"></a>
-### Communication <small>(256 servers)</small>
+### Communication <small>(257 servers)</small>
 
 > Connect with messaging platforms to manage chats and interact with team tools.
 
@@ -1572,6 +1574,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [❌ @toolsdk-remote/needhave](https://github.com/PrivateAISystems/needhave): A public need/have list for AI agents (Craigslist for agents). Read the newest needs and haves, post a need when a task is blocked on something another agent or person could supply, post a have for spare capacity, and reply to or accept replies on posts. Hosted remote MCP, no API key or sign-in.  (node)
 - [❌ @toolsdk-remote/notifly](https://github.com/DevinoSolutions/mcp-servers/tree/main/notifly): Manage notification workflows, subscribers and topics, and trigger delivery across email, SMS, push, chat and in-app channels with Notifly. Official hosted server operated by Devino Solutions; sign in with your Notifly account via OAuth.  (node)
 - [❌ @toolsdk-remote/openkrill-domain-mail-check](https://github.com/nguyenhieuec/domain-mail-check-mcp): Checks a domain's SPF, DKIM and DMARC with a grade and fixes, its MX, TXT, CAA and NS records, whether Gmail and Outlook bulk-sender rules would accept its mail, and its registrar and expiry. Read-only. Remote Streamable HTTP, no auth.  (node)
+- [❌ @toolsdk-remote/pachca-mcp](https://github.com/pachca/openapi): Official hosted MCP server for Pachca team chat. Search and read discussions, send messages and thread replies, and manage reminders, chats and bots within the connected account's permissions. Requires OAuth in a compatible client; the hosted implementation is not published in the documentation repository.  (node)
 - [❌ @toolsdk-remote/paper-plane-post](#): Create and send an AI-illustrated postcard anywhere in the world  (node)
 - [❌ @toolsdk-remote/placecall](https://github.com/voygr-tech/placecall): VOYGR's hosted MCP server at https://api.voygr.tech/mcp. Its voice agent dials US businesses on the user's behalf (reservations, appointments, inquiries, quotes), gets through phone menus, holds and transfers, can put a question back to the agent mid-call, and returns a structured outcome with transcript and recording. Can also suggest businesses to call. OAuth 2.1 sign-in (DCR + PKCE). Every new API key includes 250 free calls; after that usage is paid per outcome. US numbers only.  (node)
 - [❌ @toolsdk-remote/pondchat](https://pondchat.com): Remote MCP server for Pondchat — ephemeral, no-signup P2P video/text chat. Agents can mint shareable room URLs (create_pond), post into room chat as AI participants (send_message, encrypted with the room key), and read recent room chat decrypted (get_messages — the room ID is the read capability). Media stays peer-to-peer (DTLS-SRTP mesh, up to 6 participants).  (node)

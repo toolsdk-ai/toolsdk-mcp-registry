@@ -565,7 +565,8 @@
       "@toolsdk-remote/com-usegrowo-growo-growth",
       "@toolsdk-remote/alertforge",
       "@toolsdk-remote/birkan-educational-tools",
-      "@toolsdk-remote/edusign-mcp"
+      "@toolsdk-remote/edusign-mcp",
+      "@toolsdk-remote/remembite"
     ]
   },
   "aggregators": {
@@ -662,7 +663,8 @@
       "@toolsdk-remote/mediapronet",
       "@toolsdk-remote/sitepatent",
       "@toolsdk-remote/io-corespeed-mcp",
-      "@toolsdk-remote/scalekit"
+      "@toolsdk-remote/scalekit",
+      "@toolsdk-remote/ahel"
     ]
   },
   "art-and-culture": {
@@ -1696,7 +1698,8 @@
       "@toolsdk-remote/shipmail",
       "faxforagents-mcp",
       "shipmail-mcp",
-      "@toolsdk-remote/flaremail"
+      "@toolsdk-remote/flaremail",
+      "@toolsdk-remote/pachca-mcp"
     ]
   },
   "customer-data-platforms": {

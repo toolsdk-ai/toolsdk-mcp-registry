@@ -59788,5 +59788,17 @@
   "@toolsdk-remote/rentreboot-mcp": {
     "path": "location-services/rentreboot-mcp.json",
     "category": "location-services"
+  },
+  "@toolsdk-remote/ahel": {
+    "path": "aggregators/ahel.json",
+    "category": "aggregators"
+  },
+  "@toolsdk-remote/pachca-mcp": {
+    "path": "communication/pachca-mcp.json",
+    "category": "communication"
+  },
+  "@toolsdk-remote/remembite": {
+    "path": "uncategorized/remembite-mcp.json",
+    "category": "uncategorized"
   }
 }
