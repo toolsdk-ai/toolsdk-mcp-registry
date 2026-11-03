@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "WhatsApp Web Agent by Nova (CIVAI)",
+  "packageName": "@toolsdk-remote/whatsapp-web-agent-by-nova-civai",
+  "description": "I send and manage WhatsApp Web messages through your linked session",
+  "url": "https://github.com/civai-technologies/whatsapp-web-agent-mcp-by-nova-civai",
+  "readme": "https://github.com/civai-technologies/whatsapp-web-agent-mcp-by-nova-civai#readme",
+  "runtime": "python",
+  "license": "MIT",
+  "author": "CIVAI TECHNOLOGIES",
+  "logo": "https://nova.civai.co/catalog-icons/WhatsAppWebIcon.svg",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://nova.civai.co/mcp/agents/whatsapp-web-agent",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["openid", "email", "mcp:access"]
+      }
+    }
+  ]
+}
