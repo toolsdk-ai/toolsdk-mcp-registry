@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "QuasarUI MCP Server",
+  "packageName": "quasarui-mcp",
+  "description": "Searches QuasarUI's Quasar Framework (Vue) UI Components and returns their source. Free Components need no key.",
+  "url": "https://github.com/quasarui/quasarui-mcp",
+  "readme": "https://github.com/quasarui/quasarui-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "QUASARUI_ACCESS_KEY": {
+      "description": "Optional QuasarUI Access Key from https://www.quasarui.com/dashboard. Without it only Free Components are available.",
+      "required": false,
+      "secret": true
+    }
+  }
+}
