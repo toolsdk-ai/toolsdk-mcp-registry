@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "MCP Ads",
+  "packageName": "@toolsdk-remote/mcp-ads",
+  "description": "Read and manage Google Ads, Meta Ads, TikTok, LinkedIn and Microsoft Ads plus GA4, Search Console and Tag Manager: cross-account reports, wasted-spend audits and campaign changes that ask for approval first (new campaigns start paused). Requires an MCP Ads account.",
+  "url": "https://github.com/RoyAzran/mcp-ads",
+  "readme": "https://mcp-ads.com/docs",
+  "logo": "https://mcp-ads.com/static/apple-touch-icon.png",
+  "runtime": "python",
+  "license": "MIT",
+  "author": "Roy Azran",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp-ads.com/mcp-slim",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
