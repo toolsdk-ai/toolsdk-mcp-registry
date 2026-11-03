@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Section 179 Deduction Calculator MCP",
+  "packageName": "@toolsdk-remote/section-179-deduction-calculator-mcp",
+  "description": "Section 179 limits, 100% bonus depreciation, heavy SUV caps and asset loan cost (2025-2026, IRS). Tools: calculate_section_179, calculate_bonus_depreciation, get_vehicle_depreciation_limits, calculate_asset_loan_payment. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/section-179-deduction-calculator-mcp",
+  "readme": "https://github.com/theluckystrike/section-179-deduction-calculator-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://section-179-deduction-calculator-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}

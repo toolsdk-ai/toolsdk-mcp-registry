@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "No Tax on Overtime MCP",
+  "packageName": "@toolsdk-remote/no-tax-on-overtime-mcp",
+  "description": "No tax on overtime, tips and senior deductions for 2025-2028 (OBBBA), with IRS caps and phase-outs. Tools: calculate_overtime_deduction, calculate_tips_deduction, calculate_senior_deduction, estimate_tax_savings, explain_eligibility. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/no-tax-on-overtime-mcp",
+  "readme": "https://github.com/theluckystrike/no-tax-on-overtime-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://no-tax-on-overtime-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}
