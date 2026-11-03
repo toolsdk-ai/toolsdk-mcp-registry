@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "SaaS Pro Max",
+  "packageName": "@toolsdk-remote/saas-pro-max",
+  "description": "Explore product analytics, investigate errors, and manage feature flags and SaaS operations with scoped OAuth access. A free workspace is available; individual features depend on plan and permissions.",
+  "url": "https://saaspro.dev/docs/mcp",
+  "readme": "https://saaspro.dev/docs/mcp",
+  "logo": "https://saaspro.dev/icons/icon-192.png",
+  "author": "SaaS Pro Max",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://saaspro.dev/api/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["read"]
+      }
+    }
+  ]
+}
