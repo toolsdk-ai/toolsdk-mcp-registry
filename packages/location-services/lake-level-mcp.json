@@ -1,0 +1,13 @@
+{
+  "type": "mcp-server",
+  "name": "Lake Level MCP",
+  "packageName": "lake-level-mcp",
+  "description": "Live US lake and reservoir water levels for 44 lakes in 12 states, read at call time from USGS, USACE CWMS, CDEC, Reclamation and TWDB gauges. Tools: search_lakes, get_lake_level, get_lake_history (up to 365 days) and compare_lakes. No API key.",
+  "url": "https://github.com/theluckystrike/lake-level-mcp",
+  "readme": "https://github.com/theluckystrike/lake-level-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/theluckystrike/lake-level-mcp/main/assets/logo-400.png",
+  "author": "theluckystrike",
+  "env": {}
+}
