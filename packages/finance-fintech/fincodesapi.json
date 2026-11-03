@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "Fin Codes API",
+  "packageName": "@toolsdk-remote/fincodesapi",
+  "description": "Validate IBANs and bank codes, verify IBAN payee names, and screen sanctions lists through the hosted Fin Codes API service. Requires a Fin Codes API account; quota and prepaid payee-check credits apply.",
+  "url": "https://github.com/swiftcodesapi/fincodesapi-mcp",
+  "readme": "https://fincodesapi.com/mcp-server",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.fincodesapi.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["fincodesapi"]
+      }
+    }
+  ]
+}
