@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "JobsPipe",
+  "packageName": "@toolsdk-remote/jobspipe-mcp",
+  "description": "Official hosted MCP server for JobsPipe, a live job postings API for AI agents and hiring products. Search live postings from 30+ ATS feeds and job boards (Greenhouse, Lever, Ashby, Workday, SmartRecruiters, LinkedIn, Indeed and more), normalized into one JSON schema, with filters for title, location, remote, salary, seniority, skills, visa sponsorship and source. Also: hiring companies behind a search, company profiles, company tech stacks from job postings, US WARN layoff notices, and saved-search signals by email, Slack or webhook. OAuth sign-in or a jp_live_ API key; free plan with 1,000 credits, no card. Docs: https://docs.jobspipe.dev",
+  "url": "https://github.com/jobspipe/mcp",
+  "readme": "https://docs.jobspipe.dev/ai-agents/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/jobspipe/mcp/main/assets/logo-400.png",
+  "author": "JobsPipe",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.jobspipe.dev/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
