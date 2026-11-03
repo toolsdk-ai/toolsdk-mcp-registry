@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Origami Tutor",
+  "packageName": "@toolsdk-remote/origami-tutor",
+  "description": "Find origami and paper crafts from Origami Tutor, get paper advice for each model, and follow illustrated folding steps. Read-only hosted endpoint; no account or API key needed.",
+  "url": "https://github.com/DmitryNeznanov/origamitutor-mcp",
+  "readme": "https://github.com/DmitryNeznanov/origamitutor-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://origamitutor.com/api/mcp"
+    }
+  ]
+}
