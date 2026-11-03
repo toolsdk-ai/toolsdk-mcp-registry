@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "SlickTrip",
+  "packageName": "@toolsdk-remote/slicktrip",
+  "description": "Connects to SlickTrip's hosted MCP endpoint for live flight, hotel and seat prices, cheapest-day calendars, and price-drop and seat alerts by email or text. Sign in with a free SlickTrip account.",
+  "url": "https://github.com/sliktrip/slicktrip-mcp",
+  "readme": "https://slicktrip.com/connector",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "SlickTrip",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.slicktrip.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["openid", "email", "profile"]
+      }
+    }
+  ]
+}
