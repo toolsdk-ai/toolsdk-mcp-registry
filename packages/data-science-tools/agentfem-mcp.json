@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "AgentFEM MCP",
+  "packageName": "agentfem-mcp",
+  "packageVersion": "0.1.0",
+  "description": "Create, validate and run inspectable finite-element projects, then retrieve numerical evidence through seven typed local tools. Requires Python 3.11+ and a separately installed compatible AgentFEM scientific runtime; the adapter alone does not provide the solver. No embedded LLM or hosted compute service.",
+  "url": "https://github.com/haoming-luo/agentfem-mcp",
+  "readme": "https://github.com/haoming-luo/agentfem-mcp#readme",
+  "runtime": "python",
+  "license": "Apache-2.0",
+  "env": {
+    "AGENTFEM_MCP_ROOTS": {
+      "description": "Approved local project directories separated by the platform path separator. Configure an explicit project directory; if omitted, access is restricted to the server working directory.",
+      "required": false,
+      "secret": false
+    },
+    "AGENTFEM_COMMAND": {
+      "description": "Absolute path to the separately installed agentfem executable when automatic runtime discovery is not suitable. Must be accessible in the server environment.",
+      "required": false,
+      "secret": false
+    }
+  }
+}
