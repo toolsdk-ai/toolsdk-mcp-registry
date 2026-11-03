@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "GoAnyAPI",
+  "packageName": "@toolsdk-remote/goanyapi",
+  "description": "Public SEO, website and advertising data for AI agents: website traffic and traffic sources, domain rating and rating history, backlinks and referring domains, keyword difficulty, generation, suggestions and search volume, Google and Bing SERP, autocomplete across Google, Bing, DuckDuckGo, Naver, Coccoc, Yandex, YouTube and Yahoo, Google intitle and site search, Google Trends, reverse AdSense lookup, Google Ads Transparency and ads statistics, plus account credit balance. 38 read-only tools. Queries consume credits from the authorized GoAnyAPI account; one endpoint is free.",
+  "url": "https://github.com/GoAnyAPI/goanyapi-mcp",
+  "readme": "https://goanyapi.com/docs",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://goanyapi.com/logo.png",
+  "author": "GoAnyAPI",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.goanyapi.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp:invoke"]
+      }
+    }
+  ]
+}
