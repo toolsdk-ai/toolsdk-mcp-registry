@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@tiktokapi/mcp-server",
+  "packageVersion": "1.0.0",
+  "description": "Official Model Context Protocol (MCP) server for TikTokAPI.io \u2014 Real-time TikTok Data & 1080p Watermark-Free Video API. Search TikTok videos by keyword/region, fetch 1080p no-watermark MP4 streams (hdplay), inspect creator profiles & 200 followers/call, read comments, and query the TikTok Creative Center Commercial Ads Library.",
+  "url": "https://github.com/kaitoInfra/tiktokapi-mcp-server",
+  "runtime": "node",
+  "license": "MIT",
+  "name": "TikTokAPI.io MCP Server",
+  "author": "kaitoInfra",
+  "env": {
+    "TIKTOKAPI_KEY": {
+      "description": "API key from https://tiktokapi.io (2,000 free credits on signup, $0.20 per 1,000 videos)",
+      "required": true
+    }
+  }
+}
