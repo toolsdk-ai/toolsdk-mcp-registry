@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Mailows",
+  "packageName": "@toolsdk-remote/mailows",
+  "description": "Hosted Mailows MCP server: gives AI agents their own email inboxes, separate from human mail. Tools list authorized agent inboxes, list and read messages (content returned as untrusted data) and send mail with attachments. OAuth 2.1 + PKCE; a human picks the mailboxes and scopes on a consent screen and can revoke the grant at any time. Free plan available.",
+  "url": "https://github.com/mailows/mailows-grok-plugin",
+  "readme": "https://www.mailows.com/mcp-manual",
+  "runtime": "node",
+  "logo": "https://www.mailows.com/static/mark.svg",
+  "author": "Mailows (DW Technology LLC)",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.mailows.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp:mail.read", "mcp:mail.messages.read", "mcp:mail.send"]
+      }
+    }
+  ]
+}
