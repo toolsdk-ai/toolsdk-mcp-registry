@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Perceptlayer",
+  "packageName": "@toolsdk-remote/perceptlayer",
+  "description": "Live web data from 248 websites (maps, real estate, jobs, travel, search, reviews) as structured JSON. search_endpoints and get_endpoint work without a key; call_endpoint needs a Perceptlayer API key sent as Authorization: Bearer.",
+  "url": "https://perceptlayer.com",
+  "readme": "https://docs.perceptlayer.com/ai-agents",
+  "runtime": "node",
+  "author": "Perceptlayer",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.perceptlayer.com/mcp"
+    }
+  ]
+}
