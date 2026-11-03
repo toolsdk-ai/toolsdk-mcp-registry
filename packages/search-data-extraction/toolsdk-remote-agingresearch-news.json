@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "AgingResearch.News",
+  "packageName": "@toolsdk-remote/agingresearch-news",
+  "description": "Official AgingResearch.News remote MCP server: every new aging and longevity paper from PubMed, bioRxiv, medRxiv, arXiv and Europe PMC, judged for what its own work shows (study type, species, preprint), with the drugs, genes, processes, diseases and biomarkers papers study, their findings and replication, clinical trials, research grants, conferences, drug and therapy programs and the field's news. Lookups work without an account within a daily allowance; OAuth sign-in adds follows and Ask.",
+  "readme": "https://github.com/paperfoot/agingresearch-news-mcp#readme",
+  "url": "https://agingresearch.news/s/9i5bvw",
+  "runtime": "node",
+  "author": "AgingResearch.News",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://agingresearch.news/api/mcp"
+    }
+  ]
+}
