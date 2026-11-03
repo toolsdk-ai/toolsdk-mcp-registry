@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "johnvc YouTube Shorts API",
+  "packageName": "@toolsdk-remote/johnvc-youtube-shorts",
+  "description": "YouTube Shorts from a channel's Shorts tab or direct Short links: views, likes, comments, publish time, duration, hashtags and channel stats, sorted newest, popular or oldest. Hosted on Apify's MCP server; the tool is the pay-per-Short Apify Actor johnvc/youtube-shorts-api. Sign in with an Apify account (OAuth); error rows and empty channels are not billed.",
+  "url": "https://apify.com/johnvc/youtube-shorts-api",
+  "readme": "https://apify.com/johnvc/youtube-shorts-api",
+  "runtime": "node",
+  "logo": "https://apify-image-uploads-prod.s3.us-east-1.amazonaws.com/yhqxg2vZPwtBLHewL-actor-I4jjsTkELEeJKK8o3-6Zt0jRb54h-icon.png",
+  "author": "johnvc",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=fetch-actor-details,johnvc/youtube-shorts-api",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
