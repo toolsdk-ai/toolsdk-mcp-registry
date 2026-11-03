@@ -1,6 +1,6 @@
 # 📚 All MCP Servers
 
-> **Complete directory of all 5357+ MCP servers in the ToolSDK Registry**
+> **Complete directory of all 5360+ MCP servers in the ToolSDK Registry**
 >
 > Looking for production-ready servers only? See the [main README](../README.md) for validated servers.
 
@@ -8,9 +8,9 @@
 
 ## 📊 Statistics
 
-- 📦 **Total Servers**: 5357
+- 📦 **Total Servers**: 5360
 - ✅ **Validated & Tested**: 811
-- ⚙️ **Community Contributed**: 4546
+- ⚙️ **Community Contributed**: 4549
 
 ---
 
@@ -4805,7 +4805,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 
 
 <a id="other-tools-and-integrations"></a>
-### Other Tools and Integrations <small>(872 servers)</small>
+### Other Tools and Integrations <small>(875 servers)</small>
 
 > Miscellaneous tools and integrations that don’t fit into other categories.
 
@@ -5004,6 +5004,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [❌ @toolsdk-remote/hypnothera](https://hypnothera.ai): Personalized guided hypnosis audio from hypnothera.ai: search a free library of ready-made sessions by topic, create a personalized session or multi-day journey from a short brief the user approves, continue journeys day by day, list voices, and render audio in the chosen voice. Needs a Hypnothera account; scripts and audio use account credits.  (node)
 - [❌ @toolsdk-remote/imagelato](https://github.com/imagelato/claude-plugin): Inspect image projects, deterministic resize and format presets, processed image batches and webhook health through Imagelato's hosted OAuth connector. Confirmed tools manage projects and presets or delete one batch.  (node)
 - [❌ @toolsdk-remote/io-github-gillinghammer-phonescreen](https://phonescreen.ai/mcp): Score resumes, screen candidates by phone, review interview results, and check references from AI assistants.  (node)
+- [❌ @toolsdk-remote/isgenai](https://github.com/vagabond11/isgenai-mcp): Official hosted, read-only server for isGenAI. Checks images, text, code and public URLs for recorded evidence of AI use: C2PA Content Credentials (signature validity and signer trust reported separately), IPTC AI-generated labels, prompts saved by AUTOMATIC1111, ComfyUI, InvokeAI and NovelAI, and AI-use statements in text. It reads records and does not guess from pixels. No authentication.  (node)
 - [❌ @toolsdk-remote/jobfinder](#): Review job matches, read drafted outreach, approve or reject applications and track replies.  (node)
 - [❌ @toolsdk-remote/lintelly-hr-deutschland](https://github.com/NicksAdvisory/lintelly-hr-deutschland): German employment law only. Answers questions of small companies in Germany about German employment and social security law: notice periods, employer costs, sick pay, maternity protection, dismissals, references, contract clauses and HR workflows, each with calculation and official source. 38 read-only tools, no sign-in, nothing stored. General information, not legal advice.  (node)
 - [❌ @toolsdk-remote/narva](https://narva.app): Official Narva remote MCP server: make faceless YouTube videos and Shorts from a topic or a script (script, AI narration in 32 languages, AI visuals, archive footage, motion graphics, captions, music, thumbnails), edit them in words and publish or schedule them to your YouTube channel. Sign in with your Narva account via OAuth (a plan is required to make videos).  (node)
@@ -5018,6 +5019,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [❌ @toolsdk-remote/realrun](https://github.com/baseledgerip/realrun-mcp): Read-only lookups over RealRun's published, independent tests of AI models on everyday tasks (inbox triage, meeting scheduling, receipts, finance). Tools: list_tasks, get_scores, recommend_model and get_warnings return model scores, a recommended model with alternatives, and safety warnings. Free, no auth.  (node)
 - [❌ @toolsdk-remote/soundcheck](https://soundchecklive.io): Authenticated Soundcheck member server. Streamable HTTP with OAuth.  (node)
 - [❌ @toolsdk-remote/soundcheck-instant-quotes](https://soundchecklive.io): Live-event quoting for businesses that sell live event services.  (node)
+- [❌ @toolsdk-remote/stint-shared-story](https://github.com/enigma-1111/stint): Read and continue a public shared story written by people and AI agents: read the last line, get an exact quote for a passage (a fixed 1 US cent per character, 20 to 800 characters), and publish it after the user's own wallet has paid. Reading is free; the server never sends funds. No authentication.  (node)
 - [❌ @toolsdk-remote/surveyninja](https://github.com/SurveyNinjaio/surveyninja-mcp): Hosted SurveyNinja MCP: build surveys from a description or a template, check them before launch, publish them, read responses and reports, and export results to CSV, Excel, SPSS or PDF. Sign in with OAuth and choose one workspace; works on every SurveyNinja plan, Free included.  (node)
 - [❌ @toolsdk-remote/taskade](https://github.com/taskade/mcp): Hosted Taskade MCP (OAuth) at https://www.taskade.com/mcp — connect agents to a Taskade workspace and Genesis apps.  (node)
 - [❌ @toolsdk-remote/taskpush](#): Marketplace where AI agents hire other agents, mainly for data enrichment: deliveries are checked by machine and paid from USD escrow only when every check passes. register_agent and render_enrichment_task work without a key; the other tools need the agent API key that register_agent returns, sent as a Bearer token, which this entry does not configure.  (go)
@@ -5254,6 +5256,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [❌ higress-api-gateway](https://github.com/higress-group/higress-ops-mcp-server): Enables DevOps teams to manage Higress API gateway configurations through natural language commands with human-in-the-loop validation for sensitive operations  (python)
 - [❌ hippycampus-(openapi-tools)](https://github.com/cromwellian/hippycampus): Converts OpenAPI specifications into LangChain tools, enabling AI assistants to interact with existing REST APIs without custom implementation  (python)
 - [❌ hirebase-mcp](https://github.com/jhgaylor/hirebase-mcp): Integrates with HireBase Job API to enable job searching with extensive filtering options and detailed job information retrieval for career exploration and job seeking  (python)
+- [❌ hirelayer-mcp](https://github.com/HireLayer/hirelayer-mcp): Official HireLayer MCP server for recruiting: parse resumes and CVs into structured JSON, extract weighted criteria from a job description, match and rank candidates against a job with explanations, and normalize free-text skills to a taxonomy.  (node)
 - [❌ hive](https://github.com/gluneau/hive-mcp-server): Integrates with the Hive blockchain to enable querying data, posting content, and managing accounts for content creation, social media automation, and blockchain analysis tasks.  (node)
 - [❌ home-assistant](https://github.com/voska/hass-mcp): Integrates with Home Assistant to enable natural language control of smart home devices, querying device states, troubleshooting automations, and summarizing home configurations through a Docker container that communicates with the Home Assistant API.  (python)
 - [❌ home-assistant-mcp-server](https://github.com/oleander/home-assistant-mcp-server): Enables natural language control of Home Assistant smart home systems with tools for querying entity states, executing service calls, and retrieving system information through secure WebSocket or stdio communication.  (node)

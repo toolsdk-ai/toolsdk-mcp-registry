@@ -59812,5 +59812,17 @@
   "aria-icons": {
     "path": "developer-tools/aria-icons.json",
     "category": "developer-tools"
+  },
+  "@toolsdk-remote/isgenai": {
+    "path": "other-tools-and-integrations/toolsdk-remote-isgenai.json",
+    "category": "other-tools-and-integrations"
+  },
+  "@toolsdk-remote/stint-shared-story": {
+    "path": "other-tools-and-integrations/stint-shared-story.json",
+    "category": "other-tools-and-integrations"
+  },
+  "hirelayer-mcp": {
+    "path": "other-tools-and-integrations/hirelayer-mcp.json",
+    "category": "other-tools-and-integrations"
   }
 }

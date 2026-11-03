@@ -5623,7 +5623,10 @@
       "@toolsdk-remote/pandadoc-mcp",
       "@toolsdk-remote/timesheet",
       "meshmend-mcp",
-      "signbee-mcp"
+      "signbee-mcp",
+      "@toolsdk-remote/isgenai",
+      "@toolsdk-remote/stint-shared-story",
+      "hirelayer-mcp"
     ]
   }
 }
