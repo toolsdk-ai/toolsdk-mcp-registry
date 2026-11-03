@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Requstory",
+  "packageName": "@toolsdk-remote/requstory-mcp",
+  "description": "Maps how a company works from its website: teams, processes, owners and handoffs, and which steps AI agents can run. Public tools search company maps and AI-readiness scores without a key.",
+  "url": "https://requstory.com/developers/api/",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://requstory.com/mcp"
+    }
+  ]
+}
