@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "OMOPHub",
+  "packageName": "@omophub/omophub-mcp",
+  "description": "Search, look up, map and navigate the OHDSI OMOP standardized medical vocabularies (11M+ concepts across 120+ vocabularies, including SNOMED CT, ICD-10, LOINC and RxNorm) from AI agents via the OMOPHub API. Requires an OMOPHub API key (free tier available).",
+  "url": "https://github.com/OMOPHub/omophub-mcp",
+  "readme": "https://github.com/OMOPHub/omophub-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "OMOPHub",
+  "env": {
+    "OMOPHUB_API_KEY": {
+      "description": "OMOPHub API key, created at https://dashboard.omophub.com/api-keys.",
+      "required": true,
+      "secret": true
+    }
+  }
+}
