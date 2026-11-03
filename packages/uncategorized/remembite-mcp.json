@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Remembite",
+  "packageName": "@toolsdk-remote/remembite",
+  "description": "Hosted food log for Claude and ChatGPT: your AI works out grams, calories and macros, and Remembite saves the meal. Free; sign in with OAuth.",
+  "readme": "https://remembite.com/connect",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://remembite.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
