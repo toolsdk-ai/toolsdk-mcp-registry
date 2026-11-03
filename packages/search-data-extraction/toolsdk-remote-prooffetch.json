@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "ProofFetch",
+  "packageName": "@toolsdk-remote/prooffetch",
+  "description": "Web pages your agent can quote: numbered paragraphs to cite, two fingerprints to check, and a hidden-instruction scan on every fetch of a public URL. 1,000 full fetches a month free. Hosted Streamable HTTP endpoint; free tier needs no sign-in.",
+  "readme": "https://github.com/equinoxaifinance-rgb/proof-fetch-docs#readme",
+  "url": "https://github.com/equinoxaifinance-rgb/proof-fetch-docs",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Steel Lantern",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://prooffetch.steellantern.com/mcp"
+    }
+  ]
+}
