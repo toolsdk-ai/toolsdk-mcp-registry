@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Space Mushroom",
+  "packageName": "@toolsdk-remote/space-mushroom",
+  "description": "Read-only access to an open materials database of metals, polymers, ceramics, composites and space materials. Each value is returned with its unit, test conditions, method and source. 11 tools; no API key.",
+  "url": "https://github.com/simulsarker007/space-mushroom-mcp",
+  "readme": "https://spacemushroom.com/mcp-server/",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://spacemushroom.com/mcp"
+    }
+  ]
+}
