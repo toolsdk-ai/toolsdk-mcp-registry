@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Odin",
+  "packageName": "@toolsdk-remote/odin",
+  "description": "Read Odin security findings and remediation, link fix pull requests and track retests.",
+  "url": "https://www.borghq.io/",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://odin.borghq.io/api/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["read", "write"]
+      }
+    }
+  ]
+}
