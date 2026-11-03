@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "CorpusIQ",
+  "packageName": "@toolsdk-remote/corpusiq",
+  "description": "One hosted MCP server with read-only access to more than 40 business systems through a single OAuth connection: Shopify, Stripe, QuickBooks, HubSpot, Klaviyo, Google Ads, Meta Ads, Google Analytics 4, Google Search Console, LinkedIn Ads, Mailchimp, Airtable, Notion, Slack, Monday, eBay, Amazon Seller and more. Answers a question that spans several systems at once, and returns every figure alongside the source system it came from. External source tools never write back to a connected vendor system. A 30-day trial needs no credit card.",
+  "url": "https://github.com/CorpusIQ/mcp-manifest",
+  "readme": "https://docs.corpusiq.io/mcp",
+  "logo": "https://www.corpusiq.io/logo.png",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp2.corpusiq.io/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["openid", "email", "profile"]
+      }
+    }
+  ]
+}
