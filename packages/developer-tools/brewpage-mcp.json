@@ -1,0 +1,11 @@
+{
+  "type": "mcp-server",
+  "name": "BrewPage",
+  "packageName": "brewpage-mcp",
+  "description": "Publishes HTML pages, Markdown, static sites, files, JSON and key-value data to temporary HTTPS links on brewpage.app with no signup or API key; update or delete with the returned owner token.",
+  "url": "https://github.com/kochetkov-ma/brewpage-openapi",
+  "readme": "https://github.com/kochetkov-ma/brewpage-openapi#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {}
+}
