@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "EventSend",
+  "packageName": "@toolsdk-remote/eventsend",
+  "description": "Ask your AI about your product's events, delivery health and usage. Read-only: search events, follow one customer's timeline, see why a Slack, Discord, Telegram or webhook notification failed, and check daily stats and quota. Official hosted server; sign in with your EventSend account via OAuth.",
+  "readme": "https://eventsend.io/docs/mcp",
+  "runtime": "node",
+  "logo": "https://eventsend.io/images/pwa/icon-512.png",
+  "author": "EventSend",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://eventsend.io/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["read"]
+      }
+    }
+  ]
+}
