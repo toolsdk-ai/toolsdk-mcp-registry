@@ -59372,5 +59372,37 @@
   "xiaohongshu-xhs-rednote-mcp": {
     "path": "marketing/xiaohongshu-xhs-rednote-mcp.json",
     "category": "marketing"
+  },
+  "@toolsdk-remote/adspy": {
+    "path": "marketing/adspy.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/io-corespeed-mcp": {
+    "path": "aggregators/corespeed.json",
+    "category": "aggregators"
+  },
+  "@toolsdk-remote/linkedcamp-mcp": {
+    "path": "marketing/linkedcamp.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/narva": {
+    "path": "other-tools-and-integrations/toolsdk-remote-narva.json",
+    "category": "other-tools-and-integrations"
+  },
+  "@toolsdk-remote/space-mushroom": {
+    "path": "data-science-tools/space-mushroom-mcp.json",
+    "category": "data-science-tools"
+  },
+  "@toolsdk-remote/surveyninja": {
+    "path": "other-tools-and-integrations/surveyninja.json",
+    "category": "other-tools-and-integrations"
+  },
+  "@toolsdk-remote/unitpost": {
+    "path": "communication/unitpost.json",
+    "category": "communication"
+  },
+  "@toolsdk-remote/watchr": {
+    "path": "marketing/watchr.json",
+    "category": "marketing"
   }
 }

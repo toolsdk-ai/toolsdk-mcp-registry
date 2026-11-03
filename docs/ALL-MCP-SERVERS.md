@@ -1,6 +1,6 @@
 # 📚 All MCP Servers
 
-> **Complete directory of all 5247+ MCP servers in the ToolSDK Registry**
+> **Complete directory of all 5255+ MCP servers in the ToolSDK Registry**
 >
 > Looking for production-ready servers only? See the [main README](../README.md) for validated servers.
 
@@ -8,9 +8,9 @@
 
 ## 📊 Statistics
 
-- 📦 **Total Servers**: 5247
+- 📦 **Total Servers**: 5255
 - ✅ **Validated & Tested**: 811
-- ⚙️ **Community Contributed**: 4436
+- ⚙️ **Community Contributed**: 4444
 
 ---
 
@@ -625,7 +625,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 
 
 <a id="aggregators"></a>
-### Aggregators <small>(86 servers)</small>
+### Aggregators <small>(87 servers)</small>
 
 > Servers that let you access multiple apps and tools through one MCP server.
 
@@ -659,6 +659,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [❌ @toolsdk-remote/chain-love-mcp](https://github.com/Chain-Love/chain.love-mcp): Hosted MCP gateway backed by the Chain.Love Web3 registry. Lists supported blockchain networks, searches infrastructure services such as RPC and API providers, explorers, oracles, bridges and wallets, and proxies registry-listed downstream MCP servers through one endpoint. No authentication for the gateway; credentialed downstream servers need x-chainlove-cred-* headers.  (node)
 - [❌ @toolsdk-remote/codetrendy](#): Hosted read-only MCP server for the CodeTrendy directory of 650+ reviewed SaaS, AI and developer tools: keyword search with category and pricing filters, alternatives to a named product, full listing profiles, categories, trending and Site of the Day. No authentication.  (node)
 - [❌ @toolsdk-remote/find-mcp](https://github.com/agentage/find-mcp): Search 17,000+ MCP servers synced from the official MCP registry (registry.modelcontextprotocol.io) via the agentage MCP Catalog  (node)
+- [❌ @toolsdk-remote/io-corespeed-mcp](#): Hosted MCP gateway for any agent: your connected apps (Notion, Slack, GitHub, Gmail and more), shared team memory, web search, social data and media tools, with spend caps and an activity log.  (node)
 - [❌ @toolsdk-remote/mcpcharts](https://github.com/Dri-water/mcpcharts): Find MCP servers, agent skills, plugins, agents, prompts and rules for a task. Read-only tools: recommend_resources (ranked shortlist with repository and compatibility evidence), search_resources (keyword search) and get_resource (compatibility evidence, freshness and setup link). No authentication.  (node)
 - [❌ @toolsdk-remote/mediapronet](#): Hosted read-only MCP server for the MEDIAPRONET directory of 240+ newly launched startups and web tools: keyword search, alternatives to a product, listing profiles, categories, trending and Site of the Day. No authentication.  (node)
 - [❌ @toolsdk-remote/sitepatent](#): Hosted read-only MCP server for the SitePatent directory of 280+ startup sites and online tools: search by keyword or category, alternatives to a product, listing profiles and a daily trending leaderboard. No authentication.  (node)
@@ -1481,7 +1482,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 
 
 <a id="communication"></a>
-### Communication <small>(245 servers)</small>
+### Communication <small>(246 servers)</small>
 
 > Connect with messaging platforms to manage chats and interact with team tools.
 
@@ -1567,6 +1568,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [❌ @toolsdk-remote/swarmmemo](https://github.com/Hugo0/swarmmemo): Public message board for AI agents. Read rooms, pages and threads, post anonymous public messages, and use an agent toolkit (web fetch, memory, wake-ups, webhook receivers) plus a catalogue of paid APIs, billed to a free daily allowance per network. OAuth sign-in is available at the MCP endpoint; signed posting and per-key spend limits use an Ed25519 key over HTTPS and are not configured by this registry entry.  (go)
 - [❌ @toolsdk-remote/tweetapi](https://github.com/tweetapi/tweetapi-mcp): Hosted, read-only Twitter data MCP: tweet search, user profiles, followers, lists, communities and Spaces, plus TweetAPI docs tools. Sign in with OAuth.  (node)
 - [❌ @toolsdk-remote/twitterapi-io-mcp-server](https://github.com/kaitoInfra/twitterapi-io-mcp-server): Official Model Context Protocol (MCP) server for twitterapi.io — Twitter / X data API. Search tweets, get user profiles, followers, replies, trends — all via Claude Desktop, Cursor, or any MCP-compatible client.  (node)
+- [❌ @toolsdk-remote/unitpost](https://www.unitpost.com/ai/mcp): Hosted MCP server for Unitpost, an email and SMS platform. Agents send transactional email, campaigns and SMS, and manage contacts, segments, templates, sending domains, webhooks, suppressions and inbound email.  (node)
 - [❌ @toolsdk-remote/vocenya](https://github.com/gadyamedia/vocenya-mcp): Hosted MCP server for a Vocenya AI receptionist account: list calls, leads, bookings and website chats, create leads, queue outbound AI calls with Do Not Call, consent and calling-hours checks, and add Do Not Call entries. OAuth sign-in; an account owner approves the account, live or test data, and scopes.  (node)
 - [❌ @toolsdk-remote/wapiworld](https://github.com/wapiworld/claude-plugin): Review tenant-owned WhatsApp instances, connection state, recording policy and webhook health through Wapiworld's hosted OAuth connector. Sending one outbound text requires confirmation.  (node)
 - [❌ @twilio-alpha/mcp](https://github.com/twilio-labs/mcp): Integrates with Twilio's API ecosystem to enable messaging, voice, conversations, and serverless functions through authenticated access with automatic AccountSid population and context filtering capabilities.  (node)
@@ -2517,7 +2519,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 
 
 <a id="data-science-tools"></a>
-### Data Science Tools <small>(95 servers)</small>
+### Data Science Tools <small>(96 servers)</small>
 
 > Simplify data analysis and exploration with tools for data science workflows.
 
@@ -2531,6 +2533,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [✅ scmcp](https://github.com/huang-sh/scmcp): Provides natural language access to single-cell RNA sequencing analysis through Scanpy, enabling bioinformatics workflows like clustering, dimensionality reduction, and cell type annotation without writing code.  (51 tools) (python)
 - [❌ @toolsdk-remote/invokely](#): Query official statistics through indicators, values, time series, place comparisons, and rankings. Each figure includes its period, unit, source URL, retrieval date, and citation. The no-account Streamable HTTP trial at /mcp/trial is limited to 25 calls per IP per day; authenticated MCP access is available at https://invokely.ai/mcp.  (node)
 - [❌ @toolsdk-remote/io-github-aanari-loacare-healthcare-pricing](https://github.com/aanari/loacare-healthcare-pricing): Provides OAuth-authenticated U.S. healthcare price, CPT/HCPCS, provider, hospital, and provenance searches through a hosted MCP endpoint, plus reviewed provider correction submission.  (node)
+- [❌ @toolsdk-remote/space-mushroom](https://github.com/simulsarker007/space-mushroom-mcp): Read-only access to an open materials database of metals, polymers, ceramics, composites and space materials. Each value is returned with its unit, test conditions, method and source. 11 tools; no API key.  (node)
 - [❌ adaptive-graph-of-thoughts](https://github.com/saptadey/adaptive-graph-of-thoughts-mcp-server): Processes complex scientific queries through an 8-stage Graph-of-Thoughts pipeline that decomposes questions into hypotheses, gathers evidence, builds knowledge graphs in Neo4j, and provides confidence-scored conclusions with bias detection and falsifiability assessment for systematic research analysis.  (python)
 - [❌ analytical](https://github.com/quanticsoul4772/analytical-mcp): Enhances structured problem-solving and analytical reasoning with tools for research verification, statistical analysis, logical reasoning, and multi-perspective generation for data analysts, researchers, and decision-makers.  (node)
 - [❌ apache-jena-sparql](https://github.com/ramuzes/mcp-jena): Provides a bridge between AI agents and Apache Jena for executing SPARQL queries, performing updates, and accessing RDF data stored in Jena Fuseki servers with secure API key authentication.  (node)
@@ -3526,7 +3529,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 
 
 <a id="marketing"></a>
-### Marketing <small>(148 servers)</small>
+### Marketing <small>(151 servers)</small>
 
 > Create and edit marketing content, manage metadata, and refine product positioning.
 
@@ -3553,6 +3556,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [❌ @Tisik79/MCP-Facebook](https://github.com/Tisik79/MCP-Facebook/tree/main/src): This project provides a Model Context Protocol (MCP) server designed to interact with the Facebook Marketing API, allowing AI assistants like Claude to manage and analyze Facebook ad campaigns, ad sets, audiences, and more.  (node)
 - [❌ @toolsdk-remote/402registry](https://github.com/paranormalen2/402registry-mcp): Checks whether AI crawlers (GPTBot, ClaudeBot, PerplexityBot, OAI-SearchBot) can see a website with a plain HTTP fetch and no JavaScript. Free tools look up a site in the public registry and return pricing, docs and service status; a new check is paid over x402 ($0.01 USDC on Base) and needs no account or API key.  (node)
 - [❌ @toolsdk-remote/adrio](https://adrio.ai): AI media buyer for Meta ads. Brief Spark, Adrio's creative agent, to make static and video ad creatives, launch them to Facebook and Instagram, research analyzed competitor ads, and manage brand angles and audiences. Hosted MCP with OAuth sign-in; an Adrio account is required.  (node)
+- [❌ @toolsdk-remote/adspy](https://www.adspy.sh): Hosted Adspy (adspy.sh) MCP server for researching brands' public Meta and Google ads and their organic TikTok, YouTube and Instagram posts: search ads, read their available creative analysis, compare brands and see which posts later ran as ads. Answers come with counts and dates, never with spend or ROAS; TikTok ads are not covered. Requires a paid Adspy plan; sign in with OAuth.  (node)
 - [❌ @toolsdk-remote/altorank](https://github.com/AltoRank/altorank): Official hosted server for AltoRank, open-source SEO content software. Runs nine site readiness checks for search engines and AI crawlers against any domain, suggests keywords, reads Google Search Console data, and writes sourced drafts into a person's review queue. 26 tools; there is no approve or publish tool.  (node)
 - [❌ @toolsdk-remote/appskyline](https://github.com/appskyline/claude-plugin): Research app-store listings, tracked keywords, keyword ranks, store metadata and reviews through AppSkyline's hosted OAuth connector. Keyword tracking changes require confirmation.  (node)
 - [❌ @toolsdk-remote/ariadne-therapist-marketing](https://github.com/bgrieco22/ariadne-mcp): Audits a therapy practice's Google Business Profile and website with prioritized fixes, and writes a sample Google Business post in the therapist's voice. Never recommends soliciting client reviews.  (node)
@@ -3580,6 +3584,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [❌ @toolsdk-remote/juzpost-mcp](https://www.juzpost.com): Drafts, schedules and publishes social media posts to X, LinkedIn, Instagram, Facebook, TikTok, YouTube, Threads, Bluesky, Pinterest, Tumblr and WordPress, checks each platform's caption and media limits, lists connected accounts and reviews the post queue. Hosted server; MCP access requires a paid JuzPost plan.  (node)
 - [❌ @toolsdk-remote/kuro](https://meetkuro.com/agents/): Create AI images, video clips, voice-overs, music and editable storyboard films through Kuro’s hosted MCP server. Connect with OAuth 2.1.  (node)
 - [❌ @toolsdk-remote/ligosocial](#): LigoSocial's hosted LinkedIn MCP server lets Claude draft posts in your voice, check your content calendar, and schedule or publish them on LinkedIn.  (node)
+- [❌ @toolsdk-remote/linkedcamp-mcp](https://github.com/LinkedCamp/linkedcamp-mcp): Official hosted MCP server for LinkedCamp: LinkedIn and email outreach for lead-gen agencies. Build and launch campaigns, write multi-step sequences, triage the unified inbox, manage prospects and pull analytics and client reports across 133 tools in 14 groups. Destructive tools are annotated so clients confirm first. Auth is OAuth 2.1 with PKCE and dynamic client registration, or an X-Api-Key header. Needs a Pro or Agency plan (14-day free trial).  (node)
 - [❌ @toolsdk-remote/linkintel](#): Your own X post results and X's open-source ranking weights for your AI assistant, as cited content briefs. Remote, OAuth, paid ($39/month); never publishes.  (node)
 - [❌ @toolsdk-remote/linkmcp](https://github.com/linkmcp-io/linkmcp): Hosted LinkedIn MCP server for the user's own LinkedIn account: profile and company lookup, people, job and Sales Navigator search, LinkedIn inbox, posts, comments and reactions, connection requests, own analytics, and work email and mobile finding. 7-day free trial; connecting a LinkedIn account needs a paid plan. Not affiliated with LinkedIn.  (node)
 - [❌ @toolsdk-remote/lognorm](https://github.com/lognorm/lognorm-mcp): Hosted MCP server that gives coding agents a ranked backlog of SEO and AI-visibility work: site audits, fixes, content drafts and AI-answer tracking.  (node)
@@ -3636,6 +3641,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [❌ @toolsdk-remote/ugc-vz-creator-search](https://github.com/ugcvz/ugc-vz-mcp): Hosted endpoint for UGC VZ, a free directory of human user-generated-content creators based in Germany, Austria and Switzerland. Agents can look up creators by topic or city, read public profiles with portfolio links and self-reported rates, file a contact request on behalf of a brand, and check that request's status. No API key or OAuth is needed.  (node)
 - [❌ @toolsdk-remote/unsora](https://github.com/Shipped-Studio/unsora): Official hosted MCP server for Unsora, an AI content generation and social media scheduling app: generate images, video (Kling, Veo 3.1, Sora 2, Seedance 2.0 and other models), talking-avatar video, music, voiceovers, voice clones and thumbnails; upscale images and video; clip long videos into short clips; and schedule or publish posts with analytics to connected YouTube, TikTok, Instagram, Facebook, LinkedIn, Bluesky, Threads and Pinterest accounts. Requires a paid Unsora plan (3-day free trial).  (node)
 - [❌ @toolsdk-remote/voicemoat](https://github.com/prateeks367/voicemoat-mcp): Hosted MCP server for VoiceMoat, the personal brand OS for Twitter/X and LinkedIn. Score drafts against your voice profile, improve them, get post ideas and opening hooks, read your analytics and top posts, and publish or schedule posts with a preview and a confirmation step before anything goes live. OAuth sign-in, no API keys. Tools need a VoiceMoat Pro or Enterprise plan.  (node)
+- [❌ @toolsdk-remote/watchr](https://github.com/getwatchr/watchr-mcp): Search competitor signals, insights and reports in a Watchr workspace through the hosted MCP server. Watchr account and OAuth sign-in required.  (node)
 - [❌ @toolsdk-remote/zenmode-mcp](https://github.com/zenmode87/zenmode-mcp): Hosted MCP server for ZenMode LinkedIn outreach. Reads campaigns, contacts and conversation history on the signed-in account, and can add or remove leads, pause or exclude a contact, and change campaign targeting. A connection is read only unless the user chooses Read and change, and there is no tool that sends a LinkedIn message or connection request. Sign in with OAuth, or use a ZenMode API key as a Bearer token. Requires a ZenMode plan (Practitioner and above).  (node)
 - [❌ @triplewhale/mcp-server-triplewhale](https://github.com/triple-whale/mcp-server-triplewhale): Integrates with Triple Whale's API to enable querying and analysis of e-commerce performance metrics for sales reporting and marketing strategy optimization.  (node)
 - [❌ @upload-post/mcp](https://github.com/Upload-Post/upload-post-mcp): Official Upload-Post MCP server to publish and schedule videos, photos, text and documents to TikTok, Instagram, YouTube, LinkedIn, Facebook, X, Threads, Pinterest, Reddit and Bluesky, and read analytics, comments and DMs.  (node)
@@ -4707,7 +4713,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 
 
 <a id="other-tools-and-integrations"></a>
-### Other Tools and Integrations <small>(860 servers)</small>
+### Other Tools and Integrations <small>(862 servers)</small>
 
 > Miscellaneous tools and integrations that don’t fit into other categories.
 
@@ -4903,6 +4909,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [❌ @toolsdk-remote/io-github-gillinghammer-phonescreen](https://phonescreen.ai/mcp): Score resumes, screen candidates by phone, review interview results, and check references from AI assistants.  (node)
 - [❌ @toolsdk-remote/jobfinder](#): Review job matches, read drafted outreach, approve or reject applications and track replies.  (node)
 - [❌ @toolsdk-remote/lintelly-hr-deutschland](https://github.com/NicksAdvisory/lintelly-hr-deutschland): German employment law only. Answers questions of small companies in Germany about German employment and social security law: notice periods, employer costs, sick pay, maternity protection, dismissals, references, contract clauses and HR workflows, each with calculation and official source. 38 read-only tools, no sign-in, nothing stored. General information, not legal advice.  (node)
+- [❌ @toolsdk-remote/narva](https://narva.app): Official Narva remote MCP server: make faceless YouTube videos and Shorts from a topic or a script (script, AI narration in 32 languages, AI visuals, archive footage, motion graphics, captions, music, thumbnails), edit them in words and publish or schedule them to your YouTube channel. Sign in with your Narva account via OAuth (a plan is required to make videos).  (node)
 - [❌ @toolsdk-remote/ouroboros-milestone](https://github.com/LAHutchins91/milestone-mcp): Milestone by Ouroboros Apps (https://ouroborosapps.com). Freelance project milestones: approved milestones, deliverables, and acceptance criteria; a milestone is only done when the saved criteria are met. Tools: list_milestone_sets, open_milestone_set, read_milestone_set, define_milestone, save_acceptance_criterion, save_deliverable, save_work_item, record_criterion_met, declare_milestone_complete, declare_next_payment_released, mark_work_done, write_client_wording, approve_milestones, suggest_milestone_change, accept_milestone_change. Hosted remote endpoint with OAuth and Dynamic Client Registration; requires an account. Docs: https://ouroborosapps.com/docs/milestone. Published in the Official MCP Registry as io.github.LAHutchins91/milestone.  (node)
 - [❌ @toolsdk-remote/ouroboros-scope](https://github.com/LAHutchins91/scope-mcp): Scope by Ouroboros Apps (https://ouroborosapps.com). Freelance scope of work: approved scope, rates, deadlines, and change orders, so an assistant cannot promise work or discounts that were not approved. Tools: list_engagements, create_engagement, get_approved_record, save_scope_item, save_rate, save_deadline, approve_scope, file_change_order, approve_change_order. Hosted remote endpoint with OAuth and Dynamic Client Registration; requires an account. Docs: https://ouroborosapps.com/docs/scope. Published in the Official MCP Registry as io.github.LAHutchins91/scope.  (node)
 - [❌ @toolsdk-remote/photo-ai-studio](#): Generate AI photos from a selfie across 150+ themes, apply 19 image edits, and create video. Four discovery tools (themes, pricing, service overview, API capabilities) work with no account; the eight account tools require OAuth.  (node)
@@ -4912,6 +4919,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [❌ @toolsdk-remote/realrun](https://github.com/baseledgerip/realrun-mcp): Read-only lookups over RealRun's published, independent tests of AI models on everyday tasks (inbox triage, meeting scheduling, receipts, finance). Tools: list_tasks, get_scores, recommend_model and get_warnings return model scores, a recommended model with alternatives, and safety warnings. Free, no auth.  (node)
 - [❌ @toolsdk-remote/soundcheck](https://soundchecklive.io): Authenticated Soundcheck member server. Streamable HTTP with OAuth.  (node)
 - [❌ @toolsdk-remote/soundcheck-instant-quotes](https://soundchecklive.io): Live-event quoting for businesses that sell live event services.  (node)
+- [❌ @toolsdk-remote/surveyninja](https://github.com/SurveyNinjaio/surveyninja-mcp): Hosted SurveyNinja MCP: build surveys from a description or a template, check them before launch, publish them, read responses and reports, and export results to CSV, Excel, SPSS or PDF. Sign in with OAuth and choose one workspace; works on every SurveyNinja plan, Free included.  (node)
 - [❌ @toolsdk-remote/taskade](https://github.com/taskade/mcp): Hosted Taskade MCP (OAuth) at https://www.taskade.com/mcp — connect agents to a Taskade workspace and Genesis apps.  (node)
 - [❌ @toolsdk-remote/taskpush](#): Marketplace where AI agents hire other agents, mainly for data enrichment: deliveries are checked by machine and paid from USD escrow only when every check passes. register_agent and render_enrichment_task work without a key; the other tools need the agent API key that register_agent returns, sent as a Bearer token, which this entry does not configure.  (go)
 - [❌ @toolsdk-remote/twelfth](https://github.com/twelfth-ai/twelfth-mcp): Hosted MCP server for Twelfth, a commercial workspace for retail and category teams. Reads the products, suppliers, sales, inventory, pricing, projects, members and actions the signed-in person can access in one workspace. Reads by default; with Allow changes ticked at consent it can also create, complete or snooze the person's own actions and run their own routines. Needs a Twelfth account.  (node)
