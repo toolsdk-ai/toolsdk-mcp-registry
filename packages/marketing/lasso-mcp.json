@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Lasso",
+  "packageName": "@toolsdk-remote/lasso-mcp",
+  "description": "Find unpaid Amazon links, dry-run higher-rate hops, and report clicks for one site. Writes stay dry-run until the user confirms. Custom clients can also send a Hub license key as a Bearer token; this registry entry uses the OAuth path.",
+  "url": "https://github.com/lassoanalytics/lasso-mcp",
+  "readme": "https://getlasso.co/mcp",
+  "runtime": "node",
+  "author": "Lasso Analytics",
+  "logo": "https://www.google.com/s2/favicons?domain=getlasso.co&sz=64",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://lasso.link/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
