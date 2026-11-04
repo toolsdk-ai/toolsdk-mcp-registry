@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Ecommerce Leads",
+  "packageName": "@toolsdk-remote/ecommerce-leads",
+  "description": "Official hosted server for Ecommerce Leads. Looks up any ecommerce store by domain without an account: estimated revenue, marketing budget, traffic, Google and Meta ad spend, ad counts, a Conversion Rate Score and buying signals. Searching 600k+ stores, revealing contacts (spends credits) and managing signal sets and watchlists need OAuth 2.1 on the same endpoint.",
+  "url": "https://github.com/matosdfm/ecommerce-leads-mcp",
+  "readme": "https://getecommerceleads.com/docs/",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://getecommerceleads.com/assets/el_logo_big.png",
+  "author": "Ecommerce Leads",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://getecommerceleads.com/api/mcp"
+    }
+  ]
+}
