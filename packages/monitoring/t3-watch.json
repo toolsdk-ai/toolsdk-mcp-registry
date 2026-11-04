@@ -1,0 +1,13 @@
+{
+  "type": "mcp-server",
+  "name": "t3-watch",
+  "packageName": "@lfg-labs/t3-watch",
+  "description": "Monitoring that sets itself up from the projects on your machine and wakes your coding agent only when something changes. Checks for CI, sites and APIs, cloud accounts, API-key vendors and scheduled jobs run as plain code on Watch's own clock; the agent investigates failures, leaves notes and drafts new checks. Needs the Watch service running locally (`t3-watch install`); `npx @lfg-labs/t3-watch demo` tries it on sample data.",
+  "url": "https://github.com/sami-abdul/t3-watch",
+  "readme": "https://github.com/sami-abdul/t3-watch#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "sami-abdul",
+  "binArgs": ["mcp"],
+  "env": {}
+}
