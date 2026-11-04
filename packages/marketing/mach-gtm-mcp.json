@@ -1,0 +1,10 @@
+{
+  "type": "mcp-server",
+  "packageName": "mach-gtm-mcp",
+  "name": "mach-gtm-mcp",
+  "description": "Open-source MCP server for B2B outbound sales: build ICPs, research prospects with verified buying signals, score leads (0-100), draft cold emails and LinkedIn messages (1-3-1 framework), and generate multi-touch outreach sequences. Human approval required before any message is sent.",
+  "url": "https://github.com/verma6uc/mach-gtm-mcp",
+  "runtime": "node",
+  "license": "mit",
+  "env": {}
+}
