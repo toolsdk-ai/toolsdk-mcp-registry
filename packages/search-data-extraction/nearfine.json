@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Near Fine",
+  "packageName": "@toolsdk-remote/nearfine",
+  "description": "Search about 75 booksellers and marketplaces in some 40 countries for any new, used or rare book, ebook or audiobook. Returns live offers with shipping in the buyer's currency, nearby sellers first, and model-checked verdicts on first edition, signed and dust jacket claims. Searching is free and anonymous; setting, listing and cancelling price alerts uses OAuth 2.1.",
+  "url": "https://nearfine.com/assistants",
+  "readme": "https://nearfine.com/docs",
+  "runtime": "node",
+  "logo": "https://nearfine.com/icon-512.png",
+  "author": "Line of Flight B.V.",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://nearfine.com/mcp"
+    }
+  ]
+}
