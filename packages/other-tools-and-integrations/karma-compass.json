@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Karma Compass",
+  "packageName": "@toolsdk-remote/karma-compass",
+  "description": "Hosted MCP for Karma Compass: manage nonprofit board meetings, agendas, minutes, motions and action items for boards and committees. Sign in with an existing Karma Compass account; the assistant acts with that member's permissions.",
+  "url": "https://github.com/show-karma/compass-claude-plugin",
+  "readme": "https://compass.karmahq.org",
+  "runtime": "node",
+  "logo": "https://raw.githubusercontent.com/show-karma/compass-claude-plugin/main/assets/logo.png",
+  "author": "Karma",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://nonprofitsapi.karmahq.org/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
