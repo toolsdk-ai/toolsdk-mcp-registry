@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "AIVideo.day",
+  "packageName": "@toolsdk-remote/aivideo-day",
+  "description": "Hosted MCP server for AIVideo.day: price and make 2D videos and 3D films from a written brief in the user's own account, follow their progress and get the finished MP4. Spends only the user's credits, within a per-call cap and a daily limit the user sets. Needs a Pro or Business plan.",
+  "readme": "https://aivideo.day/mcp/",
+  "url": "https://github.com/lumorabuild/aivideo-mcp",
+  "runtime": "node",
+  "logo": "https://raw.githubusercontent.com/lumorabuild/aivideo-mcp/main/logo.png",
+  "author": "lumorabuild",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.aivideo.day/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["video"]
+      }
+    }
+  ]
+}
