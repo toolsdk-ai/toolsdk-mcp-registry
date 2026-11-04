@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Rugsight",
+  "packageName": "@toolsdk-remote/rugsight",
+  "description": "Rug-pull risk scores for Solana SPL tokens from public on-chain data (mint and freeze authority, holder concentration, liquidity, token age) with explained flags. get_token_risk_score is free with no credentials; get_token_risk_report returns a full report paid per call via x402 (0.03 USDC on Solana), no API key.",
+  "url": "https://github.com/rugsightapp/rugsight",
+  "readme": "https://github.com/rugsightapp/rugsight#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://rugsight.rugsight.workers.dev/mcp"
+    }
+  ]
+}
