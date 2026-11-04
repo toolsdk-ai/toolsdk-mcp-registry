@@ -4,7 +4,7 @@
   "packageName": "@toolsdk-remote/postonce",
   "description": "Official remote MCP server for PostOnce: post and schedule one video or image to many social networks (Instagram, TikTok, YouTube, X, LinkedIn, Facebook, Threads, Pinterest, Bluesky and more). 23 tools for connected accounts, media uploads, posts, drafts, workflows and analytics.",
   "url": "https://github.com/postoncehq/postonce-skills",
-  "readme": "https://postonce.to/mcp",
+  "readme": "https://docs.postonce.to/mcp/docs",
   "runtime": "node",
   "license": "MIT",
   "author": "PostOnce",
