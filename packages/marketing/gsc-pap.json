@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "GSC PAP",
+  "packageName": "@toolsdk-remote/gsc-pap",
+  "description": "Read-only Google Search Console, Google Analytics 4 and PageSpeed Insights for AI assistants, plus live Google results. 38 read-only tools: search analytics, URL inspection, sitemaps, quick wins, content decay, cannibalization, Search Console pages joined to GA4 conversions, traffic from AI assistants, Lighthouse and real-user Core Web Vitals with a weekly trend. A per-user archive keeps Search Console history past Google's 16-month limit. Sign in with Google; free.",
+  "url": "https://github.com/aliarifsoydas/gsc-pap-claude-plugin",
+  "readme": "https://github.com/aliarifsoydas/gsc-pap-claude-plugin#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://gscpap.com/icon-512.png",
+  "author": "GSC PAP",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.gscpap.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp"]
+      }
+    }
+  ]
+}
