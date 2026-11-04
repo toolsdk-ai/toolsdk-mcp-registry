@@ -1,0 +1,44 @@
+{
+  "type": "mcp-server",
+  "name": "Ollav",
+  "packageName": "@toolsdk-remote/ollav",
+  "description": "Hosted Ollav MCP endpoint that lets agents publish HTML prototypes as review links, read element-pinned reviewer comments, publish new versions at the same URL and resolve feedback threads.",
+  "url": "https://github.com/ollav-app/ollav-mcp",
+  "readme": "https://ollav.app/docs/mcp?utm_source=toolsdk&utm_medium=directory&utm_campaign=launch",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Ollav",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.ollav.app/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["upload", "read", "comment"]
+      }
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
