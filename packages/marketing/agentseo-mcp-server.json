@@ -2,7 +2,7 @@
   "type": "mcp-server",
   "name": "AgentSEO MCP Server",
   "packageName": "@agentseo/mcp-server",
-  "packageVersion": "0.1.4",
+  "packageVersion": "0.1.5",
   "description": "SEO intelligence tools for AI agents: SERPs, keyword research, backlinks, rank tracking, content planning, and site audits. Requires an AgentSEO account and API key; API usage consumes credits.",
   "url": "https://github.com/AgentSEO-dev/agentseo-clients",
   "readme": "https://github.com/AgentSEO-dev/agentseo-clients/tree/main/packages/mcp-server#readme",
