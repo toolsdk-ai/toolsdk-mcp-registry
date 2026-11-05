@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "name": "MyOG Checker",
+  "packageName": "myog-checker",
+  "packageVersion": "0.1.1",
+  "bin": "dist/mcp.js",
+  "description": "Checks one public page's static Open Graph and Twitter Card metadata. The check_og_metadata tool reads the HTML head the page returns and reports explicit tags, effective fallbacks and findings such as missing or conflicting tags. No account or API key. It does not run JavaScript, fetch images or generate images.",
+  "url": "https://www.npmjs.com/package/myog-checker",
+  "readme": "https://github.com/MyOG-social/myog-checker-plugin#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "MyOG.social",
+  "env": {}
+}
