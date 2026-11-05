@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "SimpleVerifier",
+  "packageName": "@toolsdk-remote/simpleverifier",
+  "description": "Verify email addresses with a live SMTP mailbox check (valid, invalid, risky with the server's reason), check phone number formats and inspect email domains (MX, SPF, DMARC, disposable).",
+  "url": "https://github.com/Ahmedmkarrar/simpleverifier-mcp",
+  "readme": "https://simpleverifier.com/docs/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://simpleverifier.com/api/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["verify", "usage"]
+      }
+    }
+  ]
+}
