@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Rinhelp",
+  "packageName": "@toolsdk-remote/rinhelp",
+  "description": "Official hosted server for Rinhelp, a help desk for small teams and AI agents. Acts as the teammate who connected it, with their role: list, read, reply to, note, assign, triage, close and reopen conversations; search knowledge; write and publish help center articles; manage saved replies; find Shopify orders and Stripe customers. Refunds, cancellations and other actions that move money or can't be undone wait for a teammate's approval. Sign in with your Rinhelp account via OAuth.",
+  "url": "https://github.com/rinhelp/plugin",
+  "readme": "https://docs.rinhelp.com/articles/98a0def1-a07d-4c34-9f19-4d168626b40c-connect-your-ai-agent",
+  "runtime": "node",
+  "logo": "https://raw.githubusercontent.com/rinhelp/plugin/main/assets/icon.png",
+  "author": "Rinhelp",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.rinhelp.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
