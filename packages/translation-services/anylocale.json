@@ -16,11 +16,7 @@
       "url": "https://anylocale.com/api/loc/mcp",
       "auth": {
         "type": "oauth2",
-        "scopes": [
-          "read",
-          "push",
-          "manage"
-        ]
+        "scopes": ["read", "push", "manage"]
       }
     }
   ]
