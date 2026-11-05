@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "RoomLab.app",
+  "packageName": "@toolsdk-remote/roomlab-mcp",
+  "description": "Official hosted MCP server for RoomLab.app. It gives any MCP client 19 tools for room and property photos: Virtual Staging, Change Style, Declutter Room, Empty Room, Replace Furniture, Replace Material, Wall Colors, Interior and Exterior Architectural Render, exterior touch-ups (blue sky, clean pool, clean garden, greener grass), Upscale Image to 4K, and Video Walkthrough, Video Transition and House Tour. Streamable HTTP with OAuth 2.1 sign-in (dynamic client registration). Tools run on the user's RoomLab.app account and credits.",
+  "readme": "https://roomlab.app/en/mcp",
+  "runtime": "node",
+  "author": "RoomLab.app",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.roomlab.app/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
