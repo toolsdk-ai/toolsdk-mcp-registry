@@ -1,0 +1,27 @@
+{
+  "type": "mcp-server",
+  "name": "anylocale",
+  "packageName": "@toolsdk-remote/anylocale",
+  "description": "Official hosted MCP server for anylocale, localization for iOS and Android apps. Read a project's string catalog, see per-locale coverage and the strings still missing, draft translations against the project glossary and each key's length limit, check placeholders and lengths before writing, and push or pull .xcstrings, .strings and strings.xml files. Written values stay unverified drafts until a person verifies them in the web editor. 20 tools. Open sign-up; paid plans from $29/month. Authenticates with OAuth 2.1 (discovery and dynamic client registration).",
+  "readme": "https://anylocale.com/mcp",
+  "url": "https://anylocale.com",
+  "runtime": "node",
+  "license": "Proprietary",
+  "author": "superview llc",
+  "logo": "https://anylocale.com/apple-icon",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://anylocale.com/api/loc/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "read",
+          "push",
+          "manage"
+        ]
+      }
+    }
+  ]
+}
