@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "AttriKit",
+  "packageName": "@attrkit/mcp",
+  "description": "Web-to-app attribution for iOS and Android apps that buy ads: create campaign links, import ad spend, read each campaign's scale, cut or hold call, manage Meta, TikTok, Google Ads and RevenueCat connections and outbound webhooks, and export installs and events. 39 tools. Requires an AttriKit account and a management key (read-only and app-scoped keys available) and Node.js 22 or newer.",
+  "url": "https://github.com/KamyarTaher/attrikit-mcp",
+  "readme": "https://github.com/KamyarTaher/attrikit-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "AttriKit",
+  "env": {
+    "ATTRKIT_API_KEY": {
+      "description": "AttriKit management key, created under Dashboard > Settings > API keys & MCP.",
+      "required": true,
+      "secret": true
+    },
+    "ATTRKIT_API_URL": {
+      "description": "API base URL. Optional; defaults to https://attrikit.io.",
+      "required": false
+    }
+  }
+}
