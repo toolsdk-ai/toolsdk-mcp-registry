@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Revline",
+  "packageName": "@toolsdk-remote/revline",
+  "description": "Open-source AI video editor MCP server: agents upload footage, read transcripts and frames, cut, caption, add motion graphics and export, saved live to an editable Revline timeline with undo and version history. OAuth.",
+  "url": "https://github.com/revlinehq/Revline",
+  "readme": "https://github.com/revlinehq/Revline#readme",
+  "runtime": "node",
+  "license": "Apache-2.0",
+  "logo": "https://tryrevline.com/brand/revline-square-1024.png",
+  "author": "Revline",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://tryrevline.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
