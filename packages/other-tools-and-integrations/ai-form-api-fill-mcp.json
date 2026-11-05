@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "AI Form API (fill)",
+  "packageName": "@toolsdk-remote/aiformapi-fill",
+  "description": "Lets an AI agent read and submit one AI Form API form for a person. Tools: get_fill_form and submit_fill. No account or API key; the person gives the agent a one-time fill code from the form page. The separate creator server at https://aiformapi.com/mcp needs an API key header and is not part of this entry.",
+  "url": "https://github.com/sum-eet/aiformapi-mcp",
+  "readme": "https://aiformapi.com/docs/mcp",
+  "runtime": "node",
+  "author": "AI Form API",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://aiformapi.com/mcp/fill"
+    }
+  ]
+}
