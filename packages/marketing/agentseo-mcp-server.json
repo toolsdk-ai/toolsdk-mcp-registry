@@ -1,0 +1,34 @@
+{
+  "type": "mcp-server",
+  "name": "AgentSEO MCP Server",
+  "packageName": "@agentseo/mcp-server",
+  "packageVersion": "0.1.5",
+  "description": "SEO intelligence tools for AI agents: SERPs, keyword research, backlinks, rank tracking, content planning, and site audits. Requires an AgentSEO account and API key; API usage consumes credits.",
+  "url": "https://github.com/AgentSEO-dev/agentseo-clients",
+  "readme": "https://github.com/AgentSEO-dev/agentseo-clients/tree/main/packages/mcp-server#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "AGENTSEO_API_KEY": {
+      "description": "Your AgentSEO workspace API key. Obtain your own key from https://www.agentseo.dev; API usage consumes credits.",
+      "required": true,
+      "secret": true
+    },
+    "AGENTSEO_API_URL": {
+      "description": "AgentSEO API base URL used by the local MCP client.",
+      "required": false,
+      "secret": false,
+      "default": "https://www.agentseo.dev/api/v1"
+    },
+    "AGENTSEO_PROJECT_ID": {
+      "description": "Optional default project attribution for tool calls.",
+      "required": false,
+      "secret": false
+    },
+    "AGENTSEO_WORKFLOW_ID": {
+      "description": "Optional default workflow attribution for tool calls.",
+      "required": false,
+      "secret": false
+    }
+  }
+}
