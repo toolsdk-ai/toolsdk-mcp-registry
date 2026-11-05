@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "VectoSolve",
+  "packageName": "@toolsdk-remote/vectosolve",
+  "description": "Converts a PNG, JPG or WebP image into a clean SVG, DXF (R12 polylines in millimetres, for laser cutters and CNC routers) or EPS file. One read-only tool, vectorize. Hosted endpoint with no account and no API key, within a shared daily limit.",
+  "url": "https://github.com/Vectosolve/vectosolve-mcp",
+  "readme": "https://vectosolve.com/integrations/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "VectoSolve",
+  "logo": "https://vectosolve.com/favicon-512.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://vectosolve.com/api/mcp"
+    }
+  ]
+}
