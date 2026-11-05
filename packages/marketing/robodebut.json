@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "name": "RoboDebut",
+  "packageName": "@toolsdk-remote/robodebut",
+  "description": "Submit websites and startups to RoboDebut through submit_project after the user authorizes submission. Read submission_instructions for the current rules. Ordinary submissions require a visible followed RoboDebut homepage badge and a private maker contact email. An operator reviews each proposal before publication. RoboDebut is affiliated with LinkBunny.",
+  "readme": "https://robodebut.com/llms.txt",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://robodebut.com/api/mcp"
+    }
+  ]
+}
