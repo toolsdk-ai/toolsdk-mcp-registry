@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "ChefBear",
+  "packageName": "@toolsdk-remote/chefbear",
+  "description": "Official ChefBear remote MCP server: save, find, read and share your ChefBear restaurant menus and pick dishes that suit your tastes. ChefBear is an iPhone menu scanner; the server saves menus your assistant has read (photos, links or text) to your ChefBear account, imports menu photos for ChefBear to recognize, lists and reads saved menus, reads ChefBear share links, creates or turns off public menu links, and ranks a menu's dishes against the taste profile you let it read. 12 tools. Sign in with a free ChefBear account via OAuth and approve the connection in the ChefBear iPhone app; accounts in the mainland-China service region can't connect. Not related to the Bear notes app.",
+  "url": "https://www.chef-bear.com/mcp/",
+  "readme": "https://www.chef-bear.com/mcp/",
+  "runtime": "node",
+  "logo": "https://chef-bear.com/images/app-icon-512.png",
+  "author": "Awesome-Bears, Inc.",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://chef-bear.com/api/menu-sharing/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
