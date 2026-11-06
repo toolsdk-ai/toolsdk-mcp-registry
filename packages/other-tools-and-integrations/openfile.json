@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "OpenFile",
+  "packageName": "@toolsdk-remote/openfile",
+  "description": "Form U.S. companies and file U.S. trademarks: state filing fees, quotes, live USPTO search, and drafts the owner signs. Hosted service; no sign-in needed to connect.",
+  "url": "https://joinopenfile.com",
+  "readme": "https://joinopenfile.com/docs/mcp",
+  "logo": "https://joinopenfile.com/brand/favicon-512.png",
+  "runtime": "node",
+  "author": "OpenFile",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.joinopenfile.com"
+    }
+  ]
+}
