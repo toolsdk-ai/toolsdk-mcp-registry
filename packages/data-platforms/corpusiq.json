@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "CorpusIQ",
+  "packageName": "@toolsdk-remote/corpusiq",
+  "description": "Hosted CorpusIQ MCP server for cross-source business data. Connect Google Analytics, Search Console, Google Ads, Meta Ads, QuickBooks, Stripe, HubSpot, Shopify, Klaviyo, Airtable and 40+ other systems, then ask one business question in any MCP client and get a single answer with the sources it came from. External retrieval is read-only and customer data is not stored. Requires a CorpusIQ account with a free trial, no credit card required; sign in with OAuth.",
+  "url": "https://github.com/CorpusIQ/corpusiq-claude-skills",
+  "readme": "https://docs.corpusiq.io/mcp",
+  "runtime": "node",
+  "author": "CorpusIQ",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp2.corpusiq.io/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
