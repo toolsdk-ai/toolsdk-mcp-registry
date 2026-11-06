@@ -2,7 +2,7 @@
   "type": "mcp-server",
   "name": "Cigo Aircare & Carsafe",
   "packageName": "@toolsdk-remote/cigo-aircare",
-  "description": "Look up Cigo HVAC FFU/BFU specifications and airflow-specific power comparisons, match Carsafe cabin filters by vehicle and year with purchase links, and get air-quality guidance. Includes user-confirmed B2B inquiries and replacement-date records. Public hosted endpoint; no API key required. The linked MIT repository covers connection configuration and documentation only, not the hosted server or product data.",
+  "description": "Match Carsafe cabin filters by vehicle and year, prepare domestic Cigo store, Naver and Coupang purchase links, and compare HVAC specifications and measured power. Includes user-confirmed B2B inquiries and replacement-date records, not scheduled reminders. Checkout occurs at external stores; overseas B2C delivery requires consultation. No API key required. See the linked data-handling guidance before submitting personal information.",
   "url": "https://github.com/cigo240920/cigo-aircare-connector",
   "readme": "https://github.com/cigo240920/cigo-aircare-connector#readme",
   "runtime": "python",
