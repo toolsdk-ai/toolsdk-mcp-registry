@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "iLook Face Analysis",
+  "packageName": "@toolsdk-remote/ilook-face-analysis",
+  "description": "Privacy-first face analysis of one user-provided photo: face shape, symmetry signals, proportions, Golden Ratio phi context, hairstyle and colour direction. Hosted Streamable HTTP endpoint; free, no API key. Does not identify people or make medical decisions.",
+  "readme": "https://github.com/harshul1404/ilook-mcp#readme",
+  "url": "https://github.com/harshul1404/ilook-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Wallic Technologies Private Limited",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.ilook.fit/mcp"
+    }
+  ]
+}
