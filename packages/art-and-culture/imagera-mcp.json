@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "Imagera",
+  "packageName": "@toolsdk-remote/imagera-mcp",
+  "description": "Hosted MCP server that generates and edits images, video clips, voiceovers and music on the user's Imagera account, with credit estimates before each run and multi-step skills such as consistent Character IDs.",
+  "url": "https://github.com/alexadams6ix/imagera-skills",
+  "readme": "https://imagera.ai/mcp",
+  "runtime": "node",
+  "author": "Imagera",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.imagera.ai/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
