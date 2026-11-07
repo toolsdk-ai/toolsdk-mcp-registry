@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "AgentReader (Axiom Works)",
+  "packageName": "@axiomworks/agentreader-mcp",
+  "description": "Company data for agents: UK Companies House due diligence with red flags, a multi-country KYB pack (UK/AU/CA/FR/NO/DK/FI/CH/PL/CZ/BE registries, EU VAT, GLEIF LEI, sanctions), batch registry verification, UK new-company leads and company watch. No API key: free previews without a wallet, and x402 pay-per-call in USDC on Base when a payer key is set.",
+  "url": "https://github.com/grokbot1233/agentreader",
+  "readme": "https://github.com/grokbot1233/agentreader#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "AGENTREADER_PRIVATE_KEY": {
+      "description": "Optional. Private key of a dedicated, low-balance Base wallet holding USDC, used to auto-pay x402 calls. Leave it unset to get free truncated previews only.",
+      "required": false,
+      "secret": true
+    }
+  }
+}
