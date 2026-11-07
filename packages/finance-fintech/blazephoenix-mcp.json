@@ -1,0 +1,25 @@
+{
+  "type": "mcp-server",
+  "name": "BlazePhoenix",
+  "packageName": "@blazephoenix/mcp",
+  "description": "Read-only MCP server for the BlazePhoenix on-chain DEX aggregator on Ethereum, Base, Optimism, Arbitrum and Robinhood Chain. Quotes are computed by the on-chain Quoter contract as a free eth_call on your own RPC node: net output after the fee, the minimum output the Router enforces, price impact and the Phoenix Check verdict. Also builds verified unsigned Router calldata, simulates a swap, reads token info and the deployment registry, and verifies deployments on-chain. It never signs and never holds a key. The hosted endpoint makes no RPC calls: it returns the exact eth_call for your node and decodes the result.",
+  "url": "https://github.com/blazephoenixxyz-crypto/blazephoenix-mcp",
+  "readme": "https://github.com/blazephoenixxyz-crypto/blazephoenix-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://blazephoenix.xyz/brand/bzpx.png",
+  "author": "BlazePhoenix",
+  "env": {
+    "BLAZEPHOENIX_RPC_URL": {
+      "description": "One RPC node URL used for every chain it serves. Use either this or the per-chain variables (BLAZEPHOENIX_RPC_BASE, _ETHEREUM, _OPTIMISM, _ARBITRUM, _ROBINHOOD).",
+      "required": false,
+      "secret": true
+    }
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://blazephoenix.xyz/mcp"
+    }
+  ]
+}
