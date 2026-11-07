@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Fluentoo TOEIC",
+  "packageName": "@toolsdk-remote/fluentoo-toeic",
+  "description": "Hosted Fluentoo MCP for TOEIC Listening & Reading preparation: converts a TOEIC score to a CEFR level and certificate colour, estimates a score from correct answers, describes the 7 parts of the test, and links to guides and the free practice test. Read-only, no sign-in. Responses are in French.",
+  "url": "https://fluentoo.fr",
+  "runtime": "node",
+  "logo": "https://fluentoo.fr/icons/icon-512.png",
+  "author": "Fluentoo",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://fluentoo.fr/mcp"
+    }
+  ]
+}
