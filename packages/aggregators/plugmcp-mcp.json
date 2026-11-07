@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "PlugMCP Directory",
+  "packageName": "plugmcp-mcp",
+  "description": "Searches the PlugMCP directory of MCP servers and agent skills, recommends servers for a task, compares them side by side, and returns install configs for clients like Cursor, Claude Code and VS Code. Read-only; an API key is optional and only raises rate limits.",
+  "url": "https://github.com/plugmcp-ai/plugmcp-mcp",
+  "readme": "https://github.com/plugmcp-ai/plugmcp-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "PLUGMCP_API_KEY": {
+      "description": "Optional pb_live_ key from https://plugmcp.ai/app for higher rate limits.",
+      "required": false,
+      "secret": true
+    }
+  }
+}
