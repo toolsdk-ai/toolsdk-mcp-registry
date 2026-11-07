@@ -2,7 +2,7 @@
   "type": "mcp-server",
   "name": "BananaCrystal",
   "packageName": "@toolsdk-remote/bananacrystal-mcp",
-  "description": "Agent payment MCP for live FX rates, currency swaps and payments in 140+ local currencies. Agents get a wallet and can estimate swap fees, swap between local-currency stablecoins, send stablecoin payments to a wallet or BananaCrystal username, add money and cash out to a bank account after an ID check, and check balances, limits and history. Payments settle on Hedera. Transfers, swaps and withdrawals ask for an email code by default.",
+  "description": "Give your AI agent a wallet: live FX rates, swaps and payments in 140+ local currencies. Agents get a wallet and can estimate swap fees, swap between local-currency stablecoins, send stablecoin payments to a wallet or BananaCrystal username, add money and cash out to a bank account after an ID check, and check balances, limits and history. Payments settle on Hedera. Transfers, swaps and withdrawals ask for an email code by default.",
   "url": "https://github.com/BananaCrystal/mcp-server-bananacrystal",
   "readme": "https://agents.bananacrystal.com/docs/mcp",
   "runtime": "node",
