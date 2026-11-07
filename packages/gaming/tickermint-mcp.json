@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "TickerMint",
+  "packageName": "@toolsdk-remote/tickermint-mcp",
+  "description": "Daily TCGplayer market prices, price history, movers, graded values and sealed product prices for Pokemon, One Piece, Lorcana, Riftbound, Yu-Gi-Oh, Gundam and Dragon Ball Super Fusion World cards. Public read-only data, no account or API key.",
+  "url": "https://tickermint.cards/developers",
+  "readme": "https://tickermint.cards/llms-full.txt",
+  "runtime": "node",
+  "author": "TickerMint",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.tickermint.cards/mcp"
+    }
+  ]
+}
