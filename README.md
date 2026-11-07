@@ -249,6 +249,7 @@ Browse by category:
 Tools that haven’t been sorted into a category yet. AI will categorize it later.
 
 - [✅ @atlassian-dc-mcp/bitbucket](https://github.com/b1ff/atlassian-dc-mcp): MCP server for Atlassian Bitbucket Data Center - interact with repositories and code  (9 tools) (node)
+- [✅ @kaijuconverter/mcp](https://github.com/PabloCirre/kaijuconverter-mcp): Fast MCP server providing universal format detection, validation, batch conversion across 201+ file formats, and OCR.  (54 tools) (python)
 - [✅ @atlassian-dc-mcp/jira](https://github.com/b1ff/atlassian-dc-mcp): MCP server for Atlassian Jira Data Center - search, view, and create issues  (6 tools) (node)
 - [✅ @bankless/onchain-mcp](https://github.com/bankless/onchain-mcp): Integrates with blockchain networks to enable smart contract interaction, transaction history access, and on-chain data exploration through specialized tools for reading contract state, retrieving ABIs, and filtering event logs.  (10 tools) (node)
 - [✅ @bnb-chain/mcp](https://github.com/bnb-chain/bnbchain-mcp): Enables direct interaction with BNB Chain and other EVM-compatible networks for blockchain operations including block exploration, smart contract interaction, token management, wallet operations, and Greenfield storage functionality.  (40 tools) (node)
