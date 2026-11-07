@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Skael API",
+  "packageName": "@toolsdk-remote/skael-api",
+  "description": "B2B lead lists and company data with a German focus: search the German commercial register (Handelsregister) with officers, shareholders and new registrations, find businesses on Google Maps and job boards, read imprints, and find and verify work emails. Hosted MCP with OAuth sign-in; a Skael API account is required (30-day trial with 1,000 credits).",
+  "url": "https://api.skael.de/en/",
+  "readme": "https://api.skael.de/docs/mcp",
+  "runtime": "node",
+  "license": "Proprietary",
+  "author": "Skael",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.skael.de/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp:use"]
+      }
+    }
+  ]
+}
