@@ -2,7 +2,7 @@
   "type": "mcp-server",
   "name": "Picardo",
   "packageName": "@toolsdk-remote/health-picardo-labs",
-  "description": "Find Picardo's clinician-designed blood test panels and about 1,000 Labcorp tests with prices, and get a link to order them on picardo.health. Hosted Streamable HTTP endpoint; no sign-in.",
+  "description": "Plan your blood work with your assistant. Browse Picardo's panels, from a yearly check-up to fertility, price any of about 1,000 Labcorp tests, and get one link to order them all.",
   "url": "https://picardo.health",
   "readme": "https://picardo.health/docs/claude",
   "runtime": "node",
