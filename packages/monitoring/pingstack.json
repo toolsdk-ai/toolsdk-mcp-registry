@@ -1,0 +1,36 @@
+{
+  "type": "mcp-server",
+  "name": "Pingstack",
+  "packageName": "@toolsdk-remote/pingstack",
+  "description": "Hosted Pingstack MCP: create and update heartbeat (cron job), website, TCP, DNS, SSL certificate and domain checks, organize dashboards, and read incidents, uptime, run history and latency. Sign in with OAuth; an Owner or Admin picks the connection's permissions. It can't delete anything or pause checks. Free for 15 checks.",
+  "url": "https://github.com/atomicvan/pingstack-mcp",
+  "readme": "https://github.com/atomicvan/pingstack-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/atomicvan/pingstack-mcp/main/assets/icon-512.png",
+  "author": "Pingstack",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.pingstack.io/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "account:read",
+          "checks:read",
+          "checks:history",
+          "incidents:read",
+          "checks:create",
+          "checks:update",
+          "notification_groups:read",
+          "notification_groups:assign",
+          "dashboards:read",
+          "dashboards:create",
+          "dashboards:update",
+          "dashboards:assign"
+        ]
+      }
+    }
+  ]
+}
