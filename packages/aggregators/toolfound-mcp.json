@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Toolfound",
+  "packageName": "@toolsdk-remote/toolfound",
+  "description": "Searches the Toolfound software directory, compares alternatives and plans product launches through its hosted MCP endpoint.",
+  "url": "https://github.com/MelMayssonOwen/toolfound-mcp",
+  "readme": "https://github.com/MelMayssonOwen/toolfound-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://toolfound.com/api/mcp"
+    }
+  ]
+}
