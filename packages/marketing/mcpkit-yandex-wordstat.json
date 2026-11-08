@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "MCPKit — Yandex Wordstat MCP",
+  "packageName": "@toolsdk-remote/mcpkit-yandex-wordstat",
+  "description": "Research Yandex search demand, trends and regions in ChatGPT. Yandex API charges apply.",
+  "url": "https://mcpkit.ru/mcp-wordstat?utm_source=toolsdk&utm_medium=mcp_registry&utm_campaign=yandex_wordstat",
+  "readme": "https://github.com/MCPKit-RU/yandex-wordstat-mcp#readme",
+  "runtime": "python",
+  "license": "Proprietary",
+  "author": "MCPKit",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcpkit.ru/mcp-wordstat/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
