@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "LogBrew",
+  "packageName": "@toolsdk-remote/logbrew",
+  "description": "Read issues, logs, traces, metrics and releases from the LogBrew projects you approve through the hosted MCP server. Read-only unless you allow changes. LogBrew account and OAuth sign-in required.",
+  "url": "https://github.com/LogBrewCo/mcp",
+  "readme": "https://docs.logbrew.co/guides/mcp",
+  "runtime": "node",
+  "license": "Apache-2.0",
+  "author": "LogBrew",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://logbrew.co/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
