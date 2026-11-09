@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Internet Outage Checker by FindBroadband",
+  "packageName": "@toolsdk-remote/internet-outage-checker",
+  "description": "Whether a UK broadband provider is down right now, where, what the provider has said and how the last 30 days have gone. Free, needs no account or API key and only reads FindBroadband's data.",
+  "url": "https://github.com/FindBroadband/mcp",
+  "readme": "https://www.findbroadbanddeals.com/docs/outage-tools",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/FindBroadband/mcp/main/assets/icon.png",
+  "author": "FindBroadband",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.findbroadbanddeals.com/api/mcp/outages"
+    }
+  ]
+}
