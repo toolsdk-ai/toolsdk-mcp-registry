@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Tamtam",
+  "packageName": "@toolsdk-remote/tamtam",
+  "description": "Find B2B leads from buying signals, get verified contacts, and research accounts before a call. Hosted MCP server; each user signs in to their own Tamtam account with OAuth.",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.tamtam.ai/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
