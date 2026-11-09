@@ -8,11 +8,11 @@
   "url": "https://github.com/auscaster/ugt",
   "readme": "https://github.com/auscaster/ugt#readme",
   "author": "auscaster",
-  "logo": "https://usegithubthing.com/brand/ugt-icon-512.png",
+  "logo": "https://usegeekthing.com/brand/ugt-icon-512.png",
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://mcp.usegithubthing.com/mcp"
+      "url": "https://mcp.usegeekthing.com/mcp"
     }
   ]
 }
