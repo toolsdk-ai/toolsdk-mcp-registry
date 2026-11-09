@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "FindBroadband Deals",
+  "packageName": "@toolsdk-remote/findbroadband-deals",
+  "description": "The broadband deals available at your exact UK address, priced on their true whole-contract cost, and whether your bill or renewal quote is too high. Free, needs no account or API key and only reads FindBroadband's data.",
+  "url": "https://github.com/FindBroadband/mcp",
+  "readme": "https://www.findbroadbanddeals.com/docs/deals-tools",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/FindBroadband/mcp/main/assets/icon.png",
+  "author": "FindBroadband",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.findbroadbanddeals.com/api/mcp/standard"
+    }
+  ]
+}
