@@ -1,0 +1,11 @@
+{
+  "type": "mcp-server",
+  "name": "Internet Radio MCP",
+  "packageName": "internet-radio-mcp",
+  "description": "Search 50,000+ internet radio stations from the public-domain Radio Browser directory by name, country, genre or language; get direct stream URLs, top and trending stations, countries and genres. No API key, read-only.",
+  "url": "https://github.com/AlonDrilich/internet-radio-mcp",
+  "readme": "https://github.com/AlonDrilich/internet-radio-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {}
+}
