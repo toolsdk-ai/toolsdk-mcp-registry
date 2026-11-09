@@ -14,7 +14,13 @@
       "url": "https://api.getsoundlink.com/mcp",
       "auth": {
         "type": "oauth2",
-        "scopes": ["campaigns:read", "metrics:read", "soundlinks:read", "wallet:read", "pixels:read"]
+        "scopes": [
+          "campaigns:read",
+          "metrics:read",
+          "soundlinks:read",
+          "wallet:read",
+          "pixels:read"
+        ]
       }
     }
   ]
