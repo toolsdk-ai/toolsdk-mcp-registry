@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "AdMakeAI",
+  "packageName": "@toolsdk-remote/admakeai",
+  "description": "Hosted MCP server for AdMakeAI, an AI ad creative tool: generate Meta and TikTok ad images and UGC-style video ads, pull competitors' live ads from the Meta Ad Library, and draft and report on Meta campaigns. Sign in with OAuth; free signup with 30 credits, and generation spends credits.",
+  "url": "https://github.com/mesmerlord/admakeai-mcp",
+  "readme": "https://github.com/mesmerlord/admakeai-mcp#readme",
+  "runtime": "node",
+  "logo": "https://admakeai.com/android-chrome-512x512.png",
+  "author": "AdMakeAI",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://admakeai.com/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
