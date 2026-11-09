@@ -11,10 +11,7 @@
   "remotes": [
     {
       "auth": {
-        "scopes": [
-          "mcp:tools",
-          "offline_access"
-        ],
+        "scopes": ["mcp:tools", "offline_access"],
         "type": "oauth2"
       },
       "url": "https://mcp.ailinkany.com/mcp",
