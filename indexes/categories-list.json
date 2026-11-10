@@ -567,7 +567,9 @@
       "@toolsdk-remote/birkan-educational-tools",
       "@toolsdk-remote/edusign-mcp",
       "@toolsdk-remote/remembite",
-      "@toolsdk-remote/dmd-costs-tools"
+      "@toolsdk-remote/dmd-costs-tools",
+      "@toolsdk-remote/makernice",
+      "@toolsdk-remote/psychologie-et-serenite"
     ]
   },
   "aggregators": {
@@ -666,7 +668,12 @@
       "@toolsdk-remote/io-corespeed-mcp",
       "@toolsdk-remote/scalekit",
       "@toolsdk-remote/ahel",
-      "@toolsdk-remote/findaiforwork"
+      "@toolsdk-remote/findaiforwork",
+      "@sandbaseai/cli",
+      "@toolsdk-remote/agentik",
+      "@toolsdk-remote/corpusiq",
+      "@toolsdk-remote/toolfound",
+      "plugmcp-mcp"
     ]
   },
   "art-and-culture": {
@@ -819,7 +826,18 @@
       "@modelsalt/model-salt",
       "@toolsdk-remote/fontglitch-mcp",
       "@toolsdk-remote/fotofoto",
-      "@toolsdk-remote/origami-tutor"
+      "@toolsdk-remote/origami-tutor",
+      "@toolsdk-remote/aivideo-day",
+      "@toolsdk-remote/astrodai",
+      "@toolsdk-remote/cucutime",
+      "@toolsdk-remote/cursivelines",
+      "@toolsdk-remote/imagera-mcp",
+      "@toolsdk-remote/latino-events",
+      "@toolsdk-remote/marksandsignatures",
+      "@toolsdk-remote/revline",
+      "@toolsdk-remote/roomlab-mcp",
+      "@toolsdk-remote/spotify-play-count-mcp",
+      "internet-radio-mcp"
     ]
   },
   "browser-automation": {
@@ -1006,7 +1024,9 @@
       "@unblockingapi/mcp",
       "cloakbrowser-mcp",
       "@toolsdk-remote/recordhtml",
-      "@toolsdk-remote/monito"
+      "@toolsdk-remote/monito",
+      "@portproof/mcp",
+      "snaprender-mcp"
     ]
   },
   "cloud-platforms": {
@@ -1173,7 +1193,9 @@
       "@toolsdk-remote/cockatoo",
       "cloudgpu-mcp",
       "@toolsdk-remote/futureinfra",
-      "@toolsdk-remote/nops-clara"
+      "@toolsdk-remote/nops-clara",
+      "@toolsdk-remote/droply",
+      "@toolsdk-remote/termalin"
     ]
   },
   "code-execution": {
@@ -1443,7 +1465,8 @@
       "mac-shell",
       "pty-terminal",
       "macos-notification-mcp",
-      "remotify-mcp"
+      "remotify-mcp",
+      "@toolsdk-remote/ailinkany"
     ]
   },
   "communication": {
@@ -1714,7 +1737,10 @@
       "@toolsdk-remote/discordtimestampgen-mcp",
       "@toolsdk-remote/emojidig-mcp",
       "@toolsdk-remote/textkit",
-      "@toolsdk-remote/vivadialog"
+      "@toolsdk-remote/vivadialog",
+      "@toolsdk-remote/agent-outbox",
+      "@toolsdk-remote/fezola",
+      "@toolsdk-remote/reright"
     ]
   },
   "customer-data-platforms": {
@@ -2512,7 +2538,20 @@
       "@toolsdk-remote/agent-coach-upskill",
       "@toolsdk-remote/fictura",
       "@toolsdk-remote/sitekick-cms",
-      "@toolsdk-remote/srclog-mcp"
+      "@toolsdk-remote/srclog-mcp",
+      "@toolsdk-remote/agentdrives",
+      "@toolsdk-remote/blockvectra-docs",
+      "@toolsdk-remote/buddy",
+      "@toolsdk-remote/context-pill",
+      "@toolsdk-remote/duo-data-utilities",
+      "@toolsdk-remote/extensiondash",
+      "@toolsdk-remote/logoapi-mcp",
+      "@toolsdk-remote/mobile-joe",
+      "@toolsdk-remote/mobilebox",
+      "@toolsdk-remote/persqo-mcp",
+      "@toolsdk-remote/ugt",
+      "bdy",
+      "myog-checker"
     ]
   },
   "data-science-tools": {
@@ -2621,7 +2660,8 @@
       "@omophub/omophub-mcp",
       "agentfem-mcp",
       "@toolsdk-remote/fittest",
-      "@toolsdk-remote/folklore-mcp"
+      "@toolsdk-remote/folklore-mcp",
+      "@toolsdk-remote/ab-test-sample-size-calculator-mcp"
     ]
   },
   "embedded-system": {
@@ -2685,7 +2725,8 @@
       "bracketbot-multi-robot-control",
       "genieacs-mcp",
       "@toolsdk-remote/sheetsdata",
-      "@toolsdk-remote/io-github-easygerber-easygerber"
+      "@toolsdk-remote/io-github-easygerber-easygerber",
+      "iotaudit"
     ]
   },
   "file-systems": {
@@ -2799,7 +2840,9 @@
       "@toolsdk-remote/markovo",
       "pdf-letter-mcp",
       "yungle-mcp",
-      "@sylphx/anymd"
+      "@sylphx/anymd",
+      "@toolsdk-remote/cloudbridge-mcp",
+      "msglens-cli"
     ]
   },
   "finance-fintech": {
@@ -3176,7 +3219,34 @@
       "arcbounty-mcp",
       "@toolsdk-remote/paidnice",
       "@toolsdk-remote/securelend-underwriting",
-      "@toolsdk-remote/signal-desk"
+      "@toolsdk-remote/signal-desk",
+      "@toolsdk-remote/aca-premium-tax-credit-calculator-mcp",
+      "@toolsdk-remote/agentforge",
+      "@toolsdk-remote/alphagrowth",
+      "@toolsdk-remote/bananacrystal-mcp",
+      "@toolsdk-remote/car-loan-interest-deduction-calculator-mcp",
+      "@toolsdk-remote/cpi-inflation-calculator-mcp",
+      "@toolsdk-remote/crypto-derivatives-data-api",
+      "@toolsdk-remote/dfx-intelligence",
+      "@toolsdk-remote/dscr-loan-calculator-mcp",
+      "@toolsdk-remote/el7-ai-mcp",
+      "@toolsdk-remote/estate-gift-tax-exemption-calculator-mcp",
+      "@toolsdk-remote/factlot",
+      "@toolsdk-remote/gold-price-per-gram-mcp",
+      "@toolsdk-remote/ipo-radar-mcp",
+      "@toolsdk-remote/irs-mileage-rate-per-diem-mcp",
+      "@toolsdk-remote/minimum-wage-mcp",
+      "@toolsdk-remote/no-tax-on-overtime-mcp",
+      "@toolsdk-remote/paycheck-calculator-mcp",
+      "@toolsdk-remote/retirement-contribution-limits-2027-mcp",
+      "@toolsdk-remote/screwtape",
+      "@toolsdk-remote/section-179-deduction-calculator-mcp",
+      "@toolsdk-remote/silver-price-per-gram-mcp",
+      "@toolsdk-remote/student-loan-repayment-assistance-plan-calculator-mcp",
+      "@toolsdk-remote/tap-giving-mcp",
+      "@toolsdk-remote/uk-income-tax-salary-mcp",
+      "@toolsdk-remote/uk-statutory-sick-pay-maternity-pay-calculator-mcp",
+      "omx-hyperliquid"
     ]
   },
   "gaming": {
@@ -3232,7 +3302,9 @@
       "@toolsdk-remote/drinkedin",
       "@toolsdk-remote/spritefuse",
       "@toolsdk-remote/kineticist",
-      "@toolsdk-remote/waspes"
+      "@toolsdk-remote/waspes",
+      "@toolsdk-remote/photo2skin",
+      "@toolsdk-remote/tickermint-mcp"
     ]
   },
   "knowledge-memory": {
@@ -3474,7 +3546,10 @@
       "@toolsdk-remote/aiagentcycle",
       "@toolsdk-remote/brainattic",
       "@toolsdk-remote/phasoric",
-      "@toolsdk-remote/speechyou-mcp"
+      "@toolsdk-remote/speechyou-mcp",
+      "@toolsdk-remote/co-glasp-glasp",
+      "@toolsdk-remote/enhanciar",
+      "@toolsdk-remote/holos33-mcp"
     ]
   },
   "location-services": {
@@ -3555,7 +3630,9 @@
       "@toolsdk-remote/versum-agent-assistant",
       "lake-level-mcp",
       "@toolsdk-remote/rentreboot-mcp",
-      "@toolsdk-remote/close-knit"
+      "@toolsdk-remote/close-knit",
+      "@toolsdk-remote/ailiste",
+      "@toolsdk-remote/river-level-mcp"
     ]
   },
   "marketing": {
@@ -3742,7 +3819,30 @@
       "@toolsdk-remote/seoclar",
       "@toolsdk-remote/silvertongue",
       "@toolsdk-remote/socialtoai",
-      "@toolsdk-remote/writestack"
+      "@toolsdk-remote/writestack",
+      "@agentseo/mcp-server",
+      "@attrkit/mcp",
+      "@toolsdk-remote/acrium",
+      "@toolsdk-remote/admakeai",
+      "@toolsdk-remote/ecommerce-leads",
+      "@toolsdk-remote/google-ads-transparency-mcp",
+      "@toolsdk-remote/gsc-pap",
+      "@toolsdk-remote/mcpkit-yandex-direct",
+      "@toolsdk-remote/mcpkit-yandex-wordstat",
+      "@toolsdk-remote/mowteng",
+      "@toolsdk-remote/nunify-mcp",
+      "@toolsdk-remote/postmately",
+      "@toolsdk-remote/postonce",
+      "@toolsdk-remote/qr-cloud",
+      "@toolsdk-remote/repostit-mcp",
+      "@toolsdk-remote/robodebut",
+      "@toolsdk-remote/sendable",
+      "@toolsdk-remote/seo-keyword-data-api",
+      "@toolsdk-remote/skael-api",
+      "@toolsdk-remote/sociality-mcp",
+      "@toolsdk-remote/soundlink",
+      "@toolsdk-remote/tamtam",
+      "@toolsdk-remote/timetopost"
     ]
   },
   "monitoring": {
@@ -3826,7 +3926,11 @@
       "@toolsdk-remote/botsrated",
       "@toolsdk-remote/eventsend",
       "@toolsdk-remote/fluxproof",
-      "@toolsdk-remote/mcp-canary"
+      "@toolsdk-remote/mcp-canary",
+      "@toolsdk-remote/internet-outage-checker",
+      "@toolsdk-remote/logbrew",
+      "@toolsdk-remote/mcpkit-yandex-metrika",
+      "@toolsdk-remote/pingstack"
     ]
   },
   "search-data-extraction": {
@@ -4352,7 +4456,26 @@
       "@toolsdk-remote/scoopkit-mcp",
       "@toolsdk-remote/webextract",
       "@toolsdk-remote/weir",
-      "@toolsdk-remote/weir-docs"
+      "@toolsdk-remote/weir-docs",
+      "@toolsdk-remote/agingresearch-news",
+      "@toolsdk-remote/ap-score-distributions-mcp",
+      "@toolsdk-remote/arca-life-sciences",
+      "@toolsdk-remote/clockintoday",
+      "@toolsdk-remote/destava",
+      "@toolsdk-remote/earlylore",
+      "@toolsdk-remote/gnv-catalog-mcp",
+      "@toolsdk-remote/johnvc-google-jobs",
+      "@toolsdk-remote/johnvc-indeed-jobs",
+      "@toolsdk-remote/johnvc-linkedin-jobs",
+      "@toolsdk-remote/metaintro-job-search",
+      "@toolsdk-remote/nearfine",
+      "@toolsdk-remote/paperzilla",
+      "@toolsdk-remote/sat-score-percentiles-mcp",
+      "@toolsdk-remote/scrapely-mcp",
+      "@toolsdk-remote/social-media-data-api",
+      "@toolsdk-remote/specstream",
+      "@toolsdk-remote/wejob",
+      "plushsource-mcp"
     ]
   },
   "security": {
@@ -4527,7 +4650,11 @@
       "@toolsdk-remote/isms-copilot",
       "@toolsdk-remote/kin",
       "@toolsdk-remote/metadataremoverai-mcp",
-      "@toolsdk-remote/odin"
+      "@toolsdk-remote/odin",
+      "@layervai/qurl-mcp",
+      "@toolsdk-remote/agency-check",
+      "@toolsdk-remote/subdomain-finder-mcp",
+      "ironheights"
     ]
   },
   "sports": {
@@ -4559,7 +4686,8 @@
       "@toolsdk-remote/fitmaxx",
       "ghcr.io/soma-intelligence/open-health-sync",
       "@toolsdk-remote/raceresults-mcp",
-      "@toolsdk-remote/sports-odds-api"
+      "@toolsdk-remote/sports-odds-api",
+      "@toolsdk-remote/depot-fitness"
     ]
   },
   "support-service-management": {
@@ -4659,7 +4787,8 @@
       "deepl-translator",
       "youtube-translate",
       "@toolsdk-remote/multilocale",
-      "@babelize/mcp"
+      "@babelize/mcp",
+      "@toolsdk-remote/anylocale"
     ]
   },
   "travel-transportation": {
@@ -4736,7 +4865,9 @@
       "@toolsdk-remote/com-awardtravelfinder-mcp",
       "@toolsdk-remote/flightqueue",
       "@toolsdk-remote/mothership",
-      "@toolsdk-remote/slicktrip"
+      "@toolsdk-remote/slicktrip",
+      "@toolsdk-remote/gc-airport-transfers",
+      "@toolsdk-remote/offwegosim"
     ]
   },
   "version-control": {
@@ -5711,7 +5842,22 @@
       "@toolsdk-remote/batchdata",
       "@toolsdk-remote/best-electrician-jobs",
       "@toolsdk-remote/house-ai",
-      "@toolsdk-remote/requstory-mcp"
+      "@toolsdk-remote/requstory-mcp",
+      "@toolsdk-remote/aiformapi-fill",
+      "@toolsdk-remote/chefbear",
+      "@toolsdk-remote/cups-to-grams-mcp",
+      "@toolsdk-remote/fal-ai",
+      "@toolsdk-remote/findbroadband-deals",
+      "@toolsdk-remote/health-picardo-labs",
+      "@toolsdk-remote/homesage-ai",
+      "@toolsdk-remote/karma-compass",
+      "@toolsdk-remote/onesimpleapi",
+      "@toolsdk-remote/openfile",
+      "@toolsdk-remote/raw-to-cooked-weight-mcp",
+      "@toolsdk-remote/recipe-nutrition-calculator-mcp",
+      "@toolsdk-remote/us-federal-holidays-business-days-mcp",
+      "@toolsdk-remote/vectosolve",
+      "@toolsdk-remote/vegetable-yield-percentage-mcp"
     ]
   }
 }
