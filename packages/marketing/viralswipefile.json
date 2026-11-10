@@ -1,0 +1,24 @@
+{
+  "type": "mcp-server",
+  "name": "Viral Swipe File",
+  "packageName": "@toolsdk-remote/viralswipefile",
+  "description": "Know what to post next on TikTok and Instagram Reels: search a curated library of viral videos by topic, creator, niche or format, open a video for its hook, caption, views and viral factor (its views against the account's usual), and write new hooks and content ideas from real posts. Six read-only tools. Hosted MCP with OAuth sign-in; a free Viral Swipe File account is required.",
+  "url": "https://github.com/viralswipefile/viralswipefile-plugin",
+  "readme": "https://viralswipefile.com/mcp",
+  "runtime": "node",
+  "logo": "https://raw.githubusercontent.com/viralswipefile/viralswipefile-plugin/11ca12a0133beca08291938cbeb174d6a155e36c/assets/icon.png",
+  "author": "Viral Swipe File",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://viralswipefile.com/api/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "mcp:read"
+        ]
+      }
+    }
+  ]
+}
