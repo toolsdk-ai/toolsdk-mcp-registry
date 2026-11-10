@@ -5,15 +5,17 @@
   "packageVersion": "0.1.1",
   "description": "Search YouTube videos by keyword with date, duration, feature and sorting filters. Return video IDs, channels and available statistics. For AI agents using their own FlashData API key and paid Credits. Independent provider, not affiliated with Google or YouTube. Requires Node.js 22.18.0 or later.",
   "url": "https://github.com/rocosen/flashdata-mcp",
-  "readme": "https://github.com/rocosen/flashdata-mcp/blob/main/npm/docs/youtube-search/README.md",
+  "readme": "https://flashdata.dev/docs/sources/youtube_search?utm_source=toolsdk&utm_medium=integration&utm_campaign=intent_gtm_2026q4&utm_content=youtube_search-task",
   "runtime": "node",
   "license": "MIT",
   "logo": "https://raw.githubusercontent.com/rocosen/flashdata-mcp/main/assets/logo.svg",
   "author": "FlashData",
-  "binArgs": ["mcp"],
+  "binArgs": [
+    "mcp"
+  ],
   "env": {
     "FLASHDATA_API_KEY": {
-      "description": "Your FlashData API key with access to youtube_search. Create a key at https://flashdata.dev/app/api-keys. Data queries consume Credits; pricing: https://flashdata.dev/pricing.",
+      "description": "Your FlashData API key with access to youtube_search. Create an account at https://flashdata.dev/signup?utm_source=toolsdk&utm_medium=integration&utm_campaign=intent_gtm_2026q4&utm_content=youtube_search-task and create a key in the console. Data queries consume Credits; pricing: https://flashdata.dev/pricing?utm_source=toolsdk&utm_medium=integration&utm_campaign=intent_gtm_2026q4&utm_content=youtube_search-task",
       "required": true,
       "secret": true
     }
