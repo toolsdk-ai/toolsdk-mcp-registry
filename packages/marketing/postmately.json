@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Postmately",
+  "packageName": "@toolsdk-remote/postmately",
+  "description": "Make carousels and short videos from a website or topic, validate, draft, schedule and publish social posts to TikTok, YouTube, Instagram, Facebook, Threads, Pinterest, Telegram, VK, Bluesky and Mastodon, and read post metrics.",
+  "url": "https://github.com/YakovlevCoded/postmately-smm-autopilot",
+  "readme": "https://postmately.com/en/mcp-social-media/",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Postmately",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.postmately.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
