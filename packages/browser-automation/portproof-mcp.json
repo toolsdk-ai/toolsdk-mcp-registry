@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Portproof",
+  "packageName": "@portproof/mcp",
+  "description": "Local stdio server for Portproof proxy traffic, sold by the GB on shared mobile 4G/5G and residential pools. Reads pricing, service status and countries online without a key; with an API key it checks the GB balance, builds proxy URLs, tests a connection, buys GB traffic and manages private mobile ports. Paid actions are refused unless called with confirm: true and an idempotency key.",
+  "url": "https://github.com/portproofas/portproof-mcp",
+  "readme": "https://github.com/portproofas/portproof-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/portproofas/portproof-mcp/main/assets/avatar.png",
+  "author": "Portproof",
+  "env": {
+    "PORTPROOF_API_KEY": {
+      "description": "Portproof API key from the dashboard (https://portproof.org/app/keys). Not needed for pricing, status and countries online; required for the account tools (traffic balance, proxy URLs, connection tests, purchases and ports).",
+      "required": false,
+      "secret": true
+    }
+  }
+}
