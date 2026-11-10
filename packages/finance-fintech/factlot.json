@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "FactLot",
+  "packageName": "@toolsdk-remote/factlot",
+  "description": "Fact layer for commercial real estate AI agents. 24 tools: 14 deterministic calculators (rent schedule, net effective rent, proposal comparison, percentage rent, CAM reconciliation, debt sizing, ASC 842 remeasurement, prepayment and defeasance, WALT, NPV, IRR, lease vs. own, renew vs. relocate, hotel metrics) that return the value, every step and a versioned formula ID; canonical IDs for parcels, entities, spaces and documents; fact validation; a Texas property-tax protest deadline rule; search, fetch and schema. Free hosted endpoint with no API key, rate limited to 60 requests per minute per address.",
+  "url": "https://github.com/9mp96ygnbk-alt/factlot",
+  "readme": "https://github.com/9mp96ygnbk-alt/factlot#readme",
+  "runtime": "node",
+  "license": "Apache-2.0",
+  "author": "FactLot",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.factlot.com/mcp"
+    }
+  ]
+}
