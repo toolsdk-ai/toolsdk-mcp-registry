@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Hydracept",
+  "packageName": "@toolsdk-remote/hydracept",
+  "description": "Hosted MCP for Hydracept: discover capabilities, quote and run jobs, fetch receipts and artifacts, with BYOK or managed billing.",
+  "url": "https://github.com/zencodeinc/hydracept-public",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "HYDRACEPT_API_KEY": {
+      "description": "Hydracept API key, sent as 'Authorization: Bearer <key>'.",
+      "required": true,
+      "secret": true
+    }
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.hydracept.com/mcp"
+    }
+  ]
+}
