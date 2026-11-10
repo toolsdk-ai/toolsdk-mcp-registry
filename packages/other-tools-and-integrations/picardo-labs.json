@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Picardo",
+  "packageName": "@toolsdk-remote/health-picardo-labs",
+  "description": "Plan your blood work with your assistant. Browse Picardo's panels, from a yearly check-up to fertility, price any of about 1,000 Labcorp tests, and get one link to order them all.",
+  "url": "https://picardo.health",
+  "readme": "https://picardo.health/docs/claude",
+  "runtime": "node",
+  "author": "Picardo",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.picardo.health/mcp"
+    }
+  ]
+}
