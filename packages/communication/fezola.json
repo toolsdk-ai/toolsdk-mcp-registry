@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Fezola",
+  "packageName": "@toolsdk-remote/fezola",
+  "description": "Hosted, closed-source MCP server that connects several mailboxes and chats to one client: Gmail, iCloud and any IMAP mailbox (OVH, IONOS, Gandi, custom domains), plus Google Chat and Telegram read-only. Unified search across sources, a daily briefing of what needs a reply, and reply drafts saved in the right mailbox. Never sends mail on its own (send_message is disabled by default). Sign in with OAuth; free for 2 sources, Pro is 9 EUR/month. The linked GitHub repository holds documentation and client configs, not the server code.",
+  "url": "https://github.com/mehdis34/fezola-mcp",
+  "readme": "https://app.fezola.com/en/docs",
+  "runtime": "node",
+  "author": "Fezola",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.fezola.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mail"]
+      }
+    }
+  ]
+}
