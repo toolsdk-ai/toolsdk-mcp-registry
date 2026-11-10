@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "CursiveLines",
+  "packageName": "@toolsdk-remote/cursivelines",
+  "description": "Learn cursive and print handwriting: letters with numbered strokes and playback, a trace pad that scores your writing, the five cursive styles side by side, printable practice sheets, your name written as a signature and a gallery of famous signatures. Hosted Streamable HTTP endpoint; no sign-in.",
+  "readme": "https://cursivelines.com/app/",
+  "url": "https://github.com/pyxlino/cursivelines-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Pyxl",
+  "logo": "https://cursivelines.com/mcp/icons/icon-512.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://cursivelines.com/api/mcp"
+    }
+  ]
+}
