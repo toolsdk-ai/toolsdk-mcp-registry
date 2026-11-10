@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "TimeToPost",
+  "packageName": "@toolsdk-remote/timetopost",
+  "description": "Drafts social posts for human approval, schedules them at each account's best time and reads engagement through the hosted TimeToPost MCP endpoint.",
+  "url": "https://github.com/MelMayssonOwen/timetopost-mcp",
+  "readme": "https://github.com/MelMayssonOwen/timetopost-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.timetopost.co/mcp"
+    }
+  ]
+}
