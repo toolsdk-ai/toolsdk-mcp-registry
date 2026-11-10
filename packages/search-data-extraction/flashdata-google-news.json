@@ -5,7 +5,7 @@
   "packageVersion": "0.1.1",
   "description": "Search Google News for articles, publishers, date labels and source links. Turn a topic into a traceable news briefing. For AI agents using their own FlashData API key and paid Credits. Independent provider, not affiliated with Google or YouTube. Requires Node.js 22.18.0 or later.",
   "url": "https://github.com/rocosen/flashdata-mcp",
-  "readme": "https://github.com/rocosen/flashdata-mcp/blob/main/npm/docs/google-news/README.md",
+  "readme": "https://flashdata.dev/docs/sources/google_news?utm_source=toolsdk&utm_medium=integration&utm_campaign=intent_gtm_2026q4&utm_content=google_news-task",
   "runtime": "node",
   "license": "MIT",
   "logo": "https://raw.githubusercontent.com/rocosen/flashdata-mcp/main/assets/logo.svg",
@@ -13,7 +13,7 @@
   "binArgs": ["mcp"],
   "env": {
     "FLASHDATA_API_KEY": {
-      "description": "Your FlashData API key with access to google_news. Create a key at https://flashdata.dev/app/api-keys. Data queries consume Credits; pricing: https://flashdata.dev/pricing.",
+      "description": "Your FlashData API key with access to google_news. Create an account at https://flashdata.dev/signup?utm_source=toolsdk&utm_medium=integration&utm_campaign=intent_gtm_2026q4&utm_content=google_news-task and create a key in the console. Data queries consume Credits; pricing: https://flashdata.dev/pricing?utm_source=toolsdk&utm_medium=integration&utm_campaign=intent_gtm_2026q4&utm_content=google_news-task",
       "required": true,
       "secret": true
     }

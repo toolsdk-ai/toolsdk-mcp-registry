@@ -5,7 +5,7 @@
   "packageVersion": "0.1.1",
   "description": "Deliver YouTube video, audio or clips to your own S3 or other supported cloud storage. Track asynchronous delivery and its output manifest. For AI agents using their own FlashData API key and paid Credits. Independent provider, not affiliated with Google or YouTube. Requires Node.js 22.18.0 or later. Requires your supported cloud-storage destination and credentials; use only content you are authorized to download.",
   "url": "https://github.com/rocosen/flashdata-mcp",
-  "readme": "https://github.com/rocosen/flashdata-mcp/blob/main/npm/docs/youtube-cloud-storage/README.md",
+  "readme": "https://flashdata.dev/docs/sources/youtube_download?utm_source=toolsdk&utm_medium=integration&utm_campaign=intent_gtm_2026q4&utm_content=youtube_download-task",
   "runtime": "node",
   "license": "MIT",
   "logo": "https://raw.githubusercontent.com/rocosen/flashdata-mcp/main/assets/logo.svg",
@@ -13,7 +13,7 @@
   "binArgs": ["mcp"],
   "env": {
     "FLASHDATA_API_KEY": {
-      "description": "Your FlashData API key with access to youtube_download. Create a key at https://flashdata.dev/app/api-keys. Data queries consume Credits; pricing: https://flashdata.dev/pricing.",
+      "description": "Your FlashData API key with access to youtube_download. Create an account at https://flashdata.dev/signup?utm_source=toolsdk&utm_medium=integration&utm_campaign=intent_gtm_2026q4&utm_content=youtube_download-task and create a key in the console. Data queries consume Credits; pricing: https://flashdata.dev/pricing?utm_source=toolsdk&utm_medium=integration&utm_campaign=intent_gtm_2026q4&utm_content=youtube_download-task",
       "required": true,
       "secret": true
     }
