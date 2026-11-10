@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Crypto Derivatives Data API (Remote)",
+  "packageName": "@toolsdk-remote/crypto-derivatives-data-api",
+  "description": "Connects to the hosted Crypto Derivatives Data API MCP endpoint: 10 tools for perpetual funding rates and history, funding-rate arbitrage scans, a perp screener, open interest, futures basis, implied volatility, liquidations, order book depth and a derivatives snapshot, aggregated across 8 exchanges (Bybit, Hyperliquid, dYdX, Gate, Kraken Futures, Bitfinex, Deribit, OKX). No account or API key: tools/list is free, and each tool call costs $0.003 to $0.005, paid per call with x402 v2 (USDC on Base), so the client needs an x402-capable wallet.",
+  "url": "https://github.com/hiesem/x402-crypto-derivatives-data",
+  "readme": "https://derivs.duoleads.com/docs",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://derivs.duoleads.com/logo.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://derivs.duoleads.com/mcp"
+    }
+  ]
+}
