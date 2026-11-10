@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "ExitValue M&A Multiples",
+  "packageName": "@toolsdk-remote/exitvalue-ma-multiples",
+  "description": "Read-only lookup of median and interquartile EV/EBITDA and EV/Revenue M&A valuation multiples by industry, deal size and deal year (2018-2026) from disclosed transactions, with deal counts; cells under 10 deals are withheld. No authentication.",
+  "url": "https://github.com/nickcals/exitvalue-mcp",
+  "readme": "https://exitvalue.ai/ai-connector",
+  "runtime": "python",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://exitvalue.ai/api/mcp"
+    }
+  ]
+}
