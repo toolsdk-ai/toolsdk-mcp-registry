@@ -1,0 +1,10 @@
+{
+  "type": "mcp-server",
+  "name": "behave",
+  "packageName": "behave",
+  "description": "Records CLI behaviour as golden tests and diffs a rewrite against the original.",
+  "url": "https://github.com/emirmrkaljevic/behave",
+  "runtime": "go",
+  "license": "mit",
+  "env": {}
+}
