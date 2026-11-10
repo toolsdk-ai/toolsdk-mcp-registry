@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "MCPKit — Yandex Metrica MCP",
+  "packageName": "@toolsdk-remote/mcpkit-yandex-metrika",
+  "description": "Analyze Yandex Metrica traffic and conversions in ChatGPT with read-only access.",
+  "url": "https://mcpkit.ru/mcp-yandex-metrika?utm_source=toolsdk&utm_medium=mcp_registry&utm_campaign=yandex_metrika",
+  "readme": "https://github.com/MCPKit-RU/yandex-metrika-mcp#readme",
+  "runtime": "python",
+  "license": "Proprietary",
+  "author": "MCPKit",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcpkit.ru/mcp-yandex-metrika/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
