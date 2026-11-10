@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "OneSimpleAPI",
+  "packageName": "@toolsdk-remote/onesimpleapi",
+  "description": "Generate PDFs, screenshots, images, QR codes and short links, and validate emails through the hosted OneSimpleAPI MCP endpoint.",
+  "url": "https://onesimpleapi.com/docs/mcp",
+  "readme": "https://onesimpleapi.com/docs/mcp",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://onesimpleapi.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
