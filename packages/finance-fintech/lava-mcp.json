@@ -1,0 +1,24 @@
+{
+  "type": "mcp-server",
+  "name": "lava-mcp / 熔岩 Lava · 消息面热度",
+  "packageName": "@toolsdk-remote/lava-mcp",
+  "description": "Read-only A-share stock & concept-board news-flow heat via remote Streamable HTTP MCP / REST, for quant tools and AI Agent market research.",
+  "url": "https://github.com/dustinliang666-blip/lava-mcp",
+  "readme": "https://lava.ai-dolphin.com/subscribe/docs",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://lava.ai-dolphin.com/subscribe/v1/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
+
+
+
+
