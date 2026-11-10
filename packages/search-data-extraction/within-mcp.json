@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "within",
+  "packageName": "@toolsdk-remote/within-mcp",
+  "description": "Shop independent luxury boutiques: live stock with sizes and prices, where to buy a designer, price checks, delivered cost with duty and tax, and a boutique directory in more than 140 cities. 26 read only tools, no key.",
+  "url": "https://github.com/startupbuilders777/within-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://shopwithin.co/mcp"
+    }
+  ]
+}
