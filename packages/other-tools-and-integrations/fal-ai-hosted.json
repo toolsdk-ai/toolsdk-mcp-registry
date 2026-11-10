@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "fal.ai",
+  "packageName": "@toolsdk-remote/fal-ai",
+  "description": "Generate and edit images, video, audio and 3D with fal. Discover models, inspect schemas and prices, and follow queued jobs. Browser OAuth sign-in uses a fal account; generation consumes account credits.",
+  "url": "https://fal.ai/mcp",
+  "readme": "https://fal.ai/mcp",
+  "runtime": "node",
+  "logo": "https://avatars.githubusercontent.com/u/74778219?s=400&v=4",
+  "author": "fal.ai",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.fal.ai/mcp-relay",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
