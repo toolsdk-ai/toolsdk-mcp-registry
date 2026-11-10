@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/tap-giving-mcp",
+  "name": "NFC Tap Builder by Tap.Giving",
+  "description": "A tool first: create print-ready NFC artwork proofs with correct vector art for organizations, including churches, nonprofits, restaurants, coffee shops, and local businesses, free to take to any vendor, with no lock-in. Discovery, pricing, product facts, the artwork spec, order questions, order status, recaps, and order placement all work with no key and no login, at any point. Ordering custom discs through Tap.Giving is an optional next step.",
+  "url": "https://github.com/Tap-Giving/tap-giving-mcp",
+  "readme": "https://github.com/Tap-Giving/tap-giving-mcp#readme",
+  "runtime": "node",
+  "author": "Tap.Giving",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://tap.giving/mcp"
+    }
+  ]
+}
