@@ -4,7 +4,7 @@
   "packageName": "@toolsdk-remote/screenrig",
   "description": "Manage digital signage screens, playlists, media, schedules and playback reports through the official hosted screenRIG MCP server.",
   "url": "https://screenrig.ai/",
-  "readme": "https://screenrig.ai/docs/mcp/",
+  "readme": "https://screenrig.ai/docs/mcp",
   "runtime": "go",
   "env": {},
   "remotes": [
