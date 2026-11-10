@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "ClockInToday",
+  "packageName": "@toolsdk-remote/clockintoday",
+  "description": "Hosted, read-only MCP server for 112 US jobs and gig apps you can start without a job interview: search by age, vehicle, background check, payout speed and category, get one platform's sourced requirements and pay, or pull dataset statistics. Listings are rechecked monthly. No auth.",
+  "url": "https://clockintoday.com/developers/",
+  "readme": "https://clockintoday.com/developers/#mcp",
+  "runtime": "node",
+  "license": "Proprietary",
+  "author": "ClockInToday",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://clockintoday.com/mcp"
+    }
+  ]
+}
