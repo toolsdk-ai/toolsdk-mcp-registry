@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "ipvolt Proxy Toolkit",
+  "packageName": "@toolsdk-remote/ipvolt-proxy-toolkit",
+  "description": "Search reviewed proxy guides, generate tested proxy configuration examples for curl, Requests, HTTPX and Playwright, and diagnose proxy errors such as a 407 or a failed CONNECT tunnel. No account or API key is needed.",
+  "url": "https://github.com/ipvolt/proxy-toolkit-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.ipvolt.com/mcp"
+    }
+  ]
+}
