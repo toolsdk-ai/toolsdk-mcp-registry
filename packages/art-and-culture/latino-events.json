@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Latino Events (events.lat)",
+  "packageName": "@toolsdk-remote/latino-events",
+  "description": "Hosted events.lat MCP: search concerts, festivals, conferences and cultural events across Mexico, Brazil, Argentina, Colombia, Chile and Peru by keyword, country, city, category and date, get full event details with venue, dates and the official ticket link, and save events to a personal list once signed in. Sign in with OAuth using an events.lat account.",
+  "readme": "https://events.lat/llms.txt",
+  "runtime": "node",
+  "logo": "https://events.lat/icon-512.png",
+  "author": "events.lat",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://ojlsoqhibryhvuyltwpi.supabase.co/functions/v1/mcp",
+      "auth": { "type": "oauth2" }
+    }
+  ]
+}
