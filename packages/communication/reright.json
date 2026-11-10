@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "reright",
+  "packageName": "@toolsdk-remote/reright",
+  "description": "reright rewrites the text an AI agent writes for other people, like emails, messages, posts, commit messages and PR text, so it sounds like you wrote it. Facts, names and numbers stay the same.",
+  "url": "https://reright.it",
+  "readme": "https://reright.it/docs",
+  "runtime": "node",
+  "license": "Proprietary",
+  "author": "interpt",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.reright.it/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["review"]
+      }
+    }
+  ]
+}
