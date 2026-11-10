@@ -1,0 +1,11 @@
+{
+  "type": "mcp-server",
+  "name": "Lantern Works GPU Prices",
+  "packageName": "lantern-works-deals-mcp",
+  "description": "Read-only GPU cloud rental price comparison across about 29 tracked vendors (H100, H200, A100, L40S, RTX 4090/5090 and more), with a source link and check time on every price, recent price changes, and job-cost estimates. No API key.",
+  "url": "https://github.com/connormatthewdouglas/agent-work-stack-deals",
+  "readme": "https://thelanternworks.com/install/?ref=readme-toolsdk",
+  "runtime": "python",
+  "license": "MIT",
+  "env": {}
+}
