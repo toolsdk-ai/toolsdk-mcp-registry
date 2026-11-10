@@ -1,0 +1,10 @@
+{
+  "type": "mcp-server",
+  "packageName": "ichi-mcp",
+  "description": "Provides real-time internet-wide cyber threat context via the ICHI (Internet Cyber Health Index) — a free, source-transparent daily barometer of global cyber conditions. Tools: get current threat band and score (NORMAL/GUARDED/ELEVATED/HIGH/CRITICAL), retrieve recent critical vulnerability advisories, and check data-source health. No API key required. Disclosed: maintained for ICHI's creator.",
+  "url": "https://github.com/bernik-bot/ichi-mcp",
+  "runtime": "python",
+  "license": "mit",
+  "env": {},
+  "name": "ICHI MCP Server"
+}
