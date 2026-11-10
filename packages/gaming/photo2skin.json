@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Photo2Skin",
+  "packageName": "@toolsdk-remote/photo2skin",
+  "description": "AI tools for Minecraft: skins from a photo or prompt, AI builds, real-world maps, textures and more. Make and edit Minecraft skins from a photo or a description just by chatting, make builds for Java or Bedrock, turn real places into playable worlds, and search the free skin and builds libraries. OAuth sign-in with a free Photo2Skin account; browsing is free, creations spend the user's Photo2Skin credits and the server never buys anything.",
+  "url": "https://github.com/photo2skin/photo2skin-mcp",
+  "readme": "https://app.photo2skin.com/agents",
+  "runtime": "node",
+  "author": "Photo2Skin",
+  "logo": "https://app.photo2skin.com/icon-512.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.photo2skin.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
