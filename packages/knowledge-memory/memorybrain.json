@@ -2,7 +2,7 @@
   "type": "mcp-server",
   "name": "MemoryBrain",
   "packageName": "@toolsdk-remote/ai-memorybrain-memorybrain",
-  "description": "Personal memory that ChatGPT and Claude share over MCP: search and read notes, feed new ones, and track projects and tasks. Every note keeps its source (something the user read, said, or a chat) and typed links to other notes. Sign-in with OAuth; public sign-up.",
+  "description": "Personal memory that ChatGPT and Claude share over MCP: search and read notes, feed new ones, and track projects and tasks. Every note keeps its source (something the user read, said, or a chat) and typed links to other notes. Sign-in with OAuth; private beta with limited sign-up.",
   "url": "https://memorybrain.ai/",
   "readme": "https://github.com/Memory-brain/open-brain#readme",
   "runtime": "node",
