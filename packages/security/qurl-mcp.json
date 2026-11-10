@@ -1,0 +1,27 @@
+{
+  "type": "mcp-server",
+  "name": "qURL",
+  "packageName": "@layervai/qurl-mcp",
+  "description": "Mint, resolve, audit, and rotate scope-limited expiring access links (qURLs) for AI agents. Without QURL_API_KEY it runs through the local qURL CLI (no account); with a key it uses the qURL API.",
+  "url": "https://github.com/layervai/qurl-mcp",
+  "readme": "https://github.com/layervai/qurl-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "QURL_API_KEY": {
+      "description": "Optional. Without it, the tools run through the local qURL CLI (qurl), which needs no account. With it, the tools use the qURL API: a key with qurl:read, qurl:write, and/or qurl:resolve scopes from https://layerv.ai.",
+      "required": false,
+      "secret": true
+    },
+    "QURL_API_URL": {
+      "description": "qURL API base URL. Defaults to https://api.layerv.ai. Override only for testing against a non-production qURL backend.",
+      "required": false,
+      "default": "https://api.layerv.ai"
+    },
+    "QURL_MCP_FEEDBACK": {
+      "description": "Set to off to hide and disable outbound LayerV product feedback. Default on. Feedback is sent only by an explicit submit_feedback tool call.",
+      "required": false,
+      "default": "on"
+    }
+  }
+}
