@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "Buddy",
+  "packageName": "@toolsdk-remote/buddy",
+  "description": "Hosted MCP server for Buddy, a CI/CD and deployment platform. Its 90+ tools let an agent run pipelines and read their logs, browse repositories, branches and commits, and manage projects, deployment targets, environments, sandboxes, artifacts, domains and distributions. Sign in with OAuth on first use. Tools act on the real workspace with the signed-in user's permissions, and the ?tools= query parameter limits which categories are exposed. Workspaces in the EU and Asia regions use mcp.eu.buddy.works and mcp.asia.buddy.works instead.",
+  "url": "https://buddy.works",
+  "readme": "https://buddy.works/docs/ai-agents/mcp",
+  "runtime": "node",
+  "author": "Buddy",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.buddy.works/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
