@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "AgentMart",
+  "packageName": "@toolsdk-remote/agentmart",
+  "description": "Shop of ready, hosted parts for coding agents: a public webhook inbox URL, memory shared across sessions and machines, wake-up calls and schedules that fire after the session ends, uptime and heartbeat watch, a task queue, a form backend for static sites, share links, asking your human by email, email list and sender checks, and tested code kits. Searching the catalog needs no sign-in; most other tools use OAuth, and the agent asks the human before every purchase.",
+  "url": "https://github.com/mustafaakmese/agentmart-plugins",
+  "readme": "https://agentmart.ciphyr.ai/llms.txt",
+  "runtime": "node",
+  "author": "Ciphyr Tech OÜ",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://agentmart.ciphyr.ai/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
