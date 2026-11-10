@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "EarlyLore",
+  "packageName": "@toolsdk-remote/earlylore",
+  "description": "Hosted MCP for product-idea evaluation and competitive research against live software products (competitors, demand signals, pricing benchmarks, acquisition channels). The unauthenticated handshake and tool list work; research tools require a personal Bearer API key from the EarlyLore account page (this registry does not model Bearer/API-key header auth).",
+  "url": "https://earlylore.com/mcp",
+  "readme": "https://earlylore.com/mcp",
+  "runtime": "node",
+  "author": "EarlyLore / Kai",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://earlylore.com/api/mcp"
+    }
+  ]
+}
