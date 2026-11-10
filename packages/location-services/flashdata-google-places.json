@@ -10,9 +10,7 @@
   "license": "MIT",
   "logo": "https://raw.githubusercontent.com/rocosen/flashdata-mcp/main/assets/logo.svg",
   "author": "FlashData",
-  "binArgs": [
-    "mcp"
-  ],
+  "binArgs": ["mcp"],
   "env": {
     "FLASHDATA_API_KEY": {
       "description": "Your FlashData API key with access to google_places. Create an account at https://flashdata.dev/signup?utm_source=toolsdk&utm_medium=integration&utm_campaign=intent_gtm_2026q4&utm_content=google_places-task and create a key in the console. Data queries consume Credits; pricing: https://flashdata.dev/pricing?utm_source=toolsdk&utm_medium=integration&utm_campaign=intent_gtm_2026q4&utm_content=google_places-task",
