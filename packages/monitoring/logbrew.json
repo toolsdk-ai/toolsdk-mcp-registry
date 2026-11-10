@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "LogBrew",
+  "packageName": "@toolsdk-remote/logbrew",
+  "description": "Ask your AI agent what broke in production. It reads your LogBrew errors, logs, traces, and releases and helps you fix the bug.",
+  "url": "https://github.com/LogBrewCo/mcp",
+  "readme": "https://docs.logbrew.co/guides/mcp",
+  "runtime": "node",
+  "license": "Apache-2.0",
+  "author": "LogBrew",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://logbrew.co/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
