@@ -1,0 +1,12 @@
+{
+  "type": "mcp-server",
+  "name": "MsgLens",
+  "packageName": "msglens-cli",
+  "description": "Reads Outlook .msg, .eml and winmail.dat files on the local machine, including message bodies stored only as compressed RTF. Tools: read_email, save_attachments and convert_email (to .eml or .txt). Makes no network requests.",
+  "url": "https://github.com/AndyLiu0427/msglens",
+  "readme": "https://github.com/AndyLiu0427/msglens/tree/main/cli#readme",
+  "runtime": "node",
+  "binArgs": ["mcp"],
+  "license": "MIT",
+  "env": {}
+}
