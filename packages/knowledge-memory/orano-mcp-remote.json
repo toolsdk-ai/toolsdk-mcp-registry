@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "ORANO (Remote)",
+  "packageName": "@toolsdk-remote/orano-mcp",
+  "description": "Connects to the hosted ORANO MCP endpoint: personal, read-only tools that let your own AI agent search and read the library of summaries, key takeaways, plans and memory facts you saved in ORANO. Requires an ORANO account and a personal API key (created in the ORANO app) sent as a Bearer token; the key is not modeled in this registry entry.",
+  "url": "https://github.com/infotik/orano-mcp-server",
+  "readme": "https://oranoai.com/mcp",
+  "runtime": "node",
+  "author": "ORANO",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://orano-ai-backend-1037939693300.us-central1.run.app/mcp/"
+    }
+  ]
+}
