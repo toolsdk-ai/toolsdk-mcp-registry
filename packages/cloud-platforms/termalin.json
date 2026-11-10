@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Termalin",
+  "packageName": "@toolsdk-remote/termalin",
+  "description": "Hosted MCP server for your own Linux servers: run commands and background jobs, read and write files over SFTP, query databases and read metrics, alerts and pending security updates, with OAuth sign-in, a per-server command policy and an audit log.",
+  "url": "https://github.com/termalinapp/termalin-plugin",
+  "readme": "https://termal.in/mcp/",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://termal.in/mcp"
+    }
+  ]
+}
