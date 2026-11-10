@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "Flight Seatmap",
+  "packageName": "@toolsdk-remote/flightseatmap",
+  "description": "Seat maps, seat ratings, traveller reviews and seat alerts for 100+ airlines. Hosted remote server that signs in with OAuth 2.1.",
+  "url": "https://github.com/FlightSeatmap/mcp",
+  "readme": "https://flightseatmap.com/mcp",
+  "logo": "https://flightseatmap.com/icon.png",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "FlightSeatmap",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.flightseatmap.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["read", "write", "search"]
+      }
+    }
+  ]
+}
