@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "A/B Test Sample Size Calculator MCP",
+  "packageName": "@toolsdk-remote/ab-test-sample-size-calculator-mcp",
+  "description": "Exact A/B test sample size, duration, z-test, chi-square, Fisher-Freeman-Halton and peeking risk. Tools: calculate_sample_size, estimate_test_duration, test_ab_significance, fisher_exact_test, check_peeking_risk. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/ab-test-sample-size-calculator-mcp",
+  "readme": "https://github.com/theluckystrike/ab-test-sample-size-calculator-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://ab-test-sample-size-calculator-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}

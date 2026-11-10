@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "River Level MCP",
+  "packageName": "@toolsdk-remote/river-level-mcp",
+  "description": "Live US river levels, streamflow and NWS flood forecasts from USGS stream gauges. Tools: find_river_gauges, get_river_level, get_river_history, get_flood_forecast. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/river-level-mcp",
+  "readme": "https://github.com/theluckystrike/river-level-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://river-level-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}

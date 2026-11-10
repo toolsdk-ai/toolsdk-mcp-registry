@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "UK Statutory Sick Pay and Maternity Pay MCP",
+  "packageName": "@toolsdk-remote/uk-statutory-sick-pay-maternity-pay-calculator-mcp",
+  "description": "UK Statutory Sick Pay (April 2026 rules), Maternity Pay and National Living Wage from gov.uk. Tools: calculate_statutory_sick_pay, calculate_statutory_maternity_pay, get_minimum_wage_rates, check_eligibility. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/uk-statutory-sick-pay-maternity-pay-calculator-mcp",
+  "readme": "https://github.com/theluckystrike/uk-statutory-sick-pay-maternity-pay-calculator-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://uk-statutory-sick-pay-maternity-pay-calculator-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}

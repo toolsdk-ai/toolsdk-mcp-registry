@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Student Loan RAP Calculator MCP",
+  "packageName": "@toolsdk-remote/student-loan-repayment-assistance-plan-calculator-mcp",
+  "description": "Student loan RAP payment calculator, 2026 federal loan limits, SAVE/PAYE/ICR end dates (OBBBA). Tools: calculate_rap_payment, compare_rap_vs_standard, get_federal_loan_limits, get_plan_transition_dates. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/student-loan-repayment-assistance-plan-calculator-mcp",
+  "readme": "https://github.com/theluckystrike/student-loan-repayment-assistance-plan-calculator-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://student-loan-repayment-assistance-plan-calculator-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}

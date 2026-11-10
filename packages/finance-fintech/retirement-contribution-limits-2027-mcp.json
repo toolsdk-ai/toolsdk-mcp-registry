@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Retirement Contribution Limits 2027 MCP",
+  "packageName": "@toolsdk-remote/retirement-contribution-limits-2027-mcp",
+  "description": "401(k), IRA, HSA limits, age 60-63 catch-up, Roth catch-up rule, Social Security COLA, 2025-2027. Tools: get_contribution_limits, calculate_max_contribution, get_social_security_cola, compare_years. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/retirement-contribution-limits-2027-mcp",
+  "readme": "https://github.com/theluckystrike/retirement-contribution-limits-2027-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://retirement-contribution-limits-2027-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Minimum Wage MCP",
+  "packageName": "@toolsdk-remote/minimum-wage-mcp",
+  "description": "US state minimum wage 2026-2027: rates, tipped wages and scheduled increases for 50 states and DC. Tools: get_minimum_wage, list_upcoming_increases, compare_states, annual_income_at_minimum_wage. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/minimum-wage-mcp",
+  "readme": "https://github.com/theluckystrike/minimum-wage-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://minimum-wage-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}

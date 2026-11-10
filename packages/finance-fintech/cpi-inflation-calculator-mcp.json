@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "CPI Inflation Calculator MCP",
+  "packageName": "@toolsdk-remote/cpi-inflation-calculator-mcp",
+  "description": "Inflation calculator with official BLS CPI 1913 to the latest month, raise vs inflation, SS COLA. Tools: calculate_inflation, get_latest_cpi, get_inflation_rate, compare_raise_to_inflation, calculate_social_security_cola. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/cpi-inflation-calculator-mcp",
+  "readme": "https://github.com/theluckystrike/cpi-inflation-calculator-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://cpi-inflation-calculator-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}

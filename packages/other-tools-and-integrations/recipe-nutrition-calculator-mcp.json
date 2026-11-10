@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Recipe Nutrition Calculator MCP",
+  "packageName": "@toolsdk-remote/recipe-nutrition-calculator-mcp",
+  "description": "Recipe nutrition from ingredient lines: USDA FoodData Central values, per serving, FDA rounding. Tools: lookup_ingredient_nutrition, calculate_recipe_nutrition, round_nutrition_label, scale_recipe_nutrition. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/recipe-nutrition-calculator-mcp",
+  "readme": "https://github.com/theluckystrike/recipe-nutrition-calculator-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://recipe-nutrition-calculator-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}
