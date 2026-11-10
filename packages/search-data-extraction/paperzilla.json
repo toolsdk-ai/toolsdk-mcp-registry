@@ -1,0 +1,25 @@
+{
+  "type": "mcp-server",
+  "name": "Paperzilla",
+  "packageName": "@toolsdk-remote/paperzilla",
+  "description": "Focused scientific paper feeds, public research digests, and paper Markdown for morning research briefs. A Paperzilla account and OAuth sign-in are required. Public digests and catalog papers are available to Free accounts without creating a project. Markdown generation and feedback on owned feed items are explicit, separate actions.",
+  "readme": "https://docs.paperzilla.ai/guides/mcp",
+  "runtime": "python",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://paperzilla.ai/api/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "catalog:read",
+          "projects:read",
+          "markdown:generate",
+          "feedback:write",
+          "offline_access"
+        ]
+      }
+    }
+  ]
+}
