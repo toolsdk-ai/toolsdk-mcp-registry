@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Karma.Domains Expired Domains",
+  "packageName": "@toolsdk-remote/karma-domains",
+  "description": "Official hosted server for Karma.Domains. Searches expired, auction, backorder and buy-now domains from 40+ sources with Wayback Machine history, Karma Score and Ahrefs, Moz and Majestic metrics, manages saved filters, notes and share links, and runs live availability, WHOIS, DNS, domain age, backlink and spam score checks. OAuth sign-in; a Karma.Domains Pro plan is required.",
+  "url": "https://github.com/karma-domains/expired-domains-mcp",
+  "readme": "https://karma.domains/en/expired-domains-mcp/",
+  "runtime": "node",
+  "author": "Karma.Domains",
+  "logo": "https://raw.githubusercontent.com/karma-domains/expired-domains-mcp/main/assets/karma-domains-logo-400.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.karma.domains/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp"]
+      }
+    }
+  ]
+}
