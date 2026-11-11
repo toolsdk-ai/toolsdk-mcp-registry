@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Telofy",
+  "packageName": "@toolsdk-remote/telofy",
+  "description": "Remote MCP server for Telofy, the AI phone receptionist for small businesses in Germany. Lets agents read the account's calls, captured leads and tickets, and appointments booked by the phone agent. Data processed in the EU.",
+  "url": "https://github.com/RuJerome/telofy-mcp",
+  "readme": "https://github.com/RuJerome/telofy-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Telofy",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.telofy.app/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
