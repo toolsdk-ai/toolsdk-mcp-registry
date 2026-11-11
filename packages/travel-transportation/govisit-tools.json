@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "GoVisit Tools",
+  "packageName": "@toolsdk-remote/govisit-tools",
+  "description": "Search GoVisit and read published travel destinations, places, activities, categories, collections, and documentation through 22 read-only tools. No GoVisit API key is required.",
+  "url": "https://govisit.ai",
+  "readme": "https://govisit.ai/en/docs/developers/mcp/overview",
+  "runtime": "node",
+  "author": "GoVisit.ai",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://govisit.ai/mcp"
+    }
+  ]
+}
