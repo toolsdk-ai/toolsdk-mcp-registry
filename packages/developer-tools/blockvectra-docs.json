@@ -4,7 +4,7 @@
   "packageName": "@toolsdk-remote/blockvectra-docs",
   "description": "Search and read source-linked BlockVectra setup documentation with search_docs and read_doc. Covers Robinhood Chain and multi-chain EVM RPC; no BlockVectra account or API key required.",
   "url": "https://github.com/blockvectra/mcp",
-  "readme": "https://docs.blockvectra.com/en/guides/mcp-server/#docs-only-remote-http",
+  "readme": "https://docs.blockvectra.com/en/guides/mcp-server/?ref=gh-toolsdk-docs-1111#docs-only-remote-http",
   "runtime": "node",
   "env": {},
   "remotes": [
