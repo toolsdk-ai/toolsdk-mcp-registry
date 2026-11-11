@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Weft",
+  "packageName": "@toolsdk-remote/weft",
+  "description": "One board for you and your AI: agents ask what to work on, claim a task with a lease, report progress and finish with a receipt the person accepts or returns.",
+  "url": "https://letsweft.com",
+  "readme": "https://letsweft.com/llms-install.md",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://letsweft.com/api/mcp",
+      "auth": { "type": "oauth2", "scopes": ["openid", "offline_access"] }
+    }
+  ]
+}
