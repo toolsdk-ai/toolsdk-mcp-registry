@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Wavegrain",
+  "packageName": "@toolsdk-remote/wavegrain",
+  "description": "Hosted MCP server for Wavegrain: curated TikTok slideshows and Instagram carousels for your brand on autopilot. Agents read your brand, make slideshows in its voice with your photos, edit slides, schedule them and export.",
+  "url": "https://github.com/wavegrain/wavegrain-mcp",
+  "readme": "https://wavegrain.com/mcp",
+  "runtime": "node",
+  "author": "Wavegrain",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://wavegrain.com/api/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["read", "write", "generate", "post"]
+      }
+    }
+  ]
+}
