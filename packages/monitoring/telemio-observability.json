@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "Telemio Observability MCP",
+  "packageName": "@toolsdk-remote/telemio-observability",
+  "description": "Hosted, authenticated observability MCP for querying workspace telemetry, inspecting runtimes and dashboards, and retrieving integration setup guidance.",
+  "url": "https://github.com/wundercorp/telemio-mcp",
+  "readme": "https://telemio.sh/mcp-server",
+  "runtime": "node",
+  "license": "Proprietary",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.telemio.sh/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
