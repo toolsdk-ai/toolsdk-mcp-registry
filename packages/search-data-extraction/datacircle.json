@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Datacircle",
+  "packageName": "@toolsdk-remote/datacircle",
+  "description": "Find the best GTM APIs. Our MCP server is open to anyone, with no key. list_apis lists the GTM APIs and search_plans finds their plans by API, provider or price.",
+  "url": "https://datacircle.dev",
+  "readme": "https://datacircle.dev/docs/mcp",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.datacircle.dev/mcp"
+    }
+  ]
+}
