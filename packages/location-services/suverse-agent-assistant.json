@@ -1,16 +1,16 @@
 {
   "type": "mcp-server",
-  "name": "Versum Agent Assistant",
-  "packageName": "@toolsdk-remote/versum-agent-assistant",
+  "name": "SuVerse",
+  "packageName": "@toolsdk-remote/suverse-agent-assistant",
   "description": "Local businesses for AI agents: find a business by name, trade or meaning, see what it sells with prices, get a delivery quote from the shop's own cart, and open real order or booking links. No auth.",
-  "url": "https://github.com/sudzikcoin/versum-agent-assistant",
-  "readme": "https://github.com/sudzikcoin/versum-agent-assistant#readme",
+  "url": "https://github.com/sudzikcoin/suverse-agent-assistant",
+  "readme": "https://github.com/sudzikcoin/suverse-agent-assistant#readme",
   "runtime": "node",
   "env": {},
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://versum.suverse.io/mcp"
+      "url": "https://www.suverse.io/mcp"
     }
   ]
 }

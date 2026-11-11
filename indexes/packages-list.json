@@ -59709,8 +59709,8 @@
     "path": "marketing/trendsfast.json",
     "category": "marketing"
   },
-  "@toolsdk-remote/versum-agent-assistant": {
-    "path": "location-services/versum-agent-assistant.json",
+  "@toolsdk-remote/suverse-agent-assistant": {
+    "path": "location-services/suverse-agent-assistant.json",
     "category": "location-services"
   },
   "@toolsdk-remote/world-monitor": {
