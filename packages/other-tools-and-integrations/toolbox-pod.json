@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Toolbox POD",
+  "packageName": "@toolsdk-remote/toolbox-pod",
+  "description": "Design custom tees and hoodies, see mockups, and order prints made and shipped from Utah. Creates shirt designs from a description or reference image, shows them on mockups in chosen colors, prices orders, prepares a draft order for one US recipient with a checkout link to pay on toolboxpod.com, and follows orders to tracking.",
+  "url": "https://github.com/Toolbox-POD/toolbox-pod-mcp",
+  "readme": "https://toolboxpod.com/docs/mcp",
+  "runtime": "node",
+  "logo": "https://toolboxpod.com/site/assets/logo-mark-512.png",
+  "author": "Toolbox Brands LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.toolboxpod.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
