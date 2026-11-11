@@ -1,0 +1,35 @@
+{
+  "type": "mcp-server",
+  "name": "Replai",
+  "packageName": "@toolsdk-remote/replai",
+  "description": "Set up, test and publish an AI customer support Agent for your SaaS product: add product knowledge, run test questions, review and publish, and work the support Inbox from your AI assistant.",
+  "url": "https://github.com/flsteven87/replai-mcp",
+  "readme": "https://replai.tw/en/guide/connect-ai-agents",
+  "runtime": "python",
+  "license": "MIT",
+  "author": "AIthentic LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.replai.tw/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "replai:read",
+          "replai:agents:write",
+          "replai:channels:write",
+          "replai:draft:write",
+          "replai:engineering:write",
+          "replai:knowledge:write",
+          "replai:lifecycle:write",
+          "replai:publication:write",
+          "replai:resources:write",
+          "replai:support:write",
+          "replai:tests:write",
+          "replai:workspace:write"
+        ]
+      }
+    }
+  ]
+}
