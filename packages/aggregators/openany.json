@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "OpenAny",
+  "packageName": "@toolsdk-remote/openany",
+  "description": "The open marketplace for agents: 3,200+ APIs and 168+ AI models, one key. Browse free; pay per call. Hosted Streamable HTTP at https://mcp.openany.si. Browsing, search, and pricing need no key. Only run_api requires Authorization: Bearer <OPENANY_API_KEY>. The registry remote transport does not inject Bearer headers; configure the key in the client if you will execute calls.",
+  "url": "https://github.com/openanysi/openany-mcp",
+  "readme": "https://github.com/openanysi/openany-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.openany.si"
+    }
+  ]
+}
