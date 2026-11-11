@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Vaneform",
+  "packageName": "@toolsdk-remote/vaneform",
+  "description": "Hosted MCP for website traffic research (estimated monthly visits, trend, rank, top countries, traffic sources, and domain compares). Discovery (initialize, tools/list) is open; tool calls need a Vaneform API key from a free account (this registry does not model Bearer/API-key header auth). Traffic figures are third-party estimates.",
+  "url": "https://github.com/vaneform/vaneform-mcp",
+  "readme": "https://github.com/vaneform/vaneform-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Vaneform / Kai",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://vaneform.com/mcp"
+    }
+  ]
+}
