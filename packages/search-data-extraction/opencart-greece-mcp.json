@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "OpenCart Greece",
+  "packageName": "@toolsdk-remote/opencart-greece-mcp",
+  "description": "Official hosted server for the OpenCart Greece store. Searches its catalog of OpenCart extensions, themes and services and returns prices, full offers, option groups, categories and store contact details. Read-only; no account or key needed.",
+  "url": "https://eshop.opencartgreece.gr/mcp",
+  "readme": "https://eshop.opencartgreece.gr/developers",
+  "runtime": "node",
+  "author": "OpenCart Greece",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://eshop.opencartgreece.gr/mcp"
+    }
+  ]
+}
