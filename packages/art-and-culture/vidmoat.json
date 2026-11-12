@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Vidmoat",
+  "packageName": "@toolsdk-remote/com-vidmoat-vidmoat",
+  "description": "Official remote MCP for Vidmoat, an agent-first AI video editor. Import footage, edit a real timeline, and render MP4s from Claude, Cursor, or ChatGPT. OAuth works on every plan. 130+ tools.",
+  "url": "https://vidmoat.com",
+  "readme": "https://developer.vidmoat.com/developer/docs/mcp",
+  "runtime": "node",
+  "logo": "https://www.vidmoat.com/logo-512.png",
+  "author": "Vidmoat",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.vidmoat.com/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
