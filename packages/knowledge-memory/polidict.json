@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "Polidict",
+  "packageName": "@toolsdk-remote/polidict",
+  "description": "Personal vocabulary from Polidict: save words and phrases, look up meanings, translations and images, and practice them with spaced repetition (FSRS).",
+  "url": "https://github.com/solomkinmv/polidict-ai-assistants",
+  "readme": "https://github.com/solomkinmv/polidict-ai-assistants#readme",
+  "runtime": "node",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.polidict.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
