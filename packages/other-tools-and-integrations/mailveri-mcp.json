@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "MailVeri",
+  "packageName": "mailveri-mcp",
+  "description": "Official MCP server for the MailVeri email verification API. Six tools cover single and bulk verification, credit balance, batch status, result download, and batch deletion. Returned statuses are VALID, INVALID, CATCH_ALL, ROLE_ACCOUNT, DISPOSABLE, FULL_INBOX, and UNKNOWN.",
+  "url": "https://github.com/mailveri/mailveri-mcp",
+  "readme": "https://mailveri.com/docs/mcp",
+  "runtime": "python",
+  "license": "MIT",
+  "env": {
+    "MAILVERI_API_KEY": {
+      "description": "MailVeri API key from https://app.mailveri.com/api-keys/",
+      "required": true,
+      "secret": true
+    },
+    "MAILVERI_BASE_URL": {
+      "description": "MailVeri API base URL. Defaults to https://api.mailveri.com.",
+      "required": false,
+      "default": "https://api.mailveri.com"
+    }
+  }
+}
