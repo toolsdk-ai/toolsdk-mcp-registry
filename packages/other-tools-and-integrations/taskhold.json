@@ -1,0 +1,25 @@
+{
+  "type": "mcp-server",
+  "name": "Taskhold",
+  "packageName": "@toolsdk-remote/taskhold",
+  "description": "For developers who hand work to Claude Code, Cursor or Codex, Taskhold is a hosted task list that you and your agents share. Official Taskhold remote MCP server: agents pick up the next task, plan it in steps, report progress on a live board, block with a question when they need you and complete with a summary. OAuth with dynamic client registration: a client connects as a guest with no sign-up, and the first tool call returns a link to start a 7-day trial ($12/month; paid plan only).",
+  "url": "https://github.com/gettaskhold/taskhold-plugin",
+  "readme": "https://taskhold.com/docs",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Taskhold",
+  "logo": "https://taskhold.com/icons/icon-512.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://taskhold.com/api/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "tasks"
+        ]
+      }
+    }
+  ]
+}
