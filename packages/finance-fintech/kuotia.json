@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Kuotia",
+  "packageName": "@toolsdk-remote/kuotia",
+  "description": "Remote MCP from Kuotia, an online gestoría for autónomos in Spain. Public tools without an account: Spanish tax filing deadlines and direct-debit cutoffs checked against the AEAT calendar, cuota de autónomos (RETA) estimate, yearly IRPF and net income estimate by region, and short guides with official sources. Estimates state their assumptions. Clients of the Kuotia gestoría connect with OAuth to read their own tax status, obligations and pending requests; this listing covers the public tools only. A human gestor reviews and files returns; the server files nothing.",
+  "url": "https://kuotia.com/autonomos-espana/mcp/",
+  "readme": "https://kuotia.com/mcp.md",
+  "runtime": "node",
+  "logo": "https://kuotia.com/static/brand/kuotia-profile-1080.png",
+  "author": "Kuotia",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://kuotia.com/mcp"
+    }
+  ]
+}
