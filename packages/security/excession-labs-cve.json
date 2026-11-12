@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Excession Labs CVE intelligence",
+  "packageName": "@toolsdk-remote/excession-labs-cve",
+  "description": "Free hosted CVE intelligence with six read-only tools. Search CVEs and source software/version assertions; inspect available CISA KEV and dated EPSS data, source coverage and hosted changes. Version assertions are evidence, not installed-version range evaluations.",
+  "url": "https://github.com/Excession-Labs/mcp-servers",
+  "readme": "https://excessionlabs.ai/cve-intelligence/",
+  "runtime": "node",
+  "author": "Excession Labs",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://excessionlabs.ai/mcp/cve"
+    }
+  ]
+}
