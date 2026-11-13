@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "Video Background Remover (.ai)",
+  "packageName": "@toolsdk-remote/videobackgroundremover-ai",
+  "description": "Official remote MCP for videobackgroundremover.ai. Remove video backgrounds over Streamable HTTP with OAuth. Paid credits only.",
+  "url": "https://videobackgroundremover.ai/video-background-remover-api",
+  "readme": "https://github.com/biggersun/videobackgroundremover-ai-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://videobackgroundremover.ai/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
