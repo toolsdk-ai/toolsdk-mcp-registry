@@ -1,0 +1,12 @@
+{
+  "type": "mcp-server",
+  "name": "Reliant Forge",
+  "packageName": "@reliantlabs/forge",
+  "description": "Deploys a Vite or Next.js static app to a live HTTPS URL with no account and returns a claim link; unclaimed deploys stay live for 72 hours. Also lints, generates and introspects Reliant Forge projects and loads forge's skills. Not Atlassian Forge.",
+  "url": "https://github.com/reliant-labs/forge",
+  "readme": "https://github.com/reliant-labs/forge/blob/main/docs/mcp.md",
+  "runtime": "node",
+  "license": "Apache-2.0",
+  "binArgs": ["mcp"],
+  "env": {}
+}
