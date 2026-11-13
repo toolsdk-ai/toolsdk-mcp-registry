@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "AY Inbox",
+  "packageName": "@toolsdk-remote/ayinbox",
+  "description": "Hosted MCP server for the AY Inbox cold email platform: build contact lists, draft campaigns and the campaign brain that reply drafts read, read replies in one inbox and draft answers, offer meeting times and track deals. No tool sends mail; a person connects mailboxes and starts sending. Invite only for now (team@ayinbox.com).",
+  "url": "https://github.com/ayinbox/ayinbox-mcp",
+  "runtime": "node",
+  "readme": "https://docs.ayinbox.com/api/mcp/",
+  "author": "AY Inbox",
+  "logo": "https://ayinbox.com/assets/logo.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.ayinbox.com/v1/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
