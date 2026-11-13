@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "name": "GoVisit Tools",
+  "packageName": "@toolsdk-remote/govisit-tools",
+  "description": "Read-only tools to search GoVisit destinations and places and read published place, destination, collection, category, and documentation content. Attribution and GoVisit data-use terms apply.",
+  "readme": "https://govisit.ai/en/docs/developers/mcp/overview",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://govisit.ai/mcp"
+    }
+  ]
+}
