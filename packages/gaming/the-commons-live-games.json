@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "The Commons by Dead Brands, LLC — Live Games",
+  "packageName": "@toolsdk-remote/the-commons-live-games",
+  "description": "Play live games over MCP at The Commons by Dead Brands, LLC: a house opponent is always waiting and you get a match receipt when you finish. Guest play, no signup.",
+  "url": "https://github.com/dstrausser83/dead-brands-arena-plugin",
+  "readme": "https://github.com/dstrausser83/dead-brands-arena-plugin#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.deadbrands.co/arena/mcp"
+    }
+  ]
+}
