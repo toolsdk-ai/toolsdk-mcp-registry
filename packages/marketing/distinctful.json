@@ -2,7 +2,7 @@
   "type": "mcp-server",
   "name": "Distinctful MCP",
   "packageName": "@toolsdk-remote/distinctful",
-  "description": "Run your organic marketing from your AI assistant. Discover outlier content, plan your week, draft in your voice, review performance, and schedule or publish posts when you ask. Connects to the Distinctful workspace for creators and teams. Requires OAuth sign-in and a Distinctful account on Grow or higher.",
+  "description": "Your AI, fluent in your marketing Connect Distinctful to any of your favorite AI tools. Your AI finds posts outperforming in your space, works from your strategy and the patterns behind what's working, and schedules posts only when you say so. The ideas and winning edge stay distinctly yours. Hosted Streamable HTTP with OAuth. A Distinctful account on Grow or higher is required.",
   "url": "https://www.distinctful.com/mcp",
   "readme": "https://www.distinctful.com/docs/mcp-server",
   "runtime": "node",
