@@ -1,0 +1,8 @@
+{
+  "type": "mcp-server",
+  "name": "API-Supp",
+  "packageName": "@toolsdk-remote/api-supp",
+  "description": "Hosted OAuth MCP server for API-Supp: connect existing WhatsApp numbers by QR through an unofficial bridge (not Meta's official Cloud API), then use multiple numbers, text messaging and chat context from MCP clients. Paid service ($7.50 per number/mont
+
+
+
