@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Kling AI (China)",
+  "packageName": "@toolsdk-remote/kling-ai-china",
+  "description": "Official China-region Kling AI hosted MCP for image/video generation, reference workflows, Elements, motion control and task tracking. OAuth and regional account required; generation consumes credits. Models and pricing depend on live account permissions. China and Global accounts, OAuth grants, credits and task IDs are separate. Prompts and selected media are sent to Kling. The linked repository documents the client integration, not hosted backend source.",
+  "url": "https://github.com/klingai-dev/openclaw-plugin",
+  "readme": "https://github.com/klingai-dev/openclaw-plugin#readme",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://klingai.com/mcp/plugin",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
