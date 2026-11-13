@@ -1,0 +1,25 @@
+{
+  "type": "mcp-server",
+  "name": "LLMSlim Memory",
+  "packageName": "llmslim",
+  "description": "Long-term memory for MCP clients (Claude Code, Claude Desktop, Cursor and others) with no LLM call. Stores user and assistant messages word for word in local SQLite or Postgres and recalls the ones that answer a question within a token budget; fit_context shrinks long text to a budget. Tools: remember, recall, list_memories, forget, fit_context. The user and agent scope is fixed when the server starts. Install with pip install \"llmslim[mcp]\" and run llmslim mcp (Python 3.10+).",
+  "url": "https://github.com/Thanatos9404/llmslim",
+  "readme": "https://github.com/Thanatos9404/llmslim/blob/main/docs/MCP.md",
+  "runtime": "python",
+  "license": "MIT",
+  "binArgs": ["mcp"],
+  "env": {
+    "LLMSLIM_MEMORY_DB": {
+      "description": "SQLite file that holds the memory, or a postgresql:// URL (needs llmslim[postgres]). Defaults to ~/.llmslim/memory.db.",
+      "required": false
+    },
+    "LLMSLIM_USER_ID": {
+      "description": "Whose memory this server holds, fixed when the server starts. Defaults to \"default\".",
+      "required": false
+    },
+    "LLMSLIM_AGENT_ID": {
+      "description": "Optional agent id, so each agent keeps its own memory.",
+      "required": false
+    }
+  }
+}
