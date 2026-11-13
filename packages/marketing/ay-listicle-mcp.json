@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "AY Listicle",
+  "packageName": "@toolsdk-remote/ay-listicle-mcp",
+  "description": "Hosted MCP server to find best-of listicles with open spots, request editorial inclusion, propose swaps and answer requests on AY Listicle. Requires an AY Listicle account and sign-in.",
+  "url": "https://github.com/tahalatif-cmd/aylistcle-mcp",
+  "readme": "https://www.aylistcle.com/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.aylistcle.com/api/mcp/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["read", "write", "spend"]
+      }
+    }
+  ]
+}
