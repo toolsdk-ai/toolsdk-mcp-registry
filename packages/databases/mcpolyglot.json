@@ -1,0 +1,10 @@
+{
+  "type": "mcp-server",
+  "name": "mcpolyglot",
+  "packageName": "@mcpolyglot/cli",
+  "description": "Policy-checked, audited agent access to Postgres, MySQL, SQLite, MongoDB and OpenAPI REST APIs from one config.",
+  "url": "https://github.com/ishay60/mcpolyglot",
+  "readme": "https://github.com/ishay60/mcpolyglot#readme",
+  "runtime": "node",
+  "license": "MIT"
+}
