@@ -128,6 +128,7 @@ Use your self-hosted Gateway to inspect a server, discover its tools, and execut
 | Inspect a server | `GET /api/v1/packages/detail?packageName=<registry-key>` |
 | List its tools | `GET /api/v1/packages/tools?packageName=<registry-key>` |
 | Execute a tool | `POST /api/v1/packages/run` |
+| [CrakSEO/skills](https://github.com/CrakSEO/skills) | Connect Claude/Cursor/Codex to CrakSEO remote MCP servers for keyword research, SERP, backlinks, rank tracking, site audit, local SEO, AI visibility, Search Console and URL indexing | Claude Code, Cursor, Codex | MIT |
 
 Follow the [HTTP API walkthrough](./docs/GATEWAY.md#integrate-through-the-http-api) or explore the
 [OpenAPI specification](http://localhost:3003/api/v1/doc) in your deployment.
