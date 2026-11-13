@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Unique Domains",
+  "packageName": "@uniquedomains/mcp-server",
+  "description": "Is a domain name taken, what nine registrars charge for it and what similar names sold for. A daily record of 37 million names, read-only, no key needed.",
+  "url": "https://github.com/UniqueDomains/mcp-server",
+  "readme": "https://github.com/UniqueDomains/mcp-server#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "UD_API_KEY": {
+      "description": "Optional. A Unique Domains member key, for the tools that need one. Leave it out and the server runs with every tool that needs no key.",
+      "required": false,
+      "secret": true
+    }
+  }
+}
