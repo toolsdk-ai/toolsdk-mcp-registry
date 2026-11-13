@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Ask Japan",
+  "packageName": "@toolsdk-remote/ask-japan",
+  "description": "Japanese company, qualified invoice issuer, postcode and EDINET filer data, plus real people in Japan for phone calls, reservations and errands.",
+  "url": "https://github.com/ihouse-corp/ask-japan-mcp",
+  "readme": "https://github.com/ihouse-corp/ask-japan-mcp#readme",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://askjapan.senpinai.com/mcp"
+    }
+  ]
+}
