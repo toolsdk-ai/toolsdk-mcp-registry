@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "Wisprs",
+  "packageName": "@toolsdk-remote/wisprs",
+  "description": "Official hosted Wisprs server. Transcribes audio, video and public media links (YouTube, podcasts, direct files) in 100+ languages, then searches the user's transcript library, summarizes, generates chapters, translates and repurposes transcripts, and exports TXT, SRT, VTT, JSON, Markdown or DOCX. OAuth 2.1 sign-in; free plan available.",
+  "url": "https://github.com/Wisprs/wisprs-ai-connectors",
+  "readme": "https://wisprs.co/mcp/setup",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://wisprs.co/android-chrome-512x512.png",
+  "author": "Wisprs",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://wisprs.co/api/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["transcripts:read", "transcripts:write", "transcripts:export", "operations:read", "library:read", "library:search", "ai:transform"]
+      }
+    }
+  ]
+}
