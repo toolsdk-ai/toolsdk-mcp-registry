@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Compare the Cloud",
+  "packageName": "@toolsdk-remote/comparethecloud",
+  "description": "UK B2B technology provider directory (20,000+ cloud, MSP, cybersecurity and AI vendors) plus Compare the Cloud articles, news and expert opinion. 10 read-only tools: search_providers, get_provider, similar_providers, list_categories, directory_stats, search_content, get_content, search, fetch, site_guide. No authentication needed; an optional free key for a higher rate limit is not supported by this registry.",
+  "url": "https://github.com/danielctc/comparethecloud-mcp",
+  "readme": "https://github.com/danielctc/comparethecloud-mcp#readme",
+  "runtime": "node",
+  "license": "Apache-2.0",
+  "logo": "https://mcp.comparethecloud.net/logo-512.png",
+  "author": "Compare the Cloud",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.comparethecloud.net/mcp"
+    }
+  ]
+}
