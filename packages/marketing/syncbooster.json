@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "SyncBooster",
+  "packageName": "@toolsdk-remote/syncbooster",
+  "description": "Draft, schedule and publish social media posts to Facebook, Instagram, LinkedIn, X, TikTok and Google Business Profile (YouTube on paid plans), manage the media gallery and carousels, and chat with the SyncBooster assistant. Connects to the hosted SyncBooster MCP endpoint using OAuth (browser sign-in) with read, write, publish and assistant permissions. Requires a SyncBooster account (100 tokens to start, no card).",
+  "readme": "https://syncbooster.pl/en/mcp",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.syncbooster.pl/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["read", "write", "publish", "assistant"]
+      }
+    }
+  ]
+}
