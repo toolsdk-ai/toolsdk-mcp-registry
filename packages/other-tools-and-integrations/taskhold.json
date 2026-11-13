@@ -16,9 +16,7 @@
       "url": "https://taskhold.com/api/mcp",
       "auth": {
         "type": "oauth2",
-        "scopes": [
-          "tasks"
-        ]
+        "scopes": ["tasks"]
       }
     }
   ]
