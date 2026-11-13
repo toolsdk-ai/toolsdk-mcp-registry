@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "Research Agent by Nova (CIVAI)",
+  "packageName": "@toolsdk-remote/research-agent-by-nova-civai",
+  "description": "I do everything related to research and reports",
+  "url": "https://github.com/civai-technologies/research-agent-mcp-by-nova-civai",
+  "readme": "https://github.com/civai-technologies/research-agent-mcp-by-nova-civai#readme",
+  "runtime": "python",
+  "license": "MIT",
+  "author": "CIVAI TECHNOLOGIES",
+  "logo": "https://nova.civai.co/catalog-icons/FireIcon.svg",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://nova.civai.co/mcp/agents/research-agent",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["openid", "email", "mcp:access"]
+      }
+    }
+  ]
+}

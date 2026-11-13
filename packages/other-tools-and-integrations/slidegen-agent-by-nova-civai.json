@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "Slidegen Agent by Nova (CIVAI)",
+  "packageName": "@toolsdk-remote/slidegen-agent-by-nova-civai",
+  "description": "I do everything related to image and slide asset generation",
+  "url": "https://github.com/civai-technologies/slidegen-agent-mcp-by-nova-civai",
+  "readme": "https://github.com/civai-technologies/slidegen-agent-mcp-by-nova-civai#readme",
+  "runtime": "python",
+  "license": "MIT",
+  "author": "CIVAI TECHNOLOGIES",
+  "logo": "https://nova.civai.co/catalog-icons/SlidesIcon.svg",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://nova.civai.co/mcp/agents/slidegen-agent",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["openid", "email", "mcp:access"]
+      }
+    }
+  ]
+}
