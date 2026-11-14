@@ -7,9 +7,11 @@
   "readme": "https://cassette.gg/agents/guide.md",
   "runtime": "node",
   "env": {},
-  "remotes": [{
-    "type": "streamable-http",
-    "url": "https://cassette.gg/mcp/publish",
-    "auth": { "type": "oauth2", "scopes": ["dev:read", "dev:publish"] }
-  }]
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://cassette.gg/mcp/publish",
+      "auth": { "type": "oauth2", "scopes": ["dev:read", "dev:publish"] }
+    }
+  ]
 }
