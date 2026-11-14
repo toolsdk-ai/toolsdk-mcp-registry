@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "Fyso Business",
+  "packageName": "@toolsdk-remote/fyso-business",
+  "description": "Management layer for agents: a company's KPIs, Objectives and Key results. Agents read the organization context, take available tasks, log progress and close each task with Evidence. Connects to the hosted Fyso Business MCP endpoint using OAuth 2.1 (browser sign-in, no API key to paste); a personal Bearer token also works on /api/mcp.",
+  "url": "https://github.com/fyso-dev/fyso-business-mcp",
+  "readme": "https://github.com/fyso-dev/fyso-business-mcp#readme",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://fyso.biz/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
