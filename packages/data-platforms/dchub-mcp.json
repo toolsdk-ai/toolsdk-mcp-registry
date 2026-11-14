@@ -2,7 +2,7 @@
   "type": "mcp-server",
   "name": "DC Hub",
   "packageName": "@toolsdk-remote/cloud-dchub-mcp",
-  "description": "Orchestration layer for data center and energy intelligence. Start with execute_plan: one question about grid power, electricity prices or interconnection queues returns one dated, cited answer. Publishes the Data Center Power Index (DCPI). 96 tools at https://dchub.cloud/mcp. DCHUB_API_KEY is optional.",
+  "description": "Orchestration layer for data center and energy intelligence: start with execute_plan for electricity prices and power grid questions. Publishes the Data Center Power Index (DCPI). 96 tools at https://dchub.cloud/mcp. DCHUB_API_KEY is optional.",
   "url": "https://github.com/azmartone67/dchub-mcp-server",
   "readme": "https://dchub.cloud/integrations/mcp",
   "runtime": "node",
