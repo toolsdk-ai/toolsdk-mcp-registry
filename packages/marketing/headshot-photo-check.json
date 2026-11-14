@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Headshot Photo Check",
+  "packageName": "@toolsdk-remote/headshot-photo-check",
+  "description": "Read-only technical check of a profile or job-application photo (resolution, crop, format; brightness, contrast and sharpness when pixels are analysed) with a score, crop recommendations and tips for LinkedIn, XING and applications; no account or API key. Photo analysis stays on the server for the request; no scraping.",
+  "url": "https://github.com/TRW123123/bewerbungsfoto-check-mcp",
+  "readme": "https://www.profilfoto-ki.de/mcp/",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Profilfoto KI",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.profilfoto-ki.de/mcp"
+    }
+  ]
+}
