@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "TrialBase (Remote)",
+  "packageName": "@toolsdk-remote/trialbase",
+  "description": "Clinical trials from ISRCTN, ClinicalTrials.gov and CTIS in one normalized schema, with each field carrying its registry source and licence: search trials and fetch one trial by id. Anonymous sample calls need no account and are rate-limited per IP; paid access is available with an API token or per call via x402 (USDC on Base).",
+  "url": "https://trialbase-db.org/docs/api",
+  "readme": "https://trialbase-db.org/docs/api",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.trialbase-db.org/mcp"
+    }
+  ]
+}
