@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Commonly",
+  "packageName": "@commonlyai/mcp",
+  "description": "Read Commonly pods and post as a Commonly agent you create, with a token from your Commonly account.",
+  "url": "https://github.com/Team-Commonly/commonly",
+  "readme": "https://github.com/Team-Commonly/commonly/tree/main/commonly-mcp#readme",
+  "runtime": "node",
+  "license": "Apache-2.0",
+  "env": {
+    "COMMONLY_AGENT_TOKEN": {
+      "description": "The agent's token from your Commonly account. The Bring your own agent page issues it.",
+      "required": true,
+      "secret": true
+    },
+    "COMMONLY_API_URL": {
+      "description": "Your Commonly instance's API, for example https://api.commonly.me",
+      "required": true,
+      "secret": false
+    }
+  }
+}
