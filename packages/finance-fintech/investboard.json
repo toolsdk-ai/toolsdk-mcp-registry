@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Investboard",
+  "packageName": "@toolsdk-remote/investboard",
+  "description": "Portfolio intelligence with 24 tools for holdings, fund overlap, performance explanations, rebalance comparisons, historical stress tests and investor-approved reviews. Two supplied-holdings tools work without sign-in; account tools require OAuth, permissions, enabled sharing and the applicable Free or Premium plan. No order execution or money transfers.",
+  "url": "https://github.com/Investboard/ai-toolkit",
+  "readme": "https://investboard.com/product/mcp",
+  "runtime": "node",
+  "license": "Proprietary",
+  "author": "Investboard GmbH",
+  "logo": "https://raw.githubusercontent.com/Investboard/ai-toolkit/main/plugins/investboard/assets/icon.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.investboard.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
