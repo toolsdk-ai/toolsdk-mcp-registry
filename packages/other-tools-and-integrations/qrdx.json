@@ -3,7 +3,7 @@
   "name": "QRdx",
   "packageName": "@toolsdk-remote/qrdx",
   "description": "Connects to the hosted QRdx MCP endpoint to design QR codes with a scan score (SVG, PNG and a playground link), build Wi-Fi, contact, email, SMS, location and bank-payment payloads, and check and render barcodes (EAN-13, UPC-A, Code 128, Data Matrix, PDF417, Aztec and more). These tools need no key. Saving themes and barcodes to a QRdx workspace needs a QRdx API key sent as a Bearer header, which this entry does not configure.",
-  "url": "https://github.com/bucharitesh/qrdx",
+  "url": "https://github.com/qrdxinc/qrdx",
   "readme": "https://qrdx.dev/docs/developers/mcp",
   "runtime": "node",
   "license": "AGPL-3.0-or-later",
