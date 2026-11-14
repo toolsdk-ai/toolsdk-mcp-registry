@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Customermates",
+  "packageName": "@toolsdk-remote/customermates",
+  "description": "Open-source CRM for following up on client conversations: contacts, organizations, deals, LinkedIn and email conversations and dated next steps that Claude, ChatGPT or any MCP client can read and update. Sign-in uses OAuth 2.1.",
+  "url": "https://github.com/customermates/customermates",
+  "readme": "https://customermates.com/en/docs/mcp",
+  "runtime": "node",
+  "license": "AGPL-3.0",
+  "author": "Customermates",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://customermates.com/api/v1/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
