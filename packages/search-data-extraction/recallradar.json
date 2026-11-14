@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "RecallRadar (Remote)",
+  "packageName": "@toolsdk-remote/recallradar",
+  "description": "Product recalls and safety alerts from CPSC, EU Safety Gate, RappelConso, Health Canada, UK OPSS, ACCC, BSMI and Tukes, searchable by product, brand or hazard, with remedies, recalling firms, source links and per-source licence metadata. Anonymous sample calls need no account and are rate-limited per IP; paid access is available with an API token or per call via x402 (USDC on Base).",
+  "url": "https://recallradar.dev/docs/api",
+  "readme": "https://recallradar.dev/docs/api",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.recallradar.dev/mcp"
+    }
+  ]
+}
