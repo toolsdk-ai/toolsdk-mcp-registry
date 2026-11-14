@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "name": "Cassette Publish",
+  "packageName": "@toolsdk-remote/cassette-publish",
+  "description": "Publish and manage browser games on Cassette from a coding agent, using OAuth with human approval. Vendor-hosted service with no public server source.",
+  "url": "https://cassette.gg/agents/guide.md",
+  "readme": "https://cassette.gg/agents/guide.md",
+  "runtime": "node",
+  "env": {},
+  "remotes": [{
+    "type": "streamable-http",
+    "url": "https://cassette.gg/mcp/publish",
+    "auth": { "type": "oauth2", "scopes": ["dev:read", "dev:publish"] }
+  }]
+}
