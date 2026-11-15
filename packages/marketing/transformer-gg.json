@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Transformer.gg",
+  "packageName": "@toolsdk-remote/transformer-gg",
+  "description": "Book sponsored posts from X creators from your agent: find creators who fit a brand with a suggested price, send offers, and track posts, clicks and payouts. Hosted endpoint with OAuth sign-in.",
+  "url": "https://github.com/NBV-AppFactory/transformer-mcp",
+  "readme": "https://transformer.gg/docs",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://transformer.gg/assets/transformer-512.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://transformer.gg/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp"]
+      }
+    }
+  ]
+}
