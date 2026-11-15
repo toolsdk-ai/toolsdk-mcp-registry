@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "AgentX",
+  "packageName": "@toolsdk-remote/agentx",
+  "description": "Connects to AgentX, a cloud console for a fleet of AI coding agents that run on your own machines. Check on your agents, hand them work and read what they publish. Sign-in is OAuth 2.1 in the browser.",
+  "readme": "https://www.agentxhq.com/docs/mcp",
+  "url": "https://github.com/agentxhq/agentx-mcp",
+  "logo": "https://www.agentxhq.com/assets/img/icon-512.png",
+  "author": "AgentX",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.agentxhq.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ],
+  "license": "MIT"
+}
