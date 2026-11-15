@@ -569,7 +569,11 @@
       "@toolsdk-remote/remembite",
       "@toolsdk-remote/dmd-costs-tools",
       "@toolsdk-remote/makernice",
-      "@toolsdk-remote/psychologie-et-serenite"
+      "@toolsdk-remote/psychologie-et-serenite",
+      "@toolsdk-remote/cassette-find",
+      "@toolsdk-remote/cassette-publish",
+      "@toolsdk-remote/kling-ai-china",
+      "@toolsdk-remote/kling-ai-global"
     ]
   },
   "aggregators": {
@@ -673,7 +677,8 @@
       "@toolsdk-remote/agentik",
       "@toolsdk-remote/corpusiq",
       "@toolsdk-remote/toolfound",
-      "plugmcp-mcp"
+      "plugmcp-mcp",
+      "@toolsdk-remote/openany"
     ]
   },
   "art-and-culture": {
@@ -837,7 +842,10 @@
       "@toolsdk-remote/revline",
       "@toolsdk-remote/roomlab-mcp",
       "@toolsdk-remote/spotify-play-count-mcp",
-      "internet-radio-mcp"
+      "internet-radio-mcp",
+      "@popnow/mcp",
+      "@toolsdk-remote/com-vidmoat-vidmoat",
+      "@toolsdk-remote/honeyvid"
     ]
   },
   "browser-automation": {
@@ -1195,7 +1203,8 @@
       "@toolsdk-remote/futureinfra",
       "@toolsdk-remote/nops-clara",
       "@toolsdk-remote/droply",
-      "@toolsdk-remote/termalin"
+      "@toolsdk-remote/termalin",
+      "lantern-works-deals-mcp"
     ]
   },
   "code-execution": {
@@ -1740,7 +1749,10 @@
       "@toolsdk-remote/vivadialog",
       "@toolsdk-remote/agent-outbox",
       "@toolsdk-remote/fezola",
-      "@toolsdk-remote/reright"
+      "@commonlyai/mcp",
+      "@toolsdk-remote/api-supp",
+      "@toolsdk-remote/fork-zone",
+      "@toolsdk-remote/telofy"
     ]
   },
   "customer-data-platforms": {
@@ -1777,7 +1789,8 @@
       "@toolsdk-remote/connectmachine-mcp",
       "@toolsdk-remote/studiomeyer-crm",
       "@toolsdk-remote/com-addtocrm-crm",
-      "@toolsdk-remote/relaticle"
+      "@toolsdk-remote/relaticle",
+      "@toolsdk-remote/customermates"
     ]
   },
   "databases": {
@@ -2007,7 +2020,8 @@
       "@geek-fun/data-studio-mcp",
       "@toolsdk-remote/aifordatabase",
       "@toolsdk-remote/supabase-mcp-server-supabase",
-      "@toolsdk-remote/hutchdb"
+      "@toolsdk-remote/hutchdb",
+      "@toolsdk-remote/busabase"
     ]
   },
   "data-platforms": {
@@ -2108,7 +2122,8 @@
       "@toolsdk-remote/statorigin-mcp",
       "@toolsdk-remote/bormeapi-borme-mcp",
       "@toolsdk-remote/civicdataforge",
-      "@toolsdk-remote/company-facts"
+      "@toolsdk-remote/company-facts",
+      "@toolsdk-remote/amendment"
     ]
   },
   "developer-tools": {
@@ -2551,7 +2566,11 @@
       "@toolsdk-remote/persqo-mcp",
       "@toolsdk-remote/ugt",
       "bdy",
-      "myog-checker"
+      "myog-checker",
+      "@reliantlabs/forge",
+      "@toolsdk-remote/agentmart",
+      "@toolsdk-remote/agentx",
+      "@toolsdk-remote/systra-tools"
     ]
   },
   "data-science-tools": {
@@ -2661,7 +2680,8 @@
       "agentfem-mcp",
       "@toolsdk-remote/fittest",
       "@toolsdk-remote/folklore-mcp",
-      "@toolsdk-remote/ab-test-sample-size-calculator-mcp"
+      "@toolsdk-remote/ab-test-sample-size-calculator-mcp",
+      "@toolsdk-remote/rxatlas"
     ]
   },
   "embedded-system": {
@@ -2726,7 +2746,9 @@
       "genieacs-mcp",
       "@toolsdk-remote/sheetsdata",
       "@toolsdk-remote/io-github-easygerber-easygerber",
-      "iotaudit"
+      "iotaudit",
+      "@toolsdk-remote/com-pcbeditor-pcbeditor",
+      "eda-agent"
     ]
   },
   "file-systems": {
@@ -2842,7 +2864,8 @@
       "yungle-mcp",
       "@sylphx/anymd",
       "@toolsdk-remote/cloudbridge-mcp",
-      "msglens-cli"
+      "msglens-cli",
+      "@toolsdk-remote/agentdrive-mcp"
     ]
   },
   "finance-fintech": {
@@ -3246,7 +3269,13 @@
       "@toolsdk-remote/tap-giving-mcp",
       "@toolsdk-remote/uk-income-tax-salary-mcp",
       "@toolsdk-remote/uk-statutory-sick-pay-maternity-pay-calculator-mcp",
-      "omx-hyperliquid"
+      "omx-hyperliquid",
+      "@toolsdk-remote/ask-japan",
+      "@toolsdk-remote/exitvalue-ma-multiples",
+      "@toolsdk-remote/investboard",
+      "@toolsdk-remote/kuotia",
+      "eu-nordic-open-data-mcp",
+      "x402-trading-signals-mcp"
     ]
   },
   "gaming": {
@@ -3304,7 +3333,8 @@
       "@toolsdk-remote/kineticist",
       "@toolsdk-remote/waspes",
       "@toolsdk-remote/photo2skin",
-      "@toolsdk-remote/tickermint-mcp"
+      "@toolsdk-remote/tickermint-mcp",
+      "@toolsdk-remote/the-commons-live-games"
     ]
   },
   "knowledge-memory": {
@@ -3549,7 +3579,11 @@
       "@toolsdk-remote/speechyou-mcp",
       "@toolsdk-remote/co-glasp-glasp",
       "@toolsdk-remote/enhanciar",
-      "@toolsdk-remote/holos33-mcp"
+      "@toolsdk-remote/holos33-mcp",
+      "@toolsdk-remote/ai-memorybrain-memorybrain",
+      "@toolsdk-remote/polidict",
+      "@toolsdk-remote/readshore",
+      "memgit-mcp"
     ]
   },
   "location-services": {
@@ -3632,7 +3666,8 @@
       "@toolsdk-remote/rentreboot-mcp",
       "@toolsdk-remote/close-knit",
       "@toolsdk-remote/ailiste",
-      "@toolsdk-remote/river-level-mcp"
+      "@toolsdk-remote/river-level-mcp",
+      "@toolsdk-remote/nostairsplease-mcp"
     ]
   },
   "marketing": {
@@ -3842,7 +3877,25 @@
       "@toolsdk-remote/sociality-mcp",
       "@toolsdk-remote/soundlink",
       "@toolsdk-remote/tamtam",
-      "@toolsdk-remote/timetopost"
+      "@toolsdk-remote/timetopost",
+      "@toolsdk-remote/ay-listicle-mcp",
+      "@toolsdk-remote/ayinbox",
+      "@toolsdk-remote/car-listing-check",
+      "@toolsdk-remote/clipugc",
+      "@toolsdk-remote/distinctful",
+      "@toolsdk-remote/fairvalid",
+      "@toolsdk-remote/headshot-photo-check",
+      "@toolsdk-remote/impulse",
+      "@toolsdk-remote/leadsets-mcp",
+      "@toolsdk-remote/pageree",
+      "@toolsdk-remote/sellerforge",
+      "@toolsdk-remote/seo-rank-fixer",
+      "@toolsdk-remote/syncbooster",
+      "@toolsdk-remote/transformer-gg",
+      "@toolsdk-remote/verand-mcp",
+      "@toolsdk-remote/warmerly-mcp",
+      "@toolsdk-remote/wavegrain",
+      "@toolsdk-remote/zadojo"
     ]
   },
   "monitoring": {
@@ -3930,7 +3983,8 @@
       "@toolsdk-remote/internet-outage-checker",
       "@toolsdk-remote/logbrew",
       "@toolsdk-remote/mcpkit-yandex-metrika",
-      "@toolsdk-remote/pingstack"
+      "@toolsdk-remote/pingstack",
+      "@toolsdk-remote/telemio-observability"
     ]
   },
   "search-data-extraction": {
@@ -4475,7 +4529,20 @@
       "@toolsdk-remote/social-media-data-api",
       "@toolsdk-remote/specstream",
       "@toolsdk-remote/wejob",
-      "plushsource-mcp"
+      "plushsource-mcp",
+      "@toolsdk-remote/comparethecloud",
+      "@toolsdk-remote/mattercatalog",
+      "@toolsdk-remote/okdata",
+      "@toolsdk-remote/onefindme-mcp",
+      "@toolsdk-remote/opencart-greece-mcp",
+      "@toolsdk-remote/recallradar",
+      "@toolsdk-remote/remoteimpact-jobs",
+      "@toolsdk-remote/remotejobb",
+      "@toolsdk-remote/scrapingbee",
+      "@toolsdk-remote/trialbase",
+      "@toolsdk-remote/unique-domains",
+      "@toolsdk-remote/within-mcp",
+      "@uniquedomains/mcp-server"
     ]
   },
   "security": {
@@ -4654,7 +4721,9 @@
       "@layervai/qurl-mcp",
       "@toolsdk-remote/agency-check",
       "@toolsdk-remote/subdomain-finder-mcp",
-      "ironheights"
+      "ironheights",
+      "@toolsdk-remote/excession-labs-cve",
+      "@toolsdk-remote/gridzen-verification"
     ]
   },
   "sports": {
@@ -4763,7 +4832,8 @@
       "simple-support-system-mcp",
       "@toolsdk-remote/ouroboros-desk",
       "@toolsdk-remote/there-there",
-      "@toolsdk-remote/insertchat"
+      "@toolsdk-remote/insertchat",
+      "@toolsdk-remote/replai"
     ]
   },
   "translation-services": {
@@ -4867,7 +4937,9 @@
       "@toolsdk-remote/mothership",
       "@toolsdk-remote/slicktrip",
       "@toolsdk-remote/gc-airport-transfers",
-      "@toolsdk-remote/offwegosim"
+      "@toolsdk-remote/offwegosim",
+      "@toolsdk-remote/apex-db",
+      "@toolsdk-remote/govisit-tools"
     ]
   },
   "version-control": {
@@ -5857,7 +5929,16 @@
       "@toolsdk-remote/recipe-nutrition-calculator-mcp",
       "@toolsdk-remote/us-federal-holidays-business-days-mcp",
       "@toolsdk-remote/vectosolve",
-      "@toolsdk-remote/vegetable-yield-percentage-mcp"
+      "@toolsdk-remote/vegetable-yield-percentage-mcp",
+      "@toolsdk-remote/everyapp",
+      "@toolsdk-remote/fyso-business",
+      "@toolsdk-remote/qrdx",
+      "@toolsdk-remote/taskhold",
+      "@toolsdk-remote/toolbox-pod",
+      "@toolsdk-remote/vibe-manufacturing",
+      "@toolsdk-remote/videobackgroundremover-ai",
+      "@toolsdk-remote/weft",
+      "sightradar-mcp"
     ]
   }
 }
