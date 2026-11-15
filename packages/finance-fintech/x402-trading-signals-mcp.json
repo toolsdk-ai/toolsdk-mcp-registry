@@ -1,0 +1,28 @@
+{
+  "type": "mcp-server",
+  "name": "Trading Signals MCP",
+  "packageName": "x402-trading-signals-mcp",
+  "description": "Pre-trade GO/CAUTION/NO_GO checks, futures event-risk gate, session brief and macro event study from US public macro data (BLS, Federal Reserve, Treasury, CFTC), SEC Form 4 insider buys and cluster buys, Base ERC-20 token safety verdicts, and VWAP, opening range, ATR stop and ORB backtest calculators. Each tool call pays for itself over x402 in USDC on Base from the user's own wallet, capped per call.",
+  "url": "https://github.com/gdietsch/trading-signals-mcp",
+  "readme": "https://github.com/gdietsch/trading-signals-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "gdietsch",
+  "env": {
+    "X402_PRIVATE_KEY": {
+      "description": "0x-prefixed private key of a dedicated, low-balance Base wallet holding USDC; used locally to sign x402 payment authorizations. Without it the server starts and lists tools, but tool calls return a no-wallet error.",
+      "required": true,
+      "secret": true
+    },
+    "MAX_USD_PER_CALL": {
+      "description": "Hard cap in USD per tool call; pricier calls are refused before signing.",
+      "required": false,
+      "default": "0.50"
+    },
+    "TRADING_SIGNALS_BASE_URL": {
+      "description": "API base URL.",
+      "required": false,
+      "default": "https://signals.incomefather.com"
+    }
+  }
+}
