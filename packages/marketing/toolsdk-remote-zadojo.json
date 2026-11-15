@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "zaDojo SEO, GEO and AEO MCP",
+  "packageName": "@toolsdk-remote/zadojo",
+  "description": "Free MCP for Google Search Console and Google Analytics 4 (queries, pages, indexing, sitemaps, traffic, landing pages, key events), plus pay-as-you-go SERP data, keyword research, backlinks, site audits, rank tracking with charts, and GEO / AEO AI visibility tracking across ChatGPT, Gemini, Perplexity and Google AI Overviews.",
+  "url": "https://github.com/zaDojo/seo-geo-mcp",
+  "readme": "https://zadojo.com/docs/mcp",
+  "runtime": "node",
+  "author": "zaDojo",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.zadojo.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
