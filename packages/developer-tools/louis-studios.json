@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Louis Studios",
+  "packageName": "@toolsdk-remote/louis-studios",
+  "description": "Hosted designer for coding agents: plans and composes React pages, then installs hand-made animated components fitted to a brand. initialize and tools/list work without a key; tool calls need a free-account API key sent as an Authorization Bearer header.",
+  "readme": "https://studios.lou15.com/agents?ref=mcp",
+  "runtime": "node",
+  "logo": "https://studios.lou15.com/apple-touch-icon.png",
+  "author": "Louis Studios",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://studios.lou15.com/mcp"
+    }
+  ]
+}
