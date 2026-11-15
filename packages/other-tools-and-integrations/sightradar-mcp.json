@@ -1,0 +1,26 @@
+{
+  "type": "mcp-server",
+  "name": "SightRadar Face Recognition API MCP",
+  "packageName": "sightradar-mcp",
+  "description": "Official MCP server for the SightRadar face recognition API: index photos into collections, find every photo of a person from one selfie, compare and detect faces, run batches of up to 1,000 photo URLs, and manage webhooks, usage and credits. Local stdio server; needs a SightRadar API key.",
+  "url": "https://github.com/sightradar-hq/sightradar-mcp",
+  "readme": "https://github.com/sightradar-hq/sightradar-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "SIGHTRADAR_API_KEY": {
+      "description": "SightRadar API key, created at https://sightradar.com/dashboard/keys.",
+      "required": true,
+      "secret": true
+    },
+    "SIGHTRADAR_SCOPES": {
+      "description": "Tool groups to expose: comma-separated read, search, write, delete, or all (adds account tools).",
+      "required": false,
+      "default": "read,search,write,delete"
+    },
+    "SIGHTRADAR_FILE_ROOTS": {
+      "description": "Folders the file_path argument may read (':'-separated on macOS/Linux, ';' on Windows); 'none' turns file_path off. Defaults to the home folder.",
+      "required": false
+    }
+  }
+}
