@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "GridZen Verification",
+  "packageName": "@toolsdk-remote/gridzen-verification",
+  "description": "Research and synthetic MCP tools for planning identity-verification coverage and exercising sandbox decision results. Not live identity verification.",
+  "url": "https://github.com/immurray/gridzen-developer-kit",
+  "readme": "https://github.com/immurray/gridzen-developer-kit/blob/main/llms-install.md",
+  "runtime": "python",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gridzen.ai/developers/mcp"
+    }
+  ]
+}
