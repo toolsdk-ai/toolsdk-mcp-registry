@@ -11,12 +11,7 @@
     {
       "type": "streamable-http",
       "url": "https://shipfunnels.app/mcp",
-      "auth": {
-        "type": "oauth2",
-        "scopes": [
-          "mcp"
-        ]
-      }
+      "auth": { "type": "oauth2", "scopes": ["mcp"] }
     }
   ]
 }
