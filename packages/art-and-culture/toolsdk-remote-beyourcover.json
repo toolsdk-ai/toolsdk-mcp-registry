@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "BeYourCover",
+  "packageName": "@toolsdk-remote/beyourcover",
+  "description": "Designs AI book covers from a title, genre and summary, then edits them, removes cover text, makes square audiobook covers, upscales to print resolution and builds complete Amazon KDP paperback and hardcover wraps with a print-ready PDF. Also lists and downloads the account's books, covers and wraps, and calculates KDP wrap dimensions. OAuth authentication; generation tools need an active BeYourCover API or workspace plan and spend its credits.",
+  "readme": "https://beyourcover.com/mcp",
+  "runtime": "node",
+  "logo": "https://beyourcover.com/icon.png",
+  "author": "BeYourCover",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://beyourcover.com/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
