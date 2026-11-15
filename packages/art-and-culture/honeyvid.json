@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "HoneyVid",
+  "packageName": "@toolsdk-remote/honeyvid",
+  "description": "Official HoneyVid MCP server: put a person, pet or character from one photo into a trending AI video template, or generate videos and images with Playground models (Kling, Veo, Seedance and more). Every run is quoted in credits first and accepts a max-credit cap; generation uses paid HoneyVid credits. Remote Streamable HTTP with OAuth 2.1.",
+  "url": "https://github.com/HoneyVid/cli",
+  "readme": "https://honeyvid.ai/mcp",
+  "runtime": "node",
+  "author": "Beundra AB",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://honeyvid.ai/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["videos:read", "videos:create"]
+      }
+    }
+  ]
+}
