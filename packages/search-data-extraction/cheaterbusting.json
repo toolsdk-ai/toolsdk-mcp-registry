@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "CheaterBusting",
+  "packageName": "@toolsdk-remote/cheaterbusting",
+  "description": "Checks Tinder, Bumble, Hinge and 9 more dating apps for a public profile matching a photo, name, age and city: plans, apps covered, how it works, and the start link. Read-only, no sign-in. Tools: get_product_facts, search_site, get_page, list_blog_articles.",
+  "url": "https://github.com/MindCraftersGroup/cheaterbusting-plugin",
+  "readme": "https://cheaterbusting.com/agents.md",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/MindCraftersGroup/cheaterbusting-plugin/main/assets/icon.png",
+  "author": "MindCrafters LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://cheaterbusting.com/mcp"
+    }
+  ]
+}
