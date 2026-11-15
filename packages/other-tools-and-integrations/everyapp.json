@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "EveryApp",
+  "packageName": "@toolsdk-remote/everyapp",
+  "description": "Use 300+ EveryApp tools and build your own apps from your AI assistant: compress a PDF, convert a video, make an image. Sign in with an EveryApp account; a free account works.",
+  "readme": "https://everyapp.pro/mcp",
+  "runtime": "node",
+  "author": "EveryApp",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.everyapp.pro/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
