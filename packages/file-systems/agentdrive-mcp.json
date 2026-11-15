@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "agentdrive",
+  "packageName": "@toolsdk-remote/agentdrive-mcp",
+  "description": "Hosted persistent file storage for AI agents. Save, list, read and delete files over MCP, and get a browser link for each file that a person can open. Sign-in with OAuth; free drive of 500 MB.",
+  "url": "https://github.com/plsoulie/agentdrive",
+  "readme": "https://useagentdrive.com/agent",
+  "runtime": "node",
+  "logo": "https://raw.githubusercontent.com/plsoulie/agentdrive/main/assets/icon-512.png",
+  "author": "agentdrive",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://useagentdrive.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["drive"]
+      }
+    }
+  ]
+}
