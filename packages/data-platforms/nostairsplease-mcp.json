@@ -1,0 +1,10 @@
+{
+  "type": "mcp-server",
+  "packageName": "nostairsplease-mcp",
+  "description": "Independent live-music venue directory and booking contact discovery across all 50 US states, DC, and British Columbia.",
+  "url": "https://nostairsplease.com/mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {},
+  "name": "No Stairs Please MCP"
+}
