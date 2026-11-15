@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Systra Tools",
+  "packageName": "@toolsdk-remote/systra-tools",
+  "description": "Access production-ready React and Tailwind UI sections, elements, page recipes, styles and imagery via a hosted MCP server. Free components work without an API key; Premium features require an optional key not configured by this public entry.",
+  "url": "https://github.com/systra-tools/systra-tools-plugin",
+  "readme": "https://systra.tools/mcp?utm_source=toolsdk&utm_medium=referral&utm_campaign=mcp_directory",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Systra Tools",
+  "logo": "https://raw.githubusercontent.com/systra-tools/systra-tools-plugin/main/logo.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://systra.tools/api/mcp"
+    }
+  ]
+}
