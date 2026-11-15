@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Vibe Manufacturing",
+  "packageName": "@toolsdk-remote/vibe-manufacturing",
+  "description": "Hosted endpoint for getting hardware prototypes made. An agent describes a product and gets a sourcing plan: parts, make or buy, process per part, matched contract manufacturers from a directory of about 120,000 companies compiled from open data and company websites, and the gaps it cannot cover. After the user confirms, it sends one quote request per make-part and tracks the answers. It can also match a single part spec, list suppliers by country and city and estimate landed cost. No sign-up or key needed.",
+  "url": "https://github.com/shufflethis/vibe-manufacturing-mcp",
+  "readme": "https://vibe-manufacturing.com/agents",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Vibe Manufacturing",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://vibe-manufacturing.com/api/mcp"
+    }
+  ]
+}
