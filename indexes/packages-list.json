@@ -61072,5 +61072,29 @@
   "x402-trading-signals-mcp": {
     "path": "finance-fintech/x402-trading-signals-mcp.json",
     "category": "finance-fintech"
+  },
+  "@toolsdk-remote/anyscribe": {
+    "path": "knowledge-memory/anyscribe.json",
+    "category": "knowledge-memory"
+  },
+  "@toolsdk-remote/cheaterbusting": {
+    "path": "search-data-extraction/cheaterbusting.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/shipfunnels": {
+    "path": "marketing/toolsdk-remote-shipfunnels.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/splyt": {
+    "path": "sports/splyt.json",
+    "category": "sports"
+  },
+  "@toolsdk-remote/sprout": {
+    "path": "finance-fintech/sprout.json",
+    "category": "finance-fintech"
+  },
+  "@toolsdk-remote/varosity": {
+    "path": "aggregators/varosity.json",
+    "category": "aggregators"
   }
 }

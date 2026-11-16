@@ -1,6 +1,6 @@
 # 📚 All MCP Servers
 
-> **Complete directory of all 5672+ MCP servers in the ToolSDK Registry**
+> **Complete directory of all 5678+ MCP servers in the ToolSDK Registry**
 >
 > Looking for production-ready servers only? See the [main README](../README.md) for validated servers.
 
@@ -8,9 +8,9 @@
 
 ## 📊 Statistics
 
-- 📦 **Total Servers**: 5672
+- 📦 **Total Servers**: 5678
 - ✅ **Validated & Tested**: 811
-- ⚙️ **Community Contributed**: 4861
+- ⚙️ **Community Contributed**: 4867
 
 ---
 
@@ -636,7 +636,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 
 
 <a id="aggregators"></a>
-### Aggregators <small>(96 servers)</small>
+### Aggregators <small>(97 servers)</small>
 
 > Servers that let you access multiple apps and tools through one MCP server.
 
@@ -683,6 +683,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [❌ @toolsdk-remote/sitepatent](#): Hosted read-only MCP server for the SitePatent directory of 280+ startup sites and online tools: search by keyword or category, alternatives to a product, listing profiles and a daily trending leaderboard. No authentication.  (node)
 - [❌ @toolsdk-remote/toolfound](https://github.com/MelMayssonOwen/toolfound-mcp): Searches the Toolfound software directory, compares alternatives and plans product launches through its hosted MCP endpoint.  (node)
 - [❌ @toolsdk-remote/upapi](https://github.com/DevinoSolutions/mcp-servers/tree/main/upapi): Call a catalog of ready-to-use APIs through one upAPI account and key, without signing up for each upstream service. Official hosted server operated by Devino Solutions; sign in with your upAPI account via OAuth.  (node)
+- [❌ @toolsdk-remote/varosity](https://github.com/varosity-ai/mcp-server): Video, images, voice and music from 78 models at list price, with a daily spend cap. Failed renders are not billed. Connect with OAuth or an API key.  (node)
 - [❌ agent-server](https://github.com/leadbroaf/mcp-agent-server): Provides a foundation for building persistent agent systems with memory storage, user authentication, and n8n workflow integration designed for SaaS deployment and monetization.  (node)
 - [❌ all-in-one](https://github.com/athapong/aio-mcp): Integrates GitLab, Jira, Confluence, YouTube, and Google AI to provide search capabilities and utility tools for streamlined development workflows and project management tasks.  (go)
 - [❌ anti-bs](https://github.com/bmorphism/anti-bullshit-mcp-server): Integrates multiple epistemological frameworks to analyze claims, validate sources, and detect manipulation for enhanced fact-checking and critical thinking.  (node)
@@ -2315,7 +2316,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [❌ @toolsdk-remote/llms-txt-validator](https://llms-txt-validator.dev): Validate a website's llms.txt against the llmstxt.org specification: checks structure, fetches every linked URL so broken links surface, and returns a 0-100 score with specific fixes. Also validates raw llms.txt text and scaffolds a starter file from a homepage and sitemap. No account or API key.  (node)
 - [❌ @toolsdk-remote/logoapi-mcp](https://logoapi.sh/docs/mcp): Official hosted server for LogoAPI.sh, a free company logo API. Three read-only tools (get_logo, search_logos, get_favicon) return SVG or PNG logo URLs by domain or brand name. No API key, no signup.  (node)
 - [❌ @toolsdk-remote/mobile-joe](https://github.com/MobileJoeDev/mobilejoe-plugin): Official hosted server for Mobile Joe, a toolkit for mobile app developers. Maintains FAQs and their translations, curates feature plans, informs app users with in-app alerts and updates app settings. 33 tools; drafts are prepared and content is published or delivered only when asked. OAuth and a Mobile Joe account are required (14-day free trial); during consent the developer chooses which apps and permissions to share.  (node)
-- [❌ @toolsdk-remote/mobilebox](https://mobilebox.dev): Cloud Android phones that AI agents drive: install an APK, read the screen as numbered elements, tap, type and swipe, take screenshots, and park a phone to keep its apps and logins. 14 tools.  (node)
+- [❌ @toolsdk-remote/mobilebox](https://mobilebox.dev): Cloud Android phones that AI agents drive: install an APK, read the screen as numbered elements, tap, type and swipe, take screenshots, and park a phone to keep its apps and logins. 15 tools.  (node)
 - [❌ @toolsdk-remote/nexusapi](https://github.com/ruizmr/nexusapi-mcp): 18 compute tools for AI Agents: Web Scrape, Python Execution, ML Inference, Text Analysis, Image Processing, Data Tools, Utilities.  (node)
 - [❌ @toolsdk-remote/openhook](https://github.com/openhook-dev/openhook-inbox): Create webhook inboxes and inspect callbacks. Connection is unauthenticated; inbox operations require private tokens passed as tool arguments.  (python)
 - [❌ @toolsdk-remote/org-flowchartai-flowchartai](https://github.com/tanchaowen84/flowchartai-mcp): Create, edit, save and export native flowcharts through the official hosted FlowchartAI MCP server. OAuth and a FlowchartAI account are required. AI generation/editing uses existing allowance or Credits with spending caps. The linked repository contains public connection metadata.  (node)
@@ -2928,7 +2929,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 
 
 <a id="finance-fintech"></a>
-### Finance & Fintech <small>(401 servers)</small>
+### Finance & Fintech <small>(402 servers)</small>
 
 > Work with financial data, market info, and trading platforms using AI tools.
 
@@ -3083,6 +3084,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [❌ @toolsdk-remote/silicon-floor](https://github.com/Baptoshi/silicon-floor): Who owns AI and semiconductor stocks, who is buying and selling them, and what their filed numbers say: SEC XBRL financial statements, Form 13F, Schedule 13D/G, Forms 3/4/5 and N-PORT ownership, FINRA short interest, dividends and prices, each figure dated and linked to its filing.  (node)
 - [❌ @toolsdk-remote/silver-price-per-gram-mcp](https://github.com/theluckystrike/silver-price-per-gram-mcp): Live silver price per gram by fineness and currency, junk silver coin value, gold silver ratio. Tools: get_silver_price_per_gram, calculate_silver_value, calculate_junk_silver_value, get_gold_silver_ratio. Hosted Streamable HTTP endpoint, no account or API key.  (node)
 - [❌ @toolsdk-remote/skavio-usdc-proof-mcp](https://getskavio.com/x402/): Hosted Streamable HTTP MCP: USDC verify, exact-match, evidence PDF and DNS/TLS at 0.02/0.03/0.05/0.05 native Circle USDC on Base or Solana via x402 v2; the three separate HTTP x402 routes remain Base-only. Also offers authenticated web_fetch, web_extract and web_monitor with Serper search and optional DeepSeek (separate company Bearer key and credit billing). Includes 18 discoverable tools; paid execution requires matching credentials and a compatible x402-capable wallet client. PDFs are blockchain evidence, not tax invoices.  (node)
+- [❌ @toolsdk-remote/sprout](https://sprout.mindcrafters.group/mcp): Official hosted MCP server for Sprout by MindCrafters LLC. Read-only tools over the user's own connected US and Canadian bank and card accounts (via Plaid): balances, data health, cash flow, spending by category or merchant, period totals and comparisons, transaction search, recurring charges, and unusual or duplicate charges. update_settings only saves the default reporting period; it cannot move money. Open sign-up with Google, Apple or email; requires Sprout Plus (US$9.99/week or US$99.99/year, 3-day free trial if eligible). Authenticates with OAuth 2.1 (WorkOS AuthKit, Client ID Metadata Documents).  (node)
 - [❌ @toolsdk-remote/street-journal](https://streetjournal.si): AI stock market news for your portfolio: read your daily and weekly portfolio briefings as markdown and the latest news summary for each held ticker with sentiment and sources. Also serves a free daily Magnificent 7 report in English, Spanish and German. Requires a Street Journal account with a paid subscription.  (node)
 - [❌ @toolsdk-remote/student-loan-repayment-assistance-plan-calculator-mcp](https://github.com/theluckystrike/student-loan-repayment-assistance-plan-calculator-mcp): Student loan RAP payment calculator, 2026 federal loan limits, SAVE/PAYE/ICR end dates (OBBBA). Tools: calculate_rap_payment, compare_rap_vs_standard, get_federal_loan_limits, get_plan_transition_dates. Hosted Streamable HTTP endpoint, no account or API key.  (node)
 - [❌ @toolsdk-remote/superbooks](https://github.com/DevinoSolutions/mcp-servers/tree/main/superbooks): Work with your SuperBooks books: transactions and categories, invoices, customers, receipts, time tracking and financial reports. Official hosted server operated by Devino Solutions; sign in with your SuperBooks account via OAuth.  (node)
@@ -3397,7 +3399,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 
 
 <a id="knowledge-memory"></a>
-### Knowledge & Memory <small>(240 servers)</small>
+### Knowledge & Memory <small>(241 servers)</small>
 
 > Store and query structured information for AI models to use across sessions.
 
@@ -3452,6 +3454,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [❌ @toolsdk-remote/ai-memorybrain-memorybrain](https://memorybrain.ai/): Personal memory that ChatGPT and Claude share over MCP: search and read notes, feed new ones, and track projects and tasks. Every note keeps its source (something the user read, said, or a chat) and typed links to other notes. Sign-in with OAuth; private beta with limited sign-up.  (node)
 - [❌ @toolsdk-remote/aiagentcycle](https://github.com/aiagentcycle/aiagentcycle-mcp): Public read-only MCP server for sourced Dutch and English information about AIAgentCycle's workflow automation, self-hosted n8n integrations, AI agents, services, prices, case studies, and contact details.  (python)
 - [❌ @toolsdk-remote/anansi-haven](https://github.com/kburrus64-max/anansi-haven): Free public-beta home base for AI agents. Key-less utility tools (time zones and market hours, unit conversion, calculator, text tools, JSON Schema validation, UUIDs/hashes, URL metadata), a tools catalog (find_tools), persistent memory, an end-to-end encrypted private house (server stores ciphertext only), a job board, an agent directory and Agent Commons rooms. Free tools work with no key; an optional API key unlocks storage and posting.  (node)
+- [❌ @toolsdk-remote/anyscribe](https://github.com/KELiON/anyscribe-mcp): Official remote MCP server for AnyScribe, an iPhone and iPad transcription app. Searches and reads your transcripts, summaries, translations and highlights, lists transcriptions and folders, and sends YouTube, TikTok or Instagram links to your iPhone to transcribe and follows their progress. Library tools are read-only. OAuth 2.1 sign-in with your Apple ID. Docs: https://www.anyscribe.app/mcp. Published in the Official MCP Registry as app.anyscribe/anyscribe.  (node)
 - [❌ @toolsdk-remote/app-factograph-factograph](https://www.factograph.app/for-ai-agents.html): Answers from facts people approved, every claim linked to the fact behind it: list the facts of a public FactoGraph store, ask it questions for cited answers, or, with the person's consent, make them a private memory store. No sign-in.  (node)
 - [❌ @toolsdk-remote/brainattic](https://brainattic.ai/docs/connect): Official EU-hosted Brainattic MCP service: hybrid semantic and keyword search, permission-scoped knowledge retrieval, versioned documents, and authorized document creation and updates. Connect using a Brainattic account and OAuth 2.1 with PKCE and dynamic client registration.  (node)
 - [❌ @toolsdk-remote/co-glasp-glasp](https://glasp.co): Search and read your own saved web and Kindle highlights, page summaries and bookmarks, with the source of each passage. Sign in with a free Glasp account over OAuth; nine tools, eight read-only.  (node)
@@ -3730,7 +3733,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 
 
 <a id="marketing"></a>
-### Marketing <small>(219 servers)</small>
+### Marketing <small>(220 servers)</small>
 
 > Create and edit marketing content, manage metadata, and refine product positioning.
 
@@ -3883,6 +3886,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 - [❌ @toolsdk-remote/sequenzy-mcp](https://github.com/Sequenzy/mcp): Official MCP server for Sequenzy email marketing automation: manage subscribers, lists, segments, templates, campaigns, sequences, transactional email, analytics, and AI-generated email content.  (node)
 - [❌ @toolsdk-remote/serpel-mcp](https://github.com/Serpelapp/serpel-plugin): Remote MCP server for Google rankings, site audits, keyword research, and AI visibility monitoring across ChatGPT, Claude, Cursor, Codex, and Gemini.  (node)
 - [❌ @toolsdk-remote/serpier](https://github.com/Serpier/serpier-mcp): Official Serpier server for SEO performance, AI visibility and link building: track keyword rankings, search traffic and backlinks, monitor how AI assistants mention your brand, check published articles, and browse vetted publishers and place link-building orders. OAuth login; free sign-up.  (node)
+- [❌ @toolsdk-remote/shipfunnels](https://shipfunnels.app/connect): Official ShipFunnels remote MCP server: AI agents build and launch sales funnels. Create sites and funnels (opt-in, sales, checkout, upsell, thank-you), upload plain HTML/CSS/JS pages, add offers, order bumps, upsells and email sequences, run a launch check and publish, then read funnel analytics, A/B test results, contacts and orders. Sign in with your ShipFunnels account via OAuth (free plan available).  (node)
 - [❌ @toolsdk-remote/signado](https://github.com/19Ash82/signado-mcp): LinkedIn warm-lead discovery for MCP clients: list warm leads with what each person said on LinkedIn, add and schedule discovery sources, find emails, and save outreach drafts. OAuth sign-in, no API keys.  (node)
 - [❌ @toolsdk-remote/silvertongue](https://github.com/auscaster/silvertongue): Search famous writing voices, read each one's sources and limits, and get instructions to write your own point in a voice for a post, reply, explanation or thread.  (node)
 - [❌ @toolsdk-remote/skael-api](https://api.skael.de/en/): B2B lead lists and company data with a German focus: search the German commercial register (Handelsregister) with officers, shareholders and new registrations, find businesses on Google Maps and job boards, read imprints, and find and verify work emails. Hosted MCP with OAuth sign-in; a Skael API account is required (30-day trial with 1,000 credits).  (node)
@@ -4047,7 +4051,7 @@ New mcp tool: Exa-code is a context tool for coding   (node)
 
 
 <a id="search-data-extraction"></a>
-### Search & Data Extraction <small>(549 servers)</small>
+### Search & Data Extraction <small>(550 servers)</small>
 
 > Find and extract data from various sources quickly and efficiently.
 
@@ -4215,6 +4219,7 @@ https://arcmira.com  (node)
 - [❌ @toolsdk-remote/catalyst-labs-google-trends-api](https://github.com/catalyst-labs-dev/catalyst-labs-mcp): Google Trends interest-over-time and related queries as JSON with a short trend summary, $0.0025 per keyword; rate-limited keywords are not charged. Hosted on Apify's MCP server; sign in with an Apify account (OAuth), billed per result.  (node)
 - [❌ @toolsdk-remote/catalyst-labs-podcast-transcript-api](https://github.com/catalyst-labs-dev/catalyst-labs-mcp): Podcast episode transcripts: uses the publisher's own transcript when available, otherwise Whisper, with a budget cap so a run never overspends. Hosted on Apify's MCP server; sign in with an Apify account (OAuth), billed per result.  (node)
 - [❌ @toolsdk-remote/catalyst-labs-youtube-transcript-api](https://github.com/catalyst-labs-dev/catalyst-labs-mcp): Bulk YouTube transcripts with timestamps, flagging human versus auto-generated captions; videos without a transcript are not charged. Hosted on Apify's MCP server; sign in with an Apify account (OAuth), billed per result.  (node)
+- [❌ @toolsdk-remote/cheaterbusting](https://github.com/MindCraftersGroup/cheaterbusting-plugin): Checks Tinder, Bumble, Hinge and 9 more dating apps for a public profile matching a photo, name, age and city: plans, apps covered, how it works, and the start link. Read-only, no sign-in. Tools: get_product_facts, search_site, get_page, list_blog_articles.  (node)
 - [❌ @toolsdk-remote/clockintoday](https://clockintoday.com/developers/): Hosted, read-only MCP server for 112 US jobs and gig apps you can start without a job interview: search by age, vehicle, background check, payout speed and category, get one platform's sourced requirements and pay, or pull dataset statistics. Listings are rechecked monthly. No auth.  (node)
 - [❌ @toolsdk-remote/com-unifapi-mcp](https://github.com/unifapi-agent/unifapi-mcp-server): Hosted public-data MCP server for social, search, scrape, news, creator research, and KOL pricing workflows.  (node)
 - [❌ @toolsdk-remote/companyproof](https://github.com/sens663/companyproof-mcp): Search legal companies, retrieve registry profiles and verify six company identity fields with source evidence. Public beta; data calls require an eligible CompanyProof account and shared credits.  (node)
@@ -4788,7 +4793,7 @@ https://arcmira.com  (node)
 
 
 <a id="sports"></a>
-### Sports <small>(24 servers)</small>
+### Sports <small>(25 servers)</small>
 
 > Access sports data, results, and stats with ease.
 
@@ -4797,6 +4802,7 @@ https://arcmira.com  (node)
 - [❌ @toolsdk-remote/depot-fitness](#): Hosted depot.fitness MCP for strength training: search 101 written-out programs (5/3/1, 5x5, push/pull/legs and more) and the exercise library, read training guides, and, once signed in, save programs to your library and read recent workouts and subscription status. Sign in with OAuth using a free depot.fitness account.  (node)
 - [❌ @toolsdk-remote/fitmaxx](#): Log workouts and body measurements, explore training history, and track progress with FitMaxx. Requires OAuth sign-in and an active FitMaxx Pro subscription.  (node)
 - [❌ @toolsdk-remote/raceresults-mcp](https://github.com/manuelescrig/raceresults-mcp): Live MotoGP, Moto2 and Moto3 data: championship standings, race, sprint and qualifying results, season calendar with session times, rider profiles, live timing and news.  (node)
+- [❌ @toolsdk-remote/splyt](#): Hosted, read-only MCP server for Splyt, a strength-training app for iPhone and Apple Watch. Ask an assistant about your own training: workouts, personal records, exercise progress, your training plan, habits and daily health (sleep, steps). It never changes any data. Sign in with OAuth using your Splyt account.  (node)
 - [❌ @toolsdk-remote/sports-odds-api](https://github.com/GeminiGeorge22/sports-odds-mcp): Live odds from 24 Kambi-powered sportsbooks in one call — BetRivers (12 US states + Ontario), Unibet, Paf, Svenska Spel, ATG. One row per game with every book's price and the best price per outcome. Hosted Streamable HTTP via Apify MCP; Apify OAuth.  (node)
 - [❌ @toolsdk-remote/wellness-project](https://github.com/turnnoblindeye/wellness-project-mcp): Hosted health and fitness MCP server that connects health, fitness, nutrition, sleep, recovery, body metrics, goals, labs, wellbeing, and wearable data to AI assistants. Aggregates Apple Health, Google Health Connect, Fitbit, Oura, and other sources alongside manual logging, and exposes read and write tools plus interactive chart widgets over a remote OAuth 2.1 endpoint with Dynamic Client Registration. Published in the Official MCP Registry as ai.wellnessproject/wellness-project.  (node)
 - [❌ api-football](https://github.com/obinopaul/soccer-mcp-server): Provides a bridge to API-Football for accessing soccer data including league standings, team fixtures, player statistics, and live match information through specialized tools that retrieve both historical and real-time data.  (python)

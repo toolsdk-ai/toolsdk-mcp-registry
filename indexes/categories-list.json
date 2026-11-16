@@ -678,7 +678,8 @@
       "@toolsdk-remote/corpusiq",
       "@toolsdk-remote/toolfound",
       "plugmcp-mcp",
-      "@toolsdk-remote/openany"
+      "@toolsdk-remote/openany",
+      "@toolsdk-remote/varosity"
     ]
   },
   "art-and-culture": {
@@ -3275,7 +3276,8 @@
       "@toolsdk-remote/investboard",
       "@toolsdk-remote/kuotia",
       "eu-nordic-open-data-mcp",
-      "x402-trading-signals-mcp"
+      "x402-trading-signals-mcp",
+      "@toolsdk-remote/sprout"
     ]
   },
   "gaming": {
@@ -3583,7 +3585,8 @@
       "@toolsdk-remote/ai-memorybrain-memorybrain",
       "@toolsdk-remote/polidict",
       "@toolsdk-remote/readshore",
-      "memgit-mcp"
+      "memgit-mcp",
+      "@toolsdk-remote/anyscribe"
     ]
   },
   "location-services": {
@@ -3895,7 +3898,8 @@
       "@toolsdk-remote/verand-mcp",
       "@toolsdk-remote/warmerly-mcp",
       "@toolsdk-remote/wavegrain",
-      "@toolsdk-remote/zadojo"
+      "@toolsdk-remote/zadojo",
+      "@toolsdk-remote/shipfunnels"
     ]
   },
   "monitoring": {
@@ -4542,7 +4546,8 @@
       "@toolsdk-remote/trialbase",
       "@toolsdk-remote/unique-domains",
       "@toolsdk-remote/within-mcp",
-      "@uniquedomains/mcp-server"
+      "@uniquedomains/mcp-server",
+      "@toolsdk-remote/cheaterbusting"
     ]
   },
   "security": {
@@ -4756,7 +4761,8 @@
       "ghcr.io/soma-intelligence/open-health-sync",
       "@toolsdk-remote/raceresults-mcp",
       "@toolsdk-remote/sports-odds-api",
-      "@toolsdk-remote/depot-fitness"
+      "@toolsdk-remote/depot-fitness",
+      "@toolsdk-remote/splyt"
     ]
   },
   "support-service-management": {
