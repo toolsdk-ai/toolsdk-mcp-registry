@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Varosity",
+  "packageName": "@toolsdk-remote/varosity",
+  "description": "Video, images, voice and music from 78 models at list price, with a daily spend cap. Failed renders are not billed. Connect with OAuth or an API key.",
+  "readme": "https://github.com/varosity-ai/mcp-server#readme",
+  "url": "https://github.com/varosity-ai/mcp-server",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "varosity-ai",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://varosity.ai/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
