@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Sprouts Data",
+  "packageName": "@toolsdk-remote/sprouts-data",
+  "description": "Hosted Sprouts Data MCP server: search about 45.7M companies and 204M people in plain English, find look-alike companies, look up full records by domain, LinkedIn URL or ID, map relationships, see headcount by team and run multi-step research jobs. 12 tools; sprouts_coverage is free and lists the index's known gaps. Sign in with OAuth 2.1. Billing uses prepaid Sprouts credits, and new workspaces get 1,000 free credits.",
+  "readme": "https://dashboard.sproutsdata.ai/docs",
+  "url": "https://sproutsdata.ai",
+  "runtime": "node",
+  "author": "Sprouts Inc. (Sprouts.ai)",
+  "logo": "https://sproutsdata.ai/icon.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://dashboard.sproutsdata.ai/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["dsp.search.read", "dsp.entities.read", "dsp.usage.read", "dsp.agents.read", "dsp.agents.write"]
+      }
+    }
+  ]
+}
