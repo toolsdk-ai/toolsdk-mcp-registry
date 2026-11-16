@@ -1,10 +1,19 @@
 {
   "type": "mcp-server",
   "packageName": "browser-use",
-  "description": "Provides browser automation capabilities for capturing screenshots, retrieving HTML, executing JavaScript, and accessing console logs from web pages.",
-  "url": "https://github.com/ztobs/cline-browser-use-mcp",
+  "description": "Official Browser Use MCP server from the open-source browser-use package. Exposes browser navigation, clicking, typing, tab management, content extraction and screenshots over stdio, plus a tool that runs a full browser-use agent task. Started with `browser-use --mcp` from the `browser-use[cli]` extra.",
+  "url": "https://github.com/browser-use/browser-use",
+  "readme": "https://docs.browser-use.com/open-source/customize/integrations/mcp-server",
   "runtime": "python",
-  "license": "unknown",
-  "env": {},
+  "binArgs": ["--mcp"],
+  "license": "MIT",
+  "author": "Browser Use",
+  "env": {
+    "OPENAI_API_KEY": {
+      "description": "LLM API key used by the browser-use agent tool. ANTHROPIC_API_KEY also works as an alternative.",
+      "required": true,
+      "secret": true
+    }
+  },
   "name": "Browser Use MCP"
 }
