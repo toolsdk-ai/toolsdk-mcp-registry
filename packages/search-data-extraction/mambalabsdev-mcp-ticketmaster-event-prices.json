@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Ticketmaster Event Prices",
+  "packageName": "@mambalabsdev/mcp-ticketmaster-event-prices",
+  "description": "MCP server for Ticketmaster Event Prices. Ticketmaster events with price ranges on your own Discovery API key. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-ticketmaster-event-prices",
+  "readme": "https://github.com/mambalabsdev/mcp-ticketmaster-event-prices#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

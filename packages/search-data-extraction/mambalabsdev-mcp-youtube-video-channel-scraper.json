@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Youtube Video Channel Scraper",
+  "packageName": "@mambalabsdev/mcp-youtube-video-channel-scraper",
+  "description": "MCP server for YouTube Channel and Video List Scraper. Channels, playlists, and search lists as flat rows. No YouTube login needed. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-youtube-video-channel-scraper",
+  "readme": "https://github.com/mambalabsdev/mcp-youtube-video-channel-scraper#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

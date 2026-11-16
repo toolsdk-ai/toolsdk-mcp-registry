@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Company Change-Event Feed (D1)",
+  "packageName": "@mambalabsdev/mcp-company-change-event-feed",
+  "description": "MCP server for the Mamba Labs Company Change-Event Feed actor on Apify. Monitor a company domain for changes across hiring, tech stack, funding, firmographics, and social since the last run, returned as flat Clay-ready JSON change events.",
+  "url": "https://github.com/mambalabsdev/mcp-company-change-event-feed",
+  "readme": "https://github.com/mambalabsdev/mcp-company-change-event-feed#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

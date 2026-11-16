@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Substack Scraper",
+  "packageName": "@mambalabsdev/mcp-substack-scraper",
+  "description": "MCP server for Substack Scraper. Read Substack publications and posts, or search Substack by keyword: subscriber counts, paid plan prices, and every post with date, paid flag, likes, comments, and restacks. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-substack-scraper",
+  "readme": "https://github.com/mambalabsdev/mcp-substack-scraper#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

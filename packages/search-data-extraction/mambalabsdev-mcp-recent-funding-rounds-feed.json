@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Recent Funding Rounds Feed",
+  "packageName": "@mambalabsdev/mcp-recent-funding-rounds-feed",
+  "description": "MCP server for Recent Funding Rounds Feed. Find US companies that just raised private funding, from SEC Form D filings: company, domain, amount raised and offered, securities, investors count, executives and directors, address, and phone, filtered by date, state, industry, and size. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-recent-funding-rounds-feed",
+  "readme": "https://github.com/mambalabsdev/mcp-recent-funding-rounds-feed#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "type": "mcp-server",
+  "name": "AI Answer Visibility Tracker",
+  "packageName": "@mambalabsdev/mcp-ai-answer-visibility-tracker",
+  "description": "MCP server for AI Answer Visibility Tracker. Check whether Google AI Overviews, ChatGPT, Claude, Perplexity, and Gemini name and cite a brand for the questions buyers ask: sample rows, named and cited rates per question, competitor rates, cited sources. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-ai-answer-visibility-tracker",
+  "readme": "https://github.com/mambalabsdev/mcp-ai-answer-visibility-tracker#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    },
+    "OPENAI_API_KEY": {
+      "description": "Optional. Your own OpenAI API key, only for that engine.",
+      "required": false,
+      "secret": true
+    },
+    "ANTHROPIC_API_KEY": {
+      "description": "Optional. Your own Anthropic API key, only for that engine.",
+      "required": false,
+      "secret": true
+    },
+    "PERPLEXITY_API_KEY": {
+      "description": "Optional. Your own Perplexity API key, only for that engine.",
+      "required": false,
+      "secret": true
+    },
+    "GEMINI_API_KEY": {
+      "description": "Optional. Your own Google AI Studio (Gemini) API key, only for that engine.",
+      "required": false,
+      "secret": true
+    }
+  }
+}

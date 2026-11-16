@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "Email Verifier",
+  "packageName": "@mambalabsdev/mcp-email-verifier",
+  "description": "MCP server for Email Verifier. Verify email lists on your own ZeroBounce, NeverBounce, MillionVerifier, or BounceBan key: one flat row per address with a valid, invalid, catch all, risky, or unknown verdict plus role, free, and disposable flags. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-email-verifier",
+  "readme": "https://github.com/mambalabsdev/mcp-email-verifier#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    },
+    "EMAIL_VERIFIER_API_KEY": {
+      "description": "Your own API key for ZeroBounce, NeverBounce, MillionVerifier, or BounceBan.",
+      "required": true,
+      "secret": true
+    }
+  }
+}

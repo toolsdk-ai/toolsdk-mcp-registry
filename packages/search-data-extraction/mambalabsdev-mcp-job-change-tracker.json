@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Job Change Tracker",
+  "packageName": "@mambalabsdev/mcp-job-change-tracker",
+  "description": "MCP server for Job Change Tracker. Send the contacts in your CRM. Get one row back per person: where they work now, their title, when they started, their role history, and whether they left the company you know them at, landed somewhere new, or moved up inside the same company. Every row says how the person was matched, which source the answer came from, and how old that source is. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-job-change-tracker",
+  "readme": "https://github.com/mambalabsdev/mcp-job-change-tracker#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

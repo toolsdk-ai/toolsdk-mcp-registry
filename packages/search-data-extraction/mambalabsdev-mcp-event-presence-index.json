@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Event Presence Index",
+  "packageName": "@mambalabsdev/mcp-event-presence-index",
+  "description": "MCP server for the Mamba Labs Event Presence Index actor on Apify. Company domain in, the third party conferences and trade shows that company publicly says it attends out, with a year for each.",
+  "url": "https://github.com/mambalabsdev/mcp-event-presence-index",
+  "readme": "https://github.com/mambalabsdev/mcp-event-presence-index#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

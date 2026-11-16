@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "LinkedIn Post Tracker and Comment Capture",
+  "packageName": "@mambalabsdev/mcp-linkedin-post-engager-capture",
+  "description": "MCP server for the Mamba Labs LinkedIn Post Tracker actor on Apify. Profiles and company pages in, the posts a search engine has indexed for them out: permalink, author, excerpt, publish date. No request to LinkedIn.",
+  "url": "https://github.com/mambalabsdev/mcp-linkedin-post-engager-capture",
+  "readme": "https://github.com/mambalabsdev/mcp-linkedin-post-engager-capture#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

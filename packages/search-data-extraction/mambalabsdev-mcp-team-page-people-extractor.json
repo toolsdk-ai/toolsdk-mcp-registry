@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Team Page People Extractor",
+  "packageName": "@mambalabsdev/mcp-team-page-people-extractor",
+  "description": "MCP server for the Mamba Labs Team Page People Extractor actor on Apify. Returns the people a company publishes on its own team, leadership or about page, with names, titles and the source page.",
+  "url": "https://github.com/mambalabsdev/mcp-team-page-people-extractor",
+  "readme": "https://github.com/mambalabsdev/mcp-team-page-people-extractor#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

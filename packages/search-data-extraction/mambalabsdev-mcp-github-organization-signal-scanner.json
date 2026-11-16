@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Github Organization Signal Scanner",
+  "packageName": "@mambalabsdev/mcp-github-organization-signal-scanner",
+  "description": "MCP server for the Mamba Labs GitHub Organization Signal Scanner actor on Apify. Resolve a company domain to its GitHub organization with repo, language and activity signals.",
+  "url": "https://github.com/mambalabsdev/mcp-github-organization-signal-scanner",
+  "readme": "https://github.com/mambalabsdev/mcp-github-organization-signal-scanner#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

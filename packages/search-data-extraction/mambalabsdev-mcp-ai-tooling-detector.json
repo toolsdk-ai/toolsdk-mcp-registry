@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "AI Tooling Detector",
+  "packageName": "@mambalabsdev/mcp-ai-tooling-detector",
+  "description": "MCP server for the Mamba Labs AI Tooling Detector actor on Apify. Give it a company domain and it returns whether the company only talks about AI, actually deploys AI tooling on its site, or charges for AI, with the evidence, as Clay-ready JSON.",
+  "url": "https://github.com/mambalabsdev/mcp-ai-tooling-detector",
+  "readme": "https://github.com/mambalabsdev/mcp-ai-tooling-detector#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

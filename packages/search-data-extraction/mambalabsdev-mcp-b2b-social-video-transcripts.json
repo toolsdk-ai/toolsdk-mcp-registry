@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "B2B Social Video Transcripts",
+  "packageName": "@mambalabsdev/mcp-b2b-social-video-transcripts",
+  "description": "MCP server for B2B Social Video Transcripts: transcripts and outbound signals from TikTok, Reels, X, Threads, podcasts, and Wistia.",
+  "url": "https://github.com/mambalabsdev/mcp-b2b-social-video-transcripts",
+  "readme": "https://github.com/mambalabsdev/mcp-b2b-social-video-transcripts#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

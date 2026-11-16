@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Eventbrite Events Scraper",
+  "packageName": "@mambalabsdev/mcp-eventbrite-events-scraper",
+  "description": "MCP server for Eventbrite Events Scraper. Eventbrite events, organizers, and ticket prices by location, keyword, or URL. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-eventbrite-events-scraper",
+  "readme": "https://github.com/mambalabsdev/mcp-eventbrite-events-scraper#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

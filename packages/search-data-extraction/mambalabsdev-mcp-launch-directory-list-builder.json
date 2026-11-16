@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Launch Directory List Builder",
+  "packageName": "@mambalabsdev/mcp-launch-directory-list-builder",
+  "description": "MCP server for Launch Directory List Builder. Ranked, live checked list of startup directories, launch sites, newsletters, and communities to submit a product to. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-launch-directory-list-builder",
+  "readme": "https://github.com/mambalabsdev/mcp-launch-directory-list-builder#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

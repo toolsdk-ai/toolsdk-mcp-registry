@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Meta Ad Library Monitor",
+  "packageName": "@mambalabsdev/mcp-meta-ad-library-monitor",
+  "description": "MCP server for the Mamba Labs Meta Ad Library Monitor actor on Apify. Find a company active Facebook and Instagram ads through the Meta Ad Library API.",
+  "url": "https://github.com/mambalabsdev/mcp-meta-ad-library-monitor",
+  "readme": "https://github.com/mambalabsdev/mcp-meta-ad-library-monitor#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

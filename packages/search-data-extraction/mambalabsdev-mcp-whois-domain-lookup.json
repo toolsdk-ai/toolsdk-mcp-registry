@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Whois Domain Lookup",
+  "packageName": "@mambalabsdev/mcp-whois-domain-lookup",
+  "description": "MCP server for WHOIS Domain Lookup. Registrar, creation and expiry dates, domain age, status, nameservers, and DNSSEC per domain from each registry's RDAP or WHOIS server. No key. Runs on Apify.",
+  "url": "https://github.com/mambalabsdev/mcp-whois-domain-lookup",
+  "readme": "https://github.com/mambalabsdev/mcp-whois-domain-lookup#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

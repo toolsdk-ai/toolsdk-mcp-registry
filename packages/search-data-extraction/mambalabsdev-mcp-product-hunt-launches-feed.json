@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Product Hunt Launches Feed",
+  "packageName": "@mambalabsdev/mcp-product-hunt-launches-feed",
+  "description": "MCP server for Product Hunt Launches Feed. Daily Product Hunt launches with maker names, website, company domain, X and LinkedIn, votes, and topics. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-product-hunt-launches-feed",
+  "readme": "https://github.com/mambalabsdev/mcp-product-hunt-launches-feed#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

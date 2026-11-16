@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Company Firmographic Enricher (B2)",
+  "packageName": "@mambalabsdev/mcp-company-firmographic-enricher",
+  "description": "MCP server for the Mamba Labs Company Firmographic Enricher actor on Apify. Turn a company domain into structured firmographics: employee band, industry, HQ, founded year, revenue estimate, logo and description, with provenance. Clay-ready.",
+  "url": "https://github.com/mambalabsdev/mcp-company-firmographic-enricher",
+  "readme": "https://github.com/mambalabsdev/mcp-company-firmographic-enricher#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

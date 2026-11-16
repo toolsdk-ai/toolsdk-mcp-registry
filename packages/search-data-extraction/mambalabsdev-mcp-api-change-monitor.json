@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "API Change Monitor",
+  "packageName": "@mambalabsdev/mcp-api-change-monitor",
+  "description": "MCP server for API Change Monitor. Watch the APIs you depend on and get only what changed since the last run: changelog entries tagged as deprecations or breaking changes, status incidents, OpenAPI diffs, and Sunset headers. Runs on Apify.",
+  "url": "https://github.com/mambalabsdev/mcp-api-change-monitor",
+  "readme": "https://github.com/mambalabsdev/mcp-api-change-monitor#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

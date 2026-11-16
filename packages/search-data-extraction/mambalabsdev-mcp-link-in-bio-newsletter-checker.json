@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Link in Bio Scraper and Newsletter Detector",
+  "packageName": "@mambalabsdev/mcp-link-in-bio-newsletter-checker",
+  "description": "MCP server for the Mamba Labs Link in Bio Scraper and Newsletter Detector actor on Apify. Creator handles or link in bio URLs in, a newsletter verdict and contact details out.",
+  "url": "https://github.com/mambalabsdev/mcp-link-in-bio-newsletter-checker",
+  "readme": "https://github.com/mambalabsdev/mcp-link-in-bio-newsletter-checker#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

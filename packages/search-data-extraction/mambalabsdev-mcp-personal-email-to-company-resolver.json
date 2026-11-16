@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Personal Email to Company Resolver",
+  "packageName": "@mambalabsdev/mcp-personal-email-to-company-resolver",
+  "description": "MCP server for Personal Email to Company Resolver. Find the likely employer behind a Gmail, Outlook, or other free mail signup, with a confidence and the public evidence, from Gravatar, signed GitHub commits, and LinkedIn results. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-personal-email-to-company-resolver",
+  "readme": "https://github.com/mambalabsdev/mcp-personal-email-to-company-resolver#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

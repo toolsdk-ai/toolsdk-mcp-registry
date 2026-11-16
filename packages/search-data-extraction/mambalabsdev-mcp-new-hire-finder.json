@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "New Hire Finder",
+  "packageName": "@mambalabsdev/mcp-new-hire-finder",
+  "description": "MCP server for New Hire Finder. Find the people who started a role at a company in the last few months. Give a company domain, the titles you sell to, and a lookback window. Get one flat row per person: name, profile URL, title, start month, prior role, move type (new hire or internal promotion), and the source that found them. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-new-hire-finder",
+  "readme": "https://github.com/mambalabsdev/mcp-new-hire-finder#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

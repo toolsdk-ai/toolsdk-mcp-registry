@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "People Finder & Email Verifier",
+  "packageName": "@mambalabsdev/mcp-people-finder",
+  "description": "MCP server for the Mamba Labs People Finder & Email Verifier actor on Apify. Finds people at a company by role, seniority and department, and returns structured contact records with optional verified business email.",
+  "url": "https://github.com/mambalabsdev/mcp-people-finder",
+  "readme": "https://github.com/mambalabsdev/mcp-people-finder#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}
