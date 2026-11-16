@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Golviva",
+  "packageName": "@toolsdk-remote/golviva",
+  "description": "Football (soccer) match predictions, season projections and player valuations for AI agents: win, draw and loss chances, likeliest scores and scorers and predicted line-ups for every match of 26 leagues, the Champions League, Europa League, Conference League and senior national teams; each club's title, top-four and relegation chances; Golviva's own estimated transfer values with the reasons behind them, scouting and rankings; plus live scores, match centres, league tables, stat leaders and transfer news. 18 read-only tools. Users sign in to a Golviva account with Apple or Google; every account has a free daily allowance of tool calls. Predictions are model probabilities, not betting advice.",
+  "url": "https://github.com/target1m/golviva-mcp",
+  "readme": "https://github.com/target1m/golviva-mcp#readme",
+  "runtime": "node",
+  "logo": "https://golviva.com/icon-512.png",
+  "author": "Golviva",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.golviva.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["golviva.read"]
+      }
+    }
+  ]
+}
