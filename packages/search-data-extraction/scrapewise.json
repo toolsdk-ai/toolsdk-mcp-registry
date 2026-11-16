@@ -1,0 +1,26 @@
+{
+  "type": "mcp-server",
+  "name": "Scrapewise",
+  "packageName": "@toolsdk-remote/scrapewise",
+  "description": "Remote MCP server that scrapes, cleans and matches product and price data from any website.\n\nhttps://scrapewise.ai",
+  "url": "https://github.com/BEBOTECH-OU/scrapewise-mcp",
+  "readme": "https://docs.scrapewise.ai/connect/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://scrapewise.ai/logo.png",
+  "author": "BEBOTECH OU",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.scrapewise.ai/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "mcp:read",
+          "mcp:full"
+        ]
+      }
+    }
+  ]
+}
