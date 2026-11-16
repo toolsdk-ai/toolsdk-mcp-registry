@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Zambo",
+  "packageName": "@toolsdk-remote/zambo",
+  "description": "The verifiable work layer for AI, created by Brennan Zambo: 153 tools (37 on the default surface) behind one hosted MCP endpoint, with cross-AI handover and a verifiable AER-1 receipt for every job.",
+  "url": "https://github.com/zambodotdev/zambo-mcp",
+  "readme": "https://github.com/zambodotdev/zambo-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "zambodotdev",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://zambo.dev/mcp"
+    }
+  ]
+}
