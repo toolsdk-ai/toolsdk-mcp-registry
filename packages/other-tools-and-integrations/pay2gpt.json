@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Pay2GPT",
+  "packageName": "@toolsdk-remote/pay2gpt",
+  "description": "Hosted MCP server for Pay2GPT: list current ChatGPT Go, Plus and Pro plans with prices and checkout links, and read Pay2GPT's how-to guides as Markdown. These public tools need no authentication; the business_* order tools additionally require a Pay2GPT business API key sent as a Bearer token, which this entry does not configure.",
+  "url": "https://pay2gpt.com",
+  "readme": "https://pay2gpt.com/.well-known/mcp/server-card.json",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://pay2gpt.com/mcp"
+    }
+  ]
+}
