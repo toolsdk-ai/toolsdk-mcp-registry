@@ -2,7 +2,7 @@
   "type": "mcp-server",
   "name": "while.sh",
   "packageName": "@toolsdk-remote/sh-while-while",
-  "description": "Deploys apps with their PostgreSQL databases, caches, S3 storage and scheduled jobs on while.sh, a French PaaS built for AI agents, and reads their logs, metrics and errors. Sensitive actions wait for a person's approval in while. Requires a while.sh account.",
+  "description": "Deploys the apps an agent builds on while.sh, for the user's team only or for everyone, with their PostgreSQL databases, scheduled jobs and storage, hosted in France, and reads their logs, metrics and errors. Sensitive actions wait for a person's approval in while. Free to try without an account; tools that need one ask the user to sign in.",
   "url": "https://github.com/while-sh/while",
   "readme": "https://while.sh/en/docs/get-started/connect-your-agent/",
   "logo": "https://while.sh/icon-light.png",
