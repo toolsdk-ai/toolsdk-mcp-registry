@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "RipSeek",
+  "packageName": "@toolsdk-remote/ripseek",
+  "description": "Hosted read-only MCP server for Collector Crypt graded trading-card packs on Solana: live odds and card value ranges per pack, expected value and buyback, the most valuable cards in each pack's pool with the chance of pulling each one, the newest pulls across every site that sells the packs, and what a budget usually returns. No account or API key.",
+  "url": "https://ripseek.2cstudio.app",
+  "readme": "https://ripseek.2cstudio.app/blog/ripseek-mcp",
+  "runtime": "node",
+  "author": "2C Studio",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://ripseek.2cstudio.app/mcp"
+    }
+  ]
+}
