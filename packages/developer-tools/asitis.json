@@ -1,0 +1,11 @@
+{
+  "type": "mcp-server",
+  "name": "AsItIs",
+  "packageName": "@asitis/mcp",
+  "description": "Read-only linter for CLAUDE.md, AGENTS.md, GEMINI.md, SKILL.md and Cursor rules: shows what each agent loads at startup, estimates token cost and flags hidden instructions. Never writes files or uses the network.",
+  "url": "https://github.com/Katta041/asitis-agent-tools",
+  "readme": "https://github.com/Katta041/asitis-agent-tools#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {}
+}
