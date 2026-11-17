@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Dial by Behaf",
+  "packageName": "@toolsdk-remote/dial-by-behaf",
+  "description": "Hosted MCP server that lets an AI assistant phone Indian businesses for bookings, enquiries, customer care and follow-ups. It gets through menus and hold, talks in English or Indian languages, and returns a summary, outcome and transcript. Every call says it is an AI calling on the user's behalf. Tools: prepare_call, place_call, get_call, get_call_transcript, answer_call_question, list_calls, cancel_call, get_account.",
+  "url": "https://github.com/behaf/dial-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://dial.behaf.co/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
