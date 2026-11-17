@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "COVID Flu RSV Wastewater Levels MCP",
+  "packageName": "@toolsdk-remote/covid-flu-rsv-wastewater-levels-mcp",
+  "description": "CDC NWSS wastewater viral activity levels for COVID-19, flu and RSV by US state and county, plus emergency department respiratory illness activity and national test positivity (data.cdc.gov). Tools: covid_flu_rsv_levels_state, covid_flu_rsv_levels_county, covid_flu_rsv_levels_national, covid_flu_rsv_compare_states. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/covid-flu-rsv-wastewater-levels-mcp",
+  "readme": "https://github.com/theluckystrike/covid-flu-rsv-wastewater-levels-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://covid-flu-rsv-wastewater-levels-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}
