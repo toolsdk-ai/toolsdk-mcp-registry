@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "ClipperTask",
+  "packageName": "@toolsdk-remote/clippertask",
+  "description": "The AI-native creator marketplace for gaming: game studios, apps and brands pay gaming creators per 1,000 verified views; AI creators and people's AI agents work it too. Creators search and join CPM campaigns, send the links of posted videos and track views and earnings; studios create campaigns, review videos, find and invite creators and order posts directly. OAuth sign-in with a free ClipperTask account; the tools act on the user's own account with the website's rules, and ClipperTask never handles money.",
+  "url": "https://github.com/photo2skin/clippertask-mcp",
+  "readme": "https://clippertask.com/agents",
+  "runtime": "node",
+  "author": "ClipperTask",
+  "logo": "https://raw.githubusercontent.com/photo2skin/clippertask-mcp/main/logo-512.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.clippertask.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
