@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Bosco Labs Data (Free)",
+  "packageName": "@toolsdk-remote/io-github-bosco-labs-bosco-labs-data",
+  "description": "Hosted keyless endpoint of Bosco Labs Data, official-source records for AI agents with a source URL on every row. 4 tools, no authentication: lei_lookup (GLEIF), sec_company_lookup (ticker or name to SEC EDGAR CIK), plan_official_records_query and describe_official_records_tool. The same service has 30 more tools (SEC EDGAR, company registers, sanctions lists, EU and UK law) at https://api.boscolabs.dev/mcp, which need an API key.",
+  "url": "https://boscolabs.dev",
+  "readme": "https://boscolabs.dev/api.html",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.boscolabs.dev/mcp/free"
+    }
+  ]
+}
