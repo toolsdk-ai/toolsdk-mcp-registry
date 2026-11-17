@@ -2,7 +2,7 @@
   "type": "mcp-server",
   "name": "GetMattered",
   "packageName": "@toolsdk-remote/getmattered-mcp",
-  "description": "Auto-Apply That Ends on an Interview. Search jobs matched to your resume, tailor the resume and cover letter for one role, prepare interview answers, and submit the application on the employer's own hiring system across 34 hiring systems, keeping the confirmation the employer returns.",
+  "description": "Auto-Apply That Ends on an Interview. Search jobs matched to your resume, tailor the resume and cover letter for one role, prepare interview answers, and submit the application on the employer's own hiring system across 30+ hiring systems, keeping the confirmation the employer returns.",
   "url": "https://github.com/getmattered/getmattered-mcp",
   "readme": "https://github.com/getmattered/getmattered-mcp#readme",
   "runtime": "node",
