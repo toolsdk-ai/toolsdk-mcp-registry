@@ -2,11 +2,11 @@
   "type": "mcp-server",
   "name": "Tapline",
   "packageName": "@toolsdk-remote/tapline",
-  "description": "Hosted Tapline MCP server that gives AI agents live, structured JSON from public web pages: YouTube, TikTok, Instagram, X, LinkedIn, Facebook, Pinterest, Airbnb, Zillow, Expedia, Google Maps, Brave Search and Indeed. Four read-only tools: search_endpoints, get_endpoint, call_endpoint and read_more. New accounts get 100 free credits; failed requests are not charged. OAuth 2.1 sign-in with a Tapline account.",
+  "description": "Tapline is a remote MCP server and API. AI agents get live, structured JSON from YouTube, TikTok, Instagram, LinkedIn, Airbnb, Zillow, Google Maps and more.",
   "url": "https://tapline.sh",
   "readme": "https://tapline.sh/docs/mcp",
   "runtime": "node",
-  "logo": "https://api.tapline.sh/favicon.png",
+  "logo": "https://tapline.sh/tapline-icon-512.png",
   "author": "Tapline",
   "env": {},
   "remotes": [
