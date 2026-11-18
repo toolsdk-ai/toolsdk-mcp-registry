@@ -3,7 +3,7 @@
   "name": "Tapline",
   "packageName": "@toolsdk-remote/tapline",
   "description": "Tapline is a remote MCP server and API. AI agents get live, structured JSON from YouTube, TikTok, Instagram, LinkedIn, Airbnb, Zillow, Google Maps and more.",
-  "url": "https://tapline.sh",
+  "url": "https://github.com/TaplineData/tapline-mcp",
   "readme": "https://tapline.sh/docs/mcp",
   "runtime": "node",
   "logo": "https://tapline.sh/tapline-icon-512.png",
