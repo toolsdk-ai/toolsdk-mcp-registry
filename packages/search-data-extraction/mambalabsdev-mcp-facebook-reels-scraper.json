@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Facebook Reels Scraper",
+  "packageName": "@mambalabsdev/mcp-facebook-reels-scraper",
+  "description": "MCP server for Facebook Reels Scraper: reels from public Facebook Pages with plays and engagement.",
+  "url": "https://github.com/mambalabsdev/mcp-facebook-reels-scraper",
+  "readme": "https://github.com/mambalabsdev/mcp-facebook-reels-scraper#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}
