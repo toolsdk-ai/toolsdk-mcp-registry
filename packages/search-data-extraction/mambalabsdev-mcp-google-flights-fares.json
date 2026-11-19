@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Google Flights Fares",
+  "packageName": "@mambalabsdev/mcp-google-flights-fares",
+  "description": "MCP server for Google Flights Fares: flight prices by route and date from Google Flights.",
+  "url": "https://github.com/mambalabsdev/mcp-google-flights-fares",
+  "readme": "https://github.com/mambalabsdev/mcp-google-flights-fares#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}
