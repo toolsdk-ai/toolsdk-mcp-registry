@@ -573,7 +573,8 @@
       "@toolsdk-remote/cassette-find",
       "@toolsdk-remote/cassette-publish",
       "@toolsdk-remote/kling-ai-china",
-      "@toolsdk-remote/kling-ai-global"
+      "@toolsdk-remote/kling-ai-global",
+      "@toolsdk-remote/maru-japan-hands"
     ]
   },
   "aggregators": {
@@ -846,7 +847,8 @@
       "internet-radio-mcp",
       "@popnow/mcp",
       "@toolsdk-remote/com-vidmoat-vidmoat",
-      "@toolsdk-remote/honeyvid"
+      "@toolsdk-remote/honeyvid",
+      "@toolsdk-remote/craftwork"
     ]
   },
   "browser-automation": {
@@ -1205,7 +1207,8 @@
       "@toolsdk-remote/nops-clara",
       "@toolsdk-remote/droply",
       "@toolsdk-remote/termalin",
-      "lantern-works-deals-mcp"
+      "lantern-works-deals-mcp",
+      "@toolsdk-remote/sh-while-while"
     ]
   },
   "code-execution": {
@@ -1753,7 +1756,9 @@
       "@commonlyai/mcp",
       "@toolsdk-remote/api-supp",
       "@toolsdk-remote/fork-zone",
-      "@toolsdk-remote/telofy"
+      "@toolsdk-remote/telofy",
+      "@toolsdk-remote/agentmsgr",
+      "@toolsdk-remote/dial-by-behaf"
     ]
   },
   "customer-data-platforms": {
@@ -2571,7 +2576,10 @@
       "@reliantlabs/forge",
       "@toolsdk-remote/agentmart",
       "@toolsdk-remote/agentx",
-      "@toolsdk-remote/systra-tools"
+      "@toolsdk-remote/systra-tools",
+      "@asitis/mcp",
+      "@toolsdk-remote/gitranks-contribute",
+      "@toolsdk-remote/tday"
     ]
   },
   "data-science-tools": {
@@ -3277,7 +3285,11 @@
       "@toolsdk-remote/kuotia",
       "eu-nordic-open-data-mcp",
       "x402-trading-signals-mcp",
-      "@toolsdk-remote/sprout"
+      "@toolsdk-remote/sprout",
+      "@toolsdk-remote/blazarforce-polygon",
+      "@toolsdk-remote/com-stalkchain-data",
+      "@toolsdk-remote/io-github-bosco-labs-bosco-labs-data",
+      "@toolsdk-remote/prime-rate-sofr-fed-funds-rate-today-mcp"
     ]
   },
   "gaming": {
@@ -3336,7 +3348,8 @@
       "@toolsdk-remote/waspes",
       "@toolsdk-remote/photo2skin",
       "@toolsdk-remote/tickermint-mcp",
-      "@toolsdk-remote/the-commons-live-games"
+      "@toolsdk-remote/the-commons-live-games",
+      "@toolsdk-remote/ripseek"
     ]
   },
   "knowledge-memory": {
@@ -3670,7 +3683,9 @@
       "@toolsdk-remote/close-knit",
       "@toolsdk-remote/ailiste",
       "@toolsdk-remote/river-level-mcp",
-      "@toolsdk-remote/nostairsplease-mcp"
+      "@toolsdk-remote/nostairsplease-mcp",
+      "@toolsdk-remote/flood-zone-lookup-fema-flood-map-mcp",
+      "@toolsdk-remote/last-frost-date-hardiness-zone-mcp"
     ]
   },
   "marketing": {
@@ -3899,7 +3914,11 @@
       "@toolsdk-remote/warmerly-mcp",
       "@toolsdk-remote/wavegrain",
       "@toolsdk-remote/zadojo",
-      "@toolsdk-remote/shipfunnels"
+      "@toolsdk-remote/shipfunnels",
+      "@toolsdk-remote/dheerajitbhu-competitor-ads",
+      "@toolsdk-remote/improvado",
+      "@toolsdk-remote/local-seo-data",
+      "@toolsdk-remote/poptin-mcp"
     ]
   },
   "monitoring": {
@@ -3988,7 +4007,8 @@
       "@toolsdk-remote/logbrew",
       "@toolsdk-remote/mcpkit-yandex-metrika",
       "@toolsdk-remote/pingstack",
-      "@toolsdk-remote/telemio-observability"
+      "@toolsdk-remote/telemio-observability",
+      "@toolsdk-remote/connecty"
     ]
   },
   "search-data-extraction": {
@@ -4547,7 +4567,147 @@
       "@toolsdk-remote/unique-domains",
       "@toolsdk-remote/within-mcp",
       "@uniquedomains/mcp-server",
-      "@toolsdk-remote/cheaterbusting"
+      "@toolsdk-remote/cheaterbusting",
+      "@mambalabsdev/mcp-account-hiring-watch",
+      "@mambalabsdev/mcp-agent-accessibility-auditor",
+      "@mambalabsdev/mcp-agent-brokerage-resolver",
+      "@mambalabsdev/mcp-ai-answer-visibility-tracker",
+      "@mambalabsdev/mcp-ai-list-extractor-any-website",
+      "@mambalabsdev/mcp-ai-tooling-detector",
+      "@mambalabsdev/mcp-amazon-product-price-stock-tracker",
+      "@mambalabsdev/mcp-amazon-top-reviews-scraper",
+      "@mambalabsdev/mcp-api-change-monitor",
+      "@mambalabsdev/mcp-app-store-google-play-review-monitor",
+      "@mambalabsdev/mcp-ats-jobs-feed",
+      "@mambalabsdev/mcp-b2b-prospect-engine",
+      "@mambalabsdev/mcp-b2b-reddit-conversation-monitor",
+      "@mambalabsdev/mcp-b2b-social-video-transcripts",
+      "@mambalabsdev/mcp-bluesky-brand-presence-mapper",
+      "@mambalabsdev/mcp-bluesky-posts-scraper",
+      "@mambalabsdev/mcp-brand-sponsor-finder",
+      "@mambalabsdev/mcp-business-pdf-field-extractor",
+      "@mambalabsdev/mcp-career-change-signal-engine",
+      "@mambalabsdev/mcp-clay-to-instantly-smartlead-push",
+      "@mambalabsdev/mcp-company-change-event-feed",
+      "@mambalabsdev/mcp-company-contact-details-extractor",
+      "@mambalabsdev/mcp-company-discovery-list-builder",
+      "@mambalabsdev/mcp-company-firmographic-enricher",
+      "@mambalabsdev/mcp-company-headcount-estimator",
+      "@mambalabsdev/mcp-company-identity-resolver",
+      "@mambalabsdev/mcp-company-social-presence-mapper",
+      "@mambalabsdev/mcp-competitor-price-stock-changelog-monitor",
+      "@mambalabsdev/mcp-contact-classifier",
+      "@mambalabsdev/mcp-contractor-license-lookup",
+      "@mambalabsdev/mcp-cookie-consent-audit",
+      "@mambalabsdev/mcp-creator-change-monitor",
+      "@mambalabsdev/mcp-creator-finder",
+      "@mambalabsdev/mcp-creator-lead-list-all-in-one",
+      "@mambalabsdev/mcp-creator-profile-reader",
+      "@mambalabsdev/mcp-domain-deliverability-checker",
+      "@mambalabsdev/mcp-domain-to-linkedin-url-resolver",
+      "@mambalabsdev/mcp-dutch-rental-listings",
+      "@mambalabsdev/mcp-ecommerce-platform-profiler",
+      "@mambalabsdev/mcp-ecommerce-store-discovery",
+      "@mambalabsdev/mcp-email-verifier",
+      "@mambalabsdev/mcp-email-waterfall-orchestrator",
+      "@mambalabsdev/mcp-event-presence-index",
+      "@mambalabsdev/mcp-eventbrite-events-scraper",
+      "@mambalabsdev/mcp-expert-witness-directory",
+      "@mambalabsdev/mcp-facebook-posts-scraper",
+      "@mambalabsdev/mcp-facebook-reels-scraper",
+      "@mambalabsdev/mcp-funding-investor-record",
+      "@mambalabsdev/mcp-funding-press-signal-scanner",
+      "@mambalabsdev/mcp-github-followers-following-export",
+      "@mambalabsdev/mcp-github-organization-signal-scanner",
+      "@mambalabsdev/mcp-google-ads-transparency-monitor",
+      "@mambalabsdev/mcp-google-maps-places-scraper",
+      "@mambalabsdev/mcp-google-trends-scraper",
+      "@mambalabsdev/mcp-gtm-hiring-signal-scraper",
+      "@mambalabsdev/mcp-gtm-job-discovery",
+      "@mambalabsdev/mcp-gtm-signals-aggregator",
+      "@mambalabsdev/mcp-gtm-suite",
+      "@mambalabsdev/mcp-gtm-tech-stack-signal-scraper",
+      "@mambalabsdev/mcp-healthcare-provider-npi-enricher",
+      "@mambalabsdev/mcp-icp-fit-scorer",
+      "@mambalabsdev/mcp-integration-marketplace-presence-mapper",
+      "@mambalabsdev/mcp-job-board-keyword-signal-scanner",
+      "@mambalabsdev/mcp-job-change-tracker",
+      "@mambalabsdev/mcp-journalist-media-list-builder",
+      "@mambalabsdev/mcp-launch-directory-list-builder",
+      "@mambalabsdev/mcp-lead-file-import-checker",
+      "@mambalabsdev/mcp-legal-entity-resolver",
+      "@mambalabsdev/mcp-link-in-bio-newsletter-checker",
+      "@mambalabsdev/mcp-linkedin-company-page-details",
+      "@mambalabsdev/mcp-linkedin-company-presence-mapper",
+      "@mambalabsdev/mcp-linkedin-jobs-feed",
+      "@mambalabsdev/mcp-linkedin-post-engager-capture",
+      "@mambalabsdev/mcp-local-business-lead-builder",
+      "@mambalabsdev/mcp-local-rank-map-pack-tracker",
+      "@mambalabsdev/mcp-lookalike-company-finder",
+      "@mambalabsdev/mcp-manufacturer-supplier-finder",
+      "@mambalabsdev/mcp-media-url-transcriber",
+      "@mambalabsdev/mcp-meta-ad-library-monitor",
+      "@mambalabsdev/mcp-meta-brand-presence-mapper",
+      "@mambalabsdev/mcp-mobile-phone-waterfall-orchestrator",
+      "@mambalabsdev/mcp-multi-platform-social-posts-comments",
+      "@mambalabsdev/mcp-new-company-registrations-feed",
+      "@mambalabsdev/mcp-new-hire-finder",
+      "@mambalabsdev/mcp-news-media-mention-monitor",
+      "@mambalabsdev/mcp-news-site-article-archive",
+      "@mambalabsdev/mcp-newsletter-sponsor-tracker",
+      "@mambalabsdev/mcp-open-tender-rfp-finder",
+      "@mambalabsdev/mcp-outbound-infrastructure-fingerprint",
+      "@mambalabsdev/mcp-page-finder-extractor",
+      "@mambalabsdev/mcp-partner-member-directory-extractor",
+      "@mambalabsdev/mcp-people-finder",
+      "@mambalabsdev/mcp-person-linkedin-url-resolver",
+      "@mambalabsdev/mcp-person-social-footprint-mapper",
+      "@mambalabsdev/mcp-personal-email-to-company-resolver",
+      "@mambalabsdev/mcp-pinterest-brand-presence-mapper",
+      "@mambalabsdev/mcp-podcast-guest-host-finder",
+      "@mambalabsdev/mcp-private-company-funding-history",
+      "@mambalabsdev/mcp-product-hunt-launches-feed",
+      "@mambalabsdev/mcp-property-owner-records",
+      "@mambalabsdev/mcp-public-award-monitor",
+      "@mambalabsdev/mcp-public-company-reporting-window-finder",
+      "@mambalabsdev/mcp-public-feature-board-roadmap-monitor",
+      "@mambalabsdev/mcp-publication-cadence-tracker",
+      "@mambalabsdev/mcp-recent-funding-rounds-feed",
+      "@mambalabsdev/mcp-reddit-brand-presence-mapper",
+      "@mambalabsdev/mcp-reddit-search-thread-scraper",
+      "@mambalabsdev/mcp-research-topic-institutions-authors",
+      "@mambalabsdev/mcp-review-platform-reputation-enricher",
+      "@mambalabsdev/mcp-semrush-domain-metrics",
+      "@mambalabsdev/mcp-sequencer-event-poller",
+      "@mambalabsdev/mcp-server-change-health-monitor",
+      "@mambalabsdev/mcp-shopify-app-store-chrome-web-store-listings",
+      "@mambalabsdev/mcp-site-crawler-links-tables",
+      "@mambalabsdev/mcp-sports-scores-fixtures",
+      "@mambalabsdev/mcp-streaming-subscription-prices-by-country",
+      "@mambalabsdev/mcp-substack-scraper",
+      "@mambalabsdev/mcp-talent-agency-lookup",
+      "@mambalabsdev/mcp-team-page-people-extractor",
+      "@mambalabsdev/mcp-tennis-match-data",
+      "@mambalabsdev/mcp-threads-keyword-search",
+      "@mambalabsdev/mcp-threads-profile-posts",
+      "@mambalabsdev/mcp-ticketmaster-event-prices",
+      "@mambalabsdev/mcp-tiktok-brand-presence-mapper",
+      "@mambalabsdev/mcp-tiktok-video-stats",
+      "@mambalabsdev/mcp-us-import-records-buyer-finder",
+      "@mambalabsdev/mcp-vc-accelerator-portfolio-list-builder",
+      "@mambalabsdev/mcp-wcag-accessibility-audit",
+      "@mambalabsdev/mcp-website-phrase-business-model-classifier",
+      "@mambalabsdev/mcp-website-screenshot-capture",
+      "@mambalabsdev/mcp-website-traffic-rank-estimator",
+      "@mambalabsdev/mcp-whois-domain-lookup",
+      "@mambalabsdev/mcp-workplace-program-detector",
+      "@mambalabsdev/mcp-x-brand-presence-mapper",
+      "@mambalabsdev/mcp-youtube-channel-email-finder",
+      "@mambalabsdev/mcp-youtube-channel-transcript-extractor",
+      "@mambalabsdev/mcp-youtube-video-channel-scraper",
+      "@mambalabsdev/mcp-zillow-listing-details",
+      "@toolsdk-remote/covid-flu-rsv-wastewater-levels-mcp",
+      "@toolsdk-remote/dheerajitbhu-shopify-app-store"
     ]
   },
   "security": {
@@ -4762,7 +4922,9 @@
       "@toolsdk-remote/raceresults-mcp",
       "@toolsdk-remote/sports-odds-api",
       "@toolsdk-remote/depot-fitness",
-      "@toolsdk-remote/splyt"
+      "@toolsdk-remote/splyt",
+      "@toolsdk-remote/golviva",
+      "@toolsdk-remote/nexrex"
     ]
   },
   "support-service-management": {
@@ -4945,7 +5107,11 @@
       "@toolsdk-remote/gc-airport-transfers",
       "@toolsdk-remote/offwegosim",
       "@toolsdk-remote/apex-db",
-      "@toolsdk-remote/govisit-tools"
+      "@toolsdk-remote/govisit-tools",
+      "@toolsdk-remote/agent-flights",
+      "@toolsdk-remote/airport-delays-faa-status-mcp",
+      "@toolsdk-remote/border-wait-times-canada-mexico-mcp",
+      "@toolsdk-remote/fuel-economy-gas-mileage-mpg-mcp"
     ]
   },
   "version-control": {
@@ -5944,7 +6110,10 @@
       "@toolsdk-remote/vibe-manufacturing",
       "@toolsdk-remote/videobackgroundremover-ai",
       "@toolsdk-remote/weft",
-      "sightradar-mcp"
+      "sightradar-mcp",
+      "@toolsdk-remote/frank-ai-researcher",
+      "@toolsdk-remote/pay2gpt",
+      "@toolsdk-remote/powerball-mega-millions-winning-numbers-mcp"
     ]
   }
 }

@@ -61096,5 +61096,681 @@
   "@toolsdk-remote/varosity": {
     "path": "aggregators/varosity.json",
     "category": "aggregators"
+  },
+  "@asitis/mcp": {
+    "path": "developer-tools/asitis.json",
+    "category": "developer-tools"
+  },
+  "@mambalabsdev/mcp-account-hiring-watch": {
+    "path": "search-data-extraction/mambalabsdev-mcp-account-hiring-watch.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-agent-accessibility-auditor": {
+    "path": "search-data-extraction/mambalabsdev-mcp-agent-accessibility-auditor.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-agent-brokerage-resolver": {
+    "path": "search-data-extraction/mambalabsdev-mcp-agent-brokerage-resolver.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-ai-answer-visibility-tracker": {
+    "path": "search-data-extraction/mambalabsdev-mcp-ai-answer-visibility-tracker.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-ai-list-extractor-any-website": {
+    "path": "search-data-extraction/mambalabsdev-mcp-ai-list-extractor-any-website.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-ai-tooling-detector": {
+    "path": "search-data-extraction/mambalabsdev-mcp-ai-tooling-detector.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-amazon-product-price-stock-tracker": {
+    "path": "search-data-extraction/mambalabsdev-mcp-amazon-product-price-stock-tracker.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-amazon-top-reviews-scraper": {
+    "path": "search-data-extraction/mambalabsdev-mcp-amazon-top-reviews-scraper.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-api-change-monitor": {
+    "path": "search-data-extraction/mambalabsdev-mcp-api-change-monitor.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-app-store-google-play-review-monitor": {
+    "path": "search-data-extraction/mambalabsdev-mcp-app-store-google-play-review-monitor.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-ats-jobs-feed": {
+    "path": "search-data-extraction/mambalabsdev-mcp-ats-jobs-feed.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-b2b-prospect-engine": {
+    "path": "search-data-extraction/mambalabsdev-mcp-b2b-prospect-engine.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-b2b-reddit-conversation-monitor": {
+    "path": "search-data-extraction/mambalabsdev-mcp-b2b-reddit-conversation-monitor.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-b2b-social-video-transcripts": {
+    "path": "search-data-extraction/mambalabsdev-mcp-b2b-social-video-transcripts.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-bluesky-brand-presence-mapper": {
+    "path": "search-data-extraction/mambalabsdev-mcp-bluesky-brand-presence-mapper.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-bluesky-posts-scraper": {
+    "path": "search-data-extraction/mambalabsdev-mcp-bluesky-posts-scraper.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-brand-sponsor-finder": {
+    "path": "search-data-extraction/mambalabsdev-mcp-brand-sponsor-finder.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-business-pdf-field-extractor": {
+    "path": "search-data-extraction/mambalabsdev-mcp-business-pdf-field-extractor.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-career-change-signal-engine": {
+    "path": "search-data-extraction/mambalabsdev-mcp-career-change-signal-engine.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-clay-to-instantly-smartlead-push": {
+    "path": "search-data-extraction/mambalabsdev-mcp-clay-to-instantly-smartlead-push.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-company-change-event-feed": {
+    "path": "search-data-extraction/mambalabsdev-mcp-company-change-event-feed.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-company-contact-details-extractor": {
+    "path": "search-data-extraction/mambalabsdev-mcp-company-contact-details-extractor.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-company-discovery-list-builder": {
+    "path": "search-data-extraction/mambalabsdev-mcp-company-discovery-list-builder.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-company-firmographic-enricher": {
+    "path": "search-data-extraction/mambalabsdev-mcp-company-firmographic-enricher.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-company-headcount-estimator": {
+    "path": "search-data-extraction/mambalabsdev-mcp-company-headcount-estimator.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-company-identity-resolver": {
+    "path": "search-data-extraction/mambalabsdev-mcp-company-identity-resolver.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-company-social-presence-mapper": {
+    "path": "search-data-extraction/mambalabsdev-mcp-company-social-presence-mapper.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-competitor-price-stock-changelog-monitor": {
+    "path": "search-data-extraction/mambalabsdev-mcp-competitor-price-stock-changelog-monitor.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-contact-classifier": {
+    "path": "search-data-extraction/mambalabsdev-mcp-contact-classifier.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-contractor-license-lookup": {
+    "path": "search-data-extraction/mambalabsdev-mcp-contractor-license-lookup.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-cookie-consent-audit": {
+    "path": "search-data-extraction/mambalabsdev-mcp-cookie-consent-audit.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-creator-change-monitor": {
+    "path": "search-data-extraction/mambalabsdev-mcp-creator-change-monitor.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-creator-finder": {
+    "path": "search-data-extraction/mambalabsdev-mcp-creator-finder.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-creator-lead-list-all-in-one": {
+    "path": "search-data-extraction/mambalabsdev-mcp-creator-lead-list-all-in-one.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-creator-profile-reader": {
+    "path": "search-data-extraction/mambalabsdev-mcp-creator-profile-reader.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-domain-deliverability-checker": {
+    "path": "search-data-extraction/mambalabsdev-mcp-domain-deliverability-checker.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-domain-to-linkedin-url-resolver": {
+    "path": "search-data-extraction/mambalabsdev-mcp-domain-to-linkedin-url-resolver.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-dutch-rental-listings": {
+    "path": "search-data-extraction/mambalabsdev-mcp-dutch-rental-listings.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-ecommerce-platform-profiler": {
+    "path": "search-data-extraction/mambalabsdev-mcp-ecommerce-platform-profiler.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-ecommerce-store-discovery": {
+    "path": "search-data-extraction/mambalabsdev-mcp-ecommerce-store-discovery.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-email-verifier": {
+    "path": "search-data-extraction/mambalabsdev-mcp-email-verifier.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-email-waterfall-orchestrator": {
+    "path": "search-data-extraction/mambalabsdev-mcp-email-waterfall-orchestrator.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-event-presence-index": {
+    "path": "search-data-extraction/mambalabsdev-mcp-event-presence-index.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-eventbrite-events-scraper": {
+    "path": "search-data-extraction/mambalabsdev-mcp-eventbrite-events-scraper.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-expert-witness-directory": {
+    "path": "search-data-extraction/mambalabsdev-mcp-expert-witness-directory.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-facebook-posts-scraper": {
+    "path": "search-data-extraction/mambalabsdev-mcp-facebook-posts-scraper.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-facebook-reels-scraper": {
+    "path": "search-data-extraction/mambalabsdev-mcp-facebook-reels-scraper.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-funding-investor-record": {
+    "path": "search-data-extraction/mambalabsdev-mcp-funding-investor-record.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-funding-press-signal-scanner": {
+    "path": "search-data-extraction/mambalabsdev-mcp-funding-press-signal-scanner.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-github-followers-following-export": {
+    "path": "search-data-extraction/mambalabsdev-mcp-github-followers-following-export.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-github-organization-signal-scanner": {
+    "path": "search-data-extraction/mambalabsdev-mcp-github-organization-signal-scanner.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-google-ads-transparency-monitor": {
+    "path": "search-data-extraction/mambalabsdev-mcp-google-ads-transparency-monitor.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-google-maps-places-scraper": {
+    "path": "search-data-extraction/mambalabsdev-mcp-google-maps-places-scraper.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-google-trends-scraper": {
+    "path": "search-data-extraction/mambalabsdev-mcp-google-trends-scraper.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-gtm-hiring-signal-scraper": {
+    "path": "search-data-extraction/mambalabsdev-mcp-gtm-hiring-signal-scraper.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-gtm-job-discovery": {
+    "path": "search-data-extraction/mambalabsdev-mcp-gtm-job-discovery.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-gtm-signals-aggregator": {
+    "path": "search-data-extraction/mambalabsdev-mcp-gtm-signals-aggregator.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-gtm-suite": {
+    "path": "search-data-extraction/mambalabsdev-mcp-gtm-suite.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-gtm-tech-stack-signal-scraper": {
+    "path": "search-data-extraction/mambalabsdev-mcp-gtm-tech-stack-signal-scraper.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-healthcare-provider-npi-enricher": {
+    "path": "search-data-extraction/mambalabsdev-mcp-healthcare-provider-npi-enricher.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-icp-fit-scorer": {
+    "path": "search-data-extraction/mambalabsdev-mcp-icp-fit-scorer.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-integration-marketplace-presence-mapper": {
+    "path": "search-data-extraction/mambalabsdev-mcp-integration-marketplace-presence-mapper.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-job-board-keyword-signal-scanner": {
+    "path": "search-data-extraction/mambalabsdev-mcp-job-board-keyword-signal-scanner.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-job-change-tracker": {
+    "path": "search-data-extraction/mambalabsdev-mcp-job-change-tracker.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-journalist-media-list-builder": {
+    "path": "search-data-extraction/mambalabsdev-mcp-journalist-media-list-builder.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-launch-directory-list-builder": {
+    "path": "search-data-extraction/mambalabsdev-mcp-launch-directory-list-builder.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-lead-file-import-checker": {
+    "path": "search-data-extraction/mambalabsdev-mcp-lead-file-import-checker.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-legal-entity-resolver": {
+    "path": "search-data-extraction/mambalabsdev-mcp-legal-entity-resolver.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-link-in-bio-newsletter-checker": {
+    "path": "search-data-extraction/mambalabsdev-mcp-link-in-bio-newsletter-checker.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-linkedin-company-page-details": {
+    "path": "search-data-extraction/mambalabsdev-mcp-linkedin-company-page-details.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-linkedin-company-presence-mapper": {
+    "path": "search-data-extraction/mambalabsdev-mcp-linkedin-company-presence-mapper.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-linkedin-jobs-feed": {
+    "path": "search-data-extraction/mambalabsdev-mcp-linkedin-jobs-feed.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-linkedin-post-engager-capture": {
+    "path": "search-data-extraction/mambalabsdev-mcp-linkedin-post-engager-capture.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-local-business-lead-builder": {
+    "path": "search-data-extraction/mambalabsdev-mcp-local-business-lead-builder.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-local-rank-map-pack-tracker": {
+    "path": "search-data-extraction/mambalabsdev-mcp-local-rank-map-pack-tracker.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-lookalike-company-finder": {
+    "path": "search-data-extraction/mambalabsdev-mcp-lookalike-company-finder.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-manufacturer-supplier-finder": {
+    "path": "search-data-extraction/mambalabsdev-mcp-manufacturer-supplier-finder.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-media-url-transcriber": {
+    "path": "search-data-extraction/mambalabsdev-mcp-media-url-transcriber.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-meta-ad-library-monitor": {
+    "path": "search-data-extraction/mambalabsdev-mcp-meta-ad-library-monitor.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-meta-brand-presence-mapper": {
+    "path": "search-data-extraction/mambalabsdev-mcp-meta-brand-presence-mapper.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-mobile-phone-waterfall-orchestrator": {
+    "path": "search-data-extraction/mambalabsdev-mcp-mobile-phone-waterfall-orchestrator.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-multi-platform-social-posts-comments": {
+    "path": "search-data-extraction/mambalabsdev-mcp-multi-platform-social-posts-comments.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-new-company-registrations-feed": {
+    "path": "search-data-extraction/mambalabsdev-mcp-new-company-registrations-feed.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-new-hire-finder": {
+    "path": "search-data-extraction/mambalabsdev-mcp-new-hire-finder.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-news-media-mention-monitor": {
+    "path": "search-data-extraction/mambalabsdev-mcp-news-media-mention-monitor.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-news-site-article-archive": {
+    "path": "search-data-extraction/mambalabsdev-mcp-news-site-article-archive.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-newsletter-sponsor-tracker": {
+    "path": "search-data-extraction/mambalabsdev-mcp-newsletter-sponsor-tracker.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-open-tender-rfp-finder": {
+    "path": "search-data-extraction/mambalabsdev-mcp-open-tender-rfp-finder.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-outbound-infrastructure-fingerprint": {
+    "path": "search-data-extraction/mambalabsdev-mcp-outbound-infrastructure-fingerprint.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-page-finder-extractor": {
+    "path": "search-data-extraction/mambalabsdev-mcp-page-finder-extractor.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-partner-member-directory-extractor": {
+    "path": "search-data-extraction/mambalabsdev-mcp-partner-member-directory-extractor.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-people-finder": {
+    "path": "search-data-extraction/mambalabsdev-mcp-people-finder.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-person-linkedin-url-resolver": {
+    "path": "search-data-extraction/mambalabsdev-mcp-person-linkedin-url-resolver.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-person-social-footprint-mapper": {
+    "path": "search-data-extraction/mambalabsdev-mcp-person-social-footprint-mapper.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-personal-email-to-company-resolver": {
+    "path": "search-data-extraction/mambalabsdev-mcp-personal-email-to-company-resolver.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-pinterest-brand-presence-mapper": {
+    "path": "search-data-extraction/mambalabsdev-mcp-pinterest-brand-presence-mapper.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-podcast-guest-host-finder": {
+    "path": "search-data-extraction/mambalabsdev-mcp-podcast-guest-host-finder.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-private-company-funding-history": {
+    "path": "search-data-extraction/mambalabsdev-mcp-private-company-funding-history.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-product-hunt-launches-feed": {
+    "path": "search-data-extraction/mambalabsdev-mcp-product-hunt-launches-feed.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-property-owner-records": {
+    "path": "search-data-extraction/mambalabsdev-mcp-property-owner-records.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-public-award-monitor": {
+    "path": "search-data-extraction/mambalabsdev-mcp-public-award-monitor.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-public-company-reporting-window-finder": {
+    "path": "search-data-extraction/mambalabsdev-mcp-public-company-reporting-window-finder.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-public-feature-board-roadmap-monitor": {
+    "path": "search-data-extraction/mambalabsdev-mcp-public-feature-board-roadmap-monitor.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-publication-cadence-tracker": {
+    "path": "search-data-extraction/mambalabsdev-mcp-publication-cadence-tracker.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-recent-funding-rounds-feed": {
+    "path": "search-data-extraction/mambalabsdev-mcp-recent-funding-rounds-feed.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-reddit-brand-presence-mapper": {
+    "path": "search-data-extraction/mambalabsdev-mcp-reddit-brand-presence-mapper.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-reddit-search-thread-scraper": {
+    "path": "search-data-extraction/mambalabsdev-mcp-reddit-search-thread-scraper.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-research-topic-institutions-authors": {
+    "path": "search-data-extraction/mambalabsdev-mcp-research-topic-institutions-authors.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-review-platform-reputation-enricher": {
+    "path": "search-data-extraction/mambalabsdev-mcp-review-platform-reputation-enricher.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-semrush-domain-metrics": {
+    "path": "search-data-extraction/mambalabsdev-mcp-semrush-domain-metrics.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-sequencer-event-poller": {
+    "path": "search-data-extraction/mambalabsdev-mcp-sequencer-event-poller.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-server-change-health-monitor": {
+    "path": "search-data-extraction/mambalabsdev-mcp-server-change-health-monitor.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-shopify-app-store-chrome-web-store-listings": {
+    "path": "search-data-extraction/mambalabsdev-mcp-shopify-app-store-chrome-web-store-listings.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-site-crawler-links-tables": {
+    "path": "search-data-extraction/mambalabsdev-mcp-site-crawler-links-tables.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-sports-scores-fixtures": {
+    "path": "search-data-extraction/mambalabsdev-mcp-sports-scores-fixtures.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-streaming-subscription-prices-by-country": {
+    "path": "search-data-extraction/mambalabsdev-mcp-streaming-subscription-prices-by-country.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-substack-scraper": {
+    "path": "search-data-extraction/mambalabsdev-mcp-substack-scraper.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-talent-agency-lookup": {
+    "path": "search-data-extraction/mambalabsdev-mcp-talent-agency-lookup.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-team-page-people-extractor": {
+    "path": "search-data-extraction/mambalabsdev-mcp-team-page-people-extractor.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-tennis-match-data": {
+    "path": "search-data-extraction/mambalabsdev-mcp-tennis-match-data.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-threads-keyword-search": {
+    "path": "search-data-extraction/mambalabsdev-mcp-threads-keyword-search.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-threads-profile-posts": {
+    "path": "search-data-extraction/mambalabsdev-mcp-threads-profile-posts.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-ticketmaster-event-prices": {
+    "path": "search-data-extraction/mambalabsdev-mcp-ticketmaster-event-prices.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-tiktok-brand-presence-mapper": {
+    "path": "search-data-extraction/mambalabsdev-mcp-tiktok-brand-presence-mapper.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-tiktok-video-stats": {
+    "path": "search-data-extraction/mambalabsdev-mcp-tiktok-video-stats.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-us-import-records-buyer-finder": {
+    "path": "search-data-extraction/mambalabsdev-mcp-us-import-records-buyer-finder.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-vc-accelerator-portfolio-list-builder": {
+    "path": "search-data-extraction/mambalabsdev-mcp-vc-accelerator-portfolio-list-builder.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-wcag-accessibility-audit": {
+    "path": "search-data-extraction/mambalabsdev-mcp-wcag-accessibility-audit.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-website-phrase-business-model-classifier": {
+    "path": "search-data-extraction/mambalabsdev-mcp-website-phrase-business-model-classifier.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-website-screenshot-capture": {
+    "path": "search-data-extraction/mambalabsdev-mcp-website-screenshot-capture.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-website-traffic-rank-estimator": {
+    "path": "search-data-extraction/mambalabsdev-mcp-website-traffic-rank-estimator.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-whois-domain-lookup": {
+    "path": "search-data-extraction/mambalabsdev-mcp-whois-domain-lookup.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-workplace-program-detector": {
+    "path": "search-data-extraction/mambalabsdev-mcp-workplace-program-detector.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-x-brand-presence-mapper": {
+    "path": "search-data-extraction/mambalabsdev-mcp-x-brand-presence-mapper.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-youtube-channel-email-finder": {
+    "path": "search-data-extraction/mambalabsdev-mcp-youtube-channel-email-finder.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-youtube-channel-transcript-extractor": {
+    "path": "search-data-extraction/mambalabsdev-mcp-youtube-channel-transcript-extractor.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-youtube-video-channel-scraper": {
+    "path": "search-data-extraction/mambalabsdev-mcp-youtube-video-channel-scraper.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-zillow-listing-details": {
+    "path": "search-data-extraction/mambalabsdev-mcp-zillow-listing-details.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/agent-flights": {
+    "path": "travel-transportation/agent-flights.json",
+    "category": "travel-transportation"
+  },
+  "@toolsdk-remote/agentmsgr": {
+    "path": "communication/agentmsgr.json",
+    "category": "communication"
+  },
+  "@toolsdk-remote/airport-delays-faa-status-mcp": {
+    "path": "travel-transportation/airport-delays-faa-status-mcp.json",
+    "category": "travel-transportation"
+  },
+  "@toolsdk-remote/blazarforce-polygon": {
+    "path": "finance-fintech/blazarforce-polygon.json",
+    "category": "finance-fintech"
+  },
+  "@toolsdk-remote/border-wait-times-canada-mexico-mcp": {
+    "path": "travel-transportation/border-wait-times-canada-mexico-mcp.json",
+    "category": "travel-transportation"
+  },
+  "@toolsdk-remote/com-stalkchain-data": {
+    "path": "finance-fintech/stalkchain-data.json",
+    "category": "finance-fintech"
+  },
+  "@toolsdk-remote/connecty": {
+    "path": "monitoring/connecty.json",
+    "category": "monitoring"
+  },
+  "@toolsdk-remote/covid-flu-rsv-wastewater-levels-mcp": {
+    "path": "search-data-extraction/covid-flu-rsv-wastewater-levels-mcp.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/craftwork": {
+    "path": "art-and-culture/craftwork.json",
+    "category": "art-and-culture"
+  },
+  "@toolsdk-remote/dheerajitbhu-competitor-ads": {
+    "path": "marketing/dheerajitbhu-competitor-ads.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/dheerajitbhu-shopify-app-store": {
+    "path": "search-data-extraction/dheerajitbhu-shopify-app-store.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/dial-by-behaf": {
+    "path": "communication/dial-by-behaf.json",
+    "category": "communication"
+  },
+  "@toolsdk-remote/flood-zone-lookup-fema-flood-map-mcp": {
+    "path": "location-services/flood-zone-lookup-fema-flood-map-mcp.json",
+    "category": "location-services"
+  },
+  "@toolsdk-remote/frank-ai-researcher": {
+    "path": "other-tools-and-integrations/frank-ai-researcher.json",
+    "category": "other-tools-and-integrations"
+  },
+  "@toolsdk-remote/fuel-economy-gas-mileage-mpg-mcp": {
+    "path": "travel-transportation/fuel-economy-gas-mileage-mpg-mcp.json",
+    "category": "travel-transportation"
+  },
+  "@toolsdk-remote/gitranks-contribute": {
+    "path": "developer-tools/gitranks-contribute.json",
+    "category": "developer-tools"
+  },
+  "@toolsdk-remote/golviva": {
+    "path": "sports/golviva.json",
+    "category": "sports"
+  },
+  "@toolsdk-remote/improvado": {
+    "path": "marketing/toolsdk-remote-improvado.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/io-github-bosco-labs-bosco-labs-data": {
+    "path": "finance-fintech/bosco-labs-data-free.json",
+    "category": "finance-fintech"
+  },
+  "@toolsdk-remote/last-frost-date-hardiness-zone-mcp": {
+    "path": "location-services/last-frost-date-hardiness-zone-mcp.json",
+    "category": "location-services"
+  },
+  "@toolsdk-remote/local-seo-data": {
+    "path": "marketing/local-seo-data.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/maru-japan-hands": {
+    "path": "uncategorized/maru-japan-hands.json",
+    "category": "uncategorized"
+  },
+  "@toolsdk-remote/nexrex": {
+    "path": "sports/nexrex.json",
+    "category": "sports"
+  },
+  "@toolsdk-remote/pay2gpt": {
+    "path": "other-tools-and-integrations/pay2gpt.json",
+    "category": "other-tools-and-integrations"
+  },
+  "@toolsdk-remote/poptin-mcp": {
+    "path": "marketing/poptin-mcp.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/powerball-mega-millions-winning-numbers-mcp": {
+    "path": "other-tools-and-integrations/powerball-mega-millions-winning-numbers-mcp.json",
+    "category": "other-tools-and-integrations"
+  },
+  "@toolsdk-remote/prime-rate-sofr-fed-funds-rate-today-mcp": {
+    "path": "finance-fintech/prime-rate-sofr-fed-funds-rate-today-mcp.json",
+    "category": "finance-fintech"
+  },
+  "@toolsdk-remote/ripseek": {
+    "path": "gaming/ripseek.json",
+    "category": "gaming"
+  },
+  "@toolsdk-remote/sh-while-while": {
+    "path": "cloud-platforms/while-sh.json",
+    "category": "cloud-platforms"
+  },
+  "@toolsdk-remote/tday": {
+    "path": "developer-tools/tday.json",
+    "category": "developer-tools"
   }
 }
