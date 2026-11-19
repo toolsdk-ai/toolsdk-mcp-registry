@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "Shopify App Store Search",
+  "packageName": "@toolsdk-remote/dheerajitbhu-shopify-app-store",
+  "description": "Search the Shopify App Store by keyword, category slug or app handle/URL and return one typed row per app (handle, name, developer, rating, review count, pricing label, icon, URL; optional details add description, categories, Built for Shopify). No login. Hosted on Apify's MCP server; the tool is the pay-per-event Apify Actor dheerajitbhu/shopify-app-store. Sign in with an Apify account (OAuth); runs are billed to that account.",
+  "url": "https://apify.com/dheerajitbhu/shopify-app-store?utm_source=toolsdk&utm_medium=directory&utm_campaign=shopify-app-store",
+  "readme": "https://apify.com/dheerajitbhu/shopify-app-store?utm_source=toolsdk&utm_medium=directory&utm_campaign=shopify-app-store",
+  "runtime": "node",
+  "author": "Integration Yard",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=dheerajitbhu/shopify-app-store",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
