@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Converter Studio",
+  "packageName": "@toolsdk-remote/converter-studio",
+  "description": "Hosted file converter for video, audio, images, PDFs, documents, e-books, subtitles, data and archives (67 formats). Give it a link or a file and get a download link back, kept for 6 hours. Tools: list_formats, convert, create_upload, get_conversion, confirm_conversion and get_account. Every tool except list_formats needs a Converter Studio API key sent as an Authorization: Bearer header (create one at https://converter.studio/account#api-keys; free accounts get 13 credits a day). Without a key the server lists its tools and answers list_formats only.",
+  "url": "https://github.com/tariksucu/converter-studio",
+  "readme": "https://converter.studio/developers",
+  "runtime": "node",
+  "author": "Converter Studio",
+  "logo": "https://raw.githubusercontent.com/tariksucu/converter-studio/main/assets/icon.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://converter.studio/api/mcp"
+    }
+  ]
+}
