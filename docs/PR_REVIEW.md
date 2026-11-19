@@ -84,6 +84,18 @@ and GitHub token permissions. No scheduled unattended merge is configured.
 Formatting CI installs only pinned Biome 2.2.2 outside the project and checks changed files without
 writing fixes. Existing formatting debt is not rewritten as part of package submission review.
 
+### Submission Star Reminder
+
+The **Submission Star Reminder** workflow checks the PR author's actual presence in the public,
+paginated Stargazer list when a package submission is opened, updated, reopened, or marked ready.
+It is informational: a missing Star or an API failure does not fail validation or prevent merging.
+Missing Stars receive one bot comment, updated in place on subsequent checks. Authors who already
+starred receive no new comment. API failures are reported as unknown in the run summary.
+
+Starring does not itself trigger PR workflows. Maintainers can rerun the workflow or use its manual
+`pr_number` input on `main` to refresh a reminder after the author stars. The workflow loads only
+trusted default-branch code, including for fork submissions, and never executes submitted packages.
+
 ### Individual Review
 
 The deterministic reviewer may validate independent pull requests in parallel against `main`. It
