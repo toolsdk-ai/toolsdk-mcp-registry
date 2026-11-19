@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Poptin MCP",
+  "packageName": "@toolsdk-remote/poptin-mcp",
+  "description": "Official Poptin MCP server for email campaigns, popup analytics, managing existing popups and forms, contacts, and audience segmentation. Requires a Poptin account and OAuth sign-in.",
+  "url": "https://github.com/Poptin-LTD/Poptin-MCP",
+  "readme": "https://developers.poptin.com/docs/mcp",
+  "runtime": "node",
+  "author": "Poptin",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.popt.in/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp:use"]
+      }
+    }
+  ]
+}
