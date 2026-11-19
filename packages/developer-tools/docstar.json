@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "DocStar",
+  "packageName": "@toolsdk-remote/docstar",
+  "description": "DocStar turns your product's API into published docs that your users' AI assistants can read and call. Your AI assistant can document each endpoint from your code, publish the docs and give you one link to share; your users' assistants then look up any endpoint and call your API with the exact URLs, fields and auth from your docs. Reading docs needs no account; changes need DocStar sign-in (OAuth).",
+  "url": "https://github.com/swayammaheshwari/docstar-mcp",
+  "readme": "https://github.com/swayammaheshwari/docstar-mcp#readme",
+  "runtime": "node",
+  "env": {},
+  "logo": "https://stuff.thingsofbrand.com/docstar.io/images/imgd_docstar.png",
+  "author": "Walkover",
+  "license": "MIT",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.docstar.io/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
