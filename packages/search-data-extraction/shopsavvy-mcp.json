@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "ShopSavvy",
+  "packageName": "@toolsdk-remote/shopsavvy-mcp",
+  "description": "Product lookup by name, barcode, ASIN or URL, current prices across tens of thousands of retailers, price history and buying guides for 30M+ products. No signup required.",
+  "url": "https://github.com/shopsavvy/shopsavvy-mcp-server",
+  "readme": "https://github.com/shopsavvy/shopsavvy-mcp-server#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.shopsavvy.com/mcp"
+    }
+  ]
+}
