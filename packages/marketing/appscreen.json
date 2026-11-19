@@ -2,7 +2,7 @@
   "type": "mcp-server",
   "name": "AppScreen",
   "packageName": "@toolsdk-remote/appscreen",
-  "description": "Design App Store and Google Play screenshots in the AppScreen browser editor, live in your open tab. Requires OAuth sign-in with an AppScreen Pro account.",
+  "description": "Design App Store and Google Play screenshots in the AppScreen browser editor, live in your open tab: phone frames, captions, backgrounds and store-size PNG export. Sign in with OAuth.",
   "url": "https://appscreen.pro",
   "readme": "https://appscreen.pro/mcp",
   "logo": "https://appscreen.pro/assets/icon-512.png",
