@@ -61772,5 +61772,41 @@
   "@toolsdk-remote/tday": {
     "path": "developer-tools/tday.json",
     "category": "developer-tools"
+  },
+  "@rentandrugshield/mcp-server": {
+    "path": "finance-fintech/solana-rent-rug-shield.json",
+    "category": "finance-fintech"
+  },
+  "@toolsdk-remote/clippertask": {
+    "path": "marketing/clippertask.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/mexcheck": {
+    "path": "finance-fintech/mexcheck.json",
+    "category": "finance-fintech"
+  },
+  "@toolsdk-remote/octopost": {
+    "path": "marketing/octopost.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/onlychili": {
+    "path": "art-and-culture/onlychili.json",
+    "category": "art-and-culture"
+  },
+  "@toolsdk-remote/runheed": {
+    "path": "monitoring/runheed.json",
+    "category": "monitoring"
+  },
+  "@toolsdk-remote/runlater": {
+    "path": "developer-tools/runlater.json",
+    "category": "developer-tools"
+  },
+  "@toolsdk-remote/shopsavvy-mcp": {
+    "path": "search-data-extraction/shopsavvy-mcp.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/tapline": {
+    "path": "search-data-extraction/tapline.json",
+    "category": "search-data-extraction"
   }
 }

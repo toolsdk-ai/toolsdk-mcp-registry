@@ -848,7 +848,8 @@
       "@popnow/mcp",
       "@toolsdk-remote/com-vidmoat-vidmoat",
       "@toolsdk-remote/honeyvid",
-      "@toolsdk-remote/craftwork"
+      "@toolsdk-remote/craftwork",
+      "@toolsdk-remote/onlychili"
     ]
   },
   "browser-automation": {
@@ -2579,7 +2580,8 @@
       "@toolsdk-remote/systra-tools",
       "@asitis/mcp",
       "@toolsdk-remote/gitranks-contribute",
-      "@toolsdk-remote/tday"
+      "@toolsdk-remote/tday",
+      "@toolsdk-remote/runlater"
     ]
   },
   "data-science-tools": {
@@ -3289,7 +3291,9 @@
       "@toolsdk-remote/blazarforce-polygon",
       "@toolsdk-remote/com-stalkchain-data",
       "@toolsdk-remote/io-github-bosco-labs-bosco-labs-data",
-      "@toolsdk-remote/prime-rate-sofr-fed-funds-rate-today-mcp"
+      "@toolsdk-remote/prime-rate-sofr-fed-funds-rate-today-mcp",
+      "@rentandrugshield/mcp-server",
+      "@toolsdk-remote/mexcheck"
     ]
   },
   "gaming": {
@@ -3918,7 +3922,9 @@
       "@toolsdk-remote/dheerajitbhu-competitor-ads",
       "@toolsdk-remote/improvado",
       "@toolsdk-remote/local-seo-data",
-      "@toolsdk-remote/poptin-mcp"
+      "@toolsdk-remote/poptin-mcp",
+      "@toolsdk-remote/clippertask",
+      "@toolsdk-remote/octopost"
     ]
   },
   "monitoring": {
@@ -4008,7 +4014,8 @@
       "@toolsdk-remote/mcpkit-yandex-metrika",
       "@toolsdk-remote/pingstack",
       "@toolsdk-remote/telemio-observability",
-      "@toolsdk-remote/connecty"
+      "@toolsdk-remote/connecty",
+      "@toolsdk-remote/runheed"
     ]
   },
   "search-data-extraction": {
@@ -4707,7 +4714,9 @@
       "@mambalabsdev/mcp-youtube-video-channel-scraper",
       "@mambalabsdev/mcp-zillow-listing-details",
       "@toolsdk-remote/covid-flu-rsv-wastewater-levels-mcp",
-      "@toolsdk-remote/dheerajitbhu-shopify-app-store"
+      "@toolsdk-remote/dheerajitbhu-shopify-app-store",
+      "@toolsdk-remote/shopsavvy-mcp",
+      "@toolsdk-remote/tapline"
     ]
   },
   "security": {
