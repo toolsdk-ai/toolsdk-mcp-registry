@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "name": "Skillry MCP",
+  "packageName": "skillry-cli",
+  "packageVersion": "0.2.2",
+  "binArgs": ["mcp"],
+  "description": "Search, preview, and install curated creative Agent Skills (slides, websites, images, launch videos) directly inside Claude Code, Codex, Cursor, VS Code, Gemini CLI, and Claude Desktop.",
+  "url": "https://github.com/yihui-dev/skillry-mcp",
+  "readme": "https://skillry.dev/learn/reference/skillry-mcp",
+  "logo": "https://skillry.dev/apple-touch-icon.png",
+  "author": "yihui-dev",
+  "license": "MIT",
+  "runtime": "node",
+  "env": {}
+}
