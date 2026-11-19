@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "News Site Article Archive",
+  "packageName": "@mambalabsdev/mcp-news-site-article-archive",
+  "description": "MCP server for News Site Article Archive. Full article text and dates from named news sites across a past date range. No code, no AI. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-news-site-article-archive",
+  "readme": "https://github.com/mambalabsdev/mcp-news-site-article-archive#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "LinkedIn Company Page Details",
+  "packageName": "@mambalabsdev/mcp-linkedin-company-page-details",
+  "description": "MCP server for LinkedIn Company Page Details: company size, industry, website, and followers from public LinkedIn pages.",
+  "url": "https://github.com/mambalabsdev/mcp-linkedin-company-page-details",
+  "readme": "https://github.com/mambalabsdev/mcp-linkedin-company-page-details#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

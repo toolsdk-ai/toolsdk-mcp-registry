@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "AI List Extractor Any Website",
+  "packageName": "@mambalabsdev/mcp-ai-list-extractor-any-website",
+  "description": "MCP server for AI List Extractor for Any Website. Extract item lists from public web pages on your own LLM key. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-ai-list-extractor-any-website",
+  "readme": "https://github.com/mambalabsdev/mcp-ai-list-extractor-any-website#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

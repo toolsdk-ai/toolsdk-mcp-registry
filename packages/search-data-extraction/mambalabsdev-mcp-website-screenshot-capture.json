@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Website Screenshot Capture",
+  "packageName": "@mambalabsdev/mcp-website-screenshot-capture",
+  "description": "MCP server for Website Screenshot Capture. Screenshot a list of URLs as PNG or JPEG, full page or window, with the final URL, status, and title per page. Runs on Apify.",
+  "url": "https://github.com/mambalabsdev/mcp-website-screenshot-capture",
+  "readme": "https://github.com/mambalabsdev/mcp-website-screenshot-capture#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

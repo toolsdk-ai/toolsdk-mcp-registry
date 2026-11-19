@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Amazon Top Reviews Scraper",
+  "packageName": "@mambalabsdev/mcp-amazon-top-reviews-scraper",
+  "description": "MCP server for Amazon Top Reviews Scraper. Top Amazon reviews and rating summary by ASIN on 8 marketplaces outside the US. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-amazon-top-reviews-scraper",
+  "readme": "https://github.com/mambalabsdev/mcp-amazon-top-reviews-scraper#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

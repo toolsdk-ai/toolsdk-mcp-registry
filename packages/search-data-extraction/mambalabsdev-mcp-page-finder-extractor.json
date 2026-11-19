@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Page Finder and Extractor",
+  "packageName": "@mambalabsdev/mcp-page-finder-extractor",
+  "description": "MCP server for the Mamba Labs Page Finder and Extractor actor on Apify. Company domain in, the named page type located on that company's own website out, with the method that found it and a confidence for that method.",
+  "url": "https://github.com/mambalabsdev/mcp-page-finder-extractor",
+  "readme": "https://github.com/mambalabsdev/mcp-page-finder-extractor#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Tennis Match Data",
+  "packageName": "@mambalabsdev/mcp-tennis-match-data",
+  "description": "MCP server for Tennis Match Data. ATP and WTA results, schedules, and rankings by date as flat rows. Runs on Apify.",
+  "url": "https://github.com/mambalabsdev/mcp-tennis-match-data",
+  "readme": "https://github.com/mambalabsdev/mcp-tennis-match-data#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

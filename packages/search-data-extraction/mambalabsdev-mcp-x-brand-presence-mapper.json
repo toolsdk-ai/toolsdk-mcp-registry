@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "X Brand Presence Mapper",
+  "packageName": "@mambalabsdev/mcp-x-brand-presence-mapper",
+  "description": "MCP server for the Mamba Labs X Twitter Brand Presence Mapper actor on Apify. Resolve a company domain to its X handle, profile URL and follower metrics.",
+  "url": "https://github.com/mambalabsdev/mcp-x-brand-presence-mapper",
+  "readme": "https://github.com/mambalabsdev/mcp-x-brand-presence-mapper#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

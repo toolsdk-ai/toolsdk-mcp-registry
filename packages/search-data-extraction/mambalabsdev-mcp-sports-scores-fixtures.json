@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Sports Scores and Fixtures",
+  "packageName": "@mambalabsdev/mcp-sports-scores-fixtures",
+  "description": "MCP server for Sports Scores and Fixtures. Scores, live status, and fixtures by date for NBA, NFL, NHL, MLB, soccer, and UFC. Runs on Apify.",
+  "url": "https://github.com/mambalabsdev/mcp-sports-scores-fixtures",
+  "readme": "https://github.com/mambalabsdev/mcp-sports-scores-fixtures#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

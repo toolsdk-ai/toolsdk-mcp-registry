@@ -1,0 +1,38 @@
+{
+  "type": "mcp-server",
+  "name": "Mobile Phone Waterfall Orchestrator",
+  "packageName": "@mambalabsdev/mcp-mobile-phone-waterfall-orchestrator",
+  "description": "MCP server for Mobile Phone Waterfall. Find mobile phone numbers by chaining your own Prospeo, Lusha, ContactOut, and FullEnrich keys: one row per contact with the number, line type, country, Do Not Call flag, and the provider credits used. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-mobile-phone-waterfall-orchestrator",
+  "readme": "https://github.com/mambalabsdev/mcp-mobile-phone-waterfall-orchestrator#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    },
+    "PROSPEO_API_KEY": {
+      "description": "Optional. Your Prospeo API key.",
+      "required": false,
+      "secret": true
+    },
+    "LUSHA_API_KEY": {
+      "description": "Optional. Your Lusha API key (V3).",
+      "required": false,
+      "secret": true
+    },
+    "CONTACTOUT_API_KEY": {
+      "description": "Optional. Your ContactOut API token.",
+      "required": false,
+      "secret": true
+    },
+    "FULLENRICH_API_KEY": {
+      "description": "Optional. Your FullEnrich API key.",
+      "required": false,
+      "secret": true
+    }
+  }
+}

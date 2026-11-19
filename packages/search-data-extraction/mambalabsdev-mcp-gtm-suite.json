@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Mamba Labs GTM Suite",
+  "packageName": "@mambalabsdev/mcp-gtm-suite",
+  "description": "MCP server for the Mamba Labs GTM Suite. One server exposing twenty one account-intelligence actors on Apify as tools: identity, firmographics, social presence, hiring, tech stack, job boards, funding, change feed, LinkedIn, signals, ICP scoring, and more.",
+  "url": "https://github.com/mambalabsdev/mcp-gtm-suite",
+  "readme": "https://github.com/mambalabsdev/mcp-gtm-suite#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Lead File Import Checker",
+  "packageName": "@mambalabsdev/mcp-lead-file-import-checker",
+  "description": "MCP server for Lead File Import Checker. Check a lead list before a CRM or sequencer import: duplicates, email syntax, free, role, and disposable addresses, MX, parked sites, company match. One verdict per row. Runs on Apify.",
+  "url": "https://github.com/mambalabsdev/mcp-lead-file-import-checker",
+  "readme": "https://github.com/mambalabsdev/mcp-lead-file-import-checker#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

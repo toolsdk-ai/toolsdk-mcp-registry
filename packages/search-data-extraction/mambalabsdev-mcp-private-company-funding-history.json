@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Private Company Funding History",
+  "packageName": "@mambalabsdev/mcp-private-company-funding-history",
+  "description": "MCP server for Private Company Funding History. Every SEC Form D and Form C funding round a private US company filed, from EDGAR. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-private-company-funding-history",
+  "readme": "https://github.com/mambalabsdev/mcp-private-company-funding-history#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

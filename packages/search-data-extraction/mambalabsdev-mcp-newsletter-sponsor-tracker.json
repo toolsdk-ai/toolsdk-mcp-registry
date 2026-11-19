@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Newsletter Sponsor Tracker",
+  "packageName": "@mambalabsdev/mcp-newsletter-sponsor-tracker",
+  "description": "MCP server for Newsletter Sponsor Tracker. Find who sponsors a newsletter, or which newsletters a brand sponsors, from public Substack, beehiiv, and RSS archives: sponsor, domain, placements, and issue links. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-newsletter-sponsor-tracker",
+  "readme": "https://github.com/mambalabsdev/mcp-newsletter-sponsor-tracker#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

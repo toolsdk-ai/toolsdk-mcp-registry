@@ -1,0 +1,28 @@
+{
+  "type": "mcp-server",
+  "name": "Person Social Footprint Mapper",
+  "packageName": "@mambalabsdev/mcp-person-social-footprint-mapper",
+  "description": "MCP server for Person Social Footprint Mapper. Find a person's public GitHub, Bluesky, personal site, Substack, and X profiles from their name and company domain, with a match confidence per platform. No emails or phones. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-person-social-footprint-mapper",
+  "readme": "https://github.com/mambalabsdev/mcp-person-social-footprint-mapper#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    },
+    "GITHUB_TOKEN": {
+      "description": "Optional. Your own free GitHub token, for larger batches",
+      "required": false,
+      "secret": true
+    },
+    "X_BEARER_TOKEN": {
+      "description": "Optional. Your own X API bearer token; without it X is skipped",
+      "required": false,
+      "secret": true
+    }
+  }
+}

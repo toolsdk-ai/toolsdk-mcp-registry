@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Prospect Engine",
+  "packageName": "@mambalabsdev/mcp-b2b-prospect-engine",
+  "description": "MCP server for the Mamba Labs Prospect Engine actor on Apify. Turns a domain or a hiring keyword into enriched company records and verified contacts, with ICP scoring and per field provenance.",
+  "url": "https://github.com/mambalabsdev/mcp-b2b-prospect-engine",
+  "readme": "https://github.com/mambalabsdev/mcp-b2b-prospect-engine#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

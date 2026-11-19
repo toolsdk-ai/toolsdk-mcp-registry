@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Tiktok Brand Presence Mapper",
+  "packageName": "@mambalabsdev/mcp-tiktok-brand-presence-mapper",
+  "description": "MCP server for the Mamba Labs TikTok Brand Presence Mapper actor on Apify. Resolve a TikTok handle or a company domain to the brand account with follower, like and video counts.",
+  "url": "https://github.com/mambalabsdev/mcp-tiktok-brand-presence-mapper",
+  "readme": "https://github.com/mambalabsdev/mcp-tiktok-brand-presence-mapper#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

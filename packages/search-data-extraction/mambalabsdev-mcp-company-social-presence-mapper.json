@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Company Social Presence Mapper (B4)",
+  "packageName": "@mambalabsdev/mcp-company-social-presence-mapper",
+  "description": "MCP server for the Mamba Labs Company Social Presence Mapper actor on Apify. Map a company domain to its official LinkedIn, X, Instagram, Facebook, and YouTube URLs plus follower counts, returned as flat Clay-ready JSON.",
+  "url": "https://github.com/mambalabsdev/mcp-company-social-presence-mapper",
+  "readme": "https://github.com/mambalabsdev/mcp-company-social-presence-mapper#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

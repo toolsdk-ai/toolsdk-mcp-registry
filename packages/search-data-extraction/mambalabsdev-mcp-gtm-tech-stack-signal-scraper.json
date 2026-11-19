@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "GTM Tech Stack Signal Enrichment",
+  "packageName": "@mambalabsdev/mcp-gtm-tech-stack-signal-scraper",
+  "description": "MCP server for GTM Tech Stack Signal Enrichment. Detects CRM, sequencer, and marketing automation tools from a company's public website via Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-gtm-tech-stack-signal-scraper",
+  "readme": "https://github.com/mambalabsdev/mcp-gtm-tech-stack-signal-scraper#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

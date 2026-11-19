@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Partner Member Directory Extractor",
+  "packageName": "@mambalabsdev/mcp-partner-member-directory-extractor",
+  "description": "MCP server for Partner and Member Directory Extractor. Turn a vendor partner directory (PartnerPage, Shopify Partner Directory) or a trade body member list into one company row per listing with website, domain, tier, tags, and location. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-partner-member-directory-extractor",
+  "readme": "https://github.com/mambalabsdev/mcp-partner-member-directory-extractor#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

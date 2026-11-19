@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Vc Accelerator Portfolio List Builder",
+  "packageName": "@mambalabsdev/mcp-vc-accelerator-portfolio-list-builder",
+  "description": "MCP server for VC and Accelerator Portfolio List Builder. Portfolio companies of Y Combinator, a16z, Sequoia, Accel, and any portfolio page, with domain, website, and stage. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-vc-accelerator-portfolio-list-builder",
+  "readme": "https://github.com/mambalabsdev/mcp-vc-accelerator-portfolio-list-builder#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

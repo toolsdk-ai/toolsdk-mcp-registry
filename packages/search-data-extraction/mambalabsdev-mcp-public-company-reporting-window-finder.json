@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Reporting Window Finder",
+  "packageName": "@mambalabsdev/mcp-public-company-reporting-window-finder",
+  "description": "MCP server for the Mamba Labs Reporting Window Finder actor on Apify. A domain, ticker, ISIN, LEI or CIK in, and out comes fiscal year end, reporting cadence, the next reporting date, days to event and the open and close of an outreach window. Five tools, one per actor mode. Timing rows cover US companies only.",
+  "url": "https://github.com/mambalabsdev/mcp-public-company-reporting-window-finder",
+  "readme": "https://github.com/mambalabsdev/mcp-public-company-reporting-window-finder#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

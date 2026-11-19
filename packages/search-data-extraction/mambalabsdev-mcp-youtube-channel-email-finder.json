@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Youtube Channel Email Finder",
+  "packageName": "@mambalabsdev/mcp-youtube-channel-email-finder",
+  "description": "MCP server for YouTube Channel Email Finder. Email addresses channels publish on their about page or linked website, with the source of each. No login. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-youtube-channel-email-finder",
+  "readme": "https://github.com/mambalabsdev/mcp-youtube-channel-email-finder#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Agent Accessibility Auditor",
+  "packageName": "@mambalabsdev/mcp-agent-accessibility-auditor",
+  "description": "MCP server for the Mamba Labs Agent Accessibility Auditor actor on Apify. Domain in, whether an AI agent can read that site out: llms.txt, robots AI crawler rules, structured data and endpoints.",
+  "url": "https://github.com/mambalabsdev/mcp-agent-accessibility-auditor",
+  "readme": "https://github.com/mambalabsdev/mcp-agent-accessibility-auditor#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

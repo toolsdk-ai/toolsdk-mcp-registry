@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Streaming Subscription Prices By Country",
+  "packageName": "@mambalabsdev/mcp-streaming-subscription-prices-by-country",
+  "description": "MCP server for Streaming Subscription Prices by Country: Spotify and Netflix plan prices per country.",
+  "url": "https://github.com/mambalabsdev/mcp-streaming-subscription-prices-by-country",
+  "readme": "https://github.com/mambalabsdev/mcp-streaming-subscription-prices-by-country#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

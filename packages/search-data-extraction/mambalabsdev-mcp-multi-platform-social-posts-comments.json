@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Multi Platform Social Posts Comments",
+  "packageName": "@mambalabsdev/mcp-multi-platform-social-posts-comments",
+  "description": "MCP server for Multi Platform Social Posts and Comments. Public posts and comments from 6 platforms in one row layout. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-multi-platform-social-posts-comments",
+  "readme": "https://github.com/mambalabsdev/mcp-multi-platform-social-posts-comments#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}
