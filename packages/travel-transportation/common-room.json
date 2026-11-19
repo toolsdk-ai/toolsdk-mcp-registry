@@ -2,10 +2,10 @@
   "type": "mcp-server",
   "name": "Common Room Booking Platform",
   "packageName": "@toolsdk-remote/common-room",
-  "description": "Hosted, read-only MCP server for Common Room, a Hong Kong venue booking site. Find verified hourly hotels, party rooms, event venues, restaurants with private rooms and boats; compare prices and capacity; and check hourly hotel availability. Users book and pay on the Common Room website. No login needed.",
+  "description": "Official hosted, read-only MCP server for Common Room Booking Platform (common-room.hk), a Hong Kong venue booking site operated by MT Technology Group Limited. Find verified hourly hotels, party rooms, event venues, restaurants with private rooms and boats; compare prices and capacity; and check hourly hotel availability. Users book and pay on the Common Room website. No login needed.",
   "readme": "https://www.common-room.hk/mcp",
   "runtime": "node",
-  "author": "Common Room",
+  "author": "MT Technology Group Limited (common-room.hk, Hong Kong)",
   "logo": "https://www.common-room.hk/mcp-icon-512.png",
   "env": {},
   "remotes": [
