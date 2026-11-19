@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "MexCheck",
+  "packageName": "@toolsdk-remote/mexcheck",
+  "description": "Official hosted MexCheck MCP service: checks Mexican RFCs with SAT (including the 69 / 69-B lists), CFDI invoice status, CURPs with RENAPO and INE voter IDs against the official registries, and serves the REST API docs. Connect with OAuth 2.1 (PKCE and dynamic client registration).",
+  "url": "https://mexcheck.com/docs/mcp",
+  "readme": "https://mexcheck.com/docs/mcp",
+  "runtime": "node",
+  "license": "proprietary",
+  "author": "MexCheck",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mexcheck.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
