@@ -1,0 +1,31 @@
+{
+  "type": "mcp-server",
+  "name": "Frank AI Researcher",
+  "packageName": "@toolsdk-remote/frank-ai-researcher",
+  "description": "AI-moderated voice interviews with your own customers: draft a study, publish it after approval, and read the transcripts through a hosted MCP server.",
+  "readme": "https://github.com/nar-vardanyan/frank-mcp#readme",
+  "url": "https://github.com/nar-vardanyan/frank-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "hifrank",
+  "logo": "https://raw.githubusercontent.com/nar-vardanyan/frank-mcp/main/assets/logo.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.hifrank.ai/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "research:read",
+          "interviews:read",
+          "products:read",
+          "products:write",
+          "research:write",
+          "research:publish",
+          "embed:write"
+        ]
+      }
+    }
+  ]
+}
