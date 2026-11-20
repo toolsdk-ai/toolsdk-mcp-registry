@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Signal Lab",
+  "packageName": "@toolsdk-remote/ai-qdt-signal-lab",
+  "description": "Hosted, read-only MCP server over a growing catalog of free data sources, updated daily, with licence, sign-up and daily reachability notes per source. No API key, no paid tier.",
+  "url": "https://github.com/quantumdatatechnologies/signal-lab-catalog",
+  "readme": "https://github.com/quantumdatatechnologies/signal-lab-catalog#readme",
+  "runtime": "node",
+  "license": "CC-BY-4.0",
+  "author": "QDT (Quantum Data Technologies)",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://signal-lab.qdt.ai/api/mcp"
+    }
+  ]
+}
