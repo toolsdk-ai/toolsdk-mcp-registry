@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "viaSocket",
+  "packageName": "@toolsdk-remote/viasocket",
+  "description": "viaSocket is integration and AI infrastructure for developers. Through this MCP server, an AI agent can explore viaSocket's documentation and APIs, then build and verify working integrations directly into your product: your users connect their own apps through OAuth, and your product can run actions in their accounts and respond to events across 2,300+ apps, including Slack, Gmail, Google Sheets, HubSpot, GitHub and Notion.",
+  "url": "https://github.com/walkover-mcp/viasocket",
+  "readme": "https://github.com/walkover-mcp/viasocket#readme",
+  "runtime": "node",
+  "env": {},
+  "logo": "https://stuff.thingsofbrand.com/viasocket.com/images/imgf_logo-2.png",
+  "author": "Walkover",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://connect.viasocket.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
