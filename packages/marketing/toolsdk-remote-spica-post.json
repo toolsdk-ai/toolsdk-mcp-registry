@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Spica Post",
+  "packageName": "@toolsdk-remote/com-spicapost-spica-post",
+  "description": "Social media scheduler for small businesses and creators: your AI assistant drafts a post per network, checks it against each network's rules, and schedules or publishes it once you approve. Requires a paid Spica Post account.",
+  "url": "https://github.com/unbowedgod/spica-post-mcp",
+  "readme": "https://spicapost.com/reference/",
+  "runtime": "node",
+  "license": "Proprietary",
+  "logo": "https://raw.githubusercontent.com/unbowedgod/spica-post-mcp/main/logo.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.spicapost.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
