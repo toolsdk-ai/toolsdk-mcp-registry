@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Agent Nexus",
+  "packageName": "@toolsdk-remote/agentnexus",
+  "description": "Independent discovery, health verification, and routing gateway for MCP servers and tools, featuring live multi-layer health probes, cryptographic health receipts (ES256), and deterministic failover for AI agents.",
+  "readme": "https://github.com/Strategiumfinancepartner/AgentNexus#readme",
+  "url": "https://github.com/Strategiumfinancepartner/AgentNexus",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Agent Nexus",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://agentnexus.app/mcp"
+    }
+  ]
+}
