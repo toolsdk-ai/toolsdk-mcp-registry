@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Web2MD",
+  "packageName": "web2md-mcp-server",
+  "description": "Turns a webpage into clean Markdown for Claude Desktop, Cursor and other agents, including pages that need a signed-in browser via Agent Bridge.",
+  "url": "https://github.com/io-oi-ai/web2md",
+  "readme": "https://web2md.org/docs/advanced/mcp-server",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "WEB2MD_API_KEY": {
+      "description": "Web2MD API key (PRO plan). Optional if you have already run `npx web2md-cli login`, which writes the key to ~/.web2md/config.json.",
+      "required": false,
+      "secret": true
+    }
+  }
+}
