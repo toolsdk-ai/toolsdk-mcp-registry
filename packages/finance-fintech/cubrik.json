@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "cubrik",
+  "packageName": "@toolsdk-remote/cubrik",
+  "description": "AI trading agents, backtests and your brokers for AI agents: create, test, start and pause cubrik agents that trade on the brokers and exchanges connected to the user's cubrik account (Binance, OKX, Hyperliquid, MetaTrader and others); backtest rule-based ideas on historical candles; read balances, open positions, closed trades, results and Analytics advice; copy ready-made agents from cubrik's Library; and place, change and close orders through each connected platform's own tools. 40 tools plus each platform's own; orders, agent starts, changes and deletions are annotated destructive, and new or copied agents are created paused. Broker keys stay in cubrik and no tool deposits, withdraws or transfers funds. Comes with cubrik's Intermediate plan and above (paid). Not investment advice.",
+  "url": "https://github.com/target1m/cubrik-mcp",
+  "readme": "https://github.com/target1m/cubrik-mcp#readme",
+  "runtime": "node",
+  "logo": "https://cubrik.ai/icon-512.png",
+  "author": "cubrik",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.cubrik.ai/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["cubrik.read", "cubrik.agents", "cubrik.trade"]
+      }
+    }
+  ]
+}
