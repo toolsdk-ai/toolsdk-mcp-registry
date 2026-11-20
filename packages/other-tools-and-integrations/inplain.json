@@ -1,0 +1,42 @@
+{
+  "type": "mcp-server",
+  "name": "Inplain",
+  "packageName": "@inplain/cli",
+  "description": "Turns a sentence or an agent's output into a finished presentation, document or dashboard as a self-contained web page, on your own API key or locally with Ollama.",
+  "url": "https://github.com/io-oi-ai/inplain",
+  "readme": "https://github.com/io-oi-ai/inplain#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "binArgs": ["mcp"],
+  "env": {
+    "ANTHROPIC_API_KEY": {
+      "description": "Anthropic API key. Generate and edit tools need one documented backend: this key, another provider key, OLLAMA_BASE_URL, or `plain login`.",
+      "required": false,
+      "secret": true
+    },
+    "OPENAI_API_KEY": {
+      "description": "OpenAI API key. Alternative LLM backend to ANTHROPIC_API_KEY.",
+      "required": false,
+      "secret": true
+    },
+    "GOOGLE_GENERATIVE_AI_API_KEY": {
+      "description": "Google Generative AI API key. Alternative LLM backend to ANTHROPIC_API_KEY.",
+      "required": false,
+      "secret": true
+    },
+    "MOONSHOT_API_KEY": {
+      "description": "Moonshot API key. Alternative LLM backend to ANTHROPIC_API_KEY.",
+      "required": false,
+      "secret": true
+    },
+    "DEEPSEEK_API_KEY": {
+      "description": "DeepSeek API key. Alternative LLM backend to ANTHROPIC_API_KEY.",
+      "required": false,
+      "secret": true
+    },
+    "OLLAMA_BASE_URL": {
+      "description": "Ollama base URL for fully local generation, for example http://localhost:11434.",
+      "required": false
+    }
+  }
+}
