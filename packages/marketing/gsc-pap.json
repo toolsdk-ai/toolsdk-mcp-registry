@@ -2,7 +2,7 @@
   "type": "mcp-server",
   "name": "GSC PAP",
   "packageName": "@toolsdk-remote/gsc-pap",
-  "description": "Read-only Google Search Console, Google Analytics 4 and PageSpeed Insights for AI assistants, plus live Google results. 38 read-only tools: search analytics, URL inspection, sitemaps, quick wins, content decay, cannibalization, Search Console pages joined to GA4 conversions, traffic from AI assistants, Lighthouse and real-user Core Web Vitals with a weekly trend. A per-user archive keeps Search Console history past Google's 16-month limit. Sign in with Google; free.",
+  "description": "Read-only Google Search Console, Google Analytics 4, Bing Webmaster Tools and PageSpeed Insights for AI assistants, plus live Google results. 53 read-only tools: search analytics, URL inspection, sitemaps, quick wins, content decay, cannibalization, Search Console pages joined to GA4 conversions, traffic from AI assistants, Bing queries, crawl health and backlinks, Lighthouse and real-user Core Web Vitals with a weekly trend. A per-user archive keeps Search Console, GA4 and Bing history past the engines' 16-month limits. Sign in with Google; free.",
   "url": "https://github.com/aliarifsoydas/gsc-pap-claude-plugin",
   "readme": "https://github.com/aliarifsoydas/gsc-pap-claude-plugin#readme",
   "runtime": "node",
