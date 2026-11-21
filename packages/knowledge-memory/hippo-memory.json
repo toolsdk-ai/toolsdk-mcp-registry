@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "name": "Hippo Memory",
+  "packageName": "hippo-memory",
+  "description": "Local memory for coding agents. What you teach one agent goes into a store in your repo, and your other agents read the same store.",
+  "url": "https://github.com/kitfunso/hippo-memory",
+  "readme": "https://github.com/kitfunso/hippo-memory#readme",
+  "runtime": "node",
+  "binArgs": [
+    "mcp"
+  ],
+  "license": "MIT",
+  "logo": "https://hippo-memory.com/apple-touch-icon.png",
+  "env": {}
+}
