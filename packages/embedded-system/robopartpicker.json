@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "RoboPartPicker",
+  "packageName": "@toolsdk-remote/robopartpicker",
+  "description": "Search 2,445 source-linked open-source robotics projects and their bills of materials; every BOM line keeps a source locator and an explicit evidence state (verified / probable / unresolved). Tools search projects and components, compare parts, and compile or validate BOM and RPPS documents. Public, read-only remote server, no API key.",
+  "url": "https://github.com/brainbook0/robopartpicker-mcp",
+  "readme": "https://robopartpicker.com/developers",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://robopartpicker.com/favicon-192.png",
+  "author": "RoboPartPicker",
+  "env": {},
+  "remotes": [
+    { "type": "streamable-http", "url": "https://robopartpicker.com/mcp" }
+  ]
+}
