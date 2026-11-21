@@ -16,10 +16,7 @@
       "url": "https://i2v.ai/api/mcp",
       "auth": {
         "type": "oauth2",
-        "scopes": [
-          "mcp:read",
-          "mcp:write"
-        ]
+        "scopes": ["mcp:read", "mcp:write"]
       }
     }
   ]
