@@ -6,9 +6,7 @@
   "url": "https://github.com/kitfunso/hippo-memory",
   "readme": "https://github.com/kitfunso/hippo-memory#readme",
   "runtime": "node",
-  "binArgs": [
-    "mcp"
-  ],
+  "binArgs": ["mcp"],
   "license": "MIT",
   "logo": "https://hippo-memory.com/apple-touch-icon.png",
   "env": {}
