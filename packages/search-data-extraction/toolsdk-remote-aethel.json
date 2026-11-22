@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Aethel company interviews",
+  "packageName": "@toolsdk-remote/aethel",
+  "description": "Hosted read-only MCP server: what 42 companies' own pages say about their AI and video interviews, each fact with its source page and the day it was read. No sign-in and no account. Tools: list_company_interviews, get_company_interview, compare_across_companies, about_practice.",
+  "readme": "https://aethel.pro/mcp",
+  "url": "https://aethel.pro/mcp",
+  "runtime": "node",
+  "logo": "https://aethel.pro/apple-touch-icon.png",
+  "author": "Aethel",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://us-central1-aethel-pro.cloudfunctions.net/mcp"
+    }
+  ]
+}
