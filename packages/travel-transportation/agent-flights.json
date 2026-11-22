@@ -2,7 +2,7 @@
   "type": "mcp-server",
   "name": "Agent Flights",
   "packageName": "@toolsdk-remote/agent-flights",
-  "description": "Finds the cheapest flights worldwide, strong on Africa. Compares Kiwi.com, Duffel and Aviasales fares with nearby airports and self-transfer combinations, and returns the cheapest and a cheapest-sensible fare, price calendars, cheap destinations and booking links. Free with no key; an optional self-serve API key (register_agent) raises limits.",
+  "description": "Cheap flights worldwide. Searches fares with nearby airports and self-transfer combinations, and returns the cheapest and a cheapest-sensible fare, price calendars, cheap destinations and booking links. Free with no key; an optional self-serve API key (register_agent) raises limits.",
   "url": "https://github.com/lomiafrica/agent-flights-mcp",
   "readme": "https://lowest.flights/connect",
   "runtime": "node",
