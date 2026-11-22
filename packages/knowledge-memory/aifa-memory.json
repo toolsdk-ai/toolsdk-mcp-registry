@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "AIfa Memory",
+  "packageName": "@toolsdk-remote/works-aifa-aifa-memory",
+  "packageVersion": "1.9.8",
+  "description": "Hosted encrypted long-term memory for AI agents over Streamable HTTP with optional permanent Arweave anchoring (AES-256-GCM). Discovery is public; memory and account tools use a per-user Bearer key from https://aifa.works/mcp.",
+  "url": "https://github.com/MaksimGalatin/aifa-memory-mcp",
+  "readme": "https://aifa.works/llms.txt",
+  "author": "Maksim Galatin (CODE Eternal LLC)",
+  "license": "MIT",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://aifa.works/api/mcp"
+    }
+  ]
+}
