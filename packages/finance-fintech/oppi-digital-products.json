@@ -1,0 +1,10 @@
+{
+  "type": "mcp-server",
+  "name": "Oppi Digital Products",
+  "packageName": "oppi-digital-products-mcp",
+  "description": "Browse sample-first digital products, get crypto payment instructions, verify on-chain payments, and request delivery.",
+  "url": "https://github.com/Reggiebro/oppi-digital-products",
+  "runtime": "node",
+  "license": "mit",
+  "env": {}
+}
