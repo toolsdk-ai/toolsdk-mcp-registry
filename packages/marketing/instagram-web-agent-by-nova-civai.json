@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "Instagram Agent by Nova (CIVAI)",
+  "packageName": "@toolsdk-remote/instagram-web-agent-by-nova-civai",
+  "description": "I use your Instagram Web browser session (Integrations \u2192 Instagram Web) via instagrapi, not Meta /\u2026",
+  "url": "https://github.com/civai-technologies/instagram-web-agent-mcp-by-nova-civai",
+  "readme": "https://github.com/civai-technologies/instagram-web-agent-mcp-by-nova-civai#readme",
+  "runtime": "python",
+  "license": "MIT",
+  "author": "CIVAI TECHNOLOGIES",
+  "logo": "https://nova.civai.co/catalog-icons/InstagramAgentIcon.svg",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://nova.civai.co/mcp/agents/instagram-web-agent",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["openid", "email", "mcp:access"]
+      }
+    }
+  ]
+}

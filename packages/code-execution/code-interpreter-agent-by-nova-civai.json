@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "Code Interpreter Agent by Nova (CIVAI)",
+  "packageName": "@toolsdk-remote/code-interpreter-agent-by-nova-civai",
+  "description": "I do everything related to coding and execution tasks",
+  "url": "https://github.com/civai-technologies/code-interpreter-agent-mcp-by-nova-civai",
+  "readme": "https://github.com/civai-technologies/code-interpreter-agent-mcp-by-nova-civai#readme",
+  "runtime": "python",
+  "license": "MIT",
+  "author": "CIVAI TECHNOLOGIES",
+  "logo": "https://nova.civai.co/catalog-icons/CodeIcon.svg",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://nova.civai.co/mcp/agents/code-interpreter-agent",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["openid", "email", "mcp:access"]
+      }
+    }
+  ]
+}

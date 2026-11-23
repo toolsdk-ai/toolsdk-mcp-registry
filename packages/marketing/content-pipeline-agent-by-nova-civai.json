@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "Content Pipeline Agent by Nova (CIVAI)",
+  "packageName": "@toolsdk-remote/content-pipeline-agent-by-nova-civai",
+  "description": "I run the Content Pipeline for your Nova products \u2014 scan trends, expand seeds, generate drafts, publish, and submit for indexing.",
+  "url": "https://github.com/civai-technologies/content-pipeline-agent-mcp-by-nova-civai",
+  "readme": "https://github.com/civai-technologies/content-pipeline-agent-mcp-by-nova-civai#readme",
+  "runtime": "python",
+  "license": "MIT",
+  "author": "CIVAI TECHNOLOGIES",
+  "logo": "https://nova.civai.co/catalog-icons/BloggerIcon.svg",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://nova.civai.co/mcp/agents/content-pipeline-agent",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["openid", "email", "mcp:access"]
+      }
+    }
+  ]
+}

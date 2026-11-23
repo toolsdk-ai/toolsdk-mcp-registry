@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "Content Calendar Agent by Nova (CIVAI)",
+  "packageName": "@toolsdk-remote/content-calendar-agent-by-nova-civai",
+  "description": "I create markdown content calendars and export them as PDFs via PDF Generator MCP",
+  "url": "https://github.com/civai-technologies/content-calendar-agent-mcp-by-nova-civai",
+  "readme": "https://github.com/civai-technologies/content-calendar-agent-mcp-by-nova-civai#readme",
+  "runtime": "python",
+  "license": "MIT",
+  "author": "CIVAI TECHNOLOGIES",
+  "logo": "https://nova.civai.co/catalog-icons/GoogleSheetsIcon.svg",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://nova.civai.co/mcp/agents/content-calendar-agent",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["openid", "email", "mcp:access"]
+      }
+    }
+  ]
+}
