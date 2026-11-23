@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "SONAR KYB (Remote)",
+  "packageName": "@toolsdk-remote/sonar-kyb",
+  "description": "Hosted endpoint of the official SONAR MCP server, with the same seven tools as the getsonar-mcp package: KYB due diligence on vendors, partners and resellers from public records (company register lookup and officers in 10+ countries, sanctions and PEP screening, ICIJ Offshore Leaks, owners, adverse media, and full written KYB reports). Paid per call from a prepaid SONAR balance; first call free. Authenticates with OAuth 2.1 (discovery and dynamic client registration).",
+  "url": "https://github.com/Ivanolegvak/getsonar-mcp",
+  "readme": "https://github.com/Ivanolegvak/getsonar-mcp#readme",
+  "runtime": "python",
+  "license": "MIT",
+  "logo": "https://getsonar.report/icon-512.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://sonar-mcp.sonar-mcp-remote.workers.dev/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["sonar"]
+      }
+    }
+  ]
+}
