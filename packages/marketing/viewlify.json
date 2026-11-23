@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Viewlify",
+  "packageName": "@toolsdk-remote/viewlify",
+  "description": "Hosted Viewlify MCP for public TikTok data: which videos beat their creator's usual views (the outlier multiple), trending videos, hashtags and sounds by niche, shares per 1,000 views and view history. Without a key, get_trending, get_outliers and get_trending_hashtags return a 5-result preview; full search, balance and top-up need a Viewlify API key, which this registry entry does not configure.",
+  "url": "https://viewlify.app/tiktok-data-api",
+  "readme": "https://github.com/benjaminb10/viewlify-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://viewlify.app/logo.svg",
+  "author": "Viewlify",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://viewlify.app/api/mcp"
+    }
+  ]
+}
