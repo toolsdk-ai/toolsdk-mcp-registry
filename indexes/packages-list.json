@@ -61808,5 +61808,373 @@
   "@toolsdk-remote/tapline": {
     "path": "search-data-extraction/tapline.json",
     "category": "search-data-extraction"
+  },
+  "@ghostpaw/codex": {
+    "path": "knowledge-memory/ghostpaw-codex.json",
+    "category": "knowledge-memory"
+  },
+  "@inplain/cli": {
+    "path": "other-tools-and-integrations/inplain.json",
+    "category": "other-tools-and-integrations"
+  },
+  "@lfg-labs/t3-watch": {
+    "path": "monitoring/t3-watch.json",
+    "category": "monitoring"
+  },
+  "@mambalabsdev/mcp-brazil-cnpj-company-data": {
+    "path": "search-data-extraction/mambalabsdev-mcp-brazil-cnpj-company-data.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-google-flights-fares": {
+    "path": "search-data-extraction/mambalabsdev-mcp-google-flights-fares.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-google-hotels-prices": {
+    "path": "search-data-extraction/mambalabsdev-mcp-google-hotels-prices.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-google-sheets-import-export": {
+    "path": "search-data-extraction/mambalabsdev-mcp-google-sheets-import-export.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-houzz-professionals": {
+    "path": "search-data-extraction/mambalabsdev-mcp-houzz-professionals.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-job-posting-liveness-checker": {
+    "path": "search-data-extraction/mambalabsdev-mcp-job-posting-liveness-checker.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-kick-channels-streams": {
+    "path": "search-data-extraction/mambalabsdev-mcp-kick-channels-streams.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-medium-articles-scraper": {
+    "path": "search-data-extraction/mambalabsdev-mcp-medium-articles-scraper.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-perplexity-answer-reader": {
+    "path": "search-data-extraction/mambalabsdev-mcp-perplexity-answer-reader.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-youtube-shorts-scraper": {
+    "path": "search-data-extraction/mambalabsdev-mcp-youtube-shorts-scraper.json",
+    "category": "search-data-extraction"
+  },
+  "@mcpolyglot/cli": {
+    "path": "databases/mcpolyglot.json",
+    "category": "databases"
+  },
+  "@toolsdk-remote/aethel": {
+    "path": "search-data-extraction/toolsdk-remote-aethel.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/agentnexus": {
+    "path": "aggregators/agentnexus.json",
+    "category": "aggregators"
+  },
+  "@toolsdk-remote/ai-qdt-signal-lab": {
+    "path": "data-platforms/signal-lab.json",
+    "category": "data-platforms"
+  },
+  "@toolsdk-remote/app-store-review-intelligence-mcp": {
+    "path": "marketing/app-store-review-intelligence-mcp.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/bereach": {
+    "path": "marketing/bereach.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/blogger-agent-by-nova-civai": {
+    "path": "marketing/blogger-agent-by-nova-civai.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/browsergpt-agent-by-nova-civai": {
+    "path": "browser-automation/browsergpt-agent-by-nova-civai.json",
+    "category": "browser-automation"
+  },
+  "@toolsdk-remote/calendar-agent-by-nova-civai": {
+    "path": "other-tools-and-integrations/calendar-agent-by-nova-civai.json",
+    "category": "other-tools-and-integrations"
+  },
+  "@toolsdk-remote/code-interpreter-agent-by-nova-civai": {
+    "path": "code-execution/code-interpreter-agent-by-nova-civai.json",
+    "category": "code-execution"
+  },
+  "@toolsdk-remote/com-bizpeel-bizpeel": {
+    "path": "marketing/bizpeel-mcp.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/com-spicapost-spica-post": {
+    "path": "marketing/toolsdk-remote-spica-post.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/common-room": {
+    "path": "travel-transportation/common-room.json",
+    "category": "travel-transportation"
+  },
+  "@toolsdk-remote/content-calendar-agent-by-nova-civai": {
+    "path": "marketing/content-calendar-agent-by-nova-civai.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/content-pipeline-agent-by-nova-civai": {
+    "path": "marketing/content-pipeline-agent-by-nova-civai.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/converter-studio": {
+    "path": "file-systems/converter-studio.json",
+    "category": "file-systems"
+  },
+  "@toolsdk-remote/cubrik": {
+    "path": "finance-fintech/cubrik.json",
+    "category": "finance-fintech"
+  },
+  "@toolsdk-remote/dataxapi": {
+    "path": "search-data-extraction/dataxapi.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/deacon": {
+    "path": "support-service-management/deacon.json",
+    "category": "support-service-management"
+  },
+  "@toolsdk-remote/dheerajitbhu-china-social": {
+    "path": "search-data-extraction/dheerajitbhu-china-social.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/docstar": {
+    "path": "developer-tools/docstar.json",
+    "category": "developer-tools"
+  },
+  "@toolsdk-remote/embarko": {
+    "path": "cloud-platforms/embarko.json",
+    "category": "cloud-platforms"
+  },
+  "@toolsdk-remote/emero": {
+    "path": "marketing/emero.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/gmail-agent-by-nova-civai": {
+    "path": "communication/gmail-agent-by-nova-civai.json",
+    "category": "communication"
+  },
+  "@toolsdk-remote/google-docs-agent-by-nova-civai": {
+    "path": "other-tools-and-integrations/google-docs-agent-by-nova-civai.json",
+    "category": "other-tools-and-integrations"
+  },
+  "@toolsdk-remote/google-sheets-agent-by-nova-civai": {
+    "path": "data-platforms/google-sheets-agent-by-nova-civai.json",
+    "category": "data-platforms"
+  },
+  "@toolsdk-remote/hearl": {
+    "path": "monitoring/hearl.json",
+    "category": "monitoring"
+  },
+  "@toolsdk-remote/hydracept": {
+    "path": "developer-tools/hydracept-mcp.json",
+    "category": "developer-tools"
+  },
+  "@toolsdk-remote/i2v-ai": {
+    "path": "art-and-culture/i2v-ai.json",
+    "category": "art-and-culture"
+  },
+  "@toolsdk-remote/infrarabbit": {
+    "path": "cloud-platforms/infrarabbit.json",
+    "category": "cloud-platforms"
+  },
+  "@toolsdk-remote/instagram-web-agent-by-nova-civai": {
+    "path": "marketing/instagram-web-agent-by-nova-civai.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/interviewer-agent-by-nova-civai": {
+    "path": "other-tools-and-integrations/interviewer-agent-by-nova-civai.json",
+    "category": "other-tools-and-integrations"
+  },
+  "@toolsdk-remote/jobseveryhour": {
+    "path": "search-data-extraction/jobseveryhour-remote.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/klakix-mcp": {
+    "path": "art-and-culture/klakix.json",
+    "category": "art-and-culture"
+  },
+  "@toolsdk-remote/launch-ready": {
+    "path": "developer-tools/launch-ready.json",
+    "category": "developer-tools"
+  },
+  "@toolsdk-remote/leads-discovery-agent-by-nova-civai": {
+    "path": "marketing/leads-discovery-agent-by-nova-civai.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/lemlist": {
+    "path": "marketing/lemlist.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/louis-studios": {
+    "path": "developer-tools/louis-studios.json",
+    "category": "developer-tools"
+  },
+  "@toolsdk-remote/mcp-bids": {
+    "path": "search-data-extraction/mcp-bids.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/music-agent-by-nova-civai": {
+    "path": "other-tools-and-integrations/music-agent-by-nova-civai.json",
+    "category": "other-tools-and-integrations"
+  },
+  "@toolsdk-remote/noderings": {
+    "path": "cloud-platforms/noderings.json",
+    "category": "cloud-platforms"
+  },
+  "@toolsdk-remote/nova-inbox-agent-by-nova-civai": {
+    "path": "communication/nova-inbox-agent-by-nova-civai.json",
+    "category": "communication"
+  },
+  "@toolsdk-remote/nssnap-mcp": {
+    "path": "cloud-platforms/nssnap-mcp.json",
+    "category": "cloud-platforms"
+  },
+  "@toolsdk-remote/nukebg": {
+    "path": "other-tools-and-integrations/nukebg.json",
+    "category": "other-tools-and-integrations"
+  },
+  "@toolsdk-remote/openclaw-agent-by-nova-civai": {
+    "path": "coding-agents/openclaw-agent-by-nova-civai.json",
+    "category": "coding-agents"
+  },
+  "@toolsdk-remote/pdf-agent-by-nova-civai": {
+    "path": "other-tools-and-integrations/pdf-agent-by-nova-civai.json",
+    "category": "other-tools-and-integrations"
+  },
+  "@toolsdk-remote/product-admin-by-nova-civai": {
+    "path": "other-tools-and-integrations/product-admin-by-nova-civai.json",
+    "category": "other-tools-and-integrations"
+  },
+  "@toolsdk-remote/research-agent-by-nova-civai": {
+    "path": "search-data-extraction/research-agent-by-nova-civai.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/simpleverifier": {
+    "path": "marketing/toolsdk-remote-simpleverifier.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/slidegen-agent-by-nova-civai": {
+    "path": "other-tools-and-integrations/slidegen-agent-by-nova-civai.json",
+    "category": "other-tools-and-integrations"
+  },
+  "@toolsdk-remote/sodax-builders-mcp": {
+    "path": "finance-fintech/sodax-builders-mcp.json",
+    "category": "finance-fintech"
+  },
+  "@toolsdk-remote/support-agent-admin-by-nova-civai": {
+    "path": "support-service-management/support-agent-admin-by-nova-civai.json",
+    "category": "support-service-management"
+  },
+  "@toolsdk-remote/telegram-agent-by-nova-civai": {
+    "path": "communication/telegram-agent-by-nova-civai.json",
+    "category": "communication"
+  },
+  "@toolsdk-remote/terminal-command-agent-by-nova-civai": {
+    "path": "command-line/terminal-command-agent-by-nova-civai.json",
+    "category": "command-line"
+  },
+  "@toolsdk-remote/terudo": {
+    "path": "travel-transportation/terudo.json",
+    "category": "travel-transportation"
+  },
+  "@toolsdk-remote/twitter-agent-by-nova-civai": {
+    "path": "marketing/twitter-agent-by-nova-civai.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/tzedek-ai-mcp": {
+    "path": "knowledge-memory/tzedek-ai-mcp.json",
+    "category": "knowledge-memory"
+  },
+  "@toolsdk-remote/vaneform": {
+    "path": "search-data-extraction/vaneform.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/viasocket": {
+    "path": "aggregators/viasocket.json",
+    "category": "aggregators"
+  },
+  "@toolsdk-remote/viewlify": {
+    "path": "marketing/viewlify.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/whatsapp-web-agent-by-nova-civai": {
+    "path": "communication/whatsapp-web-agent-by-nova-civai.json",
+    "category": "communication"
+  },
+  "@toolsdk-remote/works-aifa-aifa-memory": {
+    "path": "knowledge-memory/aifa-memory.json",
+    "category": "knowledge-memory"
+  },
+  "@toolsdk-remote/youtube-transcripts-mcp": {
+    "path": "search-data-extraction/youtube-transcripts-mcp.json",
+    "category": "search-data-extraction"
+  },
+  "aipe-mcp": {
+    "path": "marketing/aipe-mcp.json",
+    "category": "marketing"
+  },
+  "avatarsay-mcp": {
+    "path": "gaming/avatarsay-mcp.json",
+    "category": "gaming"
+  },
+  "behave": {
+    "path": "developer-tools/behave.json",
+    "category": "developer-tools"
+  },
+  "benchfleet-mcp": {
+    "path": "browser-automation/benchfleet-mcp.json",
+    "category": "browser-automation"
+  },
+  "crawlerpeek": {
+    "path": "search-data-extraction/crawlerpeek.json",
+    "category": "search-data-extraction"
+  },
+  "dank-meme-sounds": {
+    "path": "art-and-culture/dank-meme-sounds.json",
+    "category": "art-and-culture"
+  },
+  "docusense-mcp": {
+    "path": "knowledge-memory/docusense-mcp.json",
+    "category": "knowledge-memory"
+  },
+  "hippo-memory": {
+    "path": "knowledge-memory/hippo-memory.json",
+    "category": "knowledge-memory"
+  },
+  "llmslim": {
+    "path": "knowledge-memory/llmslim.json",
+    "category": "knowledge-memory"
+  },
+  "marketmirror": {
+    "path": "marketing/marketmirror.json",
+    "category": "marketing"
+  },
+  "oppi-digital-products-mcp": {
+    "path": "finance-fintech/oppi-digital-products.json",
+    "category": "finance-fintech"
+  },
+  "padam-nocturne": {
+    "path": "knowledge-memory/padam-nocturne.json",
+    "category": "knowledge-memory"
+  },
+  "skillry-cli": {
+    "path": "coding-agents/skillry-mcp.json",
+    "category": "coding-agents"
+  },
+  "usb-rea": {
+    "path": "embedded-system/usb-rea.json",
+    "category": "embedded-system"
+  },
+  "web2md-mcp-server": {
+    "path": "search-data-extraction/web2md-mcp.json",
+    "category": "search-data-extraction"
+  },
+  "wyro-check": {
+    "path": "security/wyro-check.json",
+    "category": "security"
   }
 }

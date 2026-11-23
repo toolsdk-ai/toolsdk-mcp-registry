@@ -680,7 +680,9 @@
       "@toolsdk-remote/toolfound",
       "plugmcp-mcp",
       "@toolsdk-remote/openany",
-      "@toolsdk-remote/varosity"
+      "@toolsdk-remote/varosity",
+      "@toolsdk-remote/agentnexus",
+      "@toolsdk-remote/viasocket"
     ]
   },
   "art-and-culture": {
@@ -849,7 +851,10 @@
       "@toolsdk-remote/com-vidmoat-vidmoat",
       "@toolsdk-remote/honeyvid",
       "@toolsdk-remote/craftwork",
-      "@toolsdk-remote/onlychili"
+      "@toolsdk-remote/onlychili",
+      "@toolsdk-remote/i2v-ai",
+      "@toolsdk-remote/klakix-mcp",
+      "dank-meme-sounds"
     ]
   },
   "browser-automation": {
@@ -1038,7 +1043,9 @@
       "@toolsdk-remote/recordhtml",
       "@toolsdk-remote/monito",
       "@portproof/mcp",
-      "snaprender-mcp"
+      "snaprender-mcp",
+      "@toolsdk-remote/browsergpt-agent-by-nova-civai",
+      "benchfleet-mcp"
     ]
   },
   "cloud-platforms": {
@@ -1209,7 +1216,11 @@
       "@toolsdk-remote/droply",
       "@toolsdk-remote/termalin",
       "lantern-works-deals-mcp",
-      "@toolsdk-remote/sh-while-while"
+      "@toolsdk-remote/sh-while-while",
+      "@toolsdk-remote/embarko",
+      "@toolsdk-remote/infrarabbit",
+      "@toolsdk-remote/noderings",
+      "@toolsdk-remote/nssnap-mcp"
     ]
   },
   "code-execution": {
@@ -1268,7 +1279,8 @@
       "jupyter-notebook-bridge",
       "@yepcode/mcp-server",
       "safe-local-python-executor",
-      "jupyter_mcp_server"
+      "jupyter_mcp_server",
+      "@toolsdk-remote/code-interpreter-agent-by-nova-civai"
     ]
   },
   "coding-agents": {
@@ -1358,7 +1370,9 @@
       "vibekit-mcp",
       "@ataraxy-labs/sem",
       "mcp-probe-kit",
-      "@toolsdk-remote/joxo"
+      "@toolsdk-remote/joxo",
+      "@toolsdk-remote/openclaw-agent-by-nova-civai",
+      "skillry-cli"
     ]
   },
   "command-line": {
@@ -1480,7 +1494,8 @@
       "pty-terminal",
       "macos-notification-mcp",
       "remotify-mcp",
-      "@toolsdk-remote/ailinkany"
+      "@toolsdk-remote/ailinkany",
+      "@toolsdk-remote/terminal-command-agent-by-nova-civai"
     ]
   },
   "communication": {
@@ -1759,7 +1774,11 @@
       "@toolsdk-remote/fork-zone",
       "@toolsdk-remote/telofy",
       "@toolsdk-remote/agentmsgr",
-      "@toolsdk-remote/dial-by-behaf"
+      "@toolsdk-remote/dial-by-behaf",
+      "@toolsdk-remote/gmail-agent-by-nova-civai",
+      "@toolsdk-remote/nova-inbox-agent-by-nova-civai",
+      "@toolsdk-remote/telegram-agent-by-nova-civai",
+      "@toolsdk-remote/whatsapp-web-agent-by-nova-civai"
     ]
   },
   "customer-data-platforms": {
@@ -2028,7 +2047,8 @@
       "@toolsdk-remote/aifordatabase",
       "@toolsdk-remote/supabase-mcp-server-supabase",
       "@toolsdk-remote/hutchdb",
-      "@toolsdk-remote/busabase"
+      "@toolsdk-remote/busabase",
+      "@mcpolyglot/cli"
     ]
   },
   "data-platforms": {
@@ -2130,7 +2150,9 @@
       "@toolsdk-remote/bormeapi-borme-mcp",
       "@toolsdk-remote/civicdataforge",
       "@toolsdk-remote/company-facts",
-      "@toolsdk-remote/amendment"
+      "@toolsdk-remote/amendment",
+      "@toolsdk-remote/ai-qdt-signal-lab",
+      "@toolsdk-remote/google-sheets-agent-by-nova-civai"
     ]
   },
   "developer-tools": {
@@ -2581,7 +2603,12 @@
       "@asitis/mcp",
       "@toolsdk-remote/gitranks-contribute",
       "@toolsdk-remote/tday",
-      "@toolsdk-remote/runlater"
+      "@toolsdk-remote/runlater",
+      "@toolsdk-remote/docstar",
+      "@toolsdk-remote/hydracept",
+      "@toolsdk-remote/launch-ready",
+      "@toolsdk-remote/louis-studios",
+      "behave"
     ]
   },
   "data-science-tools": {
@@ -2759,7 +2786,8 @@
       "@toolsdk-remote/io-github-easygerber-easygerber",
       "iotaudit",
       "@toolsdk-remote/com-pcbeditor-pcbeditor",
-      "eda-agent"
+      "eda-agent",
+      "usb-rea"
     ]
   },
   "file-systems": {
@@ -2876,7 +2904,8 @@
       "@sylphx/anymd",
       "@toolsdk-remote/cloudbridge-mcp",
       "msglens-cli",
-      "@toolsdk-remote/agentdrive-mcp"
+      "@toolsdk-remote/agentdrive-mcp",
+      "@toolsdk-remote/converter-studio"
     ]
   },
   "finance-fintech": {
@@ -3293,7 +3322,10 @@
       "@toolsdk-remote/io-github-bosco-labs-bosco-labs-data",
       "@toolsdk-remote/prime-rate-sofr-fed-funds-rate-today-mcp",
       "@rentandrugshield/mcp-server",
-      "@toolsdk-remote/mexcheck"
+      "@toolsdk-remote/mexcheck",
+      "@toolsdk-remote/cubrik",
+      "@toolsdk-remote/sodax-builders-mcp",
+      "oppi-digital-products-mcp"
     ]
   },
   "gaming": {
@@ -3353,7 +3385,8 @@
       "@toolsdk-remote/photo2skin",
       "@toolsdk-remote/tickermint-mcp",
       "@toolsdk-remote/the-commons-live-games",
-      "@toolsdk-remote/ripseek"
+      "@toolsdk-remote/ripseek",
+      "avatarsay-mcp"
     ]
   },
   "knowledge-memory": {
@@ -3603,7 +3636,14 @@
       "@toolsdk-remote/polidict",
       "@toolsdk-remote/readshore",
       "memgit-mcp",
-      "@toolsdk-remote/anyscribe"
+      "@toolsdk-remote/anyscribe",
+      "@ghostpaw/codex",
+      "@toolsdk-remote/tzedek-ai-mcp",
+      "@toolsdk-remote/works-aifa-aifa-memory",
+      "docusense-mcp",
+      "hippo-memory",
+      "llmslim",
+      "padam-nocturne"
     ]
   },
   "location-services": {
@@ -3924,7 +3964,23 @@
       "@toolsdk-remote/local-seo-data",
       "@toolsdk-remote/poptin-mcp",
       "@toolsdk-remote/clippertask",
-      "@toolsdk-remote/octopost"
+      "@toolsdk-remote/octopost",
+      "@toolsdk-remote/app-store-review-intelligence-mcp",
+      "@toolsdk-remote/bereach",
+      "@toolsdk-remote/blogger-agent-by-nova-civai",
+      "@toolsdk-remote/com-bizpeel-bizpeel",
+      "@toolsdk-remote/com-spicapost-spica-post",
+      "@toolsdk-remote/content-calendar-agent-by-nova-civai",
+      "@toolsdk-remote/content-pipeline-agent-by-nova-civai",
+      "@toolsdk-remote/emero",
+      "@toolsdk-remote/instagram-web-agent-by-nova-civai",
+      "@toolsdk-remote/leads-discovery-agent-by-nova-civai",
+      "@toolsdk-remote/lemlist",
+      "@toolsdk-remote/simpleverifier",
+      "@toolsdk-remote/twitter-agent-by-nova-civai",
+      "@toolsdk-remote/viewlify",
+      "aipe-mcp",
+      "marketmirror"
     ]
   },
   "monitoring": {
@@ -4015,7 +4071,9 @@
       "@toolsdk-remote/pingstack",
       "@toolsdk-remote/telemio-observability",
       "@toolsdk-remote/connecty",
-      "@toolsdk-remote/runheed"
+      "@toolsdk-remote/runheed",
+      "@lfg-labs/t3-watch",
+      "@toolsdk-remote/hearl"
     ]
   },
   "search-data-extraction": {
@@ -4716,7 +4774,27 @@
       "@toolsdk-remote/covid-flu-rsv-wastewater-levels-mcp",
       "@toolsdk-remote/dheerajitbhu-shopify-app-store",
       "@toolsdk-remote/shopsavvy-mcp",
-      "@toolsdk-remote/tapline"
+      "@toolsdk-remote/tapline",
+      "@mambalabsdev/mcp-brazil-cnpj-company-data",
+      "@mambalabsdev/mcp-google-flights-fares",
+      "@mambalabsdev/mcp-google-hotels-prices",
+      "@mambalabsdev/mcp-google-sheets-import-export",
+      "@mambalabsdev/mcp-houzz-professionals",
+      "@mambalabsdev/mcp-job-posting-liveness-checker",
+      "@mambalabsdev/mcp-kick-channels-streams",
+      "@mambalabsdev/mcp-medium-articles-scraper",
+      "@mambalabsdev/mcp-perplexity-answer-reader",
+      "@mambalabsdev/mcp-youtube-shorts-scraper",
+      "@toolsdk-remote/aethel",
+      "@toolsdk-remote/dataxapi",
+      "@toolsdk-remote/dheerajitbhu-china-social",
+      "@toolsdk-remote/jobseveryhour",
+      "@toolsdk-remote/mcp-bids",
+      "@toolsdk-remote/research-agent-by-nova-civai",
+      "@toolsdk-remote/vaneform",
+      "@toolsdk-remote/youtube-transcripts-mcp",
+      "crawlerpeek",
+      "web2md-mcp-server"
     ]
   },
   "security": {
@@ -4897,7 +4975,8 @@
       "@toolsdk-remote/subdomain-finder-mcp",
       "ironheights",
       "@toolsdk-remote/excession-labs-cve",
-      "@toolsdk-remote/gridzen-verification"
+      "@toolsdk-remote/gridzen-verification",
+      "wyro-check"
     ]
   },
   "sports": {
@@ -5010,7 +5089,9 @@
       "@toolsdk-remote/ouroboros-desk",
       "@toolsdk-remote/there-there",
       "@toolsdk-remote/insertchat",
-      "@toolsdk-remote/replai"
+      "@toolsdk-remote/replai",
+      "@toolsdk-remote/deacon",
+      "@toolsdk-remote/support-agent-admin-by-nova-civai"
     ]
   },
   "translation-services": {
@@ -5120,7 +5201,9 @@
       "@toolsdk-remote/agent-flights",
       "@toolsdk-remote/airport-delays-faa-status-mcp",
       "@toolsdk-remote/border-wait-times-canada-mexico-mcp",
-      "@toolsdk-remote/fuel-economy-gas-mileage-mpg-mcp"
+      "@toolsdk-remote/fuel-economy-gas-mileage-mpg-mcp",
+      "@toolsdk-remote/common-room",
+      "@toolsdk-remote/terudo"
     ]
   },
   "version-control": {
@@ -6122,7 +6205,16 @@
       "sightradar-mcp",
       "@toolsdk-remote/frank-ai-researcher",
       "@toolsdk-remote/pay2gpt",
-      "@toolsdk-remote/powerball-mega-millions-winning-numbers-mcp"
+      "@toolsdk-remote/powerball-mega-millions-winning-numbers-mcp",
+      "@inplain/cli",
+      "@toolsdk-remote/calendar-agent-by-nova-civai",
+      "@toolsdk-remote/google-docs-agent-by-nova-civai",
+      "@toolsdk-remote/interviewer-agent-by-nova-civai",
+      "@toolsdk-remote/music-agent-by-nova-civai",
+      "@toolsdk-remote/nukebg",
+      "@toolsdk-remote/pdf-agent-by-nova-civai",
+      "@toolsdk-remote/product-admin-by-nova-civai",
+      "@toolsdk-remote/slidegen-agent-by-nova-civai"
     ]
   }
 }
