@@ -1,0 +1,13 @@
+{
+  "type": "mcp-server",
+  "name": "Wyro",
+  "packageName": "wyro-check",
+  "description": "Architecture check for the backend a coding agent is changing: lists every route, whether it authenticates and the tables it reaches, flags routes with no auth, validation or rate limit, and gives a GO / WATCH / NO-GO verdict per change. Rule-based, no model.",
+  "url": "https://github.com/WyroBase/wyro-mcp",
+  "readme": "https://github.com/WyroBase/wyro-mcp#readme",
+  "author": "WyroBase",
+  "license": "SEE LICENSE IN LICENSE",
+  "runtime": "node",
+  "binArgs": ["--mcp"],
+  "env": {}
+}
