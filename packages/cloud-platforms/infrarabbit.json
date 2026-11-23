@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "InfraRabbit",
+  "packageName": "@toolsdk-remote/infrarabbit",
+  "description": "Free remote MCP server with dated list prices of VPS, GPU and LLM API plans, price history, change feeds, price indices and AI API uptime. No authentication.",
+  "url": "https://github.com/InfraRabbit/mcp",
+  "readme": "https://github.com/InfraRabbit/mcp#readme",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://infrarabbit.com/mcp"
+    }
+  ]
+}
