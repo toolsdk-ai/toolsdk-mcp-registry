@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "x402 Company & Macro Data",
+  "packageName": "@toolsdk-remote/x402-company-data",
+  "description": "Hosted MCP server for KYB and macro data: official company registers of 19 countries plus GLEIF, sanctions screening (EU, UN, OFAC, UK), ECB FX rates, central bank rates, US Treasury yields and inflation. Pay per call via x402 (USDC on Base), no account or API key. Tools: company, kyb, fx_rates, interest_rates, treasury_yields, inflation.",
+  "readme": "https://x402-apis.pages.dev/llms.txt",
+  "url": "https://x402-apis.pages.dev/llms.txt",
+  "runtime": "node",
+  "author": "Stockwerk Studio",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://x402-apis.pages.dev/mcp"
+    }
+  ]
+}
