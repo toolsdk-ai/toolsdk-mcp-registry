@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Apify Run Health Monitor",
+  "packageName": "@mambalabsdev/mcp-apify-run-health-monitor",
+  "description": "MCP server for Apify Run Health Monitor. Check your own Apify actors for failed, slow, and empty runs on your own token. Runs on Apify.",
+  "url": "https://github.com/mambalabsdev/mcp-apify-run-health-monitor",
+  "readme": "https://github.com/mambalabsdev/mcp-apify-run-health-monitor#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}
