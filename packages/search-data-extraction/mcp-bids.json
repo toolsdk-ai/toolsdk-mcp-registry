@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "MCP Bids",
+  "packageName": "@toolsdk-remote/mcp-bids",
+  "description": "Search collected public procurement notices and review available source documents. Hosted service uses OAuth; source coverage and freshness vary.",
+  "url": "https://mcpbids.com",
+  "readme": "https://github.com/pixelligue/mcpbids-plugins#readme",
+  "runtime": "python",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcpbids.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["tenders:read", "documents:read"]
+      }
+    }
+  ]
+}
