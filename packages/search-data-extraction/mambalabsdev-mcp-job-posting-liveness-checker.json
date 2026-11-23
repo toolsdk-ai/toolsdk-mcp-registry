@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Job Posting Liveness Checker",
+  "packageName": "@mambalabsdev/mcp-job-posting-liveness-checker",
+  "description": "MCP server for Job Posting Liveness Checker. Check if job postings are still open, with posted date and age. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-job-posting-liveness-checker",
+  "readme": "https://github.com/mambalabsdev/mcp-job-posting-liveness-checker#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}
