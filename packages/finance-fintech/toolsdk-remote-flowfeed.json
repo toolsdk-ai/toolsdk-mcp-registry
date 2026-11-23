@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "FlowFeed",
+  "packageName": "@toolsdk-remote/flowfeed",
+  "description": "Real-time macro, forex and crypto news for AI agents: central bank releases (Fed, ECB, BoE, BoJ), economic data parsed into actual vs forecast vs previous, an economic calendar and deduplicated market headlines, each with source, publish time and link. Sign in with your FlowFeed key via OAuth.",
+  "readme": "https://github.com/loyt1/flowfeed-mcp",
+  "url": "https://flowfeed.cc",
+  "runtime": "node",
+  "author": "FlowFeed",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.flowfeed.cc/mcp",
+      "auth": { "type": "oauth2", "scopes": ["mcp"] }
+    }
+  ]
+}
