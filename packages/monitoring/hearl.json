@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "Hearl",
+  "packageName": "@toolsdk-remote/hearl",
+  "description": "Shared inbox for public posts about a product from X, Reddit, Hacker News, YouTube, app-store reviews and GitHub issues. AI flags which need a reply. It does not post replies.",
+  "url": "https://github.com/io-oi-ai/hearl",
+  "readme": "https://github.com/io-oi-ai/hearl#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://hearl.org/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
