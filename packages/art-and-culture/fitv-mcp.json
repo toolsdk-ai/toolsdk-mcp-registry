@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Free Image to Video MCP",
+  "packageName": "fitv-mcp",
+  "description": "Free image to video AI with no daily cap: start with no sign-up, keep going on a free account. Every video comes with sound and no watermark. Hosted remote MCP server at https://freeimagetovideo.ai/api/mcp.",
+  "url": "https://github.com/hanshs474/fitv-mcp",
+  "readme": "https://github.com/robertmarshii/aipe-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "FREEIMAGETOVIDEO_API_KEY": {
+      "description": "Optional API key from freeimagetovideo.ai",
+      "required": false
+    }
+  },
+  "homepage": "https://freeimagetovideo.ai/",
+  "category": "art-and-culture"
+}
