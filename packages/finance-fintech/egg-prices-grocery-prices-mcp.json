@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Egg Prices and Grocery Prices MCP",
+  "packageName": "@toolsdk-remote/egg-prices-grocery-prices-mcp",
+  "description": "Monthly US average retail prices for eggs, beef, coffee, milk, bread, gasoline and electricity from BLS CPI average price data. Tools: grocery_price, grocery_price_history, grocery_prices_compare, grocery_price_items. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/egg-prices-grocery-prices-mcp",
+  "readme": "https://github.com/theluckystrike/egg-prices-grocery-prices-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://egg-prices-grocery-prices-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}

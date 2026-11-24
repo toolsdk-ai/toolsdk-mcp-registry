@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Home Health and Hospice Ratings MCP",
+  "packageName": "@toolsdk-remote/home-health-hospice-ratings-care-compare-mcp",
+  "description": "Medicare Care Compare star ratings, patient and family survey results and quality measures for US home health agencies and hospices by ZIP code. Tools: home_health_search, home_health_ratings, hospice_search, hospice_ratings. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/home-health-hospice-ratings-care-compare-mcp",
+  "readme": "https://github.com/theluckystrike/home-health-hospice-ratings-care-compare-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://home-health-hospice-ratings-care-compare-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}
