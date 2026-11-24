@@ -1,0 +1,24 @@
+{
+  "type": "mcp-server",
+  "name": "Variafy",
+  "packageName": "@toolsdk-remote/variafy",
+  "description": "Connects AI assistants to Meta (Facebook and Instagram) ad accounts: ad results, CRM payments matched to ads and account alerts. Ad changes are previewed and applied only after the user confirms.",
+  "url": "https://github.com/DenysVolynskyi/variafy-plugins",
+  "readme": "https://www.variafy.com/help",
+  "runtime": "node",
+  "license": "Proprietary",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.variafy.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "ads.read",
+          "ads.write"
+        ]
+      }
+    }
+  ]
+}
