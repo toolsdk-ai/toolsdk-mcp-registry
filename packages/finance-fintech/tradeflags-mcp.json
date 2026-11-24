@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "TradeFlags MCP",
+  "packageName": "@toolsdk-remote/tradeflags-mcp",
+  "description": "Authenticated market data for HK and US equities — breadth, volatility, signals, vol surfaces, and accumulator OTC pricing. OAuth 2.1 (RFC 9728) with dynamic client registration and PKCE.",
+  "url": "https://github.com/a3igner/tradeflags-mcp-docs",
+  "readme": "https://github.com/a3igner/tradeflags-mcp-docs#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "AINFER Limited",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.tradeflags.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["read:data", "mcp"]
+      }
+    }
+  ]
+}
