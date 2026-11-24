@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Bytebase MCP",
+  "packageName": "@bytebase/bytebase-mcp",
+  "description": "Official MCP server for Bytebase. Queries data, inspects schemas and proposes database changes through a Bytebase instance, under its approval flow, access control, data masking and audit logging.",
+  "url": "https://github.com/bytebase/bytebase-mcp",
+  "readme": "https://github.com/bytebase/bytebase-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "BYTEBASE_URL": {
+      "description": "External URL of the Bytebase instance. Required to call tools.",
+      "required": true
+    }
+  }
+}
