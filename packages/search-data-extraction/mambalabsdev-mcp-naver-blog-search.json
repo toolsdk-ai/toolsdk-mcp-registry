@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Naver Blog Search",
+  "packageName": "@mambalabsdev/mcp-naver-blog-search",
+  "description": "MCP server for Naver Blog Search: Naver blog posts for keywords, with date and sort filters.",
+  "url": "https://github.com/mambalabsdev/mcp-naver-blog-search",
+  "readme": "https://github.com/mambalabsdev/mcp-naver-blog-search#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}
