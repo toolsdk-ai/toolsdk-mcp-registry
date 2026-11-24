@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "XING Jobs Scraper",
+  "packageName": "@mambalabsdev/mcp-xing-jobs-scraper",
+  "description": "MCP server for XING Jobs Scraper: XING job listings by keyword and location.",
+  "url": "https://github.com/mambalabsdev/mcp-xing-jobs-scraper",
+  "readme": "https://github.com/mambalabsdev/mcp-xing-jobs-scraper#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}
