@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "Cueston",
+  "packageName": "@toolsdk-remote/cueston",
+  "description": "Builds, previews and publishes in-app product guidance on a SaaS app: product tours, tooltips, banners, onboarding checklists, surveys and announcements, and reads their analytics. Finds verified selectors on indexed pages, creates content as drafts, opens preview links, and publishes only with the mcp:publish scope. 76 tools and 5 prompts. OAuth sign-in with a Cueston account; a free plan is available.",
+  "runtime": "node",
+  "url": "https://github.com/andreycretsu/cueston-mcp",
+  "readme": "https://cueston.com/docs/mcp",
+  "license": "MIT",
+  "author": "Cueston",
+  "logo": "https://cueston.com/icon-512.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.cueston.com/api/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp:read", "mcp:write", "mcp:publish"]
+      }
+    }
+  ]
+}
