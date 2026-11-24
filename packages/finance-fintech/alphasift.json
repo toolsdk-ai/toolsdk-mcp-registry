@@ -4,9 +4,7 @@
   "packageName": "alphasift",
   "packageVersion": "0.3.1",
   "bin": "alphasift",
-  "binArgs": [
-    "mcp"
-  ],
+  "binArgs": ["mcp"],
   "description": "Cross-market stock screening CLI and read-only STDIO MCP server (13 tools, 3 resources) covering CN, US, HK, JP, KR, TW, and IN equities with YAML factor filters, chart-pattern Walk-Forward audits, and daily post-close digests.",
   "url": "https://github.com/ZhuLinsen/alphasift",
   "readme": "https://github.com/ZhuLinsen/alphasift/blob/main/docs/ecosystem.md",
