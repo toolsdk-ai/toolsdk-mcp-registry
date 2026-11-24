@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "SEO Skills",
+  "packageName": "@toolsdk-remote/seo-skills",
+  "description": "Hosted MCP server with 7 read-only tools that search primary-source SEO archives (leaked Google Content Warehouse API docs, Google and LLM patents, official Google Search documentation, Google staff statements, Google Maps ranking sources) and return results with their source.",
+  "url": "https://github.com/mirackacmazcom/seo-skills",
+  "readme": "https://seoskills.io/install/",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "SEO Skills",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.seoskills.io/mcp"
+    }
+  ]
+}
