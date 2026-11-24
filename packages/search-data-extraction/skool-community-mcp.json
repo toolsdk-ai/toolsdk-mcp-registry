@@ -5,6 +5,7 @@
   "description": "Search Skool communities by keyword: members, price, rating, estimated revenue, and daily growth. Hosted Streamable HTTP via Apify (Apify OAuth or API token).",
   "url": "https://github.com/GeminiGeorge22/publicrecords-mcp",
   "readme": "https://github.com/GeminiGeorge22/publicrecords-mcp/tree/main/servers/skool-community-mcp",
+  "runtime": "node",
   "license": "MIT",
   "author": "publicrecords",
   "env": {},
