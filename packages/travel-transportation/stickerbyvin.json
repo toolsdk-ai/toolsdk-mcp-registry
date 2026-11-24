@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "StickerByVIN",
+  "packageName": "@toolsdk-remote/stickerbyvin",
+  "description": "Checks whether a car's original window sticker (Monroney label) is on file for a VIN. Decodes the vehicle (year, make, model, trim, engine, drivetrain, plant), gives the model's recall count with NHTSA's open-recall link, and says where the paint code is printed. One read-only tool, check_window_sticker. Free with no key.",
+  "readme": "https://stickerbyvin.com/developers",
+  "runtime": "node",
+  "logo": "https://stickerbyvin.com/icon-512.png",
+  "author": "StickerByVIN",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://stickerbyvin.com/mcp"
+    }
+  ]
+}
