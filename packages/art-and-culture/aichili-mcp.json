@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "AI Chili",
+  "packageName": "@toolsdk-remote/aichili",
+  "packageVersion": "1.0.0",
+  "description": "Official MCP server for AI Chili video and talking-avatar generation, live model discovery, dry-run credit quoting, and PAYG cost estimation. Unauthenticated read-only tools (platform_overview, list_video_models, estimate_video_cost) work over Streamable HTTP with no key; wallet, dry-run planning, and generation tools (get_credit_balance, plan_video_generation, create_video_generation, get_video_generation) require a chili_sk_* Bearer API key or the local stdio server from GitHub.",
+  "url": "https://github.com/AI-Chili/aichili",
+  "readme": "https://github.com/AI-Chili/aichili#readme",
+  "logo": "https://aichili.ai/apple-touch-icon.png",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "AI Chili",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://aichili.ai/mcp"
+    }
+  ]
+}
