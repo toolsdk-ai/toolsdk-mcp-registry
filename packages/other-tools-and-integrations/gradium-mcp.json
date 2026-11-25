@@ -13,9 +13,7 @@
       "url": "https://mcp.gradium.ai/mcp",
       "auth": {
         "type": "oauth2",
-        "scopes": [
-          "profile"
-        ]
+        "scopes": ["profile"]
       }
     }
   ]
