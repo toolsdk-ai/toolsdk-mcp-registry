@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Gradium",
+  "packageName": "@toolsdk-remote/gradium-mcp",
+  "description": "Gradium text-to-speech: browse voices, generate speech as WAV audio, and check your organization's credit balance.",
+  "readme": "https://docs.gradium.ai/integrations/mcp",
+  "author": "Gradium",
+  "runtime": "python",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.gradium.ai/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "profile"
+        ]
+      }
+    }
+  ]
+}
