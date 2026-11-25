@@ -1,0 +1,14 @@
+{
+  "type": "mcp-server",
+  "name": "CiteGuard MCP",
+  "packageName": "ghcr.io/lukecele/citeguard-mcp",
+  "packageVersion": "0.1.1",
+  "binArgs": ["run", "-i", "--rm", "ghcr.io/lukecele/citeguard-mcp:0.1.1"],
+  "description": "Zero-dependency MCP server and CLI that verifies DOIs, PubMed PMIDs, and arXiv IDs across Crossref, DataCite, PubMed, OpenAlex, and arXiv, catching LLM chimera metadata hallucinations and retracted papers.",
+  "url": "https://github.com/Lukecele/citeguard-mcp",
+  "readme": "https://github.com/Lukecele/citeguard-mcp#readme",
+  "author": "Lukecele",
+  "license": "MIT",
+  "runtime": "docker",
+  "env": {}
+}
