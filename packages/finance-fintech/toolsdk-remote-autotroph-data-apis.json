@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Autotroph Data & Compliance MCP",
+  "packageName": "@toolsdk-remote/autotroph-data-apis",
+  "description": "Schema-verified SEC EDGAR XBRL financials (10-K/10-Q, derived Q4 & TTM, balance-sheet identity check), EU TED eForms public tenders, USAspending/SAM.gov federal contracts, USPTO global patent claim trees, and US Federal Register rules. Hosted Streamable HTTP via Apify MCP ($5/mo free tier) or local stdio.",
+  "readme": "https://github.com/char5742/autotroph-mcp-catalog",
+  "url": "https://github.com/char5742/autotroph-mcp-catalog",
+  "runtime": "node",
+  "author": "char5742",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token (free $5/mo tier covers 1,000+ calls)",
+      "required": true
+    }
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com?tools=autotroph/sec-edgar-xbrl-normalizer,autotroph/ted-eu-eforms-normalizer,autotroph/us-federal-procurement-normalizer,autotroph/uspto-patent-intelligence-normalizer,autotroph/us-federal-register-normalizer"
+    }
+  ]
+}
