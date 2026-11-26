@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "BBB Business Search",
+  "packageName": "@mambalabsdev/mcp-bbb-business-search",
+  "description": "MCP server for BBB Business Search: BBB business listings with ratings, accreditation, and phones.",
+  "url": "https://github.com/mambalabsdev/mcp-bbb-business-search",
+  "readme": "https://github.com/mambalabsdev/mcp-bbb-business-search#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}
