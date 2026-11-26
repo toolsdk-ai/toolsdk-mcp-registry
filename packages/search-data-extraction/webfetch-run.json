@@ -1,0 +1,38 @@
+{
+  "type": "mcp-server",
+  "name": "webfetch.run",
+  "packageName": "@toolsdk-remote/webfetch-run",
+  "description": "Hosted MCP server that fetches any public URL as markdown, HTML, text or a screenshot. JavaScript is rendered in a real browser, proxies are included, and a failed or empty fetch costs nothing. Tools: fetch, check_coverage and browser session tools. Sign in with OAuth.",
+  "readme": "https://webfetch.run/docs",
+  "runtime": "node",
+  "author": "webfetch.run",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.webfetch.run/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
