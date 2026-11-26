@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "iQuota Hotels",
+  "packageName": "@toolsdk-remote/iquota-hotels",
+  "description": "Hosted MCP server for independent hotels, apartments and villas that contract directly with their owners: search live availability and prices, get property details, check a rate and book it instantly. Payment is collected by the property itself, so no card details go through the assistant. No authentication; search the destination \"demo\" to run the whole flow with test bookings.",
+  "url": "https://github.com/iquota/iquota-mcp",
+  "readme": "https://github.com/iquota/iquota-mcp#readme",
+  "runtime": "node",
+  "license": "unknown",
+  "logo": "https://iquota.io/static/icon-512.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://iquota.io/mcp"
+    }
+  ]
+}
