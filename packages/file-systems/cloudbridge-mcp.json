@@ -2,7 +2,7 @@
   "type": "mcp-server",
   "name": "CloudBridge",
   "packageName": "@toolsdk-remote/cloudbridge-mcp",
-  "description": "Transfer and sync files between 19 cloud storages — Yandex Disk, Google Drive, VK Cloud, Dropbox, OneDrive, Telegram, MEGA, pCloud, S3, WebDAV, FTP. Tool calls require a CloudBridge API key sent as an X-API-Key header (free key from the account dashboard); introspection answers unauthenticated.",
+  "description": "Transfer and sync files between 19 cloud storages — Yandex Disk, Google Drive, VK Cloud, Dropbox, OneDrive, Telegram, MEGA, pCloud, S3, WebDAV, FTP. Tool calls require a CloudBridge API key sent as an X-API-Key header — new users can register and mint a key with a 3-day free trial via the built-in signup/verify_signup tools, entirely inside the MCP client; introspection answers unauthenticated.",
   "url": "https://github.com/nw-cd/cloudbridge-mcp",
   "readme": "https://github.com/nw-cd/cloudbridge-mcp#readme",
   "runtime": "node",
