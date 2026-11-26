@@ -1,0 +1,13 @@
+{
+  "type": "mcp-server",
+  "name": "Caelo",
+  "packageName": "caelo",
+  "description": "Free, local security scanner for apps built with AI coding tools. Finds exposed API keys, secrets leaked to the browser bundle, open Firebase or Supabase rules, and committed .env files. Reads files only, uploads nothing, and redacts secret values.",
+  "url": "https://github.com/arthi-arumugam-git/caelo",
+  "readme": "https://github.com/arthi-arumugam-git/caelo#readme",
+  "author": "Irth Labs",
+  "license": "MIT",
+  "runtime": "node",
+  "binArgs": ["--mcp"],
+  "env": {}
+}
