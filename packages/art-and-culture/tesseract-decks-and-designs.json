@@ -14,9 +14,7 @@
       "url": "https://app.tesseract.dev/api/core/tesseract/mcp/design",
       "auth": {
         "type": "oauth2",
-        "scopes": [
-          "design"
-        ]
+        "scopes": ["design"]
       }
     }
   ]

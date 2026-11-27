@@ -14,9 +14,7 @@
       "url": "https://app.tesseract.dev/api/core/tesseract/mcp",
       "auth": {
         "type": "oauth2",
-        "scopes": [
-          "media"
-        ]
+        "scopes": ["media"]
       }
     }
   ]
