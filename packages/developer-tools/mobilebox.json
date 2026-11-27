@@ -2,7 +2,7 @@
   "type": "mcp-server",
   "name": "Mobilebox",
   "packageName": "@toolsdk-remote/mobilebox",
-  "description": "Cloud Android phones that AI agents drive: install an APK, read the screen as numbered elements, tap, type and swipe, take screenshots, and park a phone to keep its apps and logins. 15 tools.",
+  "description": "Mobile sandboxes for AI agents: each agent gets its own cloud Android phone or iOS simulator over MCP, reads the screen, taps, types and installs your app. Android $0.01/min, iOS $0.03/min.",
   "url": "https://mobilebox.dev",
   "readme": "https://mobilebox.dev/android-mcp-server",
   "runtime": "node",
