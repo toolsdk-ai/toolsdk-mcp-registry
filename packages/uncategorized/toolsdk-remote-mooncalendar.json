@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Moon Calendar",
+  "packageName": "@toolsdk-remote/mooncalendar",
+  "description": "The Moon in UK time (GMT or BST): today's phase and moonrise at UK places, full and new Moon dates with supermoons and blue Moons, a month calendar, eclipses seen from the UK, dark-sky nights, spring and neap tide dates, the Moon's sign and new crescent sightings. Hosted Streamable HTTP endpoint; no sign-in.",
+  "readme": "https://mooncalendar.co.uk/app",
+  "url": "https://github.com/pyxlino/mooncalendar-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Pyxl",
+  "logo": "https://mooncalendar.co.uk/mcp/icons/icon-512.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mooncalendar.co.uk/api/mcp"
+    }
+  ]
+}
