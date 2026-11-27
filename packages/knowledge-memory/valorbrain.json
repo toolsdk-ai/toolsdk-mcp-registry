@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "ValorBrain",
+  "packageName": "@toolsdk-remote/valorbrain",
+  "description": "Shared memory for a team of AI agents over remote MCP: agents store, search and correct dated facts and decisions, and pass work to each other through handoffs the whole team reads. Sign-in with OAuth 2.1 (read and write scopes).",
+  "url": "https://valorbrain.com.br/",
+  "readme": "https://docs.valorbrain.com.br/docs/mcp",
+  "runtime": "node",
+  "logo": "https://valorbrain.com.br/icon.svg",
+  "author": "ValorBrain",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcpbrain.valor.digital/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["read", "write"]
+      }
+    }
+  ]
+}
