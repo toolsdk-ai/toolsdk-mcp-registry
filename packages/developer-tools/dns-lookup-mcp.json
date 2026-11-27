@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "DNS Lookup MCP: Bulk DNS, MX, SPF and DMARC",
+  "packageName": "@toolsdk-remote/dns-lookup-mcp",
+  "description": "Bulk DNS lookup for a list of domains: A, AAAA, CNAME, MX, NS, TXT, SOA and CAA, with SPF and DMARC checks and the email provider, one row per domain. Hosted on Apify's MCP server; the tool is the pay-per-event Apify Actor publicrecords/dns-lookup. Sign in with your own Apify account (OAuth or API token).",
+  "url": "https://github.com/GeminiGeorge22/publicrecords-mcp",
+  "runtime": "node",
+  "readme": "https://github.com/GeminiGeorge22/publicrecords-mcp/tree/main/servers/dns-lookup-mcp",
+  "license": "MIT",
+  "author": "publicrecords",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com?tools=publicrecords/dns-lookup",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
