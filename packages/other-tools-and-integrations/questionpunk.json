@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "QuestionPunk",
+  "packageName": "@toolsdk-remote/questionpunk",
+  "description": "Official hosted MCP server for QuestionPunk, a survey platform with AI-moderated voice and chat interviews. Create a study or start one from a template, edit questions and display logic on a draft, and publish it when you ask. With permission to read responses, pull response counts, single responses, reports, cross-tabs and CSV or Excel exports. OAuth sign-in; works on every plan, Free included, and the plan's limits apply.",
+  "url": "https://www.questionpunk.com/features/mcp-server",
+  "runtime": "node",
+  "author": "QuestionPunk",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.questionpunk.com/api/v1",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
