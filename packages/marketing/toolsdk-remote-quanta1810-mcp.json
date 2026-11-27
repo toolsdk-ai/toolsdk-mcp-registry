@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Quanta1810 Web Audit & Lazada Tools",
+  "packageName": "@toolsdk-remote/quanta1810-mcp",
+  "description": "Remote MCP server hosted by Apify with seven pay-per-result tools: bulk website health audit (SEO, SSL, DMARC score per site), PageSpeed Insights with real-user Core Web Vitals, redirect chain checker, SSL certificate expiry checker, DMARC/SPF checker, contact email finder and Lazada product scraper. Sign in with your Apify account via OAuth; usage is billed to that account.",
+  "readme": "https://github.com/QuanTa1810/quanta1810-mcp#readme",
+  "url": "https://github.com/QuanTa1810/quanta1810-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "QuanTa1810",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=quanta1810/website-health-audit,quanta1810/bulk-pagespeed,quanta1810/bulk-redirect-checker,quanta1810/lazada-scraper,quanta1810/dmarc-spf-checker,quanta1810/ssl-certificate-checker,quanta1810/website-contact-finder",
+      "auth": { "type": "oauth2" }
+    }
+  ]
+}
