@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "PinnFeed",
+  "packageName": "@toolsdk-remote/pinnfeed",
+  "description": "Hosted MCP server for PinnFeed, a real-time Pinnacle odds API with prematch and live coverage over WebSocket and REST, no-vig fair odds, and closing-line history. Covers 13 sports with moneyline/1X2, handicaps and totals, including alternative lines and periods. Requires a PinnFeed API key.",
+  "url": "https://github.com/pinnfeed/pinnfeed-mcp",
+  "readme": "https://pinnfeed.io/docs/mcp",
+  "logo": "https://pinnfeed.io/logo.png",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "pinnfeed",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://pinnfeed.io/mcp"
+    }
+  ]
+}
