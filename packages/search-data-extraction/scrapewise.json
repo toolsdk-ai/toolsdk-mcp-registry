@@ -16,10 +16,7 @@
       "url": "https://mcp.scrapewise.ai/mcp",
       "auth": {
         "type": "oauth2",
-        "scopes": [
-          "mcp:read",
-          "mcp:full"
-        ]
+        "scopes": ["mcp:read", "mcp:full"]
       }
     }
   ]
