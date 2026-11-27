@@ -16,9 +16,7 @@
       "url": "https://api.sortance.com/mcp",
       "auth": {
         "type": "oauth2",
-        "scopes": [
-          "mcp"
-        ]
+        "scopes": ["mcp"]
       }
     }
   ]
