@@ -12,9 +12,7 @@
       "url": "https://app.socialpostflow.com/mcp",
       "auth": {
         "type": "oauth2",
-        "scopes": [
-          "mcp:use"
-        ]
+        "scopes": ["mcp:use"]
       }
     }
   ]
