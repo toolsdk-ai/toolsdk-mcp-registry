@@ -2,7 +2,7 @@
   "type": "mcp-server",
   "name": "Glasp",
   "packageName": "@toolsdk-remote/co-glasp-glasp",
-  "description": "Search and read your own saved web and Kindle highlights, page summaries and bookmarks, with the source of each passage. Sign in with a free Glasp account over OAuth; nine tools, eight read-only.",
+  "description": "Search and read your own saved web and Kindle highlights, page summaries and bookmarks, with the source of each passage. Sign in with a free Glasp account over OAuth. Nine tools, eight read-only; the ninth saves a page to your Glasp bookmarks, a permission you approve when connecting, and bookmarks are public on your profile. It never edits or deletes anything.",
   "url": "https://glasp.co",
   "runtime": "node",
   "license": "unknown",
