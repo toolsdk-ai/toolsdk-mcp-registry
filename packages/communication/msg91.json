@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "MSG91",
+  "packageName": "@toolsdk-remote/msg91",
+  "description": "MSG91 is a cloud communication platform with APIs and tools for SMS, WhatsApp, email, voice calls and OTP verification. Through this MCP server, AI assistants can search the MSG91 docs and API reference and call the MSG91 API operations supported by the integration.",
+  "url": "https://github.com/walkover-mcp/msg91",
+  "readme": "https://github.com/walkover-mcp/msg91#readme",
+  "runtime": "node",
+  "env": {},
+  "logo": "https://stuff.thingsofbrand.com/msg91.com/images/imge_msg91.svg",
+  "author": "Walkover",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.msg91.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
