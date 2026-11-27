@@ -1,11 +1,16 @@
 {
   "author": "lgda-technologies",
-  "description": "MCP server selling biometric wellness music to AI agents via x402 ($5.99/track, $14.99/album USDC on Base), with measured HRV session evidence per track. 27 tracks across 9 albums; 5 tools: list_catalog, get_track_evidence, purchase_track, purchase_album, verify_session.",
+  "description": "MCP server selling calm music and focus music to AI agents via x402 ($5.99/track, $14.99/album, $0.05 session play USDC on Base), with HRV measured session and RMSSD music evidence per track. 27 tracks across 9 albums; tools: list_catalog, get_track_evidence, purchase_track, purchase_album, play_track_session, verify_session.",
   "env": {},
   "name": "LGDA Autonomic Pacing Node",
   "packageName": "@toolsdk-remote/lgda-autonomic-node",
   "readme": "https://github.com/lgda-technologies/lgda-autonomic-node#readme",
-  "remotes": [{ "type": "streamable-http", "url": "https://lgda-music.fly.dev/mcp" }],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://lgda-music.fly.dev/mcp"
+    }
+  ],
   "runtime": "python",
   "type": "mcp-server",
   "url": "https://github.com/lgda-technologies/lgda-autonomic-node"
