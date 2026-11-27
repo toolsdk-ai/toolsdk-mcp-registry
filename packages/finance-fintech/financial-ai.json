@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Financial AI",
+  "packageName": "@toolsdk-remote/financial-ai",
+  "description": "Official hosted MCP server of Financial AI (thefinancial.ai): company research, proprietary financial and macroeconomic forecasts, stock screens and strategy backtests across stocks, ETFs, options, futures and crypto, in plain language. Authenticates with OAuth 2.1 (discovery, dynamic client registration, PKCE) using the user's own thefinancial.ai account; free trial, then a paid subscription. It cannot place orders or move money.",
+  "url": "https://thefinancial.ai",
+  "readme": "https://github.com/thefinancial-ai/financial-ai#readme",
+  "runtime": "node",
+  "logo": "https://raw.githubusercontent.com/thefinancial-ai/financial-ai/main/assets/logo.png",
+  "author": "Global Financial AI",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://thefinancial.ai/api/finai-mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
