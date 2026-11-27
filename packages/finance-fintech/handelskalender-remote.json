@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Handelskalender (exchange calendar & holidays)",
+  "packageName": "@toolsdk-remote/handelskalender",
+  "description": "Hosted MCP server for trading days of 28 stock exchanges from official calendars (hours in local time and UTC, half days, live status, next open/close) and public holidays plus business-day math for 247 countries. Pay per call via x402 (USDC on Base), no account or API key. Tools: trading_day, trading_calendar, market_status, public_holidays, business_day.",
+  "readme": "https://handelskalender-api.pages.dev/llms.txt",
+  "url": "https://handelskalender-api.pages.dev/llms.txt",
+  "runtime": "node",
+  "author": "Stockwerk Studio",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://handelskalender-api.pages.dev/mcp"
+    }
+  ]
+}
