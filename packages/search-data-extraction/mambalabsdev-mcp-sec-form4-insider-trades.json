@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "SEC Form 4 Insider Trades",
+  "packageName": "@mambalabsdev/mcp-sec-form4-insider-trades",
+  "description": "MCP server for SEC Form 4 Insider Trades: insider buys, sells, and option trades from EDGAR.",
+  "url": "https://github.com/mambalabsdev/mcp-sec-form4-insider-trades",
+  "readme": "https://github.com/mambalabsdev/mcp-sec-form4-insider-trades#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}
