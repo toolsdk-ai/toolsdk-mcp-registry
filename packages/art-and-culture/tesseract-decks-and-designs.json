@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Tesseract Decks & Designs",
+  "packageName": "@toolsdk-remote/tesseract-decks-and-designs",
+  "description": "Lays out what the assistant writes as slide decks with speaker notes, diagrams (Mermaid or SVG), charts with their numbers in a table, and designs from HTML/CSS or SVG, kept as private pages in the person's Tesseract account with earlier versions. Calls no AI model and costs nothing on any Tesseract plan. 6 tools (4 make or change a page, 2 read back pages made here). OAuth sign-in with a free Tesseract account; hosted by Eightcell Labs, closed source.",
+  "runtime": "node",
+  "readme": "https://tesseract.dev/mcp/design/",
+  "author": "Eightcell Labs, Inc.",
+  "logo": "https://tesseract.dev/favicon.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.tesseract.dev/api/core/tesseract/mcp/design",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["design"]
+      }
+    }
+  ]
+}

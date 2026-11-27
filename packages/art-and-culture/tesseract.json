@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Tesseract",
+  "packageName": "@toolsdk-remote/tesseract",
+  "description": "Makes pictures, picture edits, effects and short video clips with their own sound from an MCP client, on the person's own Tesseract account: usage is charged to their Tesseract plan (free media first, then their allowance or balance), and every paid call takes a max_usd ceiling. Long work such as video comes back as a job to check with check_job. 8 tools. OAuth sign-in with a Tesseract account; hosted by Eightcell Labs, closed source.",
+  "runtime": "node",
+  "readme": "https://tesseract.dev/mcp/",
+  "author": "Eightcell Labs, Inc.",
+  "logo": "https://tesseract.dev/favicon.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.tesseract.dev/api/core/tesseract/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["media"]
+      }
+    }
+  ]
+}
