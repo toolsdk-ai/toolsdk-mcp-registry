@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "postkeep",
+  "packageName": "@toolsdk-remote/postkeep",
+  "description": "Connect Gmail, Outlook, iCloud Mail, Fastmail, and Yahoo Mail over remote Streamable HTTP MCP with OAuth 2.1, clean Markdown mail reads, attachment downloads, IMAP drafts, and signed new-mail webhooks.",
+  "url": "https://github.com/postkeep/postkeep",
+  "readme": "https://postkeep.dev/docs/clients/",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://postkeep.ai/apple-touch-icon.png",
+  "author": "postkeep",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.postkeep.ai/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
