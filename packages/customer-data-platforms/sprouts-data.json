@@ -15,7 +15,13 @@
       "url": "https://dashboard.sproutsdata.ai/mcp",
       "auth": {
         "type": "oauth2",
-        "scopes": ["dsp.search.read", "dsp.entities.read", "dsp.usage.read", "dsp.agents.read", "dsp.agents.write"]
+        "scopes": [
+          "dsp.search.read",
+          "dsp.entities.read",
+          "dsp.usage.read",
+          "dsp.agents.read",
+          "dsp.agents.write"
+        ]
       }
     }
   ]
