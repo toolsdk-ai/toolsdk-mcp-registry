@@ -1,0 +1,12 @@
+{
+  "type": "mcp-server",
+  "name": "ArchLang",
+  "packageName": "@chanmeng666/archlang-mcp",
+  "description": "Floor plans as code: an AI writes a plain-text .arch file and the ArchLang compiler draws a dimensioned plan (SVG, DXF, PDF) and reports what is wrong, with machine-applicable fixes. Tools include compile, describe, lint, validate, fix, finish, suggest, complete and explain. Also hosted with no auth at https://mcp.archlang.uk/mcp.",
+  "url": "https://github.com/ChanMeng666/archlang",
+  "readme": "https://archlang.uk/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "ChanMeng666",
+  "env": {}
+}
