@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Dock",
+  "packageName": "@toolsdk-remote/dock",
+  "description": "Dock (dock.space) is GNTC's AI presentation editor for PowerPoint, Keynote and PDF. Through its hosted MCP server an agent creates a deck from a Dock template or an uploaded .pptx or .key file, edits it with 200+ presentation actions, renders slides to check its own work, sends edits as a proposal that a person accepts in Dock, and exports PPTX or PDF. Sign in with OAuth; MCP access comes with every plan, Free included.",
+  "url": "https://dock.space",
+  "readme": "https://dock.space/agents",
+  "runtime": "node",
+  "license": "Proprietary",
+  "author": "GNTC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.dock.space/v1/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
