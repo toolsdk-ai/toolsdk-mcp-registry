@@ -1,0 +1,12 @@
+{
+  "type": "mcp-server",
+  "name": "RestockCheck Public Telemetry MCP",
+  "packageName": "restockcheck-mcp",
+  "description": "Read-only Model Context Protocol server exposing live Apple Store in-store pickup availability snapshots, store directories, and service reliability telemetry from RestockCheck.",
+  "url": "https://github.com/yangjwlove-dev/restockcheck-mcp",
+  "readme": "https://github.com/yangjwlove-dev/restockcheck-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "RestockCheck",
+  "env": {}
+}
