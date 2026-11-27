@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "SocialAPIs",
+  "packageName": "@socialapis/mcp",
+  "description": "Read-only MCP server for public Facebook and Instagram data: pages, posts, comments, groups, the Meta Ad Library, Marketplace listings, and Instagram profiles, posts, reels and places. Free plan: 200 credits a month, no card.",
+  "url": "https://github.com/SocialAPIsHub/mcp-server",
+  "readme": "https://github.com/SocialAPIsHub/mcp-server#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "SocialAPIs",
+  "env": {
+    "SOCIALAPIS_API_KEY": {
+      "description": "Your SocialAPIs API key (free at https://socialapis.io/dashboard).",
+      "required": true,
+      "secret": true
+    }
+  }
+}
