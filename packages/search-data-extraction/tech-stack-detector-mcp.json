@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Tech Stack Detector MCP: Website Technology Lookup",
+  "packageName": "@toolsdk-remote/tech-stack-detector-mcp",
+  "description": "Find what any website is built with: CMS, frameworks, analytics, CDN, hosting and more. Hosted on Apify's MCP server; the tool is the pay-per-event Apify Actor publicrecords/tech-stack-detector. Sign in with your own Apify account (OAuth or API token).",
+  "url": "https://github.com/GeminiGeorge22/publicrecords-mcp",
+  "runtime": "node",
+  "readme": "https://github.com/GeminiGeorge22/publicrecords-mcp/tree/main/servers/tech-stack-detector-mcp",
+  "license": "MIT",
+  "author": "publicrecords",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com?tools=publicrecords/tech-stack-detector",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
