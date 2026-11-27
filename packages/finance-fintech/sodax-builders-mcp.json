@@ -1,12 +1,12 @@
 {
   "type": "mcp-server",
-  "name": "SODAX Builders MCP",
+  "name": "SODAX MCP",
   "packageName": "@toolsdk-remote/sodax-builders-mcp",
   "description": "Cross-network DeFi data and SDK docs from SODAX: supported chains, swap tokens, quotes, intent history, volume and money market positions. 37 tools work without an API key; the swap tools need a SODAX API key.",
-  "url": "https://github.com/gosodax/builders-sodax-mcp-server",
-  "readme": "https://github.com/gosodax/builders-sodax-mcp-server#readme",
+  "url": "https://github.com/gosodax/sodax-mcp",
+  "readme": "https://github.com/gosodax/sodax-mcp#readme",
   "runtime": "node",
   "license": "MIT",
   "env": {},
-  "remotes": [{ "type": "streamable-http", "url": "https://builders.sodax.com/mcp" }]
+  "remotes": [{ "type": "streamable-http", "url": "https://mcp.sodax.com/mcp" }]
 }
