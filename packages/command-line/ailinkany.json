@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "AiLinkAny",
+  "packageName": "@toolsdk-remote/ailinkany",
+  "description": "Connect AI assistants to explicitly authorized Windows PCs to manage files, run shell commands, use applications and check task status. Requires account OAuth, the AiLinkAny Windows client and a bound device. Computer execution needs an active subscription; device discovery and diagnostics do not. Select the intended PC when multiple devices are bound. Core service and Windows client are proprietary.",
+  "url": "https://github.com/AiLinkAnyCom/ailinkany",
+  "readme": "https://github.com/AiLinkAnyCom/ailinkany#readme",
+  "runtime": "node",
+  "author": "AiLinkAny",
+  "env": {},
+  "remotes": [
+    {
+      "auth": {
+        "scopes": ["mcp:tools", "offline_access"],
+        "type": "oauth2"
+      },
+      "url": "https://mcp.ailinkany.com/mcp",
+      "type": "streamable-http"
+    }
+  ]
+}

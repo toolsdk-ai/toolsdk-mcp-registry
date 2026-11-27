@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Ingredient Convert MCP",
+  "packageName": "@toolsdk-remote/ingredient-convert-mcp",
+  "description": "Cooking ingredient unit converter (cups, tablespoons, teaspoons, ml, grams, ounces) using a measured density table plus recipe scaling. Tools: convert_ingredient, list_ingredients, scale_recipe, convert_bulk, decimal_to_fraction, fraction_to_decimal, common_conversions. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/ingredient-convert-mcp",
+  "readme": "https://github.com/theluckystrike/ingredient-convert-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://ingredient-convert-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}

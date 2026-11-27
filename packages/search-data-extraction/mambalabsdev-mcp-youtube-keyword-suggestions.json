@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "YouTube Keyword Suggestions",
+  "packageName": "@mambalabsdev/mcp-youtube-keyword-suggestions",
+  "description": "MCP server for YouTube Keyword Suggestions: YouTube autocomplete keyword research with A to Z expansion.",
+  "url": "https://github.com/mambalabsdev/mcp-youtube-keyword-suggestions",
+  "readme": "https://github.com/mambalabsdev/mcp-youtube-keyword-suggestions#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

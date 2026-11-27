@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "RaoMusic",
+  "packageName": "@toolsdk-remote/raomusic",
+  "description": "Generates full songs with vocals, instrumentals and sound effects from a text idea or the user's own lyrics, across seven music engines (Suno, Google Lyria, Mureka, MiniMax, ACE-Step, YuE, ElevenLabs). Tools quote the exact credit cost before generating, start generations with an idempotency key, poll status and return download links. Generations spend credits from the user's RaoMusic account.",
+  "url": "https://github.com/raomusic/raomusic-plugin",
+  "readme": "https://github.com/raomusic/raomusic-plugin#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://www.raomusic.com/apple-icon.png",
+  "author": "RaoMusic",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.raomusic.com/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "PeekPanda",
+  "packageName": "@toolsdk-remote/peekpanda",
+  "description": "Hosted PeekPanda MCP server for iOS competitor intelligence: see the Meta ads an app keeps paying for, the App Store searches it ranks for, ASO data and the organic posts that went viral. Requires a PeekPanda account; sign in with OAuth.",
+  "url": "https://github.com/fdarkaou/peekpanda-mcp",
+  "readme": "https://github.com/fdarkaou/peekpanda-mcp#readme",
+  "author": "PeekPanda",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.peekpanda.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["context:read", "content:write"]
+      }
+    }
+  ]
+}

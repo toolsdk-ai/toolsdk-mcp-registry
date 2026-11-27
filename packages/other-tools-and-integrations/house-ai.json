@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "House AI",
+  "packageName": "@toolsdk-remote/house-ai",
+  "description": "Redesign rooms, house exteriors and yards from a photo in 100+ styles, preview wall paint and flooring, and find furniture and decor from partner stores. Browsing styles works without signing in; design tools need a House AI account (OAuth 2.1) and use its credits.",
+  "url": "https://github.com/Apex-Byte-Technologies/house-ai-mcp",
+  "readme": "https://www.houseaiapp.com/connector",
+  "runtime": "python",
+  "license": "MIT",
+  "logo": "https://www.houseaiapp.com/icon-512.png",
+  "author": "Addicting Elements LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.houseaiapp.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

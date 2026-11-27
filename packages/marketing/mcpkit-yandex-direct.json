@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "MCPKit — Yandex Direct MCP",
+  "packageName": "@toolsdk-remote/mcpkit-yandex-direct",
+  "description": "Review Yandex Direct reports and manage supported campaign settings in ChatGPT.",
+  "url": "https://mcpkit.ru/mcp-yandex-direct?utm_source=toolsdk&utm_medium=mcp_registry&utm_campaign=yandex_direct",
+  "readme": "https://github.com/MCPKit-RU/yandex-direct-mcp#readme",
+  "runtime": "python",
+  "license": "Proprietary",
+  "author": "MCPKit",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcpkit.ru/mcp-yandex-direct/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

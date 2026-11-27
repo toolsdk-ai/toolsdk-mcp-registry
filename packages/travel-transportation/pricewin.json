@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "PriceWin",
+  "packageName": "@toolsdk-remote/pricewin",
+  "description": "Compares live hotel and flight prices across Booking.com, Agoda, Trip.com and Traveloka, in USD, with links to book at the source. Can also send a booking request to a direct-listed partner hotel (no payment; the guest pays at the property). Hosted endpoint, no API key.",
+  "url": "https://github.com/PriceDotWin/pricewin-agent-plugin",
+  "readme": "https://mcp.price.win/docs",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "PriceWin",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.price.win/mcp"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "mowteng",
+  "packageName": "@toolsdk-remote/mowteng",
+  "description": "Hosted MCP server for Google Search Console, Bing Webmaster Tools, Yandex Webmaster and IndexNow: search performance, URL inspection, sitemap submission, IndexNow pings and computed SEO analyses (content decay, striking distance, cannibalization, index audit, Google vs Bing gaps). Search data is fetched live and never stored. Paid service with a 7-day free trial.",
+  "readme": "https://mowteng.app/integrations",
+  "license": "Proprietary",
+  "author": "Eray Endes",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mowteng.app/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

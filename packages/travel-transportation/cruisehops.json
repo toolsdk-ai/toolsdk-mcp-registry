@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "CruiseHops",
+  "packageName": "@toolsdk-remote/cruisehops",
+  "description": "Search and compare Carnival and Royal Caribbean cruises, itineraries, cabin offers and recorded price history. Explore Viator tours and activities at supported cruise ports. Free, read-only Streamable HTTP endpoint; no account or API key. Prices are captured or indicative observations, not guaranteed live availability. Booking and payment remain with the provider; CruiseHops may earn commissions on Viator bookings.",
+  "url": "https://cruisehops.com",
+  "readme": "https://cruisehops.com/integrations",
+  "runtime": "node",
+  "logo": "https://cruisehops.com/brand/sunrise.svg",
+  "author": "Just One More Feature, s.r.o.",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://cruisehops.com/mcp"
+    }
+  ]
+}

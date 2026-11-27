@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "FairValid",
+  "packageName": "@toolsdk-remote/fairvalid",
+  "description": "Verify email addresses, retrieve job results, and search for verified work emails in an authorized FairValid workspace.",
+  "url": "https://github.com/moonlitnayeem/fairvalid-ai",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.fairvalid.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

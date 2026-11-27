@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "EmojiDig Emoji Search",
+  "packageName": "@toolsdk-remote/emojidig-mcp",
+  "description": "Hosted MCP server from emojidig.com: searches every Unicode emoji by meaning, mood or slang (\"crying laughing\", \"dead\", \"flag japan\") and returns the exact characters to paste, plus names, codepoints, Unicode version, skin-tone support and related emoji. Read-only, no auth.",
+  "readme": "https://emojidig.com",
+  "runtime": "node",
+  "logo": "https://emojidig.com/apple-touch-icon.png",
+  "author": "fazal-bhinder",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://emojidig.com/mcp"
+    }
+  ]
+}

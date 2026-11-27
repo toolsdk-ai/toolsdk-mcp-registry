@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Car Listing Check",
+  "packageName": "@toolsdk-remote/car-listing-check",
+  "description": "Checks vehicle listings that you supply (title, description, structured vehicle fields, photo metadata) and returns a completeness score 0-100, missing fields and up to five prioritised fixes; also returns listing checklists for Germany, the US, the UK or a generic market. Read-only, no authentication; photo URLs are never fetched, no scraping, no vehicle-fact verification or valuation.",
+  "url": "https://github.com/TRW123123/car-listing-check-mcp",
+  "readme": "https://aicarvideo.com/mcp/",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "AI Car Video",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.aicarvideo.com/mcp"
+    }
+  ]
+}

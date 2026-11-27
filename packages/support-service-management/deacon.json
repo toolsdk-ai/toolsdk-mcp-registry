@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Deacon",
+  "packageName": "@toolsdk-remote/deacon",
+  "description": "Your customers tell Deacon's support chat what broke. Claude Code, Cursor or your other coding agent reads it, finds the cause in your code and shows you the fix. Official server, hosted by Deacon, with OAuth sign-in in the browser. Free plan with no card.",
+  "url": "https://heydeacon.com/features/mcp-server",
+  "readme": "https://heydeacon.com/docs/api#mcp-server",
+  "logo": "https://heydeacon.com/icon-512.png",
+  "runtime": "node",
+  "author": "Deacon",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://heydeacon.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

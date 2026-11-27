@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Account Executive Jobs",
+  "packageName": "@toolsdk-remote/account-executive-jobs",
+  "description": "Hosted MCP server for AccountExecutiveJobs.com. Job seekers search account executive and sales jobs, get recommendations, save jobs and apply after confirmation; employers manage their own job posts and review applicants. Requires an AccountExecutiveJobs.com account via OAuth.",
+  "url": "https://github.com/854Labs/account-executive-jobs",
+  "readme": "https://accountexecutivejobs.com/claude",
+  "runtime": "node",
+  "logo": "https://accountexecutivejobs.com/aejobs-logo-app-icon.png",
+  "author": "854 Labs",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.accountexecutivejobs.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["openid"]
+      }
+    }
+  ]
+}

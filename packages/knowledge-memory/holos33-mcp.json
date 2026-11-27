@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Holos33",
+  "packageName": "@toolsdk-remote/holos33-mcp",
+  "description": "Connects to the official read-only Holos33 knowledge endpoint.",
+  "url": "https://github.com/aiagentcycle/holos33-mcp",
+  "readme": "https://github.com/aiagentcycle/holos33-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.holos33.com/mcp"
+    }
+  ]
+}

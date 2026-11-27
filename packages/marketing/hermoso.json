@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "Hermoso",
+  "packageName": "@toolsdk-remote/hermoso",
+  "description": "Official hosted MCP server for Hermoso, an AI marketing agent: research the ads competitors run, make image and video ads, publish and schedule posts to the user's own social channels, and run and report on ad campaigns. Requires a Hermoso account (free to start); sign-in is OAuth 2.1 on the same endpoint.",
+  "url": "https://github.com/hermoso-ai/hermoso",
+  "readme": "https://hermoso.ai/docs/mcp/",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/hermoso-ai/hermoso/main/assets/logo.png",
+  "author": "Hermoso AI",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.hermoso.ai/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["hermoso.research", "hermoso.generate"]
+      }
+    }
+  ]
+}

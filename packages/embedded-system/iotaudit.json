@@ -1,0 +1,10 @@
+{
+  "type": "mcp-server",
+  "name": "iotaudit",
+  "packageName": "iotaudit",
+  "description": "Discover and inventory IoT and smart-home devices on your own LAN from PCAP or live capture, with redacted HTML and CSV reports.",
+  "url": "https://github.com/emirmrkaljevic/iotaudit",
+  "runtime": "python",
+  "license": "mit",
+  "env": {}
+}

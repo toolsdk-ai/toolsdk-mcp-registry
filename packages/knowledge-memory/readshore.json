@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "ReadShore",
+  "packageName": "@toolsdk-remote/readshore",
+  "description": "Search, read and save to your ReadShore read-later library: find saved articles and posts, read their saved text with numbered passages to cite plus ReadShore's summary and analysis, and save new links.",
+  "url": "https://github.com/flsteven87/readshore-mcp",
+  "readme": "https://readshore.app/connect-ai-assistants/",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "AIthentic LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://readshore.app/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

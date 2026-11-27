@@ -1,0 +1,31 @@
+{
+  "type": "mcp-server",
+  "name": "Sequential",
+  "packageName": "@toolsdk-remote/sequential",
+  "description": "Session replay and product analytics with an AI judge, from Sequential's hosted MCP server. The judge reviews each session (what the user came to do, whether they got there, where they struggled) and lists the findings to fix; your agent can query sessions, findings, events, funnels, flows and retention.",
+  "url": "https://www.usesequential.com/docs/connect-claude-ai.md",
+  "readme": "https://www.usesequential.com/docs/agent-tools.md",
+  "runtime": "node",
+  "license": "Proprietary",
+  "author": "Sequential",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.usesequential.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "findings:read",
+          "sessions:read",
+          "sessions:explore",
+          "findings:link",
+          "findings:verify",
+          "ask:use",
+          "analytics:read",
+          "insights:propose"
+        ]
+      }
+    }
+  ]
+}

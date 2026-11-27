@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "SpriteFuse",
+  "packageName": "@toolsdk-remote/spritefuse",
+  "description": "Create 2D game characters and animations, revise sprites, inspect owned jobs and assets, adjust frame timing, and export game assets. OAuth and a SpriteFuse account are required. Generation uses account Credits and requires a per-request maximum budget; trial credits are for personal noncommercial evaluation.",
+  "url": "https://spritefuse.com/mcp",
+  "readme": "https://spritefuse.com/mcp",
+  "logo": "https://spritefuse.com/spritefuse/logo-mark.svg",
+  "author": "SpriteFuse",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://spritefuse.com/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

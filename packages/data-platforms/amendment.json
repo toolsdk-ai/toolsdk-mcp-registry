@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "Amendment",
+  "packageName": "@toolsdk-remote/amendment",
+  "description": "Current, cited U.S. law and legislation: bills from Congress, all 50 state legislatures and D.C. (status, sponsors, history, text); the current U.S. Code, C.F.R. and Constitution; state statutes and regulations; politicians, offices and elections. Paid plans add federal lobbying filings joined to SEC companies. Answers link the official source. Free plan with OAuth sign-in.",
+  "readme": "https://amendment.app/connect",
+  "runtime": "node",
+  "logo": "https://www.amendment.app/icon-mcp-512.png",
+  "author": "The Governance Company",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.amendment.app/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

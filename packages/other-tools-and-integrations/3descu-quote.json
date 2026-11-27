@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "3Descu 3D Printing Quotes (EU)",
+  "packageName": "@toolsdk-remote/3descu-quote",
+  "description": "Instant FDM and SLA 3D printing quotes from an ISO 9001:2015 certified EU factory with 200+ printers. List materials, measure an STL or OBJ from a public https link (volume, bounding box, surface area) and get a price in EUR across Economy, Standard and Express with production days. Read-only, no account, no API key.",
+  "readme": "https://quote.3descu.com/ai-agents/",
+  "runtime": "node",
+  "author": "3Descu",
+  "logo": "https://quote.3descu.com/favicon.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://zzamnvhadwibvafqcfpd.supabase.co/functions/v1/mcp"
+    }
+  ]
+}

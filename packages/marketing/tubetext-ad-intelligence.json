@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "TubeText Meta Ad Library & Video Ad Analyzer",
+  "packageName": "@toolsdk-remote/tubetext-ad-intelligence",
+  "description": "Facebook/Instagram ads from Meta Ad Library plus AI teardowns of Meta and YouTube video ads. Hosted on Apify's MCP server; tools are the pay-per-event Apify Actors tubetext/meta-ad-library-videos, tubetext/video-ad-analyzer. Sign in with an Apify account (OAuth); failed or empty results are not billed.",
+  "url": "https://github.com/LMSlay/tubetext-mcp",
+  "readme": "https://github.com/LMSlay/tubetext-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/LMSlay/tubetext-mcp/main/logo-400.png",
+  "author": "TubeText Labs",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=fetch-actor-details,tubetext/meta-ad-library-videos,tubetext/video-ad-analyzer",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

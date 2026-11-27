@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "Crevio",
+  "packageName": "@toolsdk-remote/crevio",
+  "description": "Delegate work to an AI agent that runs your small business (products, orders, customers, email, sites), or run scripts against the Crevio API and 3,000+ connected apps. Hosted Streamable HTTP; sign in with a Crevio account via OAuth 2.1 (the free plan works).",
+  "readme": "https://crevio.co/docs/developer/mcp",
+  "runtime": "node",
+  "logo": "https://crevio.co/icon-512.png",
+  "author": "Crevio",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.crevio.co/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

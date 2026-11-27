@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Paidnice (Remote)",
+  "packageName": "@toolsdk-remote/paidnice",
+  "description": "Official hosted MCP server for Paidnice, accounts receivable automation for Xero and QuickBooks Online: read customer email and SMS replies, list and look up customers, invoices and notes, get an organization summary, and update contact people. One connection covers every organization you tick. Authenticates with OAuth 2.1 (discovery and dynamic client registration).",
+  "readme": "https://docs.paidnice.com",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.paidnice.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

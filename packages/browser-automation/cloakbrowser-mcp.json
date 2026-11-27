@@ -1,0 +1,12 @@
+{
+  "type": "mcp-server",
+  "name": "CloakBrowser MCP",
+  "packageName": "cloakbrowser-mcp",
+  "packageVersion": "1.15.1",
+  "description": "Playwright MCP-compatible browser automation bridge for CloakBrowser Chromium.",
+  "url": "https://github.com/swimmwatch/cloakbrowser-mcp",
+  "readme": "https://swimmwatch.github.io/cloakbrowser-mcp/",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {}
+}

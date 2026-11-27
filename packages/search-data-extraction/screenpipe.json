@@ -1,10 +1,17 @@
 {
   "type": "mcp-server",
-  "packageName": "screenpipe",
-  "description": "Enable searching and retrieving screen recordings and associated data for productivity tracking, user behavior analysis, and workflow documentation.",
-  "url": "https://github.com/mediar-ai/screenpipe/tree/HEAD/screenpipe-integrations/screenpipe-mcp",
+  "packageName": "screenpipe-mcp",
+  "description": "Search locally captured screen text and audio transcripts, recall meetings, and summarize work through Screenpipe MCP. Requires a running Screenpipe recorder at localhost:3030 and its local API key on the same machine as the MCP process. Source-available under the Screenpipe Commercial License. Configured AI clients, cloud transcription, sync, or integrations may send context off-device.",
+  "url": "https://github.com/screenpipe/screenpipe/tree/main/packages/screenpipe-mcp",
   "runtime": "node",
-  "license": "mit",
-  "env": {},
-  "name": "Screenpipe MCP"
+  "license": "SEE LICENSE IN LICENSE.md",
+  "env": {
+    "SCREENPIPE_LOCAL_API_KEY": {
+      "description": "Local Screenpipe API key. Obtain with screenpipe auth token or use the desktop app Settings > Connections. Set explicitly to avoid slower automatic key discovery. Requires Screenpipe running at localhost:3030.",
+      "required": true,
+      "secret": true
+    }
+  },
+  "name": "Screenpipe MCP",
+  "readme": "https://github.com/screenpipe/screenpipe/blob/main/packages/screenpipe-mcp/README.md"
 }

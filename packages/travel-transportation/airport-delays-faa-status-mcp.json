@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Airport Delays FAA Status MCP",
+  "packageName": "@toolsdk-remote/airport-delays-faa-status-mcp",
+  "description": "Live FAA airport status for US airports from nasstatus.faa.gov: ground stops, ground delay programs, arrival and departure delays, closures and deicing. Tools: airport_delays_now, airport_status, airport_delays_check_trip. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/airport-delays-faa-status-mcp",
+  "readme": "https://github.com/theluckystrike/airport-delays-faa-status-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://airport-delays-faa-status-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}

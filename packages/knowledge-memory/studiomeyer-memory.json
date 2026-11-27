@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "StudioMeyer Memory",
+  "packageName": "@toolsdk-remote/studiomeyer-memory",
+  "description": "Hosted persistent memory for AI agents with semantic search, knowledge graph, and session history.",
+  "url": "https://github.com/studiomeyer-io/studiomeyer-memory",
+  "readme": "https://github.com/studiomeyer-io/studiomeyer-memory#readme",
+  "runtime": "node",
+  "author": "StudioMeyer",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://memory.studiomeyer.io/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Discord Timestamp Generator",
+  "packageName": "@toolsdk-remote/discordtimestampgen-mcp",
+  "description": "Hosted MCP server from discordtimestampgen.com: turns a date, time and IANA timezone (or a Unix time / ISO datetime) into Discord <t:unix:FORMAT> timestamp codes in all 7 styles, and decodes Discord snowflake IDs (users, messages, servers) into their creation date. Read-only, no auth.",
+  "readme": "https://discordtimestampgen.com",
+  "runtime": "node",
+  "logo": "https://discordtimestampgen.com/apple-touch-icon.png",
+  "author": "fazal-bhinder",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://discordtimestampgen.com/mcp"
+    }
+  ]
+}

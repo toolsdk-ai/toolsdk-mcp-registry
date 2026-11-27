@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "LienDeadline",
+  "packageName": "liendeadline-mcp",
+  "description": "US mechanics lien and preliminary notice deadlines for construction material suppliers, with statute-cited lien guides for all 50 states and DC.",
+  "url": "https://github.com/LienDeadline/liendeadline-mcp",
+  "readme": "https://github.com/LienDeadline/liendeadline-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "LIENDEADLINE_API_KEY": {
+      "description": "Optional dedicated customer key for the customer invoice tools; the supplier calculation and state guides need no key.",
+      "required": false,
+      "secret": true
+    }
+  }
+}

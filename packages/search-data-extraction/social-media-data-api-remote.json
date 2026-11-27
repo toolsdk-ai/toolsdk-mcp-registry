@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Social Media Data API (Remote)",
+  "packageName": "@toolsdk-remote/social-media-data-api",
+  "description": "Connects to the hosted Social Media Data API MCP endpoint: 26 tools for social listening and mentions, post search, comments, transcripts and public profiles across 10 platforms (Bluesky, Hacker News, X, Reddit, TikTok, Instagram, YouTube, Threads, Facebook ads, LinkedIn). No account or API key: tools/list is free, and each tool call costs $0.01 to $0.025, paid per call with x402 v2 (USDC on Base), so the client needs an x402-capable wallet.",
+  "url": "https://github.com/hiesem/x402-social-media-data",
+  "readme": "https://social.duoleads.com/docs",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://social.duoleads.com/logo.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://social.duoleads.com/mcp"
+    }
+  ]
+}

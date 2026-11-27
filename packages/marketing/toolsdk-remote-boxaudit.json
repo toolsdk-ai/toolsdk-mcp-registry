@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "BoxAudit Shipping Box Optimizer",
+  "packageName": "@toolsdk-remote/boxaudit",
+  "description": "Hosted read-only MCP server for ecommerce shipping box optimization: USPS Notice 123 Commercial Cubic rate quotes, corrugated outer-wall tier-bump detection, UPS/FedEx DIM-139 weight, and 90-day postage leak estimates. No sign-in required. Tools: quote_usps_cubic_box, compare_box_leak.",
+  "readme": "https://getboxaudit.com/llms.txt",
+  "url": "https://getboxaudit.com",
+  "runtime": "node",
+  "logo": "https://getboxaudit.com/apple-touch-icon.png",
+  "author": "BoxAudit",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://getboxaudit.com/api/mcp"
+    }
+  ]
+}

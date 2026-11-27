@@ -1,0 +1,12 @@
+{
+  "type": "mcp-server",
+  "packageName": "vibe-testing",
+  "description": "Reads application routes and forms from source code, runs Playwright browser tests, compares runs for regressions, and generates an HTML report.",
+  "url": "https://github.com/AishwaryShrivastav/vibe-testing",
+  "readme": "https://github.com/AishwaryShrivastav/vibe-testing#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "binArgs": ["--mcp"],
+  "env": {},
+  "name": "vibe-testing"
+}

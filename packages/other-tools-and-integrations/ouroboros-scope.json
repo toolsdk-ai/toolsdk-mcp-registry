@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Scope by Ouroboros Apps",
+  "packageName": "@toolsdk-remote/ouroboros-scope",
+  "description": "Scope by Ouroboros Apps (https://ouroborosapps.com). Freelance scope of work: approved scope, rates, deadlines, and change orders, so an assistant cannot promise work or discounts that were not approved. Tools: list_engagements, create_engagement, get_approved_record, save_scope_item, save_rate, save_deadline, approve_scope, file_change_order, approve_change_order. Hosted remote endpoint with OAuth and Dynamic Client Registration; requires an account. Docs: https://ouroborosapps.com/docs/scope. Published in the Official MCP Registry as io.github.LAHutchins91/scope.",
+  "url": "https://github.com/LAHutchins91/scope-mcp",
+  "readme": "https://github.com/LAHutchins91/scope-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://scope-continuity2.vercel.app/logo.jpg",
+  "author": "Ouroboros Apps",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://scope-continuity2.vercel.app/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

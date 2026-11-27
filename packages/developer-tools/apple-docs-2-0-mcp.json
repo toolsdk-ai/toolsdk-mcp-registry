@@ -1,0 +1,11 @@
+{
+  "type": "mcp-server",
+  "name": "Apple Docs 2.0 MCP",
+  "packageName": "apple-docs-2.0-mcp",
+  "description": "Searches and reads Apple's developer documentation, Human Interface Guidelines, App Store Connect Help and sample code, with search that returns developer.apple.com's own results, an offline index of 336,629 pages, and 1,700 WWDC sessions (2014-2026) with transcripts and code.",
+  "url": "https://github.com/mishafyi/Apple-Docs-2.0-MCP",
+  "readme": "https://github.com/mishafyi/Apple-Docs-2.0-MCP#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {}
+}

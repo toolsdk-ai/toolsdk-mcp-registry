@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Silicon Floor",
+  "packageName": "@toolsdk-remote/silicon-floor",
+  "description": "Who owns AI and semiconductor stocks, who is buying and selling them, and what their filed numbers say: SEC XBRL financial statements, Form 13F, Schedule 13D/G, Forms 3/4/5 and N-PORT ownership, FINRA short interest, dividends and prices, each figure dated and linked to its filing.",
+  "url": "https://github.com/Baptoshi/silicon-floor",
+  "readme": "https://github.com/Baptoshi/silicon-floor#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://siliconfloor.com/mcp"
+    }
+  ],
+  "author": "Silicon Floor"
+}

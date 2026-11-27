@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Psychologie & Sérénité",
+  "packageName": "@toolsdk-remote/psychologie-et-serenite",
+  "description": "Hosted read-only MCP server for the public catalogue of Psychologie & Sérénité: self-assessment psychological tests, blog articles, books and psychology concepts, in French and English. 11 tools (list_services, describe_service, search_tests, get_test, start_test, get_example_report, search_articles, get_article, search_books, get_book, search_concepts). No account or API key. Informational service: not a diagnosis, not medical care.",
+  "readme": "https://psychologieetserenite.com/developer",
+  "runtime": "node",
+  "license": "CC-BY-4.0",
+  "author": "Gildas Garrec",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://psychologieetserenite.com/mcp"
+    }
+  ]
+}

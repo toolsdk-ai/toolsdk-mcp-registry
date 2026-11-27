@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "PADAM NOCTURNE",
+  "packageName": "padam-nocturne",
+  "packageVersion": "0.8.0",
+  "description": "Local sovereign AI agent memory in a single SQLite file with prompt-injection quarantine, secret masking before writes, hybrid FTS5 + local vector search, and optional AES-256-GCM Arweave anchoring.",
+  "url": "https://github.com/MaksimGalatin/padam-nocturne",
+  "readme": "https://github.com/MaksimGalatin/padam-nocturne#readme",
+  "author": "Maksim Galatin (CODE Eternal LLC)",
+  "license": "LicenseRef-PADAM-1.0",
+  "runtime": "python",
+  "env": {
+    "PADAM_DB_PATH": {
+      "description": "Optional path to the local SQLite memory database file",
+      "required": false
+    }
+  }
+}

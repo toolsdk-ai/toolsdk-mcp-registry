@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/carejobs-healthcare-jobs",
+  "name": "CareJobs.Now Healthcare Jobs",
+  "description": "Remote MCP server for US healthcare jobs: search 170,000+ open nursing, physician, therapy, CNA and allied health jobs read daily from 270 hospitals' and health systems' own career sites, with the pay each employer posts. Six read-only tools (search jobs, job details, posted pay by kind of job, employers, states, kinds of job). Free, no authentication.",
+  "url": "https://github.com/yumaheymans/carejobs-mcp",
+  "readme": "https://github.com/yumaheymans/carejobs-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://carejobs.now/api/mcp"
+    }
+  ]
+}

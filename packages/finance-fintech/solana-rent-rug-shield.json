@@ -1,0 +1,24 @@
+{
+  "type": "mcp-server",
+  "name": "Solana Rent & Rug Shield",
+  "packageName": "@rentandrugshield/mcp-server",
+  "packageVersion": "1.0.0",
+  "description": "Non-custodial Solana 11-layer pre-buy token rug check, inner CPI transaction drain simulator, and 0%-first-claim empty ATA SOL rent recovery scanner via Model Context Protocol.",
+  "url": "https://github.com/sonnyman2014/solana-rent-rug-shield-mcp",
+  "readme": "https://rentandrugshield.com/llms.txt",
+  "author": "sonnyman2014",
+  "license": "MIT",
+  "runtime": "node",
+  "env": {
+    "RENTSHIELD_API_URL": {
+      "description": "Optional base URL override for the Solana Rent & Rug Shield gateway",
+      "required": false,
+      "default": "https://rentandrugshield.com"
+    },
+    "RENTSHIELD_API_KEY": {
+      "description": "Optional API key for elevated daily rate limits beyond the free tier",
+      "required": false,
+      "secret": true
+    }
+  }
+}

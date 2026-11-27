@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Ryufin",
+  "packageName": "@toolsdk-remote/ryufin",
+  "description": "Official hosted MCP server of Ryufin, free US stock research built from SEC EDGAR filings and end-of-day prices for 3,000+ US-listed companies. Six tools: search_stocks, get_stock_answers (five plain verdicts on the business, safety, price, growth and market, each with its evidence and filing date), get_stock_overview, get_financial_history (reported series from 10-K and 10-Q filings), get_company_news (8-K current reports linked to sec.gov) and get_answer_changes. No sign-up and no API key; 60 requests a minute per address.",
+  "url": "https://ryufin.com/developers",
+  "readme": "https://ryufin.com/developers",
+  "runtime": "node",
+  "author": "Ryufin",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://ryufin.com/mcp"
+    }
+  ]
+}

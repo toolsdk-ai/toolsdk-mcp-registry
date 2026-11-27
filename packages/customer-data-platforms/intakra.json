@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Intakra",
+  "packageName": "@toolsdk-remote/intakra",
+  "description": "Score supplied buying signals and prepare a review-only why-now brief.",
+  "url": "https://intakra.com/mcp-guide",
+  "readme": "https://intakra.com/mcp-guide",
+  "runtime": "node",
+  "author": "Soxoa LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://intakra.com/mcp"
+    }
+  ]
+}

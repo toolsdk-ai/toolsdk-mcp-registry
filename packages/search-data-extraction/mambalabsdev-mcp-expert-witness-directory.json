@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Expert Witness Directory",
+  "packageName": "@mambalabsdev/mcp-expert-witness-directory",
+  "description": "MCP server for the Mamba Labs Expert Witness Directory actor on Apify. Expert witness and medico-legal directory records for the United States and Australia, one deduplicated record per person.",
+  "url": "https://github.com/mambalabsdev/mcp-expert-witness-directory",
+  "readme": "https://github.com/mambalabsdev/mcp-expert-witness-directory#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

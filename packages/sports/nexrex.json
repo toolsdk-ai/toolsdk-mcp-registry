@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "NexRex",
+  "packageName": "@toolsdk-remote/nexrex",
+  "description": "AI running coach for workouts, training plans, athlete progress, and team reviews. Sign in with a NexRex account via OAuth.",
+  "url": "https://github.com/NexRex-Dev/nexrex-mcp",
+  "readme": "https://docs.nexrex.ai/api-reference/mcp-server",
+  "runtime": "node",
+  "author": "NexRex Inc.",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.nexrex.ai/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

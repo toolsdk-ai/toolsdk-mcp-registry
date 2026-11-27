@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Open Tender Rfp Finder",
+  "packageName": "@mambalabsdev/mcp-open-tender-rfp-finder",
+  "description": "MCP server for Open Tender and RFP Finder. Find open public tenders and RFPs by keyword, CPV code, and country from UK Contracts Finder, UK Find a Tender, EU TED, and CanadaBuys: one row per notice with buyer, deadline, value, codes, and link. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-open-tender-rfp-finder",
+  "readme": "https://github.com/mambalabsdev/mcp-open-tender-rfp-finder#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

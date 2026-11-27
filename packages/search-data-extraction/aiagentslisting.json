@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "AI Agents Listing",
+  "packageName": "@toolsdk-remote/aiagentslisting",
+  "description": "Directory of AI agents, MCP servers and skills. Search, discover by category and pricing, trending, new launches, alternatives and side-by-side compare. Read tools need no key; submitting a listing or a review uses OAuth.",
+  "url": "https://github.com/nyyhao/aiagentslisting-mcp",
+  "readme": "https://aiagentslisting.com/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://aiagentslisting.com/favicon.png",
+  "author": "AI Agents Listing",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://aiagentslisting.com/api/mcp"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "Signatoro",
+  "packageName": "@toolsdk-remote/signatoro",
+  "description": "The agentic email signature platform: one saved signature for your people and your AI agents. Agents fetch the person's saved email signature (HTML and text, with sender details) or their AI agent's, sign as a person or as an agent with an AI line, and company owners manage members. OAuth or API key.",
+  "readme": "https://signatoro.com/docs/install-signature/agent/mcp",
+  "url": "https://signatoro.com",
+  "runtime": "node",
+  "author": "Signatoro",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://signatoro.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

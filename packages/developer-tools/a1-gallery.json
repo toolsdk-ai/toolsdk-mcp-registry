@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "A1 Gallery",
+  "packageName": "@toolsdk-remote/a1-gallery",
+  "description": "Design reference from a hand-picked gallery of real, live websites. Search sites, captured sections and full pages by style, category, font, colour and technology, find font pairings used on real sites, and read the colours, type sizes, spacing and radius measured off each live page. 23 tools; all read the gallery except save_to_board and remove_from_board, which change only the signed-in user's own A1 boards. OAuth sign-in with a free A1 account.",
+  "runtime": "node",
+  "url": "https://github.com/a1-gallery/a1-mcp",
+  "readme": "https://www.a1.gallery/mcp",
+  "license": "MIT",
+  "author": "A1 Gallery",
+  "logo": "https://img.a1.gallery/brand/hotlink-ok/a1-app-icon-512.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.a1.gallery/api/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "type": "mcp-server",
+  "name": "mcp-probe-kit",
+  "packageName": "mcp-probe-kit",
+  "description": "Spec-driven dev workflow discipline for AI coding agents: start_feature/start_bugfix orchestration, resumable plans, a converge gate that requires requirements/spec/implementation/test/review evidence, project memory, and cross-session history.",
+  "url": "https://github.com/mybolide/mcp-probe-kit",
+  "readme": "https://github.com/mybolide/mcp-probe-kit#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {}
+}

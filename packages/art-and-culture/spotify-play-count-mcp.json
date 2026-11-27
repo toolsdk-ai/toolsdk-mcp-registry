@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Spotify Play Count MCP: Plays & Monthly Listeners",
+  "packageName": "@toolsdk-remote/spotify-play-count-mcp",
+  "description": "Spotify play counts for every track on a track, album, artist or playlist link, plus artist monthly listeners, followers, world rank and top cities; no Spotify login. Hosted Streamable HTTP via Apify (Apify OAuth or API token); open-source Node.js and Python stdio servers in the repo.",
+  "url": "https://github.com/GeminiGeorge22/spotify-play-count-mcp",
+  "readme": "https://github.com/GeminiGeorge22/spotify-play-count-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "publicrecords",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com?tools=publicrecords/spotify-play-count-scraper",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

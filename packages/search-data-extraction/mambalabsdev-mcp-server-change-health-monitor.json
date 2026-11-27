@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Server Change Health Monitor",
+  "packageName": "@mambalabsdev/mcp-server-change-health-monitor",
+  "description": "MCP server for MCP Server Change and Health Monitor. Checks MCP servers for uptime and tool changes, with breaking changes marked. Runs on Apify.",
+  "url": "https://github.com/mambalabsdev/mcp-server-change-health-monitor",
+  "readme": "https://github.com/mambalabsdev/mcp-server-change-health-monitor#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

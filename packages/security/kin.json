@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Kin",
+  "packageName": "@toolsdk-remote/kin",
+  "description": "Use the person's accounts at the services they connected in Kin, such as GitHub, Notion and Linear, even two accounts of one service. Each account and action has the person's rule: Allow, Ask me or Block. Kin checks it on its server when the action runs; Ask me changes wait for the person's approval. Needs a free Kin account.",
+  "url": "https://github.com/kinlab-ai/kin-plugin",
+  "readme": "https://kinlab.ai/docs/ai-apps",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/kinlab-ai/kin-plugin/main/assets/icon.png",
+  "author": "Kin Computing, Inc.",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.kinlab.ai/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

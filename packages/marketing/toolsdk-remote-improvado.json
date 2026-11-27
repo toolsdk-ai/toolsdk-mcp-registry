@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Improvado",
+  "packageName": "@toolsdk-remote/improvado",
+  "description": "Hosted MCP server for Improvado. Query the ads, web analytics and CRM data an Improvado account has connected, such as spend and ROAS by channel. OAuth sign-in with an Improvado account.",
+  "url": "https://github.com/tekliner/improvado-mcp",
+  "readme": "https://improvado.io/docs-section-topic/improvado-mcp",
+  "runtime": "node",
+  "author": "Improvado",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://ai.improvado.io/experimental/agent/api/mcp-customer/v1/invoke/",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp:customer"]
+      }
+    }
+  ]
+}

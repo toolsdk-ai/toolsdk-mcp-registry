@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Border Wait Times Canada Mexico MCP",
+  "packageName": "@toolsdk-remote/border-wait-times-canada-mexico-mcp",
+  "description": "Live CBP wait times at every US-Mexico and US-Canada land port of entry for cars, SENTRI, NEXUS, Ready Lane, pedestrians and trucks. Tools: border_wait_times, border_wait_times_list, border_fastest_crossing. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/border-wait-times-canada-mexico-mcp",
+  "readme": "https://github.com/theluckystrike/border-wait-times-canada-mexico-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://border-wait-times-canada-mexico-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}

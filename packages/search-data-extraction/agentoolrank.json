@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "AgentoolRank",
+  "packageName": "@toolsdk-remote/agentoolrank",
+  "description": "Search open-source AI agent tools and MCP servers ranked by live GitHub activity (stars, commits, releases, npm/PyPI downloads), refreshed daily, and get alternatives for any tool. Read-only search needs no key.",
+  "url": "https://github.com/agent-gigmole/agentoolrank-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://agentoolrank.com/api/mcp"
+    }
+  ]
+}

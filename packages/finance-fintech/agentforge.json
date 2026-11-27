@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "AgentForge",
+  "packageName": "@toolsdk-remote/agentforge",
+  "description": "Hosted MCP server with DeFi and crypto safety tools for AI agents: a one-call preflight check before an on-chain action (transaction simulation, EIP-712 signature phishing check, OFAC sanctions and scam-list address screening, token rug check) returning proceed/caution/avoid, plus Aave v3 lending health, risk-scored new token launches and Solana transaction tools across Ethereum, Base, Arbitrum, Optimism, Polygon, BNB Chain, Avalanche, Linea, Unichain, Sonic and Solana. Tools only read chain data and never sign or send transactions. No authentication; free up to a daily call cap, after which tools return the pay-per-call x402 (USDC) endpoint and price.",
+  "url": "https://github.com/acarchidi/agentforge",
+  "readme": "https://github.com/acarchidi/agentforge#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://agentforge-taupe.vercel.app/brand/agentforge-icon-512.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://agentforge-taupe.vercel.app/mcp"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Easy-Peasy.AI",
+  "packageName": "@toolsdk-remote/easy-peasy-ai",
+  "description": "Hosted MCP server for Easy-Peasy.AI. Run 200+ writing templates, create and edit images, make AI videos, turn text into speech and transcribe audio or video, all from Claude, ChatGPT, Cursor or any MCP client. Connect with OAuth sign-in or an API key header. Everything runs on your Easy-Peasy.AI account with the same credits and plan limits as the web app. Connecting is free; image generation and transcription need a paid plan.",
+  "url": "https://github.com/Easy-Peasy-AI/easy-peasy-mcp",
+  "readme": "https://easy-peasy.ai/docs/mcp/introduction",
+  "runtime": "node",
+  "logo": "https://raw.githubusercontent.com/Easy-Peasy-AI/easy-peasy-mcp/main/assets/logo.png",
+  "author": "Easy-Peasy.AI",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://easy-peasy.ai/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp"]
+      }
+    }
+  ]
+}

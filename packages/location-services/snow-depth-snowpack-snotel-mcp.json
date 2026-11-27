@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Snow Depth Snowpack SNOTEL MCP",
+  "packageName": "@toolsdk-remote/snow-depth-snowpack-snotel-mcp",
+  "description": "Daily USDA NRCS SNOTEL snow depth, snow water equivalent and percent of 30-year median for western US mountain stations. Tools: snow_depth, snowpack_by_state, snow_depth_history, snotel_stations. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/snow-depth-snowpack-snotel-mcp",
+  "readme": "https://github.com/theluckystrike/snow-depth-snowpack-snotel-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://snow-depth-snowpack-snotel-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}

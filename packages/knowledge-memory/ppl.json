@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "ppl",
+  "packageName": "@toolsdk-remote/ppl",
+  "description": "Official hosted server for ppl, a personal CRM for people who work with AI agents. About 120 tools to look up and update contacts, log interactions and calls, keep notes, track birthdays, life events and gifts, and set reminders and tasks about the people in your life. Sign in with your ppl account via OAuth 2.1 (dynamic client registration). Free beta up to 1,000 contacts, no credit card: https://withppl.com/register",
+  "url": "https://github.com/ppl-crm/ppl",
+  "readme": "https://withppl.com/agents",
+  "runtime": "node",
+  "logo": "https://withppl.com/img/icons/ppl-app-180.png",
+  "author": "ppl",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://withppl.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "AISkills402",
+  "packageName": "@toolsdk-remote/aiskills402",
+  "description": "Searches a catalog of 137 tested AI agent skill files (SKILL.md) and returns each skill's card with the exact x402 payment requirements for buying its file; re-downloads a bought file with its receipt token. All four tools are free and need no account or API key; the MCP server takes no payments (a file is bought over plain HTTP x402 for $0.01-$0.10 USDC on Base).",
+  "url": "https://github.com/paranormalen2/aiskills402-mcp",
+  "readme": "https://aiskills402.com/llms.txt",
+  "runtime": "node",
+  "author": "AISkills402",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.aiskills402.com/mcp"
+    }
+  ]
+}

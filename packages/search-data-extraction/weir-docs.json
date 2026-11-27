@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Weir Docs",
+  "packageName": "@toolsdk-remote/weir-docs",
+  "description": "Search and read the Weir API documentation (endpoints, parameters, prices and guides) so coding agents can write correct calls. No sign-in. For the X and Reddit data itself, use the Weir server.",
+  "url": "https://github.com/tarun-khatri/weir-mcp",
+  "readme": "https://docs.weirapp.io/agent-setup",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://weirapp.io/icon/512",
+  "author": "Weir",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://docs.weirapp.io/api/mcp"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Quantral",
+  "packageName": "@toolsdk-remote/quantral",
+  "description": "Stock sentiment for US and Korean stocks: 0-100 signal scores from tracked X, Reddit, Substack and Naver accounts plus Congress trades and insider buys, the posts behind each score, monthly recaps, and rule-based model portfolios tracked against the S&P 500. Read-only; interactive cards in Claude and ChatGPT. Requires a Quantral account with an active subscription (free trial in the app).",
+  "url": "https://quantral.com",
+  "readme": "https://quantral.com/mcp",
+  "runtime": "node",
+  "license": "Proprietary",
+  "logo": "https://app.quantral.com/mcp-icon.png",
+  "author": "Quantral",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.quantral.com/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

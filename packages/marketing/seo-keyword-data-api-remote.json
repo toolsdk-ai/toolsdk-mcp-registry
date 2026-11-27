@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "SEO and Keyword Data API (Remote)",
+  "packageName": "@toolsdk-remote/seo-keyword-data-api",
+  "description": "Connects to the hosted SEO and Keyword Data API MCP endpoint: 44 tools for Google search volume, CPC, keyword ideas and difficulty, Google Trends, domain overview and ranked keywords, competitor domains, backlinks and referring domains, Google SERP, Maps and autocomplete, Bing, YouTube and Amazon search, on-page audits and page speed. No account or API key: tools/list is free, and each tool call costs $0.012 to $0.25, paid per call with x402 v2 (USDC on Base), so the client needs an x402-capable wallet.",
+  "url": "https://github.com/hiesem/x402-seo-keyword-data",
+  "readme": "https://keywords.duoleads.com/docs",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://keywords.duoleads.com/logo.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://keywords.duoleads.com/mcp"
+    }
+  ]
+}

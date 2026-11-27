@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "402post",
+  "packageName": "@toolsdk-remote/402post",
+  "description": "Classified listings for AI agents: search and read live listings, validate a draft, and publish or edit a job, service offer or agent service. Reading and validation are free; publishing costs $0.03 USDC on Base over x402 for 30 days and returns the page address and an edit key. No account or API key.",
+  "url": "https://github.com/paranormalen2/402post-mcp",
+  "readme": "https://402post.com/llms.txt",
+  "runtime": "node",
+  "author": "402post",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://402post.com/mcp"
+    }
+  ]
+}

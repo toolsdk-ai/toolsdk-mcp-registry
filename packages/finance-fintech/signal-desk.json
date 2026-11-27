@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Signal Desk",
+  "packageName": "@toolsdk-remote/signal-desk",
+  "description": "Hosted MCP server with five tools paid per call in USDC on Base over x402, with no account or API key: render a public web page to Markdown, PNG or PDF, host a file at a public URL, schedule a delayed HTTP callback, list recent pump.fun launches with each creator's 7-day launch count and the Google Trends or Polymarket topic the name matches, and list trending topics. An unpaid tool call returns the price and payment terms. Also in the official MCP Registry as io.github.huntercarver24/signal-desk.",
+  "url": "https://github.com/huntercarver24/signal-desk",
+  "readme": "https://github.com/huntercarver24/signal-desk#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "huntercarver24",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://x402-mcp.huntercarver24.workers.dev/mcp"
+    }
+  ]
+}

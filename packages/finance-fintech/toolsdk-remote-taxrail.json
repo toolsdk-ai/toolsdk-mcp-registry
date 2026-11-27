@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "TaxRail",
+  "packageName": "@toolsdk-remote/taxrail",
+  "description": "Pre-execution US (IRS 1099-DA, Form 8949, HIFO/SpecID, tax-loss harvesting) and Brazil (Lei 14.754, R$35k rule, Lucro Real) crypto & DeFi tax optimization, Aave v3 borrow-vs-sell, and 0x/CoW/Jupiter swap calldata. Free simulation previews; paid unlocks and micro-checks settle via x402 v2 Base USDC. Tools: check_tax_impact, compare_borrow_vs_sell, classify_deductible_expense, unlock_tax_plan, scan_wallet_tlh, pre_trade_check, check_br_35k_status.",
+  "readme": "https://api.taxrail.online/llms.txt",
+  "url": "https://taxrail.online",
+  "runtime": "node",
+  "logo": "https://api.taxrail.online/favicon.ico",
+  "author": "TaxRail",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.taxrail.online/mcp"
+    }
+  ]
+}

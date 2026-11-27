@@ -1,0 +1,31 @@
+{
+  "type": "mcp-server",
+  "packageName": "sprutmonitor-mcp",
+  "description": "Read-only SprutMonitor DLP Cloud (sprutmonitor.ru) MCP for risks, idle time, productivity, and employee monitoring. Runs locally.",
+  "url": "https://github.com/extralabs/sprutmonitor-mcp-server",
+  "runtime": "python",
+  "license": "MIT",
+  "env": {
+    "SPRUT_API_BASE": {
+      "description": "SprutMonitor web API address, including the cloud.",
+      "required": false,
+      "default": "https://cloud.sprutmonitor.ru/v3"
+    },
+    "SPRUT_EMAIL": {
+      "description": "Account login for https://app.sprutmonitor.ru/. The public demo login is demo@sprutmonitor.ru.",
+      "required": false
+    },
+    "SPRUT_PASSWORD": {
+      "description": "Account password. The public demo password is the word demo.",
+      "required": false,
+      "secret": true
+    },
+    "SPRUT_TOOLSETS": {
+      "description": "Tool filter: all, core, or console.",
+      "required": false,
+      "default": "all"
+    }
+  },
+  "name": "SprutMonitor DLP",
+  "readme": "https://github.com/extralabs/sprutmonitor-mcp-server#readme"
+}

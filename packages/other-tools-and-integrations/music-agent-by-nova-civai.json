@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "Music Agent by Nova (CIVAI)",
+  "packageName": "@toolsdk-remote/music-agent-by-nova-civai",
+  "description": "I do everything related to music and lyrics",
+  "url": "https://github.com/civai-technologies/music-agent-mcp-by-nova-civai",
+  "readme": "https://github.com/civai-technologies/music-agent-mcp-by-nova-civai#readme",
+  "runtime": "python",
+  "license": "MIT",
+  "author": "CIVAI TECHNOLOGIES",
+  "logo": "https://nova.civai.co/catalog-icons/SongIcon.svg",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://nova.civai.co/mcp/agents/music-agent",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["openid", "email", "mcp:access"]
+      }
+    }
+  ]
+}

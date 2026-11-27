@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Medium Articles Scraper",
+  "packageName": "@mambalabsdev/mcp-medium-articles-scraper",
+  "description": "MCP server for Medium Articles Scraper: Medium stories by tag, author, or publication with claps and responses.",
+  "url": "https://github.com/mambalabsdev/mcp-medium-articles-scraper",
+  "readme": "https://github.com/mambalabsdev/mcp-medium-articles-scraper#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

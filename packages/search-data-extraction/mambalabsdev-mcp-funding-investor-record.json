@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Funding Investor Record",
+  "packageName": "@mambalabsdev/mcp-funding-investor-record",
+  "description": "MCP server for the Mamba Labs Funding Record from SEC and Companies House actor on Apify. Get a company funding record from SEC Form D, Companies House and press, each labelled.",
+  "url": "https://github.com/mambalabsdev/mcp-funding-investor-record",
+  "readme": "https://github.com/mambalabsdev/mcp-funding-investor-record#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

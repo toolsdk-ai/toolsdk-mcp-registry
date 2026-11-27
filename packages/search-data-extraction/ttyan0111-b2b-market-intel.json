@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "B2B Market Intel & Hiring Signals Suite",
+  "packageName": "@toolsdk-remote/ttyan0111-b2b-market-intel",
+  "description": "Five read-only B2B market intelligence and RAG tools in one remote MCP suite: Reed.co.uk direct-employer UK jobs and IR35 signals, Seek AU/NZ GraphQL job and company signals, iOS App Store and Google Play bug/churn reviews, Google Ads Transparency creatives and EU DSA reach, and Google News real-publisher URL decoding with full article text. Hosted on Apify's MCP server; sign in with an Apify account (OAuth), billed per result to that account.",
+  "url": "https://github.com/truonggiang0111/b2b-ai-mcp-skills",
+  "readme": "https://truonggiang0111.github.io/mcp/",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/truonggiang0111/b2b-ai-mcp-skills/main/icons/reed-uk.png",
+  "author": "ttyan0111",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com?actors=ttyan0111/reed-uk-jobs-hiring-signals,ttyan0111/seek-au-nz-jobs-hiring-signals,ttyan0111/app-store-play-reviews-spy,ttyan0111/google-ads-transparency-spy,ttyan0111/google-news-ai-article-extractor",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

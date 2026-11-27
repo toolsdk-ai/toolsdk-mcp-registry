@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "Competitor Ads: Google Ads Transparency + LinkedIn Ad Library",
+  "packageName": "@toolsdk-remote/dheerajitbhu-competitor-ads",
+  "description": "Competitor ad creatives from Google Ads Transparency Center (by domain, advertiser name or ID) and LinkedIn Ad Library (by keyword, advertiser or pasted search URL, no LinkedIn login). Hosted on Apify's MCP server; tools are the pay-per-event Apify Actors dheerajitbhu/google-ads-transparency and dheerajitbhu/linkedin-ad-library. Sign in with an Apify account (OAuth); runs are billed to that account.",
+  "url": "https://apify.com/dheerajitbhu/google-ads-transparency?utm_source=toolsdk&utm_medium=directory&utm_campaign=google-ads-transparency",
+  "readme": "https://apify.com/dheerajitbhu/linkedin-ad-library?utm_source=toolsdk&utm_medium=directory&utm_campaign=linkedin-ad-library",
+  "runtime": "node",
+  "author": "Integration Yard",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=dheerajitbhu/google-ads-transparency,dheerajitbhu/linkedin-ad-library",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

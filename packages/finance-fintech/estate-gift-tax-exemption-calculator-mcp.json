@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Estate and Gift Tax Exemption Calculator MCP",
+  "packageName": "@toolsdk-remote/estate-gift-tax-exemption-calculator-mcp",
+  "description": "2026 US estate and gift tax: $15M exemption (P.L. 119-21), 40% rates, annual exclusion, DSUE. Tools: get_exemption_amounts, calculate_estate_tax, check_gift, compare_years. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/estate-gift-tax-exemption-calculator-mcp",
+  "readme": "https://github.com/theluckystrike/estate-gift-tax-exemption-calculator-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://estate-gift-tax-exemption-calculator-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}

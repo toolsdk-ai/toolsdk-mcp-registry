@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Keenable Web Search",
+  "packageName": "@toolsdk-remote/keenable-web-search",
+  "description": "Hosted Keenable MCP server for web search and page fetching: search_web_pages returns results with snippets (optional site and published-date filters) and fetch_page_content returns a page as clean markdown. Free and keyless, with an hourly rate limit; clients that support custom headers can send an X-API-Key header to lift it.",
+  "url": "https://github.com/keenableai/keenable-mcp",
+  "readme": "https://docs.keenable.ai/mcp-server",
+  "runtime": "node",
+  "logo": "https://raw.githubusercontent.com/keenableai/keenable-mcp/main/assets/logo.png",
+  "author": "Keenable",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.keenable.ai/mcp?keenable_title=toolsdk"
+    }
+  ]
+}

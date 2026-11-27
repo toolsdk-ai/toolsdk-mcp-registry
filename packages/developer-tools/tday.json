@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "tday.com",
+  "packageName": "@toolsdk-remote/tday",
+  "description": "Official hosted MCP server for tday, where your coding agent records narrated demo videos of the app you are building. Tools cover tday brands, credits, product screens and launch videos. Streamable HTTP with OAuth 2.1 sign-in (dynamic client registration); free plan available.",
+  "url": "https://tday.com",
+  "readme": "https://docs.tday.com/coding-agents",
+  "runtime": "node",
+  "license": "Proprietary",
+  "logo": "https://tday.com/tday-mcp-icon.png",
+  "author": "tday",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://tday.com/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

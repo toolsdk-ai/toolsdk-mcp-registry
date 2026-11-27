@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "Craftwork",
+  "packageName": "@toolsdk-remote/craftwork",
+  "description": "Official hosted MCP server for Craftwork, a library of human-made design resources. Agents search and use animated React components (source code), Framer, Webflow, coded and Figma templates, fonts, shader backgrounds (React code), 3D models and hosted 3D embeds, SVG icons (SVG, React, Vue or CSS export), mockups and real website references. Searching is free with a Craftwork account; downloads and code exports use the account's plan (a free account gets 5 premium assets a month, Craftwork Pro opens every pack). Authenticates with OAuth 2.1 (PKCE and dynamic client registration).",
+  "url": "https://craftwork.design/mcp",
+  "readme": "https://github.com/craftwork-design/mcp#readme",
+  "runtime": "node",
+  "license": "Proprietary",
+  "author": "Craftwork",
+  "logo": "https://raw.githubusercontent.com/craftwork-design/mcp/main/logo.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://craftwork.design/api/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["openid", "profile", "email", "offline_access"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "type": "mcp-server",
+  "packageName": "claimidx",
+  "description": "Prior-art failure index for coding agents. Install: pip install -U \"claimidx[server]>=0.7.22\". MCP command: claimidx-mcp. Site: https://claimidx.com",
+  "url": "https://github.com/claimidx/claimidx",
+  "runtime": "python",
+  "license": "apache-2.0",
+  "env": {},
+  "name": "ClaimIDX"
+}

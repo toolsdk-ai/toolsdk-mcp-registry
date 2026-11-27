@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Us Import Records Buyer Finder",
+  "packageName": "@mambalabsdev/mcp-us-import-records-buyer-finder",
+  "description": "MCP server for US Import Records Buyer Finder. US importers and suppliers from customs bill of lading records. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-us-import-records-buyer-finder",
+  "readme": "https://github.com/mambalabsdev/mcp-us-import-records-buyer-finder#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

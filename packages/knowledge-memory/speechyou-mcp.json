@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Speechyou MCP",
+  "packageName": "@toolsdk-remote/speechyou-mcp",
+  "description": "Search and read Speechyou voice notes and meeting transcripts from Claude and compatible MCP clients, including full transcripts, available AI summaries, tags, recent notes, and audio links. Read-only OAuth access to owned and shared notes.",
+  "url": "https://speechyou.com/mcp",
+  "readme": "https://speechyou.com/mcp",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.speechyou.com/api/mcp/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

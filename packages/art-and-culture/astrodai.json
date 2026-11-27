@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Astrodai",
+  "packageName": "@toolsdk-remote/astrodai",
+  "description": "Institutional Vedic astrology and ephemeris engine calibrated to Swiss Ephemeris and JHora desktop ground truth. Computes zero-hallucination sidereal planetary coordinates, Vimshottari dasha life chapters, and birth-time sensitivity audits.",
+  "url": "https://github.com/tanudai/astrodai-mcp",
+  "readme": "https://github.com/tanudai/astrodai-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/tanudai/astrodai-mcp/main/assets/logo.png",
+  "author": "Astrodai",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://astrodai.com/mcp"
+    }
+  ]
+}

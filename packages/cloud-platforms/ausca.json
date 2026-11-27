@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "runtime": "node",
+  "env": {},
+  "name": "Ausca",
+  "packageName": "@toolsdk-remote/ausca",
+  "description": "Discover metered document, media, browser and inbox services through Ausca. Paid invocations require x402 v2 USDC on Base in a compatible client.",
+  "url": "https://github.com/auscahq/ausca",
+  "readme": "https://ausca.com/docs/",
+  "author": "Ausca",
+  "logo": "https://raw.githubusercontent.com/auscahq/ausca-plugin/main/assets/marketplace-icon.svg",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://ausca.com/mcp"
+    }
+  ]
+}

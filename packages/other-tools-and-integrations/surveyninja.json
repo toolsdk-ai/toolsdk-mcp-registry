@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "SurveyNinja",
+  "packageName": "@toolsdk-remote/surveyninja",
+  "description": "Hosted SurveyNinja MCP: build surveys from a description or a template, check them before launch, publish them, read responses and reports, and export results to CSV, Excel, SPSS or PDF. Sign in with OAuth and choose one workspace; works on every SurveyNinja plan, Free included.",
+  "url": "https://github.com/SurveyNinjaio/surveyninja-mcp",
+  "readme": "https://surveyninja.io/dev/api/mcp",
+  "runtime": "node",
+  "logo": "https://raw.githubusercontent.com/SurveyNinjaio/surveyninja-mcp/main/assets/logo.png",
+  "author": "SurveyNinja",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.surveyninja.io/mcp/v1",
+      "auth": { "type": "oauth2" }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "NPMScan",
+  "packageName": "@toolsdk-remote/npmscan",
+  "description": "Checks npm packages for malware, known vulnerabilities, typosquats, maintainer takeovers and risky install scripts; audits package.json, lockfiles, SBOMs and GitHub repos. Read-only, no API key.",
+  "url": "https://github.com/salemalem/npmscan-mcp-plugin",
+  "readme": "https://npmscan.com/docs/mcp",
+  "runtime": "node",
+  "author": "BlockHacks.io",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://npmscan.com/api/mcp"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "YouTube Transcripts, Search & Summaries",
+  "packageName": "@toolsdk-remote/youtube-transcripts-mcp",
+  "description": "YouTube transcripts, video search, chapters and extractive summaries for any public video. No YouTube API key and no LLM needed. Hosted on Apify with pay-per-call pricing; sign in with an Apify account via OAuth.",
+  "url": "https://github.com/gunnargray-dev/youtube-transcripts-mcp",
+  "readme": "https://github.com/gunnargray-dev/youtube-transcripts-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Parallel Studio",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://parallelstudio--youtube-transcripts-mcp.apify.actor/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["full_api_access"]
+      }
+    }
+  ]
+}

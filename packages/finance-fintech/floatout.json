@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Floatout",
+  "packageName": "@toolsdk-remote/floatout",
+  "description": "Floatout's public, read-only MCP server. Look up Floatout plans and pricing, read Floatout guides on launching a Hyperliquid perps and prediction market DEX, and query Floatout's Hyperliquid builder-fee research. No auth.",
+  "readme": "https://floatout.xyz/llms.txt",
+  "logo": "https://floatout.xyz/logo.png",
+  "runtime": "node",
+  "author": "Floatout",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://floatout.xyz/api/mcp"
+    }
+  ]
+}

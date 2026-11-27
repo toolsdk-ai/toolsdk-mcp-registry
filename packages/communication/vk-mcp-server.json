@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "VK MCP Server",
+  "packageName": "vk-mcp-server",
+  "description": "Runs a VK (VKontakte) community from an AI assistant: works through the community inbox and replies as the community, publishes posts, comments and stories, and reads walls, profiles and communities.",
+  "url": "https://github.com/bulatko/vk-mcp-server",
+  "readme": "https://github.com/bulatko/vk-mcp-server#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "VK_ACCESS_TOKEN": {
+      "description": "VK community token (community → Manage → API usage → Access tokens). Posts, comments, stories and community messages act with it.",
+      "required": true,
+      "secret": true
+    },
+    "VK_SERVICE_KEY": {
+      "description": "Optional service key from your VK app. Reads that VK refuses the community token, such as walls, are made with it.",
+      "required": false,
+      "secret": true
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Research Topic Institutions Authors",
+  "packageName": "@mambalabsdev/mcp-research-topic-institutions-authors",
+  "description": "MCP server for Research Topic Institutions and Authors. Turn a research topic into ranked institutions and authors from OpenAlex, with newest papers. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-research-topic-institutions-authors",
+  "readme": "https://github.com/mambalabsdev/mcp-research-topic-institutions-authors#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

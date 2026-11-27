@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Cups to Grams MCP",
+  "packageName": "@toolsdk-remote/cups-to-grams-mcp",
+  "description": "Cups to grams for 271 ingredients with USDA and King Arthur densities, recipe scaling, oven temps. Tools: convert_ingredient, search_ingredients, scale_recipe, convert_oven_temperature. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/cups-to-grams-mcp",
+  "readme": "https://github.com/theluckystrike/cups-to-grams-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://cups-to-grams-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}

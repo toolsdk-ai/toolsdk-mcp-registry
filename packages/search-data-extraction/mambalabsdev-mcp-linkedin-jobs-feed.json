@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Linkedin Jobs Feed",
+  "packageName": "@mambalabsdev/mcp-linkedin-jobs-feed",
+  "description": "MCP server for LinkedIn Jobs Feed. Search LinkedIn jobs by keyword and location and get one row per job with the employer website domain, description, seniority, and applicants. No login. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-linkedin-jobs-feed",
+  "readme": "https://github.com/mambalabsdev/mcp-linkedin-jobs-feed#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

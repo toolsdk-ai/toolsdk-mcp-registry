@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Cockatoo",
+  "packageName": "@toolsdk-remote/cockatoo",
+  "description": "Create, edit and publish hosted business websites with owner-approved access. Public catalogue and onboarding; OAuth protects website management.",
+  "url": "https://cockatoo.com.au/agents/",
+  "readme": "https://cockatoo.com.au/docs/",
+  "runtime": "node",
+  "logo": "https://cockatoo.com.au/android-chrome-512x512.png",
+  "author": "Cockatoo",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.cockatoo.com.au/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["sites:read", "sites:write", "sites:publish"]
+      }
+    }
+  ]
+}

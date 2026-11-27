@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Linkedin Company Presence Mapper",
+  "packageName": "@mambalabsdev/mcp-linkedin-company-presence-mapper",
+  "description": "MCP server for the Mamba Labs LinkedIn Company Page Mapper actor on Apify. Free. Resolve a company domain to its verified LinkedIn page, with name and tagline, and a follower count on some companies. No firmographics. No request to LinkedIn.",
+  "url": "https://github.com/mambalabsdev/mcp-linkedin-company-presence-mapper",
+  "readme": "https://github.com/mambalabsdev/mcp-linkedin-company-presence-mapper#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

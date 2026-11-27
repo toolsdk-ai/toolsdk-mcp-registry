@@ -1,0 +1,11 @@
+{
+  "type": "mcp-server",
+  "name": "Bandcamp MCP",
+  "packageName": "bandcamp-mcp",
+  "description": "Bandcamp music discovery without an account or API key: search artists, albums, labels and tracks, browse genre tags for new and top releases, read tracklists and prices. Read-only. Unofficial.",
+  "url": "https://github.com/Venut-Technologies/bandcamp-mcp",
+  "readme": "https://github.com/Venut-Technologies/bandcamp-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {}
+}

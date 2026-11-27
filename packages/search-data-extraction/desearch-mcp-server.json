@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Desearch",
+  "packageName": "desearch-mcp-server",
+  "description": "AI search, X search and web search for AI agents, plus page extraction and X data tools. Requires a Desearch API key.",
+  "url": "https://github.com/Desearch-ai/mcp-desearch",
+  "readme": "https://github.com/Desearch-ai/mcp-desearch#readme",
+  "author": "Desearch",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "DESEARCH_API_KEY": {
+      "description": "Desearch API key from https://console.desearch.ai/api-keys.",
+      "required": true,
+      "secret": true
+    }
+  }
+}

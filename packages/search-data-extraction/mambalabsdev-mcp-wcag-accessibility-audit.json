@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Wcag Accessibility Audit",
+  "packageName": "@mambalabsdev/mcp-wcag-accessibility-audit",
+  "description": "MCP server for WCAG Accessibility Audit. Audit any website with axe-core in a real browser and get one row per domain: WCAG 2.0, 2.1, and 2.2 issues found by automated checks by severity, top failing rules, sample elements, a score, European Accessibility Act exposure signals, and optional accessibility statement, overlay, privacy policy, Impressum, and US privacy choice checks. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-wcag-accessibility-audit",
+  "readme": "https://github.com/mambalabsdev/mcp-wcag-accessibility-audit#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

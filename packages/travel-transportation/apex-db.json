@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Apex DB (Remote)",
+  "packageName": "@toolsdk-remote/apex-db",
+  "description": "EU and Israel vehicle specifications with per-field provenance: search variants by brand, model and model year, fetch one variant in full, and read the live coverage matrix. Anonymous sample calls need no account and are rate-limited per IP; paid access is available with an API token or per call via x402 (USDC on Base).",
+  "url": "https://apex-db.org/docs/api",
+  "readme": "https://apex-db.org/docs/api",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apex-db.org/mcp"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "type": "mcp-server",
+  "name": "B2match MCP (unofficial)",
+  "packageName": "b2match-mcp",
+  "description": "Unofficial, read-only access to the B2match event and matchmaking platform, not affiliated with B2match: event details, agenda, participants, organisations and marketplace opportunities without login; your meetings, schedule, availability and conversation previews after a local sign-in (npx -y b2match-mcp login <event-url>).",
+  "url": "https://github.com/barzoj/b2match-mcp",
+  "readme": "https://github.com/barzoj/b2match-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {}
+}

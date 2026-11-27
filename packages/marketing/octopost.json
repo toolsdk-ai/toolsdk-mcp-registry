@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "Octopost",
+  "packageName": "@toolsdk-remote/octopost",
+  "description": "Octopost is a remote MCP server for posting to X, Bluesky, Mastodon and LinkedIn. An agent posts, schedules and threads, drips posts out from a queue, and holds any post a person should check in an approval queue (agents cannot approve their own posts). OAuth 2.1 with dynamic client registration, or an API key as a Bearer header. Paid plans from $29/month with a 7-day trial for $1.",
+  "url": "https://github.com/octopost-ink/octopost-plugin",
+  "readme": "https://octopost.ink/docs/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Great Work LLC",
+  "logo": "https://octopost.ink/icon.svg",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://octopost.ink/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["posts"]
+      }
+    }
+  ]
+}

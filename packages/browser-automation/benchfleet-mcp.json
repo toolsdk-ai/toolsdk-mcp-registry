@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "BenchFleet",
+  "packageName": "benchfleet-mcp",
+  "description": "Lets AI agents use real Android phones connected to the BenchFleet desktop app: list phones, read the screen and UI elements, tap, type, swipe, open apps and run saved workflows, only on the phones and with the actions the user allows, with approvals for sensitive steps and an audit log. Requires the BenchFleet app running on the same computer.",
+  "url": "https://github.com/benchfleet/benchfleet-mcp",
+  "readme": "https://github.com/benchfleet/benchfleet-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "BenchFleet",
+  "env": {
+    "BENCHFLEET_TOKEN": {
+      "description": "The AI client token created in the BenchFleet app (Settings, AI clients).",
+      "required": true,
+      "secret": true
+    },
+    "BENCHFLEET_URL": {
+      "description": "The BenchFleet app's address, when it is not found in the app's data folder.",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Flood Zone Lookup FEMA Flood Map MCP",
+  "packageName": "@toolsdk-remote/flood-zone-lookup-fema-flood-map-mcp",
+  "description": "FEMA flood zone for any US address or coordinate from the National Flood Hazard Layer: zone code, Special Flood Hazard Area status, base flood elevation, FIRM panel, LOMRs and nearby floodplain. Tools: flood_zone_lookup, flood_zone_nearby, flood_zone_explain. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/flood-zone-lookup-fema-flood-map-mcp",
+  "readme": "https://github.com/theluckystrike/flood-zone-lookup-fema-flood-map-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://flood-zone-lookup-fema-flood-map-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}

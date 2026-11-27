@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "ATS Jobs Feed",
+  "packageName": "@mambalabsdev/mcp-ats-jobs-feed",
+  "description": "MCP server for ATS Jobs Feed. Every open job for a list of companies from their own Greenhouse, Lever, Ashby, Workday, and 13 other ATS boards, one row per job with the company domain. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-ats-jobs-feed",
+  "readme": "https://github.com/mambalabsdev/mcp-ats-jobs-feed#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

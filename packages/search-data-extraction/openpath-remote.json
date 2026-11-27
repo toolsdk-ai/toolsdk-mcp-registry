@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Openpath (Remote)",
+  "packageName": "@toolsdk-remote/openpath",
+  "description": "Connects to the hosted Openpath MCP endpoint, an open directory of real-world listings for AI agents: search live jobs from employers' own job boards (Austin, TX and remote), each with the employer's Apply link, and local businesses around Austin, TX, each with an Openpath inbox, then read one listing in full. Read-only; no sign-in or API key.",
+  "url": "https://github.com/openpath-sh/skills",
+  "readme": "https://openpath.sh/docs/connect",
+  "runtime": "node",
+  "license": "MIT-0",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://openpath.sh/mcp/search"
+    }
+  ]
+}

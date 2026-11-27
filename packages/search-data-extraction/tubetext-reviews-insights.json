@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "TubeText Reviews + AI Insights: Steam, Agoda, Google Play",
+  "packageName": "@toolsdk-remote/tubetext-reviews-insights",
+  "description": "Steam game, Agoda/Booking.com hotel and Google Play app reviews with optional AI insight reports. Hosted on Apify's MCP server; tools are the pay-per-event Apify Actors tubetext/steam-reviews-scraper, tubetext/agoda-reviews-scraper, tubetext/google-play-reviews-ai. Sign in with an Apify account (OAuth); failed or empty results are not billed.",
+  "url": "https://github.com/LMSlay/tubetext-mcp",
+  "readme": "https://github.com/LMSlay/tubetext-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/LMSlay/tubetext-mcp/main/logo-400.png",
+  "author": "TubeText Labs",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=fetch-actor-details,tubetext/steam-reviews-scraper,tubetext/agoda-reviews-scraper,tubetext/google-play-reviews-ai",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

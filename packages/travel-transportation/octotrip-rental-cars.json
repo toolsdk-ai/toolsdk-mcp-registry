@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "OctoTrip Rental Cars",
+  "packageName": "@toolsdk-remote/octotrip-rental-cars",
+  "description": "Search and compare rental cars with real-time pricing across multiple providers worldwide, grouped by SIPP category. One-way rentals supported. Free, no API key needed.",
+  "url": "https://github.com/octotrip/rental-cars",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.octotrip.app/rental-cars/mcp"
+    }
+  ]
+}

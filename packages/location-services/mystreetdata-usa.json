@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "name": "MyStreetData USA",
+  "packageName": "@toolsdk-remote/mystreetdata-usa",
+  "description": "Free read-only street search and context for 1.33M records across 8 US states. Five tools; no API key. Shared limits: 100 calls/day per origin and 1,000/day globally.",
+  "readme": "https://mystreetdata.com/mcp/",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mystreetdata.com/api/mcp"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "SlashYear",
+  "packageName": "@toolsdk-remote/slashyear-mcp",
+  "description": "Look up history by year, date and country, plus world leaders, historical prices and No. 1 songs, each line cited to a Wikipedia revision. Hosted, no authentication.",
+  "url": "https://github.com/ctrl-maud/slashyear",
+  "readme": "https://slashyear.com/api",
+  "runtime": "node",
+  "license": "Apache-2.0",
+  "logo": "https://raw.githubusercontent.com/ctrl-maud/slashyear/main/logo.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://slashyear.com/mcp"
+    }
+  ]
+}

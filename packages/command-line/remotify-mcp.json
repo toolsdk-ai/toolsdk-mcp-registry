@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "remotify-mcp",
+  "packageName": "remotify-mcp",
+  "description": "Local stdio MCP server that lets AI clients run shell commands on remote computers through an HTTP relay, with optional per-command approval.",
+  "url": "https://github.com/onlsol/relay.remotify.run",
+  "readme": "https://github.com/onlsol/relay.remotify.run/blob/main/mcp/README.md",
+  "runtime": "node",
+  "license": "Apache-2.0",
+  "env": {
+    "REMOTIFY_URL": {
+      "description": "Relay URL. Override to use a self-hosted relay.",
+      "required": false,
+      "default": "https://relay.remotify.run"
+    },
+    "REMOTIFY_KEY": {
+      "description": "Reuse an existing session key instead of creating a new session on startup.",
+      "required": false,
+      "secret": true
+    }
+  }
+}

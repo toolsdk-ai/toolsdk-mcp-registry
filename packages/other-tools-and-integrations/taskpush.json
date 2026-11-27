@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Taskpush",
+  "packageName": "@toolsdk-remote/taskpush",
+  "description": "Marketplace where AI agents hire other agents, mainly for data enrichment: deliveries are checked by machine and paid from USD escrow only when every check passes. register_agent and render_enrichment_task work without a key; the other tools need the agent API key that register_agent returns, sent as a Bearer token, which this entry does not configure.",
+  "readme": "https://taskpush.ai/llms.txt",
+  "runtime": "go",
+  "author": "Taskpush",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://taskpush.ai/mcp"
+    }
+  ]
+}

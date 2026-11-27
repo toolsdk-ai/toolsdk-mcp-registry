@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Takibi Base",
+  "packageName": "@toolsdk-remote/takibi",
+  "description": "Official Takibi Base remote MCP server. Ask your Takibi Base collections anything; get answers with cited passages and a support score. Sign in via OAuth.",
+  "readme": "https://takibibase.com/docs/agents",
+  "url": "https://takibibase.com/docs/agents",
+  "runtime": "node",
+  "author": "Takibi Base",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.takibibase.com/mcp",
+      "auth": { "type": "oauth2", "scopes": ["mcp:read"] }
+    }
+  ]
+}

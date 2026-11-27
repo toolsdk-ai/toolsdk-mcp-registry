@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "ScrapingBee",
+  "packageName": "@toolsdk-remote/scrapingbee",
+  "description": "Official ScrapingBee MCP server. Fetch any web page as HTML, text or a screenshot with JavaScript rendering and proxies, extract fields described in plain English, and get structured results from Google search, fast search, Amazon, Walmart, YouTube, ChatGPT and Gemini (18 tools). Sign in with OAuth; new accounts get 1,000 free credits, no card required.",
+  "url": "https://github.com/ScrapingBee/mcp-server",
+  "readme": "https://github.com/ScrapingBee/mcp-server#readme",
+  "runtime": "node",
+  "author": "ScrapingBee",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.scrapingbee.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp"]
+      }
+    }
+  ]
+}

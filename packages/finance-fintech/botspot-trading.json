@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "BotSpot",
+  "packageName": "@toolsdk-remote/botspot-trading",
+  "description": "Lets AI agents build LumiBot trading strategies, run historical backtests, paper trade and live trade stocks, options, crypto and futures through your own broker, and monitor bots. Free to connect with OAuth sign-in; paid plans unlock heavier backtests and live bots.",
+  "url": "https://github.com/Lumiwealth/botspot-mcp",
+  "readme": "https://github.com/Lumiwealth/botspot-mcp#readme",
+  "runtime": "node",
+  "author": "Lumiwealth",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.botspot.trade/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

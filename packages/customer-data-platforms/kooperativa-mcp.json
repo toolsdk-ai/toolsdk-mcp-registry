@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Kooperativa.io MCP Server",
+  "packageName": "@kooperativa_team/mcp-server",
+  "description": "Enrich and search people and company profiles, read hiring signals, job changes and headcount by seniority, and manage webhook monitors through the Kooperativa.io API.",
+  "url": "https://github.com/kooperativa-team/kooperativa-mcp",
+  "readme": "https://github.com/kooperativa-team/kooperativa-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "KOOPERATIVA_API_KEY": {
+      "description": "Kooperativa.io API key (ik_live_...). Alternatively run `npx -y @kooperativa_team/mcp-server login` once to store it locally.",
+      "required": true,
+      "secret": true
+    }
+  }
+}

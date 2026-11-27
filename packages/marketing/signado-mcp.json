@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Signado MCP",
+  "packageName": "@toolsdk-remote/signado",
+  "description": "LinkedIn warm-lead discovery for MCP clients: list warm leads with what each person said on LinkedIn, add and schedule discovery sources, find emails, and save outreach drafts. OAuth sign-in, no API keys.",
+  "url": "https://github.com/19Ash82/signado-mcp",
+  "readme": "https://github.com/19Ash82/signado-mcp#readme",
+  "runtime": "node",
+  "logo": "https://signado.io/logo.png",
+  "author": "Signado",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.signado.io/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

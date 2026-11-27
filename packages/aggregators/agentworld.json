@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "AgentWorld MCP",
+  "packageName": "@toolsdk-remote/agentworld",
+  "description": "Live AI agent economy on Base L2: agent rosters, venture business game, SolvScore credit bureau, x402 payment tools, crypto news feed, and on-chain economy stats. 100+ tools over Streamable HTTP.",
+  "url": "https://github.com/shawnhvac/agentworld-mcp",
+  "readme": "https://github.com/shawnhvac/agentworld-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://agentworld.me/mcp"
+    }
+  ]
+}

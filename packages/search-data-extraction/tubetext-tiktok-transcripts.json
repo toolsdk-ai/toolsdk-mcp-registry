@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "TubeText TikTok Transcripts & Video Breakdown",
+  "packageName": "@toolsdk-remote/tubetext-tiktok-transcripts",
+  "description": "TikTok video transcripts (captions or Whisper AI) plus AI hook, shot list and script breakdown. Hosted on Apify's MCP server; tools are the pay-per-event Apify Actors tubetext/tiktok-transcript, tubetext/video-breakdown-ai. Sign in with an Apify account (OAuth); failed or empty results are not billed.",
+  "url": "https://github.com/LMSlay/tubetext-mcp",
+  "readme": "https://github.com/LMSlay/tubetext-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/LMSlay/tubetext-mcp/main/logo-400.png",
+  "author": "TubeText Labs",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=fetch-actor-details,tubetext/tiktok-transcript,tubetext/video-breakdown-ai",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

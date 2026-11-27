@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Kuro",
+  "packageName": "@toolsdk-remote/kuro",
+  "description": "Create AI images, video clips, voice-overs, music and editable storyboard films through Kuro’s hosted MCP server. Connect with OAuth 2.1.",
+  "url": "https://meetkuro.com/agents/",
+  "readme": "https://meetkuro.com/agents.md",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.meetkuro.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

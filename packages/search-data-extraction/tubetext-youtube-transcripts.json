@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "TubeText YouTube Transcripts & Channel Analytics",
+  "packageName": "@toolsdk-remote/tubetext-youtube-transcripts",
+  "description": "YouTube transcripts from videos, Shorts, playlists or channels, plus channel and Social Blade stats. Hosted on Apify's MCP server; tools are the pay-per-event Apify Actors tubetext/youtube-transcript-fast, tubetext/youtube-channel-analytics, tubetext/socialblade-scraper. Sign in with an Apify account (OAuth); failed or empty results are not billed.",
+  "url": "https://github.com/LMSlay/tubetext-mcp",
+  "readme": "https://github.com/LMSlay/tubetext-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/LMSlay/tubetext-mcp/main/logo-400.png",
+  "author": "TubeText Labs",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=fetch-actor-details,tubetext/youtube-transcript-fast,tubetext/youtube-channel-analytics,tubetext/socialblade-scraper",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "type": "mcp-server",
+  "name": "Mobile Joe",
+  "packageName": "@toolsdk-remote/mobile-joe",
+  "description": "Official hosted server for Mobile Joe, a toolkit for mobile app developers. Maintains FAQs and their translations, curates feature plans, informs app users with in-app alerts and updates app settings. 33 tools; drafts are prepared and content is published or delivered only when asked. OAuth and a Mobile Joe account are required (14-day free trial); during consent the developer chooses which apps and permissions to share.",
+  "url": "https://github.com/MobileJoeDev/mobilejoe-plugin",
+  "readme": "https://docs.mobilejoe.dev/mcp/",
+  "logo": "https://app.mobilejoe.dev/icon.png",
+  "author": "Bytekontor GmbH",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.mobilejoe.dev/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "faqs:read",
+          "faqs:write",
+          "faqs:publish",
+          "feature_plans:read",
+          "feature_plans:write",
+          "feature_plans:publish",
+          "alerts:read",
+          "alerts:write",
+          "alerts:publish",
+          "apps:write"
+        ]
+      }
+    }
+  ]
+}

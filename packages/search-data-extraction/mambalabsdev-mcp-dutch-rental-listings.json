@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Dutch Rental Listings",
+  "packageName": "@mambalabsdev/mcp-dutch-rental-listings",
+  "description": "MCP server for Netherlands Rental Listings. Kamernet, HousingAnywhere, and anti-squat agency listings in one list. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-dutch-rental-listings",
+  "readme": "https://github.com/mambalabsdev/mcp-dutch-rental-listings#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

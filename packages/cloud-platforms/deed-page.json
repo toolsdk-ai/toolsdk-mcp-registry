@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "deed.page",
+  "packageName": "@toolsdk-remote/deed-page",
+  "description": "Official hosted MCP server for deed.page, static hosting for AI agents. Publishes HTML, a static folder or files to a permanent https://<slug>.deed.page URL, then updates or deletes the site with the token returned on first publish. Publishing needs no account or API key.",
+  "url": "https://github.com/f-o-x11/deed-page-skill",
+  "readme": "https://deed.page/docs",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Avatar 8 LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://deed.page/mcp"
+    }
+  ]
+}

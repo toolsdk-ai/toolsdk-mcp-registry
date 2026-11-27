@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Recall Kitchen",
+  "packageName": "@toolsdk-remote/recall-kitchen",
+  "description": "Hosted MCP for U.S. product recall search across CPSC, FDA food, FDA MedWatch, USDA, and NHTSA. Search by keyword, UPC, product name, or vehicle make/model; optional photo search. Free with an API key (X-API-Key or Bearer); anonymous x402 USDC on Base also works. Account tools (watches, inventory, notifications) need a key.",
+  "url": "https://github.com/Recall-Kitchen/rk-mcp",
+  "readme": "https://recallkitchen.com/docs/",
+  "runtime": "node",
+  "license": "apache-2.0",
+  "author": "Recall Kitchen",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.recallkitchen.com/mcp"
+    }
+  ]
+}

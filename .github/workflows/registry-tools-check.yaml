@@ -1,0 +1,24 @@
+name: Registry Tools Check
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'scripts/batch-registry-prs*.mjs'
+      - 'scripts/lib/**'
+      - 'scripts/validate-registry*.mjs'
+      - '.github/workflows/registry*.yaml'
+
+permissions:
+  contents: read
+
+jobs:
+  registry-tools:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node --test scripts/lib/*.node-test.mjs scripts/validate-registry.node-test.mjs scripts/batch-registry-prs.node-test.mjs
+      - run: node scripts/batch-registry-prs.mjs --help

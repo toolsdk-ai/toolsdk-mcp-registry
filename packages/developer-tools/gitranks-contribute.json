@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "GitRanks Contribute",
+  "packageName": "@toolsdk-remote/gitranks-contribute",
+  "description": "Find open-source GitHub issues to contribute to, matched to your skills and checked ready for a pull request. Your agent fixes one; you approve the PR on gitranks.com.",
+  "url": "https://github.com/gitranks/contribute",
+  "readme": "https://gitranks.com/contribute/mcp?utm_source=toolsdk&utm_campaign=mcp-listing",
+  "runtime": "node",
+  "logo": "https://raw.githubusercontent.com/gitranks/contribute/main/assets/icon.png",
+  "author": "GitRanks",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.gitranks.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["contribute"]
+      }
+    }
+  ]
+}

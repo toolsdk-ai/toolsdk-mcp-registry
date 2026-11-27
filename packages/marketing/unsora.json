@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Unsora",
+  "packageName": "@toolsdk-remote/unsora",
+  "description": "Official hosted MCP server for Unsora, an AI content generation and social media scheduling app: generate images, video (Kling, Veo 3.1, Sora 2, Seedance 2.0 and other models), talking-avatar video, music, voiceovers, voice clones and thumbnails; upscale images and video; clip long videos into short clips; and schedule or publish posts with analytics to connected YouTube, TikTok, Instagram, Facebook, LinkedIn, Bluesky, Threads and Pinterest accounts. Requires a paid Unsora plan (3-day free trial).",
+  "url": "https://github.com/Shipped-Studio/unsora",
+  "readme": "https://tryunsora.com/mcp",
+  "runtime": "node",
+  "license": "AGPL-3.0",
+  "logo": "https://mcp.tryunsora.com/assets/brand/icon-light.png",
+  "author": "Shipped Studio",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.tryunsora.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

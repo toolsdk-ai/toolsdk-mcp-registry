@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Domain Search King",
+  "packageName": "@toolsdk-remote/domain-search-king",
+  "description": "Generates brandable .com domain name ideas and returns only those currently available to register, checked live against the Verisign RDAP registry. Also supports pattern search and single-domain checks. Free hosted endpoint with no API key; rate-limited per IP.",
+  "url": "https://github.com/johnsmalls22-rgb/domain-search-king-mcp",
+  "readme": "https://domainsearchking.com/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://domainsearchking.com/api/mcp"
+    }
+  ]
+}

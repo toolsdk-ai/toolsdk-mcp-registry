@@ -1,0 +1,11 @@
+{
+  "type": "mcp-server",
+  "name": "Muslim Prayer Reminder MCP",
+  "packageName": "muslim-prayer-mcp",
+  "description": "Calculates Muslim prayer times for a specified location and regional method, including daily timetables and next-prayer countdowns for MCP clients.",
+  "url": "https://github.com/tareq7/muslim-prayer-mcp",
+  "readme": "https://github.com/tareq7/muslim-prayer-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {}
+}

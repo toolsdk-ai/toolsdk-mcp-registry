@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "TraderSpy",
+  "packageName": "@toolsdk-remote/traderspy",
+  "description": "Read-only crypto futures data for AI agents: AI-generated futures signals with entry, take-profit ladder, stop and realised outcome; top-trader positioning on Binance, Hyperliquid, Bybit and OKX; prices, OHLCV candles, 19 technical indicators over up to 3 timeframes, funding rate and open interest, a screener and an event-study backtest. 17 tools, none of which places, closes or modifies an order. Free tier: 300 tool calls/day.",
+  "url": "https://github.com/target1m/traderspy-mcp",
+  "readme": "https://github.com/target1m/traderspy-mcp#readme",
+  "runtime": "node",
+  "logo": "https://raw.githubusercontent.com/target1m/traderspy-mcp/master/logo-400.png",
+  "author": "TraderSpy",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.traderspy.app/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

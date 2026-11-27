@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "OverlayQA",
+  "packageName": "@toolsdk-remote/overlayqa",
+  "description": "Design QA for coding agents: runs WCAG accessibility (axe-core), color-contrast and design-token audits and AI visual reviews on any public URL, then creates and manages QA issues, comments, labels and client review links in OverlayQA. 31 tools. Requires a free OverlayQA account; sign-in is OAuth 2.1 with dynamic client registration.",
+  "runtime": "node",
+  "url": "https://github.com/OverlayQA/mcp",
+  "readme": "https://overlayqa.com/mcp/",
+  "license": "MIT",
+  "author": "OverlayQA",
+  "logo": "https://raw.githubusercontent.com/OverlayQA/mcp/main/icon.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.overlayqa.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["overlayqa:read", "overlayqa:write", "overlayqa:scan"]
+      }
+    }
+  ]
+}

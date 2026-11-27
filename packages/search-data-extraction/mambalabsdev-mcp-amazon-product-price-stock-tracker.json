@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Amazon Product Price Stock Tracker",
+  "packageName": "@mambalabsdev/mcp-amazon-product-price-stock-tracker",
+  "description": "MCP server for Amazon Product, Price, and Stock Tracker. Amazon price, stock, seller, and rating by ASIN or URL on 9 marketplaces, with change rows between runs. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-amazon-product-price-stock-tracker",
+  "readme": "https://github.com/mambalabsdev/mcp-amazon-product-price-stock-tracker#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

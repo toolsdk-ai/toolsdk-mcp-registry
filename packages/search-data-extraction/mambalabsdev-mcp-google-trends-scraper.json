@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Google Trends Scraper",
+  "packageName": "@mambalabsdev/mcp-google-trends-scraper",
+  "description": "MCP server for Google Trends Scraper. Interest over time, regions, metros, and related queries per search term, with up to 5 terms compared. No Google login or key. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-google-trends-scraper",
+  "readme": "https://github.com/mambalabsdev/mcp-google-trends-scraper#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

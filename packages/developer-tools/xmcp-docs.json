@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "xmcp Docs",
+  "packageName": "@toolsdk-remote/xmcp-docs",
+  "description": "Search and retrieve the official xmcp documentation for building MCP servers with TypeScript. Free, read-only hosted endpoint; no authentication required.",
+  "url": "https://github.com/basementstudio/xmcp/tree/main/apps/website",
+  "readme": "https://xmcp.dev/docs/guides/xmcp-mcp-server",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://xmcp.dev/mcp"
+    }
+  ]
+}

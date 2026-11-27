@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "GrowSurf MCP Server",
+  "packageName": "@growsurfteam/growsurf-mcp",
+  "description": "Build and manage GrowSurf referral and affiliate programs through AI assistants.",
+  "url": "https://github.com/growsurf/growsurf-mcp",
+  "readme": "https://docs.growsurf.com/build-with-ai",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "GROWSURF_API_KEY": {
+      "description": "A GrowSurf API key for API-backed actions; static integration guidance works without it.",
+      "required": false,
+      "secret": true
+    },
+    "GROWSURF_CAMPAIGN_ID": {
+      "description": "The default GrowSurf program ID for program-scoped tools.",
+      "required": false,
+      "secret": false
+    }
+  }
+}

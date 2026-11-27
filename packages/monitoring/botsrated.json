@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "BotsRated",
+  "packageName": "@toolsdk-remote/botsrated",
+  "description": "Signed checks of paid AI services before your agent pays: x402 sellers (Base and Solana), unpaid MPP challenges, and remote MCP servers. Free tools: preflight (1,000/IP/UTC day, 25,000/key/UTC day), coverage, sample, history, and start_upgrade; plus free signed hourly change feed (/v1/feed). Paid lookups via x402 (USDC on Base): check $0.01 (5 free/IP/UTC day, 25 with free key at /v1/keys/free), report $0.002 (at least 3 free/day over HTTP), best $0.01 (no free quota). No account or API key.",
+  "url": "https://github.com/botsrated/botsrated",
+  "readme": "https://botsrated.com/llms.txt",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "BotsRated",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://botsrated.com/mcp"
+    }
+  ]
+}

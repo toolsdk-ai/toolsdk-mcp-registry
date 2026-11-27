@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Y Combinator Startup Jobs",
+  "packageName": "@mambalabsdev/mcp-yc-startup-jobs",
+  "description": "MCP server for Y Combinator Startup Jobs: Work at a Startup jobs by role, company, or YC batch.",
+  "url": "https://github.com/mambalabsdev/mcp-yc-startup-jobs",
+  "readme": "https://github.com/mambalabsdev/mcp-yc-startup-jobs#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

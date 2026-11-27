@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "TrueProxies",
+  "packageName": "@toolsdk-remote/trueproxies",
+  "description": "Connect Claude, Cursor or any MCP client to your TrueProxies account. Check plans and services, usage and invoices, list endpoints, and run connection checks. Cannot buy or pay, change the proxy password, or edit trusted IPs — do those in the dashboard.",
+  "url": "https://github.com/trueproxies-com/trueproxies-mcp",
+  "readme": "https://github.com/trueproxies-com/trueproxies-mcp#readme",
+  "runtime": "go",
+  "license": "MIT",
+  "logo": "https://trueproxies.com/icon-512.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.trueproxies.com/mcp"
+    }
+  ]
+}

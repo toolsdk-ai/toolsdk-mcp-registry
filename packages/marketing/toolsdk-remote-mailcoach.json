@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Mailcoach",
+  "packageName": "@toolsdk-remote/mailcoach",
+  "description": "Official Mailcoach remote MCP server by Spatie for email marketing: lists, subscribers, campaigns and stats, templates and transactional mail logs. Sign in with your Mailcoach account via OAuth.",
+  "readme": "https://www.mailcoach.app/resources/learn-mailcoach/integrations/mcp-server/",
+  "url": "https://www.mailcoach.app/resources/learn-mailcoach/integrations/mcp-server/",
+  "runtime": "node",
+  "author": "Spatie",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.mailcoach.app",
+      "auth": { "type": "oauth2", "scopes": ["mcp:use"] }
+    }
+  ]
+}

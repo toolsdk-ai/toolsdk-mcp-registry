@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "StatOrigin",
+  "packageName": "@toolsdk-remote/statorigin-mcp",
+  "description": "Read-only search of a free archive of industry statistics; each record carries its publisher, source document URL and source sentence.",
+  "url": "https://github.com/SudoAI-App/statorigin-mcp",
+  "readme": "https://github.com/SudoAI-App/statorigin-mcp#readme",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://statorigin.org/mcp"
+    }
+  ]
+}

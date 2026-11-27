@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Catalyst Labs Google Trends API",
+  "packageName": "@toolsdk-remote/catalyst-labs-google-trends-api",
+  "description": "Google Trends interest-over-time and related queries as JSON with a short trend summary, $0.0025 per keyword; rate-limited keywords are not charged. Hosted on Apify's MCP server; sign in with an Apify account (OAuth), billed per result.",
+  "url": "https://github.com/catalyst-labs-dev/catalyst-labs-mcp",
+  "readme": "https://github.com/catalyst-labs-dev/catalyst-labs-mcp#readme",
+  "runtime": "node",
+  "logo": "https://raw.githubusercontent.com/catalyst-labs-dev/catalyst-labs-mcp/main/assets/logo-400.png",
+  "author": "Catalyst Labs",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=catalyst-labs/google-trends-api",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

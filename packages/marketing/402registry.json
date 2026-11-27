@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "402registry",
+  "packageName": "@toolsdk-remote/402registry",
+  "description": "Checks whether AI crawlers (GPTBot, ClaudeBot, PerplexityBot, OAI-SearchBot) can see a website with a plain HTTP fetch and no JavaScript. Free tools look up a site in the public registry and return pricing, docs and service status; a new check is paid over x402 ($0.01 USDC on Base) and needs no account or API key.",
+  "url": "https://github.com/paranormalen2/402registry-mcp",
+  "readme": "https://402registry.com/llms.txt",
+  "runtime": "node",
+  "author": "402registry",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://402registry.com/mcp"
+    }
+  ]
+}

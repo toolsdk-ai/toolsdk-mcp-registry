@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Embarko",
+  "packageName": "@toolsdk-remote/embarko",
+  "description": "Connects to the hosted Embarko MCP server to deploy and host AI-built apps and websites and get a live URL without any DevOps setup. Tools: deploy_app, read_app, update_app and app_danger_zone. Requires OAuth sign-in.",
+  "url": "https://github.com/walkover-mcp/embarko",
+  "readme": "https://embarko.ai/docs/quickstart",
+  "runtime": "node",
+  "env": {},
+  "logo": "https://embarko.ai/assets/embarko-icon.svg",
+  "author": "Walkover",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.embarko.ai/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

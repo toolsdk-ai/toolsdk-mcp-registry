@@ -2,7 +2,7 @@
   "type": "mcp-server",
   "name": "Not Human Search",
   "packageName": "@toolsdk-remote/ai.nothumansearch-search",
-  "description": "Agent-first search engine indexing 8,000+ MCP servers and other agentically-readable sites, ranked by agentic readiness across 7 signals (llms.txt, OpenAPI, ai-plugin, MCP, structured API, robots.txt, schema.org). 8 tools: search_agents, get_site_details, get_stats, list_categories, get_top_sites, submit_site, verify_mcp (live JSON-RPC probe), register_monitor.",
+  "description": "Search a curated index of websites and APIs by keyword, category, and public agent-readiness signals. Provides site details and MCP server discovery through a public Streamable HTTP endpoint.",
   "url": "https://github.com/unitedideas/nothumansearch",
   "runtime": "node",
   "license": "MIT",

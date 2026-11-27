@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "MARU Japan Hands",
+  "packageName": "@toolsdk-remote/maru-japan-hands",
+  "description": "Human services in Japan for AI agents: Japanese phone calls, reservations, shopping and on-site checks. Human services are paid; wallet payment requests require owner confirmation.",
+  "url": "https://github.com/ihouse-corp/maru-japan-hands",
+  "readme": "https://github.com/ihouse-corp/maru-japan-hands#readme",
+  "runtime": "python",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://maru.senpinai.com/mcp"
+    }
+  ]
+}

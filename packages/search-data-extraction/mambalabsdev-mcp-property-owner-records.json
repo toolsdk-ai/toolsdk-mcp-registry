@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Property Owner Records",
+  "packageName": "@mambalabsdev/mcp-property-owner-records",
+  "description": "MCP server for Property Owner Records. Owners of record, mailing address, and values from public county tax rolls in 6 US states. Runs on Apify.",
+  "url": "https://github.com/mambalabsdev/mcp-property-owner-records",
+  "readme": "https://github.com/mambalabsdev/mcp-property-owner-records#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

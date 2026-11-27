@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Duo Data Utilities (Remote)",
+  "packageName": "@toolsdk-remote/duo-data-utilities",
+  "description": "Connects to the hosted Duo Data Utilities MCP endpoint: 33 tools for IBAN, ISIN/CUSIP/SEDOL, VAT/tax ID and GTIN validation, time zone conversion, DST transitions, business days, RRULE expansion, geo distance and geohash, slugs, transliteration, URL parsing, hashing, JWT decoding, crypto address validation and reference lookups. No account or API key: tools/list is free, and each tool call costs $0.05, paid per call with x402 v2 (USDC on Base), so the client needs an x402-capable wallet.",
+  "url": "https://github.com/hiesem/duo-data-utilities",
+  "readme": "https://api.duoleads.com/docs",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://api.duoleads.com/logo.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.duoleads.com/mcp"
+    }
+  ]
+}

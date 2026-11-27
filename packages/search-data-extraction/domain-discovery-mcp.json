@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Domain Discovery MCP",
+  "packageName": "domain-discovery-mcp",
+  "description": "Check domain availability in bulk and retrieve registry RDAP registration records and DNS data, including nameservers, MX and SPF where available. Unconfirmed availability remains unknown. The local stdio connector uses the hosted service; anonymous access needs no account or API key.",
+  "url": "https://domain-discovery.remotify.run",
+  "readme": "https://github.com/onlsol/domain-discovery.remotify.run#readme",
+  "runtime": "node",
+  "license": "Apache-2.0",
+  "author": "Online Solution",
+  "env": {
+    "DOMAIN_DISCOVERY_API_KEY": {
+      "description": "Optional API key sent as a Bearer token to the hosted service for higher usage limits. Anonymous access works without it.",
+      "required": false,
+      "secret": true
+    }
+  }
+}

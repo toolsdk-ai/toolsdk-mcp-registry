@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Fittest",
+  "packageName": "@toolsdk-remote/fittest",
+  "description": "Checks whether ML interatomic potentials can be trusted on a molecule. Three independent foundation potentials (MACE-MPA-0, AIMNet2, Orb-v3) evaluate an XYZ or {Z|symbols, R} structure; the server returns energies, forces, their force disagreement and a verdict: trust (with a Beta-posterior trust score and 90% interval) or send_to_dft. Trust scores are learned on gas-phase C/H/N/O Transition1x reaction chemistry (up to 7 heavy atoms); other systems are extrapolation. Non-periodic input only. Hackathon project (ScienceClaw 2026); usage is logged anonymously, structures are not stored.",
+  "readme": "https://github.com/Pavel-Tk/fittest/blob/master/docs/MCP.md",
+  "url": "https://github.com/Pavel-Tk/fittest",
+  "runtime": "python",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://fittest-mcp.westus2.cloudapp.azure.com/mcp"
+    }
+  ]
+}

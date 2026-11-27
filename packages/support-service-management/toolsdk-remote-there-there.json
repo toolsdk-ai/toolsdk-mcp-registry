@@ -1,0 +1,27 @@
+{
+  "type": "mcp-server",
+  "name": "There There",
+  "packageName": "@toolsdk-remote/there-there",
+  "description": "Official There There remote MCP server by Spatie for its AI-assisted helpdesk: read, triage and reply to tickets, save drafts and edit knowledge base articles. Sign in with your There There account via OAuth.",
+  "readme": "https://there-there.app/docs/integrations/mcp-server",
+  "url": "https://there-there.app/docs/integrations/mcp-server",
+  "runtime": "node",
+  "author": "Spatie",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://there-there.app/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "mcp:read",
+          "mcp:tickets:manage",
+          "mcp:tickets:drafts",
+          "mcp:tickets:reply",
+          "mcp:knowledge:write"
+        ]
+      }
+    }
+  ]
+}

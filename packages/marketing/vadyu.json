@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "vadyu",
+  "packageName": "@toolsdk-remote/vadyu",
+  "description": "Official Vadyu 2.0 AI Commercial Video Ad Studio MCP server. Preview any Shopify or DTC store URL with zero auth (vadyu_preview_storefront) and render multi-cut 9:16, 4:5, 1:1, and 16:9 commercial video ads with 3D studio lighting and AI voiceover.",
+  "url": "https://github.com/crawde/mcp-vadyu",
+  "readme": "https://vadyu.com/api-docs#mcp",
+  "runtime": "node",
+  "author": "Vadyu",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://vadyu.com/api/mcp"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "FractalAI Agent Passport",
+  "packageName": "@fractalai/agent-passport-mcp",
+  "description": "Verifies ML-DSA-65 (NIST FIPS 204) signed receipts and agent passports offline against a pinned key, and exposes pay-per-call x402 tools (USDC on Base) that return ML-DSA-65 signed receipts. Unpaid calls to paid tools return the x402 payment challenge.",
+  "url": "https://www.npmjs.com/package/@fractalai/agent-passport-mcp",
+  "readme": "https://www.npmjs.com/package/@fractalai/agent-passport-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "FRACTALAI_BASE_URL": {
+      "description": "Base URL of the FractalAI web endpoints.",
+      "required": false,
+      "default": "https://fractalai.net.co"
+    },
+    "FRACTALAI_RPC_URL": {
+      "description": "FractalAI JSON-RPC node URL used for agent registry lookups.",
+      "required": false,
+      "default": "https://api.fractalai.net.co"
+    }
+  }
+}

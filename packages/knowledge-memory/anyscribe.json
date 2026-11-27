@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "AnyScribe",
+  "packageName": "@toolsdk-remote/anyscribe",
+  "description": "Official remote MCP server for AnyScribe, an iPhone and iPad transcription app. Searches and reads your transcripts, summaries, translations and highlights, lists transcriptions and folders, and sends YouTube, TikTok or Instagram links to your iPhone to transcribe and follows their progress. Library tools are read-only. OAuth 2.1 sign-in with your Apple ID. Docs: https://www.anyscribe.app/mcp. Published in the Official MCP Registry as app.anyscribe/anyscribe.",
+  "url": "https://github.com/KELiON/anyscribe-mcp",
+  "readme": "https://www.anyscribe.app/mcp",
+  "runtime": "node",
+  "license": "Proprietary",
+  "logo": "https://www.anyscribe.app/icon-512.png",
+  "author": "AnyScribe",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.anyscribe.app",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

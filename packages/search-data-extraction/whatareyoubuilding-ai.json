@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "name": "WhatAreYouBuilding.AI",
+  "packageName": "@toolsdk-remote/whatareyoubuilding-ai",
+  "description": "A catalogue of indie products and the builders who ship them, not a registry of MCP servers. Search products by country, category and funding stage, read a product record, and see the leaderboard. Reading needs no credential. Adding a product needs a token from /mine.",
+  "readme": "https://whatareyoubuilding.ai/mcp",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://whatareyoubuilding.ai/api/mcp"
+    }
+  ]
+}

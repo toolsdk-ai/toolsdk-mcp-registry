@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Creator Desk Machine Products",
+  "packageName": "@toolsdk-remote/creator-desk-machine-products",
+  "description": "Hosted read-only MCP server with pay-per-call web and agent-readiness tools: page to Markdown, URL inspect, broken-link check, DNS lookup, A2A/x402 agent preflight and storefront commerce readiness. Paid tools ($0.001-$0.01) settle per call via x402 in USDC on Base; three offer-listing tools are free. No sign-in.",
+  "readme": "https://github.com/creatordeskai-prog/creator-desk-machine-products#readme",
+  "url": "https://github.com/creatordeskai-prog/creator-desk-machine-products",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://api.creatordeskai.com/icon.png",
+  "author": "Creator Desk AI",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.creatordeskai.com/mcp"
+    }
+  ]
+}

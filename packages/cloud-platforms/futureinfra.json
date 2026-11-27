@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "FutureInfra",
+  "packageName": "@toolsdk-remote/futureinfra",
+  "description": "Manage Korean cloud virtual machines, snapshots, public IPs, and firewalls. Paid usage; OAuth sign-in requires access to the South Korea-only console.",
+  "readme": "https://futureinfra.ai/docs/mcp/",
+  "author": "FutureInfra",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://futureinfra.ai/v1/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

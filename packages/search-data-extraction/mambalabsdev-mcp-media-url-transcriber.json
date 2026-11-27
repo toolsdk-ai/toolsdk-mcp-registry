@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Media URL Transcriber",
+  "packageName": "@mambalabsdev/mcp-media-url-transcriber",
+  "description": "MCP server for Media URL Transcriber. Transcribe direct audio and video file links on your own speech to text key. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-media-url-transcriber",
+  "readme": "https://github.com/mambalabsdev/mcp-media-url-transcriber#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

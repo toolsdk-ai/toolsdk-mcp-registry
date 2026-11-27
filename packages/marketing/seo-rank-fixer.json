@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "SEO Rank Fixer",
+  "packageName": "@toolsdk-remote/seo-rank-fixer",
+  "description": "Reads a site's Google Search Console and Bing data and returns SEO fixes ranked by the clicks they can win, plus site audits, index status, page scans and AI search visibility.",
+  "url": "https://github.com/sharikwani/seo-rank-fixer-plugin",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://seorankfixer.com/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "type": "mcp-server",
+  "name": "messaging-mcp",
+  "packageName": "messaging-mcp",
+  "description": "Self-hosted MCP server that lets an assistant read and answer WhatsApp, Instagram, Messenger and Telegram conversations through the official platform APIs. send_message checks the 24 hour reply window and channel limits first and refuses with the reason (and the template alternative on WhatsApp) when the platform would reject the message. Channels turn on when their environment variables are set; --demo runs with sample data and --read-only disables sending.",
+  "url": "https://github.com/Pinlyx/messaging-mcp",
+  "readme": "https://github.com/Pinlyx/messaging-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Pinlyx",
+  "env": {
+    "WHATSAPP_ACCESS_TOKEN": {
+      "description": "WhatsApp Cloud API access token.",
+      "required": false
+    },
+    "WHATSAPP_PHONE_NUMBER_ID": {
+      "description": "WhatsApp phone number id that sends messages.",
+      "required": false
+    },
+    "MESSENGER_PAGE_ACCESS_TOKEN": {
+      "description": "Facebook Page access token for Messenger.",
+      "required": false
+    },
+    "INSTAGRAM_ACCESS_TOKEN": {
+      "description": "Instagram access token.",
+      "required": false
+    },
+    "TELEGRAM_BOT_TOKEN": {
+      "description": "Telegram bot token from BotFather.",
+      "required": false
+    }
+  }
+}

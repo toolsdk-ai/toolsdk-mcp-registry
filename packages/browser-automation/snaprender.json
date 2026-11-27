@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "SnapRender",
+  "packageName": "snaprender-mcp",
+  "description": "Capture website screenshots, PDFs and page content through the SnapRender screenshot API.",
+  "url": "https://github.com/User0856/snaprender-integrations",
+  "readme": "https://github.com/User0856/snaprender-integrations/tree/main/mcp-server#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "SNAPRENDER_API_KEY": {
+      "description": "SnapRender API key used to authenticate screenshot requests. Create one at https://snap-render.com.",
+      "required": true,
+      "secret": true
+    }
+  }
+}

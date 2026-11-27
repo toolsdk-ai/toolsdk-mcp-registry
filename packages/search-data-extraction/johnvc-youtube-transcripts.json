@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "johnvc YouTube Transcript & Subtitles API",
+  "packageName": "@toolsdk-remote/johnvc-youtube-transcripts",
+  "description": "Transcripts, subtitles and captions for YouTube videos and Shorts, timestamped or plain text, in bulk by URL or for a channel's latest videos, with optional translation. Hosted on Apify's MCP server; the tool is the pay-per-video Apify Actor johnvc/YoutubeTranscripts. Sign in with an Apify account (OAuth); videos without captions are not billed.",
+  "url": "https://apify.com/johnvc/YoutubeTranscripts",
+  "readme": "https://apify.com/johnvc/YoutubeTranscripts",
+  "runtime": "node",
+  "logo": "https://apify-image-uploads-prod.s3.us-east-1.amazonaws.com/yhqxg2vZPwtBLHewL-actor-zPumutvB61fpEsglh-BKvKuzRTX3-image.png",
+  "author": "johnvc",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=fetch-actor-details,johnvc/YoutubeTranscripts",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

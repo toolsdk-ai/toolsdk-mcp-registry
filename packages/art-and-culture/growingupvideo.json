@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "GrowingUpVideo",
+  "packageName": "@toolsdk-remote/growingupvideo",
+  "description": "Prices, photo tips and a start link for AI growing-up morph videos made from photos of a person, couple or pet across the years. Read-only. Remote Streamable HTTP, no auth.",
+  "url": "https://github.com/GrowingUpVideo/growingupvideo-mcp",
+  "readme": "https://github.com/GrowingUpVideo/growingupvideo-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://growingupvideo.com/logo-512.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://growingupvideo.com/mcp"
+    }
+  ]
+}

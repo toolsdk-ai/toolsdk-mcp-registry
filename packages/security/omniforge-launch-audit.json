@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "OmniForge Launch Audit",
+  "packageName": "@toolsdk-remote/omniforge-launch-audit",
+  "description": "Public zero-auth Streamable HTTP MCP server providing 5 pre-launch audit tools for website security headers and leaked client-side secrets, SPF/DKIM/DMARC/BIMI email deliverability, llms.txt AI search readiness, and 78-TLD brand availability.",
+  "url": "https://github.com/zColdWater/mcp-launch-audit",
+  "readme": "https://github.com/zColdWater/mcp-launch-audit#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "OmniForge",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://omnipulse-x402.appwrite.network/mcp"
+    }
+  ]
+}

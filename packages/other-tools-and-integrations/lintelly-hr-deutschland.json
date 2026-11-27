@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Lintelly HR Deutschland",
+  "packageName": "@toolsdk-remote/lintelly-hr-deutschland",
+  "description": "German employment law only. Answers questions of small companies in Germany about German employment and social security law: notice periods, employer costs, sick pay, maternity protection, dismissals, references, contract clauses and HR workflows, each with calculation and official source. 38 read-only tools, no sign-in, nothing stored. General information, not legal advice.",
+  "url": "https://github.com/NicksAdvisory/lintelly-hr-deutschland",
+  "readme": "https://lintelly.com/hr",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/NicksAdvisory/lintelly-hr-deutschland/main/verzeichnisse/lintelly-hr-icon-512.png",
+  "author": "Lintelly",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://hr.lintelly.com/mcp"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "chucho \u2014 Book Direct",
+  "packageName": "@toolsdk-remote/chucho",
+  "description": "Find vacation rentals by destination, guests, bedrooms and amenities; explore public photos and details, and open direct host booking links. English and Spanish. No authentication; dates, prices and availability are confirmed by the host.",
+  "url": "https://chucho.ai/chatgpt/",
+  "readme": "https://chucho.ai/chatgpt/",
+  "runtime": "node",
+  "author": "Pathos Inc",
+  "logo": "https://chucho.ai/stay/chucho-app-512.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://chucho.ai/chatgpt/mcp"
+    }
+  ]
+}

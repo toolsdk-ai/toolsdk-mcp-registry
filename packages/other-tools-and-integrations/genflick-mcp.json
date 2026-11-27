@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "GenFlick",
+  "packageName": "@toolsdk-remote/genflick-mcp",
+  "description": "Official hosted GenFlick MCP server (OAuth sign-in). GenFlick is the AI studio for films, series, music videos and ads: the whole studio, finished, with the same cast in every shot and every episode, final cuts in 4K and your own watch page to premiere on.",
+  "readme": "https://genflick.com/developers/mcp",
+  "runtime": "node",
+  "author": "GenFlick",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://genflick.com/mcp/studios",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

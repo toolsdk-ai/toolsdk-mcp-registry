@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Rumoro",
+  "packageName": "@toolsdk-remote/rumoro",
+  "description": "Social listening for AI agents: search and triage mentions of a product, its competitors or a topic across 16 sources, each scored for relevance, sentiment and intent, and manage tracked keywords and alerts. Needs a Rumoro account.",
+  "url": "https://rumoro.dev",
+  "readme": "https://docs.rumoro.dev/mcp",
+  "runtime": "node",
+  "logo": "https://rumoro.dev/rumoro-logo-black.png",
+  "author": "Rumoro",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.rumoro.dev/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

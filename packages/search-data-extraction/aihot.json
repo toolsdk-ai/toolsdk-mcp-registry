@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "AIHOT",
+  "packageName": "@toolsdk-remote/aihot",
+  "description": "Search Chinese AI news with source links, read current hot events, and retrieve daily, weekly and monthly editions. Hosted anonymous, read-only access; no API key required. Personal noncommercial and internal use is free; external commercial use requires prior written authorization under https://aihot.news/terms.",
+  "url": "https://github.com/KKKKhazix/AIHOT",
+  "readme": "https://aihot.news/agent?tab=mcp",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://aihot.news/api/mcp"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "AffixIO",
+  "packageName": "@toolsdk-remote/affixio",
+  "description": "Official AffixIO hosted MCP server: zero-knowledge proofs with ML-DSA-65 post-quantum attestations for AI agents, single-use proof IDs, agent trust checks and Merkle audit receipts, without exposing personal data. 102 tools. Sign in with AffixIO Studio via OAuth.",
+  "url": "https://github.com/AffixIO/affixio-mcp-hosted",
+  "readme": "https://github.com/AffixIO/affixio-mcp-hosted#readme",
+  "runtime": "node",
+  "author": "AffixIO",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.affix-io.com/mcp/",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp:read", "mcp:write"]
+      }
+    }
+  ]
+}

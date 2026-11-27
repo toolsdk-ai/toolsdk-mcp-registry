@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Google Maps Places Scraper",
+  "packageName": "@mambalabsdev/mcp-google-maps-places-scraper",
+  "description": "MCP server for Google Maps Places Scraper: search Google Maps and get one row per place.",
+  "url": "https://github.com/mambalabsdev/mcp-google-maps-places-scraper",
+  "readme": "https://github.com/mambalabsdev/mcp-google-maps-places-scraper#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

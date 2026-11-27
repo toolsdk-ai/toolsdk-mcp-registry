@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Jobs Every Hour",
+  "packageName": "@toolsdk-remote/jobseveryhour",
+  "description": "Search open jobs read every hour from employers' own career pages (Greenhouse, Lever, Ashby, Workday, iCIMS and more): words matched in title, company, skills, place and text, best match first, with a remote filter, and any posting in full. Closed jobs are removed and every job links to the employer's own application. Hosted Streamable HTTP endpoint; no key, no sign-in.",
+  "url": "https://github.com/Simba0315/jobseveryhour-mcp",
+  "readme": "https://github.com/Simba0315/jobseveryhour-mcp#fastest-the-hosted-server-no-install",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Simba0315",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://jobseveryhour.com/mcp"
+    }
+  ]
+}

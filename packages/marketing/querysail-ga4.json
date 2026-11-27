@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "QuerySail: Google Analytics",
+  "packageName": "@toolsdk-remote/querysail-ga4",
+  "description": "Hosted, read-only Google Analytics 4 data: properties, reports by channel, source, page, country, device or event, period comparisons, realtime users and custom dimensions and metrics. Requires a QuerySail account (7-day free trial).",
+  "url": "https://github.com/querysail/querysail-ga4",
+  "readme": "https://github.com/querysail/querysail-ga4#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "QuerySail",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.querysail.com/ga4/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Lookalike Company Finder",
+  "packageName": "@mambalabsdev/mcp-lookalike-company-finder",
+  "description": "MCP server for Lookalike Company Finder. Find companies similar to your best customers or a competitor, ranked by a 0 to 100 similarity score with the evidence behind it. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-lookalike-company-finder",
+  "readme": "https://github.com/mambalabsdev/mcp-lookalike-company-finder#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

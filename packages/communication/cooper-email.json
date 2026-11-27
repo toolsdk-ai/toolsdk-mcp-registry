@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Cooper Email",
+  "packageName": "@toolsdk-remote/cooper-email",
+  "description": "Official hosted MCP server for Cooper Email, an email API that gives each AI agent its own inbox (username@cooperemail.com). Send, reply, list, search and read mail, and wait for the next message or a verification code. Sign in with OAuth, or create an inbox and API key with one onboarding request; free tier, no card.",
+  "url": "https://github.com/cooper-email/cooper-email",
+  "readme": "https://cooperemail.com/docs/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Avatar 8 LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://cooperemail.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["email"]
+      }
+    }
+  ]
+}

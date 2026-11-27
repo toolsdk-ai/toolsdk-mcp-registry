@@ -1,0 +1,27 @@
+{
+  "type": "mcp-server",
+  "name": "Shipvela",
+  "packageName": "@toolsdk-remote/com-shipvela-shipvela",
+  "description": "Create website projects, deploy supported GitHub repositories and inspect deployment status, build logs and usage through a remote OAuth MCP server.",
+  "url": "https://github.com/stefanautomateed/shipvela-codex",
+  "readme": "https://shipvela.com/integrations/codex",
+  "runtime": "node",
+  "author": "Shipvela",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://shipvela.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "projects:read",
+          "projects:write",
+          "deployments:write",
+          "logs:read",
+          "usage:read"
+        ]
+      }
+    }
+  ]
+}

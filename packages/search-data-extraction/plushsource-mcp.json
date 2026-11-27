@@ -1,0 +1,11 @@
+{
+  "type": "mcp-server",
+  "name": "PlushSource",
+  "packageName": "plushsource-mcp",
+  "description": "Search, filter and compare custom plush manufacturers listed in the PlushSource directory. Local stdio server with bundled data, no network calls, and no API key. Unpublished fields are shown as Not stated.",
+  "url": "https://github.com/quickman924/plushsource-mcp",
+  "readme": "https://github.com/quickman924/plushsource-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {}
+}

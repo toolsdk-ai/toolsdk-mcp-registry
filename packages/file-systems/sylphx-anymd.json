@@ -1,0 +1,12 @@
+{
+  "type": "mcp-server",
+  "name": "anymd",
+  "packageName": "@sylphx/anymd",
+  "description": "Converts any file to clean Markdown for AI agents: PDF, DOCX, PPTX, XLSX/CSV, EPUB, HTML and web URLs, images (EXIF, optional OCR) and audio/video metadata and subtitles. Tools: read (paged Markdown with page citation anchors and a token budget), search (literal or BM25-ranked across files, folders and URLs) and inspect (PDF page rendering, regions, structure, compare). Local Rust binary, no API key. Formerly pdf-reader-mcp.",
+  "url": "https://github.com/SylphxAI/anymd",
+  "readme": "https://github.com/SylphxAI/anymd#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "binArgs": ["mcp"],
+  "env": {}
+}

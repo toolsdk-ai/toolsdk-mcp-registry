@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Hyperresearch",
+  "packageName": "@toolsdk-remote/hyperresearch",
+  "description": "Hyperresearch is an AI deep research API. One question in, an adversarially reviewed report out, cited claims checked against their sources.",
+  "url": "https://hyperresearch.ai",
+  "readme": "https://hyperresearch.ai/docs/mcp",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.hyperresearch.ai/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

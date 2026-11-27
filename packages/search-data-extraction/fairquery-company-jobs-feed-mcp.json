@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Fairquery Company Jobs Feed",
+  "packageName": "@fairquery/company-jobs-feed-mcp",
+  "description": "Live job listings from employers' own public Greenhouse, Lever and Ashby boards, with posting age, long-open and repost signals, board discovery and open/closed checks. Free tools run locally without an account; an optional multi-company search runs the Apify Actor on the user's own Apify account.",
+  "url": "https://github.com/fairquery/company-jobs-feed",
+  "readme": "https://github.com/fairquery/company-jobs-feed/tree/main/mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Fairquery",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Optional. Your own Apify API token, only needed for the paid jobs_search_companies tool (billed to your Apify account). Free tools work without it.",
+      "required": false,
+      "secret": true
+    }
+  }
+}

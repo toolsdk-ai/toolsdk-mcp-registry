@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "LogoAPI.sh",
+  "packageName": "@toolsdk-remote/logoapi-mcp",
+  "description": "Official hosted server for LogoAPI.sh, a free company logo API. Three read-only tools (get_logo, search_logos, get_favicon) return SVG or PNG logo URLs by domain or brand name. No API key, no signup.",
+  "url": "https://logoapi.sh/docs/mcp",
+  "readme": "https://logoapi.sh/docs/mcp",
+  "runtime": "node",
+  "logo": "https://logoapi.sh/apple-touch-icon.png",
+  "author": "LogoAPI.sh",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://logoapi.sh/mcp"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Rhino Rank",
+  "packageName": "@toolsdk-remote/rhino-rank",
+  "description": "Official Rhino Rank server: quote and order link building and press releases, run a press release through briefing and approval, start a Managed Service, and manage orders, coupons and the account. Needs a Rhino Rank account.",
+  "url": "https://app.rhinorank.io/mcp/setup",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.rhinorank.io/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp"]
+      }
+    }
+  ]
+}

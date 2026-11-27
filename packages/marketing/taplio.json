@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Taplio for LinkedIn",
+  "packageName": "@toolsdk-remote/taplio",
+  "description": "Official Taplio server for LinkedIn: search Taplio's lead database for prospects, draft, schedule, publish and analyze LinkedIn posts, search inspiration, find posts and comments worth engaging with, draft comments and replies, like posts and send connection requests. 38 tools. Requires a Taplio account with LinkedIn connected (OAuth 2.1, 7-day free trial).",
+  "url": "https://github.com/TaplioOfficial/taplio-linkedin-mcp",
+  "readme": "https://github.com/TaplioOfficial/taplio-linkedin-mcp#readme",
+  "logo": "https://cdn.prod.website-files.com/6939243f5769a4de787769c3/693fd25c10dab46c2d863cbd_taplio_webclip.png",
+  "author": "Taplio",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.taplio.com/",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

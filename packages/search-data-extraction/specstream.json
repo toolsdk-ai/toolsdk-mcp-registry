@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "SpecStream",
+  "packageName": "@toolsdk-remote/specstream",
+  "description": "The live web data engine for teams and agents. Any dataset from the entire web, kept up to date. Sign in with OAuth and a SpecStream account.",
+  "url": "https://github.com/specstream/specstream-tools",
+  "readme": "https://specstream.ai/docs/mcp",
+  "logo": "https://specstream.ai/icons/icon-512.png",
+  "author": "SpecStream",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.specstream.ai/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

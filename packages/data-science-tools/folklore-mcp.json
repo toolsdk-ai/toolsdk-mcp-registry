@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Folklore Clinical Variant Interpretation MCP",
+  "packageName": "@toolsdk-remote/folklore-mcp",
+  "description": "ACMG/AMP germline variant classification, gene profiles, disease associations and literature. Free, read-only Streamable HTTP with no account or API key.",
+  "url": "https://github.com/helena-bioinformatics/folklore-mcp",
+  "readme": "https://folklore.helena.bio/integrations/mcp",
+  "runtime": "python",
+  "license": "Apache-2.0",
+  "logo": "https://folklore.helena.bio/images/logos/folklore.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.helena.bio/folklore/v1/mcp"
+    }
+  ]
+}

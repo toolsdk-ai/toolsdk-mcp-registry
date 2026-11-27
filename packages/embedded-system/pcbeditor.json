@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "PCBEditor",
+  "packageName": "@toolsdk-remote/com-pcbeditor-pcbeditor",
+  "description": "Design, route, check, review and export manufacturable printed circuit boards from plain language. Returns placed, routed and design-rule checked boards with Gerber, drill, BOM, pick-and-place and KiCad files, and imports existing KiCad boards. Hosted server; sign-in with a free PCBEditor account over OAuth.",
+  "url": "https://github.com/PCBEditor/pcbeditor-mcp",
+  "readme": "https://pcbeditor.com/mcp",
+  "runtime": "node",
+  "author": "PCBEditor",
+  "logo": "https://pcbeditor.com/icon-maskable-512.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.pcbeditor.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Influencer Finder",
+  "packageName": "@mambalabsdev/mcp-creator-finder",
+  "description": "MCP server for the Mamba Labs Influencer Finder actor on Apify. Keywords or a curated niche in, influencer handles out, one flat row per creator per platform.",
+  "url": "https://github.com/mambalabsdev/mcp-creator-finder",
+  "readme": "https://github.com/mambalabsdev/mcp-creator-finder#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

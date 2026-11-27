@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "Pachca",
+  "packageName": "@toolsdk-remote/pachca-mcp",
+  "description": "Official hosted MCP server for Pachca team chat. Search and read discussions, send messages and thread replies, and manage reminders, chats and bots within the connected account's permissions. Requires OAuth in a compatible client; the hosted implementation is not published in the documentation repository.",
+  "url": "https://github.com/pachca/openapi",
+  "readme": "https://dev.pachca.com/guides/mcp/overview",
+  "runtime": "node",
+  "author": "Pachca",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.pachca.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

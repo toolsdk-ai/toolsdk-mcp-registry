@@ -1,0 +1,29 @@
+{
+  "type": "mcp-server",
+  "name": "DocuSense",
+  "packageName": "docusense-mcp",
+  "packageVersion": "0.1.2",
+  "description": "Local document store for AI agents. Reads PDF, DOCX, HTML and Markdown files by section and claim with SHA-256 verified citations, version diffs, blame and cross-document contradiction checks. Runs locally on embedded SQLite.",
+  "url": "https://github.com/hksharma2004/docu-sense",
+  "readme": "https://github.com/hksharma2004/docu-sense#readme",
+  "runtime": "python",
+  "license": "MIT",
+  "author": "hksharma2004",
+  "binArgs": ["serve-mcp"],
+  "env": {
+    "DOCUSENSE_HOME": {
+      "description": "Folder for the local database, blobs and indexes.",
+      "required": false,
+      "default": "~/.docusense"
+    },
+    "DOCUSENSE_ADD_ROOTS": {
+      "description": "Comma-separated folders that add_document may read. Defaults to the home directory.",
+      "required": false
+    },
+    "DOCUSENSE_TOOLS": {
+      "description": "Set to core to expose a smaller tool set.",
+      "required": false,
+      "default": "all"
+    }
+  }
+}

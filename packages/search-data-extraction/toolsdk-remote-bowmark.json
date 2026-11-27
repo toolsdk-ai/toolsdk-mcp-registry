@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Bowmark",
+  "packageName": "@toolsdk-remote/bowmark",
+  "description": "Hosted Bowmark MCP server: gives AI agents typed functions for real websites (LinkedIn, YouTube, Amazon, Reddit, Airbnb, flights and more) through one MCP server. The agent discovers functions with get_library and calls them with run; results come back as typed data, and every function is tested on a schedule. Sign in with OAuth; start with a free $10. Also installable locally as a stdio bridge (npx bowmark-mcp, uvx bowmark-mcp).",
+  "url": "https://github.com/bowmark-ai/mcp",
+  "readme": "https://bowmark.ai/docs",
+  "runtime": "node",
+  "logo": "https://bowmark.ai/icon.png",
+  "author": "Bowmark AI",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.bowmark.ai/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

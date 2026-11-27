@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Podwise",
+  "packageName": "@toolsdk-remote/podwise",
+  "description": "Podcast knowledge for AI agents. Search podcasts and episodes, pull a full transcript, read the AI summary, chapters, highlights, Q&A and mind map, ask questions across transcripts, translate an episode, clip key moments, and export notes as Markdown or SRT. 38 tools. Hosted remote endpoint with OAuth; tool calls require a Podwise account on a Pro or Enterprise plan. Docs: https://docs.podwise.ai/mcp. Published in the Official MCP Registry as io.github.hardhackerlabs/podwise.",
+  "url": "https://github.com/hardhackerlabs/podwise-plugin",
+  "readme": "https://github.com/hardhackerlabs/podwise-plugin#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Hardhacker Labs",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.podwise.ai/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Marks & Signatures",
+  "packageName": "@toolsdk-remote/marksandsignatures",
+  "description": "Identify maker's marks, hallmarks and stamps on pottery, porcelain, silver, jewelry and glass from a description, find makers by name, and see a maker's history and all of its marks in date order with images. Hosted Streamable HTTP endpoint; no sign-in.",
+  "readme": "https://marksandsignatures.com/app/",
+  "url": "https://github.com/pyxlino/marksandsignatures-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Pyxl",
+  "logo": "https://marksandsignatures.com/mcp/icons/icon-512.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://marksandsignatures.com/api/mcp"
+    }
+  ]
+}

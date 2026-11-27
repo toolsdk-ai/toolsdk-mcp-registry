@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "BlazarForce Polygon",
+  "packageName": "@toolsdk-remote/blazarforce-polygon",
+  "description": "Read-only Polygon MCP for BlazarForce swap quotes, venue comparison, BZB prices, staking and reward status, and unsigned transaction builders. No auth; the server never signs or holds keys.",
+  "url": "https://blazarforce.net/agents.html",
+  "readme": "https://blazarforce.net/agents.html",
+  "runtime": "node",
+  "logo": "https://blazarforce.net/apple-touch-icon.png",
+  "author": "BlazarForce",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.blazarforce.net/mcp"
+    }
+  ]
+}

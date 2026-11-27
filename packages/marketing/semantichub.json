@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "SemanticHub",
+  "packageName": "@toolsdk-remote/semantichub",
+  "description": "Hosted MCP server for monitoring news sources, clustering articles by topic and generating texts from them. Sign in with OAuth 2; free plan with no card.",
+  "readme": "https://semantichub.app/docs",
+  "runtime": "python",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.semantichub.app/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["read", "write"]
+      }
+    }
+  ]
+}

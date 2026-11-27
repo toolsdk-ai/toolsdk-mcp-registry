@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "NukeBG",
+  "packageName": "@toolsdk-remote/nukebg",
+  "description": "Official hosted server: remove image backgrounds, erase objects by description and upscale images 2x/4x; transparent PNG/WebP or marketplace-ready white. Requires a NukeBG API key sent in the X-Api-Key header (or Authorization: Bearer); new accounts get 50 free credits.",
+  "url": "https://github.com/nukebg/nukebg-mcp",
+  "readme": "https://nukebg.com/mcp-server",
+  "runtime": "node",
+  "author": "NukeBG",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.nukebg.com/mcp"
+    }
+  ]
+}

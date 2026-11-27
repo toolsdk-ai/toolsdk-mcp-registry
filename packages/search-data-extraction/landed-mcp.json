@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Landed MCP",
+  "packageName": "@toolsdk-remote/landed-mcp",
+  "description": "Search AI and tech jobs ranked against a role brief, read a job's application form fields, and fetch free interview prep. Anonymous callers get a free daily job-search budget; an optional Landed API token removes the limit.",
+  "url": "https://github.com/landedjobs/landed-mcp",
+  "readme": "https://github.com/landedjobs/landed-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.landed.jobs/mcp"
+    }
+  ]
+}

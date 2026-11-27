@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "HutchDB",
+  "packageName": "@toolsdk-remote/hutchdb",
+  "description": "Shared database for teams and AI agents: store, query, and update structured records over MCP.",
+  "url": "https://github.com/ExpeditedProjects/hutchdb",
+  "readme": "https://github.com/ExpeditedProjects/hutchdb#readme",
+  "logo": "https://hutchdb.com/h-icon.png",
+  "runtime": "node",
+  "author": "ExpeditedProjects",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.hutchdb.com/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

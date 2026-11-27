@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Papers by Ouroboros Apps",
+  "packageName": "@toolsdk-remote/ouroboros-papers",
+  "description": "Papers by Ouroboros Apps (https://ouroborosapps.com). Research paper search with real citations from OpenAlex, Semantic Scholar, PubMed, Crossref, and arXiv: find papers, fetch abstracts, follow citations, and format references. Tools: search_papers, get_paper, find_related_papers, format_citation. Hosted remote endpoint with OAuth and Dynamic Client Registration; requires an account. Docs: https://ouroborosapps.com/docs/papers. Published in the Official MCP Registry as io.github.LAHutchins91/papers.",
+  "url": "https://github.com/LAHutchins91/papers-mcp",
+  "readme": "https://github.com/LAHutchins91/papers-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://papers-mcp.vercel.app/logo.jpg",
+  "author": "Ouroboros Apps",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://papers-mcp.vercel.app/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

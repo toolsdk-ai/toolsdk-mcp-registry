@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Skool Community Scraper: Communities by Niche, Members and Price",
+  "packageName": "@toolsdk-remote/skool-community-mcp",
+  "description": "Search Skool communities by keyword: members, price, rating, estimated revenue, and daily growth. Hosted Streamable HTTP via Apify (Apify OAuth or API token).",
+  "url": "https://github.com/GeminiGeorge22/publicrecords-mcp",
+  "readme": "https://github.com/GeminiGeorge22/publicrecords-mcp/tree/main/servers/skool-community-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "publicrecords",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com?tools=publicrecords/skool-community-growth-tracker",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

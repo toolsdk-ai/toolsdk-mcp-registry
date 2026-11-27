@@ -1,0 +1,46 @@
+{
+  "type": "mcp-server",
+  "name": "Babelize",
+  "packageName": "@babelize/mcp",
+  "description": "Lets coding agents make an app global-ready: analyze i18n readiness, extract and wire hardcoded strings to next-intl or react-i18next, translate locale files, and QA translations for missing keys, broken placeholders and invalid ICU, all locally.",
+  "url": "https://docs.babelize.co/integrations/mcp-server",
+  "readme": "https://www.npmjs.com/package/@babelize/mcp",
+  "runtime": "node",
+  "license": "Apache-2.0",
+  "env": {
+    "BABELIZE_API_KEY": {
+      "description": "Babelize API key for Babelize-hosted translation and the cloud project tools (optional when a BYOK key is set).",
+      "required": false,
+      "secret": true
+    },
+    "ANTHROPIC_API_KEY": {
+      "description": "Your own Anthropic key for babelize_translate (optional).",
+      "required": false,
+      "secret": true
+    },
+    "OPENAI_API_KEY": {
+      "description": "Your own OpenAI key for babelize_translate (optional).",
+      "required": false,
+      "secret": true
+    },
+    "GEMINI_API_KEY": {
+      "description": "Your own Google Gemini key for babelize_translate (optional).",
+      "required": false,
+      "secret": true
+    },
+    "GROQ_API_KEY": {
+      "description": "Your own Groq key for babelize_translate (optional).",
+      "required": false,
+      "secret": true
+    },
+    "OPENROUTER_API_KEY": {
+      "description": "Your own OpenRouter key for babelize_translate (optional).",
+      "required": false,
+      "secret": true
+    },
+    "BABELIZE_WORKSPACE": {
+      "description": "Folder the local tools may work in (default: client roots, else the working directory).",
+      "required": false
+    }
+  }
+}

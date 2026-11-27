@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Scrape.ly",
+  "packageName": "@toolsdk-remote/scrapely-mcp",
+  "description": "Search 500+ ready-made web scrapers, run them in the cloud and read structured results from datasets, key-value stores and logs.",
+  "url": "https://github.com/scrapely-app/scrapely-mcp",
+  "readme": "https://github.com/scrapely-app/scrapely-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.scrape.ly"
+    }
+  ]
+}

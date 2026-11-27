@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "TubeText Instagram, Facebook, X & Podcast Transcripts",
+  "packageName": "@toolsdk-remote/tubetext-social-video-transcripts",
+  "description": "Transcribe Instagram Reels, Facebook and X videos, podcasts (RSS, Apple) and any video URL to text. Hosted on Apify's MCP server; tools are the pay-per-event Apify Actors tubetext/instagram-reels-transcript, tubetext/facebook-video-transcript, tubetext/twitter-x-video-transcript, tubetext/podcast-transcript, tubetext/any-video-podcast-transcript. Sign in with an Apify account (OAuth); failed or empty results are not billed.",
+  "url": "https://github.com/LMSlay/tubetext-mcp",
+  "readme": "https://github.com/LMSlay/tubetext-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/LMSlay/tubetext-mcp/main/logo-400.png",
+  "author": "TubeText Labs",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=fetch-actor-details,tubetext/instagram-reels-transcript,tubetext/facebook-video-transcript,tubetext/twitter-x-video-transcript,tubetext/podcast-transcript,tubetext/any-video-podcast-transcript",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

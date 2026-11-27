@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Last Frost Date Hardiness Zone MCP",
+  "packageName": "@toolsdk-remote/last-frost-date-hardiness-zone-mcp",
+  "description": "USDA 2023 plant hardiness zone by ZIP code, median last spring and first fall frost dates from 30 seasons of Open-Meteo history, frost forecast and a vegetable planting calendar. Tools: hardiness_zone, frost_dates, frost_forecast, planting_calendar. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/last-frost-date-hardiness-zone-mcp",
+  "readme": "https://github.com/theluckystrike/last-frost-date-hardiness-zone-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://last-frost-date-hardiness-zone-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}

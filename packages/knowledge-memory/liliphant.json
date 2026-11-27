@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Liliphant",
+  "packageName": "@toolsdk-remote/liliphant",
+  "description": "Liliphant joins your meetings and remembers the work across all of them. Through this MCP server, AI assistants can ask what was decided, who promised what, what changed since the first meeting, or what's still blocked, with the exact quote, the speaker and the meeting it came from.",
+  "url": "https://github.com/walkover-mcp/liliphant",
+  "readme": "https://github.com/walkover-mcp/liliphant#readme",
+  "runtime": "node",
+  "env": {},
+  "logo": "https://storage.googleapis.com/stuff.thingsofbrand.com/liliphant.walkover.in/images/img1_liliphant.walkover.svg",
+  "author": "Walkover",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.liliphant.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

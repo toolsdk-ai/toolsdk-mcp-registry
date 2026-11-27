@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "No Stairs Please MCP",
+  "packageName": "@toolsdk-remote/nostairsplease-mcp",
+  "description": "Every small stage in all 50 states, DC, and British Columbia, and who books it. Search under-400-capacity live-music venues, booking contacts, and tour routing.",
+  "url": "https://nostairsplease.com/mcp",
+  "runtime": "node",
+  "license": "Proprietary",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://nostairsplease.com/mcp"
+    }
+  ]
+}

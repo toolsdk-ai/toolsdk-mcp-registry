@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Debriefing",
+  "packageName": "@toolsdk-remote/debriefing",
+  "description": "Competitive intelligence for B2B teams. Read tracked competitors, evidence-backed signals with their sources, digests and battlecards in a Debriefing workspace; change the watchlist, act on signals and run research with the write and spend scopes. Four public tools search and read the competitive briefs and CI guides published on debriefing.io without sign-in.",
+  "url": "https://github.com/0xrome/debriefing-mcp",
+  "readme": "https://debriefing.io/developers?tab=mcp",
+  "logo": "https://debriefing.io/icon-light.png",
+  "author": "Debriefing",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://debriefing.io/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["read", "write", "spend"]
+      }
+    }
+  ]
+}

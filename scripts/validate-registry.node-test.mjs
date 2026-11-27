@@ -27,7 +27,7 @@ function writeConfig(root, filename, packageName) {
 function runValidator(root, base, env = {}) {
   return execFileSync(process.execPath, [validator, "--root", root, "--base", base], {
     encoding: "utf8",
-    env: { ...process.env, ...env },
+    env: { ...process.env, GITHUB_ACTIONS: "false", GITHUB_REF: "", ...env },
     stdio: ["ignore", "pipe", "pipe"],
   });
 }

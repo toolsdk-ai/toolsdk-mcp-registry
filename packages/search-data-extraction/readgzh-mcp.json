@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/readgzh-mcp",
+  "name": "ReadGZH",
+  "description": "Remote MCP server that reads public WeChat Official Account (微信公众号) articles from an existing mp.weixin.qq.com URL and returns clean Markdown. Tools: readgzh.read, readgzh.search, readgzh.list, readgzh.list_by_account and readgzh.get (search and listing cover only ReadGZH's cache, not all of WeChat). Works anonymously with a small shared per-IP daily quota; an optional ReadGZH API key in the Authorization header raises the quota.",
+  "url": "https://github.com/sweesama/readgzh",
+  "readme": "https://readgzh.site/docs",
+  "runtime": "node",
+  "license": "AGPL-3.0",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.readgzh.site/mcp-server"
+    }
+  ]
+}

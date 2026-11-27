@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "Sendable",
+  "packageName": "@toolsdk-remote/sendable",
+  "description": "Official hosted server for Sendable, a LinkedIn prospecting platform. Finds LinkedIn prospects showing buying intent through signals (post engagers, job changes, profile viewers, event attendees), qualifies them against an ideal customer profile, and manages outreach campaigns, leads and the LinkedIn inbox, including reply drafts. 58 tools. Requires a Sendable account with a connected LinkedIn account.",
+  "readme": "https://docs.getsendable.io/integrations/mcp",
+  "runtime": "node",
+  "author": "Sendable",
+  "logo": "https://app.getsendable.io/logo.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.getsendable.io/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

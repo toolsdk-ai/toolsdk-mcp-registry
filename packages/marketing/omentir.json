@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "Omentir",
+  "packageName": "@toolsdk-remote/omentir",
+  "description": "Hosted MCP server for Omentir, an open-source AI sales workspace for LinkedIn. Agents can find and score LinkedIn prospects, draft outreach, run human-paced campaigns, and answer replies. OAuth sign-in; the agent never sees the LinkedIn password.",
+  "url": "https://github.com/vanshyadav1408/Omentir",
+  "readme": "https://omentir.com/integrations/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://omentir.com/apple-touch-icon.png",
+  "author": "Omentir",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://omentir.com/api/agent/v1/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["omentir"]
+      }
+    }
+  ]
+}

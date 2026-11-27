@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Ahel",
+  "packageName": "@toolsdk-remote/ahel",
+  "description": "Hosted Ahel MCP server: one catalog of data tasks for AI agents, including work email finding, company and people enrichment, SEO, SERP and keyword data, social media data (TikTok, Instagram, YouTube, X, Reddit, LinkedIn), official EU business registers with sanctions screening, and web page monitoring. The agent searches the catalog, gets the price of the exact run before it starts, then runs it. Paid from a prepaid Ahel balance (public sign-up, free starting credit); OAuth sign-in, no API key.",
+  "url": "https://github.com/ahel-technologies/ahel",
+  "readme": "https://ahel.ai",
+  "runtime": "node",
+  "logo": "https://ahel.ai/apple-icon.png",
+  "author": "Ahel",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.ahel.ai",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

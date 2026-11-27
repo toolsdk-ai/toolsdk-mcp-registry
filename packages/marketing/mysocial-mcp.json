@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Mysocial",
+  "packageName": "@toolsdk-remote/mysocial-mcp",
+  "description": "Social media intelligence for AI assistants: connected content history, research, brand context and saved ideas. Hosted OAuth MCP; free standard access, paid archive intelligence from USD49/month. Platform and plan coverage varies.",
+  "url": "https://github.com/mysocialio/mysocial-intelligence",
+  "readme": "https://mysocial.io/mcp/",
+  "runtime": "node",
+  "author": "Mysocial",
+  "logo": "https://mysocial.io/email/mysocial-mark.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.mysocial.io/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

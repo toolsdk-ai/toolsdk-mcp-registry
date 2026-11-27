@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Skysay",
+  "packageName": "@toolsdk-remote/skysay",
+  "description": "Manage Skysay voice agents, phone numbers, calls, SMS and campaigns through a hosted MCP connection. OAuth is required; calling, messaging and provisioning may incur Skysay usage charges. Number availability, capabilities and verification requirements vary by country. 100+ countries covered.",
+  "url": "https://github.com/skysay-ai/skysay-mcp",
+  "readme": "https://skysay.ai/docs/mcp",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.skysay.ai/mcp",
+      "auth": { "type": "oauth2" }
+    }
+  ]
+}

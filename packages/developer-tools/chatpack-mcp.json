@@ -1,0 +1,11 @@
+{
+  "type": "mcp-server",
+  "name": "Chatpack MCP",
+  "packageName": "@chatpack/mcp",
+  "description": "Read-only search and retrieval of Chatpack documentation, framework setup guides, and React UI block source.",
+  "url": "https://github.com/chddaniel/chatpack",
+  "readme": "https://github.com/chddaniel/chatpack/tree/main/packages/mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {}
+}

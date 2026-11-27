@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "AIAgentCycle",
+  "packageName": "@toolsdk-remote/aiagentcycle",
+  "description": "Public read-only MCP server for sourced Dutch and English information about AIAgentCycle's workflow automation, self-hosted n8n integrations, AI agents, services, prices, case studies, and contact details.",
+  "url": "https://github.com/aiagentcycle/aiagentcycle-mcp",
+  "readme": "https://github.com/aiagentcycle/aiagentcycle-mcp#readme",
+  "logo": "https://mcp.aiagentcycle.com/icon-512.png",
+  "runtime": "python",
+  "license": "MIT",
+  "author": "AIAgentCycle",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.aiagentcycle.com/mcp"
+    }
+  ]
+}

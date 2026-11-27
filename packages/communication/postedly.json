@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Postedly",
+  "packageName": "@toolsdk-remote/postedly",
+  "description": "Physical mail MCP: letters, certified mail, postcards, fax, handwritten cards; review before payment",
+  "url": "https://postedly.com/developers",
+  "readme": "https://postedly.com/developers",
+  "runtime": "node",
+  "author": "Soxoa LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://postedly.com/mcp/send",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["orders:read", "quotes:write", "checkout:write"]
+      }
+    }
+  ]
+}

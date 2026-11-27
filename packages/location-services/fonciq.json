@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Fonciq",
+  "packageName": "@toolsdk-remote/fonciq",
+  "description": "Connecteur MCP indépendant pour le Registre foncier du Québec (FR/EN), non affilié. / Independent MCP connector for Quebec land registry data, not affiliated with the Registre foncier du Québec.",
+  "url": "https://github.com/fonciq-dev/fonciq-mcp",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.fonciq.ca/v1/",
+      "auth": { "type": "oauth2" }
+    }
+  ]
+}

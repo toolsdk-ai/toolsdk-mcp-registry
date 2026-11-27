@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "Backwork",
+  "packageName": "@backwork/mcp",
+  "description": "Medicare and commercial payer policies, prior auth checks, claim risk and medical code lookup with cited sources, from the Backwork API. Requires a Backwork account and API key.",
+  "url": "https://github.com/tylergibbs1/backwork-mcp",
+  "readme": "https://backworkhealth.com/docs/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/tylergibbs1/backwork-mcp/main/assets/logo-400.png",
+  "author": "Backwork LLC",
+  "env": {
+    "BACKWORK_API_KEY": {
+      "description": "Backwork live API key (bwk_live_...), created in the Backwork app under API Keys.",
+      "required": true,
+      "secret": true
+    },
+    "BACKWORK_API_BASE": {
+      "description": "Override the Backwork API base URL, for example https://backworkhealth.com/api/sandbox/v1 for a bwk_test_ key. Defaults to https://backworkhealth.com/api/v1.",
+      "required": false
+    }
+  }
+}

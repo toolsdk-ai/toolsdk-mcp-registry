@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Klakix",
+  "packageName": "@toolsdk-remote/klakix-mcp",
+  "description": "Hosted Klakix MCP server for making videos, images, voiceovers, music and sound effects from an MCP client. 19 tools cover text-to-video and image-to-video with Seedance, Kling, Veo and Wan, image generation with Nano Banana and GPT Image, talking-photo avatars, motion transfer, 4K upscaling and explainer videos, plus 7 workflow prompts. Sign in with OAuth 2.1; generations spend Klakix credits and estimate_cost shows the price first.",
+  "url": "https://github.com/klakix-ai/klakix-mcp",
+  "readme": "https://klakix.com/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Klakix",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://klakix.com/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

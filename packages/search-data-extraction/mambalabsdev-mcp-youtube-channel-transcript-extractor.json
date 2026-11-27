@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "YouTube Channel Stats Extractor",
+  "packageName": "@mambalabsdev/mcp-youtube-channel-transcript-extractor",
+  "description": "MCP server for the Mamba Labs YouTube Channel Stats Extractor actor on Apify. Resolve a company domain or YouTube handle to the channel with subscriber count and channel metadata.",
+  "url": "https://github.com/mambalabsdev/mcp-youtube-channel-transcript-extractor",
+  "readme": "https://github.com/mambalabsdev/mcp-youtube-channel-transcript-extractor#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "China Social Data: WeChat, Weibo, Bilibili, Douban",
+  "packageName": "@toolsdk-remote/dheerajitbhu-china-social",
+  "description": "Public data from four Chinese platforms with no login: WeChat Official Account article search (公众号), Weibo posts, comments and hot search, Bilibili videos, comments and danmaku, and Douban movie/book ratings and reviews. Hosted on Apify's MCP server; tools are the pay-per-event Apify Actors dheerajitbhu/wechat-articles-scraper, dheerajitbhu/weibo-scraper, dheerajitbhu/bilibili-scraper and dheerajitbhu/douban-scraper. Sign in with an Apify account (OAuth); runs are billed to that account. WeChat full-article text is often behind a verification page right now, and Weibo search without login is shallow.",
+  "url": "https://apify.com/dheerajitbhu/wechat-articles-scraper?utm_source=toolsdk&utm_medium=directory&utm_campaign=wechat-articles-scraper",
+  "readme": "https://apify.com/dheerajitbhu/douban-scraper?utm_source=toolsdk&utm_medium=directory&utm_campaign=douban-scraper",
+  "runtime": "node",
+  "author": "Integration Yard",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=dheerajitbhu/wechat-articles-scraper,dheerajitbhu/weibo-scraper,dheerajitbhu/bilibili-scraper,dheerajitbhu/douban-scraper",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

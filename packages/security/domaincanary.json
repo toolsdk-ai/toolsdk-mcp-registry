@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "DomainCanary",
+  "packageName": "@toolsdk-remote/domaincanary",
+  "description": "Official hosted server for DomainCanary, a DMARC service. Checks a domain's live DMARC, SPF and DKIM records and says what to fix, builds one SPF record from a list of senders with its DNS lookup count, explains a bounce or SMTP reply such as 550 5.7.26, and reads a DMARC aggregate report. No account or API key needed.",
+  "url": "https://domaincanary.com/guides/check-your-domain-from-chatgpt-or-claude",
+  "readme": "https://domaincanary.com/guides/check-your-domain-from-chatgpt-or-claude",
+  "runtime": "node",
+  "author": "DomainCanary",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://domaincanary.com/mcp"
+    }
+  ]
+}

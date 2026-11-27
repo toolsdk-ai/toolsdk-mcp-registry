@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Google Patents Search",
+  "packageName": "@mambalabsdev/mcp-google-patents-search",
+  "description": "MCP server for Google Patents Search: patents by keyword, assignee, inventor, and date from Google Patents.",
+  "url": "https://github.com/mambalabsdev/mcp-google-patents-search",
+  "readme": "https://github.com/mambalabsdev/mcp-google-patents-search#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Selvedge",
+  "packageName": "selvedge-mcp",
+  "packageVersion": "0.3.17",
+  "description": "Local SQLite decision memory for coding agents: rationale, rejected approaches, and entity history over stdio MCP. The npm launcher requires Python and uv, pipx, or an installed selvedge-server.",
+  "url": "https://github.com/masondelan/selvedge",
+  "readme": "https://github.com/masondelan/selvedge/blob/v0.3.17/npm/README.md",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "SELVEDGE_DB": {
+      "description": "Optional SQLite database path; otherwise uses .selvedge/selvedge.db next to the codebase.",
+      "required": false,
+      "secret": false
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Pondchat (hosted)",
+  "packageName": "@toolsdk-remote/pondchat",
+  "description": "Remote MCP server for Pondchat — ephemeral, no-signup P2P video/text chat. Agents can mint shareable room URLs (create_pond), post into room chat as AI participants (send_message, encrypted with the room key), and read recent room chat decrypted (get_messages — the room ID is the read capability). Media stays peer-to-peer (DTLS-SRTP mesh, up to 6 participants).",
+  "url": "https://pondchat.com",
+  "readme": "https://pondchat.com/docs/api/mcp.md",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://pondchat.com/api/mcp"
+    }
+  ]
+}

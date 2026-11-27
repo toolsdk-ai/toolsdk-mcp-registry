@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "RunLater",
+  "packageName": "@toolsdk-remote/runlater",
+  "description": "Hosted MCP server that schedules HTTP requests from an agent at https://runlater.app/api/mcp: call a URL once at an exact time or on a cron schedule, pause, resume or run jobs now, and read each run's status code and response. Failed runs retry with backoff. OAuth 2.1 (DCR + PKCE) or bearer key. Paid plans from $15/mo with a 14-day trial.",
+  "url": "https://github.com/runlater-app/runlater-plugin",
+  "readme": "https://runlater.app/docs/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Great Work LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://runlater.app/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "IRS Mileage Rate and Per Diem MCP",
+  "packageName": "@toolsdk-remote/irs-mileage-rate-per-diem-mcp",
+  "description": "IRS mileage rates 2011-2026 (76 cents from July 2026), GSA per diem by ZIP FY2026-27, high-low. Tools: get_mileage_rate, calculate_mileage_deduction, get_per_diem_rates, calculate_trip_per_diem, get_high_low_per_diem. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/irs-mileage-rate-per-diem-mcp",
+  "readme": "https://github.com/theluckystrike/irs-mileage-rate-per-diem-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://irs-mileage-rate-per-diem-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Shortform Kit",
+  "packageName": "@toolsdk-remote/shortformkit-mcp",
+  "description": "Official hosted server for Shortform Kit. Transcribes public Instagram Reels, TikToks and YouTube videos (also without captions), reads their metadata and captions, and returns sourced creator data such as upload specs for 9 platforms, loudness targets and monetization programs. No account or API key; shares the website's limit of 30 requests per minute.",
+  "url": "https://github.com/shortformkit/shortformkit-mcp",
+  "readme": "https://shortformkit.com/mcp-server/",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://shortformkit.com/icon.png",
+  "author": "Shortform Kit",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://shortformkit.com/mcp"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "FeedbackPulse",
+  "packageName": "@toolsdk-remote/feedbackpulse",
+  "description": "Employee pulse surveys, eNPS, performance reviews and peer recognition for HR teams and managers. Lets AI assistants read and act on surveys, reviews, recognition and employee data in a FeedbackPulse account.",
+  "url": "https://github.com/FeedbackPulseApp/mcp",
+  "readme": "https://feedbackpulse.com/help/integrations/mcp-overview/",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.feedbackpulse.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp:use"]
+      }
+    }
+  ]
+}

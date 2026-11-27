@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "Terminal Command Agent by Nova (CIVAI)",
+  "packageName": "@toolsdk-remote/terminal-command-agent-by-nova-civai",
+  "description": "I run shell commands on your private cloud environment (bash, sh, zsh)",
+  "url": "https://github.com/civai-technologies/terminal-command-agent-mcp-by-nova-civai",
+  "readme": "https://github.com/civai-technologies/terminal-command-agent-mcp-by-nova-civai#readme",
+  "runtime": "python",
+  "license": "MIT",
+  "author": "CIVAI TECHNOLOGIES",
+  "logo": "https://nova.civai.co/catalog-icons/CodeIcon.svg",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://nova.civai.co/mcp/agents/terminal-command-agent",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["openid", "email", "mcp:access"]
+      }
+    }
+  ]
+}

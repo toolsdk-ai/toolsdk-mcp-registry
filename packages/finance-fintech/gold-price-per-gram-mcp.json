@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Gold Price Per Gram MCP",
+  "packageName": "@toolsdk-remote/gold-price-per-gram-mcp",
+  "description": "Live gold price per gram by karat and currency, metal prices, jewelry melt value, unit conversion. Tools: get_gold_price_per_gram, get_metal_prices, calculate_jewelry_value, convert_gold_units. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/gold-price-per-gram-mcp",
+  "readme": "https://github.com/theluckystrike/gold-price-per-gram-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gold-price-per-gram-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}

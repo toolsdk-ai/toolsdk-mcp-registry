@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Restaurant Health Inspection Scores MCP",
+  "packageName": "@toolsdk-remote/restaurant-health-inspection-scores-mcp",
+  "description": "Latest restaurant health inspection grades, scores, violations and closures in NYC, Chicago, Austin and Boston from city open data portals. Tools: restaurant_inspection_search, restaurant_inspection_history, restaurant_inspection_failures, restaurant_inspection_cities. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/restaurant-health-inspection-scores-mcp",
+  "readme": "https://github.com/theluckystrike/restaurant-health-inspection-scores-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://restaurant-health-inspection-scores-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}

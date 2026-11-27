@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Raw to Cooked Weight MCP",
+  "packageName": "@toolsdk-remote/raw-to-cooked-weight-mcp",
+  "description": "Raw to cooked weight of meat and poultry by cut and cooking method from USDA cooking yields. Tools: convert_raw_to_cooked, convert_cooked_to_raw, calculate_raw_weight_to_buy, find_cooking_yield, list_cooking_yields. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/raw-to-cooked-weight-mcp",
+  "readme": "https://github.com/theluckystrike/raw-to-cooked-weight-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://raw-to-cooked-weight-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}

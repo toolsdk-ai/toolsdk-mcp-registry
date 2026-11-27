@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "HaveTML",
+  "packageName": "@toolsdk-remote/havetml",
+  "description": "Publish the HTML, Markdown, YAML and JSON your AI agent writes (reports, decks, docs, sites) as one shareable link, with comments, versions, folders, canvases and decisions.",
+  "url": "https://havetml.com",
+  "readme": "https://havetml.com/docs#mcp",
+  "runtime": "node",
+  "license": "Proprietary",
+  "author": "HaveTML",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://havetml.com/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

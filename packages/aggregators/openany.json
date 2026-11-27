@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "OpenAny",
+  "packageName": "@toolsdk-remote/openany",
+  "description": "OpenAny is the B2A (business to agent) marketplace. Add one MCP endpoint, https://mcp.openany.si, and your agent can find and use 3,200+ APIs and 168+ AI models. Searching and checking prices is free with no key. You only need an OpenAny API key to run a call, and you pay per call.",
+  "url": "https://github.com/openanysi/openany-mcp",
+  "readme": "https://github.com/openanysi/openany-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.openany.si"
+    }
+  ]
+}

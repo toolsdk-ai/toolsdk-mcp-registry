@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "App Store Tools by Volution Technology",
+  "packageName": "@toolsdk-remote/volutiontechnology-app-store-tools",
+  "description": "App Store keyword ranks, review insights, top charts and competitor checks. Pay per result on Apify. Hosted on Apify's MCP server; tools are the pay-per-event Apify Actors volutiontech/app-store-keyword-rank-tracker, volutiontech/app-store-review-insights, volutiontech/app-store-top-charts-tracker and volutiontech/app-store-app-monitor. Sign in with an Apify account (OAuth).",
+  "readme": "https://volutiontechnology.com/apps/",
+  "runtime": "node",
+  "logo": "https://volutiontechnology.com/volution-logo.svg",
+  "author": "Volution Technology",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=volutiontech/app-store-keyword-rank-tracker,volutiontech/app-store-review-insights,volutiontech/app-store-top-charts-tracker,volutiontech/app-store-app-monitor",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

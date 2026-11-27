@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "MatterCatalog",
+  "packageName": "@toolsdk-remote/mattercatalog",
+  "description": "Checks whether a smart home device is Matter certified (MatterCatalog's read of the CSA Distributed Compliance Ledger), lists Matter devices by category, platform and network, names the stores a product page links, compares two products and gives dated certification figures. Hosted, anonymous and read-only; no API key; answers carry no prices.",
+  "url": "https://github.com/mattercatalog/mcp",
+  "readme": "https://mattercatalog.com/developers#mcp",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mattercatalog.com/api/mcp?src=mcp-toolsdk"
+    }
+  ]
+}

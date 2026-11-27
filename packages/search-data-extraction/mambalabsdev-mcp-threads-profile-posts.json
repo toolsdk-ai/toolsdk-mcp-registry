@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Threads Profile and Posts",
+  "packageName": "@mambalabsdev/mcp-threads-profile-posts",
+  "description": "MCP server for Threads Profile and Posts: public Threads profiles with follower counts and their newest posts.",
+  "url": "https://github.com/mambalabsdev/mcp-threads-profile-posts",
+  "readme": "https://github.com/mambalabsdev/mcp-threads-profile-posts#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

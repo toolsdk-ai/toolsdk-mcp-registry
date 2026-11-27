@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Edusign MCP",
+  "packageName": "@toolsdk-remote/edusign-mcp",
+  "description": "Connects AI assistants to Edusign attendance, courses, learners, documents, and API documentation through a hosted OAuth 2.1 MCP server.",
+  "url": "https://developers.edusign.com/docs/mcp",
+  "readme": "https://developers.edusign.com/docs/mcp",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.edusign.com",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

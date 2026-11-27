@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/looot-mcp",
+  "name": "looot",
+  "description": "Remote MCP server for work email and phone lookup, email verification, company and people search, Google results, web page reads, LinkedIn profiles, tech stack and local business data, paid per call from one prepaid balance. 18 tools and 4 prompts.",
+  "url": "https://github.com/loootai/looot-mcp",
+  "readme": "https://docs.looot.ai",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.looot.ai/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

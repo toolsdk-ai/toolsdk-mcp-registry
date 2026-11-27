@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "GSCmate",
+  "packageName": "@toolsdk-remote/gscmate",
+  "description": "Connect to Google Search Console through a hosted MCP server with user-authorized OAuth 2.1. Query properties, Search Analytics, insights, sitemaps, and URL inspections with read-only access.",
+  "url": "https://gscmate.com",
+  "readme": "https://gscmate.com/mcp-setup.html",
+  "runtime": "node",
+  "logo": "https://gscmate.com/favicon.svg",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gscmate.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "ACA Premium Tax Credit Calculator MCP",
+  "packageName": "@toolsdk-remote/aca-premium-tax-credit-calculator-mcp",
+  "description": "2026 ACA premium tax credit: expired enhanced subsidy, 400% FPL cliff, FPL, APTC repayment rules. Tools: get_federal_poverty_level, calculate_premium_tax_credit, check_subsidy_cliff, get_aptc_repayment_cap. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/aca-premium-tax-credit-calculator-mcp",
+  "readme": "https://github.com/theluckystrike/aca-premium-tax-credit-calculator-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://aca-premium-tax-credit-calculator-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}
