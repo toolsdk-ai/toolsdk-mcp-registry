@@ -11,7 +11,7 @@
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://report.improvado.io/experimental/agent/api/mcp-customer/v1/invoke/",
+      "url": "https://ai.improvado.io/experimental/agent/api/mcp-customer/v1/invoke/",
       "auth": {
         "type": "oauth2",
         "scopes": ["mcp:customer"]
