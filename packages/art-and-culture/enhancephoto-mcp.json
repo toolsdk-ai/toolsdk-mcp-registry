@@ -1,0 +1,12 @@
+{
+  "type": "mcp-server",
+  "name": "EnhancePhoto Image Prep MCP",
+  "packageName": "enhancephoto-mcp",
+  "description": "Local offline Model Context Protocol server powered by sharp for image metadata and EXIF inspection, print DPI sizing, quality diagnostics, integer pixel-art upscaling, and web image optimization.",
+  "url": "https://github.com/yangjwlove-dev/enhancephoto-mcp",
+  "readme": "https://github.com/yangjwlove-dev/enhancephoto-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "EnhancePhoto",
+  "env": {}
+}
