@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "RoamSEO",
+  "packageName": "@toolsdk-remote/roamseo",
+  "description": "Hosted SEO data for AI agents. Look up keyword volume and difficulty, read live Google results, check a domain's backlinks and ranked keywords, run site audits and rank trackers, and see how often a brand appears in AI answers. Search Console and Google Analytics reads for connected accounts are free; fresh search data is billed per call in credits (plans from $10 a month, or credit packs). Sign in with OAuth in the browser.",
+  "runtime": "node",
+  "url": "https://github.com/roamseo/roamseo-mcp",
+  "readme": "https://roamseo.com/docs/mcp",
+  "license": "MIT",
+  "author": "RoamSEO",
+  "logo": "https://roamseo.com/apple-touch-icon.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.roamseo.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp"]
+      }
+    }
+  ]
+}
