@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "maviapi",
+  "packageName": "@maviapi/mcp",
+  "description": "The unofficial API for any website, as MCP tools: search a catalog of hosted JSON APIs for sites with no official API (travel, shopping, maps, events), read each endpoint's schema and call it, or name a missing site and get its API built. Tools include search_apis, get_api, call_api, create_api, get_build_status and get_changelog. Works on a shared demo key out of the box; set MAVIAPI_API_KEY to use your own key. The server returns data only and never acts on target sites. A hosted Streamable HTTP endpoint is also available at https://mcp.maviapi.com/mcp.",
+  "url": "https://github.com/kuzenlabs/maviapi-mcp",
+  "readme": "https://github.com/kuzenlabs/maviapi-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://maviapi.com/icon.svg",
+  "env": {
+    "MAVIAPI_API_KEY": {
+      "description": "Your maviapi API key. Optional: without it the server uses the shared demo key.",
+      "required": false,
+      "secret": true
+    }
+  }
+}
