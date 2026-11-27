@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Auto Poster AI",
+  "packageName": "@autoposter/mcp",
+  "description": "Draft, schedule, publish and analyze social media posts on Instagram, TikTok, LinkedIn, X, Facebook, Threads, YouTube and more through the Auto Poster AI scheduler. Stdio launcher for the hosted Auto Poster AI MCP server; tools need an Auto Poster AI account on a paid plan.",
+  "url": "https://github.com/autoposterai/mcp",
+  "readme": "https://github.com/autoposterai/mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Auto Poster AI",
+  "env": {
+    "AUTOPOSTER_API_KEY": {
+      "description": "Auto Poster AI API key, created in Settings → AI agents at https://app.autoposter.ai/settings/ai-agents.",
+      "required": true,
+      "secret": true
+    }
+  }
+}
