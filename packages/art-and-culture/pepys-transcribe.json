@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Pepys Transcribe",
+  "packageName": "@toolsdk-remote/pepys-transcribe",
+  "description": "Transcribe audio, video, and podcasts, search timestamped transcripts, and export SRT or VTT captions. Sign in with Pepys OAuth.",
+  "url": "https://github.com/ankurmans/pepys-mcp",
+  "readme": "https://github.com/ankurmans/pepys-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://pepys.co/api/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["transcribe"]
+      }
+    }
+  ]
+}
