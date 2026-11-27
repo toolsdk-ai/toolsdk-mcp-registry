@@ -1,2 +1,14 @@
-{"type":"mcp-server","name":"ThriveDesk","packageName":"@toolsdk-remote/thrivedesk","description":"Search, reply, tag, assign and report on ThriveDesk help desk conversations from your AI assistant.","url":"https://github.com/thrivedesk/thrivedesk-mcp","runtime":"node","license":"MIT","logo":"https://raw.githubusercontent.com/thrivedesk/thrivedesk-mcp/main/assets/logo.png","env":{},"remotes":[{"type":"streamable-http","url":"https://mcp.thrivedesk.com","auth":{"type":"oauth2"}}]}
-
+{
+  "type": "mcp-server",
+  "name": "ThriveDesk",
+  "packageName": "@toolsdk-remote/thrivedesk",
+  "description": "Search, reply, tag, assign and report on ThriveDesk help desk conversations from your AI assistant.",
+  "url": "https://github.com/thrivedesk/thrivedesk-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/thrivedesk/thrivedesk-mcp/main/assets/logo.png",
+  "env": {},
+  "remotes": [
+    { "type": "streamable-http", "url": "https://mcp.thrivedesk.com", "auth": { "type": "oauth2" } }
+  ]
+}
