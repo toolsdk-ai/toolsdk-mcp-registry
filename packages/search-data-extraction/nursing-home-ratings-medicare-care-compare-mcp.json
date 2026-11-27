@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Nursing Home Ratings Care Compare MCP",
+  "packageName": "@toolsdk-remote/nursing-home-ratings-medicare-care-compare-mcp",
+  "description": "Medicare Care Compare star ratings, nurse staffing hours, turnover, inspection deficiencies, fines and abuse flags for US nursing homes. Tools: nursing_home_search, nursing_home_ratings, nursing_home_compare. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/nursing-home-ratings-medicare-care-compare-mcp",
+  "readme": "https://github.com/theluckystrike/nursing-home-ratings-medicare-care-compare-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://nursing-home-ratings-medicare-care-compare-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}

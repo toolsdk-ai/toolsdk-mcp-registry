@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Measles Cases by State Outbreak MCP",
+  "packageName": "@toolsdk-remote/measles-cases-by-state-outbreak-mcp",
+  "description": "CDC confirmed US measles cases by state, outbreak counts, hospitalizations, weekly trends and kindergarten MMR vaccination rates. Tools: measles_cases_us, measles_cases_by_state, measles_cases_history, mmr_vaccination_rates. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/measles-cases-by-state-outbreak-mcp",
+  "readme": "https://github.com/theluckystrike/measles-cases-by-state-outbreak-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://measles-cases-by-state-outbreak-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}
