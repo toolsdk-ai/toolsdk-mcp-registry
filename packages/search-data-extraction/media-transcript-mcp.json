@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "media-transcript-mcp",
+  "packageName": "media-transcript-mcp",
+  "description": "Fetch, search and cite existing YouTube captions and publisher-linked podcast transcripts, or load local SRT, VTT and JSON files. Returns timestamped passages with source links. Runs locally over stdio using the hosted service; free without an account or API key. Does not transcribe audio.",
+  "url": "https://media-transcript.remotify.run",
+  "readme": "https://github.com/onlsol/media-transcript.remotify.run#readme",
+  "runtime": "node",
+  "license": "Apache-2.0",
+  "author": "Online Solution",
+  "env": {
+    "MEDIA_TRANSCRIPT_API_KEY": {
+      "description": "Optional API key sent as a Bearer token to the hosted service. Anonymous access works without it.",
+      "required": false,
+      "secret": true
+    }
+  }
+}
