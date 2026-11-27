@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "johnvc Google Flights API",
+  "packageName": "@toolsdk-remote/johnvc-google-flights",
+  "description": "Google Flights search for one-way, round-trip and multi-city itineraries, with filters for price, stops, airlines and passengers: prices, airlines, stops, layovers, durations, price insights and optional booking options. Hosted on Apify's MCP server; the tool is the pay-per-event Apify Actor johnvc/Google-Flights-Data-Scraper-Flight-and-Price-Search. Sign in with an Apify account (OAuth) or an Apify API token.",
+  "url": "https://apify.com/johnvc/Google-Flights-Data-Scraper-Flight-and-Price-Search",
+  "readme": "https://github.com/johnisanerd/alphaosint-mcp-servers/tree/main/servers/google-flights",
+  "runtime": "node",
+  "logo": "https://apify-image-uploads-prod.s3.us-east-1.amazonaws.com/yhqxg2vZPwtBLHewL-actor-1dYHRKkEBHBPd0JM7-GwSMHn42lM-GoogleFlightsIcon.png",
+  "author": "johnvc",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=johnvc/Google-Flights-Data-Scraper-Flight-and-Price-Search",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
