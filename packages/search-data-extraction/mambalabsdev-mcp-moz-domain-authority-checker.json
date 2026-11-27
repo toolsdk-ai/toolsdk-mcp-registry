@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Moz Domain Authority Checker",
+  "packageName": "@mambalabsdev/mcp-moz-domain-authority-checker",
+  "description": "MCP server for Moz Domain Authority Checker. Bulk Moz DA, PA, and Spam Score on your own Moz API token. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-moz-domain-authority-checker",
+  "readme": "https://github.com/mambalabsdev/mcp-moz-domain-authority-checker#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

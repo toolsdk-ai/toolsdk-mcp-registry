@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Keepa Price History",
+  "packageName": "@mambalabsdev/mcp-keepa-price-history",
+  "description": "MCP server for Keepa Price History. Amazon price and sales rank history per ASIN on your own Keepa API key. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-keepa-price-history",
+  "readme": "https://github.com/mambalabsdev/mcp-keepa-price-history#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

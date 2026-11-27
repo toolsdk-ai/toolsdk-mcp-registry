@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "US Building Permits",
+  "packageName": "@mambalabsdev/mcp-us-building-permits",
+  "description": "MCP server for US Building Permits: city permits with contractor, value, and address.",
+  "url": "https://github.com/mambalabsdev/mcp-us-building-permits",
+  "readme": "https://github.com/mambalabsdev/mcp-us-building-permits#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}
