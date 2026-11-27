@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "SimOwl travel eSIM",
+  "packageName": "@toolsdk-remote/com-simowl-esim",
+  "description": "Find prepaid travel eSIM plans for 148 countries and 10 regions by destination and trip length, check if a phone supports eSIM, and estimate trip data. Read-only, no account; each plan links to simowl.com for purchase.",
+  "url": "https://github.com/AnisDhiyaEddine/simowl-mcp",
+  "readme": "https://simowl.com/ai-assistants",
+  "logo": "https://raw.githubusercontent.com/AnisDhiyaEddine/simowl-mcp/main/logo-400.png",
+  "author": "SimOwl",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://simowl.com/mcp"
+    }
+  ]
+}
