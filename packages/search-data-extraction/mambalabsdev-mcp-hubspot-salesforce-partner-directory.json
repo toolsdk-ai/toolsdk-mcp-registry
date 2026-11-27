@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "HubSpot and Salesforce Partner Directory",
+  "packageName": "@mambalabsdev/mcp-hubspot-salesforce-partner-directory",
+  "description": "MCP server: HubSpot Solutions Partner and Salesforce AppExchange consultant directory search with tier, rating, website, and countries.",
+  "url": "https://github.com/mambalabsdev/mcp-hubspot-salesforce-partner-directory",
+  "readme": "https://github.com/mambalabsdev/mcp-hubspot-salesforce-partner-directory#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

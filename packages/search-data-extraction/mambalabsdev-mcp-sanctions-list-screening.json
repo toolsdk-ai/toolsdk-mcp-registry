@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Sanctions List Screening",
+  "packageName": "@mambalabsdev/mcp-sanctions-list-screening",
+  "description": "MCP server for Sanctions List Screening: names against OFAC, UN, EU, and UK sanctions lists.",
+  "url": "https://github.com/mambalabsdev/mcp-sanctions-list-screening",
+  "readme": "https://github.com/mambalabsdev/mcp-sanctions-list-screening#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}
