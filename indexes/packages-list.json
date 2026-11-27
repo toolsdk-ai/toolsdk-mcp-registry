@@ -62029,10 +62029,6 @@
     "path": "communication/nova-inbox-agent-by-nova-civai.json",
     "category": "communication"
   },
-  "@toolsdk-remote/nssnap-mcp": {
-    "path": "cloud-platforms/nssnap-mcp.json",
-    "category": "cloud-platforms"
-  },
   "@toolsdk-remote/nukebg": {
     "path": "other-tools-and-integrations/nukebg.json",
     "category": "other-tools-and-integrations"
@@ -62175,6 +62171,470 @@
   },
   "wyro-check": {
     "path": "security/wyro-check.json",
+    "category": "security"
+  },
+  "@autoposter/mcp": {
+    "path": "marketing/auto-poster-ai.json",
+    "category": "marketing"
+  },
+  "@bytebase/bytebase-mcp": {
+    "path": "databases/bytebase-mcp.json",
+    "category": "databases"
+  },
+  "@calypsohq/elephant-mcp-server": {
+    "path": "knowledge-memory/elephant-mcp-server.json",
+    "category": "knowledge-memory"
+  },
+  "@fairquery/agent-trust-mcp": {
+    "path": "security/fairquery-agent-trust-mcp.json",
+    "category": "security"
+  },
+  "@fairquery/company-jobs-feed-mcp": {
+    "path": "search-data-extraction/fairquery-company-jobs-feed-mcp.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-apify-run-health-monitor": {
+    "path": "search-data-extraction/mambalabsdev-mcp-apify-run-health-monitor.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-bbb-business-search": {
+    "path": "search-data-extraction/mambalabsdev-mcp-bbb-business-search.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-cutshort-jobs-scraper": {
+    "path": "search-data-extraction/mambalabsdev-mcp-cutshort-jobs-scraper.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-discord-server-directory": {
+    "path": "search-data-extraction/mambalabsdev-mcp-discord-server-directory.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-google-patents-search": {
+    "path": "search-data-extraction/mambalabsdev-mcp-google-patents-search.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-google-play-app-details": {
+    "path": "search-data-extraction/mambalabsdev-mcp-google-play-app-details.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-india-mca-company-data": {
+    "path": "search-data-extraction/mambalabsdev-mcp-india-mca-company-data.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-keepa-price-history": {
+    "path": "search-data-extraction/mambalabsdev-mcp-keepa-price-history.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-moz-domain-authority-checker": {
+    "path": "search-data-extraction/mambalabsdev-mcp-moz-domain-authority-checker.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-naver-blog-search": {
+    "path": "search-data-extraction/mambalabsdev-mcp-naver-blog-search.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-sec-edgar-filings-search": {
+    "path": "search-data-extraction/mambalabsdev-mcp-sec-edgar-filings-search.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-telegram-channel-messages": {
+    "path": "search-data-extraction/mambalabsdev-mcp-telegram-channel-messages.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-uk-companies-house-lookup": {
+    "path": "search-data-extraction/mambalabsdev-mcp-uk-companies-house-lookup.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-us-building-permits": {
+    "path": "search-data-extraction/mambalabsdev-mcp-us-building-permits.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-wayback-machine-snapshots": {
+    "path": "search-data-extraction/mambalabsdev-mcp-wayback-machine-snapshots.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-website-logo-finder": {
+    "path": "search-data-extraction/mambalabsdev-mcp-website-logo-finder.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-xing-jobs-scraper": {
+    "path": "search-data-extraction/mambalabsdev-mcp-xing-jobs-scraper.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-yahoo-finance-quotes-fundamentals": {
+    "path": "search-data-extraction/mambalabsdev-mcp-yahoo-finance-quotes-fundamentals.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-yc-startup-jobs": {
+    "path": "search-data-extraction/mambalabsdev-mcp-yc-startup-jobs.json",
+    "category": "search-data-extraction"
+  },
+  "@mambalabsdev/mcp-youtube-keyword-suggestions": {
+    "path": "search-data-extraction/mambalabsdev-mcp-youtube-keyword-suggestions.json",
+    "category": "search-data-extraction"
+  },
+  "@maviapi/mcp": {
+    "path": "search-data-extraction/maviapi-mcp.json",
+    "category": "search-data-extraction"
+  },
+  "@socialapis/mcp": {
+    "path": "search-data-extraction/socialapis-mcp.json",
+    "category": "search-data-extraction"
+  },
+  "@star1age/wanyra-mcp": {
+    "path": "art-and-culture/wanyra-mcp.json",
+    "category": "art-and-culture"
+  },
+  "@toolsdk-remote/a1-gallery": {
+    "path": "developer-tools/a1-gallery.json",
+    "category": "developer-tools"
+  },
+  "@toolsdk-remote/adsturbo": {
+    "path": "marketing/adsturbo.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/adswipefile": {
+    "path": "marketing/adswipefile.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/aichili": {
+    "path": "art-and-culture/aichili-mcp.json",
+    "category": "art-and-culture"
+  },
+  "@toolsdk-remote/avalanche-forecast-danger-rating-mcp": {
+    "path": "location-services/avalanche-forecast-danger-rating-mcp.json",
+    "category": "location-services"
+  },
+  "@toolsdk-remote/blazephoenix-mcp": {
+    "path": "finance-fintech/blazephoenix-mcp.json",
+    "category": "finance-fintech"
+  },
+  "@toolsdk-remote/boxaudit": {
+    "path": "marketing/toolsdk-remote-boxaudit.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/christianpure": {
+    "path": "art-and-culture/toolsdk-remote-christianpure.json",
+    "category": "art-and-culture"
+  },
+  "@toolsdk-remote/codedesign": {
+    "path": "other-tools-and-integrations/codedesign.json",
+    "category": "other-tools-and-integrations"
+  },
+  "@toolsdk-remote/creator-desk-machine-products": {
+    "path": "developer-tools/creator-desk-machine-products.json",
+    "category": "developer-tools"
+  },
+  "@toolsdk-remote/crowdwisdom-trading": {
+    "path": "finance-fintech/crowdwisdom-trading.json",
+    "category": "finance-fintech"
+  },
+  "@toolsdk-remote/cueston": {
+    "path": "marketing/cueston.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/dock": {
+    "path": "other-tools-and-integrations/dock.json",
+    "category": "other-tools-and-integrations"
+  },
+  "@toolsdk-remote/egg-prices-grocery-prices-mcp": {
+    "path": "finance-fintech/egg-prices-grocery-prices-mcp.json",
+    "category": "finance-fintech"
+  },
+  "@toolsdk-remote/elephant-by-calypso": {
+    "path": "knowledge-memory/toolsdk-remote-elephant-by-calypso.json",
+    "category": "knowledge-memory"
+  },
+  "@toolsdk-remote/farside-research": {
+    "path": "search-data-extraction/farside-research.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/financial-ai": {
+    "path": "finance-fintech/financial-ai.json",
+    "category": "finance-fintech"
+  },
+  "@toolsdk-remote/flightseatmap": {
+    "path": "travel-transportation/flightseatmap.json",
+    "category": "travel-transportation"
+  },
+  "@toolsdk-remote/fonciq": {
+    "path": "location-services/fonciq.json",
+    "category": "location-services"
+  },
+  "@toolsdk-remote/gradium-mcp": {
+    "path": "other-tools-and-integrations/gradium-mcp.json",
+    "category": "other-tools-and-integrations"
+  },
+  "@toolsdk-remote/groundsocial": {
+    "path": "search-data-extraction/groundsocial.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/handelskalender": {
+    "path": "finance-fintech/handelskalender-remote.json",
+    "category": "finance-fintech"
+  },
+  "@toolsdk-remote/hanria-agent-mandate-check": {
+    "path": "security/hanria-agent-mandate-check.json",
+    "category": "security"
+  },
+  "@toolsdk-remote/hermoso": {
+    "path": "marketing/hermoso.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/home-health-hospice-ratings-care-compare-mcp": {
+    "path": "search-data-extraction/home-health-hospice-ratings-care-compare-mcp.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/hospital-ratings-cms-star-ratings-mcp": {
+    "path": "search-data-extraction/hospital-ratings-cms-star-ratings-mcp.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/ingredient-convert-mcp": {
+    "path": "other-tools-and-integrations/ingredient-convert-mcp.json",
+    "category": "other-tools-and-integrations"
+  },
+  "@toolsdk-remote/iqfluence-mcp": {
+    "path": "marketing/iqfluence-mcp.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/iquota-hotels": {
+    "path": "travel-transportation/iquota-hotels.json",
+    "category": "travel-transportation"
+  },
+  "@toolsdk-remote/lava-mcp": {
+    "path": "finance-fintech/lava-mcp.json",
+    "category": "finance-fintech"
+  },
+  "@toolsdk-remote/lgda-autonomic-node": {
+    "path": "art-and-culture/lgda-autonomic-node.json",
+    "category": "art-and-culture"
+  },
+  "@toolsdk-remote/liliphant": {
+    "path": "knowledge-memory/liliphant.json",
+    "category": "knowledge-memory"
+  },
+  "@toolsdk-remote/linkedmcp": {
+    "path": "marketing/linkedmcp.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/measles-cases-by-state-outbreak-mcp": {
+    "path": "search-data-extraction/measles-cases-by-state-outbreak-mcp.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/mooncalendar": {
+    "path": "uncategorized/toolsdk-remote-mooncalendar.json",
+    "category": "uncategorized"
+  },
+  "@toolsdk-remote/motionvideo": {
+    "path": "art-and-culture/motionvideo.json",
+    "category": "art-and-culture"
+  },
+  "@toolsdk-remote/msg91": {
+    "path": "communication/msg91.json",
+    "category": "communication"
+  },
+  "@toolsdk-remote/newkitchenai": {
+    "path": "other-tools-and-integrations/newkitchenai.json",
+    "category": "other-tools-and-integrations"
+  },
+  "@toolsdk-remote/nextup-walk-in": {
+    "path": "location-services/nextup-walk-in-mcp.json",
+    "category": "location-services"
+  },
+  "@toolsdk-remote/nursing-home-ratings-medicare-care-compare-mcp": {
+    "path": "search-data-extraction/nursing-home-ratings-medicare-care-compare-mcp.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/ollav": {
+    "path": "developer-tools/ollav.json",
+    "category": "developer-tools"
+  },
+  "@toolsdk-remote/omniforge-launch-audit": {
+    "path": "security/omniforge-launch-audit.json",
+    "category": "security"
+  },
+  "@toolsdk-remote/pepys-transcribe": {
+    "path": "art-and-culture/pepys-transcribe.json",
+    "category": "art-and-culture"
+  },
+  "@toolsdk-remote/pfs-free-domains-mcp": {
+    "path": "cloud-platforms/pfs-free-domains-mcp.json",
+    "category": "cloud-platforms"
+  },
+  "@toolsdk-remote/postkeep": {
+    "path": "communication/postkeep.json",
+    "category": "communication"
+  },
+  "@toolsdk-remote/restaurant-health-inspection-scores-mcp": {
+    "path": "location-services/restaurant-health-inspection-scores-mcp.json",
+    "category": "location-services"
+  },
+  "@toolsdk-remote/restosignals": {
+    "path": "data-platforms/toolsdk-remote-restosignals.json",
+    "category": "data-platforms"
+  },
+  "@toolsdk-remote/roamseo": {
+    "path": "marketing/roamseo.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/robopartpicker": {
+    "path": "embedded-system/robopartpicker.json",
+    "category": "embedded-system"
+  },
+  "@toolsdk-remote/rzlt": {
+    "path": "marketing/toolsdk-remote-rzlt.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/scrapewise": {
+    "path": "search-data-extraction/scrapewise.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/seo-skills": {
+    "path": "marketing/seo-skills.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/shellway": {
+    "path": "command-line/shellway.json",
+    "category": "command-line"
+  },
+  "@toolsdk-remote/skool-community-mcp": {
+    "path": "search-data-extraction/skool-community-mcp.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/smartdrugs": {
+    "path": "knowledge-memory/smartdrugs.json",
+    "category": "knowledge-memory"
+  },
+  "@toolsdk-remote/snow-depth-snowpack-snotel-mcp": {
+    "path": "location-services/snow-depth-snowpack-snotel-mcp.json",
+    "category": "location-services"
+  },
+  "@toolsdk-remote/socialpostflow-mcp": {
+    "path": "marketing/socialpostflow-mcp.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/sonar-kyb": {
+    "path": "finance-fintech/sonar-kyb-remote.json",
+    "category": "finance-fintech"
+  },
+  "@toolsdk-remote/sortance-mcp": {
+    "path": "security/sortance-mcp.json",
+    "category": "security"
+  },
+  "@toolsdk-remote/sprouts-data": {
+    "path": "customer-data-platforms/sprouts-data.json",
+    "category": "customer-data-platforms"
+  },
+  "@toolsdk-remote/steadyscrape-jobs-data": {
+    "path": "search-data-extraction/steadyscrape-jobs-data-remote.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/stickerbyvin": {
+    "path": "travel-transportation/stickerbyvin.json",
+    "category": "travel-transportation"
+  },
+  "@toolsdk-remote/taplio": {
+    "path": "marketing/taplio.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/taxrail": {
+    "path": "finance-fintech/toolsdk-remote-taxrail.json",
+    "category": "finance-fintech"
+  },
+  "@toolsdk-remote/tesseract": {
+    "path": "art-and-culture/tesseract.json",
+    "category": "art-and-culture"
+  },
+  "@toolsdk-remote/tesseract-decks-and-designs": {
+    "path": "art-and-culture/tesseract-decks-and-designs.json",
+    "category": "art-and-culture"
+  },
+  "@toolsdk-remote/the-network-tools": {
+    "path": "security/toolsdk-remote-the-network-tools.json",
+    "category": "security"
+  },
+  "@toolsdk-remote/thrivedesk": {
+    "path": "support-service-management/thrivedesk.json",
+    "category": "support-service-management"
+  },
+  "@toolsdk-remote/tradeflags-mcp": {
+    "path": "finance-fintech/tradeflags-mcp.json",
+    "category": "finance-fintech"
+  },
+  "@toolsdk-remote/ttyan0111-b2b-market-intel": {
+    "path": "search-data-extraction/ttyan0111-b2b-market-intel.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/vadyu": {
+    "path": "marketing/vadyu.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/variafy": {
+    "path": "marketing/variafy.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/verateca": {
+    "path": "search-data-extraction/verateca.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/vertov": {
+    "path": "art-and-culture/vertov.json",
+    "category": "art-and-culture"
+  },
+  "@toolsdk-remote/viralswipefile": {
+    "path": "marketing/viralswipefile.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/volutiontechnology-app-store-tools": {
+    "path": "marketing/volutiontechnology-app-store-tools.json",
+    "category": "marketing"
+  },
+  "@toolsdk-remote/webfetch-run": {
+    "path": "search-data-extraction/webfetch-run.json",
+    "category": "search-data-extraction"
+  },
+  "@toolsdk-remote/x402-company-data": {
+    "path": "finance-fintech/x402-company-data-remote.json",
+    "category": "finance-fintech"
+  },
+  "alphasift": {
+    "path": "finance-fintech/alphasift.json",
+    "category": "finance-fintech"
+  },
+  "caelo": {
+    "path": "security/caelo.json",
+    "category": "security"
+  },
+  "citeguard-mcp": {
+    "path": "search-data-extraction/citeguard-mcp.json",
+    "category": "search-data-extraction"
+  },
+  "domain-discovery-mcp": {
+    "path": "search-data-extraction/domain-discovery-mcp.json",
+    "category": "search-data-extraction"
+  },
+  "mcp-server-paperless": {
+    "path": "file-systems/mcp-server-paperless.json",
+    "category": "file-systems"
+  },
+  "media-transcript-mcp": {
+    "path": "search-data-extraction/media-transcript-mcp.json",
+    "category": "search-data-extraction"
+  },
+  "messaging-mcp": {
+    "path": "communication/messaging-mcp.json",
+    "category": "communication"
+  },
+  "odds-api-mcp-server": {
+    "path": "sports/odds-api-mcp-server.json",
+    "category": "sports"
+  },
+  "silicon-teahouse": {
+    "path": "communication/silicon-teahouse.json",
+    "category": "communication"
+  },
+  "sprutmonitor-mcp": {
+    "path": "security/sprutmonitor-mcp.json",
     "category": "security"
   }
 }
