@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "The Network Tools",
+  "packageName": "@toolsdk-remote/the-network-tools",
+  "description": "Hosted read-only MCP server for DNS records, MX routing, SPF/DMARC email authentication, HTTP security headers, and ICANN RDAP lookups. Open public access with no API key required (60 req/min per IP). Tools: dns_lookup, mx_lookup, spf_check, dmarc_check, security_headers_check, whois_lookup.",
+  "readme": "https://thenetworktools.com/docs/mcp",
+  "url": "https://thenetworktools.com/docs/mcp",
+  "runtime": "node",
+  "logo": "https://thenetworktools.com/icon-192.png",
+  "author": "The Network Tools",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://thenetworktools.com/mcp"
+    }
+  ]
+}
