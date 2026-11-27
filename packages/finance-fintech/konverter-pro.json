@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Konverter Pro",
+  "packageName": "@toolsdk-remote/konverter-pro",
+  "description": "Converts German bank statements (PDF, CSV, MT940, camt.053) and payment-provider reports (PayPal, Stripe, SumUp, Shopify) into verified DATEV, Lexware or MT940 booking files. Hosted Streamable HTTP endpoint. Without an API key, jobs are anonymous Single Orders for businesses: a free preview, then payment per job through a Stripe payment link (EUR 0.05 per unit, EUR 1 minimum, plus VAT). With an optional Konverter Pro API key (Authorization: Bearer kp_live_...) the user's plan and accounting profiles apply. The API key option is not modelled in this entry.",
+  "url": "https://konverter-pro.de",
+  "runtime": "node",
+  "logo": "https://konverter-pro.de/icon.svg",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://konverter-pro.de/api/v1/mcp"
+    }
+  ]
+}
