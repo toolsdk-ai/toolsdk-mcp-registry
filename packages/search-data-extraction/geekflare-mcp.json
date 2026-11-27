@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "packageName": "@geekflare/mcp",
+  "description": "Official Geekflare MCP server: web scraping to Markdown/JSON, web and Google SERP search, site crawling, screenshots and website checks through the Geekflare API.",
+  "url": "https://github.com/geekflare/geekflare-api-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "API_KEY": {
+      "description": "Geekflare API key from https://dash.geekflare.com/",
+      "required": true
+    }
+  },
+  "name": "Geekflare MCP"
+}
