@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Outscraper MCP — Official Node Bridge",
+  "packageName": "outscraper-mcp",
+  "description": "Official Node bridge for Outscraper's hosted MCP: business data, scraping, enrichment, pricing, and request results. Includes free masked catalog previews; full data and service execution are usage-based paid operations.",
+  "url": "https://github.com/outscraper/outscraper-mcp-server",
+  "readme": "https://github.com/outscraper/outscraper-mcp-server#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "OUTSCRAPER_API_KEY": {
+      "description": "Outscraper account API key for the official hosted MCP.",
+      "required": true,
+      "secret": true
+    }
+  }
+}
