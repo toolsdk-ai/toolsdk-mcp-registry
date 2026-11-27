@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Wanyra MCP",
+  "packageName": "@star1age/wanyra-mcp",
+  "description": "Zero-dependency stdio MCP server for Wanyra API (https://api.star1age.cn/en) unifying 81 live GA multimodal models across text (Claude, GPT, Gemini, DeepSeek, Qwen, Grok), 23 video generation models (MiniMax H3, Seedance 2.0/2.5, Kling 3.0 Omni, Wan 3.0/2.7, Vidu Q3/Q2 Pro, Hailuo H3, HappyHorse 1.1), 23 image models, and 7 audio models. wanyra_list_models and wanyra_estimate_cost work without an API key; chat, image, and video tools use WANYRA_API_KEY.",
+  "url": "https://github.com/a5768549/wanyra-mcp",
+  "readme": "https://github.com/a5768549/wanyra-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "WANYRA_API_KEY": {
+      "description": "API key from https://api.star1age.cn/en (optional for catalog listing and cost estimation; required for chat, image, and video generation).",
+      "required": false
+    }
+  }
+}
