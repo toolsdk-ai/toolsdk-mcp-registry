@@ -14,10 +14,7 @@
       "url": "https://www.variafy.com/mcp",
       "auth": {
         "type": "oauth2",
-        "scopes": [
-          "ads.read",
-          "ads.write"
-        ]
+        "scopes": ["ads.read", "ads.write"]
       }
     }
   ]
