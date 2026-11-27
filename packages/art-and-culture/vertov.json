@@ -11,9 +11,7 @@
       "url": "https://vertov.app/mcp",
       "auth": {
         "type": "oauth2",
-        "scopes": [
-          "mcp"
-        ]
+        "scopes": ["mcp"]
       }
     }
   ]
