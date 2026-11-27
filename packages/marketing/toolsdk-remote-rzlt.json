@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "RZLT",
+  "packageName": "@toolsdk-remote/rzlt",
+  "description": "Official RZLT remote MCP server: ask RZLT, an AI-native growth and marketing agency, about its services, case studies and writing, check whether a company is a fit, run a free AI-readiness check on any website, and send RZLT a message after the user approves the text. No sign-in.",
+  "readme": "https://github.com/therzlt/rzlt-mcp#readme",
+  "url": "https://mcp.rzlt.io",
+  "runtime": "node",
+  "author": "RZLT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.rzlt.io/mcp"
+    }
+  ]
+}
