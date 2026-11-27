@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "IQFluence MCP",
+  "packageName": "@toolsdk-remote/iqfluence-mcp",
+  "description": "Influencer analytics for Instagram, TikTok and YouTube: search 455M+ creators, open audience reports with fake-follower checks, compare creators, check audience overlap, build media plans and read Campaign Monitoring results. Requires an IQFluence account (OAuth sign-in).",
+  "url": "https://github.com/iqfluence/iqfluence-mcp",
+  "readme": "https://iqfluence.io/docs/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/iqfluence/iqfluence-mcp/main/assets/logo-400.png",
+  "author": "IQFluence",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.iqfluence.io/mcp",
+      "auth": { "type": "oauth2" }
+    }
+  ]
+}
