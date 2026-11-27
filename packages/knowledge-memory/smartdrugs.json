@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "SmartDrugs",
+  "packageName": "@toolsdk-remote/smartdrugs",
+  "description": "SmartDrugs is an independent, evidence-based information platform on nootropics (PT-BR). Reading the catalog needs no sign-up. With Google sign-in, users can also join the community (report, comment, react), always with confirmation in the chat.",
+  "url": "https://github.com/smartdrugs-org/mcp",
+  "readme": "https://github.com/smartdrugs-org/mcp#readme",
+  "logo": "https://smartdrugs.com.br/logo.png",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "SmartDrugs",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://smartdrugs.com.br/mcp"
+    }
+  ]
+}
