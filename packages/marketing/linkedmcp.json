@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "LinkedMCP",
+  "packageName": "@toolsdk-remote/linkedmcp",
+  "description": "Hosted MCP server for the user's own LinkedIn account. Read the feed, notifications, unread messages, invitations, profiles, companies and the comments on a post; get comments, replies and posts drafted in the user's voice, with the exact text shown before it goes out (a new post publishes only when the user clicks Publish on its preview card); react, follow, answer invitations, and edit or delete the user's own comments and posts. Each action runs inside the user's own logged-in Chrome through a free extension, so the server never logs in to LinkedIn. 7-day free trial with no card, then $7/month or $60/year. Not affiliated with LinkedIn.",
+  "readme": "https://linkedmcp.com/resources/help",
+  "logo": "https://linkedmcp.com/icon-512.png",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.linkedmcp.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
