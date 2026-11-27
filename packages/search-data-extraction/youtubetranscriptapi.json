@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "YouTubeTranscriptAPI",
+  "packageName": "@toolsdk-remote/youtubetranscriptapi",
+  "description": "Hosted YouTubeTranscriptAPI MCP server at https://youtubetranscriptapi.com/mcp. Read the transcript of any public YouTube video (with or without timestamps), search YouTube or within one channel, list a channel's or playlist's videos, check a channel's latest uploads, and resolve a channel handle. Read-only tools. Sign in with OAuth, or send an API key as a Bearer token.",
+  "url": "https://youtubetranscriptapi.com/youtube-mcp-server",
+  "readme": "https://youtubetranscriptapi.com/docs/mcp",
+  "runtime": "node",
+  "author": "YouTubeTranscriptAPI",
+  "logo": "https://youtubetranscriptapi.com/logo-512.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://youtubetranscriptapi.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
