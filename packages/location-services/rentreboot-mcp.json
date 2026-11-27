@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "RentReboot",
+  "packageName": "@toolsdk-remote/rentreboot-mcp",
+  "description": "NYC apartment search, renter guides, neighborhood information and rent data through public hosted MCP tools. Personal alerts, saved searches and housing lottery status require scoped OAuth and are not available through this anonymous configuration. Website alert plans are separate. Public connection documentation is MIT licensed; the hosted implementation is proprietary.",
+  "url": "https://rentreboot.com",
+  "readme": "https://github.com/imiraoui/rentreboot-mcp#readme",
+  "runtime": "node",
+  "license": "Proprietary",
+  "author": "RentReboot",
+  "logo": "https://rentreboot.com/favicon-256x256.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://rentreboot.com/api/mcp"
+    }
+  ]
+}

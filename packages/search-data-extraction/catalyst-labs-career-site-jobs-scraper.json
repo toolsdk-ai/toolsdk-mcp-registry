@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Catalyst Labs Career Site Jobs Scraper",
+  "packageName": "@toolsdk-remote/catalyst-labs-career-site-jobs-scraper",
+  "description": "Live open jobs from the companies you name across 17 ATS platforms (Workday, Greenhouse, Lever, Ashby and more) in one schema, with a changes mode for new and closed jobs. Hosted on Apify's MCP server; sign in with an Apify account (OAuth), billed per result.",
+  "url": "https://github.com/catalyst-labs-dev/catalyst-labs-mcp",
+  "readme": "https://github.com/catalyst-labs-dev/catalyst-labs-mcp#readme",
+  "runtime": "node",
+  "logo": "https://raw.githubusercontent.com/catalyst-labs-dev/catalyst-labs-mcp/main/assets/logo-400.png",
+  "author": "Catalyst Labs",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=catalyst-labs/career-site-jobs-scraper",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

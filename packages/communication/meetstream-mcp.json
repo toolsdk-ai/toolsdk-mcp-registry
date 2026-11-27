@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "packageName": "@meetstream/mcp",
+  "description": "Sends AI bots into Zoom, Google Meet and Microsoft Teams to record, transcribe and summarize meetings. 19 tools covering bot lifecycle, transcripts and AI summaries, per-participant audio, speaker timelines, live chat and image sending, and calendar scheduling.",
+  "url": "https://github.com/meetstream-ai/meetstream-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "MEETSTREAM_API_KEY": {
+      "description": "MeetStream API key. Create one free at https://app.meetstream.ai/api-key",
+      "required": true
+    }
+  },
+  "name": "MeetStream"
+}

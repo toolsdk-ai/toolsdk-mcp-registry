@@ -1,0 +1,24 @@
+{
+  "type": "mcp-server",
+  "name": "Multilocale Translations",
+  "packageName": "@toolsdk-remote/multilocale",
+  "description": "Audit translation coverage, review phrases and locales, export dictionaries, and manage localization project data through Multilocale's hosted OAuth connector. Persisted changes require confirmation.",
+  "url": "https://github.com/multilocale/claude-plugin",
+  "readme": "https://github.com/multilocale/claude-plugin#readme",
+  "runtime": "node",
+  "author": "Waiterio LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.multilocale.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "multilocale:read",
+          "multilocale:write"
+        ]
+      }
+    }
+  ]
+}

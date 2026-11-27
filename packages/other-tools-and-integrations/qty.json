@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "name": "Qty",
+  "packageName": "@toolsdk-remote/qty",
+  "description": "Deterministic quantity tools for agents. convert and units are free. parse (messy quantity text), batch, receipt, compare-prices, scale-recipe, size, and date return payment_required until paid with exact USDC via x402 on Base or Solana ($0.001-$0.01 per call). Never invents a number: unknown amounts return null with a reason.",
+  "readme": "https://qty.vercel.app/llms.txt",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://qty.vercel.app/mcp"
+    }
+  ]
+}

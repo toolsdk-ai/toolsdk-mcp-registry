@@ -1,0 +1,31 @@
+{
+  "type": "mcp-server",
+  "name": "SwapWallet",
+  "packageName": "@toolsdk-remote/swapwallet",
+  "description": "Official hosted MCP server for SwapWallet, a custodial crypto exchange and wallet: balances, realized and unrealized P&L, transaction history, deposit addresses, saved contacts and verified IBANs, plus swaps, transfers and crypto or toman withdrawals that run only after the user approves each request in Telegram.",
+  "readme": "https://github.com/SwapWallet/swapwallet-mcp#readme",
+  "url": "https://github.com/SwapWallet/swapwallet-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://swapwallet.app/icon.png",
+  "author": "SwapWallet",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://swapwallet.app/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "wallet:read",
+          "portfolio:read",
+          "transactions:read",
+          "contacts:read",
+          "withdraw:request",
+          "transfer:request",
+          "swap:request"
+        ]
+      }
+    }
+  ]
+}

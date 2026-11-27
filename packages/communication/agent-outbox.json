@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Agent Outbox",
+  "packageName": "@toolsdk-remote/agent-outbox",
+  "description": "Lets AI assistants post messages to the user's Telegram private chat, groups and channels through a bot. Tools: send_to_telegram, list_destinations, get_usage. Hosted server; sign in via OAuth with a 6-digit code from the bot. Free 50 messages a day; Pro 10,000 messages per 30 days. Not affiliated with Telegram.",
+  "readme": "https://outbox.roxinbox.io/#setup",
+  "runtime": "node",
+  "logo": "https://outbox.roxinbox.io/icon.png",
+  "author": "CloudLab Studio",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://outbox.roxinbox.io/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "UGC VZ Creator Search",
+  "packageName": "@toolsdk-remote/ugc-vz-creator-search",
+  "description": "Hosted endpoint for UGC VZ, a free directory of human user-generated-content creators based in Germany, Austria and Switzerland. Agents can look up creators by topic or city, read public profiles with portfolio links and self-reported rates, file a contact request on behalf of a brand, and check that request's status. No API key or OAuth is needed.",
+  "url": "https://github.com/ugcvz/ugc-vz-mcp",
+  "readme": "https://ugc-vz.de/developers",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "UGC VZ",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://ugc-vz.de/api/mcp"
+    }
+  ]
+}

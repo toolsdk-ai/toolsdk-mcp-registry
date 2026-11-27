@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Repostit MCP Connector",
+  "packageName": "@toolsdk-remote/repostit-mcp",
+  "description": "Official hosted Repostit connector for creating posts and carousels, scheduling social publishing, managing workflows and checking delivery status. Requires a Repostit account and OAuth authorization; account plan limits apply.",
+  "readme": "https://app.repostit.io/claude-connector.html",
+  "runtime": "node",
+  "author": "Repostit",
+  "env": {},
+  "remotes": [
+    {
+      "auth": {
+        "type": "oauth2"
+      },
+      "type": "streamable-http",
+      "url": "https://repostit-mcp-cfjcykgqda-uc.a.run.app/mcp/v1.1"
+    }
+  ]
+}

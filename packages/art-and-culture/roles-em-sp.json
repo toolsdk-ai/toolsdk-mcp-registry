@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Rolês em SP",
+  "packageName": "@toolsdk-remote/roles-em-sp",
+  "description": "Curated cultural outing concierge in São Paulo offering semantic venue discovery and dietary/budget options, paired with companion native-web schedule verification and OAuth access eligibility.",
+  "url": "https://rolesemsp.com.br",
+  "readme": "https://rolesemsp.com.br/connect.md",
+  "runtime": "node",
+  "license": "Proprietary",
+  "author": "DanRioDev",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://rolesemsp.com.br/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["catalogue:read"]
+      }
+    }
+  ]
+}

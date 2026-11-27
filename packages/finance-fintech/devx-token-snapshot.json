@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "DevX Token Snapshot",
+  "packageName": "@toolsdk-remote/devx-token-snapshot",
+  "description": "Read-only ERC-20 token data for agents on Base, Ethereum, Arbitrum, Optimism, Polygon, Avalanche and BNB Chain. token_basics (free) returns name, symbol, decimals, total supply and owner/proxy flags from on-chain reads. token_snapshot_info explains the optional paid full snapshot (USD price, FDV, DEX liquidity, top pools, holder hints, risk flags; 0.003 USDC on Base over x402; the tool itself does not pay). No account or API key.",
+  "url": "https://github.com/devx-agent/token-snapshot",
+  "readme": "https://github.com/devx-agent/token-snapshot#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "devx-agent",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://token-snapshot.nextill-pos.workers.dev/mcp"
+    }
+  ]
+}

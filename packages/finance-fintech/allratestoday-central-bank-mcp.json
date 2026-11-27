@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "AllRatesToday Central Bank Rates",
+  "packageName": "@allratestoday/central-bank-mcp",
+  "description": "Official exchange rates published by 100+ central banks and tax authorities (ECB, Fed, Bank of Japan, HMRC, US Treasury and more) for invoices, VAT, customs and accounting. Listing institutions and the latest published table of any source work without an API key; dated tables, history, cross-bank comparison and publication calendars need an AllRatesToday API key.",
+  "url": "https://github.com/AllRates-Today/central-bank-mcp",
+  "readme": "https://github.com/AllRates-Today/central-bank-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "ALLRATES_API_KEY": {
+      "description": "AllRatesToday API key (free at https://allratestoday.com/register). Optional; without it the server runs in keyless mode.",
+      "required": false,
+      "secret": true
+    }
+  }
+}

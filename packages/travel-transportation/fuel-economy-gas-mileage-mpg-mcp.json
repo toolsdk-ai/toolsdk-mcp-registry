@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Fuel Economy Gas Mileage MPG MCP",
+  "packageName": "@toolsdk-remote/fuel-economy-gas-mileage-mpg-mcp",
+  "description": "EPA city, highway and combined MPG, MPGe, EV range and annual fuel cost for any car by year, make and model from fueleconomy.gov, plus side-by-side comparisons. Tools: fuel_economy_lookup, fuel_economy_compare, fuel_cost_calculator, fuel_economy_models. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/fuel-economy-gas-mileage-mpg-mcp",
+  "readme": "https://github.com/theluckystrike/fuel-economy-gas-mileage-mpg-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://fuel-economy-gas-mileage-mpg-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}

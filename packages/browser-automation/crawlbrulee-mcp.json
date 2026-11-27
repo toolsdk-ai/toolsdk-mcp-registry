@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "crawlbrulee mcp server",
+  "packageName": "@crawlbrulee/mcp",
+  "description": "Scrape any page into clean markdown, screenshots, metadata and links, map a site's urls, and run background scrape jobs, with an EU-hosted web scraping api.",
+  "url": "https://github.com/crawlbrulee/crawlbrulee-mcp",
+  "readme": "https://github.com/crawlbrulee/crawlbrulee-mcp#readme",
+  "runtime": "node",
+  "license": "Apache-2.0",
+  "env": {
+    "CRAWLBRULEE_API_KEY": {
+      "description": "your crawlbrulee api key. get a free one at https://dashboard.crawlbrulee.com",
+      "required": true,
+      "secret": true
+    }
+  }
+}

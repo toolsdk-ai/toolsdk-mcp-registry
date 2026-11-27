@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "EU & Nordic Open Data MCP",
+  "packageName": "eu-nordic-open-data-mcp",
+  "description": "Official EU and Nordic open data over stdio: EU TED tenders, Finnish PRH and Norwegian Brreg company events, GLEIF LEI, EU sanctions screening, VIES VAT validation, ECB FX rates, EU Safety Gate alerts, ENISA EUVD vulnerabilities, Fingrid grid signals and FMI weather. Every response carries the source licence and attribution.",
+  "url": "https://github.com/itulo/eu-nordic-open-data-mcp",
+  "readme": "https://github.com/itulo/eu-nordic-open-data-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "itulo",
+  "env": {
+    "FINGRID_API_KEY": {
+      "description": "Free Fingrid Open Data API key, only needed for the Fingrid grid-signal tools and the Fingrid part of the FMI + Fingrid nowcast. All other tools are keyless.",
+      "required": false,
+      "secret": true
+    }
+  }
+}

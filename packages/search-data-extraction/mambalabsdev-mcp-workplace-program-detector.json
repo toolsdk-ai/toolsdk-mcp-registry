@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Workplace Program Detector",
+  "packageName": "@mambalabsdev/mcp-workplace-program-detector",
+  "description": "MCP server for the Mamba Labs Workplace Program Detector actor on Apify. Detects which people programs a company publishes: employee resource groups, DEI, wellbeing, learning, parental leave and volunteering.",
+  "url": "https://github.com/mambalabsdev/mcp-workplace-program-detector",
+  "readme": "https://github.com/mambalabsdev/mcp-workplace-program-detector#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "DataXAPI",
+  "packageName": "@toolsdk-remote/dataxapi",
+  "description": "Hosted MCP server with read-only public data from 21 platforms: Douyin (including its trend index and Xingtu creator data), Xiaohongshu (RedNote, including PGY creator data), WeChat Official Accounts, Channels and Search, Kuaishou, Bilibili, Weibo, Zhihu, TikTok, X, YouTube, Instagram, Reddit and the Meta and Google ad libraries. find and describe are free and work without signing in; call fetches one page from one endpoint and is paid per call from $0.0003, with failed calls not charged; read_more returns the rest of a long result at no charge. Sign in with OAuth 2.1 (dynamic client registration) to use call.",
+  "url": "https://github.com/data-x-api/dataxapi",
+  "readme": "https://dataxapi.com/mcp/",
+  "runtime": "node",
+  "logo": "https://dataxapi.com/logo.png",
+  "author": "DataXAPI",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.dataxapi.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp"]
+      }
+    }
+  ]
+}

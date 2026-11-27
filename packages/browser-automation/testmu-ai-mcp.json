@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "TestMu AI MCP Server",
+  "packageName": "@toolsdk-remote/testmu-ai-mcp",
+  "description": "Connects to the hosted TestMu AI (formerly LambdaTest) MCP endpoint for cloud testing. Orchestrates HyperExecute runs, triages automation failures from command, network, and console logs, explains SmartUI visual regressions, and runs WCAG accessibility audits.",
+  "url": "https://github.com/LambdaTest/mcp-server-guide",
+  "readme": "https://github.com/LambdaTest/mcp-server-guide#readme",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.lambdatest.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

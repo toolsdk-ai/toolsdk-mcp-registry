@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "Markovo",
+  "packageName": "@toolsdk-remote/markovo",
+  "description": "Convert PDF, DOCX, PPTX, XLSX and authorized public HTTPS pages into clean, structured Markdown for agent context.",
+  "url": "https://github.com/fisher-byte/markovo",
+  "runtime": "python",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://markovo.net/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["markovo:read", "markovo:convert"]
+      }
+    }
+  ]
+}

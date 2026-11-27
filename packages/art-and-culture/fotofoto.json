@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "foto foto",
+  "packageName": "@toolsdk-remote/fotofoto",
+  "description": "Turn your photos or a public iCloud Shared Album into a printed hardcover photo book. Attach photos, give image links, or paste a public iCloud Shared Album link, and foto foto designs every spread of a hardcover photo book and returns a preview link. The person saves it with their email on fotofoto.app to edit and order it. Also compares photo book prices across services. English and Dutch. No auth or API key.",
+  "url": "https://github.com/nternet-company/fotofoto-mcp",
+  "readme": "https://fotofoto.app/developers",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://fotofoto.app/icon-512.png",
+  "author": "nternet-company",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://fotofoto.app/mcp"
+    }
+  ]
+}

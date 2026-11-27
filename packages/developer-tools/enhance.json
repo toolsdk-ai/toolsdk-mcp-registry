@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "Enhance",
+  "packageName": "@toolsdk-remote/enhance",
+  "description": "Connect coding agents to Enhance's shared canvas to design, edit and review live prototypes and work with feedback. The hosted MCP uses OAuth; source editing and local build workflows require the Enhance plugin on a host with access to those files.",
+  "url": "https://github.com/enhance-labs-builds/enhance-plugin",
+  "readme": "https://app.enhancelabs.ai/docs",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.enhancelabs.ai/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["enhance:mcp"]
+      }
+    }
+  ]
+}

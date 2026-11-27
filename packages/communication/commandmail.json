@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Command Mail",
+  "packageName": "@toolsdk-remote/commandmail",
+  "description": "Hosted inbox for agents by FYN Labs. Connect all your email addresses once; your agent reads, searches and sorts mail, writes and revises drafts, and sends only from mailboxes where you allowed sending.",
+  "url": "https://github.com/FYN-Labs/commandmail-plugin",
+  "readme": "https://commandmail.app/en/docs",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://commandmail.app/icons/icon-512.png",
+  "author": "FYN Labs",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://commandmail.app/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

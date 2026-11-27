@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Sports Odds API (BetRivers, Unibet & 22 more books)",
+  "packageName": "@toolsdk-remote/sports-odds-api",
+  "description": "Live odds from 24 Kambi-powered sportsbooks in one call — BetRivers (12 US states + Ontario), Unibet, Paf, Svenska Spel, ATG. One row per game with every book's price and the best price per outcome. Hosted Streamable HTTP via Apify MCP; Apify OAuth.",
+  "url": "https://github.com/GeminiGeorge22/sports-odds-mcp",
+  "readme": "https://github.com/GeminiGeorge22/sports-odds-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "publicrecords",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com?tools=publicrecords/sports-odds-api",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

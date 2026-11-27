@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "AltoRank",
+  "packageName": "@toolsdk-remote/altorank",
+  "description": "Official hosted server for AltoRank, open-source SEO content software. Runs nine site readiness checks for search engines and AI crawlers against any domain, suggests keywords, reads Google Search Console data, and writes sourced drafts into a person's review queue. 26 tools; there is no approve or publish tool.",
+  "url": "https://github.com/AltoRank/altorank",
+  "readme": "https://altorank.co/docs/mcp/",
+  "runtime": "node",
+  "license": "AGPL-3.0",
+  "author": "AltoRank",
+  "logo": "https://altorank.co/apple-touch-icon.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.altorank.co/api/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["read", "generate", "write"]
+      }
+    }
+  ]
+}

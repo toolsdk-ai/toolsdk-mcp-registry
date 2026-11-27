@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "Sortance",
+  "packageName": "@toolsdk-remote/sortance-mcp",
+  "description": "Hosted email validation for signups: flags disposable, no-MX, typo and role addresses, applies your block and allow rules, and returns send, challenge, hold or drop with reasons.",
+  "url": "https://github.com/wilsonbright/sortance-mcp",
+  "readme": "https://github.com/wilsonbright/sortance-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Sortance",
+  "logo": "https://api.sortance.com/brand/icon-512.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.sortance.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp"]
+      }
+    }
+  ]
+}

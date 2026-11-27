@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Verand",
+  "packageName": "@toolsdk-remote/verand-mcp",
+  "description": "Work on your website from your AI assistant: pages, Search Console, daily Google rankings, where AI assistants cite you, and compliance-checked article drafts.",
+  "url": "https://github.com/verand-ai/verand-mcp",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.verand.ai/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

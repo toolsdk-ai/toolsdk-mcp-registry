@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "GC Airport Transfers",
+  "packageName": "@toolsdk-remote/gc-airport-transfers",
+  "description": "Official hosted MCP server for GC Airport Transfers. Private airport and cruise transfers for the Gold Coast, Brisbane and Byron Bay (Queensland): live quotes, availability checks and booking requests. OAuth 2.1 required (scope transfers). The operator confirms every booking; customers pay by emailed link.",
+  "url": "https://gc-airporttransfers.com.au/ai-agent-gateway/",
+  "readme": "https://gc-airporttransfers.com.au/ai-agent-gateway/",
+  "runtime": "node",
+  "author": "GC Airport Transfers",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gc-airporttransfers.com/wp-json/atb-gateway/v1/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["transfers"]
+      }
+    }
+  ]
+}

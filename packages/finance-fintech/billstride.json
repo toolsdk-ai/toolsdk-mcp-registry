@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Billstride",
+  "packageName": "@toolsdk-remote/billstride",
+  "description": "Official hosted MCP server for Billstride, pay-per-invoice invoicing. Create, send and track invoices from a conversation: reuse last month's invoice, chase overdue payments, see revenue, and export e-invoices (ZUGFeRD, XRechnung) and DATEV. 27 tools, 25 countries including the US, Canada and the EU. Open sign-up; the first invoice is free, then pay per invoice. Authenticates with OAuth 2.1 (discovery and dynamic client registration).",
+  "readme": "https://billstride.com/mcp",
+  "url": "https://billstride.com",
+  "runtime": "node",
+  "license": "Proprietary",
+  "author": "superview llc",
+  "logo": "https://billstride.com/avatar.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://billstride.com/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

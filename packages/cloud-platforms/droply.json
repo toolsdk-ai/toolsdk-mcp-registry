@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Droply",
+  "packageName": "@toolsdk-remote/droply",
+  "description": "Publish HTML pages, Markdown, CSV, SVG, multi-file websites and other files as shareable links on name.droply.page, update a project without changing its link, list projects with view counts, rename a link, add or remove a password, hide a page from search engines, and take a project offline.",
+  "readme": "https://docs.droply.so/#mcp",
+  "runtime": "node",
+  "logo": "https://droply.so/droply-logo.png",
+  "author": "Droply",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://droply.so/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["droply"]
+      }
+    }
+  ]
+}

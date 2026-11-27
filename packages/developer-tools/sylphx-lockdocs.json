@@ -1,0 +1,12 @@
+{
+  "type": "mcp-server",
+  "name": "lockdocs",
+  "packageName": "@sylphx/lockdocs",
+  "description": "Exact-version library docs from your lockfile. Reads npm, PyPI, crates.io and Go lockfiles and answers from the READMEs, changelogs and type declarations of the version you installed, with tools for resolve (pinned versions), docs (cited sections within a token budget) and api (exact signatures). Local Rust binary, offline, no API key.",
+  "url": "https://github.com/SylphxAI/lockdocs",
+  "readme": "https://github.com/SylphxAI/lockdocs#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "binArgs": ["mcp"],
+  "env": {}
+}

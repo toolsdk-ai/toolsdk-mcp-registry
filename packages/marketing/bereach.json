@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "BeReach",
+  "packageName": "@toolsdk-remote/bereach",
+  "description": "Describe your ideal customer in one sentence, or paste a LinkedIn post, and BeReach finds the people who match and helps you write the first message. Find people and companies, read a profile, see who reacted to a post, spot buying signals, find work emails and prepare first messages.",
+  "url": "https://github.com/bereach-ai/bereach-claude-plugin",
+  "readme": "https://bereach.ai/linkedin-claude",
+  "logo": "https://bereach.ai/static/brand/bereach-mark.webp",
+  "license": "MIT",
+  "author": "BeReach",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.bereach.ai/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

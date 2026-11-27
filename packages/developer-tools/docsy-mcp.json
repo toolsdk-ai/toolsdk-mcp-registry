@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Docsy",
+  "packageName": "@toolsdk-remote/docsy-mcp",
+  "description": "Read current and version-specific developer documentation with original source citations using five read-only MCP tools. Remote access requires OAuth 2.1.",
+  "url": "https://github.com/getremcp/docsy-plugin",
+  "readme": "https://github.com/getremcp/docsy-plugin#connect",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/getremcp/docsy-plugin/main/assets/docsy-logo-512.png",
+  "author": "getremcp",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://docsy.remcp.site/mcp/registry",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

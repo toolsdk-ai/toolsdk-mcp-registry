@@ -1,0 +1,12 @@
+{
+  "type": "mcp-server",
+  "name": "usb-rea",
+  "packageName": "usb-rea",
+  "description": "Reverse engineers USB devices that only ship a Windows vendor app: records usbmon/USBPcap captures, labels each action, infers the protocol (command ids, values, lookup tables, counters, checksums, device replies, opening handshake) with frame-level evidence, and generates a Python/pyusb driver and a Wireshark dissector. Replaying packets to a device requires explicit confirmation.",
+  "url": "https://github.com/emirmrkaljevic/usb-rea",
+  "readme": "https://github.com/emirmrkaljevic/usb-rea#readme",
+  "runtime": "python",
+  "license": "MIT",
+  "binArgs": ["mcp"],
+  "env": {}
+}

@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "ASO Atlas",
+  "packageName": "@toolsdk-remote/asoatlas",
+  "description": "Official ASO Atlas remote MCP server: App Store and Google Play keyword research with Apple-reported popularity and difficulty, rank tracking in 59 storefronts, competitor keyword gaps, App Store Connect and Play Console performance, in-app feedback and onboarding analytics. Sign in with your ASO Atlas account via OAuth (subscription required to run tools).",
+  "readme": "https://github.com/asoatlas/mcp#readme",
+  "url": "https://asoatlas.com/docs/connect-your-ai",
+  "runtime": "node",
+  "author": "ASO Atlas",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://asoatlas.com/mcp",
+      "auth": { "type": "oauth2", "scopes": ["mcp:use"] }
+    }
+  ]
+}

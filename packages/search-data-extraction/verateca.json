@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/verateca",
+  "name": "Verateca",
+  "description": "Remote MCP server for dietary supplement labels: more than 160,000 label records from official sources, read down to each ingredient, its form and amount. Read-only tools to find products, read a label, compare products, look up a substance's forms and official upper limits by country, and add up a supplement list against those limits, with sources. Free, no authentication.",
+  "url": "https://github.com/Verateca/Verateca-mcp",
+  "readme": "https://github.com/Verateca/Verateca-mcp#readme",
+  "runtime": "node",
+  "logo": "https://verateca.com/icon-512.png",
+  "author": "Verateca",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://verateca.com/mcp"
+    }
+  ]
+}

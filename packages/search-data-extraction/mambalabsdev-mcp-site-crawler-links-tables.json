@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Site Crawler Links Tables",
+  "packageName": "@mambalabsdev/mcp-site-crawler-links-tables",
+  "description": "MCP server for Site Crawler for Links and Tables. Crawl a site and get links, download links, HTML tables as rows, and lists. No code, no AI. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-site-crawler-links-tables",
+  "readme": "https://github.com/mambalabsdev/mcp-site-crawler-links-tables#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

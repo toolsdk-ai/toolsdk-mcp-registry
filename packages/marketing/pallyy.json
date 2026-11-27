@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Pallyy",
+  "packageName": "@toolsdk-remote/pallyy",
+  "description": "Schedules social media posts from an AI agent: lists social sets, creates and updates draft or scheduled posts, imports media and pins calendar notes across Instagram, Facebook, LinkedIn, TikTok, YouTube, Pinterest, Threads, Bluesky, X and Google Business Profile.",
+  "readme": "https://pallyy.com/docs/api/mcp",
+  "url": "https://github.com/pallyysocial/pallyy-agent",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Pallyy",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.pallyy.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

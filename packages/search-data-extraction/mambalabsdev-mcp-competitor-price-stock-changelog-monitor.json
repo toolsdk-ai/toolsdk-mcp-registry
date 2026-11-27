@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Competitor Price Stock Changelog Monitor",
+  "packageName": "@mambalabsdev/mcp-competitor-price-stock-changelog-monitor",
+  "description": "MCP server for Competitor Price, Stock, and Changelog Monitor. Watch competitor stores and SaaS sites and get only what changed since the last run: price, sale price, and stock per variant, new and removed products, plan prices, and changelog entries. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-competitor-price-stock-changelog-monitor",
+  "readme": "https://github.com/mambalabsdev/mcp-competitor-price-stock-changelog-monitor#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

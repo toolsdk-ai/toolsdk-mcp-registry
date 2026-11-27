@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "Calendar Agent by Nova (CIVAI)",
+  "packageName": "@toolsdk-remote/calendar-agent-by-nova-civai",
+  "description": "I do everything related to calendar scheduling",
+  "url": "https://github.com/civai-technologies/calendar-agent-mcp-by-nova-civai",
+  "readme": "https://github.com/civai-technologies/calendar-agent-mcp-by-nova-civai#readme",
+  "runtime": "python",
+  "license": "MIT",
+  "author": "CIVAI TECHNOLOGIES",
+  "logo": "https://nova.civai.co/catalog-icons/GoogleCalendarIcon.svg",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://nova.civai.co/mcp/agents/calendar-agent",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["openid", "email", "mcp:access"]
+      }
+    }
+  ]
+}

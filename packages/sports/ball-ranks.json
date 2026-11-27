@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Ball Ranks",
+  "packageName": "@toolsdk-remote/ball-ranks",
+  "description": "Read-only NFL and NBA fantasy rankings and player projections from Ball Ranks. This connection provides anonymous Model Zero access, limited to 10 requests daily; higher limits and Model One require Bearer authentication that this registry cannot configure.",
+  "url": "https://ballranks.com",
+  "readme": "https://ballranks.com/developers#mcp",
+  "runtime": "node",
+  "license": "Proprietary",
+  "logo": "https://ballranks.com/images/ball-ranks-mark.svg",
+  "author": "Ball Ranks",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://ballranks.com/api/mcp"
+    }
+  ]
+}

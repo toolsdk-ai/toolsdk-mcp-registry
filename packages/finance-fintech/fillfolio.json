@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Fillfolio",
+  "packageName": "@toolsdk-remote/fillfolio",
+  "description": "Hosted read-only access to stored portfolios, holdings, cash, spending and budgets. Requires a paid Fillfolio account and an accepted OAuth client; spending and budgets need an eligible plan and separate permissions.",
+  "url": "https://github.com/fillfolio/portfolio-mcp",
+  "readme": "https://github.com/fillfolio/portfolio-mcp#readme",
+  "runtime": "node",
+  "author": "Fillfolio",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://fillfolio.com/api/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp:read"]
+      }
+    }
+  ]
+}

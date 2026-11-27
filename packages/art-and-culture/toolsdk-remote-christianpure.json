@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Christian Pure",
+  "packageName": "@toolsdk-remote/christianpure",
+  "description": "Written prayers for a need, Bible verses by subject, and Christian articles on faith and church history from christianpure.com. Seven read-only tools. Hosted Streamable HTTP endpoint; no sign-in, no key.",
+  "readme": "https://christianpure.com/wp-json/christianpure-connector/v1/docs",
+  "url": "https://github.com/christianpure/connector",
+  "runtime": "node",
+  "license": "GPL-2.0-or-later",
+  "author": "Christian Pure",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://christianpure.com/wp-json/christianpure-connector/v1/mcp"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "flconsole Upwork Jobs",
+  "packageName": "@toolsdk-remote/flconsole-upwork-jobs",
+  "description": "Free hosted MCP server for new Upwork jobs posted in the last 30 minutes: search by saved feeds or ad-hoc filters, read job details and manage feeds that also send Telegram alerts. No Upwork login.",
+  "url": "https://github.com/droopboop/flconsole-upwork-mcp",
+  "readme": "https://flconsole.com/docs/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/droopboop/flconsole-upwork-mcp/main/assets/logo-400.png",
+  "author": "flconsole",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.lite.flconsole.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

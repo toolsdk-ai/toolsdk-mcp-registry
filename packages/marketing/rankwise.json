@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Rankwise",
+  "packageName": "@toolsdk-remote/rankwise",
+  "description": "AI search visibility. Read how often AI search engines cite a brand, the AI share of voice against competitors, tracked questions and their citations, and content opportunities in a Rankwise workspace; create briefs and articles with the write and spend scopes. Six public tools check AI crawler access, score AI visibility readiness, check a page's citation readiness and search the Rankwise guides without sign-in.",
+  "url": "https://github.com/0xrome/rankwise-plugin",
+  "readme": "https://tryrankwise.com/api-docs#mcp",
+  "logo": "https://tryrankwise.com/brand/rankwise-icon-512.png",
+  "author": "Rankwise",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://tryrankwise.com/api/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["read", "write", "spend"]
+      }
+    }
+  ]
+}

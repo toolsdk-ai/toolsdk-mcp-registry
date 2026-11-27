@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "Busabase",
+  "packageName": "@toolsdk-remote/busabase",
+  "description": "Database for your AI agent. Turn its output into data, docs, skills, and apps you can actually use. Approval-first: agents propose changes as ChangeRequests, humans review, approved changes merge. Connects to the hosted Busabase MCP endpoint using OAuth 2.1 (browser sign-in, no API key to paste).",
+  "url": "https://github.com/busabase/skills",
+  "readme": "https://github.com/busabase/skills#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://busabase.com/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

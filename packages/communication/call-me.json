@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Call Me",
+  "packageName": "@toolsdk-remote/call-me",
+  "description": "Lets an agent phone its human: the question is spoken in a real iPhone call and the spoken answer is returned as text. It can also text the user and wait for a reply. Connecting needs no auth; ringing a phone requires the Call Me iOS app, paired by the 10-digit number it shows.",
+  "url": "https://github.com/radres/call-me",
+  "readme": "https://github.com/radres/call-me#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Serdar Oztetik",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://callmemcp.com/mcp"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "type": "mcp-server",
+  "name": "UGC",
+  "packageName": "@toolsdk-remote/ugc",
+  "description": "Human Ad Network. Create and fund campaigns, discover slots, and check a wallet from chat.",
+  "url": "https://ugc.africa",
+  "readme": "https://ugc.africa",
+  "runtime": "node",
+  "author": "UGC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.ugc.africa/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "campaign:read",
+          "campaign:discover",
+          "slot:read",
+          "earnings:read",
+          "wallet:read",
+          "username:read",
+          "campaign:write",
+          "slot:write",
+          "crypto:deposit",
+          "hooks:manage",
+          "campaign:fund",
+          "payout:transfer"
+        ]
+      }
+    }
+  ]
+}

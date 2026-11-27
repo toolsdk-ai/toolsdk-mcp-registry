@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Sendly",
+  "packageName": "@toolsdk-remote/sendly",
+  "description": "Send transactional email, run campaigns, and manage contacts, lists and segments in Sendly. Official hosted server operated by Devino Solutions; sign in with your Sendly account via OAuth.",
+  "url": "https://github.com/DevinoSolutions/mcp-servers/tree/main/sendly",
+  "readme": "https://docs.sendly.now/guides/mcp",
+  "runtime": "node",
+  "logo": "https://raw.githubusercontent.com/DevinoSolutions/mcp-servers/main/sendly/assets/logo.png",
+  "author": "Devino Solutions",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.sendly.now/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Company Contact Details Extractor",
+  "packageName": "@mambalabsdev/mcp-company-contact-details-extractor",
+  "description": "MCP server for the Mamba Labs Company Contact Details Extractor actor on Apify. Find a company contact page and extract role emails, a phone number and a postal address.",
+  "url": "https://github.com/mambalabsdev/mcp-company-contact-details-extractor",
+  "readme": "https://github.com/mambalabsdev/mcp-company-contact-details-extractor#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

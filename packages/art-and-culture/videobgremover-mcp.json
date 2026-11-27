@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "VideoBGRemover MCP",
+  "packageName": "@toolsdk-remote/videobgremover-mcp",
+  "description": "Hosted video background removal with OAuth and existing account credits (1 credit per video second). Upload or import videos, manage jobs with spending limits, and download transparent WebM with source audio.",
+  "url": "https://github.com/tanchaowen84/videobgremover-mcp",
+  "readme": "https://videobgremover.net/mcp",
+  "runtime": "node",
+  "env": {},
+  "logo": "https://videobgremover.net/brand-icon.png",
+  "author": "VideoBGRemover",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://videobgremover.net/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

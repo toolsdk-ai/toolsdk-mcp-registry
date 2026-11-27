@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "LinkIntel",
+  "packageName": "@toolsdk-remote/linkintel",
+  "description": "Your own X post results and X's open-source ranking weights for your AI assistant, as cited content briefs. Remote, OAuth, paid ($39/month); never publishes.",
+  "readme": "https://www.getlinkintel.com/docs/mcp",
+  "runtime": "node",
+  "author": "LinkIntel",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.getlinkintel.com/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Connecty",
+  "packageName": "@toolsdk-remote/connecty",
+  "description": "Free public status pages for up to 5 HTTPS sites with a daily check. Without signing in, an assistant can read any Connecty status page and explain what Connecty is. After OAuth sign-in, it can list, add or remove your own sites, share your status page link, and report sites that were down at the latest daily check or changed in the last 7 days.",
+  "url": "https://connecty.nl/en/ai-assistant?utm_source=toolsdk&utm_medium=directory",
+  "readme": "https://connecty.nl/en/ai-assistant?utm_source=toolsdk&utm_medium=directory",
+  "runtime": "node",
+  "logo": "https://connecty.nl/apple-icon.png",
+  "author": "Connecty",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://connecty.nl/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["sites:read", "sites:write"]
+      }
+    }
+  ]
+}

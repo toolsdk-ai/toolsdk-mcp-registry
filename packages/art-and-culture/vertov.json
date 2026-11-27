@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Vertov",
+  "packageName": "@toolsdk-remote/vertov",
+  "description": "Search Vertov screen recordings, read timestamped transcripts and briefs, and upload recordings to get share links.",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://vertov.app/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp"]
+      }
+    }
+  ]
+}

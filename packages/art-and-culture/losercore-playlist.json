@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Losercore Playlist",
+  "packageName": "@toolsdk-remote/losercore-playlist",
+  "description": "Public tools for Losercore starter-track metadata, original scene templates and editable playlist-video JSON drafts. Free, no authentication; does not download music, render video or run paid AI generation.",
+  "url": "https://github.com/nullurl/losercore-agent-tools",
+  "readme": "https://losercoreplaylist.com/developers/mcp",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://losercoreplaylist.com/mcp"
+    }
+  ]
+}

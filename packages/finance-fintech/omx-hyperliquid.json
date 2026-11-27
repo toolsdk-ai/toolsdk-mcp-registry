@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "OMX for Hyperliquid",
+  "packageName": "omx-hyperliquid",
+  "description": "Non-custodial execution engine for Hyperliquid perpetuals with an MCP server for AI agents. Agents quote, preview and submit market, limit, TWAP, POV and chase orders inside local pre-trade limits; intents above a threshold wait for human approval; an agent can trip but not clear the kill switch; every decision goes to a hash-chained audit log. Signs only with a Hyperliquid API wallet that cannot withdraw. `uvx omx-hyperliquid` runs a keyless demo. Optional, disclosed 1 bp builder fee, approved from the user's own wallet.",
+  "url": "https://github.com/Lumen-Founder/omx",
+  "readme": "https://github.com/Lumen-Founder/omx#readme",
+  "runtime": "python",
+  "license": "MIT",
+  "env": {
+    "OMX_CONFIG": {
+      "description": "Path to an OMX config file for real use with the user's own Hyperliquid account and an API wallet that cannot withdraw. The config holds the agent key's file path or env var name, never the key. Optional; without it the server runs a keyless demo.",
+      "required": false
+    }
+  }
+}

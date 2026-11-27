@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Unique Domains (hosted)",
+  "packageName": "@toolsdk-remote/unique-domains",
+  "description": "Is a domain name taken, what nine registrars charge for it and what similar names sold for. A daily record of 37 million names, read-only, no key needed.",
+  "url": "https://github.com/UniqueDomains/mcp-server",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.unique.domains/mcp"
+    }
+  ]
+}

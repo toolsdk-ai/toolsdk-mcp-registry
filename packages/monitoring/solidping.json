@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "SolidPing",
+  "packageName": "@toolsdk-remote/solidping",
+  "description": "Uptime monitoring from SolidPing: create, run and diagnose checks across 43 types, read results and incidents, and manage status pages and maintenance windows.",
+  "url": "https://github.com/fclairamb/solidping",
+  "readme": "https://github.com/fclairamb/solidping#readme",
+  "runtime": "go",
+  "license": "AGPL-3.0",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://solidping.io/api/v1/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp", "mcp:read"]
+      }
+    }
+  ]
+}

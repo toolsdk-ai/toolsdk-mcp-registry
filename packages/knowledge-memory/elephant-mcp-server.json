@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "Elephant by Calypso",
+  "packageName": "@calypsohq/elephant-mcp-server",
+  "description": "Chat with your own PDFs, documents and web pages, with every answer citing the file and page it came from. Ask, search passages, open a cited source, and save and organise files and web pages in buckets.",
+  "url": "https://github.com/calypso-so/elephant-mcp",
+  "readme": "https://github.com/calypso-so/elephant-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "CALYPSO_API_KEY": {
+      "description": "Calypso API key (sk-...), created under API Keys in Calypso.",
+      "required": true,
+      "secret": true
+    },
+    "CALYPSO_API_BASE_URL": {
+      "description": "Calypso API base URL.",
+      "required": false,
+      "secret": false,
+      "default": "https://api.calypso.so/v1"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "Sprout: AI Finance & Cash Flow",
+  "packageName": "@toolsdk-remote/sprout",
+  "description": "Official hosted MCP server for Sprout by MindCrafters LLC. Read-only tools over the user's own connected US and Canadian bank and card accounts (via Plaid): balances, data health, cash flow, spending by category or merchant, period totals and comparisons, transaction search, recurring charges, and unusual or duplicate charges. update_settings only saves the default reporting period; it cannot move money. Open sign-up with Google, Apple or email; requires Sprout Plus (US$9.99/week or US$99.99/year, 3-day free trial if eligible). Authenticates with OAuth 2.1 (WorkOS AuthKit, Client ID Metadata Documents).",
+  "url": "https://sprout.mindcrafters.group/mcp",
+  "readme": "https://github.com/MindCraftersGroup/sprout-claude-plugin#readme",
+  "runtime": "node",
+  "license": "Proprietary",
+  "author": "MindCrafters LLC",
+  "logo": "https://raw.githubusercontent.com/MindCraftersGroup/sprout-claude-plugin/main/assets/logo.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api-sprout.mindcrafters.group/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["openid", "profile", "email", "offline_access"]
+      }
+    }
+  ]
+}

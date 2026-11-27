@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "World Monitor",
+  "packageName": "@toolsdk-remote/world-monitor",
+  "description": "Real-time global intelligence on conflict, markets, energy, trade, shipping and cyber through World Monitor's hosted MCP server. About 100 read-only tools: world news briefs with sources, country risk briefs, armed conflict events, maritime chokepoints and energy exposure, natural hazards, markets and macro, trade, and cyber. Requires a free World Monitor account via OAuth; some advanced tools need a paid plan.",
+  "url": "https://github.com/koala73/worldmonitor",
+  "readme": "https://www.worldmonitor.app/docs/mcp-overview",
+  "logo": "https://www.worldmonitor.app/favico/android-chrome-512x512.png",
+  "runtime": "node",
+  "license": "AGPL-3.0",
+  "author": "World Monitor",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://worldmonitor.app/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp"]
+      }
+    }
+  ]
+}

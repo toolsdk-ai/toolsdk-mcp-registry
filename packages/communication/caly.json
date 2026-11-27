@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Caly",
+  "packageName": "@toolsdk-remote/caly",
+  "description": "Find open meeting times, book, reschedule and cancel meetings, and read your event types, bookings and schedules in Caly. Official hosted server operated by Devino Solutions; sign in with your Caly account via OAuth.",
+  "url": "https://github.com/DevinoSolutions/mcp-servers/tree/main/caly",
+  "readme": "https://trycaly.com/docs/",
+  "runtime": "node",
+  "logo": "https://raw.githubusercontent.com/DevinoSolutions/mcp-servers/main/caly/assets/logo.png",
+  "author": "Devino Solutions",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.trycaly.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

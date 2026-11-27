@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "TweetAPI MCP",
+  "packageName": "@toolsdk-remote/tweetapi",
+  "description": "Hosted, read-only Twitter data MCP: tweet search, user profiles, followers, lists, communities and Spaces, plus TweetAPI docs tools. Sign in with OAuth.",
+  "url": "https://github.com/tweetapi/tweetapi-mcp",
+  "readme": "https://tweetapi.com/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "TweetAPI",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.tweetapi.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["tweetapi:read", "offline_access"]
+      }
+    }
+  ]
+}

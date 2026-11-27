@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "TableJourney",
+  "packageName": "@toolsdk-remote/tablejourney",
+  "description": "Public remote MCP server for food travel data across 214 cities: editorially verified restaurants, cafes, markets and street food, food festivals with resolved dates, day plans, and bookable food tours. No auth required.",
+  "url": "https://github.com/lewismvaughan/tablejourney-mcp",
+  "readme": "https://github.com/lewismvaughan/tablejourney-mcp/blob/main/llms-install.md",
+  "runtime": "node",
+  "license": "CC0-1.0",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://tablejourney.com/mcp"
+    }
+  ]
+}

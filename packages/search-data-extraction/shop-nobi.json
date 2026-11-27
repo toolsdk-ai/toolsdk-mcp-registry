@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Shop Nobi",
+  "packageName": "@toolsdk-remote/shop-nobi",
+  "description": "Search products across independent online stores and find matching Shop Nobi buying pages. Read-only; no sign-in or API key. Purchases happen on merchant sites. Some qualifying links may earn Nobi a commission; display each supplied commission label.",
+  "url": "https://github.com/Locusive/shop-nobi-claude-plugin",
+  "readme": "https://docs.nobi.ai/shop-nobi-connector",
+  "runtime": "java",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.nobi.ai/v1/shop/mcp"
+    }
+  ]
+}

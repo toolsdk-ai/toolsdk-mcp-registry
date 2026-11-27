@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Government Contract Award Monitor",
+  "packageName": "@mambalabsdev/mcp-public-award-monitor",
+  "description": "MCP server for the Mamba Labs Government Contract Award Monitor actor on Apify. Pick a public award register and a time window, get back the companies that won public work in it.",
+  "url": "https://github.com/mambalabsdev/mcp-public-award-monitor",
+  "readme": "https://github.com/mambalabsdev/mcp-public-award-monitor#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

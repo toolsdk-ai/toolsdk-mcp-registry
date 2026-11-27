@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "DMD Costs legal costs tools",
+  "packageName": "@toolsdk-remote/dmd-costs-tools",
+  "description": "Connects to the hosted DMD Costs MCP endpoint: free, read-only legal costs tools for England and Wales (CPR deadlines, Part 36, fixed costs, court fees, interest), each answer citing the rule it applies.",
+  "url": "https://github.com/Ments123/dmd-costs-mcp",
+  "readme": "https://github.com/Ments123/dmd-costs-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.dmdcosts.co.uk/mcp"
+    }
+  ]
+}

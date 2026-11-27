@@ -1,0 +1,80 @@
+name: Batch Registry PR Review
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Review all open PRs, or merge only the explicitly approved list'
+        type: choice
+        options: [review, merge-approved]
+        default: review
+      approved_prs:
+        description: 'PR numbers authorized for squash merge (space-separated; required for merge)'
+        type: string
+        default: ''
+
+permissions:
+  contents: read
+
+concurrency:
+  group: registry-pr-maintenance
+  cancel-in-progress: false
+
+jobs:
+  review:
+    if: github.ref == 'refs/heads/main' && inputs.mode == 'review'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: read
+      checks: read
+      statuses: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Review all open submissions
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/batch-registry-prs.mjs review
+      - name: Add report to run summary
+        run: cat registry-review/report.md >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: registry-pr-review
+          path: registry-review/
+
+  merge:
+    if: github.ref == 'refs/heads/main' && inputs.mode == 'merge-approved'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      checks: read
+      statuses: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Squash merge explicitly approved PRs
+        env:
+          GH_TOKEN: ${{ github.token }}
+          APPROVED_PRS: ${{ inputs.approved_prs }}
+        run: node scripts/batch-registry-prs.mjs merge --approved "$APPROVED_PRS"
+      - name: Add report to run summary
+        if: always()
+        run: if [[ -f registry-review/report.md ]]; then cat registry-review/report.md >> "$GITHUB_STEP_SUMMARY"; fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: registry-pr-merge-results
+          path: registry-review/
+          if-no-files-found: warn

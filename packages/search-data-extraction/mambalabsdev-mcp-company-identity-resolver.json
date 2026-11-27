@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Company Identity Resolver (B3)",
+  "packageName": "@mambalabsdev/mcp-company-identity-resolver",
+  "description": "MCP server for the Mamba Labs Company Identity Resolver actor on Apify. Resolve any combination of company name, domain, or LinkedIn URL into one canonical identity tuple with per-field and overall confidence scores, returned as flat Clay-ready JSON.",
+  "url": "https://github.com/mambalabsdev/mcp-company-identity-resolver",
+  "readme": "https://github.com/mambalabsdev/mcp-company-identity-resolver#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

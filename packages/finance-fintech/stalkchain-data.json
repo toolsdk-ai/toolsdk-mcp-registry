@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "StalkChain Data",
+  "packageName": "@toolsdk-remote/com-stalkchain-data",
+  "description": "Research tracked crypto trader wallets and performance, token holders, and on-chain trade flow. Sign in with StalkChain through OAuth. Metered tool calls use account credits.",
+  "readme": "https://stalkchain.com/mcp",
+  "author": "StalkChain",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://data.stalkchain.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp"]
+      }
+    }
+  ]
+}

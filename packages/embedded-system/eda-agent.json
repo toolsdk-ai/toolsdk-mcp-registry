@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "eda-agent",
+  "packageName": "eda-agent",
+  "description": "Drives a live Altium Designer session: schematic, PCB and library tools that read and edit the open design, plus KiCad and EasyEDA Pro backends.",
+  "url": "https://github.com/salitronic/eda-agent",
+  "readme": "https://github.com/salitronic/eda-agent#readme",
+  "runtime": "python",
+  "license": "Apache-2.0",
+  "author": "salitronic",
+  "env": {
+    "EDA_AGENT_BACKEND": {
+      "description": "The EDA tool to drive: altium, kicad, easyeda, or both (Altium and KiCad).",
+      "required": false,
+      "default": "altium"
+    },
+    "EDA_AGENT_TOOLSET": {
+      "description": "full lists every tool; minimal lists two meta-tools that reach them all.",
+      "required": false,
+      "default": "full"
+    }
+  }
+}

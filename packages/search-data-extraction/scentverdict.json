@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "ScentVerdict",
+  "packageName": "@toolsdk-remote/scentverdict",
+  "description": "Fragrance verdicts, similarity scores, scent profiles, drydowns and local prices for a perfume catalogue. Six read-only tools; free, no authentication.",
+  "readme": "https://scentverdict.com/connect",
+  "runtime": "node",
+  "author": "ScentVerdict",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://scentverdict.com/mcp"
+    }
+  ]
+}

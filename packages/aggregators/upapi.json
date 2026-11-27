@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "upAPI",
+  "packageName": "@toolsdk-remote/upapi",
+  "description": "Call a catalog of ready-to-use APIs through one upAPI account and key, without signing up for each upstream service. Official hosted server operated by Devino Solutions; sign in with your upAPI account via OAuth.",
+  "url": "https://github.com/DevinoSolutions/mcp-servers/tree/main/upapi",
+  "readme": "https://upapi.io/docs/mcp",
+  "runtime": "node",
+  "logo": "https://raw.githubusercontent.com/DevinoSolutions/mcp-servers/main/upapi/assets/logo.png",
+  "author": "Devino Solutions",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.upapi.io/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

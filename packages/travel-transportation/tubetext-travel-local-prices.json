@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "TubeText Travel & Local Prices: Flights, Hotels, Gas",
+  "packageName": "@toolsdk-remote/tubetext-travel-local-prices",
+  "description": "Google Flights fares and price calendar, Google Hotels rates by date, US/Canada gas station prices. Hosted on Apify's MCP server; tools are the pay-per-event Apify Actors tubetext/google-flights-scraper, tubetext/google-hotels-scraper, tubetext/gas-prices-scraper. Sign in with an Apify account (OAuth); failed or empty results are not billed.",
+  "url": "https://github.com/LMSlay/tubetext-mcp",
+  "readme": "https://github.com/LMSlay/tubetext-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/LMSlay/tubetext-mcp/main/logo-400.png",
+  "author": "TubeText Labs",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=fetch-actor-details,tubetext/google-flights-scraper,tubetext/google-hotels-scraper,tubetext/gas-prices-scraper",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "DropTheHassle",
+  "packageName": "@toolsdk-remote/dropthehassle",
+  "description": "Your AI puts your site live on a free HTTPS link with no account and returns the live link plus a claim link. Email is optional: after go-live, it asks once if you want a .com (€19/$19 a year, no DNS; goes live after the human pays a link) and an optional mailbox on the domain that sends and receives. Also checks domain availability and prices. Edit files changes one file without a rebuild, and Restore undoes the last Update or Edit files save. Collect leads turns on a contact form on a claimed site; messages land in your mailbox. An optional password locks a claimed site until you're ready; an empty password means public. Hide from Google asks search engines to skip a claimed site; visitors can still open it. No tool spends money; purchases return a payment link for the human. deploy_site and search_domain work without an account or email; account tools need a DropTheHassle token as a Bearer header.",
+  "url": "https://github.com/bosmdavid-gif/dropthehassle-mcp",
+  "readme": "https://github.com/bosmdavid-gif/dropthehassle-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/bosmdavid-gif/dropthehassle-mcp/main/logo.png",
+  "author": "DropTheHassle",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://dropthehassle.com/mcp"
+    }
+  ]
+}

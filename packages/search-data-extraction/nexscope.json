@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Nexscope",
+  "packageName": "@toolsdk-remote/nexscope",
+  "description": "Ecommerce data for sellers and AI agents: 228 tools for product research, keyword and review analysis, sales estimates, competitor tracking, TikTok Shop creators and ads, and AI product video across Amazon, TikTok Shop, Walmart, Temu, Shopee, Ozon, Etsy, eBay, Shopify and 1688. Sign in with OAuth; free trial with 1,000 credits, paid plans from $29/month.",
+  "url": "https://github.com/nexscope-ai/nexscope-ecommerce-api",
+  "readme": "https://www.nexscope.ai/mcp-map?co-from=toolsdk",
+  "logo": "https://raw.githubusercontent.com/nexscope-ai/nexscope-ecommerce-api/main/assets/nexscope-logo-400.png",
+  "runtime": "node",
+  "author": "Nexscope",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.nexscope.ai/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "FlareMail",
+  "packageName": "@toolsdk-remote/flaremail",
+  "description": "Read, search, draft, and send email from a FlareMail inbox on your own domain. Hosted Streamable HTTP with OAuth 2.1 PKCE. Scope: email.",
+  "url": "https://sendwithflare.com",
+  "readme": "https://sendwithflare.com/help/mcp-bots/",
+  "runtime": "node",
+  "license": "Proprietary",
+  "author": "FlareMail",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://flaremail-api.tcrxx0.workers.dev/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["email"]
+      }
+    }
+  ]
+}

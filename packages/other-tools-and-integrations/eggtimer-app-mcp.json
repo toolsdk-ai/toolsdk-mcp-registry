@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Eggtimer.app",
+  "packageName": "@toolsdk-remote/app-eggtimer-eggtimer",
+  "description": "Hosted Eggtimer.app MCP server: seven read-only tools that validate input and return shareable browser timer links for countdowns, clock times, Pomodoro/Tabata presets and multi-step recipes. No authentication.",
+  "readme": "https://eggtimer.app/ai.html",
+  "runtime": "node",
+  "logo": "https://eggtimer.app/icons/timer-512.png",
+  "author": "Gotoh Industries LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://eggtimer.app/api/mcp"
+    }
+  ]
+}

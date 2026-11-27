@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "runtime": "node",
+  "env": {},
+  "name": "NodeRings",
+  "packageName": "@toolsdk-remote/noderings",
+  "description": "Search and compare hosting plans, manage virtual machines, deploy one-click apps and manage GeoDNS records on NodeRings.",
+  "readme": "https://docs.noderings.com/docs/client-guides/mcp",
+  "author": "NodeRings",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.noderings.com/mcp",
+      "auth": { "type": "oauth2", "scopes": ["mcp:tools"] }
+    }
+  ]
+}

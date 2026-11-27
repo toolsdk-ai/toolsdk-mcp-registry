@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "AgentDrives",
+  "packageName": "@toolsdk-remote/agentdrives",
+  "description": "Look up whether an AI agent can really use a software product before it picks one. AgentDrives drives SaaS, API, MCP and CLI products with a real agent (sign-up, API key, the core tasks, paying, leaving) and gives each a level from 0 to 5 with the date of the drive and where the agent stopped. Tools find the products for a task, search the directory, read one product's result and agent surfaces, compare products, and list categories, leaders and recent changes. Read-only, no account or key.",
+  "url": "https://agentdrives.com/data#mcp",
+  "readme": "https://agentdrives.com/data#mcp",
+  "runtime": "node",
+  "logo": "https://agentdrives.com/logo.png",
+  "author": "AgentDrives",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://agentdrives.com/api/mcp"
+    }
+  ]
+}

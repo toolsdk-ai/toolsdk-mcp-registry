@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "GymFlexa Gym Management",
+  "packageName": "@toolsdk-remote/gymflexa",
+  "description": "Read gym configuration, opening hours, bookable capacity, service catalogs, aggregate schedules and recorded payment totals through GymFlexa's hosted OAuth connector. Member records, bookings and payment actions are not exposed.",
+  "url": "https://github.com/gymflexa/claude-plugin",
+  "readme": "https://github.com/gymflexa/claude-plugin#readme",
+  "runtime": "node",
+  "author": "GymFlexa LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.gymflexa.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "gymflexa:read"
+        ]
+      }
+    }
+  ]
+}

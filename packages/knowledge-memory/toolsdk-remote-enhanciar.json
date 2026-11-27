@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Enhanciar",
+  "packageName": "@toolsdk-remote/enhanciar",
+  "description": "Official remote MCP server for Enhanciar, a company brain. Answers questions from your Slack, Gmail, Drive, Notion, Jira, Linear, GitHub, Zendesk and Postgres with a link to the source, and can propose a reply or ticket for a person to approve. Needs an Enhanciar API key sent as a Bearer token. Paid plans; bring your own AI key.",
+  "url": "https://github.com/enhanciar/enhanciar-mcp",
+  "readme": "https://github.com/enhanciar/enhanciar-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Enhanciar",
+  "logo": "https://enhanciar.in/icon-512.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://enhanciar.in/enhanciar/mcp/"
+    }
+  ]
+}

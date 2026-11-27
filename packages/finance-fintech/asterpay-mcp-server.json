@@ -1,0 +1,45 @@
+{
+  "type": "mcp-server",
+  "name": "AsterPay MCP Server",
+  "packageName": "@asterpay/mcp-server",
+  "packageVersion": "2.1.0",
+  "description": "Prepaid x402 spending budgets and European merchant discovery, orders, and EUR settlement workflows. Budget tools work without an API key; commerce tools require an AsterPay API key.",
+  "url": "https://github.com/petteri74dev/asterpay-mcp-server",
+  "readme": "https://github.com/petteri74dev/asterpay-mcp-server#readme",
+  "runtime": "node",
+  "license": "Apache-2.0",
+  "env": {
+    "MODE": {
+      "description": "Server mode: seller or buyer. Buyer mode requires a daily or weekly spending limit.",
+      "required": false,
+      "default": "seller"
+    },
+    "ASTERPAY_API_KEY": {
+      "description": "Scoped AsterPay API key for live commerce tools. Not needed for budget tools or mock mode.",
+      "required": false,
+      "secret": true
+    },
+    "ASTERPAY_API_URL": {
+      "description": "Base URL of the AsterPay merchant API.",
+      "required": false,
+      "default": "https://api.asterpay.io"
+    },
+    "ASTERPAY_BUDGET_TOKEN": {
+      "description": "Existing prepaid budget token. Optional; budget tools can activate a token and persist it locally.",
+      "required": false,
+      "secret": true
+    },
+    "MERCHANT_SLUG": {
+      "description": "Merchant identifier for seller-mode commerce tools.",
+      "required": false
+    },
+    "SPENDING_LIMIT_DAILY_EUR": {
+      "description": "Daily spending cap in EUR for buyer mode; at least one daily or weekly limit is required in live buyer mode.",
+      "required": false
+    },
+    "SPENDING_LIMIT_WEEKLY_EUR": {
+      "description": "Weekly spending cap in EUR for buyer mode; at least one daily or weekly limit is required in live buyer mode.",
+      "required": false
+    }
+  }
+}

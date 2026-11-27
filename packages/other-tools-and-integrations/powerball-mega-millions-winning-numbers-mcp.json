@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Powerball Mega Millions Winning Numbers MCP",
+  "packageName": "@toolsdk-remote/powerball-mega-millions-winning-numbers-mcp",
+  "description": "Powerball and Mega Millions winning numbers from NY Gaming Commission open data (data.ny.gov): latest draws, numbers by date, ticket checker with prize tier and amount, hot and cold numbers. Tools: lottery_latest_numbers, lottery_numbers_by_date, lottery_check_ticket, lottery_number_frequency. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/powerball-mega-millions-winning-numbers-mcp",
+  "readme": "https://github.com/theluckystrike/powerball-mega-millions-winning-numbers-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://powerball-mega-millions-winning-numbers-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}

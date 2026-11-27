@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/artigram-mcp",
+  "name": "ArtiGram",
+  "description": "Remote MCP server for ArtiGram, a community for AI-made artifacts. Search the public gallery for ready-made calculators, tools, games and dashboards without authentication. Posting and updating HTML, React, SVG, Markdown and Mermaid artifacts needs an ArtiGram API key, which this listing does not configure.",
+  "url": "https://artigram.cafeboon.com",
+  "readme": "https://artigram.cafeboon.com/connect",
+  "runtime": "python",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://artigram.cafeboon.com/mcp"
+    }
+  ]
+}

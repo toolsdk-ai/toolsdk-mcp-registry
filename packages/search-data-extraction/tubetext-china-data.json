@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "TubeText China Data: Taobao, Bilibili, WeChat, Trending",
+  "packageName": "@toolsdk-remote/tubetext-china-data",
+  "description": "Taobao/Tmall, Bilibili videos + transcripts, WeChat articles, China hot search, suppliers by photo. Hosted on Apify's MCP server; tools are the pay-per-event Apify Actors tubetext/taobao-tmall-scraper, tubetext/bilibili-scraper, tubetext/bilibili-video-transcript, tubetext/china-trending-topics, tubetext/wechat-articles-scraper, tubetext/alibaba-yiwu-image-search. Sign in with an Apify account (OAuth); failed or empty results are not billed.",
+  "url": "https://github.com/LMSlay/tubetext-mcp",
+  "readme": "https://github.com/LMSlay/tubetext-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/LMSlay/tubetext-mcp/main/logo-400.png",
+  "author": "TubeText Labs",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=fetch-actor-details,tubetext/taobao-tmall-scraper,tubetext/bilibili-scraper,tubetext/bilibili-video-transcript,tubetext/china-trending-topics,tubetext/wechat-articles-scraper,tubetext/alibaba-yiwu-image-search",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

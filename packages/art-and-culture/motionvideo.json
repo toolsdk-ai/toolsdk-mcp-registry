@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "MotionVideo",
+  "packageName": "@toolsdk-remote/motionvideo",
+  "description": "Hosted MotionVideo MCP server for the motionvideo.xyz catalog of AI-made motion videos. Search references by keyword, category, model, colour or creator, pull the original prompt behind any entry with the model and settings its creator used, and browse motion tools, agent skills and studios. The catalog tools (search-videos, get-video, search-directory, list-filters) are read-only and work without an account. Optional OAuth 2.1 sign-in with a free motionvideo.xyz account adds bookmarks and featured submissions, and a MotionVideo Pro or Business plan adds copy-ready prompts from the Moves library.",
+  "url": "https://github.com/motionvideohq/motionvideo-mcp",
+  "readme": "https://motionvideo.xyz/docs/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://motionvideo.xyz/brand/motionvideo-app-icon.png",
+  "author": "MotionVideo",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.motionvideo.xyz/mcp"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "johnvc LinkedIn Jobs API",
+  "packageName": "@toolsdk-remote/johnvc-linkedin-jobs",
+  "description": "Public LinkedIn job listings as structured JSON: search by keyword, location, seniority and job type, or fetch job URLs, and get title, company, location, salary, description and apply link. Hosted on Apify's MCP server; the tool is the pay-per-job Apify Actor johnvc/linkedin-jobs-api. Sign in with an Apify account (OAuth).",
+  "url": "https://apify.com/johnvc/linkedin-jobs-api",
+  "readme": "https://apify.com/johnvc/linkedin-jobs-api",
+  "runtime": "node",
+  "logo": "https://apify-image-uploads-prod.s3.us-east-1.amazonaws.com/yhqxg2vZPwtBLHewL-actor-8gL3E4qLSkxxDyeDl-ZdR6lBFbUv-icon.png",
+  "author": "johnvc",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=fetch-actor-details,johnvc/linkedin-jobs-api",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Zeptap",
+  "packageName": "@zeptap/mcp",
+  "description": "Lets AI agents see, tap, swipe and type on a real iPhone connected to a Mac. stdio relay for the Zeptap Mac app, which must be installed and running on macOS (paid app, first hour free).",
+  "url": "https://github.com/Zeptap/mcp",
+  "readme": "https://github.com/Zeptap/mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "ZEPTAP_BIN": {
+      "description": "Path to the Zeptap app binary. Defaults to /Applications/Zeptap.app/Contents/MacOS/Zeptap.",
+      "required": false
+    }
+  }
+}

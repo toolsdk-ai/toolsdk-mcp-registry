@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "OpenUptime",
+  "packageName": "@toolsdk-remote/openuptime",
+  "description": "Manage uptime monitors, incidents and public status pages from MCP clients. Connect to the official hosted OpenUptime endpoint using OAuth. MIT-licensed source is available for self-hosting.",
+  "url": "https://github.com/becoolme/openuptime",
+  "readme": "https://openuptime.app/docs/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "OpenUptime",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://openuptime.app/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

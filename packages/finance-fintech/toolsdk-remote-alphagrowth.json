@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "AlphaGrowth",
+  "packageName": "@toolsdk-remote/alphagrowth",
+  "description": "Free crypto market data for agents: project metrics (TVL, market cap, price, fees, revenue, users), community growth, funding rounds and investors, chains, DeFi yield pools, token unlocks and DAO treasuries. 20 read-only tools, no API key.",
+  "url": "https://alphagrowth.io/mcp-server",
+  "readme": "https://alphagrowth.io/llms.txt",
+  "runtime": "node",
+  "logo": "https://alphagrowth.io/images/android-chrome-384x384.png",
+  "author": "AlphaGrowth",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://alphagrowth.io/mcp"
+    }
+  ]
+}

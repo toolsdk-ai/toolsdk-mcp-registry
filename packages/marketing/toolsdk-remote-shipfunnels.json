@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "ShipFunnels",
+  "packageName": "@toolsdk-remote/shipfunnels",
+  "description": "Official ShipFunnels remote MCP server: AI agents build and launch sales funnels. Create sites and funnels (opt-in, sales, checkout, upsell, thank-you), upload plain HTML/CSS/JS pages, add offers, order bumps, upsells and email sequences, run a launch check and publish, then read funnel analytics, A/B test results, contacts and orders. Sign in with your ShipFunnels account via OAuth (free plan available).",
+  "url": "https://shipfunnels.app/connect",
+  "runtime": "node",
+  "author": "ShipFunnels",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://shipfunnels.app/mcp",
+      "auth": { "type": "oauth2", "scopes": ["mcp"] }
+    }
+  ]
+}

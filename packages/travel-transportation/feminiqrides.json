@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Feminiq Rides",
+  "packageName": "@toolsdk-remote/nl-feminiqrides-booking",
+  "description": "Official hosted MCP server of Feminiq Rides, an Amsterdam chauffeur service with a female driver option: list Schiphol transfers, private tours and cars with prices, get an exact quote and send a ride request that the customer confirms by email. No authentication.",
+  "url": "https://www.feminiqrides.nl/",
+  "readme": "https://www.feminiqrides.nl/llms.txt",
+  "runtime": "node",
+  "logo": "https://www.feminiqrides.nl/assets/apple-touch-icon.png",
+  "author": "Feminiq Rides",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.feminiqrides.nl/mcp"
+    }
+  ]
+}

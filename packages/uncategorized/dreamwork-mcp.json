@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Dreamwork",
+  "packageName": "@dreamworkhq/mcp",
+  "description": "Job search for AI assistants: browse jobs, rank matches, tailor resumes and cover letters, apply, and track applications. Public browsing needs no account; account tools follow your Dreamwork plan.",
+  "url": "https://github.com/dreamworkhq/mcp",
+  "readme": "https://github.com/dreamworkhq/mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "DREAMWORK_API_KEY": {
+      "description": "Dreamwork API key (sk_...) for account tools. Public job browsing works without a key.",
+      "required": false,
+      "secret": true
+    }
+  }
+}

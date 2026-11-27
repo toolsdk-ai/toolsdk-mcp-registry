@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "SocialDataX Xiaohongshu / XHS / RedNote MCP",
+  "packageName": "xiaohongshu-xhs-rednote-mcp",
+  "packageVersion": "0.1.18",
+  "description": "Search Xiaohongshu notes and read note details, comments, replies and creator profiles for content research. This npm package is a local stdio bridge; business tools require a SocialDataX API Key and sufficient credits. Website and API Key: https://socialdatax.com/ai?from=toolsdk",
+  "url": "https://github.com/DevinChen2014/xiaohongshu-xhs-rednote-mcp",
+  "readme": "https://github.com/DevinChen2014/xiaohongshu-xhs-rednote-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "SOCIALDATAX_API_KEY": {
+      "description": "Your SocialDataX API Key for authenticated, credit-billed tool calls. Obtain it at https://socialdatax.com/ai?from=toolsdk",
+      "required": true,
+      "secret": true
+    }
+  }
+}

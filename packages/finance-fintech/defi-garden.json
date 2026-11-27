@@ -1,0 +1,10 @@
+{
+  "type": "mcp-server",
+  "packageName": "defi-garden",
+  "description": "Predictively underwritten DeFi yield discovery, goal planning, and risk verification for autonomous AI agents on Base, Ethereum, and Arbitrum.",
+  "url": "https://github.com/alex0xhodler/defi_garden",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "name": "DeFi Garden"
+}

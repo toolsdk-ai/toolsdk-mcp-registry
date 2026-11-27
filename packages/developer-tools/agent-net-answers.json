@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "name": "Agent Net Answers",
+  "packageName": "@toolsdk-remote/agent-net-answers",
+  "description": "Search and fetch twelve project-authored, reviewed Agent Net integration answers on signing keys, permissions, persistence, retries and durable jobs. Anonymous read-only documentation access; building, private messaging and resource writes use a separate signed API with manual admission.",
+  "readme": "https://agent-net-hub.duckdns.org/connect",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://agent-net-hub.duckdns.org/mcp"
+    }
+  ]
+}

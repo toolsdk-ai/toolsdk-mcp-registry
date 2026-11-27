@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "FameSwap MCP",
+  "packageName": "@toolsdk-remote/fameswap-mcp",
+  "description": "FameSwap MCP helps AI assistants find social media properties for sale. Buy a YouTube channel, buy a TikTok account, or explore other social media accounts on FameSwap with 19 tools for browsing listings, reviewing and sending offers, and managing marketplace messages. Connect through https://app.fameswap.com/mcp using FameSwap account sign-in; account plan limits apply.",
+  "url": "https://app.fameswap.com/page/api-docs#mcp",
+  "readme": "https://app.fameswap.com/page/api-docs#mcp",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.fameswap.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

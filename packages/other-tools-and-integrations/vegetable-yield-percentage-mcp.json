@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Vegetable Yield Percentage MCP",
+  "packageName": "@toolsdk-remote/vegetable-yield-percentage-mcp",
+  "description": "Vegetable and fruit yield percentage, trim waste and how much produce to buy, from USDA refuse data. Tools: get_vegetable_yield, calculate_edible_weight, calculate_amount_to_buy, list_vegetable_yields. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/vegetable-yield-percentage-mcp",
+  "readme": "https://github.com/theluckystrike/vegetable-yield-percentage-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://vegetable-yield-percentage-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}

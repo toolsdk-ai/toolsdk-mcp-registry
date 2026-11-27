@@ -1,0 +1,31 @@
+{
+  "type": "mcp-server",
+  "name": "Neural Draft",
+  "packageName": "@neuraldraft/mcp",
+  "description": "The backend for sites built with AI: CMS, blog, bookings, forms, shop and social, one database per client. Your coding assistant reads the brand, creates pages with SEO meta and registers editable content keys and components; clients edit in a web editor or through Claude.",
+  "url": "https://github.com/vbalagovic/neuraldraft-mcp",
+  "readme": "https://docs.neuraldraft.io/mcp/setup",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Neural Draft",
+  "env": {
+    "NEURALDRAFT_API_KEY": {
+      "description": "Workspace API key (ndsk_live_…) from the Neural Draft admin: Settings → For developers → API keys. Not needed when NEURALDRAFT_API_KEYS is set.",
+      "required": true,
+      "secret": true
+    },
+    "NEURALDRAFT_API_KEYS": {
+      "description": "Several workspaces in one server (agencies): client-a=ndsk_live_…,client-b=ndsk_live_… or a JSON object. Switch with list_workspaces and switch_workspace.",
+      "required": false,
+      "secret": true
+    },
+    "NEURALDRAFT_WORKSPACE": {
+      "description": "Which workspace from NEURALDRAFT_API_KEYS is active at start (default: the first).",
+      "required": false
+    },
+    "NEURALDRAFT_API_URL": {
+      "description": "API base URL override. Defaults to https://api.neuraldraft.io/v1.",
+      "required": false
+    }
+  }
+}

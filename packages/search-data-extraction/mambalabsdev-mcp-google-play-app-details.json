@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Google Play App Details",
+  "packageName": "@mambalabsdev/mcp-google-play-app-details",
+  "description": "MCP server for Google Play App Details: ratings, installs, price, and developer links for Android apps.",
+  "url": "https://github.com/mambalabsdev/mcp-google-play-app-details",
+  "readme": "https://github.com/mambalabsdev/mcp-google-play-app-details#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

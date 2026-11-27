@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Brainattic - Knowledge Base for AI Agents",
+  "packageName": "@toolsdk-remote/brainattic",
+  "description": "Official EU-hosted Brainattic MCP service: hybrid semantic and keyword search, permission-scoped knowledge retrieval, versioned documents, and authorized document creation and updates. Connect using a Brainattic account and OAuth 2.1 with PKCE and dynamic client registration.",
+  "url": "https://brainattic.ai/docs/connect",
+  "readme": "https://brainattic.ai/docs/connect",
+  "runtime": "node",
+  "license": "proprietary",
+  "author": "Finite Software Systems Ltd.",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.brainattic.ai/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

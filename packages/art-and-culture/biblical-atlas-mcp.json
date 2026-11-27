@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Biblical Atlas MCP",
+  "packageName": "biblical-atlas-mcp",
+  "description": "MCP server for the biblical-atlas Bible atlas, with nine read-only tools for people, places, events, reigns, letters, journeys and Bible passages, and links to each record's sources. Names and summaries are in Spanish.",
+  "url": "https://github.com/GeiserX/biblical-atlas-mcp",
+  "runtime": "node",
+  "license": "mit",
+  "env": {
+    "BIBLICAL_ATLAS_DATA_URL": {
+      "description": "URL of the atlas data file (defaults to https://biblical-atlas.geiser.cloud/data.json)",
+      "required": false
+    },
+    "BIBLICAL_ATLAS_DATA_FILE": {
+      "description": "Path to a local copy of data.json; when set, no network is used",
+      "required": false
+    }
+  }
+}

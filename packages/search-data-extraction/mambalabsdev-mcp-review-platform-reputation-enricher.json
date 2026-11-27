@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Review Platform Reputation Enricher",
+  "packageName": "@mambalabsdev/mcp-review-platform-reputation-enricher",
+  "description": "MCP server for the Mamba Labs Trustpilot Reputation Enricher actor on Apify. Resolve a company domain to its Trustpilot rating, review count and claimed status.",
+  "url": "https://github.com/mambalabsdev/mcp-review-platform-reputation-enricher",
+  "readme": "https://github.com/mambalabsdev/mcp-review-platform-reputation-enricher#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Scento Perfume API",
+  "packageName": "@toolsdk-remote/com-scento-perfume-api",
+  "description": "The perfume knowledge connector for AI assistants. Portraits, raw materials, scent pairings and occasion edits from Scento's verified perfume database: 1,400+ designer and niche perfumes and 400+ raw materials. Twelve read-only tools, no key and no account. Tools: perfume-search, perfume-portrait, scent-neighbours, perfume-contrast, note-portrait, material-match, house-portrait, family-map, occasion-edit, wardrobe-composer, perfumery-lexicon, journal-search.",
+  "url": "https://github.com/Scento-com/perfume-mcp-server",
+  "readme": "https://github.com/Scento-com/perfume-mcp-server#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.scento.com/mcp"
+    }
+  ]
+}

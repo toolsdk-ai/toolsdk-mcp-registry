@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "Agentik",
+  "packageName": "@toolsdk-remote/agentik",
+  "description": "Hosted Agentik tool gateway: one MCP connection gives an agent 2,400+ third-party tools from 52 providers. The agent inspects a tool's schema and price before running it; paid calls are charged at the provider's price from a prepaid Agentik balance, with no separate provider keys for supported tools. Sign in with OAuth; public discovery without an account at https://ai.agentik.cc/mcp/public.",
+  "url": "https://www.agentik.cc",
+  "readme": "https://www.agentik.cc/docs/clients",
+  "runtime": "node",
+  "author": "Agentik",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://ai.agentik.cc/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "HandlePilot",
+  "packageName": "@toolsdk-remote/handlepilot",
+  "description": "Instagram content hub for AI agents: research competitors' accounts and posts, break down reels (transcript, scenes, hook, structure, music), save a content plan and voice guide, and write editable carousels and scripts. Hosted Streamable HTTP server with OAuth sign-in; free plan available.",
+  "url": "https://github.com/Handlepilot/instagram-mcp",
+  "readme": "https://handlepilot.com/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://handlepilot.com/images/logo-512.png",
+  "author": "HandlePilot",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.handlepilot.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp", "offline_access"]
+      }
+    }
+  ]
+}

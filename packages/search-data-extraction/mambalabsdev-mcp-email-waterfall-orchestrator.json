@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Email Waterfall Orchestrator",
+  "packageName": "@mambalabsdev/mcp-email-waterfall-orchestrator",
+  "description": "MCP server for the Mamba Labs Work Email Waterfall actor on Apify. Give it contacts and your own provider API keys and it finds a work email for each, verifies it, and returns real per-provider spend attribution as flat Clay-ready JSON.",
+  "url": "https://github.com/mambalabsdev/mcp-email-waterfall-orchestrator",
+  "readme": "https://github.com/mambalabsdev/mcp-email-waterfall-orchestrator#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

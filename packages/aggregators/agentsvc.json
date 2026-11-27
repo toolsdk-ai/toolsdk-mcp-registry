@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "agentsvc.io",
+  "packageName": "@toolsdk-remote/agentsvc",
+  "description": "122 pay-per-call tools for AI agents over one Streamable HTTP endpoint: a task agent that runs many tools in one call, speech to text, web scraping and crawling to Markdown, screenshots, invoice extraction, company checks (LEI, VAT, sanctions), token pre-trade checks, scam message and prompt injection detection, IOTA notarization, and page, token and wallet watches with webhooks. No account or API key: tool calls are paid with USDC on Base, Solana, Polygon or Arbitrum via x402 inside tools/call; calls with the example input are free.",
+  "url": "https://github.com/agentsvc/agentsvc",
+  "readme": "https://github.com/agentsvc/agentsvc#readme",
+  "logo": "https://raw.githubusercontent.com/agentsvc/agentsvc/main/logo.png",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://agentsvc.io/mcp"
+    }
+  ]
+}

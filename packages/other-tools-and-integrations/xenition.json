@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Xenition",
+  "packageName": "@toolsdk-remote/xenition",
+  "description": "An AI workspace to create, edit and search documents, slides, spreadsheets, notes, boards, 3D models and forms.",
+  "url": "https://xenition.com",
+  "runtime": "node",
+  "license": "unknown",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.xenition.com/mcp"
+    }
+  ]
+}

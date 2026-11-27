@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Groundsocial",
+  "packageName": "@toolsdk-remote/groundsocial",
+  "description": "Read-only public data from 77 platforms, including Reddit threads and comments, X posts, TikTok, Instagram and YouTube videos with transcripts, LinkedIn pages, Bluesky, Hacker News, Google Search and Amazon, returned in each platform's own JSON.",
+  "url": "https://github.com/shivanshmehendiratta/groundsocial-mcp",
+  "readme": "https://groundsocial.dev/docs/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Groundsocial",
+  "logo": "https://raw.githubusercontent.com/shivanshmehendiratta/groundsocial-mcp/main/assets/logo-400.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.groundsocial.dev/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

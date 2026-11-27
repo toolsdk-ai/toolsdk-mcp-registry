@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "BankBridge",
+  "packageName": "@toolsdk-remote/bankbridge",
+  "description": "Hosted, read-only MCP server for your own US bank, credit card, and brokerage accounts at https://bankbridge.money/api/mcp: balances, transactions, spending summaries, recurring charges, monthly cashflow, and investment holdings, fetched live with nothing stored. OAuth 2.1 (DCR + PKCE) or bearer key. $5/mo per connected bank.",
+  "url": "https://github.com/bankbridge-money/bankbridge-plugin",
+  "readme": "https://bankbridge.money/docs?ref=toolsdk",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Great Work LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://bankbridge.money/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Arcmira: YouTube Transcript Search",
+  "packageName": "@toolsdk-remote/arcmira",
+  "description": "YouTube transcript search and monitoring for your AI: exact quotes, full transcripts and speakers.\n\nhttps://arcmira.com",
+  "url": "https://github.com/arcmira/mcp",
+  "readme": "https://arcmira.com/docs",
+  "runtime": "node",
+  "license": "UNLICENSED",
+  "logo": "https://mcp.arcmira.com/icon.png",
+  "author": "Arcmira",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.arcmira.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

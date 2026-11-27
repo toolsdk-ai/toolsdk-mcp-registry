@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "name": "Invokely",
+  "packageName": "@toolsdk-remote/invokely",
+  "description": "Query official statistics through indicators, values, time series, place comparisons, and rankings. Each figure includes its period, unit, source URL, retrieval date, and citation. The no-account Streamable HTTP trial at /mcp/trial is limited to 25 calls per IP per day; authenticated MCP access is available at https://invokely.ai/mcp.",
+  "readme": "https://invokely.ai/docs",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://invokely.ai/mcp/trial"
+    }
+  ]
+}

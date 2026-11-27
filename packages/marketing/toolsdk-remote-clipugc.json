@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "ClipUGC",
+  "packageName": "@toolsdk-remote/clipugc",
+  "description": "Hosted ClipUGC MCP server that makes vertical UGC videos for mobile apps with an AI influencer who keeps the same face. The agent creates a character, generates more looks of that face, makes 5 or 10 second clips, merges the app's screen recording and a hook into the clip, and downloads the finished video. Generation uses ClipUGC credits (free credits to try, paid plans for more). OAuth sign-in. The same tools also run locally with `npx -y clipugc mcp`.",
+  "url": "https://github.com/clipugc/ClipUGC-CLI",
+  "readme": "https://clipugc.com/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/clipugc/ClipUGC-CLI/main/icon.png",
+  "author": "ClipUGC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://clipugc.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

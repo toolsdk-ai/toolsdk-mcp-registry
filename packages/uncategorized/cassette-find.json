@@ -1,0 +1,11 @@
+{
+  "type": "mcp-server",
+  "name": "Cassette Game Finder",
+  "packageName": "@toolsdk-remote/cassette-find",
+  "description": "Search browser games, read game details, find similar games and list genres on Cassette. Read-only; no account or API key required. Vendor-hosted service with no public server source.",
+  "url": "https://cassette.gg/agents/find-a-game.md",
+  "readme": "https://cassette.gg/agents/find-a-game.md",
+  "runtime": "node",
+  "env": {},
+  "remotes": [{ "type": "streamable-http", "url": "https://cassette.gg/mcp" }]
+}

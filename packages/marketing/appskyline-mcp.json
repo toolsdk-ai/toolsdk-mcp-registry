@@ -1,0 +1,24 @@
+{
+  "type": "mcp-server",
+  "name": "AppSkyline App Rankings",
+  "packageName": "@toolsdk-remote/appskyline",
+  "description": "Research app-store listings, tracked keywords, keyword ranks, store metadata and reviews through AppSkyline's hosted OAuth connector. Keyword tracking changes require confirmation.",
+  "url": "https://github.com/appskyline/claude-plugin",
+  "readme": "https://github.com/appskyline/claude-plugin#readme",
+  "runtime": "node",
+  "author": "Waiterio LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.appskyline.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "appskyline:read",
+          "appskyline:write"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Screwtape.ai",
+  "packageName": "@toolsdk-remote/screwtape",
+  "description": "Spend guardrails for AI agents: check payments, track budgets, catch duplicates, and issue signed receipts.",
+  "url": "https://screwtape.ai",
+  "readme": "https://screwtape.ai/llms.txt",
+  "runtime": "node",
+  "author": "Screwtape.ai",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://screwtape.ai/mcp"
+    }
+  ]
+}

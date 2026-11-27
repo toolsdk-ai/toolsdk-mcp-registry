@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "ConnectMachine MCP Server",
+  "packageName": "@toolsdk-remote/connectmachine-mcp",
+  "description": "Connects to the hosted ConnectMachine endpoint for contacts and digital business cards. Creates, finds, merges and tags contacts, organizes them into networks, tracks the events where they were met, manages digital cards, and answers natural-language questions about a network.",
+  "url": "https://github.com/connectmachine/mcp-server",
+  "readme": "https://github.com/connectmachine/mcp-server#readme",
+  "runtime": "python",
+  "license": "MIT",
+  "logo": "https://mcp.connectmachine.ai/logo.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.connectmachine.ai/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

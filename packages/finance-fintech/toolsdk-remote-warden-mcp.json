@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Warden MCP",
+  "packageName": "@toolsdk-remote/warden-mcp",
+  "description": "Remote MCP server for Warden Token Terminal: AI agents find trending tokens, search tokens, list chains, quote swaps and track swap status on Base, BNB Chain, Robinhood Chain and Arc without an account. Wallet and trading tools (get_wallet, agent_permissions, prepare_swap, execute_swap) need a free Warden account via OAuth or an agent key, within limits the user sets.",
+  "url": "https://github.com/warden-protocol/warden-mcp",
+  "readme": "https://github.com/warden-protocol/warden-mcp#readme",
+  "runtime": "node",
+  "author": "Warden Protocol",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://tokens.wardenprotocol.org/mcp"
+    }
+  ]
+}

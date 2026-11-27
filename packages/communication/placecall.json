@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "PlaceCall",
+  "packageName": "@toolsdk-remote/placecall",
+  "description": "VOYGR's hosted MCP server at https://api.voygr.tech/mcp. Its voice agent dials US businesses on the user's behalf (reservations, appointments, inquiries, quotes), gets through phone menus, holds and transfers, can put a question back to the agent mid-call, and returns a structured outcome with transcript and recording. Can also suggest businesses to call. OAuth 2.1 sign-in (DCR + PKCE). Every new API key includes 250 free calls; after that usage is paid per outcome. US numbers only.",
+  "url": "https://github.com/voygr-tech/placecall",
+  "readme": "https://github.com/voygr-tech/placecall#readme",
+  "runtime": "node",
+  "logo": "https://raw.githubusercontent.com/voygr-tech/placecall/main/assets/logo-400.png",
+  "author": "VOYGR",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.voygr.tech/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["calls:place", "places:read", "offline_access"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "name": "OpenBait Lookalike Domains",
+  "packageName": "@toolsdk-remote/openbait-lookalike-domains",
+  "description": "Lists lookalike domains of a brand's website and shows which resolve in DNS and what their front page shows.",
+  "url": "https://openbait.com/tools/typosquat-check",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://openbait.com/api/mcp"
+    }
+  ]
+}

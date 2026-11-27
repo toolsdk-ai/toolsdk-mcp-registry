@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "Twelfth",
+  "packageName": "@toolsdk-remote/twelfth",
+  "description": "Hosted MCP server for Twelfth, a commercial workspace for retail and category teams. Reads the products, suppliers, sales, inventory, pricing, projects, members and actions the signed-in person can access in one workspace. Reads by default; with Allow changes ticked at consent it can also create, complete or snooze the person's own actions and run their own routines. Needs a Twelfth account.",
+  "url": "https://github.com/twelfth-ai/twelfth-mcp",
+  "readme": "https://twelfth.ai/developers/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://twelfth.ai/brand/twelfth-cell-badge-512.png",
+  "author": "Twelfth AI",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.twelfth.ai/mcp",
+      "auth": { "type": "oauth2" }
+    }
+  ]
+}

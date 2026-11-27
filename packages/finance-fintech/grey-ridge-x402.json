@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Grey Ridge x402 Pre-Trade Gate",
+  "packageName": "@toolsdk-remote/grey-ridge-x402",
+  "description": "Pre-trade safety gate for Base tokens: GO/HOLD/BLOCK swap verdicts and full token due-diligence reports (honeypot, transfer tax, liquidity, metadata), plus on-chain and DeFi data. Free preview tools; paid calls settle per request in USDC on Base via x402 ($0.002-$0.01).",
+  "url": "https://github.com/rezearcher/x402-data-api",
+  "readme": "https://github.com/rezearcher/x402-data-api#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://x402-data-api.sigrunner.workers.dev/mcp"
+    }
+  ]
+}

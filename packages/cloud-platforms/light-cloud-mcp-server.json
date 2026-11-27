@@ -1,0 +1,12 @@
+{
+  "type": "mcp-server",
+  "name": "Light Cloud MCP Server",
+  "packageName": "@light-cloud/mcp-server",
+  "description": "Deploys and manages apps on the Light Cloud hosting platform: sign up or sign in by device code, deploy from GitHub or a local folder, manage environments, logs, metrics, rollbacks, Postgres/MySQL databases (schema, SQL, dump/import), custom domains, billing and members.",
+  "url": "https://github.com/light-cloud-com/mcp-server",
+  "readme": "https://github.com/light-cloud-com/mcp-server#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Light Cloud",
+  "env": {}
+}

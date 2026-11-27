@@ -1,0 +1,30 @@
+{
+  "type": "mcp-server",
+  "name": "FlowchartAI MCP",
+  "packageName": "@toolsdk-remote/org-flowchartai-flowchartai",
+  "description": "Create, edit, save and export native flowcharts through the official hosted FlowchartAI MCP server. OAuth and a FlowchartAI account are required. AI generation/editing uses existing allowance or Credits with spending caps. The linked repository contains public connection metadata.",
+  "url": "https://github.com/tanchaowen84/flowchartai-mcp",
+  "readme": "https://flowchartai.org/mcp",
+  "runtime": "node",
+  "logo": "https://flowchartai.org/logo.png",
+  "author": "FlowchartAI",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://flowchartai.org/api/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "account:read",
+          "diagrams:read",
+          "diagrams:write",
+          "diagrams:generate",
+          "diagrams:export",
+          "tasks:read",
+          "offline_access"
+        ]
+      }
+    }
+  ]
+}

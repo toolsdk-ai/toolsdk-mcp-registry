@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "RecordHTML",
+  "packageName": "@toolsdk-remote/recordhtml",
+  "description": "Official hosted server for RecordHTML. Records a public web page, or an HTML document the agent writes (banners, ads, animations, landing pages), to MP4, WebM or GIF in a real browser and returns a signed video link. Each recording reports dropped frames, page errors and failed requests. Tools: record_html, get_recording, estimate_recording, list_recordings, delete_recording. OAuth and a RecordHTML account are required; the free plan includes 10 credits a month.",
+  "url": "https://recordhtml.com/mcp",
+  "readme": "https://recordhtml.com/docs/mcp",
+  "logo": "https://recordhtml.com/logo.png",
+  "author": "RecordHTML",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.recordhtml.com",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

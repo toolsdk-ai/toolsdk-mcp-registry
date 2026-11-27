@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Oh Dear",
+  "packageName": "@toolsdk-remote/ohdear",
+  "description": "Official Oh Dear remote MCP server for website monitoring: uptime, SSL certificates, broken links, DNS, cron jobs and status pages. Sign in with your Oh Dear account via OAuth.",
+  "readme": "https://ohdear.app/docs/tools-and-sdks/mcp-server",
+  "url": "https://ohdear.app/docs/tools-and-sdks/mcp-server",
+  "runtime": "node",
+  "author": "Oh Dear",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://ohdear.app/mcp",
+      "auth": { "type": "oauth2", "scopes": ["mcp:read", "mcp:write"] }
+    }
+  ]
+}

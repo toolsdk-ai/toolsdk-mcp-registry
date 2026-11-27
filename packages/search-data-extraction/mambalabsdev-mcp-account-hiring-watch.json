@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Account Hiring Watch",
+  "packageName": "@mambalabsdev/mcp-account-hiring-watch",
+  "description": "MCP server for Account Hiring Watch. Watch company domains and get only what changed since the last run: new, closed, and reposted job postings read live from 17 job boards, Greenhouse, Lever, Ashby, and Workday among them. Each row has the full job description, a stable posting key, and 30 day hiring velocity. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-account-hiring-watch",
+  "readme": "https://github.com/mambalabsdev/mcp-account-hiring-watch#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Better Design",
+  "packageName": "@toolsdk-remote/better-design",
+  "description": "Hosted Better Design MCP (OAuth) for AI coding agents that build interfaces: finds, creates and installs design systems, serves UI and UX principles and icons, and reviews screens for accessibility, visual design, copy clarity and spacing. Needs a free Better Design account.",
+  "url": "https://github.com/marvkr/better-design",
+  "readme": "https://better-design.com/mcp/install",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Better Design",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://better-design.com/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

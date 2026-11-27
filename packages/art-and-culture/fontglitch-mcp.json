@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "FontGlitch Zalgo Text",
+  "packageName": "@toolsdk-remote/fontglitch-mcp",
+  "description": "Hosted MCP server from fontglitch.com: generates zalgo / glitch text with adjustable marks above, through and below each letter (seedable, with a renderability estimate), and converts text into 17 Unicode font styles such as bold, cursive, gothic, bubble and small caps. Read-only, no auth.",
+  "readme": "https://fontglitch.com",
+  "runtime": "node",
+  "logo": "https://fontglitch.com/apple-touch-icon.png",
+  "author": "fazal-bhinder",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://fontglitch.com/mcp"
+    }
+  ]
+}

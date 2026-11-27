@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "runtime": "node",
+  "env": {},
+  "name": "Sourcey",
+  "packageName": "@toolsdk-remote/sourcey",
+  "description": "Search evidence-backed startup offers and Agent Readiness report cards, inspect source evidence and eligibility, and cite current Sourcey records.",
+  "url": "https://github.com/sourcey/mcp-server",
+  "readme": "https://sourcey.com/mcp",
+  "author": "Sourcey",
+  "logo": "https://sourcey.com/brand/sourcey-mark.png",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.sourcey.com/mcp"
+    }
+  ]
+}

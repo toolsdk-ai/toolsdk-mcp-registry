@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Farside Research",
+  "packageName": "@toolsdk-remote/farside-research",
+  "description": "Cited deep research for agents. Estimate the cost of a run, start research runs, search graded sources and ask grounded questions of a finished report, with every claim linked to the passage it came from. Also lists and runs saved research workflows. Browser OAuth sign-in uses a Farside account; research runs consume account credits.",
+  "url": "https://farsideresearch.com/mcp",
+  "readme": "https://farsideresearch.com/docs/library/connect-mcp-clients",
+  "runtime": "node",
+  "logo": "https://farsideresearch.com/apple-touch-icon.png",
+  "author": "Farside Research",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.farsideresearch.com/mcp/",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["read", "run"]
+      }
+    }
+  ]
+}

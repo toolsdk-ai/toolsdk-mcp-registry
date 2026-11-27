@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "DFX Intelligence",
+  "packageName": "@toolsdk-remote/dfx-intelligence",
+  "description": "Evidence backed private credit and private markets research for AI agents: BDC lenders, private equity, family offices, RIAs, public pension allocators and US commercial real estate. 20 tools, read only over DFX's data; every fact is cited to its SEC EDGAR filing, IAPD / Form ADV report or pension document. Anonymous free tier with no key or signup: list answers name their first 5 rows and count the rest.",
+  "url": "https://github.com/Capital-W-Holdings/dfx-private-credit-mcp",
+  "readme": "https://dfxintel.com/agents",
+  "runtime": "python",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://exchange-production-9123.up.railway.app/mcp/core?c=dir-toolsdk"
+    }
+  ]
+}

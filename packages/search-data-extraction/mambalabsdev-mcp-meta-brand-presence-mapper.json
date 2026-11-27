@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Instagram Facebook Brand Presence Mapper",
+  "packageName": "@mambalabsdev/mcp-meta-brand-presence-mapper",
+  "description": "MCP server for the Mamba Labs Instagram Facebook Brand Presence Mapper actor on Apify. Resolve a company domain to its Instagram, Threads and Facebook accounts with follower and post counts.",
+  "url": "https://github.com/mambalabsdev/mcp-meta-brand-presence-mapper",
+  "readme": "https://github.com/mambalabsdev/mcp-meta-brand-presence-mapper#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

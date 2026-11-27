@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "7702 Sweeper Check",
+  "packageName": "@toolsdk-remote/devx-7702-sweeper-check",
+  "description": "Checks whether an EVM wallet address has an EIP-7702 delegation set (the 'sweeper' pattern used after a key or signature is stolen). Tools: check_7702_delegation (free) and full_report_info (explains the optional paid multi-chain report, 0.01 USDC on Base over x402; the tool itself does not pay). No account or API key.",
+  "url": "https://github.com/devx-agent/7702-sweeper-check",
+  "readme": "https://github.com/devx-agent/7702-sweeper-check#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "devx-agent",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://sweeper-check.nextill-pos.workers.dev/mcp"
+    }
+  ]
+}

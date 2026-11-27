@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Formquote",
+  "packageName": "@toolsdk-remote/formquote",
+  "description": "Compares published prices and licence fit for email verification credits, sound effect packs and font licences from a small hand-checked catalogue; each answer gives the date checked, the source and what is still unconfirmed. Read-only, no sign-in or API key.",
+  "url": "https://github.com/Keith-CY/formquote-mcp",
+  "readme": "https://github.com/Keith-CY/formquote-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Keith-CY",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://formquote-mcp.chen-yu-d1.workers.dev/mcp"
+    }
+  ]
+}

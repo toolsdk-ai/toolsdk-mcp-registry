@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "Shellway",
+  "packageName": "@toolsdk-remote/shellway",
+  "description": "Hosted MCP server that lets ChatGPT, Claude, Claude Code and Cursor run commands and work with files on the user's own Windows, Mac or Linux computer or server. The computer pairs once and makes an outgoing connection only (no open ports or VPN); read-only mode, allowed folders and blocked commands are enforced on the computer, and every action is logged.",
+  "url": "https://getshellway.com",
+  "readme": "https://getshellway.com/connect/",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.getshellway.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp"]
+      }
+    }
+  ]
+}

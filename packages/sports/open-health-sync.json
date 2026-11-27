@@ -1,0 +1,34 @@
+{
+  "type": "mcp-server",
+  "name": "Open Health Sync",
+  "packageName": "ghcr.io/soma-intelligence/open-health-sync",
+  "description": "Read-only access to a self-hosted Open Health Sync instance: samples, sleep, workouts, nutrition and daily summaries normalized from Apple Health, Health Connect, Oura, WHOOP, Withings and other sources.",
+  "url": "https://github.com/soma-intelligence/open-health-sync",
+  "readme": "https://github.com/soma-intelligence/open-health-sync/blob/main/docs/mcp.md",
+  "runtime": "docker",
+  "license": "AGPL-3.0",
+  "author": "soma-intelligence",
+  "packageVersion": "0.1.0",
+  "binArgs": [
+    "run",
+    "--rm",
+    "-i",
+    "-e",
+    "OHS_MCP_URL",
+    "-e",
+    "OHS_MCP_KEY",
+    "ghcr.io/soma-intelligence/open-health-sync:0.1.0",
+    "mcp"
+  ],
+  "env": {
+    "OHS_MCP_URL": {
+      "description": "Base URL of your Open Health Sync instance (https unless loopback).",
+      "required": true
+    },
+    "OHS_MCP_KEY": {
+      "description": "A user token with the read scope (ohs_ut_...) or a tenant API key (ohs_sk_...).",
+      "required": true,
+      "secret": true
+    }
+  }
+}

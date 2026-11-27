@@ -1,0 +1,11 @@
+{
+  "type": "mcp-server",
+  "name": "Somtoday MCP (unofficial)",
+  "packageName": "somtoday-mcp",
+  "description": "Unofficial, read-only access to the Somtoday parent portal (Dutch secondary schools), not affiliated with Somtoday: timetable, homework, grades, assignments, absence, messages and signed documents. Requires a one-time browser sign-in with your own parent account (npx -y somtoday-mcp login) and Node.js 22+.",
+  "url": "https://github.com/barzoj/somtoday-mcp",
+  "readme": "https://github.com/barzoj/somtoday-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {}
+}

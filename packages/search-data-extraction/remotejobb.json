@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Remotejobb",
+  "packageName": "@toolsdk-remote/remotejobb",
+  "description": "Remote MCP server for Remotejobb.se, a Swedish job board. Search open jobs in Sweden by keyword, city, category, company, employment type, salary, listing language and publication date, sort by relevance, date, deadline or salary, see which companies are hiring, and compare up to five full listings with apply links. Read-only, free, no account or API key. Works in English and Swedish. Tools: search_jobs, get_job, list_companies, list_search_filters.",
+  "url": "https://github.com/remotejobb-se/remotejobb-mcp",
+  "readme": "https://remotejobb.se/en/ai",
+  "runtime": "node",
+  "logo": "https://remotejobb.se/icon-512.png",
+  "author": "J. Melker Bengtsson AB",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://remotejobb.se/mcp"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "isGenAI",
+  "packageName": "@toolsdk-remote/isgenai",
+  "description": "Official hosted, read-only server for isGenAI. Checks images, text, code and public URLs for recorded evidence of AI use: C2PA Content Credentials (signature validity and signer trust reported separately), IPTC AI-generated labels, prompts saved by AUTOMATIC1111, ComfyUI, InvokeAI and NovelAI, and AI-use statements in text. It reads records and does not guess from pixels. No authentication.",
+  "url": "https://github.com/vagabond11/isgenai-mcp",
+  "readme": "https://isgenai.com/developers/mcp",
+  "runtime": "node",
+  "logo": "https://isgenai.com/icon-512.png",
+  "author": "isGenAI",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://isgenai.com/mcp"
+    }
+  ]
+}

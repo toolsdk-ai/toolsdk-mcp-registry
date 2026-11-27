@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "Weir",
+  "packageName": "@toolsdk-remote/weir",
+  "description": "Search and read public X (Twitter) and Reddit data: posts, replies, threads, quotes, profiles, followers, Lists, subreddits and comment threads, plus monitors that report new matches. Read-only data tools; 5,000 free credits a month.",
+  "url": "https://github.com/tarun-khatri/weir-mcp",
+  "readme": "https://docs.weirapp.io/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://weirapp.io/icon/512",
+  "author": "Weir",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.weirapp.io/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["read:social", "usage:read", "monitors:read"]
+      }
+    }
+  ]
+}

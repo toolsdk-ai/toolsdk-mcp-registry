@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Birkan Educational Tools",
+  "packageName": "@toolsdk-remote/birkan-educational-tools",
+  "description": "Zero-auth MCP server by Birkan Yavuz: 24 K-12 classroom tools and 9 real curriculum datasets (857 items: Dolch sight words, CVC families, digraphs, Spanish syllables, Turkish-English flashcards). License CC-BY-4.0.",
+  "url": "https://github.com/birkanyavuz/educational-tools",
+  "readme": "https://github.com/birkanyavuz/educational-tools#readme",
+  "runtime": "node",
+  "license": "CC-BY-4.0",
+  "author": "Birkan Yavuz",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://educational-tools.vercel.app/mcp"
+    }
+  ]
+}

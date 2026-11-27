@@ -1,0 +1,28 @@
+{
+  "type": "mcp-server",
+  "name": "Sem",
+  "packageName": "@ataraxy-labs/sem",
+  "packageVersion": "0.27.0",
+  "description": "Local structural code search, caller navigation, impact analysis and entity-level diffs. Requires a source checkout accessible to the server process. Validation tools can execute repository commands; repository selection is not a sandbox.",
+  "url": "https://github.com/Ataraxy-Labs/sem",
+  "readme": "https://github.com/Ataraxy-Labs/sem#readme",
+  "runtime": "node",
+  "license": "MIT OR Apache-2.0",
+  "binArgs": ["mcp"],
+  "env": {
+    "SEM_REPO": {
+      "description": "Absolute path to the trusted source checkout on the machine running the server.",
+      "required": true
+    },
+    "SEM_NO_NETWORK": {
+      "description": "Set to 1 to disable Sem network features for local-only use.",
+      "required": false,
+      "default": "1"
+    },
+    "SEM_NO_TELEMETRY": {
+      "description": "Set to 1 to disable telemetry.",
+      "required": false,
+      "default": "1"
+    }
+  }
+}

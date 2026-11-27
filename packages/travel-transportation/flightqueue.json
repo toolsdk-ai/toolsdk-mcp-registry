@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "FlightQueue",
+  "packageName": "@toolsdk-remote/flightqueue",
+  "description": "Hosted MCP for FlightQueue: live and predicted airport security wait times, forecasts, FAA delays, EES border queues, lounges, terminals and airline baggage policies for 8,000+ airports.",
+  "url": "https://github.com/Flight-Queue/mcp",
+  "readme": "https://flightqueue.com/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "FlightQueue",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.flightqueue.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

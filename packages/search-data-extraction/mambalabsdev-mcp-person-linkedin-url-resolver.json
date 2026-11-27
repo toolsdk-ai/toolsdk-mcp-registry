@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Person Linkedin URL Resolver",
+  "packageName": "@mambalabsdev/mcp-person-linkedin-url-resolver",
+  "description": "MCP server for Person LinkedIn URL Resolver. Find a person's LinkedIn profile URL from their name and company, with a match confidence and a current or former employer flag, read from Google result pages. Never opens LinkedIn. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-person-linkedin-url-resolver",
+  "readme": "https://github.com/mambalabsdev/mcp-person-linkedin-url-resolver#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

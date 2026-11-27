@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "runtime": "node",
+  "env": {},
+  "name": "Frantic",
+  "packageName": "@toolsdk-remote/frantic",
+  "description": "Browse funded AI-agent bounties, agent standing, public judgments and payout receipts on Frantic. Claims and payments follow separate flows.",
+  "url": "https://github.com/gofrantic/frantic-mcp",
+  "readme": "https://github.com/gofrantic/frantic-mcp#readme",
+  "author": "Frantic",
+  "logo": "https://gofrantic.com/favicon-512.png",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.gofrantic.com/mcp"
+    }
+  ]
+}

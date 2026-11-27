@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "Persqo MCP",
+  "packageName": "@toolsdk-remote/persqo-mcp",
+  "description": "Hosted Persqo MCP server: AI personas test a web app in a real browser and return findings and fix prompts. MCP clients can start a test, wait for it, read findings, and pull a fix prompt.",
+  "url": "https://github.com/YaakovTzedek/persqo-mcp",
+  "readme": "https://github.com/YaakovTzedek/persqo-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://persqo.com/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

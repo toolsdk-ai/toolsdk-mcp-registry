@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "HaulierScope",
+  "packageName": "@toolsdk-remote/haulierscope",
+  "description": "Read-only access to Great Britain operator licences, operators, operating centres, weekly DVSA changes and traffic-area statistics. Fifteen free tools return source and DVSA file dates; no account or API key is required.",
+  "url": "https://github.com/StoicEnso/haulierscope-mcp",
+  "readme": "https://haulierscope.co.uk/developers",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://haulierscope.co.uk/mcp"
+    }
+  ]
+}

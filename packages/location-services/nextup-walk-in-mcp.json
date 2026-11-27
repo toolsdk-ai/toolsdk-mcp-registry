@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "NextUp Walk-in",
+  "packageName": "@toolsdk-remote/nextup-walk-in",
+  "description": "Find walk-in businesses (barbershops, salons, restaurants, auto service and more) by city and trade, read a place's live wait, services and open times, and get a link to join the line or book.",
+  "url": "https://nextupwalkin.com/ai",
+  "runtime": "node",
+  "license": "Proprietary",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.nextupwalkin.com/mcp"
+    }
+  ]
+}

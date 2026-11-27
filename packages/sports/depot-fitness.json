@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "depot.fitness",
+  "packageName": "@toolsdk-remote/depot-fitness",
+  "description": "Hosted depot.fitness MCP for strength training: search 101 written-out programs (5/3/1, 5x5, push/pull/legs and more) and the exercise library, read training guides, and, once signed in, save programs to your library and read recent workouts and subscription status. Sign in with OAuth using a free depot.fitness account.",
+  "readme": "https://depot.fitness/connect",
+  "runtime": "node",
+  "logo": "https://depot.fitness/depot-logo-192.png",
+  "author": "depot.fitness",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://nihheurtdimdezbhrdba.supabase.co/functions/v1/mcp",
+      "auth": { "type": "oauth2" }
+    }
+  ]
+}

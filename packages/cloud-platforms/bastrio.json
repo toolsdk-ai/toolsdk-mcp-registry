@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Bastrio",
+  "packageName": "@toolsdk-remote/bastrio",
+  "description": "Manage remote servers, SSH terminals, files, databases and proxies with scoped access and approvals. Hosted service requiring a Bastrio account and an authorized workspace; connect using OAuth.",
+  "url": "https://github.com/cihalqe/bastrio",
+  "readme": "https://raw.githubusercontent.com/cihalqe/bastrio/main/docs/plugin-install.md",
+  "runtime": "python",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://bastr.io/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

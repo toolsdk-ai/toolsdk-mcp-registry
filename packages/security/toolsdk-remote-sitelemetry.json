@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Sitelemetry",
+  "packageName": "@toolsdk-remote/sitelemetry",
+  "description": "Audits websites you own or are authorized to test across security, technical SEO, AI visibility, analytics and tracking integrations, accessibility and performance, and returns prioritized findings with evidence and concrete fixes in nine report languages. OAuth sign-in; a Sitelemetry account is required (new users can create one during sign-in), and the available audits and usage limits follow the account's plan. The Free plan covers security audits only.",
+  "url": "https://github.com/egenil/sitelemetry-mcp",
+  "readme": "https://sitelemetry.com/mcp-guide",
+  "logo": "https://sitelemetry.com/favicon.svg",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://sitelemetry.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["audit"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Local SEO Data",
+  "packageName": "@toolsdk-remote/local-seo-data",
+  "description": "Local SEO data for agents: local pack and Google Maps rankings, Business Profile and review data, citation audits, geogrid rank scans and AI visibility across ChatGPT, Claude, Gemini and Perplexity.",
+  "url": "https://github.com/localseodata/mcp-server",
+  "readme": "https://localseodata.com/docs/mcp-server",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.localseodata.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["openid", "profile", "email", "offline_access"]
+      }
+    }
+  ]
+}

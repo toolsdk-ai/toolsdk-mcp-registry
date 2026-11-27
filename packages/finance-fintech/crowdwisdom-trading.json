@@ -1,0 +1,13 @@
+{
+  "type": "mcp-server",
+  "name": "CrowdWisdom Trading",
+  "packageName": "@toolsdk-remote/crowdwisdom-trading",
+  "description": "Crowd sentiment per ticker for US stocks, ETFs, crypto, futures and FX: a score from -100 (everyone short) to +100 (everyone long) plus the count of distinct pro traders behind it, for today (get_crowd_sentiment_today) or this week (get_crowd_sentiment_week). No sign-in or API key needed.",
+  "url": "https://github.com/CrowdWisdomTradingx402/crowdwisdomtrading-python",
+  "readme": "https://github.com/CrowdWisdomTradingx402/crowdwisdomtrading-python#readme",
+  "runtime": "python",
+  "logo": "https://www.crowdwisdomtrading.com/icon.png",
+  "author": "CrowdWisdomTradingx402",
+  "env": {},
+  "remotes": [{ "type": "streamable-http", "url": "https://api.crowdwisdomtrading.com/mcp" }]
+}

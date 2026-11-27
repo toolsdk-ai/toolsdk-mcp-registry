@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "UK Tenders (Remote)",
+  "packageName": "@toolsdk-remote/uk-tenders",
+  "description": "Connects to the hosted UK Tenders MCP endpoint: live UK public-sector tender and contract notices from Contracts Finder (Open Government Licence) by keyword, region, or CPV code. tenders_discover is a free peek at up to 5 open notices; tenders_pack (full notice list) and tender_score_pack (notices with per-notice fit scores and risk flags) each return a one-time £0.49 Stripe Checkout link.",
+  "url": "https://github.com/donniertf-hub/uk-mcp-fleet",
+  "readme": "https://uk-tenders-mcp.donniertf.workers.dev/tools",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://uk-tenders-mcp.donniertf.workers.dev/mcp"
+    }
+  ]
+}

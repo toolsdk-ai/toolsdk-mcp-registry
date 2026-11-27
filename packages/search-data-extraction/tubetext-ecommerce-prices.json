@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "TubeText E-commerce Prices: Amazon, Taobao, AliExpress, Idealo",
+  "packageName": "@toolsdk-remote/tubetext-ecommerce-prices",
+  "description": "Products, prices and sellers from Amazon, Taobao/Tmall, AliExpress, TikTok Shop and Idealo (EU). Hosted on Apify's MCP server; tools are the pay-per-event Apify Actors tubetext/amazon-product-search-scraper, tubetext/taobao-tmall-scraper, tubetext/aliexpress-search-scraper, tubetext/tiktok-shop-product-scraper, tubetext/idealo-price-scraper. Sign in with an Apify account (OAuth); failed or empty results are not billed.",
+  "url": "https://github.com/LMSlay/tubetext-mcp",
+  "readme": "https://github.com/LMSlay/tubetext-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/LMSlay/tubetext-mcp/main/logo-400.png",
+  "author": "TubeText Labs",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=fetch-actor-details,tubetext/amazon-product-search-scraper,tubetext/taobao-tmall-scraper,tubetext/aliexpress-search-scraper,tubetext/tiktok-shop-product-scraper,tubetext/idealo-price-scraper",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

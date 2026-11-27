@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Elephant by Calypso (hosted)",
+  "packageName": "@toolsdk-remote/elephant-by-calypso",
+  "description": "Hosted Elephant by Calypso MCP server. Chat with your own PDFs, documents and web pages, with every answer citing the file and page it came from. Sign in via OAuth; sign-up is public.",
+  "url": "https://github.com/calypso-so/elephant-mcp",
+  "readme": "https://github.com/calypso-so/elephant-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.calypso.so/elephant/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["elephant:read", "elephant:write", "elephant:organise"]
+      }
+    }
+  ]
+}

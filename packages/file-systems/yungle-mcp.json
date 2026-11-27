@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Yungle",
+  "packageName": "yungle-mcp",
+  "description": "Share files as links from Yungle, an EU-hosted file transfer service, and answer questions about transfers, download receipts, collections and contacts. Emailing recipients needs a key with send permission and a confirmation on each send.",
+  "url": "https://github.com/heindewilde/yungle-clients/tree/main/packages/mcp-server",
+  "readme": "https://github.com/heindewilde/yungle-clients/blob/main/packages/mcp-server/README.md",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Brainpower",
+  "env": {
+    "YUNGLE_API_KEY": {
+      "description": "Yungle API key, created under Settings → API keys at yungle.co. A read-only key is the safe default.",
+      "required": true,
+      "secret": true
+    }
+  }
+}

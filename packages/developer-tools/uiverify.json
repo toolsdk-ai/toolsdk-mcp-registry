@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "UI Verify",
+  "packageName": "@toolsdk-remote/uiverify",
+  "description": "Visual testing for coding agents. The agent sees screenshot diffs of its UI changes and can review baselines over a hosted MCP server. Free for 10,000 snapshots a month, 50,000 for open source.",
+  "url": "https://github.com/uiverify/uiverify",
+  "readme": "https://uiverify.ai/docs/mcp-tools",
+  "runtime": "node",
+  "license": "Proprietary",
+  "author": "UI Verify",
+  "logo": "https://uiverify.ai/brand/avatar.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://uiverify.ai/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["openid", "profile", "email", "offline_access"]
+      }
+    }
+  ]
+}

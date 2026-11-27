@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "ScraperSocial",
+  "packageName": "@toolsdk-remote/scrapersocial",
+  "description": "Hosted MCP server for public social media data: 14 read-only tools for profiles, posts, engagement stats, comments, keyword and hashtag search, reviews, trending and video transcripts across 30+ platforms including TikTok, Instagram, LinkedIn, YouTube, X and Reddit, plus a catalog tool for 200+ REST endpoints. 100 free credits at signup.",
+  "url": "https://scrapersocial.com/mcp/",
+  "readme": "https://scrapersocial.com/mcp/",
+  "runtime": "node",
+  "author": "ScraperSocial",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.scrapersocial.com",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp:access"]
+      }
+    }
+  ]
+}

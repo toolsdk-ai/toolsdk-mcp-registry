@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Flare",
+  "packageName": "@toolsdk-remote/flare",
+  "description": "Official Flare remote MCP server by Spatie: error tracking, performance monitoring and logs for Laravel and PHP apps. Sign in with your Flare account via OAuth.",
+  "readme": "https://flareapp.io/docs/flare/general/our-mcp-server",
+  "url": "https://flareapp.io/docs/flare/general/our-mcp-server",
+  "runtime": "node",
+  "author": "Spatie",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://flareapp.io/mcp",
+      "auth": { "type": "oauth2", "scopes": ["mcp:use"] }
+    }
+  ]
+}

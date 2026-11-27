@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Destava Job Search",
+  "packageName": "@toolsdk-remote/destava",
+  "description": "Search current job postings from companies' own career sites, check whether a posting is still open, and set up a daily search. Hosted, free, no account or authentication.",
+  "url": "https://github.com/askdestava/destava-mcp",
+  "readme": "https://destava.com/mcp/docs",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://destava.com/mcp"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Relaticle",
+  "packageName": "@toolsdk-remote/relaticle",
+  "description": "Open-source CRM your AI agents can read and update: companies, people, opportunities, tasks, notes and custom fields. Sign-in uses OAuth 2.1.",
+  "url": "https://github.com/relaticle/relaticle",
+  "readme": "https://relaticle.com/developers/mcp",
+  "runtime": "node",
+  "license": "AGPL-3.0",
+  "author": "Relaticle",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.relaticle.com",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

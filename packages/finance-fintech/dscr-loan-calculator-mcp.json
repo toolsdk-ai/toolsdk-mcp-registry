@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "DSCR Loan Calculator MCP",
+  "packageName": "@toolsdk-remote/dscr-loan-calculator-mcp",
+  "description": "DSCR loan calculator for rental property: DSCR, lender tiers, max loan, rent needed, amortization. Tools: calculate_dscr, max_loan_for_target_dscr, rent_needed_for_target_dscr, compare_scenarios, amortization_summary. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/dscr-loan-calculator-mcp",
+  "readme": "https://github.com/theluckystrike/dscr-loan-calculator-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://dscr-loan-calculator-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}

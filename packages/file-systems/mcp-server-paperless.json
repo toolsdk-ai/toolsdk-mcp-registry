@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "mcp-server-paperless",
+  "packageName": "mcp-server-paperless",
+  "description": "Finds, reads, files, uploads and organises documents in a paperless-ngx 3.x archive by name instead of id, and runs saved views. 19 tools by default, 87 in 13 opt-in toolsets, read-only mode, and confirmation before anything final.",
+  "url": "https://github.com/gardenbaum/mcp-server-paperless",
+  "readme": "https://github.com/gardenbaum/mcp-server-paperless#readme",
+  "runtime": "python",
+  "license": "MIT",
+  "env": {
+    "PAPERLESS_URL": {
+      "description": "Base URL of the paperless-ngx instance.",
+      "required": true
+    },
+    "PAPERLESS_TOKEN": {
+      "description": "Paperless API token.",
+      "required": true,
+      "secret": true
+    }
+  }
+}

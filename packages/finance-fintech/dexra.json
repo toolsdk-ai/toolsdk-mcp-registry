@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Dexra",
+  "packageName": "@toolsdk-remote/dexra",
+  "description": "Read-only risk verdicts (ok, caution, avoid, with reasons) for Solana launches, tokens, wallets, pools, perp venues and planned swaps. Without credentials the three free tools work (describe_address, service_stats, score_performance) and paid tools answer with an x402 USDC payment request; an API key from dexra.dev (100 free credits a day) is sent as a Bearer header, which this registry cannot configure.",
+  "url": "https://github.com/dexra-dev/mcp",
+  "readme": "https://github.com/dexra-dev/mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.dexra.dev/mcp"
+    }
+  ]
+}

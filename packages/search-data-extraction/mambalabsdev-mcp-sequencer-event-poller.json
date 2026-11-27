@@ -1,0 +1,38 @@
+{
+  "type": "mcp-server",
+  "name": "Sequencer Event Poller",
+  "packageName": "@mambalabsdev/mcp-sequencer-event-poller",
+  "description": "MCP server for Sequencer Event Poller. Replies, bounces, unsubscribes, meetings, and LinkedIn replies from your own Instantly, Smartlead, HeyReach, and lemlist accounts, one row per event. Read only. Runs on Apify.",
+  "url": "https://github.com/mambalabsdev/mcp-sequencer-event-poller",
+  "readme": "https://github.com/mambalabsdev/mcp-sequencer-event-poller#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    },
+    "INSTANTLY_API_KEY": {
+      "description": "Optional. Your own Instantly API v2 key with a read scope",
+      "required": false,
+      "secret": true
+    },
+    "SMARTLEAD_API_KEY": {
+      "description": "Optional. Your own Smartlead API key",
+      "required": false,
+      "secret": true
+    },
+    "HEYREACH_API_KEY": {
+      "description": "Optional. Your own HeyReach API key",
+      "required": false,
+      "secret": true
+    },
+    "LEMLIST_API_KEY": {
+      "description": "Optional. Your own lemlist API key",
+      "required": false,
+      "secret": true
+    }
+  }
+}

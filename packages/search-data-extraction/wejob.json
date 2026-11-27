@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "WeJob",
+  "packageName": "@toolsdk-remote/wejob",
+  "description": "Hosted WeJob MCP: search and read public job offers, training courses and company profiles in Switzerland from WeJob, a Swiss IT job board, with the same filters and sort orders as wejob.ch. Public, read-only data; no authentication required.",
+  "url": "https://github.com/WeJob-IT/WeJob-MCP",
+  "readme": "https://github.com/WeJob-IT/WeJob-MCP#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/WeJob-IT/WeJob-MCP/main/plugins/wejob/assets/icon.png",
+  "author": "WeJob",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.wejob.ch/mcp"
+    }
+  ]
+}

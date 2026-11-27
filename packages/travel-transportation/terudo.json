@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Terudo",
+  "packageName": "@toolsdk-remote/terudo",
+  "description": "Official hosted MCP server for Terudo, travel data eSIMs for travel businesses (agencies, visa services, tour operators, travel apps) that resell them under their own name. Quote a trip, check before selling whether the traveller's phone takes an eSIM and whether their French mobile plan already covers the destination, then create orders, follow eSIMs and top them up; webhooks and monthly statements with a partner's secret key. Auth: Authorization: Bearer header with a Terudo API key; public demo key pk_test_terudo_demo_public (catalogue, quotes and checks, no payments). Official MCP Registry id com.terudo/partner.",
+  "url": "https://terudo.com/developers/api/#mcp",
+  "readme": "https://terudo.com/developers/api/#mcp",
+  "runtime": "node",
+  "author": "Terudo",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://terudo.com/api/partner/v1/mcp/"
+    }
+  ]
+}

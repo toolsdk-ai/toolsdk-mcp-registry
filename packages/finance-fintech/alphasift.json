@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "AlphaSift",
+  "packageName": "alphasift",
+  "packageVersion": "0.3.1",
+  "bin": "alphasift",
+  "binArgs": ["mcp"],
+  "description": "Cross-market stock screening CLI and read-only STDIO MCP server (13 tools, 3 resources) covering CN, US, HK, JP, KR, TW, and IN equities with YAML factor filters, chart-pattern Walk-Forward audits, and daily post-close digests.",
+  "url": "https://github.com/ZhuLinsen/alphasift",
+  "readme": "https://github.com/ZhuLinsen/alphasift/blob/main/docs/ecosystem.md",
+  "author": "ZhuLinsen",
+  "license": "Apache-2.0",
+  "runtime": "python",
+  "env": {
+    "ALPHASIFT_DATA_DIR": {
+      "description": "Optional local data directory for saved screening runs and CN DailyPack cache",
+      "required": false
+    }
+  }
+}

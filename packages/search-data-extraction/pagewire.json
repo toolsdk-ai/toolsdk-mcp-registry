@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "PageWire",
+  "packageName": "@toolsdk-remote/pagewire",
+  "description": "Web pages for AI agents: turn any public URL into clean Markdown with title, description and links, extract page metadata (OpenGraph, Twitter card, JSON-LD, canonical URL, language, icons), or read a page plus up to 4 same-host linked pages. No API key or account: each tool call is paid per call in USDC via x402 (Base or Solana) or MPP (Tempo).",
+  "url": "https://github.com/AgentiLoop/pagewire-mcp",
+  "readme": "https://github.com/AgentiLoop/pagewire-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "PageWire",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://pagewire.dev/mcp"
+    }
+  ]
+}

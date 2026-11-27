@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "runtime": "node",
+  "env": {},
+  "name": "Runx",
+  "packageName": "@toolsdk-remote/runx",
+  "description": "Search the public Runx skill catalog and inspect skill requirements through its read-only hosted MCP. Skill execution is a separate local Runx operation.",
+  "url": "https://github.com/runxhq/runx-plugin",
+  "readme": "https://runx.ai/docs/mcp",
+  "author": "Runx",
+  "license": "Apache-2.0",
+  "logo": "https://runx.ai/assets/logo/runx-symbol-512.png",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.runx.ai/mcp"
+    }
+  ]
+}

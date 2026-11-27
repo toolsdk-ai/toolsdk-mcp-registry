@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Website Phrase Business Model Classifier",
+  "packageName": "@mambalabsdev/mcp-website-phrase-business-model-classifier",
+  "description": "MCP server for Website Phrase and Business Model Classifier. Classify company websites as B2B or B2C, SaaS, online store, agency, manufacturer, wholesaler, distributor, or marketplace, and match your own phrases, with quoted evidence from each site. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-website-phrase-business-model-classifier",
+  "readme": "https://github.com/mambalabsdev/mcp-website-phrase-business-model-classifier#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

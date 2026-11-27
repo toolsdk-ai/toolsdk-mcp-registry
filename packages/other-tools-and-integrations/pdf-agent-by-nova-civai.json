@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "PDF Agent by Nova (CIVAI)",
+  "packageName": "@toolsdk-remote/pdf-agent-by-nova-civai",
+  "description": "I create PDF documents from markdown, preview, then generate a downloadable file",
+  "url": "https://github.com/civai-technologies/pdf-agent-mcp-by-nova-civai",
+  "readme": "https://github.com/civai-technologies/pdf-agent-mcp-by-nova-civai#readme",
+  "runtime": "python",
+  "license": "MIT",
+  "author": "CIVAI TECHNOLOGIES",
+  "logo": "https://nova.civai.co/catalog-icons/PDFIcon.svg",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://nova.civai.co/mcp/agents/pdf-agent",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["openid", "email", "mcp:access"]
+      }
+    }
+  ]
+}

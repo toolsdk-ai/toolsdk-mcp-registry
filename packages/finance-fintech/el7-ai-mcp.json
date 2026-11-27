@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "EL7.AI",
+  "packageName": "@toolsdk-remote/el7-ai-mcp",
+  "description": "Financial market intelligence for your AI: markets news, economic calendar, 8 central banks, COT positioning, stocks, earnings, gold and oil, with sources and dates. 85 read-only tools; English first with full Arabic support. Full access requires an EL7 paid membership; free accounts get the EL7 Wire.",
+  "url": "https://github.com/walidelhelw/el7-mcp",
+  "readme": "https://el7.ai/en/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "EL7.AI",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.el7.ai/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

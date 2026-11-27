@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Silver Price Per Gram MCP",
+  "packageName": "@toolsdk-remote/silver-price-per-gram-mcp",
+  "description": "Live silver price per gram by fineness and currency, junk silver coin value, gold silver ratio. Tools: get_silver_price_per_gram, calculate_silver_value, calculate_junk_silver_value, get_gold_silver_ratio. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/silver-price-per-gram-mcp",
+  "readme": "https://github.com/theluckystrike/silver-price-per-gram-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://silver-price-per-gram-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}

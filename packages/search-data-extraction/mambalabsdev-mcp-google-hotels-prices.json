@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Google Hotels Prices",
+  "packageName": "@mambalabsdev/mcp-google-hotels-prices",
+  "description": "MCP server for Google Hotels Prices: hotel prices by destination and dates from Google Hotels.",
+  "url": "https://github.com/mambalabsdev/mcp-google-hotels-prices",
+  "readme": "https://github.com/mambalabsdev/mcp-google-hotels-prices#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

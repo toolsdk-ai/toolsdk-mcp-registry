@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Company Facts",
+  "packageName": "@toolsdk-remote/company-facts",
+  "description": "Hosted MCP server for company data read from official sources, every record linked to its source. new_businesses: newly formed businesses from the New York, Colorado, Oregon, Connecticut and Pennsylvania Secretary of State registers, with a website attached only when its own pages show the exact legal name and the register's city, state or ZIP. company_search: filter tracked companies by state, city, technology on their site, published contacts and hiring. company_lookup: one company from its domain (DNS and email provider, tech stack, hiring, register entry or SEC figures). Also company registers (UK, Norway, France, Finland, Czechia, Slovakia, Ireland, Australia, GLEIF), EU VAT, SEC financials, federal contracts, and open jobs read from Greenhouse, Ashby, Lever and Workable boards. 20 read-only tools, no auth: 10 free calls a day, then pay per call (x402) or a prepaid key.",
+  "url": "https://github.com/groundtruthtools/ats-jobs-mcp",
+  "readme": "https://companyfacts.dev/llms.txt",
+  "runtime": "python",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/groundtruthtools/ats-jobs-mcp/main/assets/logo-400.png",
+  "author": "groundtruthtools",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://companyfacts.dev/mcp"
+    }
+  ]
+}

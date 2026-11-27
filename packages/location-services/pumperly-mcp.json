@@ -2,7 +2,7 @@
   "type": "mcp-server",
   "name": "Pumperly MCP",
   "packageName": "pumperly-mcp",
-  "description": "MCP server for Pumperly, enabling LLMs to query real-time fuel prices, find nearby stations, plan routes, and geocode locations across Spain.",
+  "description": "MCP server for Pumperly, enabling LLMs to query fuel prices, find nearby stations, plan routes, and geocode locations.",
   "url": "https://github.com/GeiserX/pumperly-mcp",
   "runtime": "node",
   "license": "gpl-3.0",

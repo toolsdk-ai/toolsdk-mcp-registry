@@ -1,0 +1,30 @@
+{
+  "type": "mcp-server",
+  "name": "CloudGPU MCP",
+  "packageName": "cloudgpu-mcp",
+  "description": "Compute infrastructure for AI agents. The agent finds GPUs, templates and open models on cloudgpu.app, gets a server quote, runs one-shot GPU jobs or interactive instances within spend, time and idle limits CloudGPU enforces, saves results and Workspaces, and destroys the GPU when done. Without an API key, connect_account returns a link: the user signs in once, approves a budget, and the agent gets its own key with a spending limit and expiry. CLOUDGPU_READ_ONLY=1 registers only the look-up tools.",
+  "url": "https://github.com/cloudgpu-app/cloudgpu-mcp",
+  "readme": "https://cloudgpu.app/docs/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "CloudGPU",
+  "env": {
+    "CLOUDGPU_API_KEY": {
+      "description": "API key from https://cloudgpu.app/api. Optional: without it, the agent can get its own budget-limited key through connect_account.",
+      "required": false,
+      "secret": true
+    },
+    "CLOUDGPU_MAX_SPEND_USD": {
+      "description": "Highest budget in USD the agent may set for one instance.",
+      "required": false
+    },
+    "CLOUDGPU_MAX_HOURS": {
+      "description": "Longest time limit in hours the agent may set for one instance.",
+      "required": false
+    },
+    "CLOUDGPU_READ_ONLY": {
+      "description": "Set to 1 to register only the look-up tools.",
+      "required": false
+    }
+  }
+}

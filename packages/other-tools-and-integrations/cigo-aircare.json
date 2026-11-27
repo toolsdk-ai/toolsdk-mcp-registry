@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Cigo Aircare & Carsafe",
+  "packageName": "@toolsdk-remote/cigo-aircare",
+  "description": "Match Carsafe cabin filters by vehicle and year, prepare domestic Cigo store, Naver and Coupang purchase links, and compare HVAC specifications and measured power. Includes user-confirmed B2B inquiries and replacement-date records, not scheduled reminders. Checkout occurs at external stores; overseas B2C delivery requires consultation. No API key required. See the linked data-handling guidance before submitting personal information.",
+  "url": "https://github.com/cigo240920/cigo-aircare-connector",
+  "readme": "https://github.com/cigo240920/cigo-aircare-connector#readme",
+  "runtime": "python",
+  "author": "cigo240920",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://cigo-mcp-system-wzoy.onrender.com/mcp/?source=toolsdk"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Ybug",
+  "packageName": "@toolsdk-remote/ybug",
+  "description": "Hosted Ybug MCP server (OAuth). Read, filter and triage Ybug website feedback and bug reports, including screenshots, console logs and network requests. Changing status, priority, type, assignee and tags, creating tags and adding internal comments need the Ybug STARTUP plan or higher.",
+  "url": "https://github.com/Ybug-io/mcp-server",
+  "readme": "https://ybug.io/docs/mcp",
+  "logo": "https://ybug.io/images/logo.png",
+  "runtime": "node",
+  "author": "Ybug",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.ybug.io/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["feedback:read", "feedback:write"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Zaptu",
+  "packageName": "@toolsdk-remote/zaptu",
+  "description": "US home-service request intake for AI assistants: send a person's consented contact request (service, ZIP, name, phone) to independent local providers, or get a plumbing call number the person dials themselves. Zaptu does not perform the work. No auth; dry_run validates without saving.",
+  "url": "https://github.com/TommyTap11/zaptu",
+  "readme": "https://github.com/TommyTap11/zaptu#readme",
+  "runtime": "python",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.zaptu.ai/mcp"
+    }
+  ]
+}

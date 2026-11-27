@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "JuzPost",
+  "packageName": "@toolsdk-remote/juzpost-mcp",
+  "description": "Drafts, schedules and publishes social media posts to X, LinkedIn, Instagram, Facebook, TikTok, YouTube, Threads, Bluesky, Pinterest, Tumblr and WordPress, checks each platform's caption and media limits, lists connected accounts and reviews the post queue. Hosted server; MCP access requires a paid JuzPost plan.",
+  "runtime": "node",
+  "url": "https://www.juzpost.com",
+  "readme": "https://registry.modelcontextprotocol.io/v0.1/servers?search=juzpost",
+  "license": "Proprietary",
+  "author": "JuzPost",
+  "logo": "https://cdn.juzpost.com/brand/icon.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.juzpost.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

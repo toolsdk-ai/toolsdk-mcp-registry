@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Car Loan Interest Deduction Calculator MCP",
+  "packageName": "@toolsdk-remote/car-loan-interest-deduction-calculator-mcp",
+  "description": "2025-2028 car loan interest deduction, SALT cap, child tax credit and 2026 tax brackets (IRS). Tools: calculate_car_loan_interest_deduction, calculate_salt_deduction, get_tax_brackets_and_standard_deduction, calculate_child_tax_credit. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/car-loan-interest-deduction-calculator-mcp",
+  "readme": "https://github.com/theluckystrike/car-loan-interest-deduction-calculator-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://car-loan-interest-deduction-calculator-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}

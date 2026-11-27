@@ -1,0 +1,15 @@
+{
+  "type": "mcp-server",
+  "name": "Vedar Kamchatka",
+  "packageName": "@toolsdk-remote/vedar",
+  "description": "Kamchatka (Russia) travel: search tours, accommodation and transfers, build trip plans, send booking requests, and get volcano status, weather and safety info. Hosted, no API key.",
+  "url": "https://github.com/tourhabk-ui/pos",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://vedarai.ru/api/mcp"
+    }
+  ]
+}

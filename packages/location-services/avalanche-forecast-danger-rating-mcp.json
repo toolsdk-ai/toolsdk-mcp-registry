@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Avalanche Forecast Danger Rating MCP",
+  "packageName": "@toolsdk-remote/avalanche-forecast-danger-rating-mcp",
+  "description": "Daily US avalanche danger ratings by zone and elevation, avalanche problems and bottom line summaries from avalanche.org. Tools: avalanche_forecast, avalanche_danger_map, avalanche_centers. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/avalanche-forecast-danger-rating-mcp",
+  "readme": "https://github.com/theluckystrike/avalanche-forecast-danger-rating-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://avalanche-forecast-danger-rating-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}

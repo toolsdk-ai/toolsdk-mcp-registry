@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "SEC EDGAR Filings Search",
+  "packageName": "@mambalabsdev/mcp-sec-edgar-filings-search",
+  "description": "MCP server for SEC EDGAR Filings Search: SEC filings by company, form, date, and full text.",
+  "url": "https://github.com/mambalabsdev/mcp-sec-edgar-filings-search",
+  "readme": "https://github.com/mambalabsdev/mcp-sec-edgar-filings-search#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

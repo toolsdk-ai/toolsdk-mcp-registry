@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "App Store Google Play Review Monitor",
+  "packageName": "@mambalabsdev/mcp-app-store-google-play-review-monitor",
+  "description": "MCP server for App Store and Google Play Review Monitor. App Store and Google Play reviews by country store, newest first, only new ones on a schedule, plus a rating trend row per app. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-app-store-google-play-review-monitor",
+  "readme": "https://github.com/mambalabsdev/mcp-app-store-google-play-review-monitor#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Aeon",
+  "packageName": "@toolsdk-remote/aeon",
+  "description": "Run and manage your Aeon autonomous agent from chat: list and run skills, follow runs and read their output, search the agent's memory, edit its strategy and voice, install skill packs and change settings. Aeon is an open-source autonomous agent that runs skills on a schedule with GitHub Actions in your own repo. Sign in with GitHub (OAuth 2.1) and choose which agent the client may use; writes commit to your own repo and secrets are never readable over MCP.",
+  "url": "https://github.com/aeonfun/aeon",
+  "readme": "https://www.aeon.fun/connect",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://www.aeon.fun/icon.png",
+  "author": "Aaron Elijah Mars",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.aeon.fun/connect/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

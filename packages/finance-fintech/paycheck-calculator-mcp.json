@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Paycheck Calculator MCP",
+  "packageName": "@toolsdk-remote/paycheck-calculator-mcp",
+  "description": "Take-home pay for 2025-2026: IRS brackets, FICA wage base and state income tax for 50 states + DC. Tools: calculate_take_home_pay, compare_states_take_home, salary_to_hourly, hourly_to_salary, get_federal_tax_brackets. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/paycheck-calculator-mcp",
+  "readme": "https://github.com/theluckystrike/paycheck-calculator-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://paycheck-calculator-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}

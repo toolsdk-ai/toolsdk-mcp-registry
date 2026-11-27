@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "AutoShort",
+  "packageName": "mcp-server-autoshorts",
+  "description": "Create faceless AI short videos (script, voiceover, captions, scenes) from a topic, product page or image; track renders, list videos and check credits. Video generation spends AutoShort credits.",
+  "url": "https://www.npmjs.com/package/mcp-server-autoshorts",
+  "readme": "https://autoshort.org/en/developers",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://autoshort.org/logo.png",
+  "author": "AutoShort",
+  "env": {
+    "AUTOSHORT_API_KEY": {
+      "description": "AutoShort API key (sk_live_...) from https://autoshort.org/en/developers",
+      "required": true,
+      "secret": true
+    }
+  }
+}

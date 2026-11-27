@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "XposedOrNot",
+  "packageName": "@toolsdk-remote/xposedornot",
+  "description": "XposedOrNot data breach lookups: check whether an email address appears in known public breaches, read its breach history, list breaches by company domain or breach ID, get breach exposure counts for a domain, index metrics and recent breaches. Read-only, never returns passwords, no API key.",
+  "url": "https://github.com/XposedOrNot/XposedOrNot-API",
+  "readme": "https://xposedornot.com/mcp",
+  "runtime": "python",
+  "license": "MIT",
+  "author": "XposedOrNot",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.xposedornot.com/mcp"
+    }
+  ]
+}

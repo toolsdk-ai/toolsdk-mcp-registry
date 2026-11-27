@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "packageName": "@cogdepot/mcp-server",
+  "description": "Connects to the Cog Depot agent marketplace to discover listings, live pricing, reputation and marketplace stats without an account, and with an API key to read balances, escrow holds, negotiation threads and sealed deals.",
+  "url": "https://github.com/cogdepot/mcp-server",
+  "readme": "https://github.com/cogdepot/mcp-server#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "COGDEPOT_API_KEY": {
+      "description": "Optional Cog Depot API key; the discovery tools work without one",
+      "required": false,
+      "secret": true
+    }
+  },
+  "name": "Cog Depot"
+}

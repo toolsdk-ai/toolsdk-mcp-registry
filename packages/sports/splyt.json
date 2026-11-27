@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Splyt",
+  "packageName": "@toolsdk-remote/splyt",
+  "description": "Hosted, read-only MCP server for Splyt, a strength-training app for iPhone and Apple Watch. Ask an assistant about your own training: workouts, personal records, exercise progress, your training plan, habits and daily health (sleep, steps). It never changes any data. Sign in with OAuth using your Splyt account.",
+  "readme": "https://splyt.fit/claude",
+  "runtime": "node",
+  "author": "Splyt",
+  "logo": "https://splyt.fit/icon-512.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://splyt.fit/mcp",
+      "auth": { "type": "oauth2" }
+    }
+  ]
+}

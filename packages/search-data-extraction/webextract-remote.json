@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "WebExtract (Remote)",
+  "packageName": "@toolsdk-remote/webextract",
+  "description": "Connects to the hosted WebExtract MCP endpoint. page_markdown returns clean Markdown for a public URL; extract_url returns Markdown plus structured JSON (product and price, tables, article metadata). The first 20 calls a day per caller IP need no key; after that the endpoint asks for payment by x402 USDC, or accepts an API key bought with prepaid Stripe credits. Sandbox benchmark on 10 public pages: markdown 38/40, extract 40/40 (https://webextract.dev/benchmark).",
+  "url": "https://github.com/nyx464664816-stack/webextract",
+  "readme": "https://github.com/nyx464664816-stack/webextract#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.webextract.dev/mcp"
+    }
+  ]
+}

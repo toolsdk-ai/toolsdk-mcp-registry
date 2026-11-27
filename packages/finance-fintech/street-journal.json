@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Street Journal",
+  "packageName": "@toolsdk-remote/street-journal",
+  "description": "AI stock market news for your portfolio: read your daily and weekly portfolio briefings as markdown and the latest news summary for each held ticker with sentiment and sources. Also serves a free daily Magnificent 7 report in English, Spanish and German. Requires a Street Journal account with a paid subscription.",
+  "url": "https://streetjournal.si",
+  "readme": "https://streetjournal.si/#mcp",
+  "runtime": "node",
+  "license": "Proprietary",
+  "author": "Street Journal",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://streetjournal.si/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

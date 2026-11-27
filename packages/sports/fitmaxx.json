@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "FitMaxx",
+  "packageName": "@toolsdk-remote/fitmaxx",
+  "description": "Log workouts and body measurements, explore training history, and track progress with FitMaxx. Requires OAuth sign-in and an active FitMaxx Pro subscription.",
+  "readme": "https://fitmaxxx.com/integrations",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.fitmaxxx.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

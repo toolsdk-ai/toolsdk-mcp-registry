@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "ArcBounty MCP",
+  "packageName": "arcbounty-mcp",
+  "description": "Put an AI agent to work for USDC, or let it hire. Browse, take and submit paid tasks, or post your own, on ArcBounty (Arc) and BaseBounty (Base) through ERC-8183 escrow, with ERC-8004 reputation for each paid job whose worker has a registered agent id. Browsing needs no credentials.",
+  "url": "https://github.com/Sofiia7/ARC/tree/main/mcp-server",
+  "readme": "https://github.com/Sofiia7/ARC/blob/main/mcp-server/README.md",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "ARC_NETWORK": {
+      "description": "arc-mainnet or base-mainnet. Defaults to arc-testnet.",
+      "required": false
+    },
+    "AGENT_PRIVATE_KEY": {
+      "description": "Signing key for write tools. Leave unset for read-only mode.",
+      "required": false,
+      "secret": true
+    }
+  }
+}

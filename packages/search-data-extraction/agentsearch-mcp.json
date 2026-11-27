@@ -1,0 +1,35 @@
+{
+  "type": "mcp-server",
+  "name": "AgentSearch",
+  "packageName": "@agentsearchhq/agentsearch-mcp",
+  "description": "Web search, news search, URL-to-Markdown extract, JavaScript page render, screenshot, and search_and_read for AI agents. No wallet: free keyless search (up to 25/day per IP) plus a small extract/render free trial (extract 5/day, render 3/day per IP). With a wallet key, paid calls default to AgentSearch's x402 API on Base (search $0.003, news $0.003, extract $0.002, search_and_read $0.005, render $0.005, screenshot $0.004; cap $0.020); Pocket route is $0.005/call for search, extract, and render.",
+  "url": "https://github.com/agentsearchhq-coder/agentsearch-mcp",
+  "readme": "https://github.com/agentsearchhq-coder/agentsearch-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "AGENTSEARCH_WALLET_PRIVATE_KEY": {
+      "description": "Optional. Private key of a dedicated wallet holding USDC on Base. With it, paid calls default to AgentSearch's x402 API (https://api.agentsearchhq.com). Without it, search is free (up to 25/day per IP) and extract/render use a free trial (5 and 3/day per IP).",
+      "required": false,
+      "secret": true
+    },
+    "AGENTSEARCH_PAYMENT_ROUTE": {
+      "description": "Optional. 'direct' (default) uses AgentSearch's x402 API; 'pocket' uses the Pocket Network route at $0.005 USDC per call.",
+      "required": false,
+      "default": "direct"
+    },
+    "AGENTSEARCH_MAX_TOTAL_ATOMIC": {
+      "description": "Optional. Session spend cap in USDC atomic units. Default 1000000 equals $1.00.",
+      "required": false,
+      "default": "1000000"
+    },
+    "AGENTSEARCH_MODE": {
+      "description": "Optional. Set to 'paid' (with a wallet key) to pay per web search instead of the free tier ($0.003 USDC on the direct route).",
+      "required": false
+    },
+    "AGENTSEARCH_BASE_URL": {
+      "description": "Optional. Base URL of your own self-hosted AgentSearch-compatible API; takes precedence and no payment is made.",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "SpringBrand",
+  "packageName": "@toolsdk-remote/springbrand",
+  "description": "GTM tools for agents: social listening, traffic and SEO research, lead and creator discovery. Five meta tools search capabilities, read their current schemas, execute them, manage third-party connections, and read long-running results.",
+  "url": "https://springbrand.ai",
+  "readme": "https://springbrand.ai",
+  "runtime": "node",
+  "author": "SpringBrand",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://connector.springbrand.ai/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

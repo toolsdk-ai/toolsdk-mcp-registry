@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "UK Companies House Lookup",
+  "packageName": "@mambalabsdev/mcp-uk-companies-house-lookup",
+  "description": "MCP server for UK Companies House Lookup: UK company, officer, and filing data from the public register.",
+  "url": "https://github.com/mambalabsdev/mcp-uk-companies-house-lookup",
+  "readme": "https://github.com/mambalabsdev/mcp-uk-companies-house-lookup#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "runtime": "node",
+  "env": {},
+  "name": "UGT",
+  "packageName": "@toolsdk-remote/ugt",
+  "description": "Get any GitHub project doing your job on your own computer. Find how UGT runs a project, see exactly what a recipe runs, takes and can reach, and get the one line that installs UGT.",
+  "url": "https://github.com/usegeekthing/ugt",
+  "readme": "https://github.com/usegeekthing/ugt#readme",
+  "author": "auscaster",
+  "logo": "https://usegeekthing.com/brand/ugt-icon-512.png",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.usegeekthing.com/mcp"
+    }
+  ]
+}

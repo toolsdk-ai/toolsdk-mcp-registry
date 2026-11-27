@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "AvatarSay MCP Server",
+  "packageName": "avatarsay-mcp",
+  "description": "Roll tabletop RPG/D&D NPCs with SillyTavern Card V2 and Foundry VTT Actor JSON exports, generate stylized fictional character portraits, synthesize MP3 NPC voice barks, and animate lip-synced 960x960 talking videos. Public discovery and roll_rpg_npc work with no API key.",
+  "url": "https://github.com/fourgit/avatarsay-mcp",
+  "readme": "https://github.com/fourgit/avatarsay-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "fourgit",
+  "env": {
+    "AVATARSAY_API_KEY": {
+      "description": "Optional AvatarSay API key (avs_...) required only for portrait, voice-bark, and talking-video generation; omit for public discovery and roll_rpg_npc.",
+      "required": false,
+      "secret": true
+    }
+  }
+}

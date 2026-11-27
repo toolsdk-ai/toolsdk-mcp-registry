@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Aisle",
+  "packageName": "@toolsdk-remote/aisle",
+  "description": "Aisle helps couples search destination wedding venues and suppliers, estimate budgets, plan timelines, and manage wedding details, guests and events. Public planning tools need no account; private tools use OAuth and changes require an Aisle membership.",
+  "url": "https://github.com/Nunya-design/aisle-mcp",
+  "readme": "https://aisle.wedding/mcp",
+  "runtime": "node",
+  "logo": "https://aisle.wedding/icon-512.png",
+  "author": "Aisle",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://aisle.wedding/api/claude/mcp"
+    }
+  ]
+}

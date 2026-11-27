@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "InboxMCP",
+  "packageName": "@toolsdk-remote/inboxmcp",
+  "description": "Hosted MCP for LinkedIn, WhatsApp, Telegram and Instagram inboxes: read conversations, research profiles and send user-approved messages. Requires an InboxMCP account, connected provider accounts and an active trial or paid subscription. The hosted implementation is proprietary; the public repository contains metadata and documentation.",
+  "url": "https://github.com/breakcold/inboxmcp",
+  "readme": "https://inbox-mcp.com/docs",
+  "runtime": "node",
+  "logo": "https://raw.githubusercontent.com/breakcold/inboxmcp/main/assets/logo.png",
+  "author": "Logike SAS (Breakcold)",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://inbox-mcp.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

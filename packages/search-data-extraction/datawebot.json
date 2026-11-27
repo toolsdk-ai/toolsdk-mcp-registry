@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "datawebot",
+  "packageName": "@toolsdk-remote/datawebot",
+  "description": "Official hosted server for datawebot, ecommerce product data for agents. Searches products across online shops worldwide (title, price, shop, rating, reviews, image, link), lists every seller's price for one product with direct shop links, and runs extraction Jobs on Amazon search and product pages (10 countries) and 1,100+ Shopify stores. Tools: discover, search_products, get_product_offers, list_job_blueprints, submit_job, get_job, get_results, run_tool. Sign-in by email over OAuth 2.1 is free; usage is paid from 200 free trial credits.",
+  "url": "https://github.com/datawebot/datawebot-mcp",
+  "readme": "https://www.datawebot.com/docs/agents",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/datawebot/datawebot-mcp/main/assets/logo.png",
+  "author": "datawebot",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.datawebot.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

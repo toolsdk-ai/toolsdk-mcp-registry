@@ -1,0 +1,37 @@
+{
+  "type": "mcp-server",
+  "name": "PFS Free Domains MCP",
+  "packageName": "@toolsdk-remote/pfs-free-domains-mcp",
+  "description": "Connects to the hosted PFS Free Domains endpoint: search and register free second-level domains across seven live public suffixes, manage DNS zones and records, run WHOIS lookups, issue SSL certificates, and use SEUS free hosting, and read and publish SEUS community posts, feeds, media, and comments. Signs in through SEUS OAuth with PKCE.",
+  "url": "https://github.com/PublicFreeSuffix/PublicFreeSuffix",
+  "readme": "https://github.com/PublicFreeSuffix/PublicFreeSuffix/blob/main/mcp/README.md",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://s.eus/api/mcp/pfs",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "domains:read",
+          "domains:write",
+          "dns:read",
+          "dns:write",
+          "ssl:read",
+          "ssl:write",
+          "hosting:read",
+          "hosting:write",
+          "posts:read",
+          "posts:write",
+          "feed:read",
+          "media:read",
+          "media:write",
+          "comments:read",
+          "profile:read"
+        ]
+      }
+    }
+  ]
+}

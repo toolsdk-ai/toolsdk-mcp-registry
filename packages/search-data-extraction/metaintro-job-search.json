@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Metaintro Job Search",
+  "packageName": "@toolsdk-remote/metaintro-job-search",
+  "description": "Search live jobs pulled straight from employer career sites, read postings, and see how employers hire and pay. Free, no sign-in.",
+  "readme": "https://www.metaintro.com/developers/mcp",
+  "runtime": "node",
+  "logo": "https://www.metaintro.com/icon-512.png",
+  "author": "Metaintro",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.metaintro.com/api/mcp/public"
+    }
+  ]
+}

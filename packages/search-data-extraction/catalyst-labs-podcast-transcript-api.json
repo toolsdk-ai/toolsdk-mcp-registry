@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Catalyst Labs Podcast Transcript API",
+  "packageName": "@toolsdk-remote/catalyst-labs-podcast-transcript-api",
+  "description": "Podcast episode transcripts: uses the publisher's own transcript when available, otherwise Whisper, with a budget cap so a run never overspends. Hosted on Apify's MCP server; sign in with an Apify account (OAuth), billed per result.",
+  "url": "https://github.com/catalyst-labs-dev/catalyst-labs-mcp",
+  "readme": "https://github.com/catalyst-labs-dev/catalyst-labs-mcp#readme",
+  "runtime": "node",
+  "logo": "https://raw.githubusercontent.com/catalyst-labs-dev/catalyst-labs-mcp/main/assets/logo-400.png",
+  "author": "Catalyst Labs",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=catalyst-labs/podcast-transcript-api",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

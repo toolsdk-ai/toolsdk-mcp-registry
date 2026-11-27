@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Orizn Visa",
+  "packageName": "@toolsdk-remote/orizn-visa",
+  "description": "Visa and entry requirements for 49,750 passport-destination pairs (199 passports, 250 destinations) in 15 languages. Two tools work without a key; an optional X-API-Key header (free key) unlocks transit rules, destination comparisons and official source URLs.",
+  "url": "https://github.com/MattJeff/orizn-mcp-server",
+  "readme": "https://visa.orizn.app/integrations/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://orizn.app/icon.png",
+  "author": "Orizn",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://visa.orizn.app/mcp"
+    }
+  ]
+}

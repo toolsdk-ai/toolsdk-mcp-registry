@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Watchr",
+  "packageName": "@toolsdk-remote/watchr",
+  "description": "Search competitor signals, insights and reports in a Watchr workspace through the hosted MCP server. Watchr account and OAuth sign-in required.",
+  "url": "https://github.com/getwatchr/watchr-mcp",
+  "readme": "https://github.com/getwatchr/watchr-mcp#readme",
+  "runtime": "node",
+  "license": "Proprietary",
+  "author": "Watchr",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.watchr.ai/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

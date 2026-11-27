@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Legal Entity Resolver",
+  "packageName": "@mambalabsdev/mcp-legal-entity-resolver",
+  "description": "MCP server for the Mamba Labs Legal Entity Resolver actor on Apify. Company domain in, the registered legal entity out: legal name, company number, jurisdiction, status, LEI and VAT number.",
+  "url": "https://github.com/mambalabsdev/mcp-legal-entity-resolver",
+  "readme": "https://github.com/mambalabsdev/mcp-legal-entity-resolver#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

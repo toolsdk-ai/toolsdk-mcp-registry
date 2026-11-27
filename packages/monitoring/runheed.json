@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Runheed",
+  "packageName": "@toolsdk-remote/runheed",
+  "description": "Hosted MCP server at https://runheed.com/api/mcp for production errors: your app reports errors; Claude Code, Cursor or any MCP client reads the stack trace, fixes it and marks it resolved. OAuth 2.1 sign-in; paid, with a 7-day trial.",
+  "url": "https://github.com/getrunheed/runheed-plugin",
+  "readme": "https://runheed.com/mcp-server?ref=toolsdk",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Great Work LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://runheed.com/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

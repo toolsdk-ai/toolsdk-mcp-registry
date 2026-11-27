@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Postbag",
+  "packageName": "@postbag/mcp",
+  "description": "Open-source agent-native form backend: create sandboxes, forms, destinations and routes via MCP tools (one tool per Postbag API operation, plus quickstart and explain).",
+  "url": "https://github.com/faahim/postbag",
+  "readme": "https://github.com/faahim/postbag/tree/main/packages/mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "POSTBAG_API_KEY": {
+      "description": "A Postbag API key (pb_live_… or pb_test_…). Mint one at https://postbag.dev/app or with `postbag login`. Not required for public sandbox create/test.",
+      "required": false,
+      "secret": true
+    },
+    "POSTBAG_API_URL": {
+      "description": "Base URL of the Postbag API. Defaults to https://postbag.dev — set only for self-hosted instances.",
+      "required": false,
+      "default": "https://postbag.dev"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Deposit by Ouroboros Apps",
+  "packageName": "@toolsdk-remote/ouroboros-deposit",
+  "description": "Deposit by Ouroboros Apps (https://ouroborosapps.com). Freelance deposit and payment schedule: approved deposits, payment dates, and client wording; deposit waivers and date changes need approval. Tools: list_schedules, start_schedule, read_schedule, record_deposit, add_later_payment, move_payment_date, waive_deposit, mark_deposit_paid, write_client_script, commit_schedule, suggest_schedule_change, accept_schedule_change. Hosted remote endpoint with OAuth and Dynamic Client Registration; requires an account. Docs: https://ouroborosapps.com/docs/deposit. Published in the Official MCP Registry as io.github.LAHutchins91/deposit.",
+  "url": "https://github.com/LAHutchins91/deposit-mcp",
+  "readme": "https://github.com/LAHutchins91/deposit-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://deposit-continuity2.vercel.app/logo.jpg",
+  "author": "Ouroboros Apps",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://deposit-continuity2.vercel.app/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

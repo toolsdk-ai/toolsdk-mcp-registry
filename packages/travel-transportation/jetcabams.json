@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Jet Cab AMS",
+  "packageName": "@toolsdk-remote/nl-jetcabams-booking",
+  "description": "Official hosted MCP server of Jet Cab AMS, an Amsterdam chauffeur service: list fixed-price Schiphol transfers, private tours and cars with prices, get an exact quote and send a booking request that the customer confirms by email. No authentication.",
+  "url": "https://www.jetcabams.nl/",
+  "readme": "https://www.jetcabams.nl/llms.txt",
+  "runtime": "node",
+  "logo": "https://www.jetcabams.nl/assets/apple-touch-icon.png",
+  "author": "Jet Cab AMS",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.jetcabams.nl/mcp"
+    }
+  ]
+}

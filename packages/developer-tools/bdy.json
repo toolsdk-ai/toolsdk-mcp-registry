@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "Buddy CLI (bdy mcp)",
+  "packageName": "bdy",
+  "description": "Runs Buddy's MCP server locally through the bdy CLI, which proxies stdio to the hosted Buddy MCP endpoint and authenticates with a personal access token. Gives an agent the same 90+ tools as the hosted server: run pipelines and read their logs, browse repositories, branches and commits, and manage projects, deployment targets, environments, sandboxes, artifacts, domains and distributions. The token's region selects the US, EU or Asia endpoint, and tools act with the token owner's permissions.",
+  "url": "https://www.npmjs.com/package/bdy",
+  "readme": "https://buddy.works/docs/ai-agents/mcp#buddy-cli",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Buddy",
+  "binArgs": ["mcp"],
+  "env": {
+    "BUDDY_TOKEN": {
+      "description": "Buddy personal access token used by bdy to call the Buddy API and MCP server.",
+      "required": true,
+      "secret": true
+    },
+    "BUDDY_API_ENDPOINT": {
+      "description": "API URL of a self-hosted Buddy On-Premises installation. Leave unset for Buddy cloud.",
+      "required": false
+    }
+  }
+}

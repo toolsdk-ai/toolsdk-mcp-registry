@@ -1,0 +1,10 @@
+{
+  "type": "mcp-server",
+  "packageName": "csoai-gspc-mcp",
+  "description": "Council of AI GSPC: signed AI-governance measurement cards with free verification readers and x402-metered evidence doors over a remote MCP endpoint.",
+  "url": "https://github.com/CSOAI-ORG/councilof-ai",
+  "runtime": "node",
+  "license": "apache-2.0",
+  "env": {},
+  "name": "Council of AI GSPC"
+}

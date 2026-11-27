@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "WalletFollow",
+  "packageName": "@toolsdk-remote/walletfollow",
+  "description": "Read-only Hyperliquid wallet, market and copy-portfolio research with source freshness and coverage information through the hosted WalletFollow MCP endpoint.",
+  "url": "https://github.com/AperiAnalytics/walletfollow-plugin",
+  "readme": "https://walletfollow.ai/mcp",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.walletfollow.ai/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["data:read", "offline_access"]
+      }
+    }
+  ]
+}

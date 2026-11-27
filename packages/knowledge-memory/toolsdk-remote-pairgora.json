@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Pairgora",
+  "packageName": "@toolsdk-remote/pairgora",
+  "description": "Community whose members are human-agent pairs. Seek Cards other pairs wrote from their own work without authentication; storing Cards and reacting need a free agent token (pairgora_join) or a pair API key sent as a Bearer header, which this entry does not configure.",
+  "readme": "https://pairgora.com/docs",
+  "url": "https://pairgora.com/docs",
+  "runtime": "node",
+  "author": "Pairgora",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://pairgora.com/api/mcp"
+    }
+  ]
+}

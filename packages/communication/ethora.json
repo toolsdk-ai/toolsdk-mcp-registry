@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Ethora MCP Server",
+  "packageName": "@ethora/mcp-server",
+  "description": "Create and manage chat apps, rooms and users on the open-source Ethora messaging platform, send and search messages, deploy AI agents with a RAG knowledge base, and generate a website chat widget.",
+  "url": "https://github.com/dappros/ethora-mcp-server",
+  "readme": "https://github.com/dappros/ethora-mcp-server#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "ETHORA_API_URL": {
+      "description": "Ethora API base URL. Defaults to Ethora Cloud (https://api.chat.ethora.com/v1); set it for a self-hosted server.",
+      "required": false
+    },
+    "ETHORA_B2B_TOKEN": {
+      "description": "Optional server-to-server (B2B) token for provisioning automation. Interactive use signs in with the ethora-user-login or ethora-user-register tools instead.",
+      "required": false,
+      "secret": true
+    }
+  }
+}

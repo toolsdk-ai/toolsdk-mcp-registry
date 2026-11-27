@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Clay to Instantly Smartlead Push",
+  "packageName": "@mambalabsdev/mcp-clay-to-instantly-smartlead-push",
+  "description": "MCP server for the Mamba Labs Sequencer Lead Push actor on Apify. Pushes enriched lead rows into an Instantly or Smartlead campaign with ICP score gating, deduplication and a zero-write dry run.",
+  "url": "https://github.com/mambalabsdev/mcp-clay-to-instantly-smartlead-push",
+  "readme": "https://github.com/mambalabsdev/mcp-clay-to-instantly-smartlead-push#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

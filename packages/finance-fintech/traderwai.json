@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "TraderWAI",
+  "packageName": "@toolsdk-remote/traderwai",
+  "description": "Hosted MCP server that connects AI clients to live charts and the user's own trading account: read charts for 40 symbols (forex, metals, indices, energy, futures, crypto; M1 to monthly), draw analysis on the chart, backtest rule-based strategies on 1-minute history, and place and manage orders with risk-based position sizing and conditional orders on MetaTrader 4/5, cTrader, TradeLocker, Match-Trader, DXtrade (beta), Capital.com (beta), Binance and Bybit. OAuth sign-in; free plan with unlimited charts and analysis and 5 order executions per day, paid plans for more.",
+  "readme": "https://github.com/leonardo-mazzitelli/traderwai-mcp#readme",
+  "url": "https://github.com/leonardo-mazzitelli/traderwai-mcp",
+  "runtime": "node",
+  "license": "Proprietary",
+  "author": "TraderWAI",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.traderwai.com",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

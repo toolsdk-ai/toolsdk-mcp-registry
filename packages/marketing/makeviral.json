@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "MakeViral",
+  "packageName": "@toolsdk-remote/makeviral",
+  "description": "Find the newest viral AI video and photo trend templates (TikTok, Instagram Reels, YouTube Shorts) and make them from the user's own photos, or make any AI image or video from a prompt with Veo, Kling, Seedance, Nano Banana, GPT Image and more. Browsing templates works without sign-in; making videos and photos uses OAuth and MakeViral account credits.",
+  "url": "https://www.makeviral.ai",
+  "readme": "https://www.makeviral.ai/developers",
+  "runtime": "node",
+  "logo": "https://www.makeviral.ai/icons/icon-512.png",
+  "author": "MakeViral",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.makeviral.ai/mcp",
+      "auth": { "type": "oauth2", "scopes": ["templates:run", "offline_access"] }
+    }
+  ]
+}

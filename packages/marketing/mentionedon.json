@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "MentionedOn",
+  "packageName": "@toolsdk-remote/mentionedon",
+  "description": "Review supplied AI-discovery evidence and prioritize visibility improvements.",
+  "url": "https://mentioned-on.com/developers/mcp",
+  "readme": "https://mentioned-on.com/developers/mcp",
+  "runtime": "node",
+  "author": "Soxoa LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mentioned-on.com/mcp"
+    }
+  ]
+}

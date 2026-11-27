@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "runtime": "node",
+  "env": {},
+  "name": "Nitrosend",
+  "packageName": "@toolsdk-remote/nitrosend",
+  "description": "Manage branded email and SMS campaigns, contacts, automation flows, and transactional messages through Nitrosend. Connect with OAuth.",
+  "url": "https://github.com/nitrosend/mcp",
+  "readme": "https://docs.nitrosend.com/mcp",
+  "author": "Nitrosend",
+  "logo": "https://nitrosend.com/assets/nitrosend-mark.svg",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.nitrosend.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

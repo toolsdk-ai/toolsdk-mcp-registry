@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Close Knit",
+  "packageName": "@toolsdk-remote/close-knit",
+  "description": "Evidence about neighbourhoods and homes in London and England from official open data: sale prices (HM Land Registry), rents (ONS), crime (police.uk), schools (Ofsted/DfE), flood risk, noise and commute times on TfL timetables. Every answer carries its sources. 24 read-only tools plus send_feedback; free, no sign-in.",
+  "url": "https://github.com/bmsdave/close-knit-mcp",
+  "readme": "https://getcloseknit.com/agents",
+  "runtime": "python",
+  "license": "MIT",
+  "logo": "https://getcloseknit.com/icon.png",
+  "author": "bmsdave",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://getcloseknit.com/mcp"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Aikount",
+  "packageName": "aikount-mcp",
+  "description": "Official MCP server for Aikount, agent-first accounting for Spanish freelancers (autónomos) and SMEs. Issues sales invoices, ingests expense PDFs by OCR with duplicate detection, lists bank movements and reconciles them, reads the Spanish chart of accounts (PGC), ledger and trial balance, and prepares the quarterly VAT return (Modelo 303), with a generic api_request tool for the rest of the Aikount REST API.",
+  "url": "https://github.com/mutonby/aikount-mcp",
+  "readme": "https://github.com/mutonby/aikount-mcp#readme",
+  "runtime": "python",
+  "license": "MIT",
+  "env": {
+    "AIKOUNT_TOKEN": {
+      "description": "Aikount API key (starts with agl_), generated with the \"Conectar agente\" button in the Aikount web app.",
+      "required": true,
+      "secret": true
+    },
+    "AIKOUNT_API": {
+      "description": "Aikount REST API base URL. Optional; defaults to production.",
+      "required": false,
+      "default": "https://api.aikount.com/api/v1"
+    }
+  }
+}

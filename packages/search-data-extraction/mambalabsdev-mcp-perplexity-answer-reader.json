@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Perplexity Answer Reader",
+  "packageName": "@mambalabsdev/mcp-perplexity-answer-reader",
+  "description": "MCP server for Perplexity Answer Reader. Ask Perplexity on your own API key and get answers with cited sources. Runs on Apify. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-perplexity-answer-reader",
+  "readme": "https://github.com/mambalabsdev/mcp-perplexity-answer-reader#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

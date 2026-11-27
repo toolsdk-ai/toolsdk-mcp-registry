@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Forever In Our Hearts",
+  "packageName": "@toolsdk-remote/forever-in-our-hearts-mcp",
+  "description": "Read-only search of public online memorials, funeral notices and partner funeral homes from Forever In Our Hearts, with links to each page. No authentication.",
+  "url": "https://github.com/Forever-In-Our-Hearts/memorials-mcp-server",
+  "readme": "https://foreverinourhearts.co/mcp",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.foreverinourhearts.co/mcp"
+    }
+  ]
+}

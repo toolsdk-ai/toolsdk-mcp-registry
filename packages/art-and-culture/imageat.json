@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "imageat",
+  "packageName": "@imageat/mcp",
+  "description": "MCP server for AI image generation and editing, video, and 20+ image-edit tools. Requires an imageat account and API key; generations use account credits.",
+  "url": "https://github.com/incendies/imageat-mcp",
+  "readme": "https://github.com/incendies/imageat-mcp/blob/main/README.md",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "IMAGEAT_API_KEY": {
+      "description": "imageat API key (starts with iat_live_), created on the imageat Projects page",
+      "required": true
+    }
+  }
+}

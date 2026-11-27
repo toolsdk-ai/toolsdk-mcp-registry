@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "AdsTurbo",
+  "packageName": "@toolsdk-remote/adsturbo",
+  "description": "AI ad creative tools for ecommerce: clone a reference ad and regenerate it around a product, AI actor and custom persona videos, text/image-to-video, lip sync, video translation, upscaling, watermark removal, and product images and posters. Tool calls require an AdsTurbo account (OAuth sign-in).",
+  "url": "https://adsturbo.ai",
+  "readme": "https://doc.adsturbo.ai",
+  "runtime": "node",
+  "logo": "https://adsturbo.ai/logo.png",
+  "author": "AdsTurbo",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://adsturbo.ai/klian/novartapi/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

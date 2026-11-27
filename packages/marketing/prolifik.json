@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Prolifik",
+  "packageName": "@toolsdk-remote/prolifik",
+  "description": "Hosted Prolifik MCP server. Cut vertical clips with captions from long videos (YouTube, Twitch, Kick or uploads), render branded short-form videos, and schedule posts to TikTok, Instagram Reels, YouTube Shorts and X. Requires a Prolifik account.",
+  "url": "https://github.com/BitMamba24/prolifik-mcp",
+  "readme": "https://getprolifik.com/docs/mcp",
+  "logo": "https://getprolifik.com/assets/brand/icon-512.png",
+  "author": "Prolifik",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.getprolifik.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Vidmoat",
+  "packageName": "@toolsdk-remote/com-vidmoat-vidmoat",
+  "description": "Official remote MCP for Vidmoat, a hosted AI video editor. Agents import footage, edit a real multi-track timeline (captions, colour, music, voice, reframing), preview frames and render MP4s. OAuth or API key; test keys are free, live MCP access needs the Studio plan.",
+  "url": "https://vidmoat.com",
+  "readme": "https://developer.vidmoat.com/developer/docs/mcp",
+  "runtime": "node",
+  "logo": "https://www.vidmoat.com/logo-512.png",
+  "author": "Vidmoat",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.vidmoat.com/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

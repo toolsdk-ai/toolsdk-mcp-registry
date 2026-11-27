@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "MentionsAPI",
+  "packageName": "@toolsdk-remote/mentionsapi",
+  "description": "Hosted MCP server for AI brand visibility: checks whether ChatGPT, Claude, Gemini, Perplexity, Google AI Overviews, AI Mode and Bing Copilot mention a brand, with rank, sentiment, context and cited URLs per mention.",
+  "readme": "https://github.com/mukul-dutt/mentionsapi-mcp#readme",
+  "url": "https://github.com/mukul-dutt/mentionsapi-mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "mukul-dutt",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.mentionsapi.com/mcp",
+      "auth": { "type": "oauth2" }
+    }
+  ]
+}

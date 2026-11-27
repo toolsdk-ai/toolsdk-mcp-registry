@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Pageree",
+  "packageName": "@toolsdk-remote/pageree",
+  "description": "Hosted MCP server for landing pages. The assistant builds a page and saves it as a private preview; nothing goes live until the user approves publishing. Form submissions are delivered to email or a CRM webhook, submission rules hold back spam, pages can run on a custom domain, and per-section visitor analytics let the assistant propose one change at a time. OAuth 2.1 browser sign-in, no API key. Free plan for up to 3 pages with no card; paid plans from $5/month add a custom domain and AI images, each with a 30-day free trial.",
+  "url": "https://github.com/Pageree/mcp-server",
+  "readme": "https://github.com/Pageree/mcp-server#readme",
+  "runtime": "node",
+  "logo": "https://pageree.com/apple-touch-icon.png",
+  "author": "Pageree",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.pageree.com/",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp"]
+      }
+    }
+  ]
+}

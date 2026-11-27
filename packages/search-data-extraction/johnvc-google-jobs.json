@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "johnvc Google Jobs API",
+  "packageName": "@toolsdk-remote/johnvc-google-jobs",
+  "description": "Job listings from Google Jobs by query and location: title, company, location, posted date, salary when shown, apply links and the full description. Hosted on Apify's MCP server; the tool is the Apify Actor johnvc/Google-Jobs-Scraper. Sign in with an Apify account (OAuth).",
+  "url": "https://apify.com/johnvc/Google-Jobs-Scraper",
+  "readme": "https://apify.com/johnvc/Google-Jobs-Scraper",
+  "runtime": "node",
+  "logo": "https://apify-image-uploads-prod.s3.us-east-1.amazonaws.com/yhqxg2vZPwtBLHewL-actor-CkLDY9GAQf6QlP6GP-NYit3nHC1g-google-jobs.png",
+  "author": "johnvc",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=fetch-actor-details,johnvc/Google-Jobs-Scraper",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

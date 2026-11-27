@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Datamagnet",
+  "packageName": "@toolsdk-remote/datamagnet",
+  "description": "Live LinkedIn people, company, post and job data for agents: profile and company lookups, post engagement, funding rounds, ICP people and company search, and standing job-change and engagement signal monitors. Hosted by Datamagnet; OAuth 2.1 sign-in, 10 free credits on signup.",
+  "url": "https://github.com/datamagnet-co/datamagnet-mcp",
+  "readme": "https://www.datamagnet.co/mcp/",
+  "runtime": "python",
+  "logo": "https://www.datamagnet.co/favicon/android-chrome-512x512.png",
+  "author": "Datamagnet",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.datamagnet.co/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "crawlgraph",
+  "packageName": "crawlgraph-mcp",
+  "description": "Common Crawl backlink lookups, competitor gap analysis, and outreach-target discovery. Requires a CrawlGraph API key; gap tools require paid access.",
+  "url": "https://github.com/pucilpet/crawlgraph-mcp",
+  "readme": "https://github.com/pucilpet/crawlgraph-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "CRAWLGRAPH_API_KEY": {
+      "description": "CrawlGraph API key from https://crawlgraph.com/docs/api.",
+      "required": true,
+      "secret": true
+    },
+    "CRAWLGRAPH_BASE_URL": {
+      "description": "CrawlGraph API base URL.",
+      "required": false,
+      "default": "https://crawlgraph.com"
+    }
+  }
+}

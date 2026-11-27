@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "gpu.nz GPU Cloud",
+  "packageName": "@toolsdk-remote/gpu-nz",
+  "description": "Search GPU servers with live prices, estimate VRAM for LLM and image models, and launch, monitor and stop ComfyUI, Ollama or vLLM servers on the gpu.nz GPU cloud, billed by the minute. Browsing tools (GPU models, offers with live prices, VRAM estimates, templates) work without authentication; tools that rent or manage servers need a gpu.nz API key sent as a Bearer token.",
+  "url": "https://github.com/gpunz/gpunz-mcp",
+  "readme": "https://gpu.nz/en/docs/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "gpu.nz",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gpu.nz/mcp"
+    }
+  ]
+}

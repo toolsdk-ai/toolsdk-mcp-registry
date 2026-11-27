@@ -1,0 +1,11 @@
+{
+  "type": "mcp-server",
+  "name": "Aria Icons",
+  "packageName": "aria-icons",
+  "description": "Search 1.4M open-source SVG icons and add them to your project as SVG or React/Vue components.",
+  "url": "https://github.com/LeulAria/Aria-Icons",
+  "readme": "https://github.com/LeulAria/Aria-Icons/blob/main/README.md",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {}
+}

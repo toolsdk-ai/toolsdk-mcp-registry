@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "landmine",
+  "packageName": "landmines",
+  "description": "Finds the open GitHub issues filed against the exact npm and PyPI versions a project pins, checks that each names that version, and returns the bug with the best workaround from the issue thread. Tools: landmine_lookup, landmine_check, landmine_search, landmine_list (the last two read the index that `npx landmines scan` writes).",
+  "url": "https://github.com/devanshranjan10/landmines",
+  "readme": "https://github.com/devanshranjan10/landmines#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "binArgs": ["mcp"],
+  "env": {
+    "GITHUB_TOKEN": {
+      "description": "GitHub token for landmine_lookup (no scopes needed). Without it, the GitHub CLI's login is used.",
+      "required": false,
+      "secret": true
+    }
+  }
+}

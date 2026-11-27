@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Fast GST Refund",
+  "packageName": "@toolsdk-remote/fast-gst-refund",
+  "description": "Eleven tools for Indian service-export GST refund guidance, record validation and Statement 3/Annexure B JSON generation. Guidance and validation are free without an account; downloads require OAuth and paid claim access.",
+  "url": "https://github.com/syllogismos/fast-gst-refund-mcp",
+  "readme": "https://fastgstrefund.com/for-agents/",
+  "runtime": "node",
+  "license": "Proprietary",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://fastgstrefund.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["refund:generate"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "UK Income Tax and Salary MCP",
+  "packageName": "@toolsdk-remote/uk-income-tax-salary-mcp",
+  "description": "UK income tax and take-home pay 2025/26 and 2026/27: Scottish bands, NI, student loans, 60% trap. Tools: calculate_uk_take_home, get_uk_tax_bands, compare_salaries, marginal_rate_at_income. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/uk-income-tax-salary-mcp",
+  "readme": "https://github.com/theluckystrike/uk-income-tax-salary-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://uk-income-tax-salary-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}

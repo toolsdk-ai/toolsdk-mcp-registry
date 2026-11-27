@@ -1,0 +1,33 @@
+{
+  "type": "mcp-server",
+  "name": "Fillo",
+  "packageName": "@usefillo/mcp",
+  "description": "Create and publish forms, read responses, and manage uploads and webhooks through Fillo's MCP server.",
+  "url": "https://github.com/jacobfunch/usefillo",
+  "readme": "https://github.com/jacobfunch/usefillo/tree/main/packages/mcp",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {
+    "FILLO_TOKEN": {
+      "description": "Fillo CLI login token for authenticated operations; optional when a saved CLI login or another supported credential is available.",
+      "required": false,
+      "secret": true
+    },
+    "FILLO_API_KEY": {
+      "description": "Scoped Fillo project API key for private response and management operations; permissions depend on the tool.",
+      "required": false,
+      "secret": true
+    },
+    "FILLO_PK": {
+      "description": "Fillo publishable key for the active project; workspace provisioning can save one automatically.",
+      "required": false,
+      "secret": false
+    },
+    "FILLO_API": {
+      "description": "Origin of the Fillo service.",
+      "required": false,
+      "secret": false,
+      "default": "https://fillo.so"
+    }
+  }
+}

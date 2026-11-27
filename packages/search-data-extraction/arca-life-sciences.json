@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "Arca Life Sciences",
+  "packageName": "@toolsdk-remote/arca-life-sciences",
+  "description": "Official hosted server from Arca. Free, no-key, read-only search of public life-sciences records: ranked PubMed literature with OpenAlex citation counts and open-access filters, FDA drug and device records (labels, approvals, warning letters, Form 483s, 510(k)/PMA, MAUDE), ClinicalTrials.gov, VAERS, CDC data and EU/PMDA device vigilance. Every result cites its source URL.",
+  "url": "https://www.arca.inc/mcp",
+  "readme": "https://www.arca.inc/mcp",
+  "runtime": "node",
+  "license": "Proprietary",
+  "logo": "https://www.arca.inc/apple-icon.png",
+  "author": "Arca",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.arca.inc/api/public/mcp"
+    }
+  ]
+}

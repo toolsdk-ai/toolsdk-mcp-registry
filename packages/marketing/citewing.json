@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "CiteWing",
+  "packageName": "@toolsdk-remote/citewing",
+  "description": "Find AI-cited publisher prospects, review outreach and publisher replies, and draft brand-mention emails. Searches and sending require an app-generated preview and confirmation. Requires a CiteWing account with service access.",
+  "readme": "https://citewing.com/docs/quick-start",
+  "runtime": "node",
+  "author": "Tom Han",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://citewing.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["read", "write", "offline_access"]
+      }
+    }
+  ]
+}

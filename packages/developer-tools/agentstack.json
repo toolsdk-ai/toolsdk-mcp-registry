@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "AgentStack (agentstack.tech)",
+  "packageName": "@toolsdk-remote/agentstack",
+  "description": "Backend platform for AI agents: one agentstack.execute tool runs batched steps over ~668 actions (hosting, storage, auth, payments, CRM, app builder).",
+  "url": "https://github.com/agentstacktech/AgentStack",
+  "readme": "https://agentstack.tech",
+  "logo": "https://agentstack.tech/icon-400.png",
+  "runtime": "node",
+  "author": "AgentStack",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://agentstack.tech/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

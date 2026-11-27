@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "GEN",
+  "packageName": "@toolsdk-remote/gen",
+  "description": "GEN is the creative AI video engineer for ads, cartoons, AI UGC and microdramas. Free video editing and social publishing; AI content uses credits funded by card or x402. OAuth and PAT supported by GEN; this registry connection uses OAuth.",
+  "url": "https://github.com/poweredbyGEN/gen-mcp-server",
+  "readme": "https://gen.pro/docs",
+  "runtime": "python",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.gen.pro",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["gen"]
+      }
+    }
+  ]
+}

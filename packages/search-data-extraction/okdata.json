@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "okdata",
+  "packageName": "@toolsdk-remote/okdata",
+  "description": "Hosted MCP server with read-only public data from 17 social and content platforms, including Douyin, Xiaohongshu (RedNote), WeChat, Kuaishou, Bilibili, Weibo, Zhihu, TikTok, X, YouTube, Instagram and Reddit. find, describe and account are free and work without signing in; call fetches one page of data and is paid per call from $0.0001, with failed calls free; read_more returns the rest of a long result at no charge. Sign in with OAuth 2.1 (dynamic client registration) to use call.",
+  "url": "https://github.com/okdataapi/okdata",
+  "readme": "https://okdata.online/mcp/",
+  "runtime": "node",
+  "logo": "https://okdata.online/logo-512.png",
+  "author": "okdata",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.okdata.online/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["mcp"]
+      }
+    }
+  ]
+}

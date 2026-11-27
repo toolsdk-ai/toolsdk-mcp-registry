@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Context Pill",
+  "packageName": "@toolsdk-remote/context-pill",
+  "description": "Daily feed of AI releases, tools and techniques, each labeled with how it was checked.",
+  "url": "https://github.com/agnostify/context-pill",
+  "readme": "https://github.com/agnostify/context-pill/blob/main/mcp/README.md",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://contextpill.com/mcp"
+    }
+  ]
+}

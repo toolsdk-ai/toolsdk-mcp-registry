@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "SitePatent",
+  "packageName": "@toolsdk-remote/sitepatent",
+  "description": "Hosted read-only MCP server for the SitePatent directory of 280+ startup sites and online tools: search by keyword or category, alternatives to a product, listing profiles and a daily trending leaderboard. No authentication.",
+  "readme": "https://sitepatent.com/mcp",
+  "runtime": "node",
+  "author": "SitePatent",
+  "logo": "https://sitepatent.com/android-icon-192x192.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://sitepatent.com/api/mcp"
+    }
+  ]
+}

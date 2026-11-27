@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Cucutime",
+  "packageName": "@toolsdk-remote/cucutime",
+  "description": "Remote MCP server for personalized kids songs: draft a song for a child's first name and a theme, get Cucutime's name page and free-sample link, and search Cucutime's own kids songs and educational videos (es, pt, en). These three tools need no key and use no AI. The AI tools create_personalized_song and moderate_kids_text are for adult-facing apps only and need a free developer key sent as an Authorization: Bearer header, which this entry does not configure.",
+  "url": "https://github.com/softdevfz/cucutime-mcp",
+  "readme": "https://github.com/softdevfz/cucutime-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Cucutime",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://cucutime.org/mcp"
+    }
+  ]
+}

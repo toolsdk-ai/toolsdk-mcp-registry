@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "Leads Discovery Agent by Nova (CIVAI)",
+  "packageName": "@toolsdk-remote/leads-discovery-agent-by-nova-civai",
+  "description": "I discover new leads from WhatsApp/Telegram groups, Instagram post commenters, and X thread replier\u2026",
+  "url": "https://github.com/civai-technologies/leads-discovery-agent-mcp-by-nova-civai",
+  "readme": "https://github.com/civai-technologies/leads-discovery-agent-mcp-by-nova-civai#readme",
+  "runtime": "python",
+  "license": "MIT",
+  "author": "CIVAI TECHNOLOGIES",
+  "logo": "https://nova.civai.co/catalog-icons/NoteIcon.svg",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://nova.civai.co/mcp/agents/leads-discovery-agent",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["openid", "email", "mcp:access"]
+      }
+    }
+  ]
+}

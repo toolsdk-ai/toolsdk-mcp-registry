@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "OffWeGoSIM",
+  "packageName": "@toolsdk-remote/offwegosim",
+  "description": "Search travel eSIM plans by destination, data allowance, validity and budget, compare current USD prices, and get checkout links. No API key is required; the server does not create orders or take payments.",
+  "readme": "https://offwegosim.com/developers/mcp",
+  "runtime": "node",
+  "author": "Upcraft LLC",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://offwegosim.com/mcp"
+    }
+  ]
+}

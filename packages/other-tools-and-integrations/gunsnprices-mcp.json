@@ -1,0 +1,13 @@
+{
+  "type": "mcp-server",
+  "name": "GunsNPrices",
+  "packageName": "gunsnprices-mcp",
+  "description": "US gun and ammo shopping helper from GunsNPrices (gunsnprices.com). Parses product titles into brand, model, caliber, magazine capacity and barrel length, identifies firearm models (50 brands), looks up calibers, computes ammo cost per round, and returns GunsNPrices price comparison pages. Runs locally, no API key.",
+  "url": "https://github.com/gunsnprices/gunsnprices-mcp",
+  "readme": "https://github.com/gunsnprices/gunsnprices-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/gunsnprices/gunsnprices-mcp/main/assets/logo-512.png",
+  "author": "GunsNPrices",
+  "env": {}
+}

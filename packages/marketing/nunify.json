@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Nunify",
+  "packageName": "@toolsdk-remote/nunify-mcp",
+  "description": "MCP server that enables AI assistants like Claude and ChatGPT to retrieve event data and execute event management operations in the Nunify event platform.",
+  "url": "https://www.nunify.com",
+  "author": "Nunify",
+  "runtime": "node",
+  "logo": "https://www.nunify.com/favicon.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://app.nunify.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["admin"]
+      }
+    }
+  ]
+}

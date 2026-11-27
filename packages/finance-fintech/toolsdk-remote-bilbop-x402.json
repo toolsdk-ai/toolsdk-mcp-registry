@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "Bilbop x402",
+  "packageName": "@toolsdk-remote/bilbop-x402",
+  "description": "Pay-per-call agent tools paid in USDC on Solana over x402, no account or API key: text summarize, Solana token brief, Solana mint info, Piper text-to-speech, and human brand feedback. Unpaid tool calls return an HTTP 402 payment descriptor; payment settles on https://api.bilbop.org.",
+  "url": "https://github.com/bilbop1/bilbop-x402-mcp",
+  "readme": "https://github.com/bilbop1/bilbop-x402-mcp#readme",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://bilbop-x402-mcp.watchdogsfreak.workers.dev/mcp"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "SandBase CLI",
+  "packageName": "@sandbaseai/cli",
+  "description": "Open-source AI CLI and local MCP bridge that connects coding clients to 2,000+ models and APIs via SandBase, with OAuth and config rollback.",
+  "url": "https://github.com/sandbaseai/cli",
+  "readme": "https://github.com/sandbaseai/cli/blob/main/llms-install.md",
+  "runtime": "node",
+  "license": "Apache-2.0",
+  "packageVersion": "0.3.9",
+  "binArgs": ["mcp-bridge", "--client", "claude-desktop"],
+  "author": "sandbaseai",
+  "env": {
+    "SANDBASE_API_KEY": {
+      "description": "API key from SandBase browser connect / OAuth (or sandbase keys add). Needed for live tool calls after setup.",
+      "required": false,
+      "secret": true
+    }
+  }
+}

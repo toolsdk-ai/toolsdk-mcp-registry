@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "Ember Websites",
+  "packageName": "@toolsdk-remote/ember-websites",
+  "description": "Describe your business. Get a beautiful website, built and published for you from Claude or ChatGPT.",
+  "readme": "https://embersites.com",
+  "runtime": "node",
+  "logo": "https://embersites.com/apple-touch-icon.png",
+  "author": "Ember Websites",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://embersites.app/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

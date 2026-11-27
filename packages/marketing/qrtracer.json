@@ -1,0 +1,16 @@
+{
+  "type": "mcp-server",
+  "name": "QRtracer",
+  "packageName": "@toolsdk-remote/qrtracer",
+  "description": "Connects to QRtracer's public QR link checking, limited anonymous dynamic QR creation, and PNG rendering for anonymously created codes. Private account management and analytics require an eligible Programmable account bearer API key; ToolSDK's remote transport does not currently inject that key. See the official connection guide for access limits and supported authentication.",
+  "url": "https://qrtracer.io/qr-code-mcp",
+  "readme": "https://qrtracer.io/qr-code-mcp",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://qrtracer.io/mcp"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "packageName": "@toolsdk-remote/pink-agentic-payments",
+  "name": "Pink Agentic AI Payments",
+  "description": "Remote MCP server that puts company rules between an AI agent and money: per-agent budgets and rules answer each payment request with allowed (single-use credential), pending human approval, or blocked. 7 tools. Public sandbox with test money only.",
+  "url": "https://github.com/Pink-Agentic-Payments/sandbox-examples",
+  "readme": "https://pinkwallet.com/agentic/developers/",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://agentic-sandbox.pinkwallet.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Equivista",
+  "packageName": "@toolsdk-remote/equivista",
+  "description": "Read-only Belgian company search, KBO profiles, financials, employees and company relationships. This entry uses anonymous access, limited to one distinct data-bearing request per IP per day. Bearer API keys are optional for higher account quotas but are not configured by this entry.",
+  "url": "https://github.com/peterloomans/equivista-mcp",
+  "readme": "https://equivista.be/api/docs",
+  "runtime": "node",
+  "env": {},
+  "logo": "https://equivista.be/icon.png",
+  "author": "Equivista",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://equivista.be/mcp"
+    }
+  ]
+}

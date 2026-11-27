@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "SellerForge",
+  "packageName": "@toolsdk-remote/sellerforge",
+  "description": "Hosted MCP server that gives AI agents read-only access to an Amazon seller's own Seller Central and Amazon Ads data: account health, FBA and AWD inventory, FBA reimbursements, Plan of Action cases, tracked keywords and rank history, listing audits, campaigns and sales. Connects to the hosted SellerForge endpoint with OAuth 2.1 (browser sign-in, no API key). It cannot change anything in Seller Central or Amazon Ads. Needs a SellerForge account; a 7-day trial needs no credit card.",
+  "url": "https://github.com/SellerForgeAI/sellerforge-mcp",
+  "readme": "https://github.com/SellerForgeAI/sellerforge-mcp#readme",
+  "logo": "https://www.sellerforge.ai/icon.png",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.sellerforge.ai/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

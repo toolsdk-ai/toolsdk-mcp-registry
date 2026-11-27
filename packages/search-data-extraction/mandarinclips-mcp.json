@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "MandarinClips",
+  "packageName": "@toolsdk-remote/mandarinclips-mcp",
+  "description": "Hosted MandarinClips MCP server for TCSL educators: search 180,000+ authentic Chinese cinema dialogue clips with video turn context (previous / target / succeeding lines), HSK 3.0 grammar guides and pragmatic expression guides; every result cites its source scene on mandarinclips.com. Read-only, no auth — the free tier works anonymously with a daily quota. Also installable locally from npm as `mandarinclips-mcp` (stdio, optional MANDARINCLIPS_API_KEY for elevated quota).",
+  "url": "https://github.com/IndexFlowing/MandarinClips-mcp",
+  "readme": "https://www.mandarinclips.com",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://www.mandarinclips.com/apple-touch-icon.png",
+  "author": "IndexFlowing",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.mandarinclips.com/mcp"
+    }
+  ]
+}

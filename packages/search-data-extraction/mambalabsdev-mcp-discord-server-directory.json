@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Discord Server Directory",
+  "packageName": "@mambalabsdev/mcp-discord-server-directory",
+  "description": "MCP server for Discord Server Directory: public Discord servers by keyword or category with member counts.",
+  "url": "https://github.com/mambalabsdev/mcp-discord-server-directory",
+  "readme": "https://github.com/mambalabsdev/mcp-discord-server-directory#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

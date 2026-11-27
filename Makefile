@@ -1,3 +1,7 @@
+catalog:
+	node scripts/validate-registry.mjs --all
+	node scripts/generate-catalog.mjs
+
 build:
 	bun scripts/cat-dirs.ts
   # Install the dependencies needed to run `indexing-lists.ts`

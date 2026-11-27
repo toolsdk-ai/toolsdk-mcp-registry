@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Whimbrel: Medtech Research",
+  "packageName": "@toolsdk-remote/whimbrel-medtech-analyst",
+  "description": "Find US medical device clients and Contacts at each company, in ChatGPT, Claude or the web app.",
+  "url": "https://github.com/WhimbrelResearch/whimbrel-mcp",
+  "readme": "https://whimbrelresearch.com/connect/",
+  "runtime": "node",
+  "author": "Whimbrel Research",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://data.whimbrelresearch.com",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["whimbrel"]
+      }
+    }
+  ]
+}

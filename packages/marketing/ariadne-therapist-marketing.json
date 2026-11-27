@@ -1,0 +1,17 @@
+{
+  "type": "mcp-server",
+  "name": "Ariadne for Therapists",
+  "packageName": "@toolsdk-remote/ariadne-therapist-marketing",
+  "description": "Audits a therapy practice's Google Business Profile and website with prioritized fixes, and writes a sample Google Business post in the therapist's voice. Never recommends soliciting client reviews.",
+  "url": "https://github.com/bgrieco22/ariadne-mcp",
+  "readme": "https://github.com/bgrieco22/ariadne-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://therapists.ariadnemarketing.com/mcp"
+    }
+  ]
+}

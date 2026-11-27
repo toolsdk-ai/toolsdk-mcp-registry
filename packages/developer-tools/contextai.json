@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "ContextAI MCP",
+  "packageName": "@toolsdk-remote/contextai",
+  "description": "Evaluate text and voice agents using scenarios, personas and metrics. Requires an active ContextAI workspace and configured agent connection.",
+  "readme": "https://github.com/indivatools/contextqa-skills/blob/4a67f1b297ba18f8253eaaf0f2195437965715b8/docs/contextai-mcp.md",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://ai.contextqa.com/api/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

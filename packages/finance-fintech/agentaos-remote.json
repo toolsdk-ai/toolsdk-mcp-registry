@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "AgentaOS (Remote)",
+  "packageName": "@toolsdk-remote/agentaos-mcp",
+  "description": "Hosted MCP server for AgentaOS, a merchant of record: an agent can create products, payment links, checkouts and subscriptions, list customers and invoices, and request a pricing review, while AgentaOS as the legal seller handles VAT, sales tax and invoices. Authenticates with OAuth (discovery and dynamic client registration).",
+  "url": "https://github.com/AgentaOS/agentaos",
+  "readme": "https://github.com/AgentaOS/agentaos#readme",
+  "runtime": "node",
+  "license": "Apache-2.0",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.agentaos.ai/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}

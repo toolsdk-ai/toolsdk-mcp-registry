@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Domain Deliverability Checker (B1)",
+  "packageName": "@mambalabsdev/mcp-domain-deliverability-checker",
+  "description": "MCP server for the Mamba Labs Domain Deliverability Checker actor on Apify. Audit a domain's email deliverability: SPF, DKIM, DMARC, MX, mail provider, catch-all, blacklist, domain age, and a 0 to 100 health score. Clay-ready output.",
+  "url": "https://github.com/mambalabsdev/mcp-domain-deliverability-checker",
+  "readme": "https://github.com/mambalabsdev/mcp-domain-deliverability-checker#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Mamba Labs",
+  "env": {
+    "APIFY_TOKEN": {
+      "description": "Apify API token from https://console.apify.com/account/integrations",
+      "required": true,
+      "secret": true
+    }
+  }
+}

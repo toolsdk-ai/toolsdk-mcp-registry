@@ -1,0 +1,11 @@
+{
+  "type": "mcp-server",
+  "name": "memgit",
+  "packageName": "memgit-mcp",
+  "description": "Versioned memory shared by Claude Code, Cursor, Codex and any MCP host: imports Claude Code's memory files, keeps every change with diff and rollback, BM25 recall, optional end-to-end encrypted sync. Needs Python 3.11+.",
+  "url": "https://github.com/code4161/memgit",
+  "readme": "https://github.com/code4161/memgit#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "env": {}
+}

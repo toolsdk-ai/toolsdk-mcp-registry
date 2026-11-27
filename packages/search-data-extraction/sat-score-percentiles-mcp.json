@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "SAT Score Percentiles MCP",
+  "packageName": "@toolsdk-remote/sat-score-percentiles-mcp",
+  "description": "SAT score percentiles and class of 2026 SAT averages and participation by state (College Board). Tools: get_sat_percentile, get_score_for_sat_percentile, get_sat_scores_by_state, rank_states_by_sat. Hosted Streamable HTTP endpoint, no account or API key.",
+  "url": "https://github.com/theluckystrike/sat-score-percentiles-mcp",
+  "readme": "https://github.com/theluckystrike/sat-score-percentiles-mcp#readme",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://sat-score-percentiles-mcp.lipmichal.workers.dev/mcp"
+    }
+  ]
+}
