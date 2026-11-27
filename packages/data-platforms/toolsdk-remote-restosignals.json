@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "RestoSignals",
+  "packageName": "@toolsdk-remote/restosignals",
+  "description": "US restaurants and bars 1-6 months before they open. Fuses public liquor-license applications, food-service permits and new-business filings into one deduplicated venue, scored 0-100 for how close it is to opening, with the owner contact from those filings. Live in NY, TX, IL, CA, OR, CO and WA. 5 read-only tools.",
+  "url": "https://github.com/paperandbeyond23-gif/restosignals-mcp",
+  "readme": "https://restosignals.com/docs",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://restosignals.com/restosignals-icon.png",
+  "author": "paperandbeyond23-gif",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.restosignals.com/mcp",
+      "auth": {
+        "type": "oauth2",
+        "scopes": ["restosignals:read"]
+      }
+    }
+  ]
+}
