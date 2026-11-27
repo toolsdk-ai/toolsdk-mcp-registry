@@ -1,0 +1,21 @@
+{
+  "type": "mcp-server",
+  "name": "Sandscale",
+  "packageName": "@toolsdk-remote/sandscale",
+  "description": "Official hosted MCP server for Sandscale sandboxes. An agent can create a Firecracker microVM sandbox from a template, run commands in it, write and read files, and stop it, with every call recorded in an audit log. Requires a Sandscale account (free plan available).",
+  "readme": "https://sandscale.dev/sandboxes/mcp",
+  "runtime": "node",
+  "license": "proprietary",
+  "logo": "https://sandscale.dev/apple-touch-icon.png",
+  "author": "Sandscale",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.sandscale.dev/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
