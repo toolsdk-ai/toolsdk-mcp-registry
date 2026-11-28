@@ -1,0 +1,22 @@
+{
+  "type": "mcp-server",
+  "name": "Cygnix SEO MCP",
+  "packageName": "@toolsdk-remote/cygnix-seo-mcp",
+  "description": "Hosted SEO and AI-search MCP server that audits a site, writes ready-to-paste fixes for the top 5 issues, and re-audits for a before/after score.",
+  "url": "https://github.com/cygnixlabs-cmd/cygnix-seo-mcp",
+  "readme": "https://mcp.cygnixlabs.com/docs",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Cygnix Labs",
+  "logo": "https://mcp.cygnixlabs.com/icon-512.png",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.cygnixlabs.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
