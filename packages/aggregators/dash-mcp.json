@@ -1,0 +1,23 @@
+{
+  "type": "mcp-server",
+  "name": "Dash",
+  "packageName": "@toolsdk-remote/dash-mcp",
+  "description": "Connect AI clients to Dash, the AI teammate you can text or email, plus your workspace and its apps. MCP access requires a paid Dash workspace and follows workspace roles and approval settings.",
+  "url": "https://github.com/dash-pup/dash-mcp",
+  "runtime": "node",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.dashpup.ai/mcp/platform",
+      "auth": {
+        "type": "oauth2",
+        "scopes": [
+          "dash:read",
+          "dash:write",
+          "dash:admin"
+        ]
+      }
+    }
+  ]
+}
