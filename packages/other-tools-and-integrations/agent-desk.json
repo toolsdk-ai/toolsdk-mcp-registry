@@ -1,0 +1,18 @@
+{
+  "type": "mcp-server",
+  "name": "Agent Desk",
+  "packageName": "@toolsdk-remote/agent-desk",
+  "description": "Hosted MCP server that checks whether a US insurance lead can be called, autodialed or texted now, and cites the rule behind each answer: consent wording, the National and 12 state Do Not Call lists, calling hours in all 50 states and DC, call caps and Medicare limits. Also flags bad lead data, checks outreach messages against TCPA, CAN-SPAM and CMS rules, and looks up phone numbers in NANPA data. No account needed.",
+  "readme": "https://github.com/yellowstake/agent-desk#readme",
+  "url": "https://github.com/yellowstake/agent-desk",
+  "runtime": "node",
+  "license": "MIT",
+  "author": "Yellow Stake",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://yellowstake.com/mcp"
+    }
+  ]
+}
