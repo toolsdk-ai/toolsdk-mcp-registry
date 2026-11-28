@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "RapVideoAI",
+  "packageName": "@toolsdk-remote/rapvideoai",
+  "description": "Turn the user's own photos into short AI videos: search 85+ viral trend effects and dances plus personalized rap, birthday, love and Christmas songs with lip-sync, see example clips and prices, then make the video from chat photos, photo links or an upload link. Browsing effects works without sign-in; making videos uses OAuth and RapVideoAI account credits.",
+  "url": "https://rapvideoai.com",
+  "readme": "https://rapvideoai.com/developers",
+  "runtime": "node",
+  "logo": "https://rapvideoai.com/logo.png",
+  "author": "RapVideoAI",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://rapvideoai.com/mcp",
+      "auth": { "type": "oauth2", "scopes": ["videos:make", "offline_access"] }
+    }
+  ]
+}
