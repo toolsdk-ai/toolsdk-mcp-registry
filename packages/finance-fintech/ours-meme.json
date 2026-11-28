@@ -1,0 +1,19 @@
+{
+  "type": "mcp-server",
+  "name": "OursMeme",
+  "packageName": "@toolsdk-remote/ours-meme",
+  "description": "Remote Streamable HTTP MCP server for ours.meme on BNB Chain testnet. Lets AI agents query BTC, ETH, and gold perp markets, inspect orderbooks and fee splits, and build unsigned calldata for launching 0-fee perp markets or managing positions with client-side signing. Public read and calldata tools work without authentication; on-chain execution requires client-side wallet signing.",
+  "url": "https://github.com/muranwirebaugh-cmyk/oursmeme-agent-skills",
+  "readme": "https://ours.meme/agent",
+  "runtime": "node",
+  "license": "MIT",
+  "logo": "https://ours.meme/apple-touch-icon.png",
+  "author": "muranwirebaugh-cmyk",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://devapi.ours.meme/api/mcp"
+    }
+  ]
+}
