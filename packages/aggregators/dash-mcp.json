@@ -12,11 +12,7 @@
       "url": "https://api.dashpup.ai/mcp/platform",
       "auth": {
         "type": "oauth2",
-        "scopes": [
-          "dash:read",
-          "dash:write",
-          "dash:admin"
-        ]
+        "scopes": ["dash:read", "dash:write", "dash:admin"]
       }
     }
   ]
